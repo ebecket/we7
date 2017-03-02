@@ -1,0 +1,12 @@
+
+ 
+记录时间：2013-11-25 10:41:30,046 
+线程ID:[6] 
+日志级别：  ERROR 
+出错类：We7.CMS.Web.Global property: [(null)] - 
+错误描述：Error
+ 
+System.Exception: 没有这个类型的Helper。
+   在 We7.Framework.HelperFactory.GetHelper[T]()
+   在 We7.CMS.Web.Global.get_PageVisitorHelper()
+   在 We7.CMS.Web.Global.Session_End(Object sender, EventArgs e)

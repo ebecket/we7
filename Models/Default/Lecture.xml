@@ -1,0 +1,215 @@
+<?xml version="1.0"?>
+<ModelInfo xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" type="article" label="事件信息" desc="" authority="true">
+  <dataSet>
+    <dataTable name="Lecture">
+      <dataColumn name="ID" label="ID" dataType="String" expression="" direction="InputOutput" system="true" mapping="ID" maxlength="40" nullable="false" require="false" edit="false" list="false" />
+      <dataColumn name="AccountID" label="用户ID" dataType="String" expression="" direction="Output" system="true" maxlength="40" nullable="false" require="false" edit="false" list="false" />
+      <dataColumn name="OwnerID" label="栏目ID" dataType="String" direction="Output" system="false" mapping="ListKeys1" maxlength="40" nullable="false" require="false" edit="false" list="false" />
+      <dataColumn name="State" label="状态" dataType="Int32" expression="" direction="Output" system="true" mapping="State" maxlength="0" default="1" nullable="false" require="false" edit="false" list="true" />
+      <dataColumn name="IsShow" label="置顶" dataType="Int32" expression="" direction="Output" system="true" mapping="IsShow" maxlength="0" nullable="false" require="false" edit="false" list="true" />
+      <dataColumn name="Tags" label="标签" dataType="String" expression="" direction="Output" system="true" maxlength="255" nullable="false" require="false" edit="false" list="false" />
+      <dataColumn name="Updated" label="更新时间" dataType="DateTime" expression="" direction="InputOutput" system="true" maxlength="0" default="Now" nullable="false" require="false" edit="false" list="false" />
+      <dataColumn name="Created" label="创建时间" dataType="DateTime" expression="" direction="Output" system="true" mapping="Created" maxlength="0" default="Now" nullable="false" require="false" edit="false" list="false" />
+      <dataColumn name="ProcessState" label="审批当前进程" dataType="String" expression="" direction="Output" system="true" maxlength="50" nullable="false" require="false" edit="false" list="false" />
+      <dataColumn name="ProcessDirection" label="流转来源方向" dataType="String" expression="" direction="Output" system="true" maxlength="50" nullable="false" require="false" edit="false" list="false" />
+      <dataColumn name="ProcessSiteID" label="拥有处置权限的站点ID" dataType="String" expression="" direction="Output" system="true" maxlength="40" nullable="false" require="false" edit="false" list="false" />
+      <dataColumn name="FullPath" label="栏目路径" dataType="String" expression="" direction="Output" system="true" maxlength="254" nullable="false" require="false" edit="false" list="false" />
+      <dataColumn name="Clicks" label="点击量" dataType="Int32" expression="" direction="Input" system="true" mapping="" maxlength="0" nullable="false" require="false" edit="false" list="true" />
+      <dataColumn name="DayClicks" label="日点击量" dataType="Int32" expression="" direction="Input" system="true" mapping="" maxlength="0" nullable="false" require="false" edit="false" list="true" />
+      <dataColumn name="YesterdayClicks" label="昨日点击量" dataType="Int32" expression="" direction="Input" system="true" mapping="" maxlength="0" nullable="false" require="false" edit="false" list="true" />
+      <dataColumn name="WeekClicks" label="周点击量" dataType="Int32" expression="" direction="Input" system="true" mapping="" maxlength="0" nullable="false" require="false" edit="false" list="true" />
+      <dataColumn name="MonthClicks" label="月点击量" dataType="Int32" expression="" direction="Input" system="true" mapping="" maxlength="0" nullable="false" require="false" edit="false" list="true" />
+      <dataColumn name="QuarterClicks" label="季点击量" dataType="Int32" expression="" direction="Input" system="true" mapping="" maxlength="0" nullable="false" require="false" edit="false" list="true" />
+      <dataColumn name="YearClicks" label="年点击量" dataType="Int32" expression="" direction="Input" system="true" mapping="" maxlength="0" nullable="false" require="false" edit="false" list="true" />
+      <dataColumn name="Title" label="标题" dataType="String" direction="Output" system="false" mapping="Title" maxlength="300" nullable="false" require="false" edit="false" list="false" />
+      <dataColumn name="Speaker" label="主讲人" dataType="String" direction="Output" system="false" mapping="ListKeys" maxlength="50" nullable="false" require="false" edit="false" list="false" />
+      <dataColumn name="Anchor" label="主持人" dataType="String" direction="Input" system="false" mapping="" maxlength="50" nullable="false" require="false" edit="false" list="false" />
+      <dataColumn name="Description" label="活动简介" dataType="String" direction="Input" system="false" mapping="" maxlength="3000" nullable="false" require="false" edit="false" list="false" />
+      <dataColumn name="Address" label="地点" dataType="String" direction="Input" system="false" mapping="" maxlength="300" nullable="false" require="false" edit="false" list="false" />
+      <dataColumn name="Organizer" label="主办单位" dataType="String" direction="Input" system="false" mapping="" maxlength="300" nullable="false" require="false" edit="false" list="false" />
+      <dataColumn name="Type" label="类型" dataType="String" direction="Input" system="false" mapping="" maxlength="300" nullable="false" require="false" edit="false" list="false" />
+      <dataColumn name="Cate" label="类别" dataType="String" direction="Input" system="false" mapping="" maxlength="300" nullable="false" require="false" edit="false" list="false" />
+      <dataColumn name="StartTime" label="时间" dataType="String" direction="Input" system="false" mapping="" maxlength="200" nullable="false" require="false" edit="false" list="false" />
+      <dataColumn name="DueTime" label="过期时间" dataType="DateTime" direction="Input" system="false" mapping="" maxlength="0" nullable="false" require="false" edit="false" list="false" />
+      <dataColumn name="Organizer2" label="承办单位" dataType="String" direction="Input" system="false" mapping="" maxlength="300" nullable="false" require="false" edit="false" list="false" />
+      <dataColumn name="Url" label="链接" dataType="String" direction="Input" system="false" mapping="" maxlength="500" nullable="false" require="false" edit="false" list="false" />
+      <dataColumn name="Intro" label="主讲人简介" dataType="String" direction="Input" system="false" mapping="" maxlength="1000" nullable="false" require="false" edit="false" list="false" />
+      <dataColumn name="Term" label="期数" dataType="String" direction="Input" system="false" mapping="" maxlength="100" nullable="false" require="false" edit="false" list="false" />
+      <dataColumn name="STime" label="开始时间" dataType="DateTime" direction="Input" system="false" mapping="" maxlength="0" nullable="false" require="false" edit="false" list="false" />
+      <dataColumn name="ETime" label="结束时间" dataType="DateTime" direction="Input" system="false" mapping="" maxlength="0" nullable="false" require="false" edit="false" list="false" />
+      <dataColumn name="Creater" label="发布人" dataType="String" direction="Input" system="false" mapping="" maxlength="25" nullable="false" require="false" edit="false" list="false" />
+      <dataColumn name="IsCheck" label="讲座签到" dataType="Boolean" direction="Input" system="false" mapping="" maxlength="0" nullable="false" require="false" edit="false" list="false" />
+      <dataColumn name="Remark" label="备注" dataType="String" direction="Input" system="false" mapping="" maxlength="1000" nullable="false" require="false" edit="false" list="false" />
+      <dataColumn name="EmailGroups" label="通知邮件组" dataType="String" direction="Input" system="false" mapping="" maxlength="200" nullable="false" require="false" edit="false" list="false" />
+      <dataColumn name="EmailLang" label="通知邮件语言" dataType="String" direction="Input" system="false" mapping="" maxlength="25" nullable="false" require="false" edit="false" list="false" />
+      <dataColumn name="EmailSendDate" label="通知邮件定时" dataType="DateTime" direction="Input" system="false" mapping="" maxlength="0" nullable="false" require="false" edit="false" list="false" />
+      <dataColumn name="LectureLanguage" label="讲座语言" dataType="String" direction="Input" system="false" mapping="" maxlength="25" nullable="false" require="false" edit="false" list="false" />
+      <dataColumn name="XueQi" label="学期" dataType="String" direction="Input" system="false" mapping="" maxlength="100" nullable="false" require="false" edit="false" list="false" />
+      <dataColumn name="Field" label="学术领域" dataType="String" direction="Input" system="false" mapping="" maxlength="50" nullable="false" require="false" edit="false" list="false" />
+      <dataColumn name="WISE_ENID" label="英文网站id" dataType="String" direction="Input" system="false" mapping="" maxlength="100" nullable="false" require="false" edit="false" list="false" />
+      <dataColumn name="IsWiseEn" label="是否发布到wise英文网站" dataType="String" direction="Input" system="false" mapping="" maxlength="25" nullable="false" require="false" edit="false" list="false" />
+    </dataTable>
+  </dataSet>
+  <layout>
+    <panel name="edit" label="后台录入面板">
+      <edit path="We7.UxLayoutEditor" visible="true" layout="~/Models/Default/Lecture/GenerateLayout.ascx" viewerPath="We7.UxLayoutViewer" viewerLayout="~/Models/Default/Lecture/GenerateLayout.ascx" viewerCss="" editCss="" ucLayout="~/Models/Default/Lecture/GenerateLayout.ascx" ucCss="">
+        <group name="默认" index="0" next="0" enable="true">
+          <control id="ID" name="ID" label="ID" type="GUID" width="" height="" css="" default="" required="false" desc="" visible="false" ignore="false" />
+          <control id="OwnerID" name="OwnerID" label="栏目" type="We7.ChannelSelect" width="" height="" css="" default="" required="true" desc="" visible="true" ignore="false" />
+          <control id="Type" name="Type" label="类型" type="Select" width="" height="" css="" default="" required="true" desc="" visible="true" ignore="false">
+            <param name="data" value="独立讲座|专题讲座/独立讲座,系列讲座|专题讲座/系列讲座,学术会议|学术会议,校外来访|校外来访,课程安排|项目相关/EDP课程安排,考试面试|项目相关/考试面试,其他事件|其他重要事件" />
+          </control>
+          <control id="Title" name="Title" label="标题" type="TextInput" width="300" height="" css="" default="" required="true" desc="" visible="true" ignore="false">
+            <param name="maxcharater" value="300" />
+          </control>
+          <control id="Speaker" name="Speaker" label="主讲人" type="TextInput" width="" height="" css="" default="" required="false" desc="" visible="true" ignore="false">
+            <param name="maxcharater" value="50" />
+          </control>
+          <control id="Intro" name="Intro" label="主讲人简介" type="Editor" width="" height="" css="" default="" required="false" desc="" visible="true" ignore="false" />
+          <control id="Anchor" name="Anchor" label="主持人" type="TextInput" width="" height="" css="" default="" required="false" desc="" visible="true" ignore="false" />
+          <control id="Cate" name="Cate" label="讲座类别" type="Select" width="" height="" css="" default="" required="false" desc="" visible="true" ignore="false">
+            <param name="data" value="“WISE-SOE”高级经济学系列讲座|“WISE-SOE”高级经济学系列讲座,WISE学科入门指导系列讲座|WISE学科入门指导系列讲座,“WISE-IZA”劳动经济学联合系列讲座|“WISE-IZA”劳动经济学联合系列讲座,“WISE-SOE双周青年论坛”|“WISE-SOE双周青年论坛”,“WISE-经济学院”金融实务与职业规划系列讲座|“WISE-经济学院”金融实务与职业规划系列讲座,厦门大学统计学高级系列讲座|厦门大学统计学高级系列讲座,其它|其它" />
+          </control>
+          <control id="Term" name="Term" label="讲座期数" type="TextInput" width="" height="" css="" default="" required="false" desc="" visible="true" ignore="false" />
+          <control id="LectureLanguage" name="LectureLanguage" label="讲座语言" type="RadioButton" default="cn" required="false" visible="true" ignore="false">
+            <param name="data" value="cn|中文,en|英文" />
+          </control>
+          <control id="IsCheck" name="IsCheck" label="支持讲座打开" type="RadioButton" width="" height="" css="" default="1" required="false" desc="" visible="true" ignore="false">
+            <param name="data" value="1|是,0|否" />
+          </control>
+          <control id="Description" name="Description" label="活动简介" type="Editor" width="" height="" css="" default="" required="false" desc="" visible="true" ignore="false" />
+          <control id="StartTime" name="StartTime" label="时间范围(必填，用于个性化显示)" type="TextInput" width="300" height="" css="" default="" required="true" desc="例如：12月10日 星期五 上午7:30" visible="true" ignore="false">
+            <param name="maxcharater" value="200" />
+          </control>
+          <control id="STime" name="STime" label="开始时间(必填，用于数据搜索)" type="DateTime" width="" height="" css="" default="" required="true" desc="" visible="true" ignore="false" />
+          <control id="ETime" name="ETime" label="结束时间(必填，用于数据搜索)" type="DateTime" width="" height="" css="" default="" required="true" desc="" visible="true" ignore="false" />
+          <control id="Address" name="Address" label="地点" type="TextInput" width="300" height="" css="" default="" required="true" desc="" visible="true" ignore="false" />
+          <control id="Organizer" name="Organizer" label="主办单位" type="TextInput" width="300" height="" css="" default="" required="false" desc="" visible="true" ignore="false">
+            <param name="maxcharater" value="300" />
+          </control>
+          <control id="Organizer2" name="Organizer2" label="承办单位" type="TextInput" width="300" height="" css="" default="" required="false" desc="" visible="true" ignore="false" />
+          <control id="DueTime" name="DueTime" label="过期时间(必填，用于数据排序)" type="DateTime" width="" height="" css="" default="" required="true" desc="" visible="true" ignore="false" />
+          <control id="Creater" name="Creater" label="发布人(填写登录名)" type="TextInput" width="" height="" css="" default="" required="true" desc="" visible="false" ignore="false" />
+          <control id="Url" name="Url" label="专题网站链接" type="TextInput" width="300" height="" css="" default="" required="false" desc="" visible="true" ignore="false" />
+          <control id="EmailGroups" name="EmailGroups" label="通知邮件组" type="CheckBox" width="" height="" css="" default="" required="false" desc="" visible="true" ignore="false">
+            <param name="data" value="wisestaff|WISE行政,soestaff|SOE行政,wisefaculty|SOE教师,soefaculty|SOE教师,wisestudent|WISE学生,soestudent|SOE学生" />
+          </control>
+          <control id="EmailLang" name="EmailLang" label="通知邮件语言" type="RadioButton" width="" height="" css="" default="cn" required="false" desc="" visible="true" ignore="false">
+            <param name="data" value="cn|中文,en|英文" />
+          </control>
+          <control id="EmailSendDate" name="EmailSendDate" label="通知邮件定时(留空则不定时通知)" type="DateTime" width="" height="" css="" default="" required="false" desc="" visible="true" ignore="false">
+            <param name="fmt" value="yyyy-MM-dd" />
+          </control>
+          <control id="Remark" name="Remark" label="备注" type="TextInput" width="" height="" css="" default="" required="false" desc="" visible="true" ignore="false" />
+          <control id="State" name="State" label="状态" type="Select" width="" height="" css="" default="" required="false" desc="" visible="true" ignore="false">
+            <param name="data" value="0|不发布,1|发布" />
+          </control>
+        </group>
+      </edit>
+      <list visible="false" />
+      <pager visible="false" />
+      <condition path="we7.Condition" visible="false">
+        <control id="ID" name="ID" label="ID" type="Request" required="false" visible="false" ignore="false" />
+      </condition>
+      <command visible="false" />
+      <navigation visible="false" />
+      <context>
+        <pageSize>10</pageSize>
+        <orders>ID</orders>
+        <dataKey>ID</dataKey>
+      </context>
+    </panel>
+    <panel name="list" label="后台列表面板">
+      <edit visible="false" />
+      <list path="we7.List" visible="true">
+        <group name="传统列表" index="0" next="0" enable="true">
+          <column name="Type" label="类型" width="" height="" type="html" align="NotSet" index="0" visible="true" isThumb="false" isLink="false" mapping="" expr="" convert="" />
+          <column name="Title" label="标题" width="" height="" type="html" align="NotSet" index="1" visible="true" isThumb="false" isLink="false" mapping="" expr="" convert="" />
+          <column name="Speaker" label="主讲人" width="" height="" type="html" align="NotSet" index="2" visible="true" isThumb="false" isLink="false" mapping="" expr="" convert="" />
+          <column name="Address" label="地点" width="" height="" type="html" align="NotSet" index="3" visible="true" isThumb="false" isLink="false" mapping="" expr="" convert="" />
+          <column name="StartTime" label="时间范围" width="" height="" type="html" align="NotSet" index="4" visible="true" isThumb="false" isLink="false" mapping="" expr="" convert="" />
+          <column name="STime" label="开始时间" type="html" align="NotSet" index="5" visible="true" isThumb="false" isLink="false" />
+          <column name="ETime" label="结束时间" type="html" align="NotSet" index="6" visible="true" isThumb="false" isLink="false" />
+          <column name="Cate" label="类别" width="" height="" type="html" align="NotSet" index="7" visible="true" isThumb="false" isLink="false" mapping="" expr="" convert="" />
+          <column name="Term" label="期数" width="" height="" type="html" align="NotSet" index="8" visible="true" isThumb="false" isLink="false" mapping="" expr="" convert="" />
+          <column name="DueTime" label="过期时间" width="" height="" type="html" align="NotSet" index="9" visible="true" isThumb="false" isLink="false" mapping="" expr="" convert="" />
+          <column name="IsShow" label="置顶" width="" height="" type="ux" align="NotSet" index="10" visible="true" isThumb="false" isLink="false" mapping="" expr="1|是,0|否" convert="" />
+          <column name="Manage" label="管理" width="100" height="" type="action" align="Center" index="11" visible="true" isThumb="false" isLink="false" mapping="" expr="" convert="">
+            <param name="cmd" value="view()|edit()|delete" />
+            <param name="cmdText" value="查看|编辑|删除" />
+          </column>
+        </group>
+      </list>
+      <pager path="we7.Pager" visible="true" />
+      <condition path="we7.Condition" visible="true">
+        <control id="Title" name="Title" label="标题" type="TextInput" width="" height="" css="" default="" required="false" desc="" visible="true" ignore="false" />
+        <control id="Speaker" name="Speaker" label="主讲人" type="TextInput" width="" height="" css="" default="" required="false" desc="" visible="true" ignore="false" />
+      </condition>
+      <command path="we7.Command" visible="true" />
+      <navigation visible="false" />
+      <context>
+        <pageSize>10</pageSize>
+        <orders>IsShow Desc,DueTime Desc,Updated Desc</orders>
+        <dataKey>ID</dataKey>
+      </context>
+    </panel>
+    <panel name="multi" label="会员中心显示面板">
+      <edit path="We7.UxLayoutEditor" visible="true" layout="~/Models/Default/Lecture/GenerateLayout.ascx" viewerPath="We7.UxLayoutViewer" viewerLayout="~/Models/Default/Lecture/GenerateLayout.ascx" viewerCss="" editCss="" ucLayout="~/Models/Default/Lecture/GenerateLayout.ascx" ucCss="">
+        <group name="默认" index="0" next="0" enable="true">
+          <control id="ID" name="ID" label="ID" type="GUID" width="" height="" css="" default="" required="false" desc="" visible="false" ignore="false" />
+          <control id="OwnerID" name="OwnerID" label="栏目" type="We7.ChannelSelect" width="" height="" css="" default="" required="true" desc="" visible="true" ignore="false" />
+          <control id="Type" name="Type" label="类型" type="Select" width="" height="" css="" default="" required="true" desc="" visible="true" ignore="false">
+            <param name="data" value="独立讲座|独立讲座,系列讲座|系列讲座,学术会议|学术会议,校外来访|校外来访,项目相关|项目相关（如EDP课程安排、留学项目考试面试）,其他事件|其他事件（如庆典活动）" />
+          </control>
+          <control id="Title" name="Title" label="标题" type="TextInput" width="300" height="" css="" default="" required="true" desc="" visible="true" ignore="false">
+            <param name="maxcharater" value="300" />
+          </control>
+          <control id="Speaker" name="Speaker" label="主讲人" type="TextInput" width="" height="" css="" default="" required="false" desc="" visible="true" ignore="false">
+            <param name="maxcharater" value="50" />
+          </control>
+          <control id="Intro" name="Intro" label="主讲人简介" type="Editor" width="" height="" css="" default="" required="false" desc="" visible="true" ignore="false" />
+          <control id="Anchor" name="Anchor" label="主持人" type="TextInput" width="" height="" css="" default="" required="false" desc="" visible="true" ignore="false" />
+          <control id="Cate" name="Cate" label="讲座类别" type="Select" width="" height="" css="" default="" required="false" desc="" visible="true" ignore="false">
+            <param name="data" value="“WISE-SOE”高级经济学系列讲座|“WISE-SOE”高级经济学系列讲座,WISE学科入门指导系列讲座|WISE学科入门指导系列讲座,“WISE-IZA”劳动经济学联合系列讲座|“WISE-IZA”劳动经济学联合系列讲座,“WISE-SOE双周青年论坛”|“WISE-SOE双周青年论坛”,“WISE-经济学院”金融实务与职业规划系列讲座|“WISE-经济学院”金融实务与职业规划系列讲座,厦门大学统计学高级系列讲座|厦门大学统计学高级系列讲座,其它|其它" />
+          </control>
+          <control id="Term" name="Term" label="讲座期数" type="TextInput" width="" height="" css="" default="" required="false" desc="" visible="true" ignore="false" />
+          <control id="Description" name="Description" label="活动简介" type="Editor" width="" height="" css="" default="" required="false" desc="" visible="true" ignore="false" />
+          <control id="StartTime" name="StartTime" label="时间(例：2014年12月10日 上午7:30)" type="TextInput" width="300" height="" css="" default="" required="true" desc="例如：12月10日 星期五 上午7:30" visible="true" ignore="false">
+            <param name="maxcharater" value="200" />
+          </control>
+          <control id="STime" name="STime" label="开始时间" type="DateTime" width="" height="" css="" default="" required="true" desc="" visible="true" ignore="false" />
+          <control id="ETime" name="ETime" label="结束时间" type="DateTime" width="" height="" css="" default="" required="true" desc="" visible="true" ignore="false" />
+          <control id="Address" name="Address" label="地点" type="TextInput" width="300" height="" css="" default="" required="true" desc="" visible="true" ignore="false" />
+          <control id="Organizer" name="Organizer" label="主办单位" type="TextInput" width="300" height="" css="" default="" required="false" desc="" visible="true" ignore="false">
+            <param name="maxcharater" value="300" />
+          </control>
+          <control id="Organizer2" name="Organizer2" label="承办单位" type="TextInput" width="300" height="" css="" default="" required="false" desc="" visible="true" ignore="false" />
+          <control id="DueTime" name="DueTime" label="过期时间" type="DateTime" width="" height="" css="" default="" required="true" desc="" visible="true" ignore="false" />
+          <control id="Creater" name="Creater" label="发布人" type="TextInput" width="" height="" css="" default="" required="false" desc="" visible="true" ignore="false" />
+          <control id="Url" name="Url" label="专题网站链接" type="TextInput" width="300" height="" css="" default="" required="false" desc="" visible="true" ignore="false" />
+        </group>
+      </edit>
+      <list path="System.SimpleList" visible="true" />
+      <pager path="System.SimplePager" visible="true" />
+      <condition path="System.SimpleCondition" visible="true">
+        <control id="OwnerID" name="OwnerID" label="栏目ID" type="Request" required="false" visible="false" ignore="false">
+          <param name="param" value="oid" />
+        </control>
+      </condition>
+      <command path="System.SimpleCommand" visible="true" />
+      <navigation path="System.SimplenNavigation" visible="true" />
+      <context>
+        <pageSize>10</pageSize>
+        <orders>IsShow Desc,Updated Desc,ID Desc</orders>
+        <dataKey>ID</dataKey>
+      </context>
+    </panel>
+    <UCContrl>
+      <listFields>OwnerID,Title,Speaker,Anchor,Description,Address,Organizer,Type,Cate,StartTime,DueTime,Organizer2,Url,Intro,Term,STime,ETime,Creater</listFields>
+      <detailFields>OwnerID,Title,Speaker,Anchor,Description,Address,Organizer,Type,Cate,StartTime,DueTime,Organizer2,Url,Intro,Term,STime,ETime,Creater</detailFields>
+      <widgetListFields>OwnerID,Title,Speaker,Anchor,Description,Address,Organizer,Type,Cate,StartTime,DueTime,Organizer2,Url,Intro</widgetListFields>
+      <widgetDetailFields>OwnerID,Title,Speaker,Anchor,Description,Address,Organizer,Type,Cate,StartTime,DueTime,Organizer2,Url,Intro</widgetDetailFields>
+      <createEditor>false</createEditor>
+    </UCContrl>
+  </layout>
+</ModelInfo>

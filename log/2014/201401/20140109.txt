@@ -1,0 +1,291 @@
+
+ 
+记录时间：2014-01-09 10:42:36,975 
+线程ID:[8] 
+日志级别：  ERROR 
+出错类：We7.CMS.FrontBasePage property: [(null)] - 
+错误描述：Error
+ 
+System.Threading.ThreadAbortException: 正在中止线程。
+   在 System.Threading.Thread.AbortInternal()
+   在 System.Threading.Thread.Abort(Object stateInfo)
+   在 System.Web.HttpResponse.End()
+   在 System.Web.HttpResponse.Redirect(String url, Boolean endResponse)
+   在 We7.CMS.Web.ShowChannel.Initialize()
+   在 We7.CMS.FrontBasePage.OnLoad(EventArgs e)
+
+ 
+记录时间：2014-01-09 10:43:14,597 
+线程ID:[7] 
+日志级别：  ERROR 
+出错类：We7.CMS.BasePage property: [(null)] - 
+错误描述：Error
+ 
+System.Threading.ThreadAbortException: 正在中止线程。
+   在 System.Threading.Thread.AbortInternal()
+   在 System.Threading.Thread.Abort(Object stateInfo)
+   在 System.Web.HttpResponse.End()
+   在 System.Web.HttpServerUtility.Transfer(String path, Boolean preserveForm)
+   在 System.Web.HttpServerUtility.Transfer(String path)
+   在 We7.CMS.BasePage.HanldeNoPermission()
+   在 We7.CMS.BasePage.CheckPermission()
+   在 We7.CMS.BasePage.OnLoad(EventArgs e)
+
+ 
+记录时间：2014-01-09 10:49:21,173 
+线程ID:[8] 
+日志级别：  ERROR 
+出错类：We7.CMS.BasePage property: [(null)] - 
+错误描述：Error
+ 
+System.Threading.ThreadAbortException: 正在中止线程。
+   在 System.Threading.Thread.AbortInternal()
+   在 System.Threading.Thread.Abort(Object stateInfo)
+   在 System.Web.HttpResponse.End()
+   在 System.Web.HttpServerUtility.Transfer(String path, Boolean preserveForm)
+   在 System.Web.HttpServerUtility.Transfer(String path)
+   在 We7.CMS.BasePage.HanldeNoPermission()
+   在 We7.CMS.BasePage.CheckPermission()
+   在 We7.CMS.BasePage.OnLoad(EventArgs e)
+
+ 
+记录时间：2014-01-09 10:49:58,139 
+线程ID:[13] 
+日志级别：  ERROR 
+出错类：We7.CMS.BasePage property: [(null)] - 
+错误描述：Error
+ 
+System.Threading.ThreadAbortException: 正在中止线程。
+   在 System.Threading.Thread.AbortInternal()
+   在 System.Threading.Thread.Abort(Object stateInfo)
+   在 System.Web.HttpResponse.End()
+   在 ASP.admin_authenticate_aspx.JsonResult(Object data) 位置 f:\SVN\WISE\admin\Authenticate.aspx:行号 100
+   在 ASP.admin_authenticate_aspx.Page_Load(Object sender, EventArgs e) 位置 f:\SVN\WISE\admin\Authenticate.aspx:行号 75
+   在 System.Web.Util.CalliHelper.EventArgFunctionCaller(IntPtr fp, Object o, Object t, EventArgs e)
+   在 System.Web.Util.CalliEventHandlerDelegateProxy.Callback(Object sender, EventArgs e)
+   在 System.Web.UI.Control.OnLoad(EventArgs e)
+   在 We7.CMS.BasePage.OnLoad(EventArgs e)
+
+ 
+记录时间：2014-01-09 10:52:09,194 
+线程ID:[3] 
+日志级别：  ERROR 
+出错类：We7.CMS.BasePage property: [(null)] - 
+错误描述：Error
+ 
+System.Threading.ThreadAbortException: 正在中止线程。
+   在 System.Threading.Thread.AbortInternal()
+   在 System.Threading.Thread.Abort(Object stateInfo)
+   在 System.Web.HttpResponse.End()
+   在 We7.CMS.Web.Admin.Addins.ArticleList.DoChannelType()
+   在 We7.CMS.Web.Admin.Addins.ArticleList.Page_Load(Object sender, EventArgs e)
+   在 System.Web.Util.CalliHelper.EventArgFunctionCaller(IntPtr fp, Object o, Object t, EventArgs e)
+   在 System.Web.Util.CalliEventHandlerDelegateProxy.Callback(Object sender, EventArgs e)
+   在 System.Web.UI.Control.OnLoad(EventArgs e)
+   在 We7.CMS.BasePage.OnLoad(EventArgs e)
+
+ 
+记录时间：2014-01-09 14:41:54,033 
+线程ID:[6] 
+日志级别：  ERROR 
+出错类：We7.CMS.BasePage property: [(null)] - 
+错误描述：Error
+ 
+System.Threading.ThreadAbortException: 正在中止线程。
+   在 System.Threading.Thread.AbortInternal()
+   在 System.Threading.Thread.Abort(Object stateInfo)
+   在 System.Web.HttpResponse.End()
+   在 System.Web.HttpServerUtility.Transfer(String path, Boolean preserveForm)
+   在 System.Web.HttpServerUtility.Transfer(String path)
+   在 We7.CMS.BasePage.HanldeNoPermission()
+   在 We7.CMS.BasePage.CheckPermission()
+   在 We7.CMS.BasePage.OnLoad(EventArgs e)
+
+ 
+记录时间：2014-01-09 14:44:57,536 
+线程ID:[8] 
+日志级别：  ERROR 
+出错类：We7.CMS.BasePage property: [(null)] - 
+错误描述：Error
+ 
+System.Threading.ThreadAbortException: 正在中止线程。
+   在 System.Threading.Thread.AbortInternal()
+   在 System.Threading.Thread.Abort(Object stateInfo)
+   在 System.Web.HttpResponse.End()
+   在 System.Web.HttpServerUtility.Transfer(String path, Boolean preserveForm)
+   在 System.Web.HttpServerUtility.Transfer(String path)
+   在 We7.CMS.BasePage.HanldeNoPermission()
+   在 We7.CMS.BasePage.CheckPermission()
+   在 We7.CMS.BasePage.OnLoad(EventArgs e)
+
+ 
+记录时间：2014-01-09 14:45:23,401 
+线程ID:[9] 
+日志级别：  ERROR 
+出错类：We7.CMS.BasePage property: [(null)] - 
+错误描述：Error
+ 
+System.Threading.ThreadAbortException: 正在中止线程。
+   在 System.Threading.Thread.AbortInternal()
+   在 System.Threading.Thread.Abort(Object stateInfo)
+   在 System.Web.HttpResponse.End()
+   在 System.Web.HttpServerUtility.Transfer(String path, Boolean preserveForm)
+   在 System.Web.HttpServerUtility.Transfer(String path)
+   在 We7.CMS.BasePage.HanldeNoPermission()
+   在 We7.CMS.BasePage.CheckPermission()
+   在 We7.CMS.BasePage.OnLoad(EventArgs e)
+
+ 
+记录时间：2014-01-09 14:45:42,434 
+线程ID:[6] 
+日志级别：  ERROR 
+出错类：We7.CMS.BasePage property: [(null)] - 
+错误描述：Error
+ 
+System.Threading.ThreadAbortException: 正在中止线程。
+   在 System.Threading.Thread.AbortInternal()
+   在 System.Threading.Thread.Abort(Object stateInfo)
+   在 System.Web.HttpResponse.End()
+   在 ASP.admin_authenticate_aspx.JsonResult(Object data) 位置 f:\SVN\WISE\admin\Authenticate.aspx:行号 100
+   在 ASP.admin_authenticate_aspx.Page_Load(Object sender, EventArgs e) 位置 f:\SVN\WISE\admin\Authenticate.aspx:行号 75
+   在 System.Web.Util.CalliHelper.EventArgFunctionCaller(IntPtr fp, Object o, Object t, EventArgs e)
+   在 System.Web.Util.CalliEventHandlerDelegateProxy.Callback(Object sender, EventArgs e)
+   在 System.Web.UI.Control.OnLoad(EventArgs e)
+   在 We7.CMS.BasePage.OnLoad(EventArgs e)
+
+ 
+记录时间：2014-01-09 14:46:10,258 
+线程ID:[3] 
+日志级别：  ERROR 
+出错类：We7.CMS.BasePage property: [(null)] - 
+错误描述：Error
+ 
+System.Threading.ThreadAbortException: 正在中止线程。
+   在 System.Threading.Thread.AbortInternal()
+   在 System.Threading.Thread.Abort(Object stateInfo)
+   在 System.Web.HttpResponse.End()
+   在 We7.CMS.Web.Admin.Addins.ArticleList.DoChannelType()
+   在 We7.CMS.Web.Admin.Addins.ArticleList.Page_Load(Object sender, EventArgs e)
+   在 System.Web.Util.CalliHelper.EventArgFunctionCaller(IntPtr fp, Object o, Object t, EventArgs e)
+   在 System.Web.Util.CalliEventHandlerDelegateProxy.Callback(Object sender, EventArgs e)
+   在 System.Web.UI.Control.OnLoad(EventArgs e)
+   在 We7.CMS.BasePage.OnLoad(EventArgs e)
+
+ 
+记录时间：2014-01-09 14:46:35,342 
+线程ID:[8] 
+日志级别：  ERROR 
+出错类：We7.CMS.BasePage property: [(null)] - 
+错误描述：Error
+ 
+System.Threading.ThreadAbortException: 正在中止线程。
+   在 System.Threading.Thread.AbortInternal()
+   在 System.Threading.Thread.Abort(Object stateInfo)
+   在 System.Web.HttpResponse.End()
+   在 We7.CMS.Web.Admin.ClickRecordPage.Page_Load(Object sender, EventArgs e)
+   在 System.Web.Util.CalliHelper.EventArgFunctionCaller(IntPtr fp, Object o, Object t, EventArgs e)
+   在 System.Web.Util.CalliEventHandlerDelegateProxy.Callback(Object sender, EventArgs e)
+   在 System.Web.UI.Control.OnLoad(EventArgs e)
+   在 We7.CMS.BasePage.OnLoad(EventArgs e)
+
+ 
+记录时间：2014-01-09 14:47:15,027 
+线程ID:[9] 
+日志级别：  ERROR 
+出错类：We7.CMS.BasePage property: [(null)] - 
+错误描述：Error
+ 
+System.Threading.ThreadAbortException: 正在中止线程。
+   在 System.Threading.Thread.AbortInternal()
+   在 System.Threading.Thread.Abort(Object stateInfo)
+   在 System.Web.HttpResponse.End()
+   在 We7.CMS.Web.Admin.ClickRecordPage.Page_Load(Object sender, EventArgs e)
+   在 System.Web.Util.CalliHelper.EventArgFunctionCaller(IntPtr fp, Object o, Object t, EventArgs e)
+   在 System.Web.Util.CalliEventHandlerDelegateProxy.Callback(Object sender, EventArgs e)
+   在 System.Web.UI.Control.OnLoad(EventArgs e)
+   在 We7.CMS.BasePage.OnLoad(EventArgs e)
+
+ 
+记录时间：2014-01-09 14:47:34,661 
+线程ID:[3] 
+日志级别：  ERROR 
+出错类：We7.CMS.BasePage property: [(null)] - 
+错误描述：Error
+ 
+System.Threading.ThreadAbortException: 正在中止线程。
+   在 System.Threading.Thread.AbortInternal()
+   在 System.Threading.Thread.Abort(Object stateInfo)
+   在 System.Web.HttpResponse.End()
+   在 We7.CMS.Web.Admin.ClickRecordPage.Page_Load(Object sender, EventArgs e)
+   在 System.Web.Util.CalliHelper.EventArgFunctionCaller(IntPtr fp, Object o, Object t, EventArgs e)
+   在 System.Web.Util.CalliEventHandlerDelegateProxy.Callback(Object sender, EventArgs e)
+   在 System.Web.UI.Control.OnLoad(EventArgs e)
+   在 We7.CMS.BasePage.OnLoad(EventArgs e)
+
+ 
+记录时间：2014-01-09 14:47:37,009 
+线程ID:[3] 
+日志级别：  ERROR 
+出错类：We7.CMS.BasePage property: [(null)] - 
+错误描述：Error
+ 
+System.Threading.ThreadAbortException: 正在中止线程。
+   在 System.Threading.Thread.AbortInternal()
+   在 System.Threading.Thread.Abort(Object stateInfo)
+   在 System.Web.HttpResponse.End()
+   在 We7.CMS.Web.Admin.ClickRecordPage.Page_Load(Object sender, EventArgs e)
+   在 System.Web.Util.CalliHelper.EventArgFunctionCaller(IntPtr fp, Object o, Object t, EventArgs e)
+   在 System.Web.Util.CalliEventHandlerDelegateProxy.Callback(Object sender, EventArgs e)
+   在 System.Web.UI.Control.OnLoad(EventArgs e)
+   在 We7.CMS.BasePage.OnLoad(EventArgs e)
+
+ 
+记录时间：2014-01-09 14:47:59,207 
+线程ID:[3] 
+日志级别：  ERROR 
+出错类：We7.CMS.BasePage property: [(null)] - 
+错误描述：Error
+ 
+System.Threading.ThreadAbortException: 正在中止线程。
+   在 System.Threading.Thread.AbortInternal()
+   在 System.Threading.Thread.Abort(Object stateInfo)
+   在 System.Web.HttpResponse.End()
+   在 We7.CMS.Web.Admin.ClickRecordPage.Page_Load(Object sender, EventArgs e)
+   在 System.Web.Util.CalliHelper.EventArgFunctionCaller(IntPtr fp, Object o, Object t, EventArgs e)
+   在 System.Web.Util.CalliEventHandlerDelegateProxy.Callback(Object sender, EventArgs e)
+   在 System.Web.UI.Control.OnLoad(EventArgs e)
+   在 We7.CMS.BasePage.OnLoad(EventArgs e)
+
+ 
+记录时间：2014-01-09 16:46:53,060 
+线程ID:[3] 
+日志级别：  ERROR 
+出错类：We7.CMS.FrontBasePage property: [(null)] - 
+错误描述：Error
+ 
+System.Web.HttpCompileException: F:\SVN\WISE\_skins\default\doctor.single.ascx(30): error BC30560: “widgets_widgetcollection_static_static_default_sidemenu_static_doctor_sidemenu_ascx”在命名空间“ASP”中不明确。
+   在 System.Web.Compilation.BuildManager.CompileWebFile(VirtualPath virtualPath)
+   在 System.Web.Compilation.BuildManager.GetVPathBuildResultInternal(VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile)
+   在 System.Web.Compilation.BuildManager.GetVPathBuildResultWithNoAssert(HttpContext context, VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile)
+   在 System.Web.Compilation.BuildManager.GetVPathBuildResult(HttpContext context, VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile)
+   在 System.Web.UI.TemplateControl.LoadControl(VirtualPath virtualPath)
+   在 System.Web.UI.TemplateControl.LoadControl(String virtualPath)
+   在 We7.CMS.Web.ShowChannel.Initialize()
+   在 We7.CMS.FrontBasePage.OnLoad(EventArgs e)
+
+ 
+记录时间：2014-01-09 17:01:21,807 
+线程ID:[6] 
+日志级别：  ERROR 
+出错类：We7.CMS.BasePage property: [(null)] - 
+错误描述：Error
+ 
+System.Threading.ThreadAbortException: 正在中止线程。
+   在 System.Threading.Thread.AbortInternal()
+   在 System.Threading.Thread.Abort(Object stateInfo)
+   在 System.Web.HttpResponse.End()
+   在 System.Web.HttpServerUtility.Transfer(String path, Boolean preserveForm)
+   在 System.Web.HttpServerUtility.Transfer(String path)
+   在 We7.CMS.BasePage.HanldeNoPermission()
+   在 We7.CMS.BasePage.CheckPermission()
+   在 We7.CMS.BasePage.OnLoad(EventArgs e)

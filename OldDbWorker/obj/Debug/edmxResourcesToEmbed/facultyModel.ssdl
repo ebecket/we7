@@ -1,0 +1,47 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="facultyModel.Store" Alias="Self" Provider="System.Data.SqlClient" ProviderManifestToken="2008" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns="http://schemas.microsoft.com/ado/2006/04/edm/ssdl">
+  <EntityContainer Name="facultyModelStoreContainer">
+    <EntitySet Name="People" EntityType="facultyModel.Store.People" store:Type="Tables" Schema="dbo" />
+  </EntityContainer>
+  <EntityType Name="People">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="nvarchar" Nullable="false" MaxLength="40" />
+    <Property Name="AccountID" Type="nvarchar" MaxLength="40" />
+    <Property Name="OwnerID" Type="nvarchar" MaxLength="40" />
+    <Property Name="State" Type="int" />
+    <Property Name="Index" Type="int" />
+    <Property Name="IsShow" Type="int" />
+    <Property Name="Tags" Type="nvarchar" MaxLength="255" />
+    <Property Name="Updated" Type="datetime" />
+    <Property Name="Created" Type="datetime" />
+    <Property Name="ProcessState" Type="nvarchar" MaxLength="50" />
+    <Property Name="ProcessDirection" Type="nvarchar" MaxLength="50" />
+    <Property Name="ProcessSiteID" Type="nvarchar" MaxLength="40" />
+    <Property Name="FullPath" Type="nvarchar" MaxLength="254" />
+    <Property Name="Clicks" Type="int" />
+    <Property Name="DayClicks" Type="int" />
+    <Property Name="YesterdayClicks" Type="int" />
+    <Property Name="WeekClicks" Type="int" />
+    <Property Name="MonthClicks" Type="int" />
+    <Property Name="QuarterClicks" Type="int" />
+    <Property Name="YearClicks" Type="int" />
+    <Property Name="Fullname" Type="nvarchar" MaxLength="50" />
+    <Property Name="Gendar" Type="nvarchar" MaxLength="25" />
+    <Property Name="Title" Type="nvarchar" MaxLength="500" />
+    <Property Name="Position" Type="nvarchar" MaxLength="100" />
+    <Property Name="Office" Type="nvarchar" MaxLength="100" />
+    <Property Name="OfficeTime" Type="nvarchar" MaxLength="100" />
+    <Property Name="Phone" Type="nvarchar" MaxLength="100" />
+    <Property Name="Mobil" Type="nvarchar" MaxLength="50" />
+    <Property Name="Email" Type="nvarchar" MaxLength="100" />
+    <Property Name="Duty" Type="nvarchar" MaxLength="200" />
+    <Property Name="Field" Type="nvarchar" MaxLength="200" />
+    <Property Name="Photo" Type="nvarchar" MaxLength="200" />
+    <Property Name="Url" Type="nvarchar" MaxLength="500" />
+    <Property Name="Intro" Type="text" />
+    <Property Name="IndexLetter" Type="nvarchar" MaxLength="2" />
+    <Property Name="CardNumber" Type="nvarchar" MaxLength="50" />
+  </EntityType>
+</Schema>

@@ -1,0 +1,368 @@
+
+ 
+记录时间：2013-11-26 08:28:03,244 
+线程ID:[4] 
+日志级别：  ERROR 
+出错类：We7.CMS.BasePage property: [(null)] - 
+错误描述：Error
+ 
+System.Threading.ThreadAbortException: 正在中止线程。
+   在 System.Threading.Thread.AbortInternal()
+   在 System.Threading.Thread.Abort(Object stateInfo)
+   在 System.Web.HttpResponse.End()
+   在 System.Web.HttpServerUtility.Transfer(String path, Boolean preserveForm)
+   在 System.Web.HttpServerUtility.Transfer(String path)
+   在 We7.CMS.BasePage.HanldeNoPermission()
+   在 We7.CMS.BasePage.CheckPermission()
+   在 We7.CMS.BasePage.OnLoad(EventArgs e)
+
+ 
+记录时间：2013-11-26 09:48:14,237 
+线程ID:[3] 
+日志级别：  ERROR 
+出错类：We7.CMS.BasePage property: [(null)] - 
+错误描述：Error
+ 
+System.Threading.ThreadAbortException: 正在中止线程。
+   在 System.Threading.Thread.AbortInternal()
+   在 System.Threading.Thread.Abort(Object stateInfo)
+   在 System.Web.HttpResponse.End()
+   在 We7.CMS.Web.Admin.Addins.ArticleList.DoChannelType()
+   在 We7.CMS.Web.Admin.Addins.ArticleList.Page_Load(Object sender, EventArgs e)
+   在 System.Web.Util.CalliHelper.EventArgFunctionCaller(IntPtr fp, Object o, Object t, EventArgs e)
+   在 System.Web.Util.CalliEventHandlerDelegateProxy.Callback(Object sender, EventArgs e)
+   在 System.Web.UI.Control.OnLoad(EventArgs e)
+   在 We7.CMS.BasePage.OnLoad(EventArgs e)
+
+ 
+记录时间：2013-11-26 09:48:27,545 
+线程ID:[8] 
+日志级别：  ERROR 
+出错类：We7.CMS.BasePage property: [(null)] - 
+错误描述：Error
+ 
+System.Threading.ThreadAbortException: 正在中止线程。
+   在 System.Threading.Thread.AbortInternal()
+   在 System.Threading.Thread.Abort(Object stateInfo)
+   在 System.Web.HttpResponse.End()
+   在 We7.CMS.Web.Admin.ClickRecordPage.Page_Load(Object sender, EventArgs e)
+   在 System.Web.Util.CalliHelper.EventArgFunctionCaller(IntPtr fp, Object o, Object t, EventArgs e)
+   在 System.Web.Util.CalliEventHandlerDelegateProxy.Callback(Object sender, EventArgs e)
+   在 System.Web.UI.Control.OnLoad(EventArgs e)
+   在 We7.CMS.BasePage.OnLoad(EventArgs e)
+
+ 
+记录时间：2013-11-26 11:12:09,501 
+线程ID:[3] 
+日志级别：  ERROR 
+出错类：We7.CMS.BasePage property: [(null)] - 
+错误描述：Error
+ 
+System.Threading.ThreadAbortException: 正在中止线程。
+   在 System.Threading.Thread.AbortInternal()
+   在 System.Threading.Thread.Abort(Object stateInfo)
+   在 System.Web.HttpResponse.End()
+   在 We7.CMS.Web.Admin.Addins.ArticleList.DoChannelType()
+   在 We7.CMS.Web.Admin.Addins.ArticleList.Page_Load(Object sender, EventArgs e)
+   在 System.Web.Util.CalliHelper.EventArgFunctionCaller(IntPtr fp, Object o, Object t, EventArgs e)
+   在 System.Web.Util.CalliEventHandlerDelegateProxy.Callback(Object sender, EventArgs e)
+   在 System.Web.UI.Control.OnLoad(EventArgs e)
+   在 We7.CMS.BasePage.OnLoad(EventArgs e)
+
+ 
+记录时间：2013-11-26 11:24:48,596 
+线程ID:[8] 
+日志级别：  ERROR 
+出错类：We7.CMS.FrontBasePage property: [(null)] - 
+错误描述：Error
+ 
+System.Threading.ThreadAbortException: 正在中止线程。
+   在 System.Threading.Thread.AbortInternal()
+   在 System.Threading.Thread.Abort(Object stateInfo)
+   在 System.Web.HttpResponse.End()
+   在 System.Web.HttpResponse.Redirect(String url, Boolean endResponse)
+   在 We7.CMS.Web.ShowChannel.Initialize()
+   在 We7.CMS.FrontBasePage.OnLoad(EventArgs e)
+
+ 
+记录时间：2013-11-26 11:27:25,081 
+线程ID:[7] 
+日志级别：  ERROR 
+出错类：We7.CMS.BasePage property: [(null)] - 
+错误描述：Error
+ 
+System.Threading.ThreadAbortException: 正在中止线程。
+   在 System.Threading.Thread.AbortInternal()
+   在 System.Threading.Thread.Abort(Object stateInfo)
+   在 System.Web.HttpResponse.End()
+   在 System.Web.HttpResponse.Redirect(String url, Boolean endResponse)
+   在 We7.CMS.Web.Admin.Addins.ArticleList.DoModel()
+   在 We7.CMS.Web.Admin.Addins.ArticleList.Page_Load(Object sender, EventArgs e)
+   在 System.Web.Util.CalliHelper.EventArgFunctionCaller(IntPtr fp, Object o, Object t, EventArgs e)
+   在 System.Web.Util.CalliEventHandlerDelegateProxy.Callback(Object sender, EventArgs e)
+   在 System.Web.UI.Control.OnLoad(EventArgs e)
+   在 We7.CMS.BasePage.OnLoad(EventArgs e)
+
+ 
+记录时间：2013-11-26 11:32:30,415 
+线程ID:[3] 
+日志级别：  ERROR 
+出错类：We7.CMS.BasePage property: [(null)] - 
+错误描述：Error
+ 
+System.Threading.ThreadAbortException: 正在中止线程。
+   在 System.Threading.Thread.AbortInternal()
+   在 System.Threading.Thread.Abort(Object stateInfo)
+   在 System.Web.HttpResponse.End()
+   在 System.Web.HttpResponse.Redirect(String url, Boolean endResponse)
+   在 We7.CMS.Web.Admin.Addins.ArticleList.DoModel()
+   在 We7.CMS.Web.Admin.Addins.ArticleList.Page_Load(Object sender, EventArgs e)
+   在 System.Web.Util.CalliHelper.EventArgFunctionCaller(IntPtr fp, Object o, Object t, EventArgs e)
+   在 System.Web.Util.CalliEventHandlerDelegateProxy.Callback(Object sender, EventArgs e)
+   在 System.Web.UI.Control.OnLoad(EventArgs e)
+   在 We7.CMS.BasePage.OnLoad(EventArgs e)
+
+ 
+记录时间：2013-11-26 11:38:25,393 
+线程ID:[4] 
+日志级别：  ERROR 
+出错类：We7.CMS.BasePage property: [(null)] - 
+错误描述：Error
+ 
+System.Threading.ThreadAbortException: 正在中止线程。
+   在 System.Threading.Thread.AbortInternal()
+   在 System.Threading.Thread.Abort(Object stateInfo)
+   在 System.Web.HttpResponse.End()
+   在 System.Web.HttpResponse.Redirect(String url, Boolean endResponse)
+   在 We7.CMS.Web.Admin.Addins.ArticleList.DoModel()
+   在 We7.CMS.Web.Admin.Addins.ArticleList.Page_Load(Object sender, EventArgs e)
+   在 System.Web.Util.CalliHelper.EventArgFunctionCaller(IntPtr fp, Object o, Object t, EventArgs e)
+   在 System.Web.Util.CalliEventHandlerDelegateProxy.Callback(Object sender, EventArgs e)
+   在 System.Web.UI.Control.OnLoad(EventArgs e)
+   在 We7.CMS.BasePage.OnLoad(EventArgs e)
+
+ 
+记录时间：2013-11-26 14:36:52,625 
+线程ID:[8] 
+日志级别：  ERROR 
+出错类：We7.CMS.BasePage property: [(null)] - 
+错误描述：Error
+ 
+System.Threading.ThreadAbortException: 正在中止线程。
+   在 System.Threading.Thread.AbortInternal()
+   在 System.Threading.Thread.Abort(Object stateInfo)
+   在 System.Web.HttpResponse.End()
+   在 System.Web.HttpResponse.Redirect(String url, Boolean endResponse)
+   在 We7.CMS.Web.Admin.Addins.ArticleList.DoModel()
+   在 We7.CMS.Web.Admin.Addins.ArticleList.Page_Load(Object sender, EventArgs e)
+   在 System.Web.Util.CalliHelper.EventArgFunctionCaller(IntPtr fp, Object o, Object t, EventArgs e)
+   在 System.Web.Util.CalliEventHandlerDelegateProxy.Callback(Object sender, EventArgs e)
+   在 System.Web.UI.Control.OnLoad(EventArgs e)
+   在 We7.CMS.BasePage.OnLoad(EventArgs e)
+
+ 
+记录时间：2013-11-26 15:06:59,521 
+线程ID:[8] 
+日志级别：  ERROR 
+出错类：We7.CMS.BasePage property: [(null)] - 
+错误描述：Error
+ 
+System.Threading.ThreadAbortException: 正在中止线程。
+   在 System.Threading.Thread.AbortInternal()
+   在 System.Threading.Thread.Abort(Object stateInfo)
+   在 System.Web.HttpResponse.End()
+   在 System.Web.HttpResponse.Redirect(String url, Boolean endResponse)
+   在 We7.CMS.Web.Admin.Addins.ArticleList.DoModel()
+   在 We7.CMS.Web.Admin.Addins.ArticleList.Page_Load(Object sender, EventArgs e)
+   在 System.Web.Util.CalliHelper.EventArgFunctionCaller(IntPtr fp, Object o, Object t, EventArgs e)
+   在 System.Web.Util.CalliEventHandlerDelegateProxy.Callback(Object sender, EventArgs e)
+   在 System.Web.UI.Control.OnLoad(EventArgs e)
+   在 We7.CMS.BasePage.OnLoad(EventArgs e)
+
+ 
+记录时间：2013-11-26 15:07:11,441 
+线程ID:[6] 
+日志级别：  ERROR 
+出错类：We7.CMS.BasePage property: [(null)] - 
+错误描述：Error
+ 
+System.Threading.ThreadAbortException: 正在中止线程。
+   在 System.Threading.Thread.AbortInternal()
+   在 System.Threading.Thread.Abort(Object stateInfo)
+   在 System.Web.HttpResponse.End()
+   在 System.Web.HttpResponse.Redirect(String url, Boolean endResponse)
+   在 We7.CMS.Web.Admin.Addins.ArticleList.DoModel()
+   在 We7.CMS.Web.Admin.Addins.ArticleList.Page_Load(Object sender, EventArgs e)
+   在 System.Web.Util.CalliHelper.EventArgFunctionCaller(IntPtr fp, Object o, Object t, EventArgs e)
+   在 System.Web.Util.CalliEventHandlerDelegateProxy.Callback(Object sender, EventArgs e)
+   在 System.Web.UI.Control.OnLoad(EventArgs e)
+   在 We7.CMS.BasePage.OnLoad(EventArgs e)
+
+ 
+记录时间：2013-11-26 15:10:24,227 
+线程ID:[3] 
+日志级别：  ERROR 
+出错类：We7.CMS.BasePage property: [(null)] - 
+错误描述：Error
+ 
+System.Threading.ThreadAbortException: 正在中止线程。
+   在 System.Threading.Thread.AbortInternal()
+   在 System.Threading.Thread.Abort(Object stateInfo)
+   在 System.Web.HttpResponse.End()
+   在 System.Web.HttpResponse.Redirect(String url, Boolean endResponse)
+   在 We7.CMS.Web.Admin.Addins.ArticleList.DoModel()
+   在 We7.CMS.Web.Admin.Addins.ArticleList.Page_Load(Object sender, EventArgs e)
+   在 System.Web.Util.CalliHelper.EventArgFunctionCaller(IntPtr fp, Object o, Object t, EventArgs e)
+   在 System.Web.Util.CalliEventHandlerDelegateProxy.Callback(Object sender, EventArgs e)
+   在 System.Web.UI.Control.OnLoad(EventArgs e)
+   在 We7.CMS.BasePage.OnLoad(EventArgs e)
+
+ 
+记录时间：2013-11-26 15:10:40,309 
+线程ID:[16] 
+日志级别：  ERROR 
+出错类：We7.CMS.BasePage property: [(null)] - 
+错误描述：Error
+ 
+System.Threading.ThreadAbortException: 正在中止线程。
+   在 System.Threading.Thread.AbortInternal()
+   在 System.Threading.Thread.Abort(Object stateInfo)
+   在 System.Web.HttpResponse.End()
+   在 System.Web.HttpResponse.Redirect(String url, Boolean endResponse)
+   在 We7.CMS.Web.Admin.Addins.ArticleList.DoModel()
+   在 We7.CMS.Web.Admin.Addins.ArticleList.Page_Load(Object sender, EventArgs e)
+   在 System.Web.Util.CalliHelper.EventArgFunctionCaller(IntPtr fp, Object o, Object t, EventArgs e)
+   在 System.Web.Util.CalliEventHandlerDelegateProxy.Callback(Object sender, EventArgs e)
+   在 System.Web.UI.Control.OnLoad(EventArgs e)
+   在 We7.CMS.BasePage.OnLoad(EventArgs e)
+
+ 
+记录时间：2013-11-26 15:42:15,145 
+线程ID:[7] 
+日志级别：  ERROR 
+出错类：We7.CMS.BasePage property: [(null)] - 
+错误描述：Error
+ 
+System.Threading.ThreadAbortException: 正在中止线程。
+   在 System.Threading.Thread.AbortInternal()
+   在 System.Threading.Thread.Abort(Object stateInfo)
+   在 System.Web.HttpResponse.End()
+   在 We7.CMS.Web.Admin.ClickRecordPage.Page_Load(Object sender, EventArgs e)
+   在 System.Web.Util.CalliHelper.EventArgFunctionCaller(IntPtr fp, Object o, Object t, EventArgs e)
+   在 System.Web.Util.CalliEventHandlerDelegateProxy.Callback(Object sender, EventArgs e)
+   在 System.Web.UI.Control.OnLoad(EventArgs e)
+   在 We7.CMS.BasePage.OnLoad(EventArgs e)
+
+ 
+记录时间：2013-11-26 15:47:29,569 
+线程ID:[3] 
+日志级别：  ERROR 
+出错类：We7.CMS.BasePage property: [(null)] - 
+错误描述：Error
+ 
+System.Threading.ThreadAbortException: 正在中止线程。
+   在 System.Threading.Thread.AbortInternal()
+   在 System.Threading.Thread.Abort(Object stateInfo)
+   在 System.Web.HttpResponse.End()
+   在 System.Web.HttpResponse.Redirect(String url, Boolean endResponse)
+   在 We7.CMS.Web.Admin.Addins.ArticleList.DoModel()
+   在 We7.CMS.Web.Admin.Addins.ArticleList.Page_Load(Object sender, EventArgs e)
+   在 System.Web.Util.CalliHelper.EventArgFunctionCaller(IntPtr fp, Object o, Object t, EventArgs e)
+   在 System.Web.Util.CalliEventHandlerDelegateProxy.Callback(Object sender, EventArgs e)
+   在 System.Web.UI.Control.OnLoad(EventArgs e)
+   在 We7.CMS.BasePage.OnLoad(EventArgs e)
+
+ 
+记录时间：2013-11-26 15:48:36,147 
+线程ID:[16] 
+日志级别：  ERROR 
+出错类：We7.CMS.BasePage property: [(null)] - 
+错误描述：Error
+ 
+System.Threading.ThreadAbortException: 正在中止线程。
+   在 System.Threading.Thread.AbortInternal()
+   在 System.Threading.Thread.Abort(Object stateInfo)
+   在 System.Web.HttpResponse.End()
+   在 System.Web.HttpResponse.Redirect(String url, Boolean endResponse)
+   在 We7.CMS.Web.Admin.Addins.ArticleList.DoModel()
+   在 We7.CMS.Web.Admin.Addins.ArticleList.Page_Load(Object sender, EventArgs e)
+   在 System.Web.Util.CalliHelper.EventArgFunctionCaller(IntPtr fp, Object o, Object t, EventArgs e)
+   在 System.Web.Util.CalliEventHandlerDelegateProxy.Callback(Object sender, EventArgs e)
+   在 System.Web.UI.Control.OnLoad(EventArgs e)
+   在 We7.CMS.BasePage.OnLoad(EventArgs e)
+
+ 
+记录时间：2013-11-26 16:04:51,239 
+线程ID:[16] 
+日志级别：  ERROR 
+出错类：We7.CMS.BasePage property: [(null)] - 
+错误描述：Error
+ 
+System.Threading.ThreadAbortException: 正在中止线程。
+   在 System.Threading.Thread.AbortInternal()
+   在 System.Threading.Thread.Abort(Object stateInfo)
+   在 System.Web.HttpResponse.End()
+   在 System.Web.HttpResponse.Redirect(String url, Boolean endResponse)
+   在 We7.CMS.Web.Admin.Addins.ArticleList.DoModel()
+   在 We7.CMS.Web.Admin.Addins.ArticleList.Page_Load(Object sender, EventArgs e)
+   在 System.Web.Util.CalliHelper.EventArgFunctionCaller(IntPtr fp, Object o, Object t, EventArgs e)
+   在 System.Web.Util.CalliEventHandlerDelegateProxy.Callback(Object sender, EventArgs e)
+   在 System.Web.UI.Control.OnLoad(EventArgs e)
+   在 We7.CMS.BasePage.OnLoad(EventArgs e)
+
+ 
+记录时间：2013-11-26 16:12:07,752 
+线程ID:[3] 
+日志级别：  ERROR 
+出错类：We7.CMS.BasePage property: [(null)] - 
+错误描述：Error
+ 
+System.Threading.ThreadAbortException: 正在中止线程。
+   在 System.Threading.Thread.AbortInternal()
+   在 System.Threading.Thread.Abort(Object stateInfo)
+   在 System.Web.HttpResponse.End()
+   在 System.Web.HttpResponse.Redirect(String url, Boolean endResponse)
+   在 We7.CMS.Web.Admin.Addins.ArticleList.DoModel()
+   在 We7.CMS.Web.Admin.Addins.ArticleList.Page_Load(Object sender, EventArgs e)
+   在 System.Web.Util.CalliHelper.EventArgFunctionCaller(IntPtr fp, Object o, Object t, EventArgs e)
+   在 System.Web.Util.CalliEventHandlerDelegateProxy.Callback(Object sender, EventArgs e)
+   在 System.Web.UI.Control.OnLoad(EventArgs e)
+   在 We7.CMS.BasePage.OnLoad(EventArgs e)
+
+ 
+记录时间：2013-11-26 16:12:27,944 
+线程ID:[16] 
+日志级别：  ERROR 
+出错类：We7.CMS.BasePage property: [(null)] - 
+错误描述：Error
+ 
+System.Threading.ThreadAbortException: 正在中止线程。
+   在 System.Threading.Thread.AbortInternal()
+   在 System.Threading.Thread.Abort(Object stateInfo)
+   在 System.Web.HttpResponse.End()
+   在 System.Web.HttpResponse.Redirect(String url, Boolean endResponse)
+   在 We7.CMS.Web.Admin.Addins.ArticleList.DoModel()
+   在 We7.CMS.Web.Admin.Addins.ArticleList.Page_Load(Object sender, EventArgs e)
+   在 System.Web.Util.CalliHelper.EventArgFunctionCaller(IntPtr fp, Object o, Object t, EventArgs e)
+   在 System.Web.Util.CalliEventHandlerDelegateProxy.Callback(Object sender, EventArgs e)
+   在 System.Web.UI.Control.OnLoad(EventArgs e)
+   在 We7.CMS.BasePage.OnLoad(EventArgs e)
+
+ 
+记录时间：2013-11-26 16:46:41,379 
+线程ID:[7] 
+日志级别：  ERROR 
+出错类：We7.CMS.BasePage property: [(null)] - 
+错误描述：Error
+ 
+System.Threading.ThreadAbortException: 正在中止线程。
+   在 System.Threading.Thread.AbortInternal()
+   在 System.Threading.Thread.Abort(Object stateInfo)
+   在 System.Web.HttpResponse.End()
+   在 System.Web.HttpResponse.Redirect(String url, Boolean endResponse)
+   在 We7.CMS.Web.Admin.Addins.ArticleList.DoModel()
+   在 We7.CMS.Web.Admin.Addins.ArticleList.Page_Load(Object sender, EventArgs e)
+   在 System.Web.Util.CalliHelper.EventArgFunctionCaller(IntPtr fp, Object o, Object t, EventArgs e)
+   在 System.Web.Util.CalliEventHandlerDelegateProxy.Callback(Object sender, EventArgs e)
+   在 System.Web.UI.Control.OnLoad(EventArgs e)
+   在 We7.CMS.BasePage.OnLoad(EventArgs e)

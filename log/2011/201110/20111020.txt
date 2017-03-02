@@ -1,0 +1,174 @@
+
+ 
+记录时间：2011-10-20 09:25:22,368 
+线程ID:[6] 
+日志级别：  ERROR 
+出错类：We7.CMS.FrontBasePage property: [(null)] - 
+错误描述：Error
+ 
+System.Threading.ThreadAbortException: 正在中止线程。
+   在 System.Threading.Thread.AbortInternal()
+   在 System.Threading.Thread.Abort(Object stateInfo)
+   在 System.Web.HttpResponse.End()
+   在 System.Web.HttpResponse.Redirect(String url, Boolean endResponse)
+   在 We7.CMS.Web.ShowChannel.Initialize()
+   在 We7.CMS.FrontBasePage.OnLoad(EventArgs e)
+
+ 
+记录时间：2011-10-20 09:45:44,562 
+线程ID:[6] 
+日志级别：  ERROR 
+出错类：We7.CMS.BasePage property: [(null)] - 
+错误描述：Error
+ 
+System.Threading.ThreadAbortException: 正在中止线程。
+   在 System.Threading.Thread.AbortInternal()
+   在 System.Threading.Thread.Abort(Object stateInfo)
+   在 System.Web.HttpResponse.End()
+   在 System.Web.HttpServerUtility.Transfer(String path, Boolean preserveForm)
+   在 System.Web.HttpServerUtility.Transfer(String path)
+   在 We7.CMS.BasePage.HanldeNoPermission()
+   在 We7.CMS.BasePage.CheckPermission()
+   在 We7.CMS.BasePage.OnLoad(EventArgs e)
+
+ 
+记录时间：2011-10-20 09:45:44,882 
+线程ID:[3] 
+日志级别：  ERROR 
+出错类：We7.CMS.Web.Global property: [(null)] - 
+错误描述：Error
+ 
+System.Web.HttpUnhandledException: 引发类型为“System.Web.HttpUnhandledException”的异常。 ---> System.Web.HttpException: 与远程主机通信时发生错误。错误代码是 0x80070057。
+   在 System.Web.Hosting.ISAPIWorkerRequestInProcForIIS6.FlushCore(Byte[] status, Byte[] header, Int32 keepConnected, Int32 totalBodySize, Int32 numBodyFragments, IntPtr[] bodyFragments, Int32[] bodyFragmentLengths, Int32 doneWithSession, Int32 finalStatus, Boolean& async)
+   在 System.Web.Hosting.ISAPIWorkerRequest.FlushCachedResponse(Boolean isFinal)
+   在 System.Web.Hosting.ISAPIWorkerRequest.FlushResponse(Boolean finalFlush)
+   在 System.Web.HttpResponse.Flush(Boolean finalFlush)
+   在 System.Web.HttpResponse.Flush()
+   在 System.Web.HttpWriter.Write(String s)
+   在 System.Web.UI.HtmlTextWriter.Write(String s)
+   在 System.Web.UI.LiteralControl.Render(HtmlTextWriter output)
+   在 System.Web.UI.Control.RenderControlInternal(HtmlTextWriter writer, ControlAdapter adapter)
+   在 System.Web.UI.Control.RenderControl(HtmlTextWriter writer, ControlAdapter adapter)
+   在 System.Web.UI.Control.RenderControl(HtmlTextWriter writer)
+   在 System.Web.UI.Control.RenderChildrenInternal(HtmlTextWriter writer, ICollection children)
+   在 System.Web.UI.Control.RenderChildren(HtmlTextWriter writer)
+   在 System.Web.UI.Page.Render(HtmlTextWriter writer)
+   在 System.Web.UI.Control.RenderControlInternal(HtmlTextWriter writer, ControlAdapter adapter)
+   在 System.Web.UI.Control.RenderControl(HtmlTextWriter writer, ControlAdapter adapter)
+   在 System.Web.UI.Control.RenderControl(HtmlTextWriter writer)
+   在 System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+   --- 内部异常堆栈跟踪的结尾 ---
+   在 System.Web.UI.Page.HandleError(Exception e)
+   在 System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+   在 System.Web.UI.Page.ProcessRequest(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+   在 System.Web.UI.Page.ProcessRequest()
+   在 System.Web.UI.Page.ProcessRequestWithNoAssert(HttpContext context)
+   在 System.Web.UI.Page.ProcessRequest(HttpContext context)
+   在 ASP.go_attachmentdownload_aspx.ProcessRequest(HttpContext context) 位置 c:\Windows\Microsoft.NET\Framework\v2.0.50727\Temporary ASP.NET Files\root\571acd87\da186445\App_Web_zt6ed_8v.3.cs:行号 0
+   在 System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   在 System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+
+ 
+记录时间：2011-10-20 10:43:52,199 
+线程ID:[6] 
+日志级别：  ERROR 
+出错类：We7.CMS.BasePage property: [(null)] - 
+错误描述：Error
+ 
+System.Threading.ThreadAbortException: 正在中止线程。
+   在 System.Threading.Thread.AbortInternal()
+   在 System.Threading.Thread.Abort(Object stateInfo)
+   在 System.Web.HttpResponse.End()
+   在 System.Web.HttpServerUtility.Transfer(String path, Boolean preserveForm)
+   在 System.Web.HttpServerUtility.Transfer(String path)
+   在 We7.CMS.BasePage.HanldeNoPermission()
+   在 We7.CMS.BasePage.CheckPermission()
+   在 We7.CMS.BasePage.OnLoad(EventArgs e)
+
+ 
+记录时间：2011-10-20 10:45:25,066 
+线程ID:[3] 
+日志级别：  ERROR 
+出错类：We7.CMS.Web.Global property: [(null)] - 
+错误描述：Error
+ 
+System.Web.HttpUnhandledException: 引发类型为“System.Web.HttpUnhandledException”的异常。 ---> System.Exception: 对路径“E:\Work\DotNet\SOE\Config\general.config”的访问被拒绝。
+   在 We7.CMS.Web.Admin.VisualTemplate.SelectTemplate.Save(Object sender, EventArgs e)
+   在 System.Web.UI.WebControls.Button.OnClick(EventArgs e)
+   在 System.Web.UI.WebControls.Button.RaisePostBackEvent(String eventArgument)
+   在 System.Web.UI.WebControls.Button.System.Web.UI.IPostBackEventHandler.RaisePostBackEvent(String eventArgument)
+   在 System.Web.UI.Page.RaisePostBackEvent(IPostBackEventHandler sourceControl, String eventArgument)
+   在 System.Web.UI.Page.RaisePostBackEvent(NameValueCollection postData)
+   在 System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+   --- 内部异常堆栈跟踪的结尾 ---
+   在 System.Web.UI.Page.HandleError(Exception e)
+   在 System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+   在 System.Web.UI.Page.ProcessRequest(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+   在 System.Web.UI.Page.ProcessRequest()
+   在 System.Web.UI.Page.ProcessRequestWithNoAssert(HttpContext context)
+   在 System.Web.UI.Page.ProcessRequest(HttpContext context)
+   在 ASP.admin_visualtemplate_selecttemplate_aspx.ProcessRequest(HttpContext context) 位置 c:\Windows\Microsoft.NET\Framework\v2.0.50727\Temporary ASP.NET Files\root\571acd87\da186445\App_Web_1vi-fgmr.6.cs:行号 0
+   在 System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   在 System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+
+ 
+记录时间：2011-10-20 10:59:48,407 
+线程ID:[3] 
+日志级别：  ERROR 
+出错类：We7.CMS.Web.Global property: [(null)] - 
+错误描述：Error
+ 
+System.Web.HttpUnhandledException: 引发类型为“System.Web.HttpUnhandledException”的异常。 ---> System.UnauthorizedAccessException: 对路径“E:\Work\DotNet\SOE\_skins\soe.map”的访问被拒绝。
+   在 System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   在 System.IO.File.Delete(String path)
+   在 We7.CMS.TemplateMap.SaveToMapFile(ArrayList maps, String file)
+   在 We7.CMS.TemplateMap.SaveToTemplateMapFile(ChannelTemplateGroup cg, String channelUrl, String file)
+   在 We7.CMS.Web.Admin.controls.Channel_template.SaveToMapFile()
+   在 We7.CMS.Web.Admin.controls.Channel_template.SaveButton_ServerClick(Object sender, EventArgs e)
+   在 System.Web.UI.HtmlControls.HtmlInputButton.OnServerClick(EventArgs e)
+   在 System.Web.UI.HtmlControls.HtmlInputButton.RaisePostBackEvent(String eventArgument)
+   在 System.Web.UI.HtmlControls.HtmlInputButton.System.Web.UI.IPostBackEventHandler.RaisePostBackEvent(String eventArgument)
+   在 System.Web.UI.Page.RaisePostBackEvent(IPostBackEventHandler sourceControl, String eventArgument)
+   在 System.Web.UI.Page.RaisePostBackEvent(NameValueCollection postData)
+   在 System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+   --- 内部异常堆栈跟踪的结尾 ---
+   在 System.Web.UI.Page.HandleError(Exception e)
+   在 System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+   在 System.Web.UI.Page.ProcessRequest(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+   在 System.Web.UI.Page.ProcessRequest()
+   在 System.Web.UI.Page.ProcessRequestWithNoAssert(HttpContext context)
+   在 System.Web.UI.Page.ProcessRequest(HttpContext context)
+   在 ASP.admin_channeledit_aspx.ProcessRequest(HttpContext context) 位置 c:\Windows\Microsoft.NET\Framework\v2.0.50727\Temporary ASP.NET Files\root\571acd87\da186445\App_Web_apju6d6i.2.cs:行号 0
+   在 System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   在 System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+
+ 
+记录时间：2011-10-20 11:00:00,097 
+线程ID:[3] 
+日志级别：  ERROR 
+出错类：We7.CMS.Web.Global property: [(null)] - 
+错误描述：Error
+ 
+System.Web.HttpUnhandledException: 引发类型为“System.Web.HttpUnhandledException”的异常。 ---> System.UnauthorizedAccessException: 对路径“E:\Work\DotNet\SOE\_skins\soe.map”的访问被拒绝。
+   在 System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   在 System.IO.File.Delete(String path)
+   在 We7.CMS.TemplateMap.SaveToMapFile(ArrayList maps, String file)
+   在 We7.CMS.TemplateMap.SaveToTemplateMapFile(ChannelTemplateGroup cg, String channelUrl, String file)
+   在 We7.CMS.Web.Admin.controls.Channel_template.SaveToMapFile()
+   在 We7.CMS.Web.Admin.controls.Channel_template.SaveButton_ServerClick(Object sender, EventArgs e)
+   在 System.Web.UI.HtmlControls.HtmlInputButton.OnServerClick(EventArgs e)
+   在 System.Web.UI.HtmlControls.HtmlInputButton.RaisePostBackEvent(String eventArgument)
+   在 System.Web.UI.HtmlControls.HtmlInputButton.System.Web.UI.IPostBackEventHandler.RaisePostBackEvent(String eventArgument)
+   在 System.Web.UI.Page.RaisePostBackEvent(IPostBackEventHandler sourceControl, String eventArgument)
+   在 System.Web.UI.Page.RaisePostBackEvent(NameValueCollection postData)
+   在 System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+   --- 内部异常堆栈跟踪的结尾 ---
+   在 System.Web.UI.Page.HandleError(Exception e)
+   在 System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+   在 System.Web.UI.Page.ProcessRequest(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+   在 System.Web.UI.Page.ProcessRequest()
+   在 System.Web.UI.Page.ProcessRequestWithNoAssert(HttpContext context)
+   在 System.Web.UI.Page.ProcessRequest(HttpContext context)
+   在 ASP.admin_channeledit_aspx.ProcessRequest(HttpContext context) 位置 c:\Windows\Microsoft.NET\Framework\v2.0.50727\Temporary ASP.NET Files\root\571acd87\da186445\App_Web_apju6d6i.2.cs:行号 0
+   在 System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   在 System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)

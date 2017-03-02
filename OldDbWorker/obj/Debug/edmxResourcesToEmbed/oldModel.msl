@@ -1,0 +1,1400 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="urn:schemas-microsoft-com:windows:storage:mapping:CS">
+  <EntityContainerMapping StorageEntityContainer="OldWiseModelStoreContainer" CdmEntityContainer="OldWiseEntities">
+    <EntitySetMapping Name="AdMenu">
+      <EntityTypeMapping TypeName="OldWiseModel.AdMenu">
+        <MappingFragment StoreEntitySet="AdMenu">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="MenuName" ColumnName="MenuName" />
+          <ScalarProperty Name="MenuID" ColumnName="MenuID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="admin">
+      <EntityTypeMapping TypeName="OldWiseModel.admin">
+        <MappingFragment StoreEntitySet="admin">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="name" ColumnName="name" />
+          <ScalarProperty Name="password" ColumnName="password" />
+          <ScalarProperty Name="telephone" ColumnName="telephone" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Advertise">
+      <EntityTypeMapping TypeName="OldWiseModel.Advertise">
+        <MappingFragment StoreEntitySet="Advertise">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="AdUrl" ColumnName="AdUrl" />
+          <ScalarProperty Name="ImgUrl" ColumnName="ImgUrl" />
+          <ScalarProperty Name="AdType" ColumnName="AdType" />
+          <ScalarProperty Name="Click" ColumnName="Click" />
+          <ScalarProperty Name="AdPage" ColumnName="AdPage" />
+          <ScalarProperty Name="AdSort" ColumnName="AdSort" />
+          <ScalarProperty Name="AdSeat" ColumnName="AdSeat" />
+          <ScalarProperty Name="AdBool" ColumnName="AdBool" />
+          <ScalarProperty Name="StartDate" ColumnName="StartDate" />
+          <ScalarProperty Name="EndDate" ColumnName="EndDate" />
+          <ScalarProperty Name="Remarks" ColumnName="Remarks" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Counter">
+      <EntityTypeMapping TypeName="OldWiseModel.Counter">
+        <MappingFragment StoreEntitySet="Counter">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="IPAddr" ColumnName="IPAddr" />
+          <ScalarProperty Name="FromHttp" ColumnName="FromHttp" />
+          <ScalarProperty Name="GoDate" ColumnName="GoDate" />
+          <ScalarProperty Name="GoYear" ColumnName="GoYear" />
+          <ScalarProperty Name="GoMonth" ColumnName="GoMonth" />
+          <ScalarProperty Name="GoDay" ColumnName="GoDay" />
+          <ScalarProperty Name="GoTime" ColumnName="GoTime" />
+          <ScalarProperty Name="ToPage" ColumnName="ToPage" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="counter2012">
+      <EntityTypeMapping TypeName="OldWiseModel.counter2012">
+        <MappingFragment StoreEntitySet="counter2012">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="IPAddr" ColumnName="IPAddr" />
+          <ScalarProperty Name="FromHttp" ColumnName="FromHttp" />
+          <ScalarProperty Name="GoDate" ColumnName="GoDate" />
+          <ScalarProperty Name="GoYear" ColumnName="GoYear" />
+          <ScalarProperty Name="GoMonth" ColumnName="GoMonth" />
+          <ScalarProperty Name="GoDay" ColumnName="GoDay" />
+          <ScalarProperty Name="GoTime" ColumnName="GoTime" />
+          <ScalarProperty Name="ToPage" ColumnName="ToPage" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="CounterMenu">
+      <EntityTypeMapping TypeName="OldWiseModel.CounterMenu">
+        <MappingFragment StoreEntitySet="CounterMenu">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="MenuName" ColumnName="MenuName" />
+          <ScalarProperty Name="MenuID" ColumnName="MenuID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Download">
+      <EntityTypeMapping TypeName="OldWiseModel.Download">
+        <MappingFragment StoreEntitySet="Download">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="Title" ColumnName="Title" />
+          <ScalarProperty Name="TitleEn" ColumnName="TitleEn" />
+          <ScalarProperty Name="Content" ColumnName="Content" />
+          <ScalarProperty Name="ContentEn" ColumnName="ContentEn" />
+          <ScalarProperty Name="url" ColumnName="url" />
+          <ScalarProperty Name="UpDateTime" ColumnName="UpDateTime" />
+          <ScalarProperty Name="Counter" ColumnName="Counter" />
+          <ScalarProperty Name="CounterEn" ColumnName="CounterEn" />
+          <ScalarProperty Name="TypeID" ColumnName="TypeID" />
+          <ScalarProperty Name="TypeIDEn" ColumnName="TypeIDEn" />
+          <ScalarProperty Name="newsType" ColumnName="newsType" />
+          <ScalarProperty Name="code" ColumnName="code" />
+          <ScalarProperty Name="er" ColumnName="er" />
+          <ScalarProperty Name="num" ColumnName="num" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Download_SMU">
+      <EntityTypeMapping TypeName="OldWiseModel.Download_SMU">
+        <MappingFragment StoreEntitySet="Download_SMU">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="Title" ColumnName="Title" />
+          <ScalarProperty Name="Content" ColumnName="Content" />
+          <ScalarProperty Name="url" ColumnName="url" />
+          <ScalarProperty Name="UpDateTime" ColumnName="UpDateTime" />
+          <ScalarProperty Name="Counter" ColumnName="Counter" />
+          <ScalarProperty Name="TypeID" ColumnName="TypeID" />
+          <ScalarProperty Name="newsType" ColumnName="newsType" />
+          <ScalarProperty Name="er" ColumnName="er" />
+          <ScalarProperty Name="num" ColumnName="num" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="DownloadType">
+      <EntityTypeMapping TypeName="OldWiseModel.DownloadType">
+        <MappingFragment StoreEntitySet="DownloadType">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="BigID" ColumnName="BigID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="DownloadType_SMU">
+      <EntityTypeMapping TypeName="OldWiseModel.DownloadType_SMU">
+        <MappingFragment StoreEntitySet="DownloadType_SMU">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="Grade" ColumnName="Grade" />
+          <ScalarProperty Name="Status" ColumnName="Status" />
+          <ScalarProperty Name="Teacher" ColumnName="Teacher" />
+          <ScalarProperty Name="TA" ColumnName="TA" />
+          <ScalarProperty Name="Remark" ColumnName="Remark" />
+          <ScalarProperty Name="UpDateTime" ColumnName="UpDateTime" />
+          <ScalarProperty Name="BigID" ColumnName="BigID" />
+          <ScalarProperty Name="Password_course" ColumnName="Password_course" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="DownloadTypeEn">
+      <EntityTypeMapping TypeName="OldWiseModel.DownloadTypeEn">
+        <MappingFragment StoreEntitySet="DownloadTypeEn">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="BigId" ColumnName="BigId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="dtproperties">
+      <EntityTypeMapping TypeName="OldWiseModel.dtproperties">
+        <MappingFragment StoreEntitySet="dtproperties">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="objectid" ColumnName="objectid" />
+          <ScalarProperty Name="property" ColumnName="property" />
+          <ScalarProperty Name="value" ColumnName="value" />
+          <ScalarProperty Name="uvalue" ColumnName="uvalue" />
+          <ScalarProperty Name="lvalue" ColumnName="lvalue" />
+          <ScalarProperty Name="version" ColumnName="version" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Faculty">
+      <EntityTypeMapping TypeName="OldWiseModel.Faculty">
+        <MappingFragment StoreEntitySet="Faculty">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="EnName" ColumnName="EnName" />
+          <ScalarProperty Name="Office" ColumnName="Office" />
+          <ScalarProperty Name="EnOffice" ColumnName="EnOffice" />
+          <ScalarProperty Name="Tel" ColumnName="Tel" />
+          <ScalarProperty Name="Email" ColumnName="Email" />
+          <ScalarProperty Name="Research" ColumnName="Research" />
+          <ScalarProperty Name="EnResearch" ColumnName="EnResearch" />
+          <ScalarProperty Name="Photo" ColumnName="Photo" />
+          <ScalarProperty Name="Edubak" ColumnName="Edubak" />
+          <ScalarProperty Name="EnEdubak" ColumnName="EnEdubak" />
+          <ScalarProperty Name="Teach" ColumnName="Teach" />
+          <ScalarProperty Name="EnTeach" ColumnName="EnTeach" />
+          <ScalarProperty Name="Web" ColumnName="Web" />
+          <ScalarProperty Name="EnWeb" ColumnName="EnWeb" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="GetUrl">
+      <EntityTypeMapping TypeName="OldWiseModel.GetUrl">
+        <MappingFragment StoreEntitySet="GetUrl">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="detail" ColumnName="detail" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="imwiseUser">
+      <EntityTypeMapping TypeName="OldWiseModel.imwiseUser">
+        <MappingFragment StoreEntitySet="imwiseUser">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="email" ColumnName="email" />
+          <ScalarProperty Name="fname" ColumnName="fname" />
+          <ScalarProperty Name="gname" ColumnName="gname" />
+          <ScalarProperty Name="birth" ColumnName="birth" />
+          <ScalarProperty Name="nationality" ColumnName="nationality" />
+          <ScalarProperty Name="gender" ColumnName="gender" />
+          <ScalarProperty Name="underDegree" ColumnName="underDegree" />
+          <ScalarProperty Name="college" ColumnName="college" />
+          <ScalarProperty Name="major" ColumnName="major" />
+          <ScalarProperty Name="howknow" ColumnName="howknow" />
+          <ScalarProperty Name="whichApply" ColumnName="whichApply" />
+          <ScalarProperty Name="haveOnline" ColumnName="haveOnline" />
+          <ScalarProperty Name="havePost" ColumnName="havePost" />
+          <ScalarProperty Name="addCom" ColumnName="addCom" />
+          <ScalarProperty Name="regtime" ColumnName="regtime" />
+          <ScalarProperty Name="other" ColumnName="other" />
+          <ScalarProperty Name="del" ColumnName="del" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ipaddrr">
+      <EntityTypeMapping TypeName="OldWiseModel.ipaddrr">
+        <MappingFragment StoreEntitySet="ipaddrr">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="IPAddr" ColumnName="IPAddr" />
+          <ScalarProperty Name="FromHttp" ColumnName="FromHttp" />
+          <ScalarProperty Name="GoDate" ColumnName="GoDate" />
+          <ScalarProperty Name="GoYear" ColumnName="GoYear" />
+          <ScalarProperty Name="GoMonth" ColumnName="GoMonth" />
+          <ScalarProperty Name="GoDay" ColumnName="GoDay" />
+          <ScalarProperty Name="GoTime" ColumnName="GoTime" />
+          <ScalarProperty Name="ToPage" ColumnName="ToPage" />
+          <ScalarProperty Name="place" ColumnName="place" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="link">
+      <EntityTypeMapping TypeName="OldWiseModel.link">
+        <MappingFragment StoreEntitySet="link">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="name" ColumnName="name" />
+          <ScalarProperty Name="url" ColumnName="url" />
+          <ScalarProperty Name="type" ColumnName="type" />
+          <ScalarProperty Name="types" ColumnName="types" />
+          <ScalarProperty Name="ordernum" ColumnName="ordernum" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Logs">
+      <EntityTypeMapping TypeName="OldWiseModel.Logs">
+        <MappingFragment StoreEntitySet="Logs">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="IPAddr" ColumnName="IPAddr" />
+          <ScalarProperty Name="maName" ColumnName="maName" />
+          <ScalarProperty Name="moving" ColumnName="moving" />
+          <ScalarProperty Name="LogTime" ColumnName="LogTime" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Master">
+      <EntityTypeMapping TypeName="OldWiseModel.Master">
+        <MappingFragment StoreEntitySet="Master">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="UserName" ColumnName="UserName" />
+          <ScalarProperty Name="PassWord" ColumnName="PassWord" />
+          <ScalarProperty Name="Master_Level" ColumnName="Master_Level" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="Dept" ColumnName="Dept" />
+          <ScalarProperty Name="Act" ColumnName="Act" />
+          <ScalarProperty Name="LoginTimes" ColumnName="LoginTimes" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Master_Level">
+      <EntityTypeMapping TypeName="OldWiseModel.Master_Level">
+        <MappingFragment StoreEntitySet="Master_Level">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="Chinese" ColumnName="Chinese" />
+          <ScalarProperty Name="English" ColumnName="English" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Menu">
+      <EntityTypeMapping TypeName="OldWiseModel.Menu">
+        <MappingFragment StoreEntitySet="Menu">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="name" ColumnName="name" />
+          <ScalarProperty Name="content" ColumnName="content" />
+          <ScalarProperty Name="url" ColumnName="url" />
+          <ScalarProperty Name="bigid" ColumnName="bigid" />
+          <ScalarProperty Name="sort" ColumnName="sort" />
+          <ScalarProperty Name="pic" ColumnName="pic" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Menu_IEC">
+      <EntityTypeMapping TypeName="OldWiseModel.Menu_IEC">
+        <MappingFragment StoreEntitySet="Menu_IEC">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="name" ColumnName="name" />
+          <ScalarProperty Name="content" ColumnName="content" />
+          <ScalarProperty Name="url" ColumnName="url" />
+          <ScalarProperty Name="bigid" ColumnName="bigid" />
+          <ScalarProperty Name="sort" ColumnName="sort" />
+          <ScalarProperty Name="pic" ColumnName="pic" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Menu_newIEC">
+      <EntityTypeMapping TypeName="OldWiseModel.Menu_newIEC">
+        <MappingFragment StoreEntitySet="Menu_newIEC">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="name" ColumnName="name" />
+          <ScalarProperty Name="content" ColumnName="content" />
+          <ScalarProperty Name="url" ColumnName="url" />
+          <ScalarProperty Name="bigid" ColumnName="bigid" />
+          <ScalarProperty Name="sort" ColumnName="sort" />
+          <ScalarProperty Name="pic" ColumnName="pic" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Menu_szs">
+      <EntityTypeMapping TypeName="OldWiseModel.Menu_szs">
+        <MappingFragment StoreEntitySet="Menu_szs">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="name" ColumnName="name" />
+          <ScalarProperty Name="content" ColumnName="content" />
+          <ScalarProperty Name="url" ColumnName="url" />
+          <ScalarProperty Name="bigid" ColumnName="bigid" />
+          <ScalarProperty Name="sort" ColumnName="sort" />
+          <ScalarProperty Name="pic" ColumnName="pic" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="MenuEn">
+      <EntityTypeMapping TypeName="OldWiseModel.MenuEn">
+        <MappingFragment StoreEntitySet="MenuEn">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="Url" ColumnName="Url" />
+          <ScalarProperty Name="Content" ColumnName="Content" />
+          <ScalarProperty Name="BigId" ColumnName="BigId" />
+          <ScalarProperty Name="sort" ColumnName="sort" />
+          <ScalarProperty Name="pic" ColumnName="pic" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="newIEC_Student">
+      <EntityTypeMapping TypeName="OldWiseModel.newIEC_Student">
+        <MappingFragment StoreEntitySet="newIEC_Student">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="xuehao" ColumnName="xuehao" />
+          <ScalarProperty Name="name" ColumnName="name" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="News">
+      <EntityTypeMapping TypeName="OldWiseModel.News">
+        <MappingFragment StoreEntitySet="News">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="Title" ColumnName="Title" />
+          <ScalarProperty Name="TitleEn" ColumnName="TitleEn" />
+          <ScalarProperty Name="Content" ColumnName="Content" />
+          <ScalarProperty Name="ContentEn" ColumnName="ContentEn" />
+          <ScalarProperty Name="keys" ColumnName="keys" />
+          <ScalarProperty Name="keysEn" ColumnName="keysEn" />
+          <ScalarProperty Name="Fromto" ColumnName="Fromto" />
+          <ScalarProperty Name="FromtoEn" ColumnName="FromtoEn" />
+          <ScalarProperty Name="BeginTime" ColumnName="BeginTime" />
+          <ScalarProperty Name="UpDateTime" ColumnName="UpDateTime" />
+          <ScalarProperty Name="Counter" ColumnName="Counter" />
+          <ScalarProperty Name="CounterEn" ColumnName="CounterEn" />
+          <ScalarProperty Name="Intro" ColumnName="Intro" />
+          <ScalarProperty Name="IntroEn" ColumnName="IntroEn" />
+          <ScalarProperty Name="TypeID" ColumnName="TypeID" />
+          <ScalarProperty Name="TypeIDEn" ColumnName="TypeIDEn" />
+          <ScalarProperty Name="newsType" ColumnName="newsType" />
+          <ScalarProperty Name="url" ColumnName="url" />
+          <ScalarProperty Name="isindex" ColumnName="isindex" />
+          <ScalarProperty Name="flash" ColumnName="flash" />
+          <ScalarProperty Name="isEDP" ColumnName="isEDP" />
+          <ScalarProperty Name="isKCB" ColumnName="isKCB" />
+          <ScalarProperty Name="isPM" ColumnName="isPM" />
+          <ScalarProperty Name="isBA" ColumnName="isBA" />
+          <ScalarProperty Name="isTJBA" ColumnName="isTJBA" />
+          <ScalarProperty Name="isIE" ColumnName="isIE" />
+          <ScalarProperty Name="isSOE" ColumnName="isSOE" />
+          <ScalarProperty Name="isBZS" ColumnName="isBZS" />
+          <ScalarProperty Name="isSZS" ColumnName="isSZS" />
+          <ScalarProperty Name="isIMWISE" ColumnName="isIMWISE" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="News_ANU">
+      <EntityTypeMapping TypeName="OldWiseModel.News_ANU">
+        <MappingFragment StoreEntitySet="News_ANU">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="Title" ColumnName="Title" />
+          <ScalarProperty Name="TitleEn" ColumnName="TitleEn" />
+          <ScalarProperty Name="Content" ColumnName="Content" />
+          <ScalarProperty Name="ContentEn" ColumnName="ContentEn" />
+          <ScalarProperty Name="keys" ColumnName="keys" />
+          <ScalarProperty Name="keysEn" ColumnName="keysEn" />
+          <ScalarProperty Name="Fromto" ColumnName="Fromto" />
+          <ScalarProperty Name="FromtoEn" ColumnName="FromtoEn" />
+          <ScalarProperty Name="UpDateTime" ColumnName="UpDateTime" />
+          <ScalarProperty Name="Counter" ColumnName="Counter" />
+          <ScalarProperty Name="CounterEn" ColumnName="CounterEn" />
+          <ScalarProperty Name="Intro" ColumnName="Intro" />
+          <ScalarProperty Name="IntroEn" ColumnName="IntroEn" />
+          <ScalarProperty Name="TypeID" ColumnName="TypeID" />
+          <ScalarProperty Name="TypeIDEn" ColumnName="TypeIDEn" />
+          <ScalarProperty Name="newsType" ColumnName="newsType" />
+          <ScalarProperty Name="url" ColumnName="url" />
+          <ScalarProperty Name="isindex" ColumnName="isindex" />
+          <ScalarProperty Name="flash" ColumnName="flash" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="News_BA">
+      <EntityTypeMapping TypeName="OldWiseModel.News_BA">
+        <MappingFragment StoreEntitySet="News_BA">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="Title" ColumnName="Title" />
+          <ScalarProperty Name="TitleEn" ColumnName="TitleEn" />
+          <ScalarProperty Name="Content" ColumnName="Content" />
+          <ScalarProperty Name="ContentEn" ColumnName="ContentEn" />
+          <ScalarProperty Name="keys" ColumnName="keys" />
+          <ScalarProperty Name="keysEn" ColumnName="keysEn" />
+          <ScalarProperty Name="Fromto" ColumnName="Fromto" />
+          <ScalarProperty Name="FromtoEn" ColumnName="FromtoEn" />
+          <ScalarProperty Name="UpDateTime" ColumnName="UpDateTime" />
+          <ScalarProperty Name="Counter" ColumnName="Counter" />
+          <ScalarProperty Name="CounterEn" ColumnName="CounterEn" />
+          <ScalarProperty Name="Intro" ColumnName="Intro" />
+          <ScalarProperty Name="IntroEn" ColumnName="IntroEn" />
+          <ScalarProperty Name="TypeID" ColumnName="TypeID" />
+          <ScalarProperty Name="TypeIDEn" ColumnName="TypeIDEn" />
+          <ScalarProperty Name="newsType" ColumnName="newsType" />
+          <ScalarProperty Name="url" ColumnName="url" />
+          <ScalarProperty Name="isindex" ColumnName="isindex" />
+          <ScalarProperty Name="flash" ColumnName="flash" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="News_COFC">
+      <EntityTypeMapping TypeName="OldWiseModel.News_COFC">
+        <MappingFragment StoreEntitySet="News_COFC">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="Title" ColumnName="Title" />
+          <ScalarProperty Name="TitleEn" ColumnName="TitleEn" />
+          <ScalarProperty Name="Content" ColumnName="Content" />
+          <ScalarProperty Name="ContentEn" ColumnName="ContentEn" />
+          <ScalarProperty Name="keys" ColumnName="keys" />
+          <ScalarProperty Name="keysEn" ColumnName="keysEn" />
+          <ScalarProperty Name="Fromto" ColumnName="Fromto" />
+          <ScalarProperty Name="FromtoEn" ColumnName="FromtoEn" />
+          <ScalarProperty Name="UpDateTime" ColumnName="UpDateTime" />
+          <ScalarProperty Name="Counter" ColumnName="Counter" />
+          <ScalarProperty Name="CounterEn" ColumnName="CounterEn" />
+          <ScalarProperty Name="Intro" ColumnName="Intro" />
+          <ScalarProperty Name="IntroEn" ColumnName="IntroEn" />
+          <ScalarProperty Name="TypeID" ColumnName="TypeID" />
+          <ScalarProperty Name="TypeIDEn" ColumnName="TypeIDEn" />
+          <ScalarProperty Name="newsType" ColumnName="newsType" />
+          <ScalarProperty Name="url" ColumnName="url" />
+          <ScalarProperty Name="isindex" ColumnName="isindex" />
+          <ScalarProperty Name="flash" ColumnName="flash" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="News_IEC">
+      <EntityTypeMapping TypeName="OldWiseModel.News_IEC">
+        <MappingFragment StoreEntitySet="News_IEC">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="Title" ColumnName="Title" />
+          <ScalarProperty Name="TitleEn" ColumnName="TitleEn" />
+          <ScalarProperty Name="Content" ColumnName="Content" />
+          <ScalarProperty Name="ContentEn" ColumnName="ContentEn" />
+          <ScalarProperty Name="keys" ColumnName="keys" />
+          <ScalarProperty Name="keysEn" ColumnName="keysEn" />
+          <ScalarProperty Name="Fromto" ColumnName="Fromto" />
+          <ScalarProperty Name="FromtoEn" ColumnName="FromtoEn" />
+          <ScalarProperty Name="UpDateTime" ColumnName="UpDateTime" />
+          <ScalarProperty Name="Counter" ColumnName="Counter" />
+          <ScalarProperty Name="CounterEn" ColumnName="CounterEn" />
+          <ScalarProperty Name="Intro" ColumnName="Intro" />
+          <ScalarProperty Name="IntroEn" ColumnName="IntroEn" />
+          <ScalarProperty Name="TypeID" ColumnName="TypeID" />
+          <ScalarProperty Name="TypeIDEn" ColumnName="TypeIDEn" />
+          <ScalarProperty Name="newsType" ColumnName="newsType" />
+          <ScalarProperty Name="url" ColumnName="url" />
+          <ScalarProperty Name="isindex" ColumnName="isindex" />
+          <ScalarProperty Name="flash" ColumnName="flash" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="News_imWISE">
+      <EntityTypeMapping TypeName="OldWiseModel.News_imWISE">
+        <MappingFragment StoreEntitySet="News_imWISE">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="Title" ColumnName="Title" />
+          <ScalarProperty Name="TitleEn" ColumnName="TitleEn" />
+          <ScalarProperty Name="Content" ColumnName="Content" />
+          <ScalarProperty Name="ContentEn" ColumnName="ContentEn" />
+          <ScalarProperty Name="keys" ColumnName="keys" />
+          <ScalarProperty Name="keysEn" ColumnName="keysEn" />
+          <ScalarProperty Name="Fromto" ColumnName="Fromto" />
+          <ScalarProperty Name="FromtoEn" ColumnName="FromtoEn" />
+          <ScalarProperty Name="UpDateTime" ColumnName="UpDateTime" />
+          <ScalarProperty Name="Counter" ColumnName="Counter" />
+          <ScalarProperty Name="CounterEn" ColumnName="CounterEn" />
+          <ScalarProperty Name="Intro" ColumnName="Intro" />
+          <ScalarProperty Name="IntroEn" ColumnName="IntroEn" />
+          <ScalarProperty Name="TypeID" ColumnName="TypeID" />
+          <ScalarProperty Name="TypeIDEn" ColumnName="TypeIDEn" />
+          <ScalarProperty Name="newsType" ColumnName="newsType" />
+          <ScalarProperty Name="url" ColumnName="url" />
+          <ScalarProperty Name="isindex" ColumnName="isindex" />
+          <ScalarProperty Name="flash" ColumnName="flash" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="News_KSU">
+      <EntityTypeMapping TypeName="OldWiseModel.News_KSU">
+        <MappingFragment StoreEntitySet="News_KSU">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="Title" ColumnName="Title" />
+          <ScalarProperty Name="TitleEn" ColumnName="TitleEn" />
+          <ScalarProperty Name="Content" ColumnName="Content" />
+          <ScalarProperty Name="ContentEn" ColumnName="ContentEn" />
+          <ScalarProperty Name="keys" ColumnName="keys" />
+          <ScalarProperty Name="keysEn" ColumnName="keysEn" />
+          <ScalarProperty Name="Fromto" ColumnName="Fromto" />
+          <ScalarProperty Name="FromtoEn" ColumnName="FromtoEn" />
+          <ScalarProperty Name="UpDateTime" ColumnName="UpDateTime" />
+          <ScalarProperty Name="Counter" ColumnName="Counter" />
+          <ScalarProperty Name="CounterEn" ColumnName="CounterEn" />
+          <ScalarProperty Name="Intro" ColumnName="Intro" />
+          <ScalarProperty Name="IntroEn" ColumnName="IntroEn" />
+          <ScalarProperty Name="TypeID" ColumnName="TypeID" />
+          <ScalarProperty Name="TypeIDEn" ColumnName="TypeIDEn" />
+          <ScalarProperty Name="newsType" ColumnName="newsType" />
+          <ScalarProperty Name="url" ColumnName="url" />
+          <ScalarProperty Name="isindex" ColumnName="isindex" />
+          <ScalarProperty Name="flash" ColumnName="flash" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="News_KSU_bak">
+      <EntityTypeMapping TypeName="OldWiseModel.News_KSU_bak">
+        <MappingFragment StoreEntitySet="News_KSU_bak">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="Title" ColumnName="Title" />
+          <ScalarProperty Name="TitleEn" ColumnName="TitleEn" />
+          <ScalarProperty Name="Content" ColumnName="Content" />
+          <ScalarProperty Name="ContentEn" ColumnName="ContentEn" />
+          <ScalarProperty Name="keys" ColumnName="keys" />
+          <ScalarProperty Name="keysEn" ColumnName="keysEn" />
+          <ScalarProperty Name="Fromto" ColumnName="Fromto" />
+          <ScalarProperty Name="FromtoEn" ColumnName="FromtoEn" />
+          <ScalarProperty Name="UpDateTime" ColumnName="UpDateTime" />
+          <ScalarProperty Name="Counter" ColumnName="Counter" />
+          <ScalarProperty Name="CounterEn" ColumnName="CounterEn" />
+          <ScalarProperty Name="Intro" ColumnName="Intro" />
+          <ScalarProperty Name="IntroEn" ColumnName="IntroEn" />
+          <ScalarProperty Name="TypeID" ColumnName="TypeID" />
+          <ScalarProperty Name="TypeIDEn" ColumnName="TypeIDEn" />
+          <ScalarProperty Name="newsType" ColumnName="newsType" />
+          <ScalarProperty Name="url" ColumnName="url" />
+          <ScalarProperty Name="isindex" ColumnName="isindex" />
+          <ScalarProperty Name="flash" ColumnName="flash" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="News_MONASH">
+      <EntityTypeMapping TypeName="OldWiseModel.News_MONASH">
+        <MappingFragment StoreEntitySet="News_MONASH">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="Title" ColumnName="Title" />
+          <ScalarProperty Name="TitleEn" ColumnName="TitleEn" />
+          <ScalarProperty Name="Content" ColumnName="Content" />
+          <ScalarProperty Name="ContentEn" ColumnName="ContentEn" />
+          <ScalarProperty Name="keys" ColumnName="keys" />
+          <ScalarProperty Name="keysEn" ColumnName="keysEn" />
+          <ScalarProperty Name="Fromto" ColumnName="Fromto" />
+          <ScalarProperty Name="FromtoEn" ColumnName="FromtoEn" />
+          <ScalarProperty Name="UpDateTime" ColumnName="UpDateTime" />
+          <ScalarProperty Name="Counter" ColumnName="Counter" />
+          <ScalarProperty Name="CounterEn" ColumnName="CounterEn" />
+          <ScalarProperty Name="Intro" ColumnName="Intro" />
+          <ScalarProperty Name="IntroEn" ColumnName="IntroEn" />
+          <ScalarProperty Name="TypeID" ColumnName="TypeID" />
+          <ScalarProperty Name="TypeIDEn" ColumnName="TypeIDEn" />
+          <ScalarProperty Name="newsType" ColumnName="newsType" />
+          <ScalarProperty Name="url" ColumnName="url" />
+          <ScalarProperty Name="isindex" ColumnName="isindex" />
+          <ScalarProperty Name="flash" ColumnName="flash" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="News_newIEC">
+      <EntityTypeMapping TypeName="OldWiseModel.News_newIEC">
+        <MappingFragment StoreEntitySet="News_newIEC">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="Title" ColumnName="Title" />
+          <ScalarProperty Name="TitleEn" ColumnName="TitleEn" />
+          <ScalarProperty Name="Content" ColumnName="Content" />
+          <ScalarProperty Name="ContentEn" ColumnName="ContentEn" />
+          <ScalarProperty Name="keys" ColumnName="keys" />
+          <ScalarProperty Name="keysEn" ColumnName="keysEn" />
+          <ScalarProperty Name="Fromto" ColumnName="Fromto" />
+          <ScalarProperty Name="FromtoEn" ColumnName="FromtoEn" />
+          <ScalarProperty Name="UpDateTime" ColumnName="UpDateTime" />
+          <ScalarProperty Name="Counter" ColumnName="Counter" />
+          <ScalarProperty Name="CounterEn" ColumnName="CounterEn" />
+          <ScalarProperty Name="Intro" ColumnName="Intro" />
+          <ScalarProperty Name="IntroEn" ColumnName="IntroEn" />
+          <ScalarProperty Name="TypeID" ColumnName="TypeID" />
+          <ScalarProperty Name="TypeIDEn" ColumnName="TypeIDEn" />
+          <ScalarProperty Name="newsType" ColumnName="newsType" />
+          <ScalarProperty Name="url" ColumnName="url" />
+          <ScalarProperty Name="isindex" ColumnName="isindex" />
+          <ScalarProperty Name="flash" ColumnName="flash" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="News_SS">
+      <EntityTypeMapping TypeName="OldWiseModel.News_SS">
+        <MappingFragment StoreEntitySet="News_SS">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="Title" ColumnName="Title" />
+          <ScalarProperty Name="TitleEn" ColumnName="TitleEn" />
+          <ScalarProperty Name="Content" ColumnName="Content" />
+          <ScalarProperty Name="ContentEn" ColumnName="ContentEn" />
+          <ScalarProperty Name="keys" ColumnName="keys" />
+          <ScalarProperty Name="keysEn" ColumnName="keysEn" />
+          <ScalarProperty Name="Fromto" ColumnName="Fromto" />
+          <ScalarProperty Name="FromtoEn" ColumnName="FromtoEn" />
+          <ScalarProperty Name="UpDateTime" ColumnName="UpDateTime" />
+          <ScalarProperty Name="Counter" ColumnName="Counter" />
+          <ScalarProperty Name="CounterEn" ColumnName="CounterEn" />
+          <ScalarProperty Name="Intro" ColumnName="Intro" />
+          <ScalarProperty Name="IntroEn" ColumnName="IntroEn" />
+          <ScalarProperty Name="TypeID" ColumnName="TypeID" />
+          <ScalarProperty Name="TypeIDEn" ColumnName="TypeIDEn" />
+          <ScalarProperty Name="newsType" ColumnName="newsType" />
+          <ScalarProperty Name="url" ColumnName="url" />
+          <ScalarProperty Name="isindex" ColumnName="isindex" />
+          <ScalarProperty Name="flash" ColumnName="flash" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="News_SS2011">
+      <EntityTypeMapping TypeName="OldWiseModel.News_SS2011">
+        <MappingFragment StoreEntitySet="News_SS2011">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="Title" ColumnName="Title" />
+          <ScalarProperty Name="TitleEn" ColumnName="TitleEn" />
+          <ScalarProperty Name="Content" ColumnName="Content" />
+          <ScalarProperty Name="ContentEn" ColumnName="ContentEn" />
+          <ScalarProperty Name="keys" ColumnName="keys" />
+          <ScalarProperty Name="keysEn" ColumnName="keysEn" />
+          <ScalarProperty Name="Fromto" ColumnName="Fromto" />
+          <ScalarProperty Name="FromtoEn" ColumnName="FromtoEn" />
+          <ScalarProperty Name="UpDateTime" ColumnName="UpDateTime" />
+          <ScalarProperty Name="Counter" ColumnName="Counter" />
+          <ScalarProperty Name="CounterEn" ColumnName="CounterEn" />
+          <ScalarProperty Name="Intro" ColumnName="Intro" />
+          <ScalarProperty Name="IntroEn" ColumnName="IntroEn" />
+          <ScalarProperty Name="TypeID" ColumnName="TypeID" />
+          <ScalarProperty Name="TypeIDEn" ColumnName="TypeIDEn" />
+          <ScalarProperty Name="newsType" ColumnName="newsType" />
+          <ScalarProperty Name="url" ColumnName="url" />
+          <ScalarProperty Name="isindex" ColumnName="isindex" />
+          <ScalarProperty Name="flash" ColumnName="flash" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="News_SS2012">
+      <EntityTypeMapping TypeName="OldWiseModel.News_SS2012">
+        <MappingFragment StoreEntitySet="News_SS2012">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="Title" ColumnName="Title" />
+          <ScalarProperty Name="TitleEn" ColumnName="TitleEn" />
+          <ScalarProperty Name="Content" ColumnName="Content" />
+          <ScalarProperty Name="ContentEn" ColumnName="ContentEn" />
+          <ScalarProperty Name="keys" ColumnName="keys" />
+          <ScalarProperty Name="keysEn" ColumnName="keysEn" />
+          <ScalarProperty Name="Fromto" ColumnName="Fromto" />
+          <ScalarProperty Name="FromtoEn" ColumnName="FromtoEn" />
+          <ScalarProperty Name="UpDateTime" ColumnName="UpDateTime" />
+          <ScalarProperty Name="Counter" ColumnName="Counter" />
+          <ScalarProperty Name="CounterEn" ColumnName="CounterEn" />
+          <ScalarProperty Name="Intro" ColumnName="Intro" />
+          <ScalarProperty Name="IntroEn" ColumnName="IntroEn" />
+          <ScalarProperty Name="TypeID" ColumnName="TypeID" />
+          <ScalarProperty Name="TypeIDEn" ColumnName="TypeIDEn" />
+          <ScalarProperty Name="newsType" ColumnName="newsType" />
+          <ScalarProperty Name="url" ColumnName="url" />
+          <ScalarProperty Name="isindex" ColumnName="isindex" />
+          <ScalarProperty Name="flash" ColumnName="flash" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="News_szs">
+      <EntityTypeMapping TypeName="OldWiseModel.News_szs">
+        <MappingFragment StoreEntitySet="News_szs">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="Title" ColumnName="Title" />
+          <ScalarProperty Name="TitleEn" ColumnName="TitleEn" />
+          <ScalarProperty Name="Content" ColumnName="Content" />
+          <ScalarProperty Name="ContentEn" ColumnName="ContentEn" />
+          <ScalarProperty Name="keys" ColumnName="keys" />
+          <ScalarProperty Name="keysEn" ColumnName="keysEn" />
+          <ScalarProperty Name="Fromto" ColumnName="Fromto" />
+          <ScalarProperty Name="FromtoEn" ColumnName="FromtoEn" />
+          <ScalarProperty Name="UpDateTime" ColumnName="UpDateTime" />
+          <ScalarProperty Name="Counter" ColumnName="Counter" />
+          <ScalarProperty Name="CounterEn" ColumnName="CounterEn" />
+          <ScalarProperty Name="Intro" ColumnName="Intro" />
+          <ScalarProperty Name="IntroEn" ColumnName="IntroEn" />
+          <ScalarProperty Name="TypeID" ColumnName="TypeID" />
+          <ScalarProperty Name="TypeIDEn" ColumnName="TypeIDEn" />
+          <ScalarProperty Name="newsType" ColumnName="newsType" />
+          <ScalarProperty Name="url" ColumnName="url" />
+          <ScalarProperty Name="isindex" ColumnName="isindex" />
+          <ScalarProperty Name="flash" ColumnName="flash" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="News_TJBA">
+      <EntityTypeMapping TypeName="OldWiseModel.News_TJBA">
+        <MappingFragment StoreEntitySet="News_TJBA">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="Title" ColumnName="Title" />
+          <ScalarProperty Name="TitleEn" ColumnName="TitleEn" />
+          <ScalarProperty Name="Content" ColumnName="Content" />
+          <ScalarProperty Name="ContentEn" ColumnName="ContentEn" />
+          <ScalarProperty Name="keys" ColumnName="keys" />
+          <ScalarProperty Name="keysEn" ColumnName="keysEn" />
+          <ScalarProperty Name="Fromto" ColumnName="Fromto" />
+          <ScalarProperty Name="FromtoEn" ColumnName="FromtoEn" />
+          <ScalarProperty Name="UpDateTime" ColumnName="UpDateTime" />
+          <ScalarProperty Name="Counter" ColumnName="Counter" />
+          <ScalarProperty Name="CounterEn" ColumnName="CounterEn" />
+          <ScalarProperty Name="Intro" ColumnName="Intro" />
+          <ScalarProperty Name="IntroEn" ColumnName="IntroEn" />
+          <ScalarProperty Name="TypeID" ColumnName="TypeID" />
+          <ScalarProperty Name="TypeIDEn" ColumnName="TypeIDEn" />
+          <ScalarProperty Name="newsType" ColumnName="newsType" />
+          <ScalarProperty Name="url" ColumnName="url" />
+          <ScalarProperty Name="isindex" ColumnName="isindex" />
+          <ScalarProperty Name="flash" ColumnName="flash" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="News_UCD">
+      <EntityTypeMapping TypeName="OldWiseModel.News_UCD">
+        <MappingFragment StoreEntitySet="News_UCD">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="Title" ColumnName="Title" />
+          <ScalarProperty Name="TitleEn" ColumnName="TitleEn" />
+          <ScalarProperty Name="Content" ColumnName="Content" />
+          <ScalarProperty Name="ContentEn" ColumnName="ContentEn" />
+          <ScalarProperty Name="keys" ColumnName="keys" />
+          <ScalarProperty Name="keysEn" ColumnName="keysEn" />
+          <ScalarProperty Name="Fromto" ColumnName="Fromto" />
+          <ScalarProperty Name="FromtoEn" ColumnName="FromtoEn" />
+          <ScalarProperty Name="UpDateTime" ColumnName="UpDateTime" />
+          <ScalarProperty Name="Counter" ColumnName="Counter" />
+          <ScalarProperty Name="CounterEn" ColumnName="CounterEn" />
+          <ScalarProperty Name="Intro" ColumnName="Intro" />
+          <ScalarProperty Name="IntroEn" ColumnName="IntroEn" />
+          <ScalarProperty Name="TypeID" ColumnName="TypeID" />
+          <ScalarProperty Name="TypeIDEn" ColumnName="TypeIDEn" />
+          <ScalarProperty Name="newsType" ColumnName="newsType" />
+          <ScalarProperty Name="url" ColumnName="url" />
+          <ScalarProperty Name="isindex" ColumnName="isindex" />
+          <ScalarProperty Name="flash" ColumnName="flash" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="News_UNCC">
+      <EntityTypeMapping TypeName="OldWiseModel.News_UNCC">
+        <MappingFragment StoreEntitySet="News_UNCC">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="Title" ColumnName="Title" />
+          <ScalarProperty Name="TitleEn" ColumnName="TitleEn" />
+          <ScalarProperty Name="Content" ColumnName="Content" />
+          <ScalarProperty Name="ContentEn" ColumnName="ContentEn" />
+          <ScalarProperty Name="keys" ColumnName="keys" />
+          <ScalarProperty Name="keysEn" ColumnName="keysEn" />
+          <ScalarProperty Name="Fromto" ColumnName="Fromto" />
+          <ScalarProperty Name="FromtoEn" ColumnName="FromtoEn" />
+          <ScalarProperty Name="UpDateTime" ColumnName="UpDateTime" />
+          <ScalarProperty Name="Counter" ColumnName="Counter" />
+          <ScalarProperty Name="CounterEn" ColumnName="CounterEn" />
+          <ScalarProperty Name="Intro" ColumnName="Intro" />
+          <ScalarProperty Name="IntroEn" ColumnName="IntroEn" />
+          <ScalarProperty Name="TypeID" ColumnName="TypeID" />
+          <ScalarProperty Name="TypeIDEn" ColumnName="TypeIDEn" />
+          <ScalarProperty Name="newsType" ColumnName="newsType" />
+          <ScalarProperty Name="url" ColumnName="url" />
+          <ScalarProperty Name="isindex" ColumnName="isindex" />
+          <ScalarProperty Name="flash" ColumnName="flash" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="News_XLY">
+      <EntityTypeMapping TypeName="OldWiseModel.News_XLY">
+        <MappingFragment StoreEntitySet="News_XLY">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="Title" ColumnName="Title" />
+          <ScalarProperty Name="TitleEn" ColumnName="TitleEn" />
+          <ScalarProperty Name="Content" ColumnName="Content" />
+          <ScalarProperty Name="ContentEn" ColumnName="ContentEn" />
+          <ScalarProperty Name="keys" ColumnName="keys" />
+          <ScalarProperty Name="keysEn" ColumnName="keysEn" />
+          <ScalarProperty Name="Fromto" ColumnName="Fromto" />
+          <ScalarProperty Name="FromtoEn" ColumnName="FromtoEn" />
+          <ScalarProperty Name="UpDateTime" ColumnName="UpDateTime" />
+          <ScalarProperty Name="Counter" ColumnName="Counter" />
+          <ScalarProperty Name="CounterEn" ColumnName="CounterEn" />
+          <ScalarProperty Name="Intro" ColumnName="Intro" />
+          <ScalarProperty Name="IntroEn" ColumnName="IntroEn" />
+          <ScalarProperty Name="TypeID" ColumnName="TypeID" />
+          <ScalarProperty Name="TypeIDEn" ColumnName="TypeIDEn" />
+          <ScalarProperty Name="newsType" ColumnName="newsType" />
+          <ScalarProperty Name="url" ColumnName="url" />
+          <ScalarProperty Name="isindex" ColumnName="isindex" />
+          <ScalarProperty Name="flash" ColumnName="flash" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="News_XLY2011">
+      <EntityTypeMapping TypeName="OldWiseModel.News_XLY2011">
+        <MappingFragment StoreEntitySet="News_XLY2011">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="Title" ColumnName="Title" />
+          <ScalarProperty Name="TitleEn" ColumnName="TitleEn" />
+          <ScalarProperty Name="Content" ColumnName="Content" />
+          <ScalarProperty Name="ContentEn" ColumnName="ContentEn" />
+          <ScalarProperty Name="keys" ColumnName="keys" />
+          <ScalarProperty Name="keysEn" ColumnName="keysEn" />
+          <ScalarProperty Name="Fromto" ColumnName="Fromto" />
+          <ScalarProperty Name="FromtoEn" ColumnName="FromtoEn" />
+          <ScalarProperty Name="UpDateTime" ColumnName="UpDateTime" />
+          <ScalarProperty Name="Counter" ColumnName="Counter" />
+          <ScalarProperty Name="CounterEn" ColumnName="CounterEn" />
+          <ScalarProperty Name="Intro" ColumnName="Intro" />
+          <ScalarProperty Name="IntroEn" ColumnName="IntroEn" />
+          <ScalarProperty Name="TypeID" ColumnName="TypeID" />
+          <ScalarProperty Name="TypeIDEn" ColumnName="TypeIDEn" />
+          <ScalarProperty Name="newsType" ColumnName="newsType" />
+          <ScalarProperty Name="url" ColumnName="url" />
+          <ScalarProperty Name="isindex" ColumnName="isindex" />
+          <ScalarProperty Name="flash" ColumnName="flash" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="NewsPdf">
+      <EntityTypeMapping TypeName="OldWiseModel.NewsPdf">
+        <MappingFragment StoreEntitySet="NewsPdf">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="Title" ColumnName="Title" />
+          <ScalarProperty Name="TitleEn" ColumnName="TitleEn" />
+          <ScalarProperty Name="Content" ColumnName="Content" />
+          <ScalarProperty Name="ContentEn" ColumnName="ContentEn" />
+          <ScalarProperty Name="keys" ColumnName="keys" />
+          <ScalarProperty Name="keysEn" ColumnName="keysEn" />
+          <ScalarProperty Name="Fromto" ColumnName="Fromto" />
+          <ScalarProperty Name="FromtoEn" ColumnName="FromtoEn" />
+          <ScalarProperty Name="BeginTime" ColumnName="BeginTime" />
+          <ScalarProperty Name="UpDateTime" ColumnName="UpDateTime" />
+          <ScalarProperty Name="Counter" ColumnName="Counter" />
+          <ScalarProperty Name="CounterEn" ColumnName="CounterEn" />
+          <ScalarProperty Name="Intro" ColumnName="Intro" />
+          <ScalarProperty Name="IntroEn" ColumnName="IntroEn" />
+          <ScalarProperty Name="TypeID" ColumnName="TypeID" />
+          <ScalarProperty Name="TypeIDEn" ColumnName="TypeIDEn" />
+          <ScalarProperty Name="newsType" ColumnName="newsType" />
+          <ScalarProperty Name="url" ColumnName="url" />
+          <ScalarProperty Name="isindex" ColumnName="isindex" />
+          <ScalarProperty Name="flash" ColumnName="flash" />
+          <ScalarProperty Name="period" ColumnName="period" />
+          <ScalarProperty Name="pdfUrl" ColumnName="pdfUrl" />
+          <ScalarProperty Name="isPdf" ColumnName="isPdf" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="NewsType">
+      <EntityTypeMapping TypeName="OldWiseModel.NewsType">
+        <MappingFragment StoreEntitySet="NewsType">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="BigID" ColumnName="BigID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="NewsType_ANU">
+      <EntityTypeMapping TypeName="OldWiseModel.NewsType_ANU">
+        <MappingFragment StoreEntitySet="NewsType_ANU">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="BigId" ColumnName="BigId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="NewsType_BA">
+      <EntityTypeMapping TypeName="OldWiseModel.NewsType_BA">
+        <MappingFragment StoreEntitySet="NewsType_BA">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="BigId" ColumnName="BigId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="NewsType_COFC">
+      <EntityTypeMapping TypeName="OldWiseModel.NewsType_COFC">
+        <MappingFragment StoreEntitySet="NewsType_COFC">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="BigId" ColumnName="BigId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="NewsType_IEC">
+      <EntityTypeMapping TypeName="OldWiseModel.NewsType_IEC">
+        <MappingFragment StoreEntitySet="NewsType_IEC">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="BigId" ColumnName="BigId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="NewsType_imWISE">
+      <EntityTypeMapping TypeName="OldWiseModel.NewsType_imWISE">
+        <MappingFragment StoreEntitySet="NewsType_imWISE">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="BigId" ColumnName="BigId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="NewsType_KSU">
+      <EntityTypeMapping TypeName="OldWiseModel.NewsType_KSU">
+        <MappingFragment StoreEntitySet="NewsType_KSU">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="BigId" ColumnName="BigId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="NewsType_MONASH">
+      <EntityTypeMapping TypeName="OldWiseModel.NewsType_MONASH">
+        <MappingFragment StoreEntitySet="NewsType_MONASH">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="BigId" ColumnName="BigId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="NewsType_newIEC">
+      <EntityTypeMapping TypeName="OldWiseModel.NewsType_newIEC">
+        <MappingFragment StoreEntitySet="NewsType_newIEC">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="BigId" ColumnName="BigId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Newstype_SS">
+      <EntityTypeMapping TypeName="OldWiseModel.Newstype_SS">
+        <MappingFragment StoreEntitySet="Newstype_SS">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="BigId" ColumnName="BigId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Newstype_SS2011">
+      <EntityTypeMapping TypeName="OldWiseModel.Newstype_SS2011">
+        <MappingFragment StoreEntitySet="Newstype_SS2011">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="BigId" ColumnName="BigId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Newstype_SS2012">
+      <EntityTypeMapping TypeName="OldWiseModel.Newstype_SS2012">
+        <MappingFragment StoreEntitySet="Newstype_SS2012">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="BigId" ColumnName="BigId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="NewsType_szs">
+      <EntityTypeMapping TypeName="OldWiseModel.NewsType_szs">
+        <MappingFragment StoreEntitySet="NewsType_szs">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="BigId" ColumnName="BigId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="NewsType_TJBA">
+      <EntityTypeMapping TypeName="OldWiseModel.NewsType_TJBA">
+        <MappingFragment StoreEntitySet="NewsType_TJBA">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="BigId" ColumnName="BigId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="NewsType_UCD">
+      <EntityTypeMapping TypeName="OldWiseModel.NewsType_UCD">
+        <MappingFragment StoreEntitySet="NewsType_UCD">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="BigId" ColumnName="BigId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="NewsType_UNCC">
+      <EntityTypeMapping TypeName="OldWiseModel.NewsType_UNCC">
+        <MappingFragment StoreEntitySet="NewsType_UNCC">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="BigId" ColumnName="BigId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="NewsType_XLY">
+      <EntityTypeMapping TypeName="OldWiseModel.NewsType_XLY">
+        <MappingFragment StoreEntitySet="NewsType_XLY">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="BigId" ColumnName="BigId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="NewsType_XLY2011">
+      <EntityTypeMapping TypeName="OldWiseModel.NewsType_XLY2011">
+        <MappingFragment StoreEntitySet="NewsType_XLY2011">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="BigId" ColumnName="BigId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="NewsTypeEn">
+      <EntityTypeMapping TypeName="OldWiseModel.NewsTypeEn">
+        <MappingFragment StoreEntitySet="NewsTypeEn">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="BigId" ColumnName="BigId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="OpLogs">
+      <EntityTypeMapping TypeName="OldWiseModel.OpLogs">
+        <MappingFragment StoreEntitySet="OpLogs">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="sql" ColumnName="sql" />
+          <ScalarProperty Name="usage" ColumnName="usage" />
+          <ScalarProperty Name="op" ColumnName="op" />
+          <ScalarProperty Name="opdate" ColumnName="opdate" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Photo">
+      <EntityTypeMapping TypeName="OldWiseModel.Photo">
+        <MappingFragment StoreEntitySet="Photo">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="Title" ColumnName="Title" />
+          <ScalarProperty Name="TitleEn" ColumnName="TitleEn" />
+          <ScalarProperty Name="url" ColumnName="url" />
+          <ScalarProperty Name="UpDateTime" ColumnName="UpDateTime" />
+          <ScalarProperty Name="Counter" ColumnName="Counter" />
+          <ScalarProperty Name="CounterEn" ColumnName="CounterEn" />
+          <ScalarProperty Name="TypeID" ColumnName="TypeID" />
+          <ScalarProperty Name="TypeIDEn" ColumnName="TypeIDEn" />
+          <ScalarProperty Name="newsType" ColumnName="newsType" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Photo_ksu">
+      <EntityTypeMapping TypeName="OldWiseModel.Photo_ksu">
+        <MappingFragment StoreEntitySet="Photo_ksu">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="Title" ColumnName="Title" />
+          <ScalarProperty Name="TitleEn" ColumnName="TitleEn" />
+          <ScalarProperty Name="url" ColumnName="url" />
+          <ScalarProperty Name="UpDateTime" ColumnName="UpDateTime" />
+          <ScalarProperty Name="Counter" ColumnName="Counter" />
+          <ScalarProperty Name="CounterEn" ColumnName="CounterEn" />
+          <ScalarProperty Name="TypeID" ColumnName="TypeID" />
+          <ScalarProperty Name="TypeIDEn" ColumnName="TypeIDEn" />
+          <ScalarProperty Name="newsType" ColumnName="newsType" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="PhotoType">
+      <EntityTypeMapping TypeName="OldWiseModel.PhotoType">
+        <MappingFragment StoreEntitySet="PhotoType">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="BigID" ColumnName="BigID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="PhotoType_ksu">
+      <EntityTypeMapping TypeName="OldWiseModel.PhotoType_ksu">
+        <MappingFragment StoreEntitySet="PhotoType_ksu">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="BigID" ColumnName="BigID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="PhotoTypeEn">
+      <EntityTypeMapping TypeName="OldWiseModel.PhotoTypeEn">
+        <MappingFragment StoreEntitySet="PhotoTypeEn">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="BigId" ColumnName="BigId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Project_newIEC">
+      <EntityTypeMapping TypeName="OldWiseModel.Project_newIEC">
+        <MappingFragment StoreEntitySet="Project_newIEC">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="name" ColumnName="name" />
+          <ScalarProperty Name="location" ColumnName="location" />
+          <ScalarProperty Name="major" ColumnName="major" />
+          <ScalarProperty Name="xuezhi" ColumnName="xuezhi" />
+          <ScalarProperty Name="fee" ColumnName="fee" />
+          <ScalarProperty Name="url" ColumnName="url" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Province">
+      <EntityTypeMapping TypeName="OldWiseModel.Province">
+        <MappingFragment StoreEntitySet="Province">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="Province1" ColumnName="Province" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="SeminarMenu">
+      <EntityTypeMapping TypeName="OldWiseModel.SeminarMenu">
+        <MappingFragment StoreEntitySet="SeminarMenu">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="name" ColumnName="name" />
+          <ScalarProperty Name="content" ColumnName="content" />
+          <ScalarProperty Name="url" ColumnName="url" />
+          <ScalarProperty Name="bigid" ColumnName="bigid" />
+          <ScalarProperty Name="sort" ColumnName="sort" />
+          <ScalarProperty Name="pic" ColumnName="pic" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="signup">
+      <EntityTypeMapping TypeName="OldWiseModel.signup">
+        <MappingFragment StoreEntitySet="signup">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="name" ColumnName="name" />
+          <ScalarProperty Name="gender" ColumnName="gender" />
+          <ScalarProperty Name="idcard" ColumnName="idcard" />
+          <ScalarProperty Name="birthday" ColumnName="birthday" />
+          <ScalarProperty Name="placebirth" ColumnName="placebirth" />
+          <ScalarProperty Name="race" ColumnName="race" />
+          <ScalarProperty Name="father" ColumnName="father" />
+          <ScalarProperty Name="mother" ColumnName="mother" />
+          <ScalarProperty Name="peraddress" ColumnName="peraddress" />
+          <ScalarProperty Name="zipcode" ColumnName="zipcode" />
+          <ScalarProperty Name="company" ColumnName="company" />
+          <ScalarProperty Name="curaddress" ColumnName="curaddress" />
+          <ScalarProperty Name="major" ColumnName="major" />
+          <ScalarProperty Name="grade" ColumnName="grade" />
+          <ScalarProperty Name="mobile" ColumnName="mobile" />
+          <ScalarProperty Name="email" ColumnName="email" />
+          <ScalarProperty Name="begintime" ColumnName="begintime" />
+          <ScalarProperty Name="signdate" ColumnName="signdate" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="signup_ie">
+      <EntityTypeMapping TypeName="OldWiseModel.signup_ie">
+        <MappingFragment StoreEntitySet="signup_ie">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="type" ColumnName="type" />
+          <ScalarProperty Name="name" ColumnName="name" />
+          <ScalarProperty Name="englishname" ColumnName="englishname" />
+          <ScalarProperty Name="gender" ColumnName="gender" />
+          <ScalarProperty Name="idcard" ColumnName="idcard" />
+          <ScalarProperty Name="birthday" ColumnName="birthday" />
+          <ScalarProperty Name="placebirth" ColumnName="placebirth" />
+          <ScalarProperty Name="race" ColumnName="race" />
+          <ScalarProperty Name="father" ColumnName="father" />
+          <ScalarProperty Name="peraddress" ColumnName="peraddress" />
+          <ScalarProperty Name="zipcode" ColumnName="zipcode" />
+          <ScalarProperty Name="company" ColumnName="company" />
+          <ScalarProperty Name="curaddress" ColumnName="curaddress" />
+          <ScalarProperty Name="major" ColumnName="major" />
+          <ScalarProperty Name="grade" ColumnName="grade" />
+          <ScalarProperty Name="mobile" ColumnName="mobile" />
+          <ScalarProperty Name="email" ColumnName="email" />
+          <ScalarProperty Name="signdate" ColumnName="signdate" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="t_ModuleShow">
+      <EntityTypeMapping TypeName="OldWiseModel.t_ModuleShow">
+        <MappingFragment StoreEntitySet="t_ModuleShow">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="period" ColumnName="period" />
+          <ScalarProperty Name="TypeName" ColumnName="TypeName" />
+          <ScalarProperty Name="TypeID" ColumnName="TypeID" />
+          <ScalarProperty Name="BigId" ColumnName="BigId" />
+          <ScalarProperty Name="isMain" ColumnName="isMain" />
+          <ScalarProperty Name="Content" ColumnName="Content" />
+          <ScalarProperty Name="photoUrl" ColumnName="photoUrl" />
+          <ScalarProperty Name="showOrder" ColumnName="showOrder" />
+          <ScalarProperty Name="M1" ColumnName="M1" />
+          <ScalarProperty Name="M2" ColumnName="M2" />
+          <ScalarProperty Name="M3" ColumnName="M3" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="t_News">
+      <EntityTypeMapping TypeName="OldWiseModel.t_News">
+        <MappingFragment StoreEntitySet="t_News">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="Title" ColumnName="Title" />
+          <ScalarProperty Name="TitleEn" ColumnName="TitleEn" />
+          <ScalarProperty Name="Content" ColumnName="Content" />
+          <ScalarProperty Name="ContentEn" ColumnName="ContentEn" />
+          <ScalarProperty Name="keys" ColumnName="keys" />
+          <ScalarProperty Name="keysEn" ColumnName="keysEn" />
+          <ScalarProperty Name="Fromto" ColumnName="Fromto" />
+          <ScalarProperty Name="FromtoEn" ColumnName="FromtoEn" />
+          <ScalarProperty Name="BeginTime" ColumnName="BeginTime" />
+          <ScalarProperty Name="UpDateTime" ColumnName="UpDateTime" />
+          <ScalarProperty Name="Counter" ColumnName="Counter" />
+          <ScalarProperty Name="CounterEn" ColumnName="CounterEn" />
+          <ScalarProperty Name="Intro" ColumnName="Intro" />
+          <ScalarProperty Name="IntroEn" ColumnName="IntroEn" />
+          <ScalarProperty Name="TypeID" ColumnName="TypeID" />
+          <ScalarProperty Name="TypeIDEn" ColumnName="TypeIDEn" />
+          <ScalarProperty Name="newsType" ColumnName="newsType" />
+          <ScalarProperty Name="url" ColumnName="url" />
+          <ScalarProperty Name="isindex" ColumnName="isindex" />
+          <ScalarProperty Name="flash" ColumnName="flash" />
+          <ScalarProperty Name="isEDP" ColumnName="isEDP" />
+          <ScalarProperty Name="isKCB" ColumnName="isKCB" />
+          <ScalarProperty Name="isPM" ColumnName="isPM" />
+          <ScalarProperty Name="isSOE" ColumnName="isSOE" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="t_News2">
+      <EntityTypeMapping TypeName="OldWiseModel.t_News2">
+        <MappingFragment StoreEntitySet="t_News2">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="Title" ColumnName="Title" />
+          <ScalarProperty Name="TitleEn" ColumnName="TitleEn" />
+          <ScalarProperty Name="Author" ColumnName="Author" />
+          <ScalarProperty Name="Content" ColumnName="Content" />
+          <ScalarProperty Name="ContentEn" ColumnName="ContentEn" />
+          <ScalarProperty Name="keys" ColumnName="keys" />
+          <ScalarProperty Name="keysEn" ColumnName="keysEn" />
+          <ScalarProperty Name="Fromto" ColumnName="Fromto" />
+          <ScalarProperty Name="FromtoEn" ColumnName="FromtoEn" />
+          <ScalarProperty Name="BeginTime" ColumnName="BeginTime" />
+          <ScalarProperty Name="UpDateTime" ColumnName="UpDateTime" />
+          <ScalarProperty Name="Counter" ColumnName="Counter" />
+          <ScalarProperty Name="CounterEn" ColumnName="CounterEn" />
+          <ScalarProperty Name="Intro" ColumnName="Intro" />
+          <ScalarProperty Name="IntroEn" ColumnName="IntroEn" />
+          <ScalarProperty Name="TypeID" ColumnName="TypeID" />
+          <ScalarProperty Name="TypeIDEn" ColumnName="TypeIDEn" />
+          <ScalarProperty Name="newsType" ColumnName="newsType" />
+          <ScalarProperty Name="url" ColumnName="url" />
+          <ScalarProperty Name="isindex" ColumnName="isindex" />
+          <ScalarProperty Name="flash" ColumnName="flash" />
+          <ScalarProperty Name="period" ColumnName="period" />
+          <ScalarProperty Name="pdfUrl" ColumnName="pdfUrl" />
+          <ScalarProperty Name="isPdf" ColumnName="isPdf" />
+          <ScalarProperty Name="isSystem" ColumnName="isSystem" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TEST_USER_REG">
+      <EntityTypeMapping TypeName="OldWiseModel.TEST_USER_REG">
+        <MappingFragment StoreEntitySet="TEST_USER_REG">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="name" ColumnName="name" />
+          <ScalarProperty Name="gender" ColumnName="gender" />
+          <ScalarProperty Name="birthday" ColumnName="birthday" />
+          <ScalarProperty Name="school" ColumnName="school" />
+          <ScalarProperty Name="major" ColumnName="major" />
+          <ScalarProperty Name="telephone" ColumnName="telephone" />
+          <ScalarProperty Name="cellphone" ColumnName="cellphone" />
+          <ScalarProperty Name="email" ColumnName="email" />
+          <ScalarProperty Name="address" ColumnName="address" />
+          <ScalarProperty Name="postcode" ColumnName="postcode" />
+          <ScalarProperty Name="researchfield" ColumnName="researchfield" />
+          <ScalarProperty Name="edubg" ColumnName="edubg" />
+          <ScalarProperty Name="tutor" ColumnName="tutor" />
+          <ScalarProperty Name="grade" ColumnName="grade" />
+          <ScalarProperty Name="zhicheng" ColumnName="zhicheng" />
+          <ScalarProperty Name="zhiwu" ColumnName="zhiwu" />
+          <ScalarProperty Name="experience" ColumnName="experience" />
+          <ScalarProperty Name="prize" ColumnName="prize" />
+          <ScalarProperty Name="regdate" ColumnName="regdate" />
+          <ScalarProperty Name="code" ColumnName="code" />
+          <ScalarProperty Name="isemail" ColumnName="isemail" />
+          <ScalarProperty Name="isattend" ColumnName="isattend" />
+          <ScalarProperty Name="del" ColumnName="del" />
+          <ScalarProperty Name="isfax" ColumnName="isfax" />
+          <ScalarProperty Name="whosendemail" ColumnName="whosendemail" />
+          <ScalarProperty Name="inscription" ColumnName="inscription" />
+          <ScalarProperty Name="enroll" ColumnName="enroll" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="USER_REG">
+      <EntityTypeMapping TypeName="OldWiseModel.USER_REG">
+        <MappingFragment StoreEntitySet="USER_REG">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="name" ColumnName="name" />
+          <ScalarProperty Name="gender" ColumnName="gender" />
+          <ScalarProperty Name="birthday" ColumnName="birthday" />
+          <ScalarProperty Name="school" ColumnName="school" />
+          <ScalarProperty Name="major" ColumnName="major" />
+          <ScalarProperty Name="telephone" ColumnName="telephone" />
+          <ScalarProperty Name="cellphone" ColumnName="cellphone" />
+          <ScalarProperty Name="email" ColumnName="email" />
+          <ScalarProperty Name="address" ColumnName="address" />
+          <ScalarProperty Name="postcode" ColumnName="postcode" />
+          <ScalarProperty Name="researchfield" ColumnName="researchfield" />
+          <ScalarProperty Name="edubg" ColumnName="edubg" />
+          <ScalarProperty Name="tutor" ColumnName="tutor" />
+          <ScalarProperty Name="grade" ColumnName="grade" />
+          <ScalarProperty Name="zhicheng" ColumnName="zhicheng" />
+          <ScalarProperty Name="zhiwu" ColumnName="zhiwu" />
+          <ScalarProperty Name="experience" ColumnName="experience" />
+          <ScalarProperty Name="prize" ColumnName="prize" />
+          <ScalarProperty Name="regdate" ColumnName="regdate" />
+          <ScalarProperty Name="code" ColumnName="code" />
+          <ScalarProperty Name="isemail" ColumnName="isemail" />
+          <ScalarProperty Name="isattend" ColumnName="isattend" />
+          <ScalarProperty Name="del" ColumnName="del" />
+          <ScalarProperty Name="isfax" ColumnName="isfax" />
+          <ScalarProperty Name="whosendemail" ColumnName="whosendemail" />
+          <ScalarProperty Name="password" ColumnName="password" />
+          <ScalarProperty Name="usertype" ColumnName="usertype" />
+          <ScalarProperty Name="batch" ColumnName="batch" />
+          <ScalarProperty Name="course" ColumnName="course" />
+          <ScalarProperty Name="infoSource" ColumnName="infoSource" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="xly_user_2012">
+      <EntityTypeMapping TypeName="OldWiseModel.xly_user_2012">
+        <MappingFragment StoreEntitySet="xly_user_2012">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="name" ColumnName="name" />
+          <ScalarProperty Name="gender" ColumnName="gender" />
+          <ScalarProperty Name="birthday" ColumnName="birthday" />
+          <ScalarProperty Name="school" ColumnName="school" />
+          <ScalarProperty Name="major" ColumnName="major" />
+          <ScalarProperty Name="telephone" ColumnName="telephone" />
+          <ScalarProperty Name="cellphone" ColumnName="cellphone" />
+          <ScalarProperty Name="email" ColumnName="email" />
+          <ScalarProperty Name="address" ColumnName="address" />
+          <ScalarProperty Name="postcode" ColumnName="postcode" />
+          <ScalarProperty Name="researchfield" ColumnName="researchfield" />
+          <ScalarProperty Name="edubg" ColumnName="edubg" />
+          <ScalarProperty Name="tutor" ColumnName="tutor" />
+          <ScalarProperty Name="grade" ColumnName="grade" />
+          <ScalarProperty Name="zhicheng" ColumnName="zhicheng" />
+          <ScalarProperty Name="zhiwu" ColumnName="zhiwu" />
+          <ScalarProperty Name="experience" ColumnName="experience" />
+          <ScalarProperty Name="prize" ColumnName="prize" />
+          <ScalarProperty Name="regdate" ColumnName="regdate" />
+          <ScalarProperty Name="code" ColumnName="code" />
+          <ScalarProperty Name="isemail" ColumnName="isemail" />
+          <ScalarProperty Name="isattend" ColumnName="isattend" />
+          <ScalarProperty Name="del" ColumnName="del" />
+          <ScalarProperty Name="isfax" ColumnName="isfax" />
+          <ScalarProperty Name="whosendemail" ColumnName="whosendemail" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

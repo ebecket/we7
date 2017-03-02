@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Controls>
+  <control name="学术动态列表" group="模型控件" path="" directory="LectureList" desc="学术动态列表">
+    <item control="LectureList.Genarate" name="学术动态列表(自动布局)" type="" version="1.0" created="2013-12-30" desc="列表控件自动生成布局" demoUrl="Admin/images/s.jpg" fileName="/Models/Default/Lecture/LectureList/Page/LectureList.Genarate.ascx" />
+    <item control="LectureList.GenarateDB" name="学术动态列表(自动布局,单表结构)" type="" version="1.0" created="2013-12-30" desc="列表控件自动生成布局,单表结构" demoUrl="Admin/images/s.jpg" fileName="/Models/Default/Lecture/LectureList/Page/LectureList.GenarateDB.ascx" />
+  </control>
+  <control name="学术动态详细" group="模型控件" path="" directory="LectureView" desc="学术动态详细">
+    <item control="LectureView.Genarate" name="学术动态详细(自动布局)" type="" version="1.0" created="2013-12-30" desc="" demoUrl="Admin/images/s.jpg" fileName="/Models/Default/Lecture/LectureView/Page/LectureView.Genarate.ascx" />
+    <item control="LectureView.GenarateDB" name="学术动态详细(自动布局,单表结构)" type="" version="1.0" created="2013-12-30" desc=",单表结构" demoUrl="Admin/images/s.jpg" fileName="/Models/Default/Lecture/LectureView/Page/LectureView.GenarateDB.ascx" />
+  </control>
+  <control name="人员信息列表" group="模型控件" path="" directory="PeopleList" desc="人员信息列表">
+    <item control="PeopleList.Genarate" name="人员信息列表(自动布局)" type="" version="1.0" created="2013-12-30" desc="列表控件自动生成布局" demoUrl="Admin/images/s.jpg" fileName="/Models/Default/People/PeopleList/Page/PeopleList.Genarate.ascx" />
+    <item control="PeopleList.GenarateDB" name="人员信息列表(自动布局,单表结构)" type="" version="1.0" created="2013-12-30" desc="列表控件自动生成布局,单表结构" demoUrl="Admin/images/s.jpg" fileName="/Models/Default/People/PeopleList/Page/PeopleList.GenarateDB.ascx" />
+  </control>
+  <control name="人员信息详细" group="模型控件" path="" directory="PeopleView" desc="人员信息详细">
+    <item control="PeopleView.Genarate" name="人员信息详细(自动布局)" type="" version="1.0" created="2013-12-30" desc="" demoUrl="Admin/images/s.jpg" fileName="/Models/Default/People/PeopleView/Page/PeopleView.Genarate.ascx" />
+    <item control="PeopleView.GenarateDB" name="人员信息详细(自动布局,单表结构)" type="" version="1.0" created="2013-12-30" desc=",单表结构" demoUrl="Admin/images/s.jpg" fileName="/Models/Default/People/PeopleView/Page/PeopleView.GenarateDB.ascx" />
+  </control>
+  <control name="学生列表" group="模型控件" path="" directory="StudentList" desc="学生列表">
+    <item control="studentList.Genarate" name="学生列表(自动布局)" type="" version="1.0" created="2013-12-30" desc="列表控件自动生成布局" demoUrl="Admin/images/s.jpg" fileName="/Models/Default/Student/StudentList/Page/studentList.Genarate.ascx" />
+    <item control="studentList.GenarateDB" name="学生列表(自动布局,单表结构)" type="" version="1.0" created="2013-12-30" desc="列表控件自动生成布局,单表结构" demoUrl="Admin/images/s.jpg" fileName="/Models/Default/Student/StudentList/Page/studentList.GenarateDB.ascx" />
+  </control>
+  <control name="学生详细" group="模型控件" path="" directory="StudentView" desc="学生详细">
+    <item control="studentView.Genarate" name="学生详细(自动布局)" type="" version="1.0" created="2013-12-30" desc="" demoUrl="Admin/images/s.jpg" fileName="/Models/Default/Student/StudentView/Page/studentView.Genarate.ascx" />
+    <item control="studentView.GenarateDB" name="学生详细(自动布局,单表结构)" type="" version="1.0" created="2013-12-30" desc=",单表结构" demoUrl="Admin/images/s.jpg" fileName="/Models/Default/Student/StudentView/Page/studentView.GenarateDB.ascx" />
+  </control>
+</Controls>

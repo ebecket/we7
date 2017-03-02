@@ -1,0 +1,188 @@
+
+ 
+记录时间：2012-04-16 15:07:10,094 
+线程ID:[3] 
+日志级别：  ERROR 
+出错类：We7.CMS.BasePage property: [(null)] - 
+错误描述：Error
+ 
+System.Threading.ThreadAbortException: 正在中止线程。
+   在 System.Threading.Thread.AbortInternal()
+   在 System.Threading.Thread.Abort(Object stateInfo)
+   在 System.Web.HttpResponse.End()
+   在 ASP.admin_authenticate_aspx.JsonResult(Object data)
+   在 ASP.admin_authenticate_aspx.Page_Load(Object sender, EventArgs e)
+   在 System.Web.Util.CalliHelper.EventArgFunctionCaller(IntPtr fp, Object o, Object t, EventArgs e)
+   在 System.Web.Util.CalliEventHandlerDelegateProxy.Callback(Object sender, EventArgs e)
+   在 System.Web.UI.Control.OnLoad(EventArgs e)
+   在 We7.CMS.BasePage.OnLoad(EventArgs e)
+
+ 
+记录时间：2012-04-16 15:14:12,874 
+线程ID:[3] 
+日志级别：  ERROR 
+出错类：We7.CMS.BasePage property: [(null)] - 
+错误描述：Error
+ 
+System.Threading.ThreadAbortException: 正在中止线程。
+   在 System.Threading.Thread.AbortInternal()
+   在 System.Threading.Thread.Abort(Object stateInfo)
+   在 System.Web.HttpResponse.End()
+   在 We7.CMS.Web.Admin.ClickRecordPage.Page_Load(Object sender, EventArgs e)
+   在 System.Web.Util.CalliHelper.EventArgFunctionCaller(IntPtr fp, Object o, Object t, EventArgs e)
+   在 System.Web.Util.CalliEventHandlerDelegateProxy.Callback(Object sender, EventArgs e)
+   在 System.Web.UI.Control.OnLoad(EventArgs e)
+   在 We7.CMS.BasePage.OnLoad(EventArgs e)
+
+ 
+记录时间：2012-04-16 15:27:04,728 
+线程ID:[6] 
+日志级别：  ERROR 
+出错类：We7.CMS.BasePage property: [(null)] - 
+错误描述：Error
+ 
+System.Threading.ThreadAbortException: 正在中止线程。
+   在 System.Threading.Thread.AbortInternal()
+   在 System.Threading.Thread.Abort(Object stateInfo)
+   在 System.Web.HttpResponse.End()
+   在 We7.CMS.Web.Admin.ClickRecordPage.Page_Load(Object sender, EventArgs e)
+   在 System.Web.Util.CalliHelper.EventArgFunctionCaller(IntPtr fp, Object o, Object t, EventArgs e)
+   在 System.Web.Util.CalliEventHandlerDelegateProxy.Callback(Object sender, EventArgs e)
+   在 System.Web.UI.Control.OnLoad(EventArgs e)
+   在 We7.CMS.BasePage.OnLoad(EventArgs e)
+
+ 
+记录时间：2012-04-16 15:28:04,322 
+线程ID:[3] 
+日志级别：  ERROR 
+出错类：We7.CMS.BasePage property: [(null)] - 
+错误描述：Error
+ 
+System.Threading.ThreadAbortException: 正在中止线程。
+   在 System.Threading.Thread.AbortInternal()
+   在 System.Threading.Thread.Abort(Object stateInfo)
+   在 System.Web.HttpResponse.End()
+   在 We7.CMS.Web.Admin.ClickRecordPage.Page_Load(Object sender, EventArgs e)
+   在 System.Web.Util.CalliHelper.EventArgFunctionCaller(IntPtr fp, Object o, Object t, EventArgs e)
+   在 System.Web.Util.CalliEventHandlerDelegateProxy.Callback(Object sender, EventArgs e)
+   在 System.Web.UI.Control.OnLoad(EventArgs e)
+   在 We7.CMS.BasePage.OnLoad(EventArgs e)
+
+ 
+记录时间：2012-04-16 15:28:09,038 
+线程ID:[3] 
+日志级别：  ERROR 
+出错类：We7.CMS.Web.Global property: [(null)] - 
+错误描述：Error
+ 
+System.Web.HttpUnhandledException: 引发类型为“System.Web.HttpUnhandledException”的异常。 ---> System.Data.OleDb.OleDbException: 'E:\Work\DotNet\SOE\econ_rd\dba\ecno.mdb'不是一个有效的路径。 确定路径名称拼写是否正确，以及是否连接到文件存放的服务器。
+   在 System.Data.OleDb.OleDbConnectionInternal..ctor(OleDbConnectionString constr, OleDbConnection connection)
+   在 System.Data.OleDb.OleDbConnectionFactory.CreateConnection(DbConnectionOptions options, Object poolGroupProviderInfo, DbConnectionPool pool, DbConnection owningObject)
+   在 System.Data.ProviderBase.DbConnectionFactory.CreateNonPooledConnection(DbConnection owningConnection, DbConnectionPoolGroup poolGroup)
+   在 System.Data.ProviderBase.DbConnectionFactory.GetConnection(DbConnection owningConnection)
+   在 System.Data.ProviderBase.DbConnectionClosed.OpenConnection(DbConnection outerConnection, DbConnectionFactory connectionFactory)
+   在 System.Data.OleDb.OleDbConnection.Open()
+   在 We7.CMS.Web.Widgets.Faculty_Default.OpenDb() 位置 e:\Work\DotNet\SOE\Widgets\WidgetCollection\Other\Faculty.Default\Faculty.Default.cs:行号 53
+   在 We7.CMS.Web.Widgets.Faculty_Default.Page_Load(Object sender, EventArgs e) 位置 e:\Work\DotNet\SOE\Widgets\WidgetCollection\Other\Faculty.Default\Faculty.Default.cs:行号 30
+   在 System.Web.Util.CalliHelper.EventArgFunctionCaller(IntPtr fp, Object o, Object t, EventArgs e)
+   在 System.Web.Util.CalliEventHandlerDelegateProxy.Callback(Object sender, EventArgs e)
+   在 System.Web.UI.Control.OnLoad(EventArgs e)
+   在 System.Web.UI.Control.LoadRecursive()
+   在 System.Web.UI.Control.LoadRecursive()
+   在 System.Web.UI.Control.LoadRecursive()
+   在 System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+   --- 内部异常堆栈跟踪的结尾 ---
+   在 System.Web.UI.Page.HandleError(Exception e)
+   在 System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+   在 System.Web.UI.Page.ProcessRequest(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+   在 System.Web.UI.Page.ProcessRequest()
+   在 System.Web.UI.Page.ProcessRequestWithNoAssert(HttpContext context)
+   在 System.Web.UI.Page.ProcessRequest(HttpContext context)
+   在 ASP.go_showchannel_aspx.ProcessRequest(HttpContext context)
+   在 System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   在 System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+
+ 
+记录时间：2012-04-16 15:32:02,270 
+线程ID:[3] 
+日志级别：  ERROR 
+出错类：We7.CMS.BasePage property: [(null)] - 
+错误描述：Error
+ 
+System.Threading.ThreadAbortException: 正在中止线程。
+   在 System.Threading.Thread.AbortInternal()
+   在 System.Threading.Thread.Abort(Object stateInfo)
+   在 System.Web.HttpResponse.End()
+   在 We7.CMS.Web.Admin.ClickRecordPage.Page_Load(Object sender, EventArgs e)
+   在 System.Web.Util.CalliHelper.EventArgFunctionCaller(IntPtr fp, Object o, Object t, EventArgs e)
+   在 System.Web.Util.CalliEventHandlerDelegateProxy.Callback(Object sender, EventArgs e)
+   在 System.Web.UI.Control.OnLoad(EventArgs e)
+   在 We7.CMS.BasePage.OnLoad(EventArgs e)
+
+ 
+记录时间：2012-04-16 15:33:14,371 
+线程ID:[6] 
+日志级别：  ERROR 
+出错类：We7.CMS.Web.Global property: [(null)] - 
+错误描述：Error
+ 
+System.Web.HttpUnhandledException: 引发类型为“System.Web.HttpUnhandledException”的异常。 ---> System.Data.OleDb.OleDbException: 'E:\Work\DotNet\SOE\econ_rd\dba\ecno.mdb'不是一个有效的路径。 确定路径名称拼写是否正确，以及是否连接到文件存放的服务器。
+   在 System.Data.OleDb.OleDbConnectionInternal..ctor(OleDbConnectionString constr, OleDbConnection connection)
+   在 System.Data.OleDb.OleDbConnectionFactory.CreateConnection(DbConnectionOptions options, Object poolGroupProviderInfo, DbConnectionPool pool, DbConnection owningObject)
+   在 System.Data.ProviderBase.DbConnectionFactory.CreateNonPooledConnection(DbConnection owningConnection, DbConnectionPoolGroup poolGroup)
+   在 System.Data.ProviderBase.DbConnectionFactory.GetConnection(DbConnection owningConnection)
+   在 System.Data.ProviderBase.DbConnectionClosed.OpenConnection(DbConnection outerConnection, DbConnectionFactory connectionFactory)
+   在 System.Data.OleDb.OleDbConnection.Open()
+   在 We7.CMS.Web.Widgets.Faculty_Default.OpenDb() 位置 e:\Work\DotNet\SOE\Widgets\WidgetCollection\Other\Faculty.Default\Faculty.Default.cs:行号 53
+   在 We7.CMS.Web.Widgets.Faculty_Default.Page_Load(Object sender, EventArgs e) 位置 e:\Work\DotNet\SOE\Widgets\WidgetCollection\Other\Faculty.Default\Faculty.Default.cs:行号 30
+   在 System.Web.Util.CalliHelper.EventArgFunctionCaller(IntPtr fp, Object o, Object t, EventArgs e)
+   在 System.Web.Util.CalliEventHandlerDelegateProxy.Callback(Object sender, EventArgs e)
+   在 System.Web.UI.Control.OnLoad(EventArgs e)
+   在 System.Web.UI.Control.LoadRecursive()
+   在 System.Web.UI.Control.LoadRecursive()
+   在 System.Web.UI.Control.LoadRecursive()
+   在 System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+   --- 内部异常堆栈跟踪的结尾 ---
+   在 System.Web.UI.Page.HandleError(Exception e)
+   在 System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+   在 System.Web.UI.Page.ProcessRequest(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+   在 System.Web.UI.Page.ProcessRequest()
+   在 System.Web.UI.Page.ProcessRequestWithNoAssert(HttpContext context)
+   在 System.Web.UI.Page.ProcessRequest(HttpContext context)
+   在 ASP.go_showchannel_aspx.ProcessRequest(HttpContext context)
+   在 System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   在 System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+
+ 
+记录时间：2012-04-16 15:42:59,514 
+线程ID:[6] 
+日志级别：  ERROR 
+出错类：We7.CMS.BasePage property: [(null)] - 
+错误描述：Error
+ 
+System.Threading.ThreadAbortException: 正在中止线程。
+   在 System.Threading.Thread.AbortInternal()
+   在 System.Threading.Thread.Abort(Object stateInfo)
+   在 System.Web.HttpResponse.End()
+   在 We7.CMS.Web.Admin.ClickRecordPage.Page_Load(Object sender, EventArgs e)
+   在 System.Web.Util.CalliHelper.EventArgFunctionCaller(IntPtr fp, Object o, Object t, EventArgs e)
+   在 System.Web.Util.CalliEventHandlerDelegateProxy.Callback(Object sender, EventArgs e)
+   在 System.Web.UI.Control.OnLoad(EventArgs e)
+   在 We7.CMS.BasePage.OnLoad(EventArgs e)
+
+ 
+记录时间：2012-04-16 15:45:10,489 
+线程ID:[6] 
+日志级别：  ERROR 
+出错类：We7.CMS.BasePage property: [(null)] - 
+错误描述：Error
+ 
+System.Threading.ThreadAbortException: 正在中止线程。
+   在 System.Threading.Thread.AbortInternal()
+   在 System.Threading.Thread.Abort(Object stateInfo)
+   在 System.Web.HttpResponse.End()
+   在 We7.CMS.Web.Admin.ClickRecordPage.Page_Load(Object sender, EventArgs e)
+   在 System.Web.Util.CalliHelper.EventArgFunctionCaller(IntPtr fp, Object o, Object t, EventArgs e)
+   在 System.Web.Util.CalliEventHandlerDelegateProxy.Callback(Object sender, EventArgs e)
+   在 System.Web.UI.Control.OnLoad(EventArgs e)
+   在 We7.CMS.BasePage.OnLoad(EventArgs e)

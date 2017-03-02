@@ -1,0 +1,47 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="urn:schemas-microsoft-com:windows:storage:mapping:CS">
+  <EntityContainerMapping StorageEntityContainer="facultyModelStoreContainer" CdmEntityContainer="facultyEntities">
+    <EntitySetMapping Name="People">
+      <EntityTypeMapping TypeName="facultyModel.People">
+        <MappingFragment StoreEntitySet="People">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="AccountID" ColumnName="AccountID" />
+          <ScalarProperty Name="OwnerID" ColumnName="OwnerID" />
+          <ScalarProperty Name="State" ColumnName="State" />
+          <ScalarProperty Name="Index" ColumnName="Index" />
+          <ScalarProperty Name="IsShow" ColumnName="IsShow" />
+          <ScalarProperty Name="Tags" ColumnName="Tags" />
+          <ScalarProperty Name="Updated" ColumnName="Updated" />
+          <ScalarProperty Name="Created" ColumnName="Created" />
+          <ScalarProperty Name="ProcessState" ColumnName="ProcessState" />
+          <ScalarProperty Name="ProcessDirection" ColumnName="ProcessDirection" />
+          <ScalarProperty Name="ProcessSiteID" ColumnName="ProcessSiteID" />
+          <ScalarProperty Name="FullPath" ColumnName="FullPath" />
+          <ScalarProperty Name="Clicks" ColumnName="Clicks" />
+          <ScalarProperty Name="DayClicks" ColumnName="DayClicks" />
+          <ScalarProperty Name="YesterdayClicks" ColumnName="YesterdayClicks" />
+          <ScalarProperty Name="WeekClicks" ColumnName="WeekClicks" />
+          <ScalarProperty Name="MonthClicks" ColumnName="MonthClicks" />
+          <ScalarProperty Name="QuarterClicks" ColumnName="QuarterClicks" />
+          <ScalarProperty Name="YearClicks" ColumnName="YearClicks" />
+          <ScalarProperty Name="Fullname" ColumnName="Fullname" />
+          <ScalarProperty Name="Gendar" ColumnName="Gendar" />
+          <ScalarProperty Name="Title" ColumnName="Title" />
+          <ScalarProperty Name="Position" ColumnName="Position" />
+          <ScalarProperty Name="Office" ColumnName="Office" />
+          <ScalarProperty Name="OfficeTime" ColumnName="OfficeTime" />
+          <ScalarProperty Name="Phone" ColumnName="Phone" />
+          <ScalarProperty Name="Mobil" ColumnName="Mobil" />
+          <ScalarProperty Name="Email" ColumnName="Email" />
+          <ScalarProperty Name="Duty" ColumnName="Duty" />
+          <ScalarProperty Name="Field" ColumnName="Field" />
+          <ScalarProperty Name="Photo" ColumnName="Photo" />
+          <ScalarProperty Name="Url" ColumnName="Url" />
+          <ScalarProperty Name="Intro" ColumnName="Intro" />
+          <ScalarProperty Name="IndexLetter" ColumnName="IndexLetter" />
+          <ScalarProperty Name="CardNumber" ColumnName="CardNumber" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

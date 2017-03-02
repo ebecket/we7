@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<items>
+  <item url="/events/seminars/" template="lecture.default.index.ascx" />
+  <item url="/events/seminars/detail" template="lecture.default.detail.ascx" />
+  <item url="/events/seminars/search" template="lecture.default.search.ascx" />
+  <item url="/people/faculty/" template="people.default.index.ascx" />
+  <item url="/people/faculty/detail" template="people.default.detail.ascx " />
+  <item url="/announcements/*/" template="channel.index.ascx" />
+  <item url="/aboutus/zxjj/" template="channel.single.ascx" />
+  <item url="/aboutus/lhzrzc/" template="channel.single.ascx" />
+  <item url="/aboutus/zzjg/" template="channel.single.ascx" />
+</items>

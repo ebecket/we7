@@ -1,0 +1,129 @@
+
+ 
+记录时间：2015-03-10 10:56:25,893 
+线程ID:[3] 
+日志级别：  ERROR 
+出错类：We7.CMS.FrontBasePage property: [(null)] - 
+错误描述：Error
+ 
+System.Xml.XmlException: 名称不能以“<”字符(十六进制值 0x3C)开头。 行 86，位置 2。
+   在 System.Xml.XmlTextReaderImpl.Throw(Exception e)
+   在 System.Xml.XmlTextReaderImpl.Throw(String res, String[] args)
+   在 System.Xml.XmlTextReaderImpl.Throw(Int32 pos, String res, String[] args)
+   在 System.Xml.XmlTextReaderImpl.ParseQName(Boolean isQName, Int32 startOffset, Int32& colonPos)
+   在 System.Xml.XmlTextReaderImpl.ParseElement()
+   在 System.Xml.XmlTextReaderImpl.ParseElementContent()
+   在 System.Xml.XmlTextReaderImpl.Read()
+   在 System.Xml.XmlLoader.LoadNode(Boolean skipOverWhitespace)
+   在 System.Xml.XmlLoader.LoadDocSequence(XmlDocument parentDoc)
+   在 System.Xml.XmlLoader.Load(XmlDocument doc, XmlReader reader, Boolean preserveWhitespace)
+   在 System.Xml.XmlDocument.Load(XmlReader reader)
+   在 System.Xml.XmlDocument.Load(String filename)
+   在 We7.CMS.TemplateMap.LoadMaps(String mapfile, ArrayList maps)
+   在 We7.CMS.TemplateMap..ctor()
+   在 We7.CMS.TemplateMap.GetTemplateMap()
+   在 We7.CMS.TemplateMap.GetTemplateFromMap(String columnMode, String requestPath)
+   在 We7.CMS.TemplateHelper.GetTemplateByHandlers(String ColumnMode, String ColumnID, String SearchWord, String SeSearchWord)
+   在 We7.CMS.TemplateHelper.GetHtmlTemplateByHandlers(String ColumnMode, String ColumnID, String SearchWord, String SeSearchWord)
+   在 We7.CMS.Web.ShowSitePage.Initialize()
+   在 We7.CMS.FrontBasePage.OnLoad(EventArgs e)
+
+ 
+记录时间：2015-03-10 11:00:08,711 
+线程ID:[9] 
+日志级别：  ERROR 
+出错类：We7.CMS.FrontBasePage property: [(null)] - 
+错误描述：Error
+ 
+System.Xml.XmlException: 名称不能以“<”字符(十六进制值 0x3C)开头。 行 86，位置 2。
+   在 System.Xml.XmlTextReaderImpl.Throw(Exception e)
+   在 System.Xml.XmlTextReaderImpl.Throw(String res, String[] args)
+   在 System.Xml.XmlTextReaderImpl.Throw(Int32 pos, String res, String[] args)
+   在 System.Xml.XmlTextReaderImpl.ParseQName(Boolean isQName, Int32 startOffset, Int32& colonPos)
+   在 System.Xml.XmlTextReaderImpl.ParseElement()
+   在 System.Xml.XmlTextReaderImpl.ParseElementContent()
+   在 System.Xml.XmlTextReaderImpl.Read()
+   在 System.Xml.XmlLoader.LoadNode(Boolean skipOverWhitespace)
+   在 System.Xml.XmlLoader.LoadDocSequence(XmlDocument parentDoc)
+   在 System.Xml.XmlLoader.Load(XmlDocument doc, XmlReader reader, Boolean preserveWhitespace)
+   在 System.Xml.XmlDocument.Load(XmlReader reader)
+   在 System.Xml.XmlDocument.Load(String filename)
+   在 We7.CMS.TemplateMap.LoadMaps(String mapfile, ArrayList maps)
+   在 We7.CMS.TemplateMap..ctor()
+   在 We7.CMS.TemplateMap.GetTemplateMap()
+   在 We7.CMS.TemplateMap.GetTemplateFromMap(String columnMode, String requestPath)
+   在 We7.CMS.TemplateHelper.GetTemplateByHandlers(String ColumnMode, String ColumnID, String SearchWord, String SeSearchWord)
+   在 We7.CMS.TemplateHelper.GetHtmlTemplateByHandlers(String ColumnMode, String ColumnID, String SearchWord, String SeSearchWord)
+   在 We7.CMS.Web.ShowSitePage.Initialize()
+   在 We7.CMS.FrontBasePage.OnLoad(EventArgs e)
+
+ 
+记录时间：2015-03-10 15:17:43,452 
+线程ID:[3] 
+日志级别：  ERROR 
+出错类：We7.CMS.FrontBasePage property: [(null)] - 
+错误描述：Error
+ 
+System.Xml.XmlException: 名称不能以“<”字符(十六进制值 0x3C)开头。 行 86，位置 2。
+   在 System.Xml.XmlTextReaderImpl.Throw(Exception e)
+   在 System.Xml.XmlTextReaderImpl.Throw(String res, String[] args)
+   在 System.Xml.XmlTextReaderImpl.Throw(Int32 pos, String res, String[] args)
+   在 System.Xml.XmlTextReaderImpl.ParseQName(Boolean isQName, Int32 startOffset, Int32& colonPos)
+   在 System.Xml.XmlTextReaderImpl.ParseElement()
+   在 System.Xml.XmlTextReaderImpl.ParseElementContent()
+   在 System.Xml.XmlTextReaderImpl.Read()
+   在 System.Xml.XmlLoader.LoadNode(Boolean skipOverWhitespace)
+   在 System.Xml.XmlLoader.LoadDocSequence(XmlDocument parentDoc)
+   在 System.Xml.XmlLoader.Load(XmlDocument doc, XmlReader reader, Boolean preserveWhitespace)
+   在 System.Xml.XmlDocument.Load(XmlReader reader)
+   在 System.Xml.XmlDocument.Load(String filename)
+   在 We7.CMS.TemplateMap.LoadMaps(String mapfile, ArrayList maps)
+   在 We7.CMS.TemplateMap..ctor()
+   在 We7.CMS.TemplateMap.GetTemplateMap()
+   在 We7.CMS.TemplateMap.GetTemplateFromMap(String columnMode, String requestPath)
+   在 We7.CMS.TemplateHelper.GetTemplateByHandlers(String ColumnMode, String ColumnID, String SearchWord, String SeSearchWord)
+   在 We7.CMS.TemplateHelper.GetHtmlTemplateByHandlers(String ColumnMode, String ColumnID, String SearchWord, String SeSearchWord)
+   在 We7.CMS.Web.ShowSitePage.Initialize()
+   在 We7.CMS.FrontBasePage.OnLoad(EventArgs e)
+
+ 
+记录时间：2015-03-10 15:27:25,841 
+线程ID:[3] 
+日志级别：  ERROR 
+出错类：We7.CMS.FrontBasePage property: [(null)] - 
+错误描述：Error
+ 
+System.Web.HttpParseException: f:\SVN\WISE\Widgets\WidgetCollection\Lecture\Lecture.Default.List\Lecture.Default.TabList.ascx(190): error CS0103: 当前上下文中不存在名称“articles” ---> System.Web.HttpCompileException: f:\SVN\WISE\Widgets\WidgetCollection\Lecture\Lecture.Default.List\Lecture.Default.TabList.ascx(190): error CS0103: 当前上下文中不存在名称“articles”
+   在 System.Web.Compilation.BuildManager.PostProcessFoundBuildResult(BuildResult result, Boolean keyFromVPP, VirtualPath virtualPath)
+   在 System.Web.Compilation.BuildManager.GetBuildResultFromCacheInternal(String cacheKey, Boolean keyFromVPP, VirtualPath virtualPath, Int64 hashCode)
+   在 System.Web.Compilation.BuildManager.GetVPathBuildResultFromCacheInternal(VirtualPath virtualPath)
+   在 System.Web.Compilation.BuildManager.GetVPathBuildResultInternal(VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile)
+   在 System.Web.Compilation.BuildManager.GetVPathBuildResultWithNoAssert(HttpContext context, VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile)
+   在 System.Web.Compilation.BuildManager.GetVPathBuildResult(HttpContext context, VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile)
+   在 System.Web.UI.BaseTemplateParser.GetReferencedType(VirtualPath virtualPath, Boolean allowNoCompile)
+   在 System.Web.UI.BaseTemplateParser.GetUserControlType(VirtualPath virtualPath)
+   在 System.Web.UI.MainTagNameToTypeMapper.ProcessUserControlRegistration(UserControlRegisterEntry ucRegisterEntry)
+   在 System.Web.UI.BaseTemplateParser.ProcessDirective(String directiveName, IDictionary directive)
+   在 System.Web.UI.TemplateControlParser.ProcessDirective(String directiveName, IDictionary directive)
+   在 System.Web.UI.TemplateParser.ParseStringInternal(String text, Encoding fileEncoding)
+   --- 内部异常堆栈跟踪的结尾 ---
+   在 System.Web.UI.TemplateParser.ProcessException(Exception ex)
+   在 System.Web.UI.TemplateParser.ParseStringInternal(String text, Encoding fileEncoding)
+   在 System.Web.UI.TemplateParser.ParseString(String text, VirtualPath virtualPath, Encoding fileEncoding)
+   在 System.Web.UI.TemplateParser.ParseReader(StreamReader reader, VirtualPath virtualPath)
+   在 System.Web.UI.TemplateParser.ParseFile(String physicalPath, VirtualPath virtualPath)
+   在 System.Web.UI.TemplateParser.ParseInternal()
+   在 System.Web.UI.TemplateParser.Parse()
+   在 System.Web.UI.TemplateParser.Parse(ICollection referencedAssemblies, VirtualPath virtualPath)
+   在 System.Web.Compilation.BaseTemplateBuildProvider.get_CodeCompilerType()
+   在 System.Web.Compilation.BuildProvider.GetCompilerTypeFromBuildProvider(BuildProvider buildProvider)
+   在 System.Web.Compilation.BuildProvidersCompiler.ProcessBuildProviders()
+   在 System.Web.Compilation.BuildProvidersCompiler.PerformBuild()
+   在 System.Web.Compilation.BuildManager.CompileWebFile(VirtualPath virtualPath)
+   在 System.Web.Compilation.BuildManager.GetVPathBuildResultInternal(VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile)
+   在 System.Web.Compilation.BuildManager.GetVPathBuildResultWithNoAssert(HttpContext context, VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile)
+   在 System.Web.Compilation.BuildManager.GetVPathBuildResult(HttpContext context, VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile)
+   在 System.Web.UI.TemplateControl.LoadControl(VirtualPath virtualPath)
+   在 System.Web.UI.TemplateControl.LoadControl(String virtualPath)
+   在 We7.CMS.Web.ShowSitePage.Initialize()
+   在 We7.CMS.FrontBasePage.OnLoad(EventArgs e)

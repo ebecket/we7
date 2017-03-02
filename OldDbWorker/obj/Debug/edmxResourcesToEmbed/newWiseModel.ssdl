@@ -1,0 +1,999 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="WISEModel.Store" Alias="Self" Provider="System.Data.SqlClient" ProviderManifestToken="2008" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns="http://schemas.microsoft.com/ado/2006/04/edm/ssdl">
+  <EntityContainer Name="WISEModelStoreContainer">
+    <EntitySet Name="Account" EntityType="WISEModel.Store.Account" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="AccountRole" EntityType="WISEModel.Store.AccountRole" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="Advice" EntityType="WISEModel.Store.Advice" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="AdviceAuth" EntityType="WISEModel.Store.AdviceAuth" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="AdviceInfo" EntityType="WISEModel.Store.AdviceInfo" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="AdviceReply" EntityType="WISEModel.Store.AdviceReply" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="AdviceReplyInfo" EntityType="WISEModel.Store.AdviceReplyInfo" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="AdviceTransfer" EntityType="WISEModel.Store.AdviceTransfer" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="AdviceType" EntityType="WISEModel.Store.AdviceType" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="AnswerSheet" EntityType="WISEModel.Store.AnswerSheet" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="Article" EntityType="WISEModel.Store.Article" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="ArticleIndex" EntityType="WISEModel.Store.ArticleIndex" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="ArticleTag" EntityType="WISEModel.Store.ArticleTag" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="Attachment" EntityType="WISEModel.Store.Attachment" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="Category" EntityType="WISEModel.Store.Category" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="Channel" EntityType="WISEModel.Store.Channel" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="ChannelModuleMapping" EntityType="WISEModel.Store.ChannelModuleMapping" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="ChannelTag" EntityType="WISEModel.Store.ChannelTag" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="ClickRecords" EntityType="WISEModel.Store.ClickRecords" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="ColumnModule" EntityType="WISEModel.Store.ColumnModule" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="Comments" EntityType="WISEModel.Store.Comments" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="Department" EntityType="WISEModel.Store.Department" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="ErrorCode" EntityType="WISEModel.Store.ErrorCode" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="Favorite" EntityType="WISEModel.Store.Favorite" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="Lecture" EntityType="WISEModel.Store.Lecture" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="Link" EntityType="WISEModel.Store.Link" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="Log" EntityType="WISEModel.Store.Log" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="Menu" EntityType="WISEModel.Store.Menu" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="Message" EntityType="WISEModel.Store.Message" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="Option" EntityType="WISEModel.Store.Option" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="PageVisitor" EntityType="WISEModel.Store.PageVisitor" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="PageVisitorHistory" EntityType="WISEModel.Store.PageVisitorHistory" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="People" EntityType="WISEModel.Store.People" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="Permission" EntityType="WISEModel.Store.Permission" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="Point" EntityType="WISEModel.Store.Point" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="Question" EntityType="WISEModel.Store.Question" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="Questionnaire" EntityType="WISEModel.Store.Questionnaire" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="QuestionnaireType" EntityType="WISEModel.Store.QuestionnaireType" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="RelatedArticle" EntityType="WISEModel.Store.RelatedArticle" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="Role" EntityType="WISEModel.Store.Role" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="ScoreDetail" EntityType="WISEModel.Store.ScoreDetail" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="ScoreLevel" EntityType="WISEModel.Store.ScoreLevel" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="ScoreRule" EntityType="WISEModel.Store.ScoreRule" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="ScoreRuleCount" EntityType="WISEModel.Store.ScoreRuleCount" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="ScoreSource" EntityType="WISEModel.Store.ScoreSource" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="ScoreSubject" EntityType="WISEModel.Store.ScoreSubject" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="ScoreSummary" EntityType="WISEModel.Store.ScoreSummary" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="Statistics" EntityType="WISEModel.Store.Statistics" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="StatisticsHistory" EntityType="WISEModel.Store.StatisticsHistory" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="Vote" EntityType="WISEModel.Store.Vote" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="VoteAnswer" EntityType="WISEModel.Store.VoteAnswer" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="VoteAnswerStat" EntityType="WISEModel.Store.VoteAnswerStat" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="VoteEntry" EntityType="WISEModel.Store.VoteEntry" store:Type="Tables" Schema="dbo" />
+  </EntityContainer>
+  <EntityType Name="Account">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="nvarchar" Nullable="false" MaxLength="40" />
+    <Property Name="FromSiteID" Type="nvarchar" MaxLength="40" />
+    <Property Name="DepartmentID" Type="nvarchar" MaxLength="40" />
+    <Property Name="Department" Type="nvarchar" MaxLength="255" />
+    <Property Name="Email" Type="nvarchar" MaxLength="128" />
+    <Property Name="LoginName" Type="nvarchar" MaxLength="64" />
+    <Property Name="Password" Type="nvarchar" MaxLength="255" />
+    <Property Name="FirstName" Type="nvarchar" MaxLength="32" />
+    <Property Name="MiddleName" Type="nvarchar" MaxLength="32" />
+    <Property Name="LastName" Type="nvarchar" MaxLength="32" />
+    <Property Name="Photo" Type="nvarchar" MaxLength="255" />
+    <Property Name="SequenceIndex" Type="int" />
+    <Property Name="Description" Type="text" />
+    <Property Name="UserType" Type="int" />
+    <Property Name="State" Type="int" />
+    <Property Name="Home" Type="nvarchar" MaxLength="255" />
+    <Property Name="Created" Type="datetime" />
+    <Property Name="PasswordHashed" Type="int" />
+    <Property Name="Updated" Type="datetime" />
+    <Property Name="Overdue" Type="datetime" />
+    <Property Name="ModelXml" Type="text" />
+    <Property Name="UserModelName" Type="nvarchar" MaxLength="50" />
+    <Property Name="Mobile" Type="nvarchar" MaxLength="50" />
+    <Property Name="QQ" Type="nvarchar" MaxLength="50" />
+    <Property Name="Point" Type="int" />
+    <Property Name="Prestige" Type="int" />
+    <Property Name="Money" Type="money" />
+    <Property Name="PublishCount" Type="int" />
+    <Property Name="EmailValidate" Type="int" />
+    <Property Name="ModelName" Type="nvarchar" MaxLength="255" />
+    <Property Name="ModelConfig" Type="text" />
+    <Property Name="ModelSchema" Type="text" />
+    <Property Name="ModelState" Type="int" />
+    <Property Name="Tel" Type="nvarchar" MaxLength="50" />
+    <Property Name="Birthday" Type="datetime" />
+    <Property Name="Sex" Type="nvarchar" MaxLength="2" />
+  </EntityType>
+  <EntityType Name="AccountRole">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="nvarchar" Nullable="false" MaxLength="40" />
+    <Property Name="DepartmentID" Type="nvarchar" MaxLength="40" />
+    <Property Name="AccountID" Type="nvarchar" MaxLength="40" />
+    <Property Name="RoleID" Type="nvarchar" MaxLength="64" />
+    <Property Name="Created" Type="datetime" />
+    <Property Name="Updated" Type="datetime" />
+    <Property Name="RoleTitle" Type="nvarchar" MaxLength="64" />
+  </EntityType>
+  <EntityType Name="Advice">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="nvarchar" Nullable="false" MaxLength="40" />
+    <Property Name="TypeID" Type="nvarchar" MaxLength="40" />
+    <Property Name="UserID" Type="nvarchar" MaxLength="40" />
+    <Property Name="Title" Type="nvarchar" MaxLength="64" />
+    <Property Name="Content" Type="text" />
+    <Property Name="CreateDate" Type="datetime" />
+    <Property Name="Name" Type="nvarchar" MaxLength="64" />
+    <Property Name="Email" Type="nvarchar" MaxLength="64" />
+    <Property Name="IsShow" Type="int" />
+    <Property Name="ReplyDepID" Type="nvarchar" MaxLength="40" />
+    <Property Name="SN" Type="bigint" />
+    <Property Name="ReplyCount" Type="int" />
+    <Property Name="State" Type="int" />
+    <Property Name="OwnID" Type="nvarchar" MaxLength="50" />
+    <Property Name="Updated" Type="datetime" />
+    <Property Name="ModelXml" Type="text" />
+    <Property Name="MyQueryPwd" Type="nvarchar" MaxLength="50" />
+    <Property Name="ProcessState" Type="nvarchar" MaxLength="50" />
+    <Property Name="ProcessDirection" Type="nvarchar" MaxLength="50" />
+    <Property Name="FlowXml" Type="text" />
+    <Property Name="Source" Type="nvarchar" MaxLength="255" />
+    <Property Name="ProcessSiteID" Type="nvarchar" MaxLength="50" />
+    <Property Name="EnumState" Type="nvarchar" MaxLength="50" />
+    <Property Name="MustHandle" Type="int" />
+    <Property Name="ToHandleTime" Type="datetime" />
+    <Property Name="AdviceInfoType" Type="nvarchar" MaxLength="50" />
+    <Property Name="ToOtherHandleUserID" Type="nvarchar" MaxLength="50" />
+    <Property Name="Display1" Type="nvarchar" MaxLength="50" />
+    <Property Name="Display2" Type="nvarchar" MaxLength="50" />
+    <Property Name="Display3" Type="nvarchar" MaxLength="50" />
+    <Property Name="ModelName" Type="nvarchar" MaxLength="255" />
+    <Property Name="ModelConfig" Type="text" />
+    <Property Name="ModelSchema" Type="text" />
+    <Property Name="Phone" Type="nvarchar" MaxLength="20" />
+    <Property Name="Fax" Type="nvarchar" MaxLength="20" />
+    <Property Name="Address" Type="nvarchar" MaxLength="100" />
+    <Property Name="AdviceTag" Type="nvarchar" MaxLength="64" />
+    <Property Name="IsRead" Type="int" />
+  </EntityType>
+  <EntityType Name="AdviceAuth">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="nvarchar" Nullable="false" MaxLength="40" />
+    <Property Name="AuthID" Type="nvarchar" MaxLength="40" />
+    <Property Name="AdviceTypeID" Type="nvarchar" MaxLength="40" />
+    <Property Name="AuthType" Type="int" />
+    <Property Name="Function" Type="int" />
+  </EntityType>
+  <EntityType Name="AdviceInfo">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="nvarchar" Nullable="false" MaxLength="40" />
+    <Property Name="TypeID" Type="nvarchar" MaxLength="40" />
+    <Property Name="UserID" Type="nvarchar" MaxLength="40" />
+    <Property Name="Title" Type="nvarchar" MaxLength="64" />
+    <Property Name="Content" Type="text" />
+    <Property Name="Created" Type="datetime" />
+    <Property Name="Updated" Type="datetime" />
+    <Property Name="Name" Type="nvarchar" MaxLength="64" />
+    <Property Name="Email" Type="nvarchar" MaxLength="64" />
+    <Property Name="IsShow" Type="int" />
+    <Property Name="IsTop" Type="int" />
+    <Property Name="SN" Type="nvarchar" MaxLength="12" />
+    <Property Name="State" Type="int" />
+    <Property Name="Public" Type="int" />
+    <Property Name="ModelXml" Type="text" />
+    <Property Name="MyQueryPwd" Type="nvarchar" MaxLength="50" />
+    <Property Name="Priority" Type="int" />
+    <Property Name="Display1" Type="nvarchar" MaxLength="50" />
+    <Property Name="Display2" Type="nvarchar" MaxLength="50" />
+    <Property Name="Display3" Type="nvarchar" MaxLength="50" />
+    <Property Name="ModelName" Type="nvarchar" MaxLength="255" />
+    <Property Name="ModelConfig" Type="text" />
+    <Property Name="ModelSchema" Type="text" />
+    <Property Name="Phone" Type="nvarchar" MaxLength="20" />
+    <Property Name="Fax" Type="nvarchar" MaxLength="20" />
+    <Property Name="Address" Type="nvarchar" MaxLength="100" />
+    <Property Name="IsRead" Type="int" />
+    <Property Name="Clicks" Type="int" />
+    <Property Name="DayClicks" Type="int" />
+    <Property Name="YesterdayClicks" Type="int" />
+    <Property Name="WeekClicks" Type="int" />
+    <Property Name="MonthClicks" Type="int" />
+    <Property Name="QuarterClicks" Type="int" />
+    <Property Name="YearClicks" Type="int" />
+  </EntityType>
+  <EntityType Name="AdviceReply">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="nvarchar" Nullable="false" MaxLength="40" />
+    <Property Name="AdviceID" Type="nvarchar" MaxLength="40" />
+    <Property Name="UserID" Type="nvarchar" MaxLength="40" />
+    <Property Name="Title" Type="nvarchar" MaxLength="64" />
+    <Property Name="Content" Type="text" />
+    <Property Name="CreateDate" Type="datetime" />
+    <Property Name="Updated" Type="datetime" />
+    <Property Name="MailBody" Type="text" />
+    <Property Name="EnumState" Type="nvarchar" MaxLength="50" />
+    <Property Name="Comment" Type="text" />
+    <Property Name="Suggest" Type="text" />
+  </EntityType>
+  <EntityType Name="AdviceReplyInfo">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="nvarchar" Nullable="false" MaxLength="40" />
+    <Property Name="AdviceID" Type="nvarchar" MaxLength="40" />
+    <Property Name="UserID" Type="nvarchar" MaxLength="40" />
+    <Property Name="Title" Type="nvarchar" MaxLength="64" />
+    <Property Name="Content" Type="text" />
+    <Property Name="Created" Type="datetime" />
+    <Property Name="MailBody" Type="text" />
+  </EntityType>
+  <EntityType Name="AdviceTransfer">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="nvarchar" Nullable="false" MaxLength="40" />
+    <Property Name="AdviceID" Type="nvarchar" MaxLength="40" />
+    <Property Name="UserID" Type="nvarchar" MaxLength="40" />
+    <Property Name="FromTypeID" Type="nvarchar" MaxLength="40" />
+    <Property Name="ToTypeID" Type="nvarchar" MaxLength="40" />
+    <Property Name="Suggest" Type="text" />
+    <Property Name="State" Type="int" />
+    <Property Name="Created" Type="datetime" />
+  </EntityType>
+  <EntityType Name="AdviceType">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="nvarchar" Nullable="false" MaxLength="40" />
+    <Property Name="Title" Type="nvarchar" MaxLength="64" />
+    <Property Name="Description" Type="text" />
+    <Property Name="CreateDate" Type="datetime" />
+    <Property Name="Updated" Type="datetime" />
+    <Property Name="ModelXml" Type="text" />
+    <Property Name="AccountID" Type="nvarchar" MaxLength="40" />
+    <Property Name="EnumState" Type="nvarchar" MaxLength="50" />
+    <Property Name="ToWhichDepartment" Type="int" />
+    <Property Name="FlowSeries" Type="int" />
+    <Property Name="ProcessEnd" Type="nvarchar" MaxLength="16" />
+    <Property Name="FlowInnerDepart" Type="int" />
+    <Property Name="MailMode" Type="nvarchar" MaxLength="255" />
+    <Property Name="UseSystemMail" Type="int" />
+    <Property Name="MailSMTPServer" Type="nvarchar" MaxLength="255" />
+    <Property Name="POPServer" Type="nvarchar" MaxLength="255" />
+    <Property Name="MailUser" Type="nvarchar" MaxLength="50" />
+    <Property Name="MailPassword" Type="nvarchar" MaxLength="50" />
+    <Property Name="SMSUser" Type="nvarchar" MaxLength="255" />
+    <Property Name="RemindDays" Type="int" />
+    <Property Name="MailAddress" Type="nvarchar" MaxLength="255" />
+    <Property Name="ParticipateMode" Type="int" />
+    <Property Name="ModelName" Type="nvarchar" MaxLength="255" />
+  </EntityType>
+  <EntityType Name="AnswerSheet">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="nvarchar" Nullable="false" MaxLength="40" />
+    <Property Name="QuestionnaireID" Type="nvarchar" MaxLength="40" />
+    <Property Name="QuestionID" Type="nvarchar" MaxLength="40" />
+    <Property Name="OptionID" Type="nvarchar" MaxLength="40" />
+    <Property Name="OptionValue" Type="text" />
+    <Property Name="UserName" Type="nvarchar" MaxLength="40" />
+    <Property Name="UserIP" Type="nvarchar" MaxLength="200" />
+    <Property Name="PostDate" Type="smalldatetime" />
+    <Property Name="CurrentAnswerQuestionnaireID" Type="nvarchar" MaxLength="40" />
+  </EntityType>
+  <EntityType Name="Article">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="nvarchar" Nullable="false" MaxLength="40" />
+    <Property Name="Title" Type="nvarchar" MaxLength="128" />
+    <Property Name="Description" Type="nvarchar" MaxLength="255" />
+    <Property Name="OwnerID" Type="nvarchar" MaxLength="40" />
+    <Property Name="ParentID" Type="nvarchar" MaxLength="40" />
+    <Property Name="AccountID" Type="nvarchar" MaxLength="40" />
+    <Property Name="Author" Type="nvarchar" MaxLength="64" />
+    <Property Name="Content" Type="text" />
+    <Property Name="State" Type="int" />
+    <Property Name="Created" Type="datetime" />
+    <Property Name="Updated" Type="datetime" />
+    <Property Name="Overdue" Type="datetime" />
+    <Property Name="SequenceIndex" Type="int" />
+    <Property Name="Source" Type="nvarchar" MaxLength="255" />
+    <Property Name="AllowComments" Type="int" />
+    <Property Name="Permission" Type="int" />
+    <Property Name="IsImage" Type="int" />
+    <Property Name="IsShow" Type="int" />
+    <Property Name="SubTitle" Type="nvarchar" MaxLength="64" />
+    <Property Name="Thumbnail" Type="nvarchar" MaxLength="255" />
+    <Property Name="IsDeleted" Type="int" />
+    <Property Name="ContentUrl" Type="nvarchar" MaxLength="255" />
+    <Property Name="ContentType" Type="int" />
+    <Property Name="SourceID" Type="nvarchar" MaxLength="40" />
+    <Property Name="SN" Type="bigint" />
+    <Property Name="ProcessState" Type="nvarchar" MaxLength="50" />
+    <Property Name="ProcessDirection" Type="nvarchar" MaxLength="50" />
+    <Property Name="ProcessSiteID" Type="nvarchar" MaxLength="50" />
+    <Property Name="FlowXml" Type="text" />
+    <Property Name="ChannelName" Type="nvarchar" MaxLength="50" />
+    <Property Name="FullChannelPath" Type="nvarchar" MaxLength="255" />
+    <Property Name="ChannelFullUrl" Type="nvarchar" MaxLength="255" />
+    <Property Name="CommentCount" Type="int" />
+    <Property Name="Tags" Type="nvarchar" MaxLength="255" />
+    <Property Name="ModelXml" Type="text" />
+    <Property Name="EnumState" Type="nvarchar" MaxLength="50" />
+    <Property Name="IndustryID" Type="nvarchar" MaxLength="40" />
+    <Property Name="FromRowID" Type="nvarchar" MaxLength="50" />
+    <Property Name="FromSiteUrl" Type="nvarchar" MaxLength="50" />
+    <Property Name="KeyWord" Type="nvarchar" MaxLength="255" />
+    <Property Name="DescriptionKey" Type="nvarchar" MaxLength="255" />
+    <Property Name="VideoCode" Type="text" />
+    <Property Name="ListKeys" Type="nvarchar" MaxLength="255" />
+    <Property Name="ListKeys1" Type="nvarchar" MaxLength="255" />
+    <Property Name="ListKeys2" Type="nvarchar" MaxLength="255" />
+    <Property Name="ListKeys3" Type="nvarchar" MaxLength="255" />
+    <Property Name="ListKeys4" Type="nvarchar" MaxLength="255" />
+    <Property Name="ListKeys5" Type="nvarchar" MaxLength="255" />
+    <Property Name="IPStrategy" Type="nvarchar" MaxLength="128" />
+    <Property Name="ModelName" Type="nvarchar" MaxLength="128" />
+    <Property Name="TableName" Type="nvarchar" MaxLength="128" />
+    <Property Name="ModelConfig" Type="text" />
+    <Property Name="ModelSchema" Type="text" />
+    <Property Name="PrivacyLevel" Type="int" />
+    <Property Name="Photos" Type="text" />
+    <Property Name="Clicks" Type="int" />
+    <Property Name="DayClicks" Type="int" />
+    <Property Name="YesterdayClicks" Type="int" />
+    <Property Name="WeekClicks" Type="int" />
+    <Property Name="MonthClicks" Type="int" />
+    <Property Name="QuarterClicks" Type="int" />
+    <Property Name="YearClicks" Type="int" />
+    <Property Name="Color" Type="nvarchar" MaxLength="20" />
+    <Property Name="FontWeight" Type="nvarchar" MaxLength="20" />
+    <Property Name="FontStyle" Type="nvarchar" MaxLength="20" />
+  </EntityType>
+  <EntityType Name="ArticleIndex">
+    <Key>
+      <PropertyRef Name="ArticleID" />
+    </Key>
+    <Property Name="ArticleID" Type="nvarchar" Nullable="false" MaxLength="50" />
+    <Property Name="Operation" Type="int" />
+    <Property Name="IsLock" Type="int" />
+  </EntityType>
+  <EntityType Name="ArticleTag">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="nvarchar" Nullable="false" MaxLength="40" />
+    <Property Name="ArticleID" Type="nvarchar" MaxLength="50" />
+    <Property Name="Identifier" Type="nvarchar" MaxLength="64" />
+    <Property Name="Updated" Type="datetime" />
+    <Property Name="Created" Type="datetime" />
+  </EntityType>
+  <EntityType Name="Attachment">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="nvarchar" Nullable="false" MaxLength="40" />
+    <Property Name="ArticleID" Type="nvarchar" MaxLength="50" />
+    <Property Name="SequenceIndex" Type="int" />
+    <Property Name="FileType" Type="nvarchar" MaxLength="8" />
+    <Property Name="FileName" Type="nvarchar" MaxLength="255" />
+    <Property Name="FileSize" Type="int" />
+    <Property Name="FilePath" Type="nvarchar" MaxLength="255" />
+    <Property Name="Description" Type="nvarchar" MaxLength="255" />
+    <Property Name="UploadDate" Type="datetime" />
+    <Property Name="DownloadTimes" Type="int" />
+    <Property Name="Updated" Type="datetime" />
+    <Property Name="Created" Type="datetime" />
+    <Property Name="EnumState" Type="nvarchar" MaxLength="50" />
+  </EntityType>
+  <EntityType Name="Category">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="nvarchar" Nullable="false" MaxLength="40" />
+    <Property Name="ParentID" Type="nvarchar" MaxLength="40" />
+    <Property Name="Name" Type="nvarchar" MaxLength="255" />
+    <Property Name="KeyWord" Type="nvarchar" MaxLength="50" />
+    <Property Name="Description" Type="nvarchar" MaxLength="50" />
+    <Property Name="Options" Type="nvarchar" MaxLength="50" />
+    <Property Name="Index" Type="int" />
+    <Property Name="CreateDate" Type="datetime" />
+  </EntityType>
+  <EntityType Name="Channel">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="nvarchar" Nullable="false" MaxLength="40" />
+    <Property Name="ParentID" Type="nvarchar" MaxLength="40" />
+    <Property Name="Alias" Type="nvarchar" MaxLength="16" />
+    <Property Name="Title" Type="nvarchar" MaxLength="64" />
+    <Property Name="Description" Type="nvarchar" MaxLength="255" />
+    <Property Name="FullPath" Type="nvarchar" MaxLength="255" />
+    <Property Name="TemplateName" Type="nvarchar" MaxLength="64" />
+    <Property Name="DetailTemplate" Type="nvarchar" MaxLength="64" />
+    <Property Name="SecurityLevel" Type="int" />
+    <Property Name="State" Type="int" />
+    <Property Name="ReferenceID" Type="nvarchar" MaxLength="40" />
+    <Property Name="DefaultContentID" Type="nvarchar" MaxLength="40" />
+    <Property Name="SequenceIndex" Type="int" />
+    <Property Name="Parameter" Type="nvarchar" MaxLength="255" />
+    <Property Name="Created" Type="datetime" />
+    <Property Name="ChannelFolder" Type="nvarchar" MaxLength="64" />
+    <Property Name="TitleImage" Type="nvarchar" MaxLength="64" />
+    <Property Name="Process" Type="nvarchar" MaxLength="16" />
+    <Property Name="Type" Type="nvarchar" MaxLength="16" />
+    <Property Name="ChannelName" Type="nvarchar" MaxLength="50" />
+    <Property Name="RefAreaID" Type="nvarchar" MaxLength="40" />
+    <Property Name="IsComment" Type="int" />
+    <Property Name="FullUrl" Type="nvarchar" MaxLength="255" />
+    <Property Name="ReturnUrl" Type="nvarchar" MaxLength="255" />
+    <Property Name="ProcessLayerNO" Type="nvarchar" MaxLength="50" />
+    <Property Name="ProcessEnd" Type="nvarchar" MaxLength="16" />
+    <Property Name="Updated" Type="datetime" />
+    <Property Name="EnumState" Type="nvarchar" MaxLength="40" />
+    <Property Name="ArticlesCount" Type="int" />
+    <Property Name="Tags" Type="nvarchar" MaxLength="255" />
+    <Property Name="KeyWord" Type="nvarchar" MaxLength="255" />
+    <Property Name="DescriptionKey" Type="nvarchar" MaxLength="255" />
+    <Property Name="IPStrategy" Type="nvarchar" MaxLength="128" />
+    <Property Name="ModelName" Type="nvarchar" MaxLength="128" />
+  </EntityType>
+  <EntityType Name="ChannelModuleMapping">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="nvarchar" Nullable="false" MaxLength="40" />
+    <Property Name="ChannelID" Type="nvarchar" MaxLength="40" />
+    <Property Name="ModuleID" Type="nvarchar" MaxLength="40" />
+    <Property Name="Parameter" Type="nvarchar" MaxLength="255" />
+  </EntityType>
+  <EntityType Name="ChannelTag">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="nvarchar" Nullable="false" MaxLength="40" />
+    <Property Name="ColumnID" Type="nvarchar" MaxLength="40" />
+    <Property Name="Identifier" Type="nvarchar" MaxLength="64" />
+    <Property Name="Created" Type="datetime" />
+    <Property Name="Updated" Type="datetime" />
+  </EntityType>
+  <EntityType Name="ClickRecords">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="nvarchar" Nullable="false" MaxLength="40" />
+    <Property Name="ObjectType" Type="nvarchar" MaxLength="40" />
+    <Property Name="ObjectID" Type="nvarchar" MaxLength="40" />
+    <Property Name="VisitDate" Type="int" />
+    <Property Name="Clicks" Type="int" />
+  </EntityType>
+  <EntityType Name="ColumnModule">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="nvarchar" Nullable="false" MaxLength="40" />
+    <Property Name="Title" Type="nvarchar" MaxLength="255" />
+    <Property Name="Desc" Type="nvarchar" MaxLength="255" />
+    <Property Name="ParamIntro" Type="nvarchar" MaxLength="255" />
+    <Property Name="Path" Type="nvarchar" MaxLength="255" />
+  </EntityType>
+  <EntityType Name="Comments">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="nvarchar" Nullable="false" MaxLength="40" />
+    <Property Name="ArticleID" Type="nvarchar" MaxLength="40" />
+    <Property Name="Author" Type="nvarchar" MaxLength="64" />
+    <Property Name="Content" Type="text" />
+    <Property Name="Created" Type="datetime" />
+    <Property Name="Updated" Type="datetime" />
+    <Property Name="SequenceIndex" Type="int" />
+    <Property Name="State" Type="int" />
+    <Property Name="IP" Type="nvarchar" MaxLength="40" />
+    <Property Name="AccountID" Type="nvarchar" MaxLength="64" />
+    <Property Name="ArticleName" Type="nvarchar" MaxLength="100" />
+  </EntityType>
+  <EntityType Name="Department">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="nvarchar" Nullable="false" MaxLength="40" />
+    <Property Name="ParentID" Type="nvarchar" MaxLength="40" />
+    <Property Name="FromSiteID" Type="nvarchar" MaxLength="40" />
+    <Property Name="Title" Type="nvarchar" MaxLength="255" />
+    <Property Name="FullName" Type="nvarchar" MaxLength="255" />
+    <Property Name="Description" Type="nvarchar" MaxLength="255" />
+    <Property Name="SequenceIndex" Type="int" />
+    <Property Name="Created" Type="datetime" />
+    <Property Name="Updated" Type="datetime" />
+    <Property Name="Number" Type="nvarchar" MaxLength="255" />
+    <Property Name="Address" Type="nvarchar" MaxLength="255" />
+    <Property Name="Phone" Type="nvarchar" MaxLength="255" />
+    <Property Name="Fax" Type="nvarchar" MaxLength="64" />
+    <Property Name="Email" Type="nvarchar" MaxLength="64" />
+    <Property Name="MapScript" Type="text" />
+    <Property Name="SiteUrl" Type="nvarchar" MaxLength="255" />
+    <Property Name="Text" Type="text" />
+  </EntityType>
+  <EntityType Name="ErrorCode">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="int" Nullable="false" />
+    <Property Name="Level" Type="int" />
+    <Property Name="Title" Type="nvarchar" MaxLength="128" />
+    <Property Name="Description" Type="nvarchar" MaxLength="255" />
+    <Property Name="HelpLink" Type="nvarchar" MaxLength="255" />
+    <Property Name="Created" Type="datetime" />
+    <Property Name="Updated" Type="datetime" />
+  </EntityType>
+  <EntityType Name="Favorite">
+    <Key>
+      <PropertyRef Name="FavoriteID" />
+    </Key>
+    <Property Name="FavoriteID" Type="nvarchar" Nullable="false" MaxLength="40" />
+    <Property Name="Url" Type="nvarchar" MaxLength="255" />
+    <Property Name="Title" Type="nvarchar" MaxLength="100" />
+    <Property Name="Description" Type="nvarchar" MaxLength="255" />
+    <Property Name="Created" Type="datetime" />
+    <Property Name="Updated" Type="datetime" />
+    <Property Name="AccountID" Type="nvarchar" MaxLength="40" />
+    <Property Name="Tag" Type="nvarchar" MaxLength="50" />
+    <Property Name="ArticleID" Type="nvarchar" MaxLength="40" />
+    <Property Name="Thumbnail" Type="nvarchar" MaxLength="255" />
+  </EntityType>
+  <EntityType Name="Lecture">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="nvarchar" Nullable="false" MaxLength="40" />
+    <Property Name="AccountID" Type="nvarchar" MaxLength="40" />
+    <Property Name="OwnerID" Type="nvarchar" MaxLength="40" />
+    <Property Name="State" Type="int" />
+    <Property Name="IsShow" Type="int" />
+    <Property Name="Tags" Type="nvarchar" MaxLength="255" />
+    <Property Name="Updated" Type="datetime" />
+    <Property Name="Created" Type="datetime" />
+    <Property Name="ProcessState" Type="nvarchar" MaxLength="50" />
+    <Property Name="ProcessDirection" Type="nvarchar" MaxLength="50" />
+    <Property Name="ProcessSiteID" Type="nvarchar" MaxLength="40" />
+    <Property Name="FullPath" Type="nvarchar" MaxLength="254" />
+    <Property Name="Clicks" Type="int" />
+    <Property Name="DayClicks" Type="int" />
+    <Property Name="YesterdayClicks" Type="int" />
+    <Property Name="WeekClicks" Type="int" />
+    <Property Name="MonthClicks" Type="int" />
+    <Property Name="QuarterClicks" Type="int" />
+    <Property Name="YearClicks" Type="int" />
+    <Property Name="Title" Type="nvarchar" MaxLength="300" />
+    <Property Name="Speaker" Type="nvarchar" MaxLength="50" />
+    <Property Name="Anchor" Type="nvarchar" MaxLength="50" />
+    <Property Name="Description" Type="text" />
+    <Property Name="Address" Type="nvarchar" MaxLength="300" />
+    <Property Name="Organizer" Type="nvarchar" MaxLength="300" />
+    <Property Name="Type" Type="nvarchar" MaxLength="300" />
+    <Property Name="Cate" Type="nvarchar" MaxLength="300" />
+    <Property Name="StartTime" Type="nvarchar" MaxLength="200" />
+    <Property Name="DueTime" Type="datetime" />
+    <Property Name="Organizer2" Type="nvarchar" MaxLength="300" />
+    <Property Name="Url" Type="nvarchar" MaxLength="500" />
+    <Property Name="Intro" Type="nvarchar" />
+    <Property Name="Term" Type="nvarchar" MaxLength="100" />
+  </EntityType>
+  <EntityType Name="Link">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="nvarchar" Nullable="false" MaxLength="40" />
+    <Property Name="Title" Type="nvarchar" MaxLength="40" />
+    <Property Name="Url" Type="nvarchar" MaxLength="255" />
+    <Property Name="Tag" Type="nvarchar" MaxLength="64" />
+    <Property Name="Thumbnail" Type="nvarchar" MaxLength="255" />
+    <Property Name="Created" Type="datetime" />
+    <Property Name="OrderNumber" Type="int" />
+    <Property Name="Updated" Type="datetime" />
+  </EntityType>
+  <EntityType Name="Log">
+    <Key>
+      <PropertyRef Name="LogID" />
+    </Key>
+    <Property Name="LogID" Type="nvarchar" Nullable="false" MaxLength="40" />
+    <Property Name="Title" Type="nvarchar" MaxLength="40" />
+    <Property Name="UserID" Type="nvarchar" MaxLength="40" />
+    <Property Name="Content" Type="text" />
+    <Property Name="Created" Type="datetime" />
+    <Property Name="Page" Type="nvarchar" MaxLength="64" />
+    <Property Name="Updated" Type="datetime" />
+    <Property Name="Remark" Type="nvarchar" MaxLength="50" />
+  </EntityType>
+  <EntityType Name="Menu">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="nvarchar" Nullable="false" MaxLength="40" />
+    <Property Name="ParentID" Type="nvarchar" MaxLength="40" />
+    <Property Name="SequenceIndex" Type="int" />
+    <Property Name="NameText" Type="nvarchar" MaxLength="128" />
+    <Property Name="Title" Type="nvarchar" MaxLength="128" />
+    <Property Name="Href" Type="nvarchar" MaxLength="255" />
+    <Property Name="EntityID" Type="nvarchar" MaxLength="40" />
+    <Property Name="Type" Type="int" />
+    <Property Name="Created" Type="datetime" />
+    <Property Name="Updated" Type="datetime" />
+    <Property Name="Icon" Type="nvarchar" MaxLength="50" />
+    <Property Name="IconHover" Type="nvarchar" MaxLength="50" />
+    <Property Name="Group" Type="int" />
+  </EntityType>
+  <EntityType Name="Message">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="nvarchar" Nullable="false" MaxLength="40" />
+    <Property Name="AccountID" Type="nvarchar" MaxLength="40" />
+    <Property Name="AccountName" Type="nvarchar" MaxLength="40" />
+    <Property Name="ReceiverID" Type="nvarchar" MaxLength="40" />
+    <Property Name="Receivers" Type="nvarchar" MaxLength="255" />
+    <Property Name="Subject" Type="nvarchar" MaxLength="50" />
+    <Property Name="Content" Type="nvarchar" MaxLength="255" />
+    <Property Name="Created" Type="datetime" />
+    <Property Name="SendTime" Type="datetime" />
+    <Property Name="Description" Type="nvarchar" MaxLength="255" />
+    <Property Name="State" Type="int" />
+    <Property Name="Updated" Type="datetime" />
+  </EntityType>
+  <EntityType Name="Option">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="nvarchar" Nullable="false" MaxLength="40" />
+    <Property Name="QuestionID" Type="nvarchar" MaxLength="40" />
+    <Property Name="Title" Type="nvarchar" MaxLength="200" />
+    <Property Name="Type" Type="int" />
+    <Property Name="OptionValue" Type="nvarchar" MaxLength="200" />
+    <Property Name="Score" Type="int" />
+    <Property Name="OrderID" Type="int" />
+    <Property Name="DefaultSelected" Type="bit" />
+  </EntityType>
+  <EntityType Name="PageVisitor">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="nvarchar" Nullable="false" MaxLength="40" />
+    <Property Name="TypeCode" Type="int" />
+    <Property Name="UserID" Type="nvarchar" MaxLength="40" />
+    <Property Name="VisitDate" Type="datetime" />
+    <Property Name="LogoutDate" Type="datetime" />
+    <Property Name="VisitorIP" Type="nvarchar" MaxLength="50" />
+    <Property Name="Url" Type="nvarchar" MaxLength="255" />
+    <Property Name="Http_Referer" Type="nvarchar" MaxLength="255" />
+    <Property Name="Clicks" Type="int" />
+    <Property Name="OnlineTime" Type="datetime" />
+    <Property Name="Platform" Type="nvarchar" MaxLength="50" />
+    <Property Name="Browser" Type="nvarchar" MaxLength="50" />
+    <Property Name="Screen" Type="nvarchar" MaxLength="50" />
+    <Property Name="City" Type="nvarchar" MaxLength="50" />
+    <Property Name="Created" Type="datetime" />
+    <Property Name="Updated" Type="datetime" />
+    <Property Name="SearchEngine" Type="nvarchar" MaxLength="50" />
+    <Property Name="Keyword" Type="nvarchar" MaxLength="50" />
+    <Property Name="Province" Type="nvarchar" MaxLength="50" />
+    <Property Name="FromSite" Type="nvarchar" MaxLength="50" />
+  </EntityType>
+  <EntityType Name="PageVisitorHistory">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="nvarchar" Nullable="false" MaxLength="40" />
+    <Property Name="TypeCode" Type="int" />
+    <Property Name="UserID" Type="nvarchar" MaxLength="40" />
+    <Property Name="VisitDate" Type="datetime" />
+    <Property Name="LogoutDate" Type="datetime" />
+    <Property Name="VisitorIP" Type="nvarchar" MaxLength="50" />
+    <Property Name="Url" Type="nvarchar" MaxLength="255" />
+    <Property Name="Http_Referer" Type="nvarchar" MaxLength="255" />
+    <Property Name="Clicks" Type="int" />
+    <Property Name="OnlineTime" Type="datetime" />
+    <Property Name="Platform" Type="nvarchar" MaxLength="50" />
+    <Property Name="Browser" Type="nvarchar" MaxLength="50" />
+    <Property Name="Screen" Type="nvarchar" MaxLength="50" />
+    <Property Name="City" Type="nvarchar" MaxLength="50" />
+    <Property Name="Created" Type="datetime" />
+    <Property Name="Updated" Type="datetime" />
+    <Property Name="SearchEngine" Type="nvarchar" MaxLength="50" />
+    <Property Name="Keyword" Type="nvarchar" MaxLength="50" />
+    <Property Name="Province" Type="nvarchar" MaxLength="50" />
+    <Property Name="FromSite" Type="nvarchar" MaxLength="50" />
+  </EntityType>
+  <EntityType Name="People">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="nvarchar" Nullable="false" MaxLength="40" />
+    <Property Name="AccountID" Type="nvarchar" MaxLength="40" />
+    <Property Name="OwnerID" Type="nvarchar" MaxLength="40" />
+    <Property Name="State" Type="int" />
+    <Property Name="Index" Type="int" />
+    <Property Name="IsShow" Type="int" />
+    <Property Name="Tags" Type="nvarchar" MaxLength="255" />
+    <Property Name="Updated" Type="datetime" />
+    <Property Name="Created" Type="datetime" />
+    <Property Name="ProcessState" Type="nvarchar" MaxLength="50" />
+    <Property Name="ProcessDirection" Type="nvarchar" MaxLength="50" />
+    <Property Name="ProcessSiteID" Type="nvarchar" MaxLength="40" />
+    <Property Name="FullPath" Type="nvarchar" MaxLength="254" />
+    <Property Name="Clicks" Type="int" />
+    <Property Name="DayClicks" Type="int" />
+    <Property Name="YesterdayClicks" Type="int" />
+    <Property Name="WeekClicks" Type="int" />
+    <Property Name="MonthClicks" Type="int" />
+    <Property Name="QuarterClicks" Type="int" />
+    <Property Name="YearClicks" Type="int" />
+    <Property Name="Fullname" Type="nvarchar" MaxLength="50" />
+    <Property Name="Gendar" Type="nvarchar" MaxLength="25" />
+    <Property Name="Title" Type="nvarchar" MaxLength="500" />
+    <Property Name="Position" Type="nvarchar" MaxLength="100" />
+    <Property Name="Office" Type="nvarchar" MaxLength="100" />
+    <Property Name="OfficeTime" Type="nvarchar" MaxLength="100" />
+    <Property Name="Phone" Type="nvarchar" MaxLength="100" />
+    <Property Name="Mobil" Type="nvarchar" MaxLength="50" />
+    <Property Name="Email" Type="nvarchar" MaxLength="100" />
+    <Property Name="Duty" Type="nvarchar" MaxLength="200" />
+    <Property Name="Field" Type="nvarchar" MaxLength="200" />
+    <Property Name="Photo" Type="nvarchar" MaxLength="200" />
+    <Property Name="Url" Type="nvarchar" MaxLength="500" />
+    <Property Name="Intro" Type="text" />
+    <Property Name="IndexLetter" Type="nvarchar" MaxLength="2" />
+    <Property Name="CardNumber" Type="nvarchar" MaxLength="50" />
+  </EntityType>
+  <EntityType Name="Permission">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="nvarchar" Nullable="false" MaxLength="40" />
+    <Property Name="OwnerType" Type="int" />
+    <Property Name="OwnerID" Type="nvarchar" MaxLength="64" />
+    <Property Name="ObjectID" Type="nvarchar" MaxLength="40" />
+    <Property Name="Url" Type="nvarchar" MaxLength="255" />
+    <Property Name="Content" Type="nvarchar" MaxLength="64" />
+    <Property Name="Created" Type="datetime" />
+    <Property Name="Updated" Type="datetime" />
+  </EntityType>
+  <EntityType Name="Point">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="nvarchar" Nullable="false" MaxLength="40" />
+    <Property Name="Value" Type="int" />
+    <Property Name="Action" Type="int" />
+    <Property Name="Description" Type="nvarchar" MaxLength="255" />
+    <Property Name="Created" Type="datetime" />
+    <Property Name="ObjectID" Type="nvarchar" MaxLength="40" />
+    <Property Name="AccountID" Type="nvarchar" MaxLength="40" />
+    <Property Name="AccountName" Type="nvarchar" MaxLength="40" />
+  </EntityType>
+  <EntityType Name="Question">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="nvarchar" Nullable="false" MaxLength="40" />
+    <Property Name="QuestionnaireID" Type="nvarchar" MaxLength="40" />
+    <Property Name="Type" Type="int" />
+    <Property Name="Title" Type="nvarchar" MaxLength="200" />
+    <Property Name="Description" Type="text" />
+    <Property Name="OrderID" Type="int" />
+    <Property Name="MustAnswer" Type="bit" />
+    <Property Name="AnswerCount" Type="int" />
+  </EntityType>
+  <EntityType Name="Questionnaire">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="nvarchar" Nullable="false" MaxLength="40" />
+    <Property Name="TypeID" Type="nvarchar" MaxLength="40" />
+    <Property Name="Title" Type="nvarchar" MaxLength="200" />
+    <Property Name="Description" Type="text" />
+    <Property Name="Author" Type="nvarchar" MaxLength="50" />
+    <Property Name="Password" Type="nvarchar" MaxLength="100" />
+    <Property Name="State" Type="int" />
+    <Property Name="UseHits" Type="int" />
+    <Property Name="Hit" Type="int" />
+    <Property Name="Created" Type="smalldatetime" />
+    <Property Name="Updated" Type="smalldatetime" />
+    <Property Name="StartDate" Type="smalldatetime" />
+    <Property Name="ExpireDate" Type="smalldatetime" />
+    <Property Name="IsEmailSend" Type="bit" />
+    <Property Name="IsNeedLogin" Type="bit" />
+    <Property Name="IsNeedValidateCode" Type="bit" />
+    <Property Name="IpRepeat" Type="bit" />
+    <Property Name="IsAudited" Type="bit" />
+    <Property Name="SuccessConfig" Type="int" />
+  </EntityType>
+  <EntityType Name="QuestionnaireType">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="nvarchar" Nullable="false" MaxLength="40" />
+    <Property Name="ParentID" Type="nvarchar" MaxLength="40" />
+    <Property Name="TypeName" Type="nvarchar" MaxLength="200" />
+    <Property Name="OrderID" Type="int" />
+    <Property Name="IsShow" Type="bit" />
+    <Property Name="Created" Type="smalldatetime" />
+    <Property Name="Updated" Type="smalldatetime" />
+  </EntityType>
+  <EntityType Name="RelatedArticle">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="nvarchar" Nullable="false" MaxLength="40" />
+    <Property Name="ArticleID" Type="nvarchar" MaxLength="40" />
+    <Property Name="RelatedID" Type="nvarchar" MaxLength="40" />
+    <Property Name="Created" Type="datetime" />
+    <Property Name="Updated" Type="datetime" />
+  </EntityType>
+  <EntityType Name="Role">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="nvarchar" Nullable="false" MaxLength="40" />
+    <Property Name="FromSiteID" Type="nvarchar" MaxLength="40" />
+    <Property Name="Title" Type="nvarchar" MaxLength="64" />
+    <Property Name="Description" Type="nvarchar" MaxLength="255" />
+    <Property Name="Created" Type="datetime" />
+    <Property Name="State" Type="nvarchar" MaxLength="40" />
+    <Property Name="Updated" Type="datetime" />
+    <Property Name="GroupRole" Type="int" />
+    <Property Name="RoleType" Type="int" />
+  </EntityType>
+  <EntityType Name="ScoreDetail">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="nvarchar" Nullable="false" MaxLength="40" />
+    <Property Name="Name" Type="nvarchar" MaxLength="255" />
+    <Property Name="TargetID" Type="nvarchar" MaxLength="40" />
+    <Property Name="RuleID" Type="nvarchar" MaxLength="40" />
+    <Property Name="CreatedBy" Type="nvarchar" MaxLength="40" />
+    <Property Name="CreatedOn" Type="datetime" />
+    <Property Name="Review" Type="nvarchar" MaxLength="255" />
+  </EntityType>
+  <EntityType Name="ScoreLevel">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="nvarchar" Nullable="false" MaxLength="40" />
+    <Property Name="Name" Type="nvarchar" MaxLength="255" />
+    <Property Name="SubjectID" Type="nvarchar" MaxLength="40" />
+    <Property Name="Title" Type="nvarchar" MaxLength="40" />
+    <Property Name="MinScore" Type="int" />
+    <Property Name="MaxScore" Type="int" />
+    <Property Name="IsAcquiescent" Type="int" />
+    <Property Name="Description" Type="nvarchar" MaxLength="255" />
+  </EntityType>
+  <EntityType Name="ScoreRule">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="nvarchar" Nullable="false" MaxLength="40" />
+    <Property Name="Name" Type="nvarchar" MaxLength="255" />
+    <Property Name="Title" Type="nvarchar" MaxLength="255" />
+    <Property Name="SubjectID" Type="nvarchar" MaxLength="40" />
+    <Property Name="SoureID" Type="nvarchar" MaxLength="40" />
+    <Property Name="Score" Type="int" />
+    <Property Name="Description" Type="nvarchar" MaxLength="255" />
+  </EntityType>
+  <EntityType Name="ScoreRuleCount">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="nvarchar" Nullable="false" MaxLength="40" />
+    <Property Name="Name" Type="nvarchar" MaxLength="255" />
+    <Property Name="RuleID" Type="nvarchar" MaxLength="255" />
+    <Property Name="TargetID" Type="nvarchar" MaxLength="40" />
+    <Property Name="Count" Type="int" />
+  </EntityType>
+  <EntityType Name="ScoreSource">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="nvarchar" Nullable="false" MaxLength="40" />
+    <Property Name="Name" Type="nvarchar" MaxLength="255" />
+    <Property Name="Title" Type="nvarchar" MaxLength="255" />
+    <Property Name="Description" Type="nvarchar" MaxLength="255" />
+  </EntityType>
+  <EntityType Name="ScoreSubject">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="nvarchar" Nullable="false" MaxLength="40" />
+    <Property Name="Name" Type="nvarchar" MaxLength="255" />
+    <Property Name="Title" Type="nvarchar" MaxLength="255" />
+    <Property Name="Description" Type="nvarchar" MaxLength="255" />
+    <Property Name="IsUserSubject" Type="int" />
+    <Property Name="IsGrade" Type="int" />
+  </EntityType>
+  <EntityType Name="ScoreSummary">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="nvarchar" Nullable="false" MaxLength="40" />
+    <Property Name="Name" Type="nvarchar" MaxLength="255" />
+    <Property Name="TargetID" Type="nvarchar" MaxLength="255" />
+    <Property Name="SubjectID" Type="nvarchar" MaxLength="40" />
+    <Property Name="SourceID" Type="nvarchar" MaxLength="40" />
+    <Property Name="TotalPoint" Type="int" />
+    <Property Name="TotalCount" Type="int" />
+  </EntityType>
+  <EntityType Name="Statistics">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="nvarchar" Nullable="false" MaxLength="40" />
+    <Property Name="VisitorID" Type="nvarchar" MaxLength="40" />
+    <Property Name="ChannelID" Type="nvarchar" MaxLength="40" />
+    <Property Name="ArticleID" Type="nvarchar" MaxLength="40" />
+    <Property Name="VisitDate" Type="datetime" />
+    <Property Name="URL" Type="nvarchar" MaxLength="255" />
+    <Property Name="Created" Type="datetime" />
+    <Property Name="Updated" Type="datetime" />
+  </EntityType>
+  <EntityType Name="StatisticsHistory">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="nvarchar" Nullable="false" MaxLength="40" />
+    <Property Name="VisitorID" Type="nvarchar" MaxLength="40" />
+    <Property Name="ChannelID" Type="nvarchar" MaxLength="40" />
+    <Property Name="ArticleID" Type="nvarchar" MaxLength="40" />
+    <Property Name="VisitDate" Type="datetime" />
+    <Property Name="URL" Type="nvarchar" MaxLength="255" />
+    <Property Name="Created" Type="datetime" />
+    <Property Name="Updated" Type="datetime" />
+  </EntityType>
+  <EntityType Name="Vote">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="nvarchar" Nullable="false" MaxLength="40" />
+    <Property Name="Title" Type="nvarchar" MaxLength="40" />
+    <Property Name="OptionType" Type="int" />
+    <Property Name="AddDate" Type="datetime" />
+    <Property Name="EndDate" Type="datetime" />
+    <Property Name="VotePeoples" Type="int" />
+    <Property Name="IsCanRepeat" Type="bit" />
+  </EntityType>
+  <EntityType Name="VoteAnswer">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="nvarchar" Nullable="false" MaxLength="40" />
+    <Property Name="VoteID" Type="nvarchar" MaxLength="40" />
+    <Property Name="VoteEntryID" Type="nvarchar" MaxLength="40" />
+    <Property Name="AnswerText" Type="nvarchar" MaxLength="50" />
+    <Property Name="AccountID" Type="nvarchar" MaxLength="50" />
+    <Property Name="IP" Type="nvarchar" MaxLength="50" />
+    <Property Name="VoteDate" Type="datetime" />
+  </EntityType>
+  <EntityType Name="VoteAnswerStat">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="nvarchar" Nullable="false" MaxLength="40" />
+    <Property Name="VoteID" Type="nvarchar" MaxLength="40" />
+    <Property Name="VoteEntryID" Type="nvarchar" MaxLength="40" />
+    <Property Name="VoteEntrySum" Type="int" />
+    <Property Name="VoteEntryText" Type="nvarchar" MaxLength="255" />
+    <Property Name="OrderID" Type="int" />
+  </EntityType>
+  <EntityType Name="VoteEntry">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="nvarchar" Nullable="false" MaxLength="40" />
+    <Property Name="VoteID" Type="nvarchar" MaxLength="40" />
+    <Property Name="EntryText" Type="nvarchar" MaxLength="255" />
+    <Property Name="OrderID" Type="int" />
+  </EntityType>
+</Schema>

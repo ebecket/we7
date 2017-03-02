@@ -1,0 +1,17 @@
+
+ 
+记录时间：2014-01-13 15:55:32,950 
+线程ID:[3] 
+日志级别：  ERROR 
+出错类：We7.CMS.FrontBasePage property: [(null)] - 
+错误描述：Error
+ 
+System.Web.HttpCompileException: F:\SVN\WISE\_skins\default\student.default.index.ascx(39): error BC30560: “widgets_widgetcollection_static_static_default_sidemenu_static_student_sidemenu_ascx”在命名空间“ASP”中不明确。
+   在 System.Web.Compilation.BuildManager.CompileWebFile(VirtualPath virtualPath)
+   在 System.Web.Compilation.BuildManager.GetVPathBuildResultInternal(VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile)
+   在 System.Web.Compilation.BuildManager.GetVPathBuildResultWithNoAssert(HttpContext context, VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile)
+   在 System.Web.Compilation.BuildManager.GetVPathBuildResult(HttpContext context, VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile)
+   在 System.Web.UI.TemplateControl.LoadControl(VirtualPath virtualPath)
+   在 System.Web.UI.TemplateControl.LoadControl(String virtualPath)
+   在 We7.CMS.Web.ShowChannel.Initialize()
+   在 We7.CMS.FrontBasePage.OnLoad(EventArgs e)

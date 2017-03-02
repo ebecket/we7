@@ -1,0 +1,999 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="WISEModel" Alias="Self" xmlns="http://schemas.microsoft.com/ado/2006/04/edm">
+  <EntityContainer Name="WISEEntities">
+    <EntitySet Name="Account" EntityType="WISEModel.Account" />
+    <EntitySet Name="AccountRole" EntityType="WISEModel.AccountRole" />
+    <EntitySet Name="Advice" EntityType="WISEModel.Advice" />
+    <EntitySet Name="AdviceAuth" EntityType="WISEModel.AdviceAuth" />
+    <EntitySet Name="AdviceInfo" EntityType="WISEModel.AdviceInfo" />
+    <EntitySet Name="AdviceReply" EntityType="WISEModel.AdviceReply" />
+    <EntitySet Name="AdviceReplyInfo" EntityType="WISEModel.AdviceReplyInfo" />
+    <EntitySet Name="AdviceTransfer" EntityType="WISEModel.AdviceTransfer" />
+    <EntitySet Name="AdviceType" EntityType="WISEModel.AdviceType" />
+    <EntitySet Name="AnswerSheet" EntityType="WISEModel.AnswerSheet" />
+    <EntitySet Name="Article" EntityType="WISEModel.Article" />
+    <EntitySet Name="ArticleIndex" EntityType="WISEModel.ArticleIndex" />
+    <EntitySet Name="ArticleTag" EntityType="WISEModel.ArticleTag" />
+    <EntitySet Name="Attachment" EntityType="WISEModel.Attachment" />
+    <EntitySet Name="Category" EntityType="WISEModel.Category" />
+    <EntitySet Name="Channel" EntityType="WISEModel.Channel" />
+    <EntitySet Name="ChannelModuleMapping" EntityType="WISEModel.ChannelModuleMapping" />
+    <EntitySet Name="ChannelTag" EntityType="WISEModel.ChannelTag" />
+    <EntitySet Name="ClickRecords" EntityType="WISEModel.ClickRecords" />
+    <EntitySet Name="ColumnModule" EntityType="WISEModel.ColumnModule" />
+    <EntitySet Name="Comments" EntityType="WISEModel.Comments" />
+    <EntitySet Name="Department" EntityType="WISEModel.Department" />
+    <EntitySet Name="ErrorCode" EntityType="WISEModel.ErrorCode" />
+    <EntitySet Name="Favorite" EntityType="WISEModel.Favorite" />
+    <EntitySet Name="Lecture" EntityType="WISEModel.Lecture" />
+    <EntitySet Name="Link" EntityType="WISEModel.Link" />
+    <EntitySet Name="Log" EntityType="WISEModel.Log" />
+    <EntitySet Name="Menu" EntityType="WISEModel.Menu" />
+    <EntitySet Name="Message" EntityType="WISEModel.Message" />
+    <EntitySet Name="Option" EntityType="WISEModel.Option" />
+    <EntitySet Name="PageVisitor" EntityType="WISEModel.PageVisitor" />
+    <EntitySet Name="PageVisitorHistory" EntityType="WISEModel.PageVisitorHistory" />
+    <EntitySet Name="People" EntityType="WISEModel.People" />
+    <EntitySet Name="Permission" EntityType="WISEModel.Permission" />
+    <EntitySet Name="Point" EntityType="WISEModel.Point" />
+    <EntitySet Name="Question" EntityType="WISEModel.Question" />
+    <EntitySet Name="Questionnaire" EntityType="WISEModel.Questionnaire" />
+    <EntitySet Name="QuestionnaireType" EntityType="WISEModel.QuestionnaireType" />
+    <EntitySet Name="RelatedArticle" EntityType="WISEModel.RelatedArticle" />
+    <EntitySet Name="Role" EntityType="WISEModel.Role" />
+    <EntitySet Name="ScoreDetail" EntityType="WISEModel.ScoreDetail" />
+    <EntitySet Name="ScoreLevel" EntityType="WISEModel.ScoreLevel" />
+    <EntitySet Name="ScoreRule" EntityType="WISEModel.ScoreRule" />
+    <EntitySet Name="ScoreRuleCount" EntityType="WISEModel.ScoreRuleCount" />
+    <EntitySet Name="ScoreSource" EntityType="WISEModel.ScoreSource" />
+    <EntitySet Name="ScoreSubject" EntityType="WISEModel.ScoreSubject" />
+    <EntitySet Name="ScoreSummary" EntityType="WISEModel.ScoreSummary" />
+    <EntitySet Name="Statistics" EntityType="WISEModel.Statistics" />
+    <EntitySet Name="StatisticsHistory" EntityType="WISEModel.StatisticsHistory" />
+    <EntitySet Name="Vote" EntityType="WISEModel.Vote" />
+    <EntitySet Name="VoteAnswer" EntityType="WISEModel.VoteAnswer" />
+    <EntitySet Name="VoteAnswerStat" EntityType="WISEModel.VoteAnswerStat" />
+    <EntitySet Name="VoteEntry" EntityType="WISEModel.VoteEntry" />
+  </EntityContainer>
+  <EntityType Name="Account">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="String" Nullable="false" MaxLength="40" Unicode="true" FixedLength="false" />
+    <Property Name="FromSiteID" Type="String" MaxLength="40" Unicode="true" FixedLength="false" />
+    <Property Name="DepartmentID" Type="String" MaxLength="40" Unicode="true" FixedLength="false" />
+    <Property Name="Department" Type="String" MaxLength="255" Unicode="true" FixedLength="false" />
+    <Property Name="Email" Type="String" MaxLength="128" Unicode="true" FixedLength="false" />
+    <Property Name="LoginName" Type="String" MaxLength="64" Unicode="true" FixedLength="false" />
+    <Property Name="Password" Type="String" MaxLength="255" Unicode="true" FixedLength="false" />
+    <Property Name="FirstName" Type="String" MaxLength="32" Unicode="true" FixedLength="false" />
+    <Property Name="MiddleName" Type="String" MaxLength="32" Unicode="true" FixedLength="false" />
+    <Property Name="LastName" Type="String" MaxLength="32" Unicode="true" FixedLength="false" />
+    <Property Name="Photo" Type="String" MaxLength="255" Unicode="true" FixedLength="false" />
+    <Property Name="SequenceIndex" Type="Int32" />
+    <Property Name="Description" Type="String" MaxLength="Max" Unicode="false" FixedLength="false" />
+    <Property Name="UserType" Type="Int32" />
+    <Property Name="State" Type="Int32" />
+    <Property Name="Home" Type="String" MaxLength="255" Unicode="true" FixedLength="false" />
+    <Property Name="Created" Type="DateTime" />
+    <Property Name="PasswordHashed" Type="Int32" />
+    <Property Name="Updated" Type="DateTime" />
+    <Property Name="Overdue" Type="DateTime" />
+    <Property Name="ModelXml" Type="String" MaxLength="Max" Unicode="false" FixedLength="false" />
+    <Property Name="UserModelName" Type="String" MaxLength="50" Unicode="true" FixedLength="false" />
+    <Property Name="Mobile" Type="String" MaxLength="50" Unicode="true" FixedLength="false" />
+    <Property Name="QQ" Type="String" MaxLength="50" Unicode="true" FixedLength="false" />
+    <Property Name="Point" Type="Int32" />
+    <Property Name="Prestige" Type="Int32" />
+    <Property Name="Money" Type="Decimal" Precision="19" Scale="4" />
+    <Property Name="PublishCount" Type="Int32" />
+    <Property Name="EmailValidate" Type="Int32" />
+    <Property Name="ModelName" Type="String" MaxLength="255" Unicode="true" FixedLength="false" />
+    <Property Name="ModelConfig" Type="String" MaxLength="Max" Unicode="false" FixedLength="false" />
+    <Property Name="ModelSchema" Type="String" MaxLength="Max" Unicode="false" FixedLength="false" />
+    <Property Name="ModelState" Type="Int32" />
+    <Property Name="Tel" Type="String" MaxLength="50" Unicode="true" FixedLength="false" />
+    <Property Name="Birthday" Type="DateTime" />
+    <Property Name="Sex" Type="String" MaxLength="2" Unicode="true" FixedLength="false" />
+  </EntityType>
+  <EntityType Name="AccountRole">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="String" Nullable="false" MaxLength="40" Unicode="true" FixedLength="false" />
+    <Property Name="DepartmentID" Type="String" MaxLength="40" Unicode="true" FixedLength="false" />
+    <Property Name="AccountID" Type="String" MaxLength="40" Unicode="true" FixedLength="false" />
+    <Property Name="RoleID" Type="String" MaxLength="64" Unicode="true" FixedLength="false" />
+    <Property Name="Created" Type="DateTime" />
+    <Property Name="Updated" Type="DateTime" />
+    <Property Name="RoleTitle" Type="String" MaxLength="64" Unicode="true" FixedLength="false" />
+  </EntityType>
+  <EntityType Name="Advice">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="String" Nullable="false" MaxLength="40" Unicode="true" FixedLength="false" />
+    <Property Name="TypeID" Type="String" MaxLength="40" Unicode="true" FixedLength="false" />
+    <Property Name="UserID" Type="String" MaxLength="40" Unicode="true" FixedLength="false" />
+    <Property Name="Title" Type="String" MaxLength="64" Unicode="true" FixedLength="false" />
+    <Property Name="Content" Type="String" MaxLength="Max" Unicode="false" FixedLength="false" />
+    <Property Name="CreateDate" Type="DateTime" />
+    <Property Name="Name" Type="String" MaxLength="64" Unicode="true" FixedLength="false" />
+    <Property Name="Email" Type="String" MaxLength="64" Unicode="true" FixedLength="false" />
+    <Property Name="IsShow" Type="Int32" />
+    <Property Name="ReplyDepID" Type="String" MaxLength="40" Unicode="true" FixedLength="false" />
+    <Property Name="SN" Type="Int64" />
+    <Property Name="ReplyCount" Type="Int32" />
+    <Property Name="State" Type="Int32" />
+    <Property Name="OwnID" Type="String" MaxLength="50" Unicode="true" FixedLength="false" />
+    <Property Name="Updated" Type="DateTime" />
+    <Property Name="ModelXml" Type="String" MaxLength="Max" Unicode="false" FixedLength="false" />
+    <Property Name="MyQueryPwd" Type="String" MaxLength="50" Unicode="true" FixedLength="false" />
+    <Property Name="ProcessState" Type="String" MaxLength="50" Unicode="true" FixedLength="false" />
+    <Property Name="ProcessDirection" Type="String" MaxLength="50" Unicode="true" FixedLength="false" />
+    <Property Name="FlowXml" Type="String" MaxLength="Max" Unicode="false" FixedLength="false" />
+    <Property Name="Source" Type="String" MaxLength="255" Unicode="true" FixedLength="false" />
+    <Property Name="ProcessSiteID" Type="String" MaxLength="50" Unicode="true" FixedLength="false" />
+    <Property Name="EnumState" Type="String" MaxLength="50" Unicode="true" FixedLength="false" />
+    <Property Name="MustHandle" Type="Int32" />
+    <Property Name="ToHandleTime" Type="DateTime" />
+    <Property Name="AdviceInfoType" Type="String" MaxLength="50" Unicode="true" FixedLength="false" />
+    <Property Name="ToOtherHandleUserID" Type="String" MaxLength="50" Unicode="true" FixedLength="false" />
+    <Property Name="Display1" Type="String" MaxLength="50" Unicode="true" FixedLength="false" />
+    <Property Name="Display2" Type="String" MaxLength="50" Unicode="true" FixedLength="false" />
+    <Property Name="Display3" Type="String" MaxLength="50" Unicode="true" FixedLength="false" />
+    <Property Name="ModelName" Type="String" MaxLength="255" Unicode="true" FixedLength="false" />
+    <Property Name="ModelConfig" Type="String" MaxLength="Max" Unicode="false" FixedLength="false" />
+    <Property Name="ModelSchema" Type="String" MaxLength="Max" Unicode="false" FixedLength="false" />
+    <Property Name="Phone" Type="String" MaxLength="20" Unicode="true" FixedLength="false" />
+    <Property Name="Fax" Type="String" MaxLength="20" Unicode="true" FixedLength="false" />
+    <Property Name="Address" Type="String" MaxLength="100" Unicode="true" FixedLength="false" />
+    <Property Name="AdviceTag" Type="String" MaxLength="64" Unicode="true" FixedLength="false" />
+    <Property Name="IsRead" Type="Int32" />
+  </EntityType>
+  <EntityType Name="AdviceAuth">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="String" Nullable="false" MaxLength="40" Unicode="true" FixedLength="false" />
+    <Property Name="AuthID" Type="String" MaxLength="40" Unicode="true" FixedLength="false" />
+    <Property Name="AdviceTypeID" Type="String" MaxLength="40" Unicode="true" FixedLength="false" />
+    <Property Name="AuthType" Type="Int32" />
+    <Property Name="Function" Type="Int32" />
+  </EntityType>
+  <EntityType Name="AdviceInfo">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="String" Nullable="false" MaxLength="40" Unicode="true" FixedLength="false" />
+    <Property Name="TypeID" Type="String" MaxLength="40" Unicode="true" FixedLength="false" />
+    <Property Name="UserID" Type="String" MaxLength="40" Unicode="true" FixedLength="false" />
+    <Property Name="Title" Type="String" MaxLength="64" Unicode="true" FixedLength="false" />
+    <Property Name="Content" Type="String" MaxLength="Max" Unicode="false" FixedLength="false" />
+    <Property Name="Created" Type="DateTime" />
+    <Property Name="Updated" Type="DateTime" />
+    <Property Name="Name" Type="String" MaxLength="64" Unicode="true" FixedLength="false" />
+    <Property Name="Email" Type="String" MaxLength="64" Unicode="true" FixedLength="false" />
+    <Property Name="IsShow" Type="Int32" />
+    <Property Name="IsTop" Type="Int32" />
+    <Property Name="SN" Type="String" MaxLength="12" Unicode="true" FixedLength="false" />
+    <Property Name="State" Type="Int32" />
+    <Property Name="Public" Type="Int32" />
+    <Property Name="ModelXml" Type="String" MaxLength="Max" Unicode="false" FixedLength="false" />
+    <Property Name="MyQueryPwd" Type="String" MaxLength="50" Unicode="true" FixedLength="false" />
+    <Property Name="Priority" Type="Int32" />
+    <Property Name="Display1" Type="String" MaxLength="50" Unicode="true" FixedLength="false" />
+    <Property Name="Display2" Type="String" MaxLength="50" Unicode="true" FixedLength="false" />
+    <Property Name="Display3" Type="String" MaxLength="50" Unicode="true" FixedLength="false" />
+    <Property Name="ModelName" Type="String" MaxLength="255" Unicode="true" FixedLength="false" />
+    <Property Name="ModelConfig" Type="String" MaxLength="Max" Unicode="false" FixedLength="false" />
+    <Property Name="ModelSchema" Type="String" MaxLength="Max" Unicode="false" FixedLength="false" />
+    <Property Name="Phone" Type="String" MaxLength="20" Unicode="true" FixedLength="false" />
+    <Property Name="Fax" Type="String" MaxLength="20" Unicode="true" FixedLength="false" />
+    <Property Name="Address" Type="String" MaxLength="100" Unicode="true" FixedLength="false" />
+    <Property Name="IsRead" Type="Int32" />
+    <Property Name="Clicks" Type="Int32" />
+    <Property Name="DayClicks" Type="Int32" />
+    <Property Name="YesterdayClicks" Type="Int32" />
+    <Property Name="WeekClicks" Type="Int32" />
+    <Property Name="MonthClicks" Type="Int32" />
+    <Property Name="QuarterClicks" Type="Int32" />
+    <Property Name="YearClicks" Type="Int32" />
+  </EntityType>
+  <EntityType Name="AdviceReply">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="String" Nullable="false" MaxLength="40" Unicode="true" FixedLength="false" />
+    <Property Name="AdviceID" Type="String" MaxLength="40" Unicode="true" FixedLength="false" />
+    <Property Name="UserID" Type="String" MaxLength="40" Unicode="true" FixedLength="false" />
+    <Property Name="Title" Type="String" MaxLength="64" Unicode="true" FixedLength="false" />
+    <Property Name="Content" Type="String" MaxLength="Max" Unicode="false" FixedLength="false" />
+    <Property Name="CreateDate" Type="DateTime" />
+    <Property Name="Updated" Type="DateTime" />
+    <Property Name="MailBody" Type="String" MaxLength="Max" Unicode="false" FixedLength="false" />
+    <Property Name="EnumState" Type="String" MaxLength="50" Unicode="true" FixedLength="false" />
+    <Property Name="Comment" Type="String" MaxLength="Max" Unicode="false" FixedLength="false" />
+    <Property Name="Suggest" Type="String" MaxLength="Max" Unicode="false" FixedLength="false" />
+  </EntityType>
+  <EntityType Name="AdviceReplyInfo">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="String" Nullable="false" MaxLength="40" Unicode="true" FixedLength="false" />
+    <Property Name="AdviceID" Type="String" MaxLength="40" Unicode="true" FixedLength="false" />
+    <Property Name="UserID" Type="String" MaxLength="40" Unicode="true" FixedLength="false" />
+    <Property Name="Title" Type="String" MaxLength="64" Unicode="true" FixedLength="false" />
+    <Property Name="Content" Type="String" MaxLength="Max" Unicode="false" FixedLength="false" />
+    <Property Name="Created" Type="DateTime" />
+    <Property Name="MailBody" Type="String" MaxLength="Max" Unicode="false" FixedLength="false" />
+  </EntityType>
+  <EntityType Name="AdviceTransfer">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="String" Nullable="false" MaxLength="40" Unicode="true" FixedLength="false" />
+    <Property Name="AdviceID" Type="String" MaxLength="40" Unicode="true" FixedLength="false" />
+    <Property Name="UserID" Type="String" MaxLength="40" Unicode="true" FixedLength="false" />
+    <Property Name="FromTypeID" Type="String" MaxLength="40" Unicode="true" FixedLength="false" />
+    <Property Name="ToTypeID" Type="String" MaxLength="40" Unicode="true" FixedLength="false" />
+    <Property Name="Suggest" Type="String" MaxLength="Max" Unicode="false" FixedLength="false" />
+    <Property Name="State" Type="Int32" />
+    <Property Name="Created" Type="DateTime" />
+  </EntityType>
+  <EntityType Name="AdviceType">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="String" Nullable="false" MaxLength="40" Unicode="true" FixedLength="false" />
+    <Property Name="Title" Type="String" MaxLength="64" Unicode="true" FixedLength="false" />
+    <Property Name="Description" Type="String" MaxLength="Max" Unicode="false" FixedLength="false" />
+    <Property Name="CreateDate" Type="DateTime" />
+    <Property Name="Updated" Type="DateTime" />
+    <Property Name="ModelXml" Type="String" MaxLength="Max" Unicode="false" FixedLength="false" />
+    <Property Name="AccountID" Type="String" MaxLength="40" Unicode="true" FixedLength="false" />
+    <Property Name="EnumState" Type="String" MaxLength="50" Unicode="true" FixedLength="false" />
+    <Property Name="ToWhichDepartment" Type="Int32" />
+    <Property Name="FlowSeries" Type="Int32" />
+    <Property Name="ProcessEnd" Type="String" MaxLength="16" Unicode="true" FixedLength="false" />
+    <Property Name="FlowInnerDepart" Type="Int32" />
+    <Property Name="MailMode" Type="String" MaxLength="255" Unicode="true" FixedLength="false" />
+    <Property Name="UseSystemMail" Type="Int32" />
+    <Property Name="MailSMTPServer" Type="String" MaxLength="255" Unicode="true" FixedLength="false" />
+    <Property Name="POPServer" Type="String" MaxLength="255" Unicode="true" FixedLength="false" />
+    <Property Name="MailUser" Type="String" MaxLength="50" Unicode="true" FixedLength="false" />
+    <Property Name="MailPassword" Type="String" MaxLength="50" Unicode="true" FixedLength="false" />
+    <Property Name="SMSUser" Type="String" MaxLength="255" Unicode="true" FixedLength="false" />
+    <Property Name="RemindDays" Type="Int32" />
+    <Property Name="MailAddress" Type="String" MaxLength="255" Unicode="true" FixedLength="false" />
+    <Property Name="ParticipateMode" Type="Int32" />
+    <Property Name="ModelName" Type="String" MaxLength="255" Unicode="true" FixedLength="false" />
+  </EntityType>
+  <EntityType Name="AnswerSheet">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="String" Nullable="false" MaxLength="40" Unicode="true" FixedLength="false" />
+    <Property Name="QuestionnaireID" Type="String" MaxLength="40" Unicode="true" FixedLength="false" />
+    <Property Name="QuestionID" Type="String" MaxLength="40" Unicode="true" FixedLength="false" />
+    <Property Name="OptionID" Type="String" MaxLength="40" Unicode="true" FixedLength="false" />
+    <Property Name="OptionValue" Type="String" MaxLength="Max" Unicode="false" FixedLength="false" />
+    <Property Name="UserName" Type="String" MaxLength="40" Unicode="true" FixedLength="false" />
+    <Property Name="UserIP" Type="String" MaxLength="200" Unicode="true" FixedLength="false" />
+    <Property Name="PostDate" Type="DateTime" />
+    <Property Name="CurrentAnswerQuestionnaireID" Type="String" MaxLength="40" Unicode="true" FixedLength="false" />
+  </EntityType>
+  <EntityType Name="Article">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="String" Nullable="false" MaxLength="40" Unicode="true" FixedLength="false" />
+    <Property Name="Title" Type="String" MaxLength="128" Unicode="true" FixedLength="false" />
+    <Property Name="Description" Type="String" MaxLength="255" Unicode="true" FixedLength="false" />
+    <Property Name="OwnerID" Type="String" MaxLength="40" Unicode="true" FixedLength="false" />
+    <Property Name="ParentID" Type="String" MaxLength="40" Unicode="true" FixedLength="false" />
+    <Property Name="AccountID" Type="String" MaxLength="40" Unicode="true" FixedLength="false" />
+    <Property Name="Author" Type="String" MaxLength="64" Unicode="true" FixedLength="false" />
+    <Property Name="Content" Type="String" MaxLength="Max" Unicode="false" FixedLength="false" />
+    <Property Name="State" Type="Int32" />
+    <Property Name="Created" Type="DateTime" />
+    <Property Name="Updated" Type="DateTime" />
+    <Property Name="Overdue" Type="DateTime" />
+    <Property Name="SequenceIndex" Type="Int32" />
+    <Property Name="Source" Type="String" MaxLength="255" Unicode="true" FixedLength="false" />
+    <Property Name="AllowComments" Type="Int32" />
+    <Property Name="Permission" Type="Int32" />
+    <Property Name="IsImage" Type="Int32" />
+    <Property Name="IsShow" Type="Int32" />
+    <Property Name="SubTitle" Type="String" MaxLength="64" Unicode="true" FixedLength="false" />
+    <Property Name="Thumbnail" Type="String" MaxLength="255" Unicode="true" FixedLength="false" />
+    <Property Name="IsDeleted" Type="Int32" />
+    <Property Name="ContentUrl" Type="String" MaxLength="255" Unicode="true" FixedLength="false" />
+    <Property Name="ContentType" Type="Int32" />
+    <Property Name="SourceID" Type="String" MaxLength="40" Unicode="true" FixedLength="false" />
+    <Property Name="SN" Type="Int64" />
+    <Property Name="ProcessState" Type="String" MaxLength="50" Unicode="true" FixedLength="false" />
+    <Property Name="ProcessDirection" Type="String" MaxLength="50" Unicode="true" FixedLength="false" />
+    <Property Name="ProcessSiteID" Type="String" MaxLength="50" Unicode="true" FixedLength="false" />
+    <Property Name="FlowXml" Type="String" MaxLength="Max" Unicode="false" FixedLength="false" />
+    <Property Name="ChannelName" Type="String" MaxLength="50" Unicode="true" FixedLength="false" />
+    <Property Name="FullChannelPath" Type="String" MaxLength="255" Unicode="true" FixedLength="false" />
+    <Property Name="ChannelFullUrl" Type="String" MaxLength="255" Unicode="true" FixedLength="false" />
+    <Property Name="CommentCount" Type="Int32" />
+    <Property Name="Tags" Type="String" MaxLength="255" Unicode="true" FixedLength="false" />
+    <Property Name="ModelXml" Type="String" MaxLength="Max" Unicode="false" FixedLength="false" />
+    <Property Name="EnumState" Type="String" MaxLength="50" Unicode="true" FixedLength="false" />
+    <Property Name="IndustryID" Type="String" MaxLength="40" Unicode="true" FixedLength="false" />
+    <Property Name="FromRowID" Type="String" MaxLength="50" Unicode="true" FixedLength="false" />
+    <Property Name="FromSiteUrl" Type="String" MaxLength="50" Unicode="true" FixedLength="false" />
+    <Property Name="KeyWord" Type="String" MaxLength="255" Unicode="true" FixedLength="false" />
+    <Property Name="DescriptionKey" Type="String" MaxLength="255" Unicode="true" FixedLength="false" />
+    <Property Name="VideoCode" Type="String" MaxLength="Max" Unicode="false" FixedLength="false" />
+    <Property Name="ListKeys" Type="String" MaxLength="255" Unicode="true" FixedLength="false" />
+    <Property Name="ListKeys1" Type="String" MaxLength="255" Unicode="true" FixedLength="false" />
+    <Property Name="ListKeys2" Type="String" MaxLength="255" Unicode="true" FixedLength="false" />
+    <Property Name="ListKeys3" Type="String" MaxLength="255" Unicode="true" FixedLength="false" />
+    <Property Name="ListKeys4" Type="String" MaxLength="255" Unicode="true" FixedLength="false" />
+    <Property Name="ListKeys5" Type="String" MaxLength="255" Unicode="true" FixedLength="false" />
+    <Property Name="IPStrategy" Type="String" MaxLength="128" Unicode="true" FixedLength="false" />
+    <Property Name="ModelName" Type="String" MaxLength="128" Unicode="true" FixedLength="false" />
+    <Property Name="TableName" Type="String" MaxLength="128" Unicode="true" FixedLength="false" />
+    <Property Name="ModelConfig" Type="String" MaxLength="Max" Unicode="false" FixedLength="false" />
+    <Property Name="ModelSchema" Type="String" MaxLength="Max" Unicode="false" FixedLength="false" />
+    <Property Name="PrivacyLevel" Type="Int32" />
+    <Property Name="Photos" Type="String" MaxLength="Max" Unicode="false" FixedLength="false" />
+    <Property Name="Clicks" Type="Int32" />
+    <Property Name="DayClicks" Type="Int32" />
+    <Property Name="YesterdayClicks" Type="Int32" />
+    <Property Name="WeekClicks" Type="Int32" />
+    <Property Name="MonthClicks" Type="Int32" />
+    <Property Name="QuarterClicks" Type="Int32" />
+    <Property Name="YearClicks" Type="Int32" />
+    <Property Name="Color" Type="String" MaxLength="20" Unicode="true" FixedLength="false" />
+    <Property Name="FontWeight" Type="String" MaxLength="20" Unicode="true" FixedLength="false" />
+    <Property Name="FontStyle" Type="String" MaxLength="20" Unicode="true" FixedLength="false" />
+  </EntityType>
+  <EntityType Name="ArticleIndex">
+    <Key>
+      <PropertyRef Name="ArticleID" />
+    </Key>
+    <Property Name="ArticleID" Type="String" Nullable="false" MaxLength="50" Unicode="true" FixedLength="false" />
+    <Property Name="Operation" Type="Int32" />
+    <Property Name="IsLock" Type="Int32" />
+  </EntityType>
+  <EntityType Name="ArticleTag">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="String" Nullable="false" MaxLength="40" Unicode="true" FixedLength="false" />
+    <Property Name="ArticleID" Type="String" MaxLength="50" Unicode="true" FixedLength="false" />
+    <Property Name="Identifier" Type="String" MaxLength="64" Unicode="true" FixedLength="false" />
+    <Property Name="Updated" Type="DateTime" />
+    <Property Name="Created" Type="DateTime" />
+  </EntityType>
+  <EntityType Name="Attachment">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="String" Nullable="false" MaxLength="40" Unicode="true" FixedLength="false" />
+    <Property Name="ArticleID" Type="String" MaxLength="50" Unicode="true" FixedLength="false" />
+    <Property Name="SequenceIndex" Type="Int32" />
+    <Property Name="FileType" Type="String" MaxLength="8" Unicode="true" FixedLength="false" />
+    <Property Name="FileName" Type="String" MaxLength="255" Unicode="true" FixedLength="false" />
+    <Property Name="FileSize" Type="Int32" />
+    <Property Name="FilePath" Type="String" MaxLength="255" Unicode="true" FixedLength="false" />
+    <Property Name="Description" Type="String" MaxLength="255" Unicode="true" FixedLength="false" />
+    <Property Name="UploadDate" Type="DateTime" />
+    <Property Name="DownloadTimes" Type="Int32" />
+    <Property Name="Updated" Type="DateTime" />
+    <Property Name="Created" Type="DateTime" />
+    <Property Name="EnumState" Type="String" MaxLength="50" Unicode="true" FixedLength="false" />
+  </EntityType>
+  <EntityType Name="Category">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="String" Nullable="false" MaxLength="40" Unicode="true" FixedLength="false" />
+    <Property Name="ParentID" Type="String" MaxLength="40" Unicode="true" FixedLength="false" />
+    <Property Name="Name" Type="String" MaxLength="255" Unicode="true" FixedLength="false" />
+    <Property Name="KeyWord" Type="String" MaxLength="50" Unicode="true" FixedLength="false" />
+    <Property Name="Description" Type="String" MaxLength="50" Unicode="true" FixedLength="false" />
+    <Property Name="Options" Type="String" MaxLength="50" Unicode="true" FixedLength="false" />
+    <Property Name="Index" Type="Int32" />
+    <Property Name="CreateDate" Type="DateTime" />
+  </EntityType>
+  <EntityType Name="Channel">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="String" Nullable="false" MaxLength="40" Unicode="true" FixedLength="false" />
+    <Property Name="ParentID" Type="String" MaxLength="40" Unicode="true" FixedLength="false" />
+    <Property Name="Alias" Type="String" MaxLength="16" Unicode="true" FixedLength="false" />
+    <Property Name="Title" Type="String" MaxLength="64" Unicode="true" FixedLength="false" />
+    <Property Name="Description" Type="String" MaxLength="255" Unicode="true" FixedLength="false" />
+    <Property Name="FullPath" Type="String" MaxLength="255" Unicode="true" FixedLength="false" />
+    <Property Name="TemplateName" Type="String" MaxLength="64" Unicode="true" FixedLength="false" />
+    <Property Name="DetailTemplate" Type="String" MaxLength="64" Unicode="true" FixedLength="false" />
+    <Property Name="SecurityLevel" Type="Int32" />
+    <Property Name="State" Type="Int32" />
+    <Property Name="ReferenceID" Type="String" MaxLength="40" Unicode="true" FixedLength="false" />
+    <Property Name="DefaultContentID" Type="String" MaxLength="40" Unicode="true" FixedLength="false" />
+    <Property Name="SequenceIndex" Type="Int32" />
+    <Property Name="Parameter" Type="String" MaxLength="255" Unicode="true" FixedLength="false" />
+    <Property Name="Created" Type="DateTime" />
+    <Property Name="ChannelFolder" Type="String" MaxLength="64" Unicode="true" FixedLength="false" />
+    <Property Name="TitleImage" Type="String" MaxLength="64" Unicode="true" FixedLength="false" />
+    <Property Name="Process" Type="String" MaxLength="16" Unicode="true" FixedLength="false" />
+    <Property Name="Type" Type="String" MaxLength="16" Unicode="true" FixedLength="false" />
+    <Property Name="ChannelName" Type="String" MaxLength="50" Unicode="true" FixedLength="false" />
+    <Property Name="RefAreaID" Type="String" MaxLength="40" Unicode="true" FixedLength="false" />
+    <Property Name="IsComment" Type="Int32" />
+    <Property Name="FullUrl" Type="String" MaxLength="255" Unicode="true" FixedLength="false" />
+    <Property Name="ReturnUrl" Type="String" MaxLength="255" Unicode="true" FixedLength="false" />
+    <Property Name="ProcessLayerNO" Type="String" MaxLength="50" Unicode="true" FixedLength="false" />
+    <Property Name="ProcessEnd" Type="String" MaxLength="16" Unicode="true" FixedLength="false" />
+    <Property Name="Updated" Type="DateTime" />
+    <Property Name="EnumState" Type="String" MaxLength="40" Unicode="true" FixedLength="false" />
+    <Property Name="ArticlesCount" Type="Int32" />
+    <Property Name="Tags" Type="String" MaxLength="255" Unicode="true" FixedLength="false" />
+    <Property Name="KeyWord" Type="String" MaxLength="255" Unicode="true" FixedLength="false" />
+    <Property Name="DescriptionKey" Type="String" MaxLength="255" Unicode="true" FixedLength="false" />
+    <Property Name="IPStrategy" Type="String" MaxLength="128" Unicode="true" FixedLength="false" />
+    <Property Name="ModelName" Type="String" MaxLength="128" Unicode="true" FixedLength="false" />
+  </EntityType>
+  <EntityType Name="ChannelModuleMapping">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="String" Nullable="false" MaxLength="40" Unicode="true" FixedLength="false" />
+    <Property Name="ChannelID" Type="String" MaxLength="40" Unicode="true" FixedLength="false" />
+    <Property Name="ModuleID" Type="String" MaxLength="40" Unicode="true" FixedLength="false" />
+    <Property Name="Parameter" Type="String" MaxLength="255" Unicode="true" FixedLength="false" />
+  </EntityType>
+  <EntityType Name="ChannelTag">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="String" Nullable="false" MaxLength="40" Unicode="true" FixedLength="false" />
+    <Property Name="ColumnID" Type="String" MaxLength="40" Unicode="true" FixedLength="false" />
+    <Property Name="Identifier" Type="String" MaxLength="64" Unicode="true" FixedLength="false" />
+    <Property Name="Created" Type="DateTime" />
+    <Property Name="Updated" Type="DateTime" />
+  </EntityType>
+  <EntityType Name="ClickRecords">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="String" Nullable="false" MaxLength="40" Unicode="true" FixedLength="false" />
+    <Property Name="ObjectType" Type="String" MaxLength="40" Unicode="true" FixedLength="false" />
+    <Property Name="ObjectID" Type="String" MaxLength="40" Unicode="true" FixedLength="false" />
+    <Property Name="VisitDate" Type="Int32" />
+    <Property Name="Clicks" Type="Int32" />
+  </EntityType>
+  <EntityType Name="ColumnModule">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="String" Nullable="false" MaxLength="40" Unicode="true" FixedLength="false" />
+    <Property Name="Title" Type="String" MaxLength="255" Unicode="true" FixedLength="false" />
+    <Property Name="Desc" Type="String" MaxLength="255" Unicode="true" FixedLength="false" />
+    <Property Name="ParamIntro" Type="String" MaxLength="255" Unicode="true" FixedLength="false" />
+    <Property Name="Path" Type="String" MaxLength="255" Unicode="true" FixedLength="false" />
+  </EntityType>
+  <EntityType Name="Comments">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="String" Nullable="false" MaxLength="40" Unicode="true" FixedLength="false" />
+    <Property Name="ArticleID" Type="String" MaxLength="40" Unicode="true" FixedLength="false" />
+    <Property Name="Author" Type="String" MaxLength="64" Unicode="true" FixedLength="false" />
+    <Property Name="Content" Type="String" MaxLength="Max" Unicode="false" FixedLength="false" />
+    <Property Name="Created" Type="DateTime" />
+    <Property Name="Updated" Type="DateTime" />
+    <Property Name="SequenceIndex" Type="Int32" />
+    <Property Name="State" Type="Int32" />
+    <Property Name="IP" Type="String" MaxLength="40" Unicode="true" FixedLength="false" />
+    <Property Name="AccountID" Type="String" MaxLength="64" Unicode="true" FixedLength="false" />
+    <Property Name="ArticleName" Type="String" MaxLength="100" Unicode="true" FixedLength="false" />
+  </EntityType>
+  <EntityType Name="Department">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="String" Nullable="false" MaxLength="40" Unicode="true" FixedLength="false" />
+    <Property Name="ParentID" Type="String" MaxLength="40" Unicode="true" FixedLength="false" />
+    <Property Name="FromSiteID" Type="String" MaxLength="40" Unicode="true" FixedLength="false" />
+    <Property Name="Title" Type="String" MaxLength="255" Unicode="true" FixedLength="false" />
+    <Property Name="FullName" Type="String" MaxLength="255" Unicode="true" FixedLength="false" />
+    <Property Name="Description" Type="String" MaxLength="255" Unicode="true" FixedLength="false" />
+    <Property Name="SequenceIndex" Type="Int32" />
+    <Property Name="Created" Type="DateTime" />
+    <Property Name="Updated" Type="DateTime" />
+    <Property Name="Number" Type="String" MaxLength="255" Unicode="true" FixedLength="false" />
+    <Property Name="Address" Type="String" MaxLength="255" Unicode="true" FixedLength="false" />
+    <Property Name="Phone" Type="String" MaxLength="255" Unicode="true" FixedLength="false" />
+    <Property Name="Fax" Type="String" MaxLength="64" Unicode="true" FixedLength="false" />
+    <Property Name="Email" Type="String" MaxLength="64" Unicode="true" FixedLength="false" />
+    <Property Name="MapScript" Type="String" MaxLength="Max" Unicode="false" FixedLength="false" />
+    <Property Name="SiteUrl" Type="String" MaxLength="255" Unicode="true" FixedLength="false" />
+    <Property Name="Text" Type="String" MaxLength="Max" Unicode="false" FixedLength="false" />
+  </EntityType>
+  <EntityType Name="ErrorCode">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" />
+    <Property Name="Level" Type="Int32" />
+    <Property Name="Title" Type="String" MaxLength="128" Unicode="true" FixedLength="false" />
+    <Property Name="Description" Type="String" MaxLength="255" Unicode="true" FixedLength="false" />
+    <Property Name="HelpLink" Type="String" MaxLength="255" Unicode="true" FixedLength="false" />
+    <Property Name="Created" Type="DateTime" />
+    <Property Name="Updated" Type="DateTime" />
+  </EntityType>
+  <EntityType Name="Favorite">
+    <Key>
+      <PropertyRef Name="FavoriteID" />
+    </Key>
+    <Property Name="FavoriteID" Type="String" Nullable="false" MaxLength="40" Unicode="true" FixedLength="false" />
+    <Property Name="Url" Type="String" MaxLength="255" Unicode="true" FixedLength="false" />
+    <Property Name="Title" Type="String" MaxLength="100" Unicode="true" FixedLength="false" />
+    <Property Name="Description" Type="String" MaxLength="255" Unicode="true" FixedLength="false" />
+    <Property Name="Created" Type="DateTime" />
+    <Property Name="Updated" Type="DateTime" />
+    <Property Name="AccountID" Type="String" MaxLength="40" Unicode="true" FixedLength="false" />
+    <Property Name="Tag" Type="String" MaxLength="50" Unicode="true" FixedLength="false" />
+    <Property Name="ArticleID" Type="String" MaxLength="40" Unicode="true" FixedLength="false" />
+    <Property Name="Thumbnail" Type="String" MaxLength="255" Unicode="true" FixedLength="false" />
+  </EntityType>
+  <EntityType Name="Lecture">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="String" Nullable="false" MaxLength="40" Unicode="true" FixedLength="false" />
+    <Property Name="AccountID" Type="String" MaxLength="40" Unicode="true" FixedLength="false" />
+    <Property Name="OwnerID" Type="String" MaxLength="40" Unicode="true" FixedLength="false" />
+    <Property Name="State" Type="Int32" />
+    <Property Name="IsShow" Type="Int32" />
+    <Property Name="Tags" Type="String" MaxLength="255" Unicode="true" FixedLength="false" />
+    <Property Name="Updated" Type="DateTime" />
+    <Property Name="Created" Type="DateTime" />
+    <Property Name="ProcessState" Type="String" MaxLength="50" Unicode="true" FixedLength="false" />
+    <Property Name="ProcessDirection" Type="String" MaxLength="50" Unicode="true" FixedLength="false" />
+    <Property Name="ProcessSiteID" Type="String" MaxLength="40" Unicode="true" FixedLength="false" />
+    <Property Name="FullPath" Type="String" MaxLength="254" Unicode="true" FixedLength="false" />
+    <Property Name="Clicks" Type="Int32" />
+    <Property Name="DayClicks" Type="Int32" />
+    <Property Name="YesterdayClicks" Type="Int32" />
+    <Property Name="WeekClicks" Type="Int32" />
+    <Property Name="MonthClicks" Type="Int32" />
+    <Property Name="QuarterClicks" Type="Int32" />
+    <Property Name="YearClicks" Type="Int32" />
+    <Property Name="Title" Type="String" MaxLength="300" Unicode="true" FixedLength="false" />
+    <Property Name="Speaker" Type="String" MaxLength="50" Unicode="true" FixedLength="false" />
+    <Property Name="Anchor" Type="String" MaxLength="50" Unicode="true" FixedLength="false" />
+    <Property Name="Description" Type="String" MaxLength="Max" Unicode="false" FixedLength="false" />
+    <Property Name="Address" Type="String" MaxLength="300" Unicode="true" FixedLength="false" />
+    <Property Name="Organizer" Type="String" MaxLength="300" Unicode="true" FixedLength="false" />
+    <Property Name="Type" Type="String" MaxLength="300" Unicode="true" FixedLength="false" />
+    <Property Name="Cate" Type="String" MaxLength="300" Unicode="true" FixedLength="false" />
+    <Property Name="StartTime" Type="String" MaxLength="200" Unicode="true" FixedLength="false" />
+    <Property Name="DueTime" Type="DateTime" />
+    <Property Name="Organizer2" Type="String" MaxLength="300" Unicode="true" FixedLength="false" />
+    <Property Name="Url" Type="String" MaxLength="500" Unicode="true" FixedLength="false" />
+    <Property Name="Intro" Type="String" MaxLength="4000" Unicode="true" FixedLength="false" />
+    <Property Name="Term" Type="String" MaxLength="100" Unicode="true" FixedLength="false" />
+  </EntityType>
+  <EntityType Name="Link">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="String" Nullable="false" MaxLength="40" Unicode="true" FixedLength="false" />
+    <Property Name="Title" Type="String" MaxLength="40" Unicode="true" FixedLength="false" />
+    <Property Name="Url" Type="String" MaxLength="255" Unicode="true" FixedLength="false" />
+    <Property Name="Tag" Type="String" MaxLength="64" Unicode="true" FixedLength="false" />
+    <Property Name="Thumbnail" Type="String" MaxLength="255" Unicode="true" FixedLength="false" />
+    <Property Name="Created" Type="DateTime" />
+    <Property Name="OrderNumber" Type="Int32" />
+    <Property Name="Updated" Type="DateTime" />
+  </EntityType>
+  <EntityType Name="Log">
+    <Key>
+      <PropertyRef Name="LogID" />
+    </Key>
+    <Property Name="LogID" Type="String" Nullable="false" MaxLength="40" Unicode="true" FixedLength="false" />
+    <Property Name="Title" Type="String" MaxLength="40" Unicode="true" FixedLength="false" />
+    <Property Name="UserID" Type="String" MaxLength="40" Unicode="true" FixedLength="false" />
+    <Property Name="Content" Type="String" MaxLength="Max" Unicode="false" FixedLength="false" />
+    <Property Name="Created" Type="DateTime" />
+    <Property Name="Page" Type="String" MaxLength="64" Unicode="true" FixedLength="false" />
+    <Property Name="Updated" Type="DateTime" />
+    <Property Name="Remark" Type="String" MaxLength="50" Unicode="true" FixedLength="false" />
+  </EntityType>
+  <EntityType Name="Menu">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="String" Nullable="false" MaxLength="40" Unicode="true" FixedLength="false" />
+    <Property Name="ParentID" Type="String" MaxLength="40" Unicode="true" FixedLength="false" />
+    <Property Name="SequenceIndex" Type="Int32" />
+    <Property Name="NameText" Type="String" MaxLength="128" Unicode="true" FixedLength="false" />
+    <Property Name="Title" Type="String" MaxLength="128" Unicode="true" FixedLength="false" />
+    <Property Name="Href" Type="String" MaxLength="255" Unicode="true" FixedLength="false" />
+    <Property Name="EntityID" Type="String" MaxLength="40" Unicode="true" FixedLength="false" />
+    <Property Name="Type" Type="Int32" />
+    <Property Name="Created" Type="DateTime" />
+    <Property Name="Updated" Type="DateTime" />
+    <Property Name="Icon" Type="String" MaxLength="50" Unicode="true" FixedLength="false" />
+    <Property Name="IconHover" Type="String" MaxLength="50" Unicode="true" FixedLength="false" />
+    <Property Name="Group" Type="Int32" />
+  </EntityType>
+  <EntityType Name="Message">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="String" Nullable="false" MaxLength="40" Unicode="true" FixedLength="false" />
+    <Property Name="AccountID" Type="String" MaxLength="40" Unicode="true" FixedLength="false" />
+    <Property Name="AccountName" Type="String" MaxLength="40" Unicode="true" FixedLength="false" />
+    <Property Name="ReceiverID" Type="String" MaxLength="40" Unicode="true" FixedLength="false" />
+    <Property Name="Receivers" Type="String" MaxLength="255" Unicode="true" FixedLength="false" />
+    <Property Name="Subject" Type="String" MaxLength="50" Unicode="true" FixedLength="false" />
+    <Property Name="Content" Type="String" MaxLength="255" Unicode="true" FixedLength="false" />
+    <Property Name="Created" Type="DateTime" />
+    <Property Name="SendTime" Type="DateTime" />
+    <Property Name="Description" Type="String" MaxLength="255" Unicode="true" FixedLength="false" />
+    <Property Name="State" Type="Int32" />
+    <Property Name="Updated" Type="DateTime" />
+  </EntityType>
+  <EntityType Name="Option">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="String" Nullable="false" MaxLength="40" Unicode="true" FixedLength="false" />
+    <Property Name="QuestionID" Type="String" MaxLength="40" Unicode="true" FixedLength="false" />
+    <Property Name="Title" Type="String" MaxLength="200" Unicode="true" FixedLength="false" />
+    <Property Name="Type" Type="Int32" />
+    <Property Name="OptionValue" Type="String" MaxLength="200" Unicode="true" FixedLength="false" />
+    <Property Name="Score" Type="Int32" />
+    <Property Name="OrderID" Type="Int32" />
+    <Property Name="DefaultSelected" Type="Boolean" />
+  </EntityType>
+  <EntityType Name="PageVisitor">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="String" Nullable="false" MaxLength="40" Unicode="true" FixedLength="false" />
+    <Property Name="TypeCode" Type="Int32" />
+    <Property Name="UserID" Type="String" MaxLength="40" Unicode="true" FixedLength="false" />
+    <Property Name="VisitDate" Type="DateTime" />
+    <Property Name="LogoutDate" Type="DateTime" />
+    <Property Name="VisitorIP" Type="String" MaxLength="50" Unicode="true" FixedLength="false" />
+    <Property Name="Url" Type="String" MaxLength="255" Unicode="true" FixedLength="false" />
+    <Property Name="Http_Referer" Type="String" MaxLength="255" Unicode="true" FixedLength="false" />
+    <Property Name="Clicks" Type="Int32" />
+    <Property Name="OnlineTime" Type="DateTime" />
+    <Property Name="Platform" Type="String" MaxLength="50" Unicode="true" FixedLength="false" />
+    <Property Name="Browser" Type="String" MaxLength="50" Unicode="true" FixedLength="false" />
+    <Property Name="Screen" Type="String" MaxLength="50" Unicode="true" FixedLength="false" />
+    <Property Name="City" Type="String" MaxLength="50" Unicode="true" FixedLength="false" />
+    <Property Name="Created" Type="DateTime" />
+    <Property Name="Updated" Type="DateTime" />
+    <Property Name="SearchEngine" Type="String" MaxLength="50" Unicode="true" FixedLength="false" />
+    <Property Name="Keyword" Type="String" MaxLength="50" Unicode="true" FixedLength="false" />
+    <Property Name="Province" Type="String" MaxLength="50" Unicode="true" FixedLength="false" />
+    <Property Name="FromSite" Type="String" MaxLength="50" Unicode="true" FixedLength="false" />
+  </EntityType>
+  <EntityType Name="PageVisitorHistory">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="String" Nullable="false" MaxLength="40" Unicode="true" FixedLength="false" />
+    <Property Name="TypeCode" Type="Int32" />
+    <Property Name="UserID" Type="String" MaxLength="40" Unicode="true" FixedLength="false" />
+    <Property Name="VisitDate" Type="DateTime" />
+    <Property Name="LogoutDate" Type="DateTime" />
+    <Property Name="VisitorIP" Type="String" MaxLength="50" Unicode="true" FixedLength="false" />
+    <Property Name="Url" Type="String" MaxLength="255" Unicode="true" FixedLength="false" />
+    <Property Name="Http_Referer" Type="String" MaxLength="255" Unicode="true" FixedLength="false" />
+    <Property Name="Clicks" Type="Int32" />
+    <Property Name="OnlineTime" Type="DateTime" />
+    <Property Name="Platform" Type="String" MaxLength="50" Unicode="true" FixedLength="false" />
+    <Property Name="Browser" Type="String" MaxLength="50" Unicode="true" FixedLength="false" />
+    <Property Name="Screen" Type="String" MaxLength="50" Unicode="true" FixedLength="false" />
+    <Property Name="City" Type="String" MaxLength="50" Unicode="true" FixedLength="false" />
+    <Property Name="Created" Type="DateTime" />
+    <Property Name="Updated" Type="DateTime" />
+    <Property Name="SearchEngine" Type="String" MaxLength="50" Unicode="true" FixedLength="false" />
+    <Property Name="Keyword" Type="String" MaxLength="50" Unicode="true" FixedLength="false" />
+    <Property Name="Province" Type="String" MaxLength="50" Unicode="true" FixedLength="false" />
+    <Property Name="FromSite" Type="String" MaxLength="50" Unicode="true" FixedLength="false" />
+  </EntityType>
+  <EntityType Name="People">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="String" Nullable="false" MaxLength="40" Unicode="true" FixedLength="false" />
+    <Property Name="AccountID" Type="String" MaxLength="40" Unicode="true" FixedLength="false" />
+    <Property Name="OwnerID" Type="String" MaxLength="40" Unicode="true" FixedLength="false" />
+    <Property Name="State" Type="Int32" />
+    <Property Name="Index" Type="Int32" />
+    <Property Name="IsShow" Type="Int32" />
+    <Property Name="Tags" Type="String" MaxLength="255" Unicode="true" FixedLength="false" />
+    <Property Name="Updated" Type="DateTime" />
+    <Property Name="Created" Type="DateTime" />
+    <Property Name="ProcessState" Type="String" MaxLength="50" Unicode="true" FixedLength="false" />
+    <Property Name="ProcessDirection" Type="String" MaxLength="50" Unicode="true" FixedLength="false" />
+    <Property Name="ProcessSiteID" Type="String" MaxLength="40" Unicode="true" FixedLength="false" />
+    <Property Name="FullPath" Type="String" MaxLength="254" Unicode="true" FixedLength="false" />
+    <Property Name="Clicks" Type="Int32" />
+    <Property Name="DayClicks" Type="Int32" />
+    <Property Name="YesterdayClicks" Type="Int32" />
+    <Property Name="WeekClicks" Type="Int32" />
+    <Property Name="MonthClicks" Type="Int32" />
+    <Property Name="QuarterClicks" Type="Int32" />
+    <Property Name="YearClicks" Type="Int32" />
+    <Property Name="Fullname" Type="String" MaxLength="50" Unicode="true" FixedLength="false" />
+    <Property Name="Gendar" Type="String" MaxLength="25" Unicode="true" FixedLength="false" />
+    <Property Name="Title" Type="String" MaxLength="500" Unicode="true" FixedLength="false" />
+    <Property Name="Position" Type="String" MaxLength="100" Unicode="true" FixedLength="false" />
+    <Property Name="Office" Type="String" MaxLength="100" Unicode="true" FixedLength="false" />
+    <Property Name="OfficeTime" Type="String" MaxLength="100" Unicode="true" FixedLength="false" />
+    <Property Name="Phone" Type="String" MaxLength="100" Unicode="true" FixedLength="false" />
+    <Property Name="Mobil" Type="String" MaxLength="50" Unicode="true" FixedLength="false" />
+    <Property Name="Email" Type="String" MaxLength="100" Unicode="true" FixedLength="false" />
+    <Property Name="Duty" Type="String" MaxLength="200" Unicode="true" FixedLength="false" />
+    <Property Name="Field" Type="String" MaxLength="200" Unicode="true" FixedLength="false" />
+    <Property Name="Photo" Type="String" MaxLength="200" Unicode="true" FixedLength="false" />
+    <Property Name="Url" Type="String" MaxLength="500" Unicode="true" FixedLength="false" />
+    <Property Name="Intro" Type="String" MaxLength="Max" Unicode="false" FixedLength="false" />
+    <Property Name="IndexLetter" Type="String" MaxLength="2" Unicode="true" FixedLength="false" />
+    <Property Name="CardNumber" Type="String" MaxLength="50" Unicode="true" FixedLength="false" />
+  </EntityType>
+  <EntityType Name="Permission">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="String" Nullable="false" MaxLength="40" Unicode="true" FixedLength="false" />
+    <Property Name="OwnerType" Type="Int32" />
+    <Property Name="OwnerID" Type="String" MaxLength="64" Unicode="true" FixedLength="false" />
+    <Property Name="ObjectID" Type="String" MaxLength="40" Unicode="true" FixedLength="false" />
+    <Property Name="Url" Type="String" MaxLength="255" Unicode="true" FixedLength="false" />
+    <Property Name="Content" Type="String" MaxLength="64" Unicode="true" FixedLength="false" />
+    <Property Name="Created" Type="DateTime" />
+    <Property Name="Updated" Type="DateTime" />
+  </EntityType>
+  <EntityType Name="Point">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="String" Nullable="false" MaxLength="40" Unicode="true" FixedLength="false" />
+    <Property Name="Value" Type="Int32" />
+    <Property Name="Action" Type="Int32" />
+    <Property Name="Description" Type="String" MaxLength="255" Unicode="true" FixedLength="false" />
+    <Property Name="Created" Type="DateTime" />
+    <Property Name="ObjectID" Type="String" MaxLength="40" Unicode="true" FixedLength="false" />
+    <Property Name="AccountID" Type="String" MaxLength="40" Unicode="true" FixedLength="false" />
+    <Property Name="AccountName" Type="String" MaxLength="40" Unicode="true" FixedLength="false" />
+  </EntityType>
+  <EntityType Name="Question">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="String" Nullable="false" MaxLength="40" Unicode="true" FixedLength="false" />
+    <Property Name="QuestionnaireID" Type="String" MaxLength="40" Unicode="true" FixedLength="false" />
+    <Property Name="Type" Type="Int32" />
+    <Property Name="Title" Type="String" MaxLength="200" Unicode="true" FixedLength="false" />
+    <Property Name="Description" Type="String" MaxLength="Max" Unicode="false" FixedLength="false" />
+    <Property Name="OrderID" Type="Int32" />
+    <Property Name="MustAnswer" Type="Boolean" />
+    <Property Name="AnswerCount" Type="Int32" />
+  </EntityType>
+  <EntityType Name="Questionnaire">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="String" Nullable="false" MaxLength="40" Unicode="true" FixedLength="false" />
+    <Property Name="TypeID" Type="String" MaxLength="40" Unicode="true" FixedLength="false" />
+    <Property Name="Title" Type="String" MaxLength="200" Unicode="true" FixedLength="false" />
+    <Property Name="Description" Type="String" MaxLength="Max" Unicode="false" FixedLength="false" />
+    <Property Name="Author" Type="String" MaxLength="50" Unicode="true" FixedLength="false" />
+    <Property Name="Password" Type="String" MaxLength="100" Unicode="true" FixedLength="false" />
+    <Property Name="State" Type="Int32" />
+    <Property Name="UseHits" Type="Int32" />
+    <Property Name="Hit" Type="Int32" />
+    <Property Name="Created" Type="DateTime" />
+    <Property Name="Updated" Type="DateTime" />
+    <Property Name="StartDate" Type="DateTime" />
+    <Property Name="ExpireDate" Type="DateTime" />
+    <Property Name="IsEmailSend" Type="Boolean" />
+    <Property Name="IsNeedLogin" Type="Boolean" />
+    <Property Name="IsNeedValidateCode" Type="Boolean" />
+    <Property Name="IpRepeat" Type="Boolean" />
+    <Property Name="IsAudited" Type="Boolean" />
+    <Property Name="SuccessConfig" Type="Int32" />
+  </EntityType>
+  <EntityType Name="QuestionnaireType">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="String" Nullable="false" MaxLength="40" Unicode="true" FixedLength="false" />
+    <Property Name="ParentID" Type="String" MaxLength="40" Unicode="true" FixedLength="false" />
+    <Property Name="TypeName" Type="String" MaxLength="200" Unicode="true" FixedLength="false" />
+    <Property Name="OrderID" Type="Int32" />
+    <Property Name="IsShow" Type="Boolean" />
+    <Property Name="Created" Type="DateTime" />
+    <Property Name="Updated" Type="DateTime" />
+  </EntityType>
+  <EntityType Name="RelatedArticle">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="String" Nullable="false" MaxLength="40" Unicode="true" FixedLength="false" />
+    <Property Name="ArticleID" Type="String" MaxLength="40" Unicode="true" FixedLength="false" />
+    <Property Name="RelatedID" Type="String" MaxLength="40" Unicode="true" FixedLength="false" />
+    <Property Name="Created" Type="DateTime" />
+    <Property Name="Updated" Type="DateTime" />
+  </EntityType>
+  <EntityType Name="Role">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="String" Nullable="false" MaxLength="40" Unicode="true" FixedLength="false" />
+    <Property Name="FromSiteID" Type="String" MaxLength="40" Unicode="true" FixedLength="false" />
+    <Property Name="Title" Type="String" MaxLength="64" Unicode="true" FixedLength="false" />
+    <Property Name="Description" Type="String" MaxLength="255" Unicode="true" FixedLength="false" />
+    <Property Name="Created" Type="DateTime" />
+    <Property Name="State" Type="String" MaxLength="40" Unicode="true" FixedLength="false" />
+    <Property Name="Updated" Type="DateTime" />
+    <Property Name="GroupRole" Type="Int32" />
+    <Property Name="RoleType" Type="Int32" />
+  </EntityType>
+  <EntityType Name="ScoreDetail">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="String" Nullable="false" MaxLength="40" Unicode="true" FixedLength="false" />
+    <Property Name="Name" Type="String" MaxLength="255" Unicode="true" FixedLength="false" />
+    <Property Name="TargetID" Type="String" MaxLength="40" Unicode="true" FixedLength="false" />
+    <Property Name="RuleID" Type="String" MaxLength="40" Unicode="true" FixedLength="false" />
+    <Property Name="CreatedBy" Type="String" MaxLength="40" Unicode="true" FixedLength="false" />
+    <Property Name="CreatedOn" Type="DateTime" />
+    <Property Name="Review" Type="String" MaxLength="255" Unicode="true" FixedLength="false" />
+  </EntityType>
+  <EntityType Name="ScoreLevel">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="String" Nullable="false" MaxLength="40" Unicode="true" FixedLength="false" />
+    <Property Name="Name" Type="String" MaxLength="255" Unicode="true" FixedLength="false" />
+    <Property Name="SubjectID" Type="String" MaxLength="40" Unicode="true" FixedLength="false" />
+    <Property Name="Title" Type="String" MaxLength="40" Unicode="true" FixedLength="false" />
+    <Property Name="MinScore" Type="Int32" />
+    <Property Name="MaxScore" Type="Int32" />
+    <Property Name="IsAcquiescent" Type="Int32" />
+    <Property Name="Description" Type="String" MaxLength="255" Unicode="true" FixedLength="false" />
+  </EntityType>
+  <EntityType Name="ScoreRule">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="String" Nullable="false" MaxLength="40" Unicode="true" FixedLength="false" />
+    <Property Name="Name" Type="String" MaxLength="255" Unicode="true" FixedLength="false" />
+    <Property Name="Title" Type="String" MaxLength="255" Unicode="true" FixedLength="false" />
+    <Property Name="SubjectID" Type="String" MaxLength="40" Unicode="true" FixedLength="false" />
+    <Property Name="SoureID" Type="String" MaxLength="40" Unicode="true" FixedLength="false" />
+    <Property Name="Score" Type="Int32" />
+    <Property Name="Description" Type="String" MaxLength="255" Unicode="true" FixedLength="false" />
+  </EntityType>
+  <EntityType Name="ScoreRuleCount">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="String" Nullable="false" MaxLength="40" Unicode="true" FixedLength="false" />
+    <Property Name="Name" Type="String" MaxLength="255" Unicode="true" FixedLength="false" />
+    <Property Name="RuleID" Type="String" MaxLength="255" Unicode="true" FixedLength="false" />
+    <Property Name="TargetID" Type="String" MaxLength="40" Unicode="true" FixedLength="false" />
+    <Property Name="Count" Type="Int32" />
+  </EntityType>
+  <EntityType Name="ScoreSource">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="String" Nullable="false" MaxLength="40" Unicode="true" FixedLength="false" />
+    <Property Name="Name" Type="String" MaxLength="255" Unicode="true" FixedLength="false" />
+    <Property Name="Title" Type="String" MaxLength="255" Unicode="true" FixedLength="false" />
+    <Property Name="Description" Type="String" MaxLength="255" Unicode="true" FixedLength="false" />
+  </EntityType>
+  <EntityType Name="ScoreSubject">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="String" Nullable="false" MaxLength="40" Unicode="true" FixedLength="false" />
+    <Property Name="Name" Type="String" MaxLength="255" Unicode="true" FixedLength="false" />
+    <Property Name="Title" Type="String" MaxLength="255" Unicode="true" FixedLength="false" />
+    <Property Name="Description" Type="String" MaxLength="255" Unicode="true" FixedLength="false" />
+    <Property Name="IsUserSubject" Type="Int32" />
+    <Property Name="IsGrade" Type="Int32" />
+  </EntityType>
+  <EntityType Name="ScoreSummary">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="String" Nullable="false" MaxLength="40" Unicode="true" FixedLength="false" />
+    <Property Name="Name" Type="String" MaxLength="255" Unicode="true" FixedLength="false" />
+    <Property Name="TargetID" Type="String" MaxLength="255" Unicode="true" FixedLength="false" />
+    <Property Name="SubjectID" Type="String" MaxLength="40" Unicode="true" FixedLength="false" />
+    <Property Name="SourceID" Type="String" MaxLength="40" Unicode="true" FixedLength="false" />
+    <Property Name="TotalPoint" Type="Int32" />
+    <Property Name="TotalCount" Type="Int32" />
+  </EntityType>
+  <EntityType Name="Statistics">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="String" Nullable="false" MaxLength="40" Unicode="true" FixedLength="false" />
+    <Property Name="VisitorID" Type="String" MaxLength="40" Unicode="true" FixedLength="false" />
+    <Property Name="ChannelID" Type="String" MaxLength="40" Unicode="true" FixedLength="false" />
+    <Property Name="ArticleID" Type="String" MaxLength="40" Unicode="true" FixedLength="false" />
+    <Property Name="VisitDate" Type="DateTime" />
+    <Property Name="URL" Type="String" MaxLength="255" Unicode="true" FixedLength="false" />
+    <Property Name="Created" Type="DateTime" />
+    <Property Name="Updated" Type="DateTime" />
+  </EntityType>
+  <EntityType Name="StatisticsHistory">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="String" Nullable="false" MaxLength="40" Unicode="true" FixedLength="false" />
+    <Property Name="VisitorID" Type="String" MaxLength="40" Unicode="true" FixedLength="false" />
+    <Property Name="ChannelID" Type="String" MaxLength="40" Unicode="true" FixedLength="false" />
+    <Property Name="ArticleID" Type="String" MaxLength="40" Unicode="true" FixedLength="false" />
+    <Property Name="VisitDate" Type="DateTime" />
+    <Property Name="URL" Type="String" MaxLength="255" Unicode="true" FixedLength="false" />
+    <Property Name="Created" Type="DateTime" />
+    <Property Name="Updated" Type="DateTime" />
+  </EntityType>
+  <EntityType Name="Vote">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="String" Nullable="false" MaxLength="40" Unicode="true" FixedLength="false" />
+    <Property Name="Title" Type="String" MaxLength="40" Unicode="true" FixedLength="false" />
+    <Property Name="OptionType" Type="Int32" />
+    <Property Name="AddDate" Type="DateTime" />
+    <Property Name="EndDate" Type="DateTime" />
+    <Property Name="VotePeoples" Type="Int32" />
+    <Property Name="IsCanRepeat" Type="Boolean" />
+  </EntityType>
+  <EntityType Name="VoteAnswer">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="String" Nullable="false" MaxLength="40" Unicode="true" FixedLength="false" />
+    <Property Name="VoteID" Type="String" MaxLength="40" Unicode="true" FixedLength="false" />
+    <Property Name="VoteEntryID" Type="String" MaxLength="40" Unicode="true" FixedLength="false" />
+    <Property Name="AnswerText" Type="String" MaxLength="50" Unicode="true" FixedLength="false" />
+    <Property Name="AccountID" Type="String" MaxLength="50" Unicode="true" FixedLength="false" />
+    <Property Name="IP" Type="String" MaxLength="50" Unicode="true" FixedLength="false" />
+    <Property Name="VoteDate" Type="DateTime" />
+  </EntityType>
+  <EntityType Name="VoteAnswerStat">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="String" Nullable="false" MaxLength="40" Unicode="true" FixedLength="false" />
+    <Property Name="VoteID" Type="String" MaxLength="40" Unicode="true" FixedLength="false" />
+    <Property Name="VoteEntryID" Type="String" MaxLength="40" Unicode="true" FixedLength="false" />
+    <Property Name="VoteEntrySum" Type="Int32" />
+    <Property Name="VoteEntryText" Type="String" MaxLength="255" Unicode="true" FixedLength="false" />
+    <Property Name="OrderID" Type="Int32" />
+  </EntityType>
+  <EntityType Name="VoteEntry">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="String" Nullable="false" MaxLength="40" Unicode="true" FixedLength="false" />
+    <Property Name="VoteID" Type="String" MaxLength="40" Unicode="true" FixedLength="false" />
+    <Property Name="EntryText" Type="String" MaxLength="255" Unicode="true" FixedLength="false" />
+    <Property Name="OrderID" Type="Int32" />
+  </EntityType>
+</Schema>

@@ -1,0 +1,190 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="newWiseModel" Alias="Self" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns="http://schemas.microsoft.com/ado/2006/04/edm">
+  <EntityContainer Name="newWiseEntities">
+    <EntitySet Name="MSreplication_options" EntityType="newWiseModel.MSreplication_options" />
+    <EntitySet Name="spt_fallback_db" EntityType="newWiseModel.spt_fallback_db" />
+    <EntitySet Name="spt_fallback_dev" EntityType="newWiseModel.spt_fallback_dev" />
+    <EntitySet Name="spt_fallback_usg" EntityType="newWiseModel.spt_fallback_usg" />
+    <EntitySet Name="spt_monitor" EntityType="newWiseModel.spt_monitor" />
+    <EntitySet Name="spt_values" EntityType="newWiseModel.spt_values" />
+    <EntitySet Name="student2010" EntityType="newWiseModel.student2010" />
+    <EntitySet Name="student2011" EntityType="newWiseModel.student2011" />
+  </EntityContainer>
+  <EntityType Name="MSreplication_options">
+    <Key>
+      <PropertyRef Name="optname" />
+      <PropertyRef Name="value" />
+      <PropertyRef Name="major_version" />
+      <PropertyRef Name="minor_version" />
+      <PropertyRef Name="revision" />
+      <PropertyRef Name="install_failures" />
+    </Key>
+    <Property Name="optname" Type="String" Nullable="false" MaxLength="128" Unicode="true" FixedLength="false" />
+    <Property Name="value" Type="Boolean" Nullable="false" />
+    <Property Name="major_version" Type="Int32" Nullable="false" />
+    <Property Name="minor_version" Type="Int32" Nullable="false" />
+    <Property Name="revision" Type="Int32" Nullable="false" />
+    <Property Name="install_failures" Type="Int32" Nullable="false" />
+  </EntityType>
+  <EntityType Name="spt_fallback_db">
+    <Key>
+      <PropertyRef Name="xserver_name" />
+      <PropertyRef Name="xdttm_ins" />
+      <PropertyRef Name="xdttm_last_ins_upd" />
+      <PropertyRef Name="name" />
+      <PropertyRef Name="dbid" />
+      <PropertyRef Name="status" />
+      <PropertyRef Name="version" />
+    </Key>
+    <Property Name="xserver_name" Type="String" Nullable="false" MaxLength="30" Unicode="false" FixedLength="false" />
+    <Property Name="xdttm_ins" Type="DateTime" Nullable="false" />
+    <Property Name="xdttm_last_ins_upd" Type="DateTime" Nullable="false" />
+    <Property Name="xfallback_dbid" Type="Int16" />
+    <Property Name="name" Type="String" Nullable="false" MaxLength="30" Unicode="false" FixedLength="false" />
+    <Property Name="dbid" Type="Int16" Nullable="false" />
+    <Property Name="status" Type="Int16" Nullable="false" />
+    <Property Name="version" Type="Int16" Nullable="false" />
+  </EntityType>
+  <EntityType Name="spt_fallback_dev">
+    <Key>
+      <PropertyRef Name="xserver_name" />
+      <PropertyRef Name="xdttm_ins" />
+      <PropertyRef Name="xdttm_last_ins_upd" />
+      <PropertyRef Name="low" />
+      <PropertyRef Name="high" />
+      <PropertyRef Name="status" />
+      <PropertyRef Name="name" />
+      <PropertyRef Name="phyname" />
+    </Key>
+    <Property Name="xserver_name" Type="String" Nullable="false" MaxLength="30" Unicode="false" FixedLength="false" />
+    <Property Name="xdttm_ins" Type="DateTime" Nullable="false" />
+    <Property Name="xdttm_last_ins_upd" Type="DateTime" Nullable="false" />
+    <Property Name="xfallback_low" Type="Int32" />
+    <Property Name="xfallback_drive" Type="String" MaxLength="2" Unicode="false" FixedLength="true" />
+    <Property Name="low" Type="Int32" Nullable="false" />
+    <Property Name="high" Type="Int32" Nullable="false" />
+    <Property Name="status" Type="Int16" Nullable="false" />
+    <Property Name="name" Type="String" Nullable="false" MaxLength="30" Unicode="false" FixedLength="false" />
+    <Property Name="phyname" Type="String" Nullable="false" MaxLength="127" Unicode="false" FixedLength="false" />
+  </EntityType>
+  <EntityType Name="spt_fallback_usg">
+    <Key>
+      <PropertyRef Name="xserver_name" />
+      <PropertyRef Name="xdttm_ins" />
+      <PropertyRef Name="xdttm_last_ins_upd" />
+      <PropertyRef Name="dbid" />
+      <PropertyRef Name="segmap" />
+      <PropertyRef Name="lstart" />
+      <PropertyRef Name="sizepg" />
+      <PropertyRef Name="vstart" />
+    </Key>
+    <Property Name="xserver_name" Type="String" Nullable="false" MaxLength="30" Unicode="false" FixedLength="false" />
+    <Property Name="xdttm_ins" Type="DateTime" Nullable="false" />
+    <Property Name="xdttm_last_ins_upd" Type="DateTime" Nullable="false" />
+    <Property Name="xfallback_vstart" Type="Int32" />
+    <Property Name="dbid" Type="Int16" Nullable="false" />
+    <Property Name="segmap" Type="Int32" Nullable="false" />
+    <Property Name="lstart" Type="Int32" Nullable="false" />
+    <Property Name="sizepg" Type="Int32" Nullable="false" />
+    <Property Name="vstart" Type="Int32" Nullable="false" />
+  </EntityType>
+  <EntityType Name="spt_monitor">
+    <Key>
+      <PropertyRef Name="lastrun" />
+      <PropertyRef Name="cpu_busy" />
+      <PropertyRef Name="io_busy" />
+      <PropertyRef Name="idle" />
+      <PropertyRef Name="pack_received" />
+      <PropertyRef Name="pack_sent" />
+      <PropertyRef Name="connections" />
+      <PropertyRef Name="pack_errors" />
+      <PropertyRef Name="total_read" />
+      <PropertyRef Name="total_write" />
+      <PropertyRef Name="total_errors" />
+    </Key>
+    <Property Name="lastrun" Type="DateTime" Nullable="false" />
+    <Property Name="cpu_busy" Type="Int32" Nullable="false" />
+    <Property Name="io_busy" Type="Int32" Nullable="false" />
+    <Property Name="idle" Type="Int32" Nullable="false" />
+    <Property Name="pack_received" Type="Int32" Nullable="false" />
+    <Property Name="pack_sent" Type="Int32" Nullable="false" />
+    <Property Name="connections" Type="Int32" Nullable="false" />
+    <Property Name="pack_errors" Type="Int32" Nullable="false" />
+    <Property Name="total_read" Type="Int32" Nullable="false" />
+    <Property Name="total_write" Type="Int32" Nullable="false" />
+    <Property Name="total_errors" Type="Int32" Nullable="false" />
+  </EntityType>
+  <EntityType Name="spt_values">
+    <Key>
+      <PropertyRef Name="number" />
+      <PropertyRef Name="type" />
+    </Key>
+    <Property Name="name" Type="String" MaxLength="35" Unicode="true" FixedLength="false" />
+    <Property Name="number" Type="Int32" Nullable="false" />
+    <Property Name="type" Type="String" Nullable="false" MaxLength="3" Unicode="true" FixedLength="true" />
+    <Property Name="low" Type="Int32" />
+    <Property Name="high" Type="Int32" />
+    <Property Name="status" Type="Int32" />
+  </EntityType>
+  <EntityType Name="student2010">
+    <Key>
+      <PropertyRef Name="ID" />
+      <PropertyRef Name="ChineseName" />
+      <PropertyRef Name="Project" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="ChineseName" Type="String" Nullable="false" MaxLength="255" Unicode="true" FixedLength="false" />
+    <Property Name="EnglishName" Type="String" MaxLength="255" Unicode="true" FixedLength="false" />
+    <Property Name="Mobile" Type="String" MaxLength="255" Unicode="true" FixedLength="false" />
+    <Property Name="Email" Type="String" MaxLength="255" Unicode="true" FixedLength="false" />
+    <Property Name="Project" Type="String" Nullable="false" MaxLength="255" Unicode="true" FixedLength="false" />
+    <Property Name="OrderNo" Type="Int32" />
+    <Property Name="CoursePub" Type="String" MaxLength="1" Unicode="false" FixedLength="false" />
+    <Property Name="CoursePro" Type="String" MaxLength="1" Unicode="false" FixedLength="false" />
+  </EntityType>
+  <EntityType Name="student2011">
+    <Key>
+      <PropertyRef Name="studentId" />
+      <PropertyRef Name="email" />
+      <PropertyRef Name="chineseName" />
+      <PropertyRef Name="chineseNamePY" />
+      <PropertyRef Name="gender" />
+      <PropertyRef Name="password" />
+      <PropertyRef Name="step" />
+      <PropertyRef Name="stepTime" />
+    </Key>
+    <Property Name="studentId" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="email" Type="String" Nullable="false" MaxLength="100" Unicode="true" FixedLength="false" />
+    <Property Name="chineseName" Type="String" Nullable="false" MaxLength="100" Unicode="true" FixedLength="false" />
+    <Property Name="chineseNamePY" Type="String" Nullable="false" MaxLength="100" Unicode="true" FixedLength="false" />
+    <Property Name="gender" Type="String" Nullable="false" MaxLength="2" Unicode="true" FixedLength="false" />
+    <Property Name="minzu" Type="String" MaxLength="100" Unicode="true" FixedLength="false" />
+    <Property Name="minzuPY" Type="String" MaxLength="10" Unicode="true" FixedLength="true" />
+    <Property Name="hometown" Type="String" MaxLength="100" Unicode="true" FixedLength="false" />
+    <Property Name="hometownE" Type="String" MaxLength="100" Unicode="true" FixedLength="false" />
+    <Property Name="IDNo" Type="String" MaxLength="100" Unicode="true" FixedLength="false" />
+    <Property Name="hukou" Type="String" MaxLength="100" Unicode="true" FixedLength="false" />
+    <Property Name="hukouE" Type="String" MaxLength="100" Unicode="true" FixedLength="false" />
+    <Property Name="mobilePhone" Type="String" MaxLength="30" Unicode="true" FixedLength="false" />
+    <Property Name="homePhone" Type="String" MaxLength="30" Unicode="true" FixedLength="false" />
+    <Property Name="homeaddress" Type="String" MaxLength="100" Unicode="true" FixedLength="false" />
+    <Property Name="homeaddressE" Type="String" MaxLength="100" Unicode="true" FixedLength="false" />
+    <Property Name="zip" Type="String" MaxLength="10" Unicode="true" FixedLength="true" />
+    <Property Name="WhereToKnow" Type="String" MaxLength="100" Unicode="true" FixedLength="false" />
+    <Property Name="Memo" Type="String" MaxLength="Max" Unicode="true" FixedLength="false" />
+    <Property Name="MemoE" Type="String" MaxLength="Max" Unicode="true" FixedLength="false" />
+    <Property Name="SchoolID" Type="String" MaxLength="50" Unicode="true" FixedLength="false" />
+    <Property Name="School" Type="String" MaxLength="50" Unicode="true" FixedLength="false" />
+    <Property Name="SchoolE" Type="String" MaxLength="50" Unicode="true" FixedLength="false" />
+    <Property Name="password" Type="String" Nullable="false" MaxLength="50" Unicode="true" FixedLength="false" />
+    <Property Name="step" Type="Int16" Nullable="false" />
+    <Property Name="stepTime" Type="DateTime" Nullable="false" />
+    <Property Name="gradeOrder" Type="String" MaxLength="10" Unicode="true" FixedLength="false" />
+    <Property Name="classOrder" Type="String" MaxLength="10" Unicode="true" FixedLength="false" />
+    <Property Name="Dep" Type="String" MaxLength="50" Unicode="true" FixedLength="false" />
+    <Property Name="Spec" Type="String" MaxLength="50" Unicode="true" FixedLength="false" />
+    <Property Name="Grade" Type="String" MaxLength="50" Unicode="true" FixedLength="false" />
+    <Property Name="CHECKLIST" Type="String" MaxLength="200" Unicode="true" FixedLength="false" />
+    <Property Name="AUDIT_MESSAGE" Type="String" MaxLength="500" Unicode="true" FixedLength="false" />
+  </EntityType>
+</Schema>

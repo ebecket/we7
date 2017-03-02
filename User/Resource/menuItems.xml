@@ -1,0 +1,65 @@
+<?xml version="1.0"?>
+<root>
+  <menuTree>
+    <menu label="我的We7" id="1" name="1">
+      <menu label="我的收藏" id="14" link="false" name="14">
+        <menu label="收藏夹" id="15" name="15">
+        </menu>
+      </menu>
+      <menu label="短消息" id="6" link="false" name="6">
+        <menu label="收件箱" id="7" name="7">
+        </menu>
+        <menu label="发件箱" id="8" name="8">
+        </menu>
+        <menu label="草稿箱" id="9" name="9">
+        </menu>
+        <menu label="发消息" id="10" name="10">
+        </menu>
+      </menu>
+      <menu label="积分" id="17" link="false">
+        <menu label="积分明细" id="18">
+        </menu>
+      </menu>
+    </menu>
+    <menu label="账号管理" id="2" name="2">
+      <menu label="个人资料" id="3" link="false" name="3">
+        <menu label="资料显示" id="4" name="4">
+        </menu>
+        <menu label="资料修改" id="5" name="5">
+        </menu>
+      </menu>
+      <menu label="密码管理" id="19" link="false" name="19">
+        <menu id="20" label="修改登录密码" name="20">
+        </menu>
+      </menu>
+      <menu label="认证管理" id="21" link="false" name="21">
+        <menu id="22" label="邮箱认证" name="22">
+        </menu>
+      </menu>
+    </menu>
+  </menuTree>
+  <items>
+    <item id="1" label="我的We7" url="/user/index.aspx" name="1" group="0" />
+    <item id="2" label="账号管理" url="/user/User_Account.aspx" name="2" group="0" />
+    <item id="3" label="个人设置" url="" parent="2" oldid="{00000000-0001-0014-0000-000000000000}" oldparent="{00000000-0000-0000-0000-000000000000}" type="0" group="0" />
+    <item id="4" label="资料显示" url="/User/AccountDetails.aspx" parent="2" oldid="{00000000-0001-0014-0001-000000000000}" oldparent="{00000000-0001-0014-0000-000000000000}" type="0" group="0" />
+    <item id="5" label="资料修改" url="/User/AccountEdit.aspx" parent="2" oldid="{00000000-0001-0014-0002-000000000000}" oldparent="{00000000-0001-0014-0000-000000000000}" type="0" group="0" />
+    <item id="6" label="短消息" url="" parent="1" oldid="{00000000-0001-0011-0000-000000000000}" oldparent="{00000000-0000-0000-0000-000000000000}" group="0" type="0" />
+    <item id="7" label="收件箱" url="/user/message.aspx?state=inbox" matchParameter="true" parent="1" oldid="{00000000-0001-0011-0001-000000000000}" oldparent="{00000000-0001-0011-0000-000000000000}" group="0" type="0" />
+    <item id="8" label="发件箱" url="/user/message.aspx?state=outbox" matchParameter="true" parent="1" oldid="{00000000-0001-0011-0002-000000000000}" oldparent="{00000000-0001-0011-0000-000000000000}" group="0" type="0" />
+    <item id="9" label="草稿箱" url="/user/message.aspx?state=draft" matchParameter="true" parent="1" oldid="{00000000-0001-0011-0003-000000000000}" oldparent="{00000000-0001-0011-0000-000000000000}" group="0" type="0" />
+    <item id="10" label="发消息" url="/user/PostMessage.aspx" parent="1" oldid="{00000000-0001-0011-0004-000000000000}" oldparent="{00000000-0001-0011-0000-000000000000}" group="0" type="0" />
+    <item id="11" label="信息发布" url="" parent="1" oldid="{00000000-0001-0012-0000-000000000000}" oldparent="{00000000-0000-0000-0000-000000000000}" group="0" />
+    <item id="12" label="新闻发布" url="/User/ModelHandler.aspx?model=Article" matchParameter="true" parent="1" oldid="{00000000-0001-0012-0001-000000000000}" oldparent="{00000000-0001-0012-0000-000000000000}" group="0" />
+    <item id="13" label="待审核" url="/User/ArticleProcess.aspx" parent="1" oldid="{00000000-0001-0012-0007-000000000000}" oldparent="{00000000-0001-0012-0000-000000000000}" group="0" />
+    <item id="14" label="收藏夹" url="/user/" parent="1" oldid="{00000000-0001-0013-0000-000000000000}" oldparent="{00000000-0000-0000-0000-000000000000}" type="0" group="0" />
+    <item id="15" label="收藏夹管理" url="/User/FavoriteList.aspx" parent="1" oldid="{00000000-0001-0013-0007-000000000000}" oldparent="{00000000-0001-0013-0000-000000000000}" type="0" group="0" />
+    <item id="16" label="添加收藏" url="/User/FavoriteEdit.aspx" parent="1" oldid="{00000000-0001-0013-0001-000000000000}" oldparent="{00000000-0001-0013-0000-000000000000}" type="0" group="0" />
+    <item id="17" label="积分" url="" parent="1" oldid="{00000000-0001-0015-0000-000000000000}" oldparent="{00000000-0000-0000-0000-000000000000}" group="0" />
+    <item id="18" label="积分明细" url="/User/PointList.aspx" parent="1" oldid="{00000000-0001-0015-0001-000000000000}" oldparent="{00000000-0001-0015-0000-000000000000}" group="0" />
+    <item id="19" label="密码管理" url="" parent="2" oldid="{00000000-0001-0016-0000-000000000000}" oldparent="{00000000-0000-0000-0000-000000000000}" group="0" />
+    <item id="20" label="修改登录密码" url="/User/Account_Password.aspx" parent="2" oldid="{00000000-0001-0016-0001-000000000000}" oldparent="{00000000-0001-0016-0000-000000000000}" group="0" />
+    <item id="21" label="认证管理" url="" parent="2" oldid="{00000000-0001-0017-0000-000000000000}" oldparent="{00000000-0000-0000-0000-000000000000}" group="0" />
+    <item id="22" label="邮箱认证" url="/User/EmailValidate.aspx" parent="2" oldid="{00000000-0001-0017-0001-000000000000}" oldparent="{00000000-0001-0017-0000-000000000000}" group="0" />
+  </items>
+</root>

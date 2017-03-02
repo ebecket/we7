@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<configuration>
+  <item name="首页大图：1250*360" value="slide"/> 
+  <item name="内页大图：1425*240" value="inner-slide"/>  
+  <item name="图片存档：240*160" value="doc"/>
+  <item name="新闻头图：240*160" value="news"/>
+  <item name="人物头像：160*200" value="head"/>
+  <item name="企业LOGO：320*100" value="co"/>
+  <item name="杂志封面：160*200" value="magazine"/>
+  <item name="English首页大图：1650*900" value="en-slide"/>
+  <item name="English内页头图：1440*300" value="en-inner-slide"/>
+  <item name="English新闻头图：240*160" value="en-news"/>
+  <item name="印象WISE：360*280" value="album"/>
+  <item name="WISE十周年院庆：650*300" value="anniversary1"/>
+  <item name="WISE十周年院庆：1003*322" value="anniversary"/>
+  <item name="WISE院庆征文：600*290" value="zhengwen"/>
+</configuration>

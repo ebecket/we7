@@ -1,0 +1,10 @@
+﻿<?xml version='1.0' encoding='utf-8' ?>
+<Update>
+  <Database db='We7.CMS' >
+   <Sql>
+		 insert into [Menu]([ID],[ParentID],[SequenceIndex],[NameText],[Title],[Href],[Type],[EntityID])
+		 values('{00000000-0000-0020-0003-0000000000106}','{00000000-0000-0012-0000-000000000000}',10,'批量发送邮件','批量发送邮件','/Plugins/MailPlugin/UI/NotifyMail.aspx',99,'System.Administration')
+	 </Sql>
+		
+  </Database>
+</Update>

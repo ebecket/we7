@@ -1,0 +1,97 @@
+
+ 
+记录时间：2013-12-11 09:16:26,544 
+线程ID:[3] 
+日志级别：  ERROR 
+出错类：We7.CMS.Web.Global property: [(null)] - 
+错误描述：Error
+ 
+System.ArgumentException: 在映射和元数据信息中找不到指定的默认 EntityContainer 名称“newWISEEntities”。
+参数名: defaultContainerName
+   在 System.Data.Metadata.Edm.ClrPerspective.SetDefaultContainer(String defaultContainerName)
+   在 System.Data.Objects.ObjectContext.set_DefaultContainerName(String value)
+   在 System.Data.Objects.ObjectContext..ctor(String connectionString, String defaultContainerName)
+   在 SOE.OldDbWorker.newWISEEntities..ctor() 位置 F:\SVN\WISE\OldDbWorker\newWise.Designer.cs:行号 26
+   在 SOE.OldDbWorker.facultyDefault..ctor() 位置 F:\SVN\WISE\OldDbWorker\facultyDefault.aspx.cs:行号 26
+   在 ASP.olddbworker_facultydefault_aspx..ctor()
+   在 __ASP.FastObjectFactory_app_web_yauztwu_.Create_ASP_olddbworker_facultydefault_aspx()
+   在 System.Web.Compilation.BuildResultCompiledType.CreateInstance()
+   在 System.Web.Compilation.BuildManager.CreateInstanceFromVirtualPath(VirtualPath virtualPath, Type requiredBaseType, HttpContext context, Boolean allowCrossApp, Boolean noAssert)
+   在 System.Web.UI.PageHandlerFactory.GetHandlerHelper(HttpContext context, String requestType, VirtualPath virtualPath, String physicalPath)
+   在 System.Web.UI.PageHandlerFactory.System.Web.IHttpHandlerFactory2.GetHandler(HttpContext context, String requestType, VirtualPath virtualPath, String physicalPath)
+   在 System.Web.HttpApplication.MapHttpHandler(HttpContext context, String requestType, VirtualPath path, String pathTranslated, Boolean useAppConfig)
+   在 System.Web.HttpApplication.MapHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   在 System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+
+ 
+记录时间：2013-12-11 09:17:37,267 
+线程ID:[8] 
+日志级别：  ERROR 
+出错类：We7.CMS.Web.Global property: [(null)] - 
+错误描述：Error
+ 
+System.Configuration.ConfigurationErrorsException: 项“newWISEEntities”已添加。 (F:\SVN\WISE\olddbworker\web.config line 8)
+   在 System.Configuration.BaseConfigurationRecord.EvaluateOne(String[] keys, SectionInput input, Boolean isTrusted, FactoryRecord factoryRecord, SectionRecord sectionRecord, Object parentResult)
+   在 System.Configuration.BaseConfigurationRecord.Evaluate(FactoryRecord factoryRecord, SectionRecord sectionRecord, Object parentResult, Boolean getLkg, Boolean getRuntimeObject, Object& result, Object& resultRuntimeObject)
+   在 System.Configuration.BaseConfigurationRecord.GetSectionRecursive(String configKey, Boolean getLkg, Boolean checkPermission, Boolean getRuntimeObject, Boolean requestIsHere, Object& result, Object& resultRuntimeObject)
+   在 System.Configuration.BaseConfigurationRecord.GetSection(String configKey, Boolean getLkg, Boolean checkPermission)
+   在 System.Configuration.BaseConfigurationRecord.GetSection(String configKey)
+   在 System.Web.HttpContext.GetSection(String sectionName)
+   在 System.Web.Configuration.HttpConfigurationSystem.GetSection(String sectionName)
+   在 System.Web.Configuration.HttpConfigurationSystem.System.Configuration.Internal.IInternalConfigSystem.GetSection(String configKey)
+   在 System.Configuration.ConfigurationManager.GetSection(String sectionName)
+   在 System.Configuration.ConfigurationManager.get_ConnectionStrings()
+   在 System.Data.EntityClient.EntityConnection.ChangeConnectionString(String newConnectionString)
+   在 System.Data.EntityClient.EntityConnection..ctor(String connectionString)
+   在 System.Data.Objects.ObjectContext.CreateEntityConnection(String connectionString)
+   在 System.Data.Objects.ObjectContext..ctor(String connectionString, String defaultContainerName)
+   在 SOE.OldDbWorker.OldWiseEntities..ctor() 位置 F:\SVN\WISE\OldDbWorker\oldModel.Designer.cs:行号 26
+   在 SOE.OldDbWorker.facultyDefault..ctor() 位置 F:\SVN\WISE\OldDbWorker\facultyDefault.aspx.cs:行号 24
+   在 ASP.olddbworker_facultydefault_aspx..ctor()
+   在 __ASP.FastObjectFactory_app_web_tbm4frph.Create_ASP_olddbworker_facultydefault_aspx()
+   在 System.Web.Compilation.BuildResultCompiledType.CreateInstance()
+   在 System.Web.Compilation.BuildManager.CreateInstanceFromVirtualPath(VirtualPath virtualPath, Type requiredBaseType, HttpContext context, Boolean allowCrossApp, Boolean noAssert)
+   在 System.Web.UI.PageHandlerFactory.GetHandlerHelper(HttpContext context, String requestType, VirtualPath virtualPath, String physicalPath)
+   在 System.Web.UI.PageHandlerFactory.System.Web.IHttpHandlerFactory2.GetHandler(HttpContext context, String requestType, VirtualPath virtualPath, String physicalPath)
+   在 System.Web.HttpApplication.MapHttpHandler(HttpContext context, String requestType, VirtualPath path, String pathTranslated, Boolean useAppConfig)
+   在 System.Web.HttpApplication.MapHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   在 System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+
+ 
+记录时间：2013-12-11 17:47:23,793 
+线程ID:[8] 
+日志级别：  ERROR 
+出错类：We7.CMS.Web.Global property: [
+ 
+记录时间：2013-12-11 17:49:50,452 
+线程ID:[3] 
+日志级别：  ERROR 
+出错类：We7.CMS.Web.Global property: [(null)] - 
+错误描述：Error
+ 
+System.Configuration.ConfigurationErrorsException: 项“newWISEEntities”已添加。 (F:\SVN\WISE\olddbworker\web.config line 8)
+   在 System.Configuration.BaseConfigurationRecord.EvaluateOne(String[] keys, SectionInput input, Boolean isTrusted, FactoryRecord factoryRecord, SectionRecord sectionRecord, Object parentResult)
+   在 System.Configuration.BaseConfigurationRecord.Evaluate(FactoryRecord factoryRecord, SectionRecord sectionRecord, Object parentResult, Boolean getLkg, Boolean getRuntimeObject, Object& result, Object& resultRuntimeObject)
+   在 System.Configuration.BaseConfigurationRecord.GetSectionRecursive(String configKey, Boolean getLkg, Boolean checkPermission, Boolean getRuntimeObject, Boolean requestIsHere, Object& result, Object& resultRuntimeObject)
+   在 System.Configuration.BaseConfigurationRecord.GetSection(String configKey, Boolean getLkg, Boolean checkPermission)
+   在 System.Configuration.BaseConfigurationRecord.GetSection(String configKey)
+   在 System.Web.HttpContext.GetSection(String sectionName)
+   在 System.Web.Configuration.HttpConfigurationSystem.GetSection(String sectionName)
+   在 System.Web.Configuration.HttpConfigurationSystem.System.Configuration.Internal.IInternalConfigSystem.GetSection(String configKey)
+   在 System.Configuration.ConfigurationManager.GetSection(String sectionName)
+   在 System.Configuration.ConfigurationManager.get_ConnectionStrings()
+   在 System.Data.EntityClient.EntityConnection.ChangeConnectionString(String newConnectionString)
+   在 System.Data.EntityClient.EntityConnection..ctor(String connectionString)
+   在 System.Data.Objects.ObjectContext.CreateEntityConnection(String connectionString)
+   在 System.Data.Objects.ObjectContext..ctor(String connectionString, String defaultContainerName)
+   在 SOE.OldDbWorker.OldWiseEntities..ctor() 位置 F:\SVN\WISE\OldDbWorker\oldModel.Designer.cs:行号 26
+   在 SOE.OldDbWorker.Default..ctor() 位置 F:\SVN\WISE\OldDbWorker\Default.aspx.cs:行号 24
+   在 ASP.olddbworker_default_aspx..ctor()
+   在 __ASP.FastObjectFactory_app_web_gmmhwshs.Create_ASP_olddbworker_default_aspx()
+   在 System.Web.Compilation.BuildResultCompiledType.CreateInstance()
+   在 System.Web.Compilation.BuildManager.CreateInstanceFromVirtualPath(VirtualPath virtualPath, Type requiredBaseType, HttpContext context, Boolean allowCrossApp, Boolean noAssert)
+   在 System.Web.UI.PageHandlerFactory.GetHandlerHelper(HttpContext context, String requestType, VirtualPath virtualPath, String physicalPath)
+   在 System.Web.UI.PageHandlerFactory.System.Web.IHttpHandlerFactory2.GetHandler(HttpContext context, String requestType, VirtualPath virtualPath, String physicalPath)
+   在 System.Web.HttpApplication.MapHttpHandler(HttpContext context, String requestType, VirtualPath path, String pathTranslated, Boolean useAppConfig)
+   在 System.Web.HttpApplication.MapHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   在 System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)

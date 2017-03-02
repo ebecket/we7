@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?><?xml-stylesheet type='text/xsl' href='_UpgradeReport_Files/UpgradeReport.xslt'?><UpgradeLog>
+<Properties><Property Name="Solution" Value="OldDbWorker">
+</Property><Property Name="解决方案文件" Value="F:\SVN\WISE\OldDbWorker\OldDbWorker.sln">
+</Property><Property Name="用户选项文件" Value="F:\SVN\WISE\OldDbWorker\OldDbWorker.suo">
+</Property><Property Name="Date" Value="2013年10月28日">
+</Property><Property Name="Time" Value="16:34">
+</Property></Properties><Event ErrorLevel="0" Project="" Source="OldDbWorker.sln" Description="文件已成功备份为 F:\SVN\WISE\OldDbWorker\Backup\OldDbWorker.sln">
+</Event><Event ErrorLevel="0" Project="" Source="OldDbWorker.suo" Description="文件已成功备份为 F:\SVN\WISE\OldDbWorker\Backup\OldDbWorker.suo">
+</Event><Event ErrorLevel="0" Project="OldDbWorker" Source="OldDbWorker.csproj" Description="项目文件已成功备份为 F:\SVN\WISE\OldDbWorker\Backup\OldDbWorker.csproj">
+</Event><Event ErrorLevel="0" Project="OldDbWorker" Source="OldDbWorker.csproj.user" Description="项目用户文件成功备份为 F:\SVN\WISE\OldDbWorker\Backup\OldDbWorker.csproj.user">
+</Event><Event ErrorLevel="0" Project="OldDbWorker" Source="Default.aspx.cs" Description="文件已成功备份为 F:\SVN\WISE\OldDbWorker\Backup\Default.aspx.cs">
+</Event><Event ErrorLevel="0" Project="OldDbWorker" Source="Default.aspx.designer.cs" Description="文件已成功备份为 F:\SVN\WISE\OldDbWorker\Backup\Default.aspx.designer.cs">
+</Event><Event ErrorLevel="0" Project="OldDbWorker" Source="File.aspx.cs" Description="文件已成功备份为 F:\SVN\WISE\OldDbWorker\Backup\File.aspx.cs">
+</Event><Event ErrorLevel="0" Project="OldDbWorker" Source="File.aspx.designer.cs" Description="文件已成功备份为 F:\SVN\WISE\OldDbWorker\Backup\File.aspx.designer.cs">
+</Event><Event ErrorLevel="0" Project="OldDbWorker" Source="OldDb.cs" Description="文件已成功备份为 F:\SVN\WISE\OldDbWorker\Backup\OldDb.cs">
+</Event><Event ErrorLevel="0" Project="OldDbWorker" Source="OldDb.Designer.cs" Description="文件已成功备份为 F:\SVN\WISE\OldDbWorker\Backup\OldDb.Designer.cs">
+</Event><Event ErrorLevel="0" Project="OldDbWorker" Source="Properties\AssemblyInfo.cs" Description="文件已成功备份为 F:\SVN\WISE\OldDbWorker\Backup\Properties\AssemblyInfo.cs">
+</Event><Event ErrorLevel="0" Project="OldDbWorker" Source="OldDb.xsc" Description="文件已成功备份为 F:\SVN\WISE\OldDbWorker\Backup\OldDb.xsc">
+</Event><Event ErrorLevel="0" Project="OldDbWorker" Source="OldDb.xsd" Description="文件已成功备份为 F:\SVN\WISE\OldDbWorker\Backup\OldDb.xsd">
+</Event><Event ErrorLevel="0" Project="OldDbWorker" Source="OldDb.xss" Description="文件已成功备份为 F:\SVN\WISE\OldDbWorker\Backup\OldDb.xss">
+</Event><Event ErrorLevel="0" Project="OldDbWorker" Source="Default.aspx" Description="文件已成功备份为 F:\SVN\WISE\OldDbWorker\Backup\Default.aspx">
+</Event><Event ErrorLevel="0" Project="OldDbWorker" Source="File.aspx" Description="文件已成功备份为 F:\SVN\WISE\OldDbWorker\Backup\File.aspx">
+</Event><Event ErrorLevel="0" Project="OldDbWorker" Source="web.config" Description="文件已成功备份为 F:\SVN\WISE\OldDbWorker\Backup\web.config">
+</Event><Event ErrorLevel="0" Project="OldDbWorker" Source="OldDbWorker.csproj" Description="项目文件不需要转换。">
+</Event><Event ErrorLevel="3" Project="OldDbWorker" Source="OldDbWorker.csproj" Description="无需转换">
+</Event><Event ErrorLevel="0" Project="" Source="OldDbWorker.sln" Description="成功转换解决方案">
+</Event><Event ErrorLevel="3" Project="" Source="OldDbWorker.sln" Description="Converted">
+</Event></UpgradeLog>

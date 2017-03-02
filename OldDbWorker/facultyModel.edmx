@@ -1,0 +1,174 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="1.0" xmlns:edmx="http://schemas.microsoft.com/ado/2007/06/edmx">
+  <!-- EF Runtime content -->
+  <edmx:Runtime>
+    <!-- SSDL content -->
+    <edmx:StorageModels>
+      <Schema Namespace="facultyModel.Store" Alias="Self" Provider="System.Data.SqlClient" ProviderManifestToken="2008" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns="http://schemas.microsoft.com/ado/2006/04/edm/ssdl">
+        <EntityContainer Name="facultyModelStoreContainer">
+          <EntitySet Name="People" EntityType="facultyModel.Store.People" store:Type="Tables" Schema="dbo" />
+        </EntityContainer>
+        <EntityType Name="People">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="nvarchar" Nullable="false" MaxLength="40" />
+          <Property Name="AccountID" Type="nvarchar" MaxLength="40" />
+          <Property Name="OwnerID" Type="nvarchar" MaxLength="40" />
+          <Property Name="State" Type="int" />
+          <Property Name="Index" Type="int" />
+          <Property Name="IsShow" Type="int" />
+          <Property Name="Tags" Type="nvarchar" MaxLength="255" />
+          <Property Name="Updated" Type="datetime" />
+          <Property Name="Created" Type="datetime" />
+          <Property Name="ProcessState" Type="nvarchar" MaxLength="50" />
+          <Property Name="ProcessDirection" Type="nvarchar" MaxLength="50" />
+          <Property Name="ProcessSiteID" Type="nvarchar" MaxLength="40" />
+          <Property Name="FullPath" Type="nvarchar" MaxLength="254" />
+          <Property Name="Clicks" Type="int" />
+          <Property Name="DayClicks" Type="int" />
+          <Property Name="YesterdayClicks" Type="int" />
+          <Property Name="WeekClicks" Type="int" />
+          <Property Name="MonthClicks" Type="int" />
+          <Property Name="QuarterClicks" Type="int" />
+          <Property Name="YearClicks" Type="int" />
+          <Property Name="Fullname" Type="nvarchar" MaxLength="50" />
+          <Property Name="Gendar" Type="nvarchar" MaxLength="25" />
+          <Property Name="Title" Type="nvarchar" MaxLength="500" />
+          <Property Name="Position" Type="nvarchar" MaxLength="100" />
+          <Property Name="Office" Type="nvarchar" MaxLength="100" />
+          <Property Name="OfficeTime" Type="nvarchar" MaxLength="100" />
+          <Property Name="Phone" Type="nvarchar" MaxLength="100" />
+          <Property Name="Mobil" Type="nvarchar" MaxLength="50" />
+          <Property Name="Email" Type="nvarchar" MaxLength="100" />
+          <Property Name="Duty" Type="nvarchar" MaxLength="200" />
+          <Property Name="Field" Type="nvarchar" MaxLength="200" />
+          <Property Name="Photo" Type="nvarchar" MaxLength="200" />
+          <Property Name="Url" Type="nvarchar" MaxLength="500" />
+          <Property Name="Intro" Type="text" />
+          <Property Name="IndexLetter" Type="nvarchar" MaxLength="2" />
+          <Property Name="CardNumber" Type="nvarchar" MaxLength="50" />
+        </EntityType>
+      </Schema>
+    </edmx:StorageModels>
+    <!-- CSDL content -->
+    <edmx:ConceptualModels>
+      <Schema Namespace="facultyModel" Alias="Self" xmlns="http://schemas.microsoft.com/ado/2006/04/edm">
+        <EntityContainer Name="facultyEntities">
+          <EntitySet Name="People" EntityType="facultyModel.People" />
+        </EntityContainer>
+        <EntityType Name="People">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="String" Nullable="false" MaxLength="40" Unicode="true" FixedLength="false" />
+          <Property Name="AccountID" Type="String" MaxLength="40" Unicode="true" FixedLength="false" />
+          <Property Name="OwnerID" Type="String" MaxLength="40" Unicode="true" FixedLength="false" />
+          <Property Name="State" Type="Int32" />
+          <Property Name="Index" Type="Int32" />
+          <Property Name="IsShow" Type="Int32" />
+          <Property Name="Tags" Type="String" MaxLength="255" Unicode="true" FixedLength="false" />
+          <Property Name="Updated" Type="DateTime" />
+          <Property Name="Created" Type="DateTime" />
+          <Property Name="ProcessState" Type="String" MaxLength="50" Unicode="true" FixedLength="false" />
+          <Property Name="ProcessDirection" Type="String" MaxLength="50" Unicode="true" FixedLength="false" />
+          <Property Name="ProcessSiteID" Type="String" MaxLength="40" Unicode="true" FixedLength="false" />
+          <Property Name="FullPath" Type="String" MaxLength="254" Unicode="true" FixedLength="false" />
+          <Property Name="Clicks" Type="Int32" />
+          <Property Name="DayClicks" Type="Int32" />
+          <Property Name="YesterdayClicks" Type="Int32" />
+          <Property Name="WeekClicks" Type="Int32" />
+          <Property Name="MonthClicks" Type="Int32" />
+          <Property Name="QuarterClicks" Type="Int32" />
+          <Property Name="YearClicks" Type="Int32" />
+          <Property Name="Fullname" Type="String" MaxLength="50" Unicode="true" FixedLength="false" />
+          <Property Name="Gendar" Type="String" MaxLength="25" Unicode="true" FixedLength="false" />
+          <Property Name="Title" Type="String" MaxLength="500" Unicode="true" FixedLength="false" />
+          <Property Name="Position" Type="String" MaxLength="100" Unicode="true" FixedLength="false" />
+          <Property Name="Office" Type="String" MaxLength="100" Unicode="true" FixedLength="false" />
+          <Property Name="OfficeTime" Type="String" MaxLength="100" Unicode="true" FixedLength="false" />
+          <Property Name="Phone" Type="String" MaxLength="100" Unicode="true" FixedLength="false" />
+          <Property Name="Mobil" Type="String" MaxLength="50" Unicode="true" FixedLength="false" />
+          <Property Name="Email" Type="String" MaxLength="100" Unicode="true" FixedLength="false" />
+          <Property Name="Duty" Type="String" MaxLength="200" Unicode="true" FixedLength="false" />
+          <Property Name="Field" Type="String" MaxLength="200" Unicode="true" FixedLength="false" />
+          <Property Name="Photo" Type="String" MaxLength="200" Unicode="true" FixedLength="false" />
+          <Property Name="Url" Type="String" MaxLength="500" Unicode="true" FixedLength="false" />
+          <Property Name="Intro" Type="String" MaxLength="Max" Unicode="false" FixedLength="false" />
+          <Property Name="IndexLetter" Type="String" MaxLength="2" Unicode="true" FixedLength="false" />
+          <Property Name="CardNumber" Type="String" MaxLength="50" Unicode="true" FixedLength="false" />
+        </EntityType>
+      </Schema>
+    </edmx:ConceptualModels>
+    <!-- C-S mapping content -->
+    <edmx:Mappings>
+      <Mapping Space="C-S" xmlns="urn:schemas-microsoft-com:windows:storage:mapping:CS">
+        <EntityContainerMapping StorageEntityContainer="facultyModelStoreContainer" CdmEntityContainer="facultyEntities">
+          <EntitySetMapping Name="People">
+            <EntityTypeMapping TypeName="facultyModel.People">
+              <MappingFragment StoreEntitySet="People">
+                <ScalarProperty Name="ID" ColumnName="ID" />
+                <ScalarProperty Name="AccountID" ColumnName="AccountID" />
+                <ScalarProperty Name="OwnerID" ColumnName="OwnerID" />
+                <ScalarProperty Name="State" ColumnName="State" />
+                <ScalarProperty Name="Index" ColumnName="Index" />
+                <ScalarProperty Name="IsShow" ColumnName="IsShow" />
+                <ScalarProperty Name="Tags" ColumnName="Tags" />
+                <ScalarProperty Name="Updated" ColumnName="Updated" />
+                <ScalarProperty Name="Created" ColumnName="Created" />
+                <ScalarProperty Name="ProcessState" ColumnName="ProcessState" />
+                <ScalarProperty Name="ProcessDirection" ColumnName="ProcessDirection" />
+                <ScalarProperty Name="ProcessSiteID" ColumnName="ProcessSiteID" />
+                <ScalarProperty Name="FullPath" ColumnName="FullPath" />
+                <ScalarProperty Name="Clicks" ColumnName="Clicks" />
+                <ScalarProperty Name="DayClicks" ColumnName="DayClicks" />
+                <ScalarProperty Name="YesterdayClicks" ColumnName="YesterdayClicks" />
+                <ScalarProperty Name="WeekClicks" ColumnName="WeekClicks" />
+                <ScalarProperty Name="MonthClicks" ColumnName="MonthClicks" />
+                <ScalarProperty Name="QuarterClicks" ColumnName="QuarterClicks" />
+                <ScalarProperty Name="YearClicks" ColumnName="YearClicks" />
+                <ScalarProperty Name="Fullname" ColumnName="Fullname" />
+                <ScalarProperty Name="Gendar" ColumnName="Gendar" />
+                <ScalarProperty Name="Title" ColumnName="Title" />
+                <ScalarProperty Name="Position" ColumnName="Position" />
+                <ScalarProperty Name="Office" ColumnName="Office" />
+                <ScalarProperty Name="OfficeTime" ColumnName="OfficeTime" />
+                <ScalarProperty Name="Phone" ColumnName="Phone" />
+                <ScalarProperty Name="Mobil" ColumnName="Mobil" />
+                <ScalarProperty Name="Email" ColumnName="Email" />
+                <ScalarProperty Name="Duty" ColumnName="Duty" />
+                <ScalarProperty Name="Field" ColumnName="Field" />
+                <ScalarProperty Name="Photo" ColumnName="Photo" />
+                <ScalarProperty Name="Url" ColumnName="Url" />
+                <ScalarProperty Name="Intro" ColumnName="Intro" />
+                <ScalarProperty Name="IndexLetter" ColumnName="IndexLetter" />
+                <ScalarProperty Name="CardNumber" ColumnName="CardNumber" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+        </EntityContainerMapping>
+      </Mapping>
+    </edmx:Mappings>
+  </edmx:Runtime>
+  <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <Designer xmlns="http://schemas.microsoft.com/ado/2007/06/edmx">
+    <Connection>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="MetadataArtifactProcessing" Value="EmbedInOutputAssembly" />
+      </DesignerInfoPropertySet>
+    </Connection>
+    <Options>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="ValidateOnBuild" Value="true" />
+        <DesignerProperty Name="EnablePluralization" Value="False" />
+        <DesignerProperty Name="IncludeForeignKeysInModel" Value="False" />
+      </DesignerInfoPropertySet>
+    </Options>
+    <!-- Diagram content (shape and connector positions) -->
+    <Diagrams>
+      <Diagram Name="facultyModel" ZoomLevel="43">
+        <EntityTypeShape EntityType="facultyModel.People" Width="1.5" PointX="0.75" PointY="0.75" Height="7.89164306640625" IsExpanded="true" />
+      </Diagram>
+    </Diagrams>
+  </Designer>
+</edmx:Edmx>

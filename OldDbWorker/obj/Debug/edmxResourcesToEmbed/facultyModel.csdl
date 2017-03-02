@@ -1,0 +1,47 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="facultyModel" Alias="Self" xmlns="http://schemas.microsoft.com/ado/2006/04/edm">
+  <EntityContainer Name="facultyEntities">
+    <EntitySet Name="People" EntityType="facultyModel.People" />
+  </EntityContainer>
+  <EntityType Name="People">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="String" Nullable="false" MaxLength="40" Unicode="true" FixedLength="false" />
+    <Property Name="AccountID" Type="String" MaxLength="40" Unicode="true" FixedLength="false" />
+    <Property Name="OwnerID" Type="String" MaxLength="40" Unicode="true" FixedLength="false" />
+    <Property Name="State" Type="Int32" />
+    <Property Name="Index" Type="Int32" />
+    <Property Name="IsShow" Type="Int32" />
+    <Property Name="Tags" Type="String" MaxLength="255" Unicode="true" FixedLength="false" />
+    <Property Name="Updated" Type="DateTime" />
+    <Property Name="Created" Type="DateTime" />
+    <Property Name="ProcessState" Type="String" MaxLength="50" Unicode="true" FixedLength="false" />
+    <Property Name="ProcessDirection" Type="String" MaxLength="50" Unicode="true" FixedLength="false" />
+    <Property Name="ProcessSiteID" Type="String" MaxLength="40" Unicode="true" FixedLength="false" />
+    <Property Name="FullPath" Type="String" MaxLength="254" Unicode="true" FixedLength="false" />
+    <Property Name="Clicks" Type="Int32" />
+    <Property Name="DayClicks" Type="Int32" />
+    <Property Name="YesterdayClicks" Type="Int32" />
+    <Property Name="WeekClicks" Type="Int32" />
+    <Property Name="MonthClicks" Type="Int32" />
+    <Property Name="QuarterClicks" Type="Int32" />
+    <Property Name="YearClicks" Type="Int32" />
+    <Property Name="Fullname" Type="String" MaxLength="50" Unicode="true" FixedLength="false" />
+    <Property Name="Gendar" Type="String" MaxLength="25" Unicode="true" FixedLength="false" />
+    <Property Name="Title" Type="String" MaxLength="500" Unicode="true" FixedLength="false" />
+    <Property Name="Position" Type="String" MaxLength="100" Unicode="true" FixedLength="false" />
+    <Property Name="Office" Type="String" MaxLength="100" Unicode="true" FixedLength="false" />
+    <Property Name="OfficeTime" Type="String" MaxLength="100" Unicode="true" FixedLength="false" />
+    <Property Name="Phone" Type="String" MaxLength="100" Unicode="true" FixedLength="false" />
+    <Property Name="Mobil" Type="String" MaxLength="50" Unicode="true" FixedLength="false" />
+    <Property Name="Email" Type="String" MaxLength="100" Unicode="true" FixedLength="false" />
+    <Property Name="Duty" Type="String" MaxLength="200" Unicode="true" FixedLength="false" />
+    <Property Name="Field" Type="String" MaxLength="200" Unicode="true" FixedLength="false" />
+    <Property Name="Photo" Type="String" MaxLength="200" Unicode="true" FixedLength="false" />
+    <Property Name="Url" Type="String" MaxLength="500" Unicode="true" FixedLength="false" />
+    <Property Name="Intro" Type="String" MaxLength="Max" Unicode="false" FixedLength="false" />
+    <Property Name="IndexLetter" Type="String" MaxLength="2" Unicode="true" FixedLength="false" />
+    <Property Name="CardNumber" Type="String" MaxLength="50" Unicode="true" FixedLength="false" />
+  </EntityType>
+</Schema>

@@ -1,0 +1,32 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Plugin>
+  <Directory>MailPlugin</Directory>
+  <Name>批量发送邮件</Name>
+  <Author>We7 Group</Author>
+  <Version>V2.0</Version>
+  <Enable>false</Enable>
+  <Compatible>兼容至We7 V2.7</Compatible>
+  <Summary><![CDATA[
+    批量发送邮件的插件。
+    ]]></Summary>
+  <Description><![CDATA[
+    给注册用户批量发送邮件。
+    ]]></Description>
+  <Deployment>
+    <Description><![CDATA[
+    点击右侧安装按钮直接进行安装。
+    ]]></Description>
+    <Install>
+      <Item>Install.xml</Item>
+    </Install>
+    <Update>
+      <Item>Update.xml</Item>
+    </Update>
+    <Unstall>
+      <Item>Uninstall.xml</Item>
+    </Unstall>
+  </Deployment>
+  <IsInstalled>true</IsInstalled>
+  <UpdateTime>2011/9/27 14:03:00</UpdateTime>
+  <IsLocal>0</IsLocal>
+</Plugin>

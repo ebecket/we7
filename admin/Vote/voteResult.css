@@ -1,0 +1,136 @@
+﻿A {COLOR: #000000;font-size: 9pt;text-decoration: none;font-family: Verdana, Arial, Helvetica, sans-serif;}
+A:hover {COLOR: #800000;font-family: Verdana, Arial, Helvetica, sans-serif;font-size: 9pt;text-decoration: underline;}
+BODY {margin: 0px;font-family: Verdana, Arial, Helvetica, sans-serif;font-size: 9pt;font-style: normal;line-height: 180%;color: #222222;border: 0px none;background-image: url(background.JPG);background-position: center;}
+TD {FONT-SIZE: 9pt;LINE-HEIGHT: 180%;FONT-FAMILY: Verdana, Arial, Helvetica, sans-serif;font-style: normal;font-weight: normal;font-variant: normal;}
+INPUT {margin: 0px;padding: 0px}
+BUTTON {font-family: Verdana, Arial, Helvetica, sans-serif;font-size: 9pt;color: #333333;background-color: #efefef;}
+SELECT {font-family: Verdana, Arial, Helvetica, sans-serif;font-size: 9pt;color: #333333;background-color: #efefef;}
+textarea {font-family: Verdana, Arial, Helvetica, sans-serif;font-size: 9pt;color: #333333;}
+.INPUTimage {FONT-SIZE: 9pt;BORDER-RIGHT: #cccccc 1px solid;BORDER-TOP: #3a3c36 1px solid;BORDER-LEFT: #3a3c36 1px solid;COLOR: #000000;BORDER-BOTTOM: #cccccc 1px solid;}
+.INPUTimage1 {FONT-SIZE: 9pt;BORDER-RIGHT: #cccccc 1px solid;BORDER-TOP: #3a3c36 1px solid;BORDER-LEFT: #3a3c36 1px solid;COLOR: #000000;BORDER-BOTTOM: #cccccc 1px solid;HEIGHT: 18px;BACKGROUND-COLOR: #ffffff;margin-top: 8px;}
+.textareaimage {margin-top: 8px;border-top: 1px solid #3A3C36;border-right: 1px solid #CCCCCC;border-bottom: 1px solid #CCCCCC;border-left: 1px solid #3A3C36;}
+.type-color1 {FILTER: Glow(Color=ffffff, Strength=1) dropshadow(Color=#999999, OffX=1, OffY=1,);WIDTH: 100;color: #001734;}
+.type-color2 {color: #b50000;}
+.type-color3 {color: #ffffff;}
+.type-height1 {height: 36px;padding-top: 8px;}
+.type-height2 {height: 1px;background-image: url(Ar2.gif);font-size: 0px;line-height: 0px;margin: 0px;padding: 0px;}
+.type-height3 {height: 1px;background-color: #AAD8DB;font-size: 0px;line-height: 0px;margin: 0px;padding: 0px;}
+.add-time {text-align: right;height: 26px;padding-top: 3px;border-bottom: 1px solid #999999;}
+.Head_Table {background-color: #406080;font-size: 10pt;color: #FFFFFF;text-decoration: none;}
+.Head_Table1 {background-color: #D0E0F0;height: 28px;}
+.bottom-Table {background-color: #58C1C5;text-align: center;height: 80px;padding-top: 10px;}
+.Menu_Table {width:120px;padding:3px;background-color: #CCDDEE;filter: Alpha(Opacity=80, FinishOpacity=80, Style=1, StartX=0, StartY=40, FinishX=80, FinishY=50);}
+.Menu_Table1{background-color: #406080;}
+.table-span {height: 5px;width: 5px;margin: 0px;padding: 0px;font-size: 0px;line-height: 0px;}
+.table-head {background-color: #EFEFEF;height: 70px;text-align: right;padding: 15px 0px 0px;}
+.table-head1 {height: 25px;text-align: right;color: #FFFFFF;}
+.table-tstr {height: 25px;text-align: left;}
+.table-tstd {text-align: center;}
+.table-Side {background-color: #DDEEFF;padding: 5px;height:226px}
+.table-Side1 {text-align: center;padding: 1px;background-color: #C0D0E0;height: 28px;border: 1px solid #F2F9F9;padding-top:3px;}
+.table-Side3 {background-color: #D0E0F0;text-align: left;padding: 10px 10px 0px;border: 1px solid #F2F9F9;}
+.table-Mainall {text-align: left;margin: 0px;padding: 0px 0px 0px 20px;width: 700px;}
+.table-Main {background-color: #ffffff;padding-top: 10px;padding-left: 5px;padding-right: 5px;padding-bottom: 5px;height:226px;}
+.table-Link {padding: 1px 1px 1px 75px;background-image: url(side_l.jpg);height: 28px;}
+.ubb_tableall {padding: 4px;background-color: #efefef;border-top: 1px solid #CCCCCC;border-right: 1px solid #CCCCCC;border-bottom: 1px solid #CCCCCC;border-left: 1px solid #CCCCCC;}
+.page-head {background-image: url(main_a.gif);height: 30px;padding-left: 19px;font-weight: bold;color: #777777;text-align: left;}
+.page-name {height: 32px;padding-top: 5px;border-bottom: 1px solid #999999;color: #b50000;font-size: 10pt;font-weight: bold;text-align: center;}
+.bbs-top1 {padding-top: 2px;padding-bottom: 2px;}
+.bbs-indextalbe1 {background-color: #999999;}
+.bbs-indextalbe2 {background-color: #EBF8FA;text-align: center;height: 25px;}
+.bbs-indextalbe3 {background-image: url(arr.gif);height: 15px;}
+.bbs-indextalbe4 {background-color: #EBF8FA;padding-left: 8px;}
+.bbs-indextalbe5 {background-color: #FFFFFF;height: 70px;}
+.bbs-classadd {padding-top: 8px;padding-bottom: 8px;}
+.bbs-classtable4 {WIDTH: 60%;}
+.bbs-classtable5 {padding-left: 8px;background-color: #FFFFFF;height: 25px;}
+.bbs-classtable6 {width: 40%;text-align: right;}
+.bbs-listtable2 {background-color: #EBF8FA;}
+.bbs-listtable3 {background-color: #FFFFFF;}
+.bbs-listtable4 {padding-left: 8px;padding-top: 4px;color: #FFFFFF;height: 28px;background-color: #406080;border-top: 1px solid #999999;border-right: 1px solid #999999;border-left: 1px solid #999999;}
+.bbs-listtable5 {width: 40%;text-align: right;padding-right: 10px;}
+.bbs-listtable6 {WIDTH: 60%;font-weight: bold;}
+.bbs_listadd {FILTER: Glow(Color=ffffff, Strength=1) dropshadow(Color=#cccccc, OffX=0, OffY=2,);WIDTH: 100%;COLOR: #b50000;font-weight: bold;text-align: center;padding-top: 8px;}
+.bbs-listPicture {text-align: center;padding: 10px;}
+.bbs-listGroud {text-align: center;}
+.bbs-listtitle {padding-top: 12px;padding-bottom: 5px;font-weight: bold;}
+.bbs-listcontent {padding-left: 10px;padding-right: 10px;}
+.bbs-listcontent1 {height: 100px;padding-left:33px;padding-right:30px;}
+.bbs-listtop {height: 30px;padding-top: 5px;border-bottom: 1px solid #CCCCCC;}
+.bbs-listlock {height: 100px;padding-top: 40px;padding-left: 20px;color: #FF0000;font-weight: bold;}
+.bbs-listbottom {padding-bottom: 5px;}
+.bbs-ostbottom1 {width: 100%;height: 25px;padding-top: 2px;border-top: 1px solid #CCCCCC;color: #DFDFDF}
+.bbs-addface {padding-top: 5px;background-color: #EBF8FA;text-align: center;}
+.bbs-addface1 {WIDTH: 500px;padding-top: 10px;padding-bottom: 10px;}
+.bbs-addinm {background-color: #FFFFFF;padding: 5px;}
+.bbs-addtable1 {background-color: #999999;}
+.bbs-addtable2 {background-color: #EBF8FA;height: 30px;text-align: center;}
+.bbs-addtable3 {background-color: #FFFFFF;padding-left: 10px;}
+.guest-face {padding-top: 8px;}
+.guest-titlet {height:30px;border-bottom: 1px solid #DFDFDF;}
+.guest-content {padding-top: 5px;padding-bottom: 5px;}
+.guest-admin {height: 30px;padding-top: 7px;font-size: 9pt;color: #568ECD;}
+.guest-adminc {height: 25px;padding-top: 5px;border-top: 1px solid #DFDFDF;color: #568ECD;}
+.guest-height {height: 1px;background-image: url(Ar2.gif);font-size: 0px;line-height: 0px;margin: 0px;padding: 0px;}
+.guest-class {height: 28px;padding-left: 10px;padding-top: 5px;text-align: left;background-color: #406080;border-top: 1px solid #A0B0C0;color; #FFFFFF;}
+.guest-addcontent {padding-top: 10px;}
+.job-icontent {text-align: left;LINE-HEIGHT: 180%;padding: 10px;}
+.job-name {padding-left: 10px;height: 30px;padding-top: 5px;border-bottom: 1px solid #EFEFEF;}
+.job-content {padding-left: 23px;padding-top: 4px;padding-bottom: 4px;}
+.down-classname {padding-left: 10px;height: 30px;padding-top: 5px;border-bottom: 1px solid #EFEFEF;}
+.down-classcontent {padding-left: 23px;padding-top: 4px;padding-bottom: 4px;color: #999999}
+.down-content {text-align: left;LINE-HEIGHT: 180%;padding: 10px;}
+.news-classname {font-weight: bold;height: 32px;padding-top: 7px;border-bottom: 1px solid #999999;}
+.news-classcontent {height: 28px;padding-top: 2px;}
+.news-form {height: 26px;padding-top: 3px;border-bottom: 1px solid #DFDFDF;}
+.news-content {FONT-SIZE: 14px;text-align: left;LINE-HEIGHT: 180%;padding: 10px;}
+.devices-classbg {background-image: url(Devices_Bg_List.gif);height: 107px;width: 157px;text-align: center;background-position: center top;padding: 5px;margin: 8px;vertical-align: top;}
+.devices-classcontent {FONT-SIZE: 10pt;height: 80px;padding-left: 20px;LINE-HEIGHT: 180%;}
+.devices-classto {height: 26px;text-align: right;}
+.devices-bg {background-image: url(devices_Bg.gif);height: 147px;width: 217px;text-align: center;background-position: center top;padding: 5px;margin: 8px;vertical-align: top;}
+.devices-content {FONT-SIZE: 10pt;text-align: left;LINE-HEIGHT: 180%;padding: 10px;border-top: 1px dotted #999999;}
+.products-classbg {background-image: url(Products_Bg_List.gif);height: 107px;width: 157px;text-align: center;background-position: center top;padding: 5px;margin: 8px;vertical-align: top;}
+.products-classcontent {FONT-SIZE: 10pt;height: 80px;padding-left: 20px;LINE-HEIGHT: 180%;}
+.products-classto {height: 26px;text-align: right;}
+.products-bg {background-image: url(Products_Bg.gif);height: 147px;width: 217px;text-align: center;background-position: center top;padding: 5px;margin: 8px;vertical-align: top;}
+.products-content {FONT-SIZE: 10pt;text-align: left;LINE-HEIGHT: 180%;padding: 10px;border-top: 1px dotted #999999;}
+.about-content {FONT-SIZE: 10pt;text-align: left;LINE-HEIGHT: 180%;padding: 10px;}
+.inform-content {FONT-SIZE: 10pt;text-align: left;LINE-HEIGHT: 180%;padding: 10px;}
+.inform-class {height: 26px;padding-top: 6px;padding-left: 10px;}
+.index-name {background-image: url(main_b.gif);height: 30px;padding-left: 20px;padding-top: 4px;}
+.index-name1 {WIDTH: 88%;font-weight: bold;color: #777777}
+.index-more {width: 12%;}
+.index-content {background-color: #FFFFFF;padding-top:12px;padding-left:5px;padding-bottom:2px;}
+.index-Main {background-color: #EFEFEF;padding: 5px;height:226px}
+.index-products1 {height: 36px;padding-top: 8px;}
+.index-workbg {border-width:1px;border-style:solid;border-color: #999999;width:186px;height:126px;padding:2px;}
+.index-workbg1 {height: 150px;padding-left: 0px;width: 200px;padding-top: 0px;text-align: center;background-position: center top;vertical-align: text-top;padding-right: 10px;}
+.index-devicesbg {background-image: url(Devices_Bg_Index.gif);height: 87px;width: 135px;padding-top: 2px;text-align: center;background-position: center top;}
+.index-productsbg {background-image: url(Products_Bg_Index.gif);height: 87px;width: 135px;padding-top: 2px;text-align: center;background-position: center top;}
+.user-top1 {padding-top: 2px;padding-bottom: 2px;}
+.user-table1 {background-image: url(arr.gif);height: 15px;}
+.page-left {background-color: #A0B0C0;padding: 5px;}
+.page-left1 {text-align: left;border-width: 1px;border-style: solid;border-color: #EBF8FA;}
+.page-leftname {background-color: #406080;padding-top: 2px;padding-bottom: 2px;padding-left: 10px;color: #FFFFFF;font-weight: bold;}
+.page-leftcontent {FONT-SIZE: 10pt;background-color: #EBF8FA;padding-top: 2px;padding-bottom: 2px;padding-left: 10px;LINE-HEIGHT: 180%;}
+.table-bgx1 {background-color: #999999;}
+.table-bgx2 {padding: 2px;background-color: #406080;text-align: center;color: #ffffff;}
+.table-bgx3 {padding: 2px;background-color: #EBF8FA;text-align: center;}
+.t_talbeall {height: 100%;padding: 5px;background-color: #A0B0C0;}
+.t_talbe1 {height: 100%;background-color: #EBF8FA;}
+.t_talbe2 {width: 500px;height: 100%;background-color: #406080;FONT-SIZE: 10pt;text-align: center;padding: 5px;}
+.t_talbe3 {text-align: left;padding: 10px 10px 0px 25px;}
+.search-top1 {border-bottom: 1px solid #999999;}
+.search-content {padding: 10px;}
+.search-content1 {padding-left: 26px;color: #777777;}
+.getpwd-name {FONT-SIZE: 10pt;height: 35px;padding-top: 8px;color: b50000;font-weight: bold;text-align: center;}
+.reg-name {FONT-SIZE: 10pt;height: 35px;padding-top: 8px;color: b50000;font-weight: bold;text-align: center;}
+.joby-content {padding-top: 10px;}
+.cret-name {padding-left: 10px;height: 30px;padding-top: 5px;border-bottom: 1px solid #EFEFEF;}
+.cret-content {padding-left: 25px;padding-top: 4px;padding-bottom: 4px;}
+.work-classcontent {height: 26px;padding-top: 1px;}
+.work-content {FONT-SIZE: 10pt;text-align: left;LINE-HEIGHT: 180%;padding: 10px;}
+.sells-content {FONT-SIZE: 10pt;text-align: left;LINE-HEIGHT: 180%;padding: 10px;}
+.honor-bg {background-image: url(Products_Bg2.gif);height: 107px;width: 157px;text-align: center;background-position: center top;padding: 5px;margin: 8px;vertical-align: top;}
+.honor-content {FONT-SIZE: 10pt;height: 80px;padding-left: 20px;padding-top: 6px;padding-bottom: 10px;LINE-HEIGHT: 180%;}
+.honor-name {padding-left: 10px;height: 30px;padding-top: 5px;border-bottom: 1px solid #EFEFEF;color: #B50000;} 

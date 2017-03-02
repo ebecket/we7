@@ -1,0 +1,43 @@
+
+ 
+记录时间：2015-04-10 11:37:08,271 
+线程ID:[3] 
+日志级别：  ERROR 
+出错类：We7.CMS.Web.Global property: [(null)] - 
+错误描述：Error
+ 
+System.Web.HttpUnhandledException: 引发类型为“System.Web.HttpUnhandledException”的异常。 ---> System.Data.SqlClient.SqlException: 无法打开登录所请求的数据库 "WISE"。登录失败。
+用户 'sa' 登录失败。
+   在 System.Data.ProviderBase.DbConnectionPool.GetConnection(DbConnection owningObject)
+   在 System.Data.ProviderBase.DbConnectionFactory.GetConnection(DbConnection owningConnection)
+   在 System.Data.ProviderBase.DbConnectionClosed.OpenConnection(DbConnection outerConnection, DbConnectionFactory connectionFactory)
+   在 System.Data.ProviderBase.DbConnectionClosed.OpenConnection(DbConnection outerConnection, DbConnectionFactory connectionFactory)
+   在 System.Data.SqlClient.SqlConnection.Open()
+   在 Thinkment.Data.DBAccessHelper.CreateConnection[T](String connectionString)
+   在 Thinkment.Data.SqlDbDriver.FrontPageSqlDbConnection.get_Connection()
+   在 Thinkment.Data.SqlDbDriver.FrontPageSqlDbConnection.CreateCommand(SqlStatement sql)
+   在 Thinkment.Data.SqlDbDriver.FrontPageSqlDbConnection.Query(SqlStatement sql)
+   在 Thinkment.Data.ListSelectHandle`1.Execute()
+   在 Thinkment.Data.ObjectManager.MyList[T](IConnection conn, Criteria condition, Order[] orders, Int32 from, Int32 count, ListField[] fields)
+   在 Thinkment.Data.ObjectAssistant.List[T](IConnection conn, Criteria condition, Order[] orders, Int32 from, Int32 count, ListField[] fields)
+   在 Thinkment.Data.ObjectAssistant.List[T](Criteria condition, Order[] orders, Int32 from, Int32 count, ListField[] fields)
+   在 Thinkment.Data.ObjectAssistant.List[T](Criteria condition, Order[] orders)
+   在 ASP.widgets_widgetcollection_lecture_lecture_default_list_lecture_default_tablist_ascx.GetDBChannels(String strID) 位置 f:\SVN\WISE\Widgets\WidgetCollection\Lecture\Lecture.Default.List\Lecture.Default.TabList.ascx:行号 151
+   在 ASP.widgets_widgetcollection_lecture_lecture_default_list_lecture_default_tablist_ascx.GetChannels() 位置 f:\SVN\WISE\Widgets\WidgetCollection\Lecture\Lecture.Default.List\Lecture.Default.TabList.ascx:行号 136
+   在 ASP.widgets_widgetcollection_lecture_lecture_default_list_lecture_default_tablist_ascx.get_Channels() 位置 f:\SVN\WISE\Widgets\WidgetCollection\Lecture\Lecture.Default.List\Lecture.Default.TabList.ascx:行号 106
+   在 ASP.widgets_widgetcollection_lecture_lecture_default_list_lecture_default_tablist_ascx.OnInitData() 位置 f:\SVN\WISE\Widgets\WidgetCollection\Lecture\Lecture.Default.List\Lecture.Default.TabList.ascx:行号 31
+   在 We7.CMS.WebControls.BaseControl.OnLoad(EventArgs e)
+   在 System.Web.UI.Control.LoadRecursive()
+   在 System.Web.UI.Control.LoadRecursive()
+   在 System.Web.UI.Control.LoadRecursive()
+   在 System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+   --- 内部异常堆栈跟踪的结尾 ---
+   在 System.Web.UI.Page.HandleError(Exception e)
+   在 System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+   在 System.Web.UI.Page.ProcessRequest(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+   在 System.Web.UI.Page.ProcessRequest()
+   在 System.Web.UI.Page.ProcessRequestWithNoAssert(HttpContext context)
+   在 System.Web.UI.Page.ProcessRequest(HttpContext context)
+   在 ASP.default_aspx.ProcessRequest(HttpContext context) 位置 c:\Windows\Microsoft.NET\Framework\v2.0.50727\Temporary ASP.NET Files\root\b873ae11\4384875b\App_Web_818zm5ud.1.cs:行号 0
+   在 System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   在 System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)

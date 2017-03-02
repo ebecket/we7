@@ -1,0 +1,20 @@
+
+ 
+记录时间：2012-02-10 16:13:01,823 
+线程ID:[3] 
+日志级别：  ERROR 
+出错类：We7.CMS.Web.Global property: [(null)] - 
+错误描述：Error
+ 
+System.Web.HttpException: 服务“/WcfServices/SSOService.svc”不存在。 ---> System.ServiceModel.EndpointNotFoundException: 服务“/WcfServices/SSOService.svc”不存在。
+   在 System.ServiceModel.ServiceHostingEnvironment.HostingManager.EnsureServiceAvailable(String normalizedVirtualPath)
+   在 System.ServiceModel.ServiceHostingEnvironment.EnsureServiceAvailableFast(String relativeVirtualPath)
+   在 System.ServiceModel.Activation.HostedHttpRequestAsyncResult.HandleRequest()
+   在 System.ServiceModel.Activation.HostedHttpRequestAsyncResult.BeginRequest()
+   --- 内部异常堆栈跟踪的结尾 ---
+   在 System.ServiceModel.AsyncResult.End[TAsyncResult](IAsyncResult result)
+   在 System.ServiceModel.Activation.HostedHttpRequestAsyncResult.End(IAsyncResult result)
+   在 System.ServiceModel.Activation.HostedHttpRequestAsyncResult.ExecuteSynchronous(HttpApplication context, Boolean flowContext)
+   在 System.ServiceModel.Activation.HttpHandler.ProcessRequest(HttpContext context)
+   在 System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   在 System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)

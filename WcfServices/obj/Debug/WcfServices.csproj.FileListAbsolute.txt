@@ -1,0 +1,7 @@
+E:\Work\DotNet\SOE\WcfServices\obj\Debug\ResolveAssemblyReference.cache
+E:\Work\DotNet\SOE\bin\SOE.WcfServices.dll
+E:\Work\DotNet\SOE\bin\SOE.WcfServices.pdb
+E:\Work\DotNet\SOE\WcfServices\obj\Debug\SOE.WcfServices.dll
+E:\Work\DotNet\SOE\WcfServices\obj\Debug\SOE.WcfServices.pdb
+E:\Work\DotNet\SOE\WcfServices\bin\SOE.WcfServices.dll
+E:\Work\DotNet\SOE\WcfServices\bin\SOE.WcfServices.pdb

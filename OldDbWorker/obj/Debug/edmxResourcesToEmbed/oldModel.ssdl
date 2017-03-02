@@ -1,0 +1,2622 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="OldWiseModel.Store" Alias="Self" Provider="System.Data.SqlClient" ProviderManifestToken="2005" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns="http://schemas.microsoft.com/ado/2006/04/edm/ssdl">
+  <EntityContainer Name="OldWiseModelStoreContainer">
+    <EntitySet Name="AdMenu" EntityType="OldWiseModel.Store.AdMenu" store:Type="Tables" store:Schema="dbo" store:Name="AdMenu">
+      <DefiningQuery>SELECT 
+      [AdMenu].[ID] AS [ID], 
+      [AdMenu].[MenuName] AS [MenuName], 
+      [AdMenu].[MenuID] AS [MenuID]
+      FROM [dbo].[AdMenu] AS [AdMenu]</DefiningQuery>
+    </EntitySet>
+    <EntitySet Name="admin" EntityType="OldWiseModel.Store.admin" store:Type="Tables" store:Schema="dbo" store:Name="admin">
+      <DefiningQuery>SELECT 
+      [admin].[id] AS [id], 
+      [admin].[name] AS [name], 
+      [admin].[password] AS [password], 
+      [admin].[telephone] AS [telephone]
+      FROM [dbo].[admin] AS [admin]</DefiningQuery>
+    </EntitySet>
+    <EntitySet Name="Advertise" EntityType="OldWiseModel.Store.Advertise" store:Type="Tables" store:Schema="dbo" store:Name="Advertise">
+      <DefiningQuery>SELECT 
+      [Advertise].[ID] AS [ID], 
+      [Advertise].[Name] AS [Name], 
+      [Advertise].[AdUrl] AS [AdUrl], 
+      [Advertise].[ImgUrl] AS [ImgUrl], 
+      [Advertise].[AdType] AS [AdType], 
+      [Advertise].[Click] AS [Click], 
+      [Advertise].[AdPage] AS [AdPage], 
+      [Advertise].[AdSort] AS [AdSort], 
+      [Advertise].[AdSeat] AS [AdSeat], 
+      [Advertise].[AdBool] AS [AdBool], 
+      [Advertise].[StartDate] AS [StartDate], 
+      [Advertise].[EndDate] AS [EndDate], 
+      [Advertise].[Remarks] AS [Remarks]
+      FROM [dbo].[Advertise] AS [Advertise]</DefiningQuery>
+    </EntitySet>
+    <EntitySet Name="Counter" EntityType="OldWiseModel.Store.Counter" store:Type="Tables" store:Schema="dbo" store:Name="Counter">
+      <DefiningQuery>SELECT 
+      [Counter].[ID] AS [ID], 
+      [Counter].[IPAddr] AS [IPAddr], 
+      [Counter].[FromHttp] AS [FromHttp], 
+      [Counter].[GoDate] AS [GoDate], 
+      [Counter].[GoYear] AS [GoYear], 
+      [Counter].[GoMonth] AS [GoMonth], 
+      [Counter].[GoDay] AS [GoDay], 
+      [Counter].[GoTime] AS [GoTime], 
+      [Counter].[ToPage] AS [ToPage]
+      FROM [dbo].[Counter] AS [Counter]</DefiningQuery>
+    </EntitySet>
+    <EntitySet Name="counter2012" EntityType="OldWiseModel.Store.counter2012" store:Type="Tables" store:Schema="dbo" store:Name="counter2012">
+      <DefiningQuery>SELECT 
+      [counter2012].[ID] AS [ID], 
+      [counter2012].[IPAddr] AS [IPAddr], 
+      [counter2012].[FromHttp] AS [FromHttp], 
+      [counter2012].[GoDate] AS [GoDate], 
+      [counter2012].[GoYear] AS [GoYear], 
+      [counter2012].[GoMonth] AS [GoMonth], 
+      [counter2012].[GoDay] AS [GoDay], 
+      [counter2012].[GoTime] AS [GoTime], 
+      [counter2012].[ToPage] AS [ToPage]
+      FROM [dbo].[counter2012] AS [counter2012]</DefiningQuery>
+    </EntitySet>
+    <EntitySet Name="CounterMenu" EntityType="OldWiseModel.Store.CounterMenu" store:Type="Tables" store:Schema="dbo" store:Name="CounterMenu">
+      <DefiningQuery>SELECT 
+      [CounterMenu].[ID] AS [ID], 
+      [CounterMenu].[MenuName] AS [MenuName], 
+      [CounterMenu].[MenuID] AS [MenuID]
+      FROM [dbo].[CounterMenu] AS [CounterMenu]</DefiningQuery>
+    </EntitySet>
+    <EntitySet Name="Download" EntityType="OldWiseModel.Store.Download" store:Type="Tables" store:Schema="dbo" store:Name="Download">
+      <DefiningQuery>SELECT 
+      [Download].[ID] AS [ID], 
+      [Download].[Title] AS [Title], 
+      [Download].[TitleEn] AS [TitleEn], 
+      [Download].[Content] AS [Content], 
+      [Download].[ContentEn] AS [ContentEn], 
+      [Download].[url] AS [url], 
+      [Download].[UpDateTime] AS [UpDateTime], 
+      [Download].[Counter] AS [Counter], 
+      [Download].[CounterEn] AS [CounterEn], 
+      [Download].[TypeID] AS [TypeID], 
+      [Download].[TypeIDEn] AS [TypeIDEn], 
+      [Download].[newsType] AS [newsType], 
+      [Download].[code] AS [code], 
+      [Download].[er] AS [er], 
+      [Download].[num] AS [num]
+      FROM [dbo].[Download] AS [Download]</DefiningQuery>
+    </EntitySet>
+    <EntitySet Name="Download_SMU" EntityType="OldWiseModel.Store.Download_SMU" store:Type="Tables" store:Schema="dbo" store:Name="Download_SMU">
+      <DefiningQuery>SELECT 
+      [Download_SMU].[ID] AS [ID], 
+      [Download_SMU].[Title] AS [Title], 
+      [Download_SMU].[Content] AS [Content], 
+      [Download_SMU].[url] AS [url], 
+      [Download_SMU].[UpDateTime] AS [UpDateTime], 
+      [Download_SMU].[Counter] AS [Counter], 
+      [Download_SMU].[TypeID] AS [TypeID], 
+      [Download_SMU].[newsType] AS [newsType], 
+      [Download_SMU].[er] AS [er], 
+      [Download_SMU].[num] AS [num]
+      FROM [dbo].[Download_SMU] AS [Download_SMU]</DefiningQuery>
+    </EntitySet>
+    <EntitySet Name="DownloadType" EntityType="OldWiseModel.Store.DownloadType" store:Type="Tables" store:Schema="dbo" store:Name="DownloadType">
+      <DefiningQuery>SELECT 
+      [DownloadType].[ID] AS [ID], 
+      [DownloadType].[Name] AS [Name], 
+      [DownloadType].[BigID] AS [BigID]
+      FROM [dbo].[DownloadType] AS [DownloadType]</DefiningQuery>
+    </EntitySet>
+    <EntitySet Name="DownloadType_SMU" EntityType="OldWiseModel.Store.DownloadType_SMU" store:Type="Tables" store:Schema="dbo" store:Name="DownloadType_SMU">
+      <DefiningQuery>SELECT 
+      [DownloadType_SMU].[ID] AS [ID], 
+      [DownloadType_SMU].[Name] AS [Name], 
+      [DownloadType_SMU].[Grade] AS [Grade], 
+      [DownloadType_SMU].[Status] AS [Status], 
+      [DownloadType_SMU].[Teacher] AS [Teacher], 
+      [DownloadType_SMU].[TA] AS [TA], 
+      [DownloadType_SMU].[Remark] AS [Remark], 
+      [DownloadType_SMU].[UpDateTime] AS [UpDateTime], 
+      [DownloadType_SMU].[BigID] AS [BigID], 
+      [DownloadType_SMU].[Password_course] AS [Password_course]
+      FROM [dbo].[DownloadType_SMU] AS [DownloadType_SMU]</DefiningQuery>
+    </EntitySet>
+    <EntitySet Name="DownloadTypeEn" EntityType="OldWiseModel.Store.DownloadTypeEn" store:Type="Tables" store:Schema="dbo" store:Name="DownloadTypeEn">
+      <DefiningQuery>SELECT 
+      [DownloadTypeEn].[ID] AS [ID], 
+      [DownloadTypeEn].[Name] AS [Name], 
+      [DownloadTypeEn].[BigId] AS [BigId]
+      FROM [dbo].[DownloadTypeEn] AS [DownloadTypeEn]</DefiningQuery>
+    </EntitySet>
+    <EntitySet Name="dtproperties" EntityType="OldWiseModel.Store.dtproperties" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="Faculty" EntityType="OldWiseModel.Store.Faculty" store:Type="Tables" store:Schema="dbo" store:Name="Faculty">
+      <DefiningQuery>SELECT 
+      [Faculty].[ID] AS [ID], 
+      [Faculty].[Name] AS [Name], 
+      [Faculty].[EnName] AS [EnName], 
+      [Faculty].[Office] AS [Office], 
+      [Faculty].[EnOffice] AS [EnOffice], 
+      [Faculty].[Tel] AS [Tel], 
+      [Faculty].[Email] AS [Email], 
+      [Faculty].[Research] AS [Research], 
+      [Faculty].[EnResearch] AS [EnResearch], 
+      [Faculty].[Photo] AS [Photo], 
+      [Faculty].[Edubak] AS [Edubak], 
+      [Faculty].[EnEdubak] AS [EnEdubak], 
+      [Faculty].[Teach] AS [Teach], 
+      [Faculty].[EnTeach] AS [EnTeach], 
+      [Faculty].[Web] AS [Web], 
+      [Faculty].[EnWeb] AS [EnWeb]
+      FROM [dbo].[Faculty] AS [Faculty]</DefiningQuery>
+    </EntitySet>
+    <EntitySet Name="GetUrl" EntityType="OldWiseModel.Store.GetUrl" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="imwiseUser" EntityType="OldWiseModel.Store.imwiseUser" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="ipaddrr" EntityType="OldWiseModel.Store.ipaddrr" store:Type="Tables" store:Schema="dbo" store:Name="ipaddrr">
+      <DefiningQuery>SELECT 
+      [ipaddrr].[ID] AS [ID], 
+      [ipaddrr].[IPAddr] AS [IPAddr], 
+      [ipaddrr].[FromHttp] AS [FromHttp], 
+      [ipaddrr].[GoDate] AS [GoDate], 
+      [ipaddrr].[GoYear] AS [GoYear], 
+      [ipaddrr].[GoMonth] AS [GoMonth], 
+      [ipaddrr].[GoDay] AS [GoDay], 
+      [ipaddrr].[GoTime] AS [GoTime], 
+      [ipaddrr].[ToPage] AS [ToPage], 
+      [ipaddrr].[place] AS [place]
+      FROM [dbo].[ipaddrr] AS [ipaddrr]</DefiningQuery>
+    </EntitySet>
+    <EntitySet Name="link" EntityType="OldWiseModel.Store.link" store:Type="Tables" store:Schema="dbo" store:Name="link">
+      <DefiningQuery>SELECT 
+      [link].[id] AS [id], 
+      [link].[name] AS [name], 
+      [link].[url] AS [url], 
+      [link].[type] AS [type], 
+      [link].[types] AS [types], 
+      [link].[ordernum] AS [ordernum]
+      FROM [dbo].[link] AS [link]</DefiningQuery>
+    </EntitySet>
+    <EntitySet Name="Logs" EntityType="OldWiseModel.Store.Logs" store:Type="Tables" store:Schema="dbo" store:Name="Logs">
+      <DefiningQuery>SELECT 
+      [Logs].[ID] AS [ID], 
+      [Logs].[IPAddr] AS [IPAddr], 
+      [Logs].[maName] AS [maName], 
+      [Logs].[moving] AS [moving], 
+      [Logs].[LogTime] AS [LogTime]
+      FROM [dbo].[Logs] AS [Logs]</DefiningQuery>
+    </EntitySet>
+    <EntitySet Name="Master" EntityType="OldWiseModel.Store.Master" store:Type="Tables" store:Schema="dbo" store:Name="Master">
+      <DefiningQuery>SELECT 
+      [Master].[ID] AS [ID], 
+      [Master].[UserName] AS [UserName], 
+      [Master].[PassWord] AS [PassWord], 
+      [Master].[Master_Level] AS [Master_Level], 
+      [Master].[Name] AS [Name], 
+      [Master].[Dept] AS [Dept], 
+      [Master].[Act] AS [Act], 
+      [Master].[LoginTimes] AS [LoginTimes]
+      FROM [dbo].[Master] AS [Master]</DefiningQuery>
+    </EntitySet>
+    <EntitySet Name="Master_Level" EntityType="OldWiseModel.Store.Master_Level" store:Type="Tables" store:Schema="dbo" store:Name="Master_Level">
+      <DefiningQuery>SELECT 
+      [Master_Level].[ID] AS [ID], 
+      [Master_Level].[Chinese] AS [Chinese], 
+      [Master_Level].[English] AS [English]
+      FROM [dbo].[Master_Level] AS [Master_Level]</DefiningQuery>
+    </EntitySet>
+    <EntitySet Name="Menu" EntityType="OldWiseModel.Store.Menu" store:Type="Tables" store:Schema="dbo" store:Name="Menu">
+      <DefiningQuery>SELECT 
+      [Menu].[id] AS [id], 
+      [Menu].[name] AS [name], 
+      [Menu].[content] AS [content], 
+      [Menu].[url] AS [url], 
+      [Menu].[bigid] AS [bigid], 
+      [Menu].[sort] AS [sort], 
+      [Menu].[pic] AS [pic]
+      FROM [dbo].[Menu] AS [Menu]</DefiningQuery>
+    </EntitySet>
+    <EntitySet Name="Menu_IEC" EntityType="OldWiseModel.Store.Menu_IEC" store:Type="Tables" store:Schema="dbo" store:Name="Menu_IEC">
+      <DefiningQuery>SELECT 
+      [Menu_IEC].[id] AS [id], 
+      [Menu_IEC].[name] AS [name], 
+      [Menu_IEC].[content] AS [content], 
+      [Menu_IEC].[url] AS [url], 
+      [Menu_IEC].[bigid] AS [bigid], 
+      [Menu_IEC].[sort] AS [sort], 
+      [Menu_IEC].[pic] AS [pic]
+      FROM [dbo].[Menu_IEC] AS [Menu_IEC]</DefiningQuery>
+    </EntitySet>
+    <EntitySet Name="Menu_newIEC" EntityType="OldWiseModel.Store.Menu_newIEC" store:Type="Tables" store:Schema="dbo" store:Name="Menu_newIEC">
+      <DefiningQuery>SELECT 
+      [Menu_newIEC].[id] AS [id], 
+      [Menu_newIEC].[name] AS [name], 
+      [Menu_newIEC].[content] AS [content], 
+      [Menu_newIEC].[url] AS [url], 
+      [Menu_newIEC].[bigid] AS [bigid], 
+      [Menu_newIEC].[sort] AS [sort], 
+      [Menu_newIEC].[pic] AS [pic]
+      FROM [dbo].[Menu_newIEC] AS [Menu_newIEC]</DefiningQuery>
+    </EntitySet>
+    <EntitySet Name="Menu_szs" EntityType="OldWiseModel.Store.Menu_szs" store:Type="Tables" store:Schema="dbo" store:Name="Menu_szs">
+      <DefiningQuery>SELECT 
+      [Menu_szs].[id] AS [id], 
+      [Menu_szs].[name] AS [name], 
+      [Menu_szs].[content] AS [content], 
+      [Menu_szs].[url] AS [url], 
+      [Menu_szs].[bigid] AS [bigid], 
+      [Menu_szs].[sort] AS [sort], 
+      [Menu_szs].[pic] AS [pic]
+      FROM [dbo].[Menu_szs] AS [Menu_szs]</DefiningQuery>
+    </EntitySet>
+    <EntitySet Name="MenuEn" EntityType="OldWiseModel.Store.MenuEn" store:Type="Tables" store:Schema="dbo" store:Name="MenuEn">
+      <DefiningQuery>SELECT 
+      [MenuEn].[ID] AS [ID], 
+      [MenuEn].[Name] AS [Name], 
+      [MenuEn].[Url] AS [Url], 
+      [MenuEn].[Content] AS [Content], 
+      [MenuEn].[BigId] AS [BigId], 
+      [MenuEn].[sort] AS [sort], 
+      [MenuEn].[pic] AS [pic]
+      FROM [dbo].[MenuEn] AS [MenuEn]</DefiningQuery>
+    </EntitySet>
+    <EntitySet Name="newIEC_Student" EntityType="OldWiseModel.Store.newIEC_Student" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="News" EntityType="OldWiseModel.Store.News" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="News_ANU" EntityType="OldWiseModel.Store.News_ANU" store:Type="Tables" store:Schema="dbo" store:Name="News_ANU">
+      <DefiningQuery>SELECT 
+      [News_ANU].[ID] AS [ID], 
+      [News_ANU].[Title] AS [Title], 
+      [News_ANU].[TitleEn] AS [TitleEn], 
+      [News_ANU].[Content] AS [Content], 
+      [News_ANU].[ContentEn] AS [ContentEn], 
+      [News_ANU].[keys] AS [keys], 
+      [News_ANU].[keysEn] AS [keysEn], 
+      [News_ANU].[Fromto] AS [Fromto], 
+      [News_ANU].[FromtoEn] AS [FromtoEn], 
+      [News_ANU].[UpDateTime] AS [UpDateTime], 
+      [News_ANU].[Counter] AS [Counter], 
+      [News_ANU].[CounterEn] AS [CounterEn], 
+      [News_ANU].[Intro] AS [Intro], 
+      [News_ANU].[IntroEn] AS [IntroEn], 
+      [News_ANU].[TypeID] AS [TypeID], 
+      [News_ANU].[TypeIDEn] AS [TypeIDEn], 
+      [News_ANU].[newsType] AS [newsType], 
+      [News_ANU].[url] AS [url], 
+      [News_ANU].[isindex] AS [isindex], 
+      [News_ANU].[flash] AS [flash]
+      FROM [dbo].[News_ANU] AS [News_ANU]</DefiningQuery>
+    </EntitySet>
+    <EntitySet Name="News_BA" EntityType="OldWiseModel.Store.News_BA" store:Type="Tables" store:Schema="dbo" store:Name="News_BA">
+      <DefiningQuery>SELECT 
+      [News_BA].[ID] AS [ID], 
+      [News_BA].[Title] AS [Title], 
+      [News_BA].[TitleEn] AS [TitleEn], 
+      [News_BA].[Content] AS [Content], 
+      [News_BA].[ContentEn] AS [ContentEn], 
+      [News_BA].[keys] AS [keys], 
+      [News_BA].[keysEn] AS [keysEn], 
+      [News_BA].[Fromto] AS [Fromto], 
+      [News_BA].[FromtoEn] AS [FromtoEn], 
+      [News_BA].[UpDateTime] AS [UpDateTime], 
+      [News_BA].[Counter] AS [Counter], 
+      [News_BA].[CounterEn] AS [CounterEn], 
+      [News_BA].[Intro] AS [Intro], 
+      [News_BA].[IntroEn] AS [IntroEn], 
+      [News_BA].[TypeID] AS [TypeID], 
+      [News_BA].[TypeIDEn] AS [TypeIDEn], 
+      [News_BA].[newsType] AS [newsType], 
+      [News_BA].[url] AS [url], 
+      [News_BA].[isindex] AS [isindex], 
+      [News_BA].[flash] AS [flash]
+      FROM [dbo].[News_BA] AS [News_BA]</DefiningQuery>
+    </EntitySet>
+    <EntitySet Name="News_COFC" EntityType="OldWiseModel.Store.News_COFC" store:Type="Tables" store:Schema="dbo" store:Name="News_COFC">
+      <DefiningQuery>SELECT 
+      [News_COFC].[ID] AS [ID], 
+      [News_COFC].[Title] AS [Title], 
+      [News_COFC].[TitleEn] AS [TitleEn], 
+      [News_COFC].[Content] AS [Content], 
+      [News_COFC].[ContentEn] AS [ContentEn], 
+      [News_COFC].[keys] AS [keys], 
+      [News_COFC].[keysEn] AS [keysEn], 
+      [News_COFC].[Fromto] AS [Fromto], 
+      [News_COFC].[FromtoEn] AS [FromtoEn], 
+      [News_COFC].[UpDateTime] AS [UpDateTime], 
+      [News_COFC].[Counter] AS [Counter], 
+      [News_COFC].[CounterEn] AS [CounterEn], 
+      [News_COFC].[Intro] AS [Intro], 
+      [News_COFC].[IntroEn] AS [IntroEn], 
+      [News_COFC].[TypeID] AS [TypeID], 
+      [News_COFC].[TypeIDEn] AS [TypeIDEn], 
+      [News_COFC].[newsType] AS [newsType], 
+      [News_COFC].[url] AS [url], 
+      [News_COFC].[isindex] AS [isindex], 
+      [News_COFC].[flash] AS [flash]
+      FROM [dbo].[News_COFC] AS [News_COFC]</DefiningQuery>
+    </EntitySet>
+    <EntitySet Name="News_IEC" EntityType="OldWiseModel.Store.News_IEC" store:Type="Tables" store:Schema="dbo" store:Name="News_IEC">
+      <DefiningQuery>SELECT 
+      [News_IEC].[ID] AS [ID], 
+      [News_IEC].[Title] AS [Title], 
+      [News_IEC].[TitleEn] AS [TitleEn], 
+      [News_IEC].[Content] AS [Content], 
+      [News_IEC].[ContentEn] AS [ContentEn], 
+      [News_IEC].[keys] AS [keys], 
+      [News_IEC].[keysEn] AS [keysEn], 
+      [News_IEC].[Fromto] AS [Fromto], 
+      [News_IEC].[FromtoEn] AS [FromtoEn], 
+      [News_IEC].[UpDateTime] AS [UpDateTime], 
+      [News_IEC].[Counter] AS [Counter], 
+      [News_IEC].[CounterEn] AS [CounterEn], 
+      [News_IEC].[Intro] AS [Intro], 
+      [News_IEC].[IntroEn] AS [IntroEn], 
+      [News_IEC].[TypeID] AS [TypeID], 
+      [News_IEC].[TypeIDEn] AS [TypeIDEn], 
+      [News_IEC].[newsType] AS [newsType], 
+      [News_IEC].[url] AS [url], 
+      [News_IEC].[isindex] AS [isindex], 
+      [News_IEC].[flash] AS [flash]
+      FROM [dbo].[News_IEC] AS [News_IEC]</DefiningQuery>
+    </EntitySet>
+    <EntitySet Name="News_imWISE" EntityType="OldWiseModel.Store.News_imWISE" store:Type="Tables" store:Schema="dbo" store:Name="News_imWISE">
+      <DefiningQuery>SELECT 
+      [News_imWISE].[ID] AS [ID], 
+      [News_imWISE].[Title] AS [Title], 
+      [News_imWISE].[TitleEn] AS [TitleEn], 
+      [News_imWISE].[Content] AS [Content], 
+      [News_imWISE].[ContentEn] AS [ContentEn], 
+      [News_imWISE].[keys] AS [keys], 
+      [News_imWISE].[keysEn] AS [keysEn], 
+      [News_imWISE].[Fromto] AS [Fromto], 
+      [News_imWISE].[FromtoEn] AS [FromtoEn], 
+      [News_imWISE].[UpDateTime] AS [UpDateTime], 
+      [News_imWISE].[Counter] AS [Counter], 
+      [News_imWISE].[CounterEn] AS [CounterEn], 
+      [News_imWISE].[Intro] AS [Intro], 
+      [News_imWISE].[IntroEn] AS [IntroEn], 
+      [News_imWISE].[TypeID] AS [TypeID], 
+      [News_imWISE].[TypeIDEn] AS [TypeIDEn], 
+      [News_imWISE].[newsType] AS [newsType], 
+      [News_imWISE].[url] AS [url], 
+      [News_imWISE].[isindex] AS [isindex], 
+      [News_imWISE].[flash] AS [flash]
+      FROM [dbo].[News_imWISE] AS [News_imWISE]</DefiningQuery>
+    </EntitySet>
+    <EntitySet Name="News_KSU" EntityType="OldWiseModel.Store.News_KSU" store:Type="Tables" store:Schema="dbo" store:Name="News_KSU">
+      <DefiningQuery>SELECT 
+      [News_KSU].[ID] AS [ID], 
+      [News_KSU].[Title] AS [Title], 
+      [News_KSU].[TitleEn] AS [TitleEn], 
+      [News_KSU].[Content] AS [Content], 
+      [News_KSU].[ContentEn] AS [ContentEn], 
+      [News_KSU].[keys] AS [keys], 
+      [News_KSU].[keysEn] AS [keysEn], 
+      [News_KSU].[Fromto] AS [Fromto], 
+      [News_KSU].[FromtoEn] AS [FromtoEn], 
+      [News_KSU].[UpDateTime] AS [UpDateTime], 
+      [News_KSU].[Counter] AS [Counter], 
+      [News_KSU].[CounterEn] AS [CounterEn], 
+      [News_KSU].[Intro] AS [Intro], 
+      [News_KSU].[IntroEn] AS [IntroEn], 
+      [News_KSU].[TypeID] AS [TypeID], 
+      [News_KSU].[TypeIDEn] AS [TypeIDEn], 
+      [News_KSU].[newsType] AS [newsType], 
+      [News_KSU].[url] AS [url], 
+      [News_KSU].[isindex] AS [isindex], 
+      [News_KSU].[flash] AS [flash]
+      FROM [dbo].[News_KSU] AS [News_KSU]</DefiningQuery>
+    </EntitySet>
+    <EntitySet Name="News_KSU_bak" EntityType="OldWiseModel.Store.News_KSU_bak" store:Type="Tables" store:Schema="dbo" store:Name="News_KSU_bak">
+      <DefiningQuery>SELECT 
+      [News_KSU_bak].[ID] AS [ID], 
+      [News_KSU_bak].[Title] AS [Title], 
+      [News_KSU_bak].[TitleEn] AS [TitleEn], 
+      [News_KSU_bak].[Content] AS [Content], 
+      [News_KSU_bak].[ContentEn] AS [ContentEn], 
+      [News_KSU_bak].[keys] AS [keys], 
+      [News_KSU_bak].[keysEn] AS [keysEn], 
+      [News_KSU_bak].[Fromto] AS [Fromto], 
+      [News_KSU_bak].[FromtoEn] AS [FromtoEn], 
+      [News_KSU_bak].[UpDateTime] AS [UpDateTime], 
+      [News_KSU_bak].[Counter] AS [Counter], 
+      [News_KSU_bak].[CounterEn] AS [CounterEn], 
+      [News_KSU_bak].[Intro] AS [Intro], 
+      [News_KSU_bak].[IntroEn] AS [IntroEn], 
+      [News_KSU_bak].[TypeID] AS [TypeID], 
+      [News_KSU_bak].[TypeIDEn] AS [TypeIDEn], 
+      [News_KSU_bak].[newsType] AS [newsType], 
+      [News_KSU_bak].[url] AS [url], 
+      [News_KSU_bak].[isindex] AS [isindex], 
+      [News_KSU_bak].[flash] AS [flash]
+      FROM [dbo].[News_KSU_bak] AS [News_KSU_bak]</DefiningQuery>
+    </EntitySet>
+    <EntitySet Name="News_MONASH" EntityType="OldWiseModel.Store.News_MONASH" store:Type="Tables" store:Schema="dbo" store:Name="News_MONASH">
+      <DefiningQuery>SELECT 
+      [News_MONASH].[ID] AS [ID], 
+      [News_MONASH].[Title] AS [Title], 
+      [News_MONASH].[TitleEn] AS [TitleEn], 
+      [News_MONASH].[Content] AS [Content], 
+      [News_MONASH].[ContentEn] AS [ContentEn], 
+      [News_MONASH].[keys] AS [keys], 
+      [News_MONASH].[keysEn] AS [keysEn], 
+      [News_MONASH].[Fromto] AS [Fromto], 
+      [News_MONASH].[FromtoEn] AS [FromtoEn], 
+      [News_MONASH].[UpDateTime] AS [UpDateTime], 
+      [News_MONASH].[Counter] AS [Counter], 
+      [News_MONASH].[CounterEn] AS [CounterEn], 
+      [News_MONASH].[Intro] AS [Intro], 
+      [News_MONASH].[IntroEn] AS [IntroEn], 
+      [News_MONASH].[TypeID] AS [TypeID], 
+      [News_MONASH].[TypeIDEn] AS [TypeIDEn], 
+      [News_MONASH].[newsType] AS [newsType], 
+      [News_MONASH].[url] AS [url], 
+      [News_MONASH].[isindex] AS [isindex], 
+      [News_MONASH].[flash] AS [flash]
+      FROM [dbo].[News_MONASH] AS [News_MONASH]</DefiningQuery>
+    </EntitySet>
+    <EntitySet Name="News_newIEC" EntityType="OldWiseModel.Store.News_newIEC" store:Type="Tables" store:Schema="dbo" store:Name="News_newIEC">
+      <DefiningQuery>SELECT 
+      [News_newIEC].[ID] AS [ID], 
+      [News_newIEC].[Title] AS [Title], 
+      [News_newIEC].[TitleEn] AS [TitleEn], 
+      [News_newIEC].[Content] AS [Content], 
+      [News_newIEC].[ContentEn] AS [ContentEn], 
+      [News_newIEC].[keys] AS [keys], 
+      [News_newIEC].[keysEn] AS [keysEn], 
+      [News_newIEC].[Fromto] AS [Fromto], 
+      [News_newIEC].[FromtoEn] AS [FromtoEn], 
+      [News_newIEC].[UpDateTime] AS [UpDateTime], 
+      [News_newIEC].[Counter] AS [Counter], 
+      [News_newIEC].[CounterEn] AS [CounterEn], 
+      [News_newIEC].[Intro] AS [Intro], 
+      [News_newIEC].[IntroEn] AS [IntroEn], 
+      [News_newIEC].[TypeID] AS [TypeID], 
+      [News_newIEC].[TypeIDEn] AS [TypeIDEn], 
+      [News_newIEC].[newsType] AS [newsType], 
+      [News_newIEC].[url] AS [url], 
+      [News_newIEC].[isindex] AS [isindex], 
+      [News_newIEC].[flash] AS [flash]
+      FROM [dbo].[News_newIEC] AS [News_newIEC]</DefiningQuery>
+    </EntitySet>
+    <EntitySet Name="News_SS" EntityType="OldWiseModel.Store.News_SS" store:Type="Tables" store:Schema="dbo" store:Name="News_SS">
+      <DefiningQuery>SELECT 
+      [News_SS].[ID] AS [ID], 
+      [News_SS].[Title] AS [Title], 
+      [News_SS].[TitleEn] AS [TitleEn], 
+      [News_SS].[Content] AS [Content], 
+      [News_SS].[ContentEn] AS [ContentEn], 
+      [News_SS].[keys] AS [keys], 
+      [News_SS].[keysEn] AS [keysEn], 
+      [News_SS].[Fromto] AS [Fromto], 
+      [News_SS].[FromtoEn] AS [FromtoEn], 
+      [News_SS].[UpDateTime] AS [UpDateTime], 
+      [News_SS].[Counter] AS [Counter], 
+      [News_SS].[CounterEn] AS [CounterEn], 
+      [News_SS].[Intro] AS [Intro], 
+      [News_SS].[IntroEn] AS [IntroEn], 
+      [News_SS].[TypeID] AS [TypeID], 
+      [News_SS].[TypeIDEn] AS [TypeIDEn], 
+      [News_SS].[newsType] AS [newsType], 
+      [News_SS].[url] AS [url], 
+      [News_SS].[isindex] AS [isindex], 
+      [News_SS].[flash] AS [flash]
+      FROM [dbo].[News_SS] AS [News_SS]</DefiningQuery>
+    </EntitySet>
+    <EntitySet Name="News_SS2011" EntityType="OldWiseModel.Store.News_SS2011" store:Type="Tables" store:Schema="dbo" store:Name="News_SS2011">
+      <DefiningQuery>SELECT 
+      [News_SS2011].[ID] AS [ID], 
+      [News_SS2011].[Title] AS [Title], 
+      [News_SS2011].[TitleEn] AS [TitleEn], 
+      [News_SS2011].[Content] AS [Content], 
+      [News_SS2011].[ContentEn] AS [ContentEn], 
+      [News_SS2011].[keys] AS [keys], 
+      [News_SS2011].[keysEn] AS [keysEn], 
+      [News_SS2011].[Fromto] AS [Fromto], 
+      [News_SS2011].[FromtoEn] AS [FromtoEn], 
+      [News_SS2011].[UpDateTime] AS [UpDateTime], 
+      [News_SS2011].[Counter] AS [Counter], 
+      [News_SS2011].[CounterEn] AS [CounterEn], 
+      [News_SS2011].[Intro] AS [Intro], 
+      [News_SS2011].[IntroEn] AS [IntroEn], 
+      [News_SS2011].[TypeID] AS [TypeID], 
+      [News_SS2011].[TypeIDEn] AS [TypeIDEn], 
+      [News_SS2011].[newsType] AS [newsType], 
+      [News_SS2011].[url] AS [url], 
+      [News_SS2011].[isindex] AS [isindex], 
+      [News_SS2011].[flash] AS [flash]
+      FROM [dbo].[News_SS2011] AS [News_SS2011]</DefiningQuery>
+    </EntitySet>
+    <EntitySet Name="News_SS2012" EntityType="OldWiseModel.Store.News_SS2012" store:Type="Tables" store:Schema="dbo" store:Name="News_SS2012">
+      <DefiningQuery>SELECT 
+      [News_SS2012].[ID] AS [ID], 
+      [News_SS2012].[Title] AS [Title], 
+      [News_SS2012].[TitleEn] AS [TitleEn], 
+      [News_SS2012].[Content] AS [Content], 
+      [News_SS2012].[ContentEn] AS [ContentEn], 
+      [News_SS2012].[keys] AS [keys], 
+      [News_SS2012].[keysEn] AS [keysEn], 
+      [News_SS2012].[Fromto] AS [Fromto], 
+      [News_SS2012].[FromtoEn] AS [FromtoEn], 
+      [News_SS2012].[UpDateTime] AS [UpDateTime], 
+      [News_SS2012].[Counter] AS [Counter], 
+      [News_SS2012].[CounterEn] AS [CounterEn], 
+      [News_SS2012].[Intro] AS [Intro], 
+      [News_SS2012].[IntroEn] AS [IntroEn], 
+      [News_SS2012].[TypeID] AS [TypeID], 
+      [News_SS2012].[TypeIDEn] AS [TypeIDEn], 
+      [News_SS2012].[newsType] AS [newsType], 
+      [News_SS2012].[url] AS [url], 
+      [News_SS2012].[isindex] AS [isindex], 
+      [News_SS2012].[flash] AS [flash]
+      FROM [dbo].[News_SS2012] AS [News_SS2012]</DefiningQuery>
+    </EntitySet>
+    <EntitySet Name="News_szs" EntityType="OldWiseModel.Store.News_szs" store:Type="Tables" store:Schema="dbo" store:Name="News_szs">
+      <DefiningQuery>SELECT 
+      [News_szs].[ID] AS [ID], 
+      [News_szs].[Title] AS [Title], 
+      [News_szs].[TitleEn] AS [TitleEn], 
+      [News_szs].[Content] AS [Content], 
+      [News_szs].[ContentEn] AS [ContentEn], 
+      [News_szs].[keys] AS [keys], 
+      [News_szs].[keysEn] AS [keysEn], 
+      [News_szs].[Fromto] AS [Fromto], 
+      [News_szs].[FromtoEn] AS [FromtoEn], 
+      [News_szs].[UpDateTime] AS [UpDateTime], 
+      [News_szs].[Counter] AS [Counter], 
+      [News_szs].[CounterEn] AS [CounterEn], 
+      [News_szs].[Intro] AS [Intro], 
+      [News_szs].[IntroEn] AS [IntroEn], 
+      [News_szs].[TypeID] AS [TypeID], 
+      [News_szs].[TypeIDEn] AS [TypeIDEn], 
+      [News_szs].[newsType] AS [newsType], 
+      [News_szs].[url] AS [url], 
+      [News_szs].[isindex] AS [isindex], 
+      [News_szs].[flash] AS [flash]
+      FROM [dbo].[News_szs] AS [News_szs]</DefiningQuery>
+    </EntitySet>
+    <EntitySet Name="News_TJBA" EntityType="OldWiseModel.Store.News_TJBA" store:Type="Tables" store:Schema="dbo" store:Name="News_TJBA">
+      <DefiningQuery>SELECT 
+      [News_TJBA].[ID] AS [ID], 
+      [News_TJBA].[Title] AS [Title], 
+      [News_TJBA].[TitleEn] AS [TitleEn], 
+      [News_TJBA].[Content] AS [Content], 
+      [News_TJBA].[ContentEn] AS [ContentEn], 
+      [News_TJBA].[keys] AS [keys], 
+      [News_TJBA].[keysEn] AS [keysEn], 
+      [News_TJBA].[Fromto] AS [Fromto], 
+      [News_TJBA].[FromtoEn] AS [FromtoEn], 
+      [News_TJBA].[UpDateTime] AS [UpDateTime], 
+      [News_TJBA].[Counter] AS [Counter], 
+      [News_TJBA].[CounterEn] AS [CounterEn], 
+      [News_TJBA].[Intro] AS [Intro], 
+      [News_TJBA].[IntroEn] AS [IntroEn], 
+      [News_TJBA].[TypeID] AS [TypeID], 
+      [News_TJBA].[TypeIDEn] AS [TypeIDEn], 
+      [News_TJBA].[newsType] AS [newsType], 
+      [News_TJBA].[url] AS [url], 
+      [News_TJBA].[isindex] AS [isindex], 
+      [News_TJBA].[flash] AS [flash]
+      FROM [dbo].[News_TJBA] AS [News_TJBA]</DefiningQuery>
+    </EntitySet>
+    <EntitySet Name="News_UCD" EntityType="OldWiseModel.Store.News_UCD" store:Type="Tables" store:Schema="dbo" store:Name="News_UCD">
+      <DefiningQuery>SELECT 
+      [News_UCD].[ID] AS [ID], 
+      [News_UCD].[Title] AS [Title], 
+      [News_UCD].[TitleEn] AS [TitleEn], 
+      [News_UCD].[Content] AS [Content], 
+      [News_UCD].[ContentEn] AS [ContentEn], 
+      [News_UCD].[keys] AS [keys], 
+      [News_UCD].[keysEn] AS [keysEn], 
+      [News_UCD].[Fromto] AS [Fromto], 
+      [News_UCD].[FromtoEn] AS [FromtoEn], 
+      [News_UCD].[UpDateTime] AS [UpDateTime], 
+      [News_UCD].[Counter] AS [Counter], 
+      [News_UCD].[CounterEn] AS [CounterEn], 
+      [News_UCD].[Intro] AS [Intro], 
+      [News_UCD].[IntroEn] AS [IntroEn], 
+      [News_UCD].[TypeID] AS [TypeID], 
+      [News_UCD].[TypeIDEn] AS [TypeIDEn], 
+      [News_UCD].[newsType] AS [newsType], 
+      [News_UCD].[url] AS [url], 
+      [News_UCD].[isindex] AS [isindex], 
+      [News_UCD].[flash] AS [flash]
+      FROM [dbo].[News_UCD] AS [News_UCD]</DefiningQuery>
+    </EntitySet>
+    <EntitySet Name="News_UNCC" EntityType="OldWiseModel.Store.News_UNCC" store:Type="Tables" store:Schema="dbo" store:Name="News_UNCC">
+      <DefiningQuery>SELECT 
+      [News_UNCC].[ID] AS [ID], 
+      [News_UNCC].[Title] AS [Title], 
+      [News_UNCC].[TitleEn] AS [TitleEn], 
+      [News_UNCC].[Content] AS [Content], 
+      [News_UNCC].[ContentEn] AS [ContentEn], 
+      [News_UNCC].[keys] AS [keys], 
+      [News_UNCC].[keysEn] AS [keysEn], 
+      [News_UNCC].[Fromto] AS [Fromto], 
+      [News_UNCC].[FromtoEn] AS [FromtoEn], 
+      [News_UNCC].[UpDateTime] AS [UpDateTime], 
+      [News_UNCC].[Counter] AS [Counter], 
+      [News_UNCC].[CounterEn] AS [CounterEn], 
+      [News_UNCC].[Intro] AS [Intro], 
+      [News_UNCC].[IntroEn] AS [IntroEn], 
+      [News_UNCC].[TypeID] AS [TypeID], 
+      [News_UNCC].[TypeIDEn] AS [TypeIDEn], 
+      [News_UNCC].[newsType] AS [newsType], 
+      [News_UNCC].[url] AS [url], 
+      [News_UNCC].[isindex] AS [isindex], 
+      [News_UNCC].[flash] AS [flash]
+      FROM [dbo].[News_UNCC] AS [News_UNCC]</DefiningQuery>
+    </EntitySet>
+    <EntitySet Name="News_XLY" EntityType="OldWiseModel.Store.News_XLY" store:Type="Tables" store:Schema="dbo" store:Name="News_XLY">
+      <DefiningQuery>SELECT 
+      [News_XLY].[ID] AS [ID], 
+      [News_XLY].[Title] AS [Title], 
+      [News_XLY].[TitleEn] AS [TitleEn], 
+      [News_XLY].[Content] AS [Content], 
+      [News_XLY].[ContentEn] AS [ContentEn], 
+      [News_XLY].[keys] AS [keys], 
+      [News_XLY].[keysEn] AS [keysEn], 
+      [News_XLY].[Fromto] AS [Fromto], 
+      [News_XLY].[FromtoEn] AS [FromtoEn], 
+      [News_XLY].[UpDateTime] AS [UpDateTime], 
+      [News_XLY].[Counter] AS [Counter], 
+      [News_XLY].[CounterEn] AS [CounterEn], 
+      [News_XLY].[Intro] AS [Intro], 
+      [News_XLY].[IntroEn] AS [IntroEn], 
+      [News_XLY].[TypeID] AS [TypeID], 
+      [News_XLY].[TypeIDEn] AS [TypeIDEn], 
+      [News_XLY].[newsType] AS [newsType], 
+      [News_XLY].[url] AS [url], 
+      [News_XLY].[isindex] AS [isindex], 
+      [News_XLY].[flash] AS [flash]
+      FROM [dbo].[News_XLY] AS [News_XLY]</DefiningQuery>
+    </EntitySet>
+    <EntitySet Name="News_XLY2011" EntityType="OldWiseModel.Store.News_XLY2011" store:Type="Tables" store:Schema="dbo" store:Name="News_XLY2011">
+      <DefiningQuery>SELECT 
+      [News_XLY2011].[ID] AS [ID], 
+      [News_XLY2011].[Title] AS [Title], 
+      [News_XLY2011].[TitleEn] AS [TitleEn], 
+      [News_XLY2011].[Content] AS [Content], 
+      [News_XLY2011].[ContentEn] AS [ContentEn], 
+      [News_XLY2011].[keys] AS [keys], 
+      [News_XLY2011].[keysEn] AS [keysEn], 
+      [News_XLY2011].[Fromto] AS [Fromto], 
+      [News_XLY2011].[FromtoEn] AS [FromtoEn], 
+      [News_XLY2011].[UpDateTime] AS [UpDateTime], 
+      [News_XLY2011].[Counter] AS [Counter], 
+      [News_XLY2011].[CounterEn] AS [CounterEn], 
+      [News_XLY2011].[Intro] AS [Intro], 
+      [News_XLY2011].[IntroEn] AS [IntroEn], 
+      [News_XLY2011].[TypeID] AS [TypeID], 
+      [News_XLY2011].[TypeIDEn] AS [TypeIDEn], 
+      [News_XLY2011].[newsType] AS [newsType], 
+      [News_XLY2011].[url] AS [url], 
+      [News_XLY2011].[isindex] AS [isindex], 
+      [News_XLY2011].[flash] AS [flash]
+      FROM [dbo].[News_XLY2011] AS [News_XLY2011]</DefiningQuery>
+    </EntitySet>
+    <EntitySet Name="NewsPdf" EntityType="OldWiseModel.Store.NewsPdf" store:Type="Tables" store:Schema="dbo" store:Name="NewsPdf">
+      <DefiningQuery>SELECT 
+      [NewsPdf].[ID] AS [ID], 
+      [NewsPdf].[Title] AS [Title], 
+      [NewsPdf].[TitleEn] AS [TitleEn], 
+      [NewsPdf].[Content] AS [Content], 
+      [NewsPdf].[ContentEn] AS [ContentEn], 
+      [NewsPdf].[keys] AS [keys], 
+      [NewsPdf].[keysEn] AS [keysEn], 
+      [NewsPdf].[Fromto] AS [Fromto], 
+      [NewsPdf].[FromtoEn] AS [FromtoEn], 
+      [NewsPdf].[BeginTime] AS [BeginTime], 
+      [NewsPdf].[UpDateTime] AS [UpDateTime], 
+      [NewsPdf].[Counter] AS [Counter], 
+      [NewsPdf].[CounterEn] AS [CounterEn], 
+      [NewsPdf].[Intro] AS [Intro], 
+      [NewsPdf].[IntroEn] AS [IntroEn], 
+      [NewsPdf].[TypeID] AS [TypeID], 
+      [NewsPdf].[TypeIDEn] AS [TypeIDEn], 
+      [NewsPdf].[newsType] AS [newsType], 
+      [NewsPdf].[url] AS [url], 
+      [NewsPdf].[isindex] AS [isindex], 
+      [NewsPdf].[flash] AS [flash], 
+      [NewsPdf].[period] AS [period], 
+      [NewsPdf].[pdfUrl] AS [pdfUrl], 
+      [NewsPdf].[isPdf] AS [isPdf]
+      FROM [dbo].[NewsPdf] AS [NewsPdf]</DefiningQuery>
+    </EntitySet>
+    <EntitySet Name="NewsType" EntityType="OldWiseModel.Store.NewsType" store:Type="Tables" store:Schema="dbo" store:Name="NewsType">
+      <DefiningQuery>SELECT 
+      [NewsType].[ID] AS [ID], 
+      [NewsType].[Name] AS [Name], 
+      [NewsType].[BigID] AS [BigID]
+      FROM [dbo].[NewsType] AS [NewsType]</DefiningQuery>
+    </EntitySet>
+    <EntitySet Name="NewsType_ANU" EntityType="OldWiseModel.Store.NewsType_ANU" store:Type="Tables" store:Schema="dbo" store:Name="NewsType_ANU">
+      <DefiningQuery>SELECT 
+      [NewsType_ANU].[ID] AS [ID], 
+      [NewsType_ANU].[Name] AS [Name], 
+      [NewsType_ANU].[BigId] AS [BigId]
+      FROM [dbo].[NewsType_ANU] AS [NewsType_ANU]</DefiningQuery>
+    </EntitySet>
+    <EntitySet Name="NewsType_BA" EntityType="OldWiseModel.Store.NewsType_BA" store:Type="Tables" store:Schema="dbo" store:Name="NewsType_BA">
+      <DefiningQuery>SELECT 
+      [NewsType_BA].[ID] AS [ID], 
+      [NewsType_BA].[Name] AS [Name], 
+      [NewsType_BA].[BigId] AS [BigId]
+      FROM [dbo].[NewsType_BA] AS [NewsType_BA]</DefiningQuery>
+    </EntitySet>
+    <EntitySet Name="NewsType_COFC" EntityType="OldWiseModel.Store.NewsType_COFC" store:Type="Tables" store:Schema="dbo" store:Name="NewsType_COFC">
+      <DefiningQuery>SELECT 
+      [NewsType_COFC].[ID] AS [ID], 
+      [NewsType_COFC].[Name] AS [Name], 
+      [NewsType_COFC].[BigId] AS [BigId]
+      FROM [dbo].[NewsType_COFC] AS [NewsType_COFC]</DefiningQuery>
+    </EntitySet>
+    <EntitySet Name="NewsType_IEC" EntityType="OldWiseModel.Store.NewsType_IEC" store:Type="Tables" store:Schema="dbo" store:Name="NewsType_IEC">
+      <DefiningQuery>SELECT 
+      [NewsType_IEC].[ID] AS [ID], 
+      [NewsType_IEC].[Name] AS [Name], 
+      [NewsType_IEC].[BigId] AS [BigId]
+      FROM [dbo].[NewsType_IEC] AS [NewsType_IEC]</DefiningQuery>
+    </EntitySet>
+    <EntitySet Name="NewsType_imWISE" EntityType="OldWiseModel.Store.NewsType_imWISE" store:Type="Tables" store:Schema="dbo" store:Name="NewsType_imWISE">
+      <DefiningQuery>SELECT 
+      [NewsType_imWISE].[ID] AS [ID], 
+      [NewsType_imWISE].[Name] AS [Name], 
+      [NewsType_imWISE].[BigId] AS [BigId]
+      FROM [dbo].[NewsType_imWISE] AS [NewsType_imWISE]</DefiningQuery>
+    </EntitySet>
+    <EntitySet Name="NewsType_KSU" EntityType="OldWiseModel.Store.NewsType_KSU" store:Type="Tables" store:Schema="dbo" store:Name="NewsType_KSU">
+      <DefiningQuery>SELECT 
+      [NewsType_KSU].[ID] AS [ID], 
+      [NewsType_KSU].[Name] AS [Name], 
+      [NewsType_KSU].[BigId] AS [BigId]
+      FROM [dbo].[NewsType_KSU] AS [NewsType_KSU]</DefiningQuery>
+    </EntitySet>
+    <EntitySet Name="NewsType_MONASH" EntityType="OldWiseModel.Store.NewsType_MONASH" store:Type="Tables" store:Schema="dbo" store:Name="NewsType_MONASH">
+      <DefiningQuery>SELECT 
+      [NewsType_MONASH].[ID] AS [ID], 
+      [NewsType_MONASH].[Name] AS [Name], 
+      [NewsType_MONASH].[BigId] AS [BigId]
+      FROM [dbo].[NewsType_MONASH] AS [NewsType_MONASH]</DefiningQuery>
+    </EntitySet>
+    <EntitySet Name="NewsType_newIEC" EntityType="OldWiseModel.Store.NewsType_newIEC" store:Type="Tables" store:Schema="dbo" store:Name="NewsType_newIEC">
+      <DefiningQuery>SELECT 
+      [NewsType_newIEC].[ID] AS [ID], 
+      [NewsType_newIEC].[Name] AS [Name], 
+      [NewsType_newIEC].[BigId] AS [BigId]
+      FROM [dbo].[NewsType_newIEC] AS [NewsType_newIEC]</DefiningQuery>
+    </EntitySet>
+    <EntitySet Name="Newstype_SS" EntityType="OldWiseModel.Store.Newstype_SS" store:Type="Tables" store:Schema="dbo" store:Name="Newstype_SS">
+      <DefiningQuery>SELECT 
+      [Newstype_SS].[ID] AS [ID], 
+      [Newstype_SS].[Name] AS [Name], 
+      [Newstype_SS].[BigId] AS [BigId]
+      FROM [dbo].[Newstype_SS] AS [Newstype_SS]</DefiningQuery>
+    </EntitySet>
+    <EntitySet Name="Newstype_SS2011" EntityType="OldWiseModel.Store.Newstype_SS2011" store:Type="Tables" store:Schema="dbo" store:Name="Newstype_SS2011">
+      <DefiningQuery>SELECT 
+      [Newstype_SS2011].[ID] AS [ID], 
+      [Newstype_SS2011].[Name] AS [Name], 
+      [Newstype_SS2011].[BigId] AS [BigId]
+      FROM [dbo].[Newstype_SS2011] AS [Newstype_SS2011]</DefiningQuery>
+    </EntitySet>
+    <EntitySet Name="Newstype_SS2012" EntityType="OldWiseModel.Store.Newstype_SS2012" store:Type="Tables" store:Schema="dbo" store:Name="Newstype_SS2012">
+      <DefiningQuery>SELECT 
+      [Newstype_SS2012].[ID] AS [ID], 
+      [Newstype_SS2012].[Name] AS [Name], 
+      [Newstype_SS2012].[BigId] AS [BigId]
+      FROM [dbo].[Newstype_SS2012] AS [Newstype_SS2012]</DefiningQuery>
+    </EntitySet>
+    <EntitySet Name="NewsType_szs" EntityType="OldWiseModel.Store.NewsType_szs" store:Type="Tables" store:Schema="dbo" store:Name="NewsType_szs">
+      <DefiningQuery>SELECT 
+      [NewsType_szs].[ID] AS [ID], 
+      [NewsType_szs].[Name] AS [Name], 
+      [NewsType_szs].[BigId] AS [BigId]
+      FROM [dbo].[NewsType_szs] AS [NewsType_szs]</DefiningQuery>
+    </EntitySet>
+    <EntitySet Name="NewsType_TJBA" EntityType="OldWiseModel.Store.NewsType_TJBA" store:Type="Tables" store:Schema="dbo" store:Name="NewsType_TJBA">
+      <DefiningQuery>SELECT 
+      [NewsType_TJBA].[ID] AS [ID], 
+      [NewsType_TJBA].[Name] AS [Name], 
+      [NewsType_TJBA].[BigId] AS [BigId]
+      FROM [dbo].[NewsType_TJBA] AS [NewsType_TJBA]</DefiningQuery>
+    </EntitySet>
+    <EntitySet Name="NewsType_UCD" EntityType="OldWiseModel.Store.NewsType_UCD" store:Type="Tables" store:Schema="dbo" store:Name="NewsType_UCD">
+      <DefiningQuery>SELECT 
+      [NewsType_UCD].[ID] AS [ID], 
+      [NewsType_UCD].[Name] AS [Name], 
+      [NewsType_UCD].[BigId] AS [BigId]
+      FROM [dbo].[NewsType_UCD] AS [NewsType_UCD]</DefiningQuery>
+    </EntitySet>
+    <EntitySet Name="NewsType_UNCC" EntityType="OldWiseModel.Store.NewsType_UNCC" store:Type="Tables" store:Schema="dbo" store:Name="NewsType_UNCC">
+      <DefiningQuery>SELECT 
+      [NewsType_UNCC].[ID] AS [ID], 
+      [NewsType_UNCC].[Name] AS [Name], 
+      [NewsType_UNCC].[BigId] AS [BigId]
+      FROM [dbo].[NewsType_UNCC] AS [NewsType_UNCC]</DefiningQuery>
+    </EntitySet>
+    <EntitySet Name="NewsType_XLY" EntityType="OldWiseModel.Store.NewsType_XLY" store:Type="Tables" store:Schema="dbo" store:Name="NewsType_XLY">
+      <DefiningQuery>SELECT 
+      [NewsType_XLY].[ID] AS [ID], 
+      [NewsType_XLY].[Name] AS [Name], 
+      [NewsType_XLY].[BigId] AS [BigId]
+      FROM [dbo].[NewsType_XLY] AS [NewsType_XLY]</DefiningQuery>
+    </EntitySet>
+    <EntitySet Name="NewsType_XLY2011" EntityType="OldWiseModel.Store.NewsType_XLY2011" store:Type="Tables" store:Schema="dbo" store:Name="NewsType_XLY2011">
+      <DefiningQuery>SELECT 
+      [NewsType_XLY2011].[ID] AS [ID], 
+      [NewsType_XLY2011].[Name] AS [Name], 
+      [NewsType_XLY2011].[BigId] AS [BigId]
+      FROM [dbo].[NewsType_XLY2011] AS [NewsType_XLY2011]</DefiningQuery>
+    </EntitySet>
+    <EntitySet Name="NewsTypeEn" EntityType="OldWiseModel.Store.NewsTypeEn" store:Type="Tables" store:Schema="dbo" store:Name="NewsTypeEn">
+      <DefiningQuery>SELECT 
+      [NewsTypeEn].[ID] AS [ID], 
+      [NewsTypeEn].[Name] AS [Name], 
+      [NewsTypeEn].[BigId] AS [BigId]
+      FROM [dbo].[NewsTypeEn] AS [NewsTypeEn]</DefiningQuery>
+    </EntitySet>
+    <EntitySet Name="OpLogs" EntityType="OldWiseModel.Store.OpLogs" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="Photo" EntityType="OldWiseModel.Store.Photo" store:Type="Tables" store:Schema="dbo" store:Name="Photo">
+      <DefiningQuery>SELECT 
+      [Photo].[ID] AS [ID], 
+      [Photo].[Title] AS [Title], 
+      [Photo].[TitleEn] AS [TitleEn], 
+      [Photo].[url] AS [url], 
+      [Photo].[UpDateTime] AS [UpDateTime], 
+      [Photo].[Counter] AS [Counter], 
+      [Photo].[CounterEn] AS [CounterEn], 
+      [Photo].[TypeID] AS [TypeID], 
+      [Photo].[TypeIDEn] AS [TypeIDEn], 
+      [Photo].[newsType] AS [newsType]
+      FROM [dbo].[Photo] AS [Photo]</DefiningQuery>
+    </EntitySet>
+    <EntitySet Name="Photo_ksu" EntityType="OldWiseModel.Store.Photo_ksu" store:Type="Tables" store:Schema="dbo" store:Name="Photo_ksu">
+      <DefiningQuery>SELECT 
+      [Photo_ksu].[ID] AS [ID], 
+      [Photo_ksu].[Title] AS [Title], 
+      [Photo_ksu].[TitleEn] AS [TitleEn], 
+      [Photo_ksu].[url] AS [url], 
+      [Photo_ksu].[UpDateTime] AS [UpDateTime], 
+      [Photo_ksu].[Counter] AS [Counter], 
+      [Photo_ksu].[CounterEn] AS [CounterEn], 
+      [Photo_ksu].[TypeID] AS [TypeID], 
+      [Photo_ksu].[TypeIDEn] AS [TypeIDEn], 
+      [Photo_ksu].[newsType] AS [newsType]
+      FROM [dbo].[Photo_ksu] AS [Photo_ksu]</DefiningQuery>
+    </EntitySet>
+    <EntitySet Name="PhotoType" EntityType="OldWiseModel.Store.PhotoType" store:Type="Tables" store:Schema="dbo" store:Name="PhotoType">
+      <DefiningQuery>SELECT 
+      [PhotoType].[ID] AS [ID], 
+      [PhotoType].[Name] AS [Name], 
+      [PhotoType].[BigID] AS [BigID]
+      FROM [dbo].[PhotoType] AS [PhotoType]</DefiningQuery>
+    </EntitySet>
+    <EntitySet Name="PhotoType_ksu" EntityType="OldWiseModel.Store.PhotoType_ksu" store:Type="Tables" store:Schema="dbo" store:Name="PhotoType_ksu">
+      <DefiningQuery>SELECT 
+      [PhotoType_ksu].[ID] AS [ID], 
+      [PhotoType_ksu].[Name] AS [Name], 
+      [PhotoType_ksu].[BigID] AS [BigID]
+      FROM [dbo].[PhotoType_ksu] AS [PhotoType_ksu]</DefiningQuery>
+    </EntitySet>
+    <EntitySet Name="PhotoTypeEn" EntityType="OldWiseModel.Store.PhotoTypeEn" store:Type="Tables" store:Schema="dbo" store:Name="PhotoTypeEn">
+      <DefiningQuery>SELECT 
+      [PhotoTypeEn].[ID] AS [ID], 
+      [PhotoTypeEn].[Name] AS [Name], 
+      [PhotoTypeEn].[BigId] AS [BigId]
+      FROM [dbo].[PhotoTypeEn] AS [PhotoTypeEn]</DefiningQuery>
+    </EntitySet>
+    <EntitySet Name="Project_newIEC" EntityType="OldWiseModel.Store.Project_newIEC" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="Province" EntityType="OldWiseModel.Store.Province" store:Type="Tables" store:Schema="dbo" store:Name="Province">
+      <DefiningQuery>SELECT 
+      [Province].[ID] AS [ID], 
+      [Province].[Province] AS [Province]
+      FROM [dbo].[Province] AS [Province]</DefiningQuery>
+    </EntitySet>
+    <EntitySet Name="SeminarMenu" EntityType="OldWiseModel.Store.SeminarMenu" store:Type="Tables" store:Schema="dbo" store:Name="SeminarMenu">
+      <DefiningQuery>SELECT 
+      [SeminarMenu].[id] AS [id], 
+      [SeminarMenu].[name] AS [name], 
+      [SeminarMenu].[content] AS [content], 
+      [SeminarMenu].[url] AS [url], 
+      [SeminarMenu].[bigid] AS [bigid], 
+      [SeminarMenu].[sort] AS [sort], 
+      [SeminarMenu].[pic] AS [pic]
+      FROM [dbo].[SeminarMenu] AS [SeminarMenu]</DefiningQuery>
+    </EntitySet>
+    <EntitySet Name="signup" EntityType="OldWiseModel.Store.signup" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="signup_ie" EntityType="OldWiseModel.Store.signup_ie" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="t_ModuleShow" EntityType="OldWiseModel.Store.t_ModuleShow" store:Type="Tables" store:Schema="dbo" store:Name="t_ModuleShow">
+      <DefiningQuery>SELECT 
+      [t_ModuleShow].[id] AS [id], 
+      [t_ModuleShow].[period] AS [period], 
+      [t_ModuleShow].[TypeName] AS [TypeName], 
+      [t_ModuleShow].[TypeID] AS [TypeID], 
+      [t_ModuleShow].[BigId] AS [BigId], 
+      [t_ModuleShow].[isMain] AS [isMain], 
+      [t_ModuleShow].[Content] AS [Content], 
+      [t_ModuleShow].[photoUrl] AS [photoUrl], 
+      [t_ModuleShow].[showOrder] AS [showOrder], 
+      [t_ModuleShow].[M1] AS [M1], 
+      [t_ModuleShow].[M2] AS [M2], 
+      [t_ModuleShow].[M3] AS [M3]
+      FROM [dbo].[t_ModuleShow] AS [t_ModuleShow]</DefiningQuery>
+    </EntitySet>
+    <EntitySet Name="t_News" EntityType="OldWiseModel.Store.t_News" store:Type="Tables" store:Schema="dbo" store:Name="t_News">
+      <DefiningQuery>SELECT 
+      [t_News].[ID] AS [ID], 
+      [t_News].[Title] AS [Title], 
+      [t_News].[TitleEn] AS [TitleEn], 
+      [t_News].[Content] AS [Content], 
+      [t_News].[ContentEn] AS [ContentEn], 
+      [t_News].[keys] AS [keys], 
+      [t_News].[keysEn] AS [keysEn], 
+      [t_News].[Fromto] AS [Fromto], 
+      [t_News].[FromtoEn] AS [FromtoEn], 
+      [t_News].[BeginTime] AS [BeginTime], 
+      [t_News].[UpDateTime] AS [UpDateTime], 
+      [t_News].[Counter] AS [Counter], 
+      [t_News].[CounterEn] AS [CounterEn], 
+      [t_News].[Intro] AS [Intro], 
+      [t_News].[IntroEn] AS [IntroEn], 
+      [t_News].[TypeID] AS [TypeID], 
+      [t_News].[TypeIDEn] AS [TypeIDEn], 
+      [t_News].[newsType] AS [newsType], 
+      [t_News].[url] AS [url], 
+      [t_News].[isindex] AS [isindex], 
+      [t_News].[flash] AS [flash], 
+      [t_News].[isEDP] AS [isEDP], 
+      [t_News].[isKCB] AS [isKCB], 
+      [t_News].[isPM] AS [isPM], 
+      [t_News].[isSOE] AS [isSOE]
+      FROM [dbo].[t_News] AS [t_News]</DefiningQuery>
+    </EntitySet>
+    <EntitySet Name="t_News2" EntityType="OldWiseModel.Store.t_News2" store:Type="Tables" store:Schema="dbo" store:Name="t_News2">
+      <DefiningQuery>SELECT 
+      [t_News2].[ID] AS [ID], 
+      [t_News2].[Title] AS [Title], 
+      [t_News2].[TitleEn] AS [TitleEn], 
+      [t_News2].[Author] AS [Author], 
+      [t_News2].[Content] AS [Content], 
+      [t_News2].[ContentEn] AS [ContentEn], 
+      [t_News2].[keys] AS [keys], 
+      [t_News2].[keysEn] AS [keysEn], 
+      [t_News2].[Fromto] AS [Fromto], 
+      [t_News2].[FromtoEn] AS [FromtoEn], 
+      [t_News2].[BeginTime] AS [BeginTime], 
+      [t_News2].[UpDateTime] AS [UpDateTime], 
+      [t_News2].[Counter] AS [Counter], 
+      [t_News2].[CounterEn] AS [CounterEn], 
+      [t_News2].[Intro] AS [Intro], 
+      [t_News2].[IntroEn] AS [IntroEn], 
+      [t_News2].[TypeID] AS [TypeID], 
+      [t_News2].[TypeIDEn] AS [TypeIDEn], 
+      [t_News2].[newsType] AS [newsType], 
+      [t_News2].[url] AS [url], 
+      [t_News2].[isindex] AS [isindex], 
+      [t_News2].[flash] AS [flash], 
+      [t_News2].[period] AS [period], 
+      [t_News2].[pdfUrl] AS [pdfUrl], 
+      [t_News2].[isPdf] AS [isPdf], 
+      [t_News2].[isSystem] AS [isSystem]
+      FROM [dbo].[t_News2] AS [t_News2]</DefiningQuery>
+    </EntitySet>
+    <EntitySet Name="TEST_USER_REG" EntityType="OldWiseModel.Store.TEST_USER_REG" store:Type="Tables" store:Schema="dbo" store:Name="TEST_USER_REG">
+      <DefiningQuery>SELECT 
+      [TEST_USER_REG].[id] AS [id], 
+      [TEST_USER_REG].[name] AS [name], 
+      [TEST_USER_REG].[gender] AS [gender], 
+      [TEST_USER_REG].[birthday] AS [birthday], 
+      [TEST_USER_REG].[school] AS [school], 
+      [TEST_USER_REG].[major] AS [major], 
+      [TEST_USER_REG].[telephone] AS [telephone], 
+      [TEST_USER_REG].[cellphone] AS [cellphone], 
+      [TEST_USER_REG].[email] AS [email], 
+      [TEST_USER_REG].[address] AS [address], 
+      [TEST_USER_REG].[postcode] AS [postcode], 
+      [TEST_USER_REG].[researchfield] AS [researchfield], 
+      [TEST_USER_REG].[edubg] AS [edubg], 
+      [TEST_USER_REG].[tutor] AS [tutor], 
+      [TEST_USER_REG].[grade] AS [grade], 
+      [TEST_USER_REG].[zhicheng] AS [zhicheng], 
+      [TEST_USER_REG].[zhiwu] AS [zhiwu], 
+      [TEST_USER_REG].[experience] AS [experience], 
+      [TEST_USER_REG].[prize] AS [prize], 
+      [TEST_USER_REG].[regdate] AS [regdate], 
+      [TEST_USER_REG].[code] AS [code], 
+      [TEST_USER_REG].[isemail] AS [isemail], 
+      [TEST_USER_REG].[isattend] AS [isattend], 
+      [TEST_USER_REG].[del] AS [del], 
+      [TEST_USER_REG].[isfax] AS [isfax], 
+      [TEST_USER_REG].[whosendemail] AS [whosendemail], 
+      [TEST_USER_REG].[inscription] AS [inscription], 
+      [TEST_USER_REG].[enroll] AS [enroll]
+      FROM [dbo].[TEST_USER_REG] AS [TEST_USER_REG]</DefiningQuery>
+    </EntitySet>
+    <EntitySet Name="USER_REG" EntityType="OldWiseModel.Store.USER_REG" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="xly_user_2012" EntityType="OldWiseModel.Store.xly_user_2012" store:Type="Tables" store:Schema="dbo" store:Name="xly_user_2012">
+      <DefiningQuery>SELECT 
+      [xly_user_2012].[id] AS [id], 
+      [xly_user_2012].[name] AS [name], 
+      [xly_user_2012].[gender] AS [gender], 
+      [xly_user_2012].[birthday] AS [birthday], 
+      [xly_user_2012].[school] AS [school], 
+      [xly_user_2012].[major] AS [major], 
+      [xly_user_2012].[telephone] AS [telephone], 
+      [xly_user_2012].[cellphone] AS [cellphone], 
+      [xly_user_2012].[email] AS [email], 
+      [xly_user_2012].[address] AS [address], 
+      [xly_user_2012].[postcode] AS [postcode], 
+      [xly_user_2012].[researchfield] AS [researchfield], 
+      [xly_user_2012].[edubg] AS [edubg], 
+      [xly_user_2012].[tutor] AS [tutor], 
+      [xly_user_2012].[grade] AS [grade], 
+      [xly_user_2012].[zhicheng] AS [zhicheng], 
+      [xly_user_2012].[zhiwu] AS [zhiwu], 
+      [xly_user_2012].[experience] AS [experience], 
+      [xly_user_2012].[prize] AS [prize], 
+      [xly_user_2012].[regdate] AS [regdate], 
+      [xly_user_2012].[code] AS [code], 
+      [xly_user_2012].[isemail] AS [isemail], 
+      [xly_user_2012].[isattend] AS [isattend], 
+      [xly_user_2012].[del] AS [del], 
+      [xly_user_2012].[isfax] AS [isfax], 
+      [xly_user_2012].[whosendemail] AS [whosendemail]
+      FROM [dbo].[xly_user_2012] AS [xly_user_2012]</DefiningQuery>
+    </EntitySet>
+  </EntityContainer>
+  <!--生成过程中发现错误:
+      警告 6002: 表/视图“WISEWEB_WYN.dbo.AdMenu”未定义主键。已推断出该键，并将定义创建为只读的表/视图。
+      -->
+  <EntityType Name="AdMenu">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="MenuName" Type="char" MaxLength="50" />
+    <Property Name="MenuID" Type="int" />
+  </EntityType>
+  <!--生成过程中发现错误:
+      警告 6002: 表/视图“WISEWEB_WYN.dbo.admin”未定义主键。已推断出该键，并将定义创建为只读的表/视图。
+      -->
+  <EntityType Name="admin">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="name" Type="varchar" MaxLength="50" />
+    <Property Name="password" Type="varchar" MaxLength="50" />
+    <Property Name="telephone" Type="varchar" MaxLength="50" />
+  </EntityType>
+  <!--生成过程中发现错误:
+      警告 6002: 表/视图“WISEWEB_WYN.dbo.Advertise”未定义主键。已推断出该键，并将定义创建为只读的表/视图。
+      -->
+  <EntityType Name="Advertise">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="bigint" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="Name" Type="char" MaxLength="30" />
+    <Property Name="AdUrl" Type="char" MaxLength="120" />
+    <Property Name="ImgUrl" Type="char" MaxLength="80" />
+    <Property Name="AdType" Type="int" />
+    <Property Name="Click" Type="bigint" />
+    <Property Name="AdPage" Type="int" />
+    <Property Name="AdSort" Type="int" />
+    <Property Name="AdSeat" Type="int" />
+    <Property Name="AdBool" Type="int" />
+    <Property Name="StartDate" Type="datetime" />
+    <Property Name="EndDate" Type="datetime" />
+    <Property Name="Remarks" Type="char" MaxLength="500" />
+  </EntityType>
+  <!--生成过程中发现错误:
+      警告 6002: 表/视图“WISEWEB_WYN.dbo.Counter”未定义主键。已推断出该键，并将定义创建为只读的表/视图。
+      -->
+  <EntityType Name="Counter">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="bigint" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="IPAddr" Type="char" MaxLength="25" />
+    <Property Name="FromHttp" Type="char" MaxLength="100" />
+    <Property Name="GoDate" Type="datetime" />
+    <Property Name="GoYear" Type="smallint" />
+    <Property Name="GoMonth" Type="smallint" />
+    <Property Name="GoDay" Type="smallint" />
+    <Property Name="GoTime" Type="char" MaxLength="15" />
+    <Property Name="ToPage" Type="int" />
+  </EntityType>
+  <!--生成过程中发现错误:
+      警告 6002: 表/视图“WISEWEB_WYN.dbo.counter2012”未定义主键。已推断出该键，并将定义创建为只读的表/视图。
+      -->
+  <EntityType Name="counter2012">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="bigint" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="IPAddr" Type="char" MaxLength="25" />
+    <Property Name="FromHttp" Type="char" MaxLength="100" />
+    <Property Name="GoDate" Type="datetime" />
+    <Property Name="GoYear" Type="smallint" />
+    <Property Name="GoMonth" Type="smallint" />
+    <Property Name="GoDay" Type="smallint" />
+    <Property Name="GoTime" Type="char" MaxLength="15" />
+    <Property Name="ToPage" Type="int" />
+  </EntityType>
+  <!--生成过程中发现错误:
+      警告 6002: 表/视图“WISEWEB_WYN.dbo.CounterMenu”未定义主键。已推断出该键，并将定义创建为只读的表/视图。
+      -->
+  <EntityType Name="CounterMenu">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="MenuName" Type="char" MaxLength="50" />
+    <Property Name="MenuID" Type="int" />
+  </EntityType>
+  <!--生成过程中发现错误:
+      警告 6002: 表/视图“WISEWEB_WYN.dbo.Download”未定义主键。已推断出该键，并将定义创建为只读的表/视图。
+      -->
+  <EntityType Name="Download">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="bigint" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="Title" Type="char" MaxLength="150" />
+    <Property Name="TitleEn" Type="char" MaxLength="150" />
+    <Property Name="Content" Type="ntext" />
+    <Property Name="ContentEn" Type="ntext" />
+    <Property Name="url" Type="char" MaxLength="100" />
+    <Property Name="UpDateTime" Type="datetime" />
+    <Property Name="Counter" Type="bigint" />
+    <Property Name="CounterEn" Type="bigint" />
+    <Property Name="TypeID" Type="int" />
+    <Property Name="TypeIDEn" Type="int" />
+    <Property Name="newsType" Type="int" />
+    <Property Name="code" Type="char" MaxLength="20" />
+    <Property Name="er" Type="char" MaxLength="50" />
+    <Property Name="num" Type="char" MaxLength="100" />
+  </EntityType>
+  <!--生成过程中发现错误:
+      警告 6002: 表/视图“WISEWEB_WYN.dbo.Download_SMU”未定义主键。已推断出该键，并将定义创建为只读的表/视图。
+      -->
+  <EntityType Name="Download_SMU">
+    <Key>
+      <PropertyRef Name="ID" />
+      <PropertyRef Name="Title" />
+    </Key>
+    <Property Name="ID" Type="bigint" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="Title" Type="char" Nullable="false" MaxLength="100" />
+    <Property Name="Content" Type="ntext" />
+    <Property Name="url" Type="char" MaxLength="100" />
+    <Property Name="UpDateTime" Type="datetime" />
+    <Property Name="Counter" Type="bigint" />
+    <Property Name="TypeID" Type="int" />
+    <Property Name="newsType" Type="int" />
+    <Property Name="er" Type="char" MaxLength="50" />
+    <Property Name="num" Type="char" MaxLength="100" />
+  </EntityType>
+  <!--生成过程中发现错误:
+      警告 6002: 表/视图“WISEWEB_WYN.dbo.DownloadType”未定义主键。已推断出该键，并将定义创建为只读的表/视图。
+      -->
+  <EntityType Name="DownloadType">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="Name" Type="char" MaxLength="20" />
+    <Property Name="BigID" Type="int" />
+  </EntityType>
+  <!--生成过程中发现错误:
+      警告 6002: 表/视图“WISEWEB_WYN.dbo.DownloadType_SMU”未定义主键。已推断出该键，并将定义创建为只读的表/视图。
+      -->
+  <EntityType Name="DownloadType_SMU">
+    <Key>
+      <PropertyRef Name="ID" />
+      <PropertyRef Name="Name" />
+    </Key>
+    <Property Name="ID" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="Name" Type="char" Nullable="false" MaxLength="50" />
+    <Property Name="Grade" Type="int" />
+    <Property Name="Status" Type="char" MaxLength="10" />
+    <Property Name="Teacher" Type="char" MaxLength="50" />
+    <Property Name="TA" Type="char" MaxLength="50" />
+    <Property Name="Remark" Type="char" MaxLength="200" />
+    <Property Name="UpDateTime" Type="datetime" />
+    <Property Name="BigID" Type="int" />
+    <Property Name="Password_course" Type="char" MaxLength="30" />
+  </EntityType>
+  <!--生成过程中发现错误:
+      警告 6002: 表/视图“WISEWEB_WYN.dbo.DownloadTypeEn”未定义主键。已推断出该键，并将定义创建为只读的表/视图。
+      -->
+  <EntityType Name="DownloadTypeEn">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="Name" Type="char" MaxLength="50" />
+    <Property Name="BigId" Type="int" />
+  </EntityType>
+  <EntityType Name="dtproperties">
+    <Key>
+      <PropertyRef Name="id" />
+      <PropertyRef Name="property" />
+    </Key>
+    <Property Name="id" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="objectid" Type="int" />
+    <Property Name="property" Type="varchar" Nullable="false" MaxLength="64" />
+    <Property Name="value" Type="varchar" MaxLength="255" />
+    <Property Name="uvalue" Type="nvarchar" MaxLength="255" />
+    <Property Name="lvalue" Type="image" />
+    <Property Name="version" Type="int" Nullable="false" />
+  </EntityType>
+  <!--生成过程中发现错误:
+      警告 6002: 表/视图“WISEWEB_WYN.dbo.Faculty”未定义主键。已推断出该键，并将定义创建为只读的表/视图。
+      -->
+  <EntityType Name="Faculty">
+    <Key>
+      <PropertyRef Name="ID" />
+      <PropertyRef Name="EnOffice" />
+    </Key>
+    <Property Name="ID" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="Name" Type="char" MaxLength="100" />
+    <Property Name="EnName" Type="char" MaxLength="100" />
+    <Property Name="Office" Type="char" MaxLength="100" />
+    <Property Name="EnOffice" Type="char" Nullable="false" MaxLength="100" />
+    <Property Name="Tel" Type="char" MaxLength="100" />
+    <Property Name="Email" Type="char" MaxLength="100" />
+    <Property Name="Research" Type="char" MaxLength="1000" />
+    <Property Name="EnResearch" Type="char" MaxLength="1000" />
+    <Property Name="Photo" Type="char" MaxLength="100" />
+    <Property Name="Edubak" Type="char" MaxLength="1000" />
+    <Property Name="EnEdubak" Type="char" MaxLength="1000" />
+    <Property Name="Teach" Type="char" MaxLength="1000" />
+    <Property Name="EnTeach" Type="char" MaxLength="1000" />
+    <Property Name="Web" Type="char" MaxLength="300" />
+    <Property Name="EnWeb" Type="char" MaxLength="300" />
+  </EntityType>
+  <EntityType Name="GetUrl">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="detail" Type="varchar" MaxLength="50" />
+  </EntityType>
+  <EntityType Name="imwiseUser">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="email" Type="varchar" MaxLength="100" />
+    <Property Name="fname" Type="varchar" MaxLength="100" />
+    <Property Name="gname" Type="varchar" MaxLength="100" />
+    <Property Name="birth" Type="varchar" MaxLength="50" />
+    <Property Name="nationality" Type="varchar" MaxLength="150" />
+    <Property Name="gender" Type="varchar" MaxLength="50" />
+    <Property Name="underDegree" Type="varchar" MaxLength="100" />
+    <Property Name="college" Type="varchar" MaxLength="100" />
+    <Property Name="major" Type="varchar" MaxLength="150" />
+    <Property Name="howknow" Type="varchar" MaxLength="5000" />
+    <Property Name="whichApply" Type="varchar" MaxLength="50" />
+    <Property Name="haveOnline" Type="varchar" MaxLength="50" />
+    <Property Name="havePost" Type="varchar" MaxLength="50" />
+    <Property Name="addCom" Type="varchar" MaxLength="5000" />
+    <Property Name="regtime" Type="varchar" MaxLength="50" />
+    <Property Name="other" Type="varchar" MaxLength="500" />
+    <Property Name="del" Type="varchar" MaxLength="50" />
+  </EntityType>
+  <!--生成过程中发现错误:
+      警告 6002: 表/视图“WISEWEB_WYN.dbo.ipaddrr”未定义主键。已推断出该键，并将定义创建为只读的表/视图。
+      -->
+  <EntityType Name="ipaddrr">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="bigint" Nullable="false" />
+    <Property Name="IPAddr" Type="char" MaxLength="25" />
+    <Property Name="FromHttp" Type="char" MaxLength="100" />
+    <Property Name="GoDate" Type="datetime" />
+    <Property Name="GoYear" Type="smallint" />
+    <Property Name="GoMonth" Type="smallint" />
+    <Property Name="GoDay" Type="smallint" />
+    <Property Name="GoTime" Type="char" MaxLength="15" />
+    <Property Name="ToPage" Type="int" />
+    <Property Name="place" Type="varchar" MaxLength="50" />
+  </EntityType>
+  <!--生成过程中发现错误:
+      警告 6002: 表/视图“WISEWEB_WYN.dbo.link”未定义主键。已推断出该键，并将定义创建为只读的表/视图。
+      -->
+  <EntityType Name="link">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="name" Type="varchar" MaxLength="200" />
+    <Property Name="url" Type="varchar" MaxLength="250" />
+    <Property Name="type" Type="int" />
+    <Property Name="types" Type="int" />
+    <Property Name="ordernum" Type="int" />
+  </EntityType>
+  <!--生成过程中发现错误:
+      警告 6002: 表/视图“WISEWEB_WYN.dbo.Logs”未定义主键。已推断出该键，并将定义创建为只读的表/视图。
+      -->
+  <EntityType Name="Logs">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="bigint" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="IPAddr" Type="char" MaxLength="18" />
+    <Property Name="maName" Type="char" MaxLength="10" />
+    <Property Name="moving" Type="char" MaxLength="50" />
+    <Property Name="LogTime" Type="datetime" />
+  </EntityType>
+  <!--生成过程中发现错误:
+      警告 6002: 表/视图“WISEWEB_WYN.dbo.Master”未定义主键。已推断出该键，并将定义创建为只读的表/视图。
+      -->
+  <EntityType Name="Master">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="bigint" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="UserName" Type="char" MaxLength="18" />
+    <Property Name="PassWord" Type="char" MaxLength="18" />
+    <Property Name="Master_Level" Type="char" MaxLength="150" />
+    <Property Name="Name" Type="char" MaxLength="10" />
+    <Property Name="Dept" Type="char" MaxLength="20" />
+    <Property Name="Act" Type="smallint" />
+    <Property Name="LoginTimes" Type="bigint" />
+  </EntityType>
+  <!--生成过程中发现错误:
+      警告 6002: 表/视图“WISEWEB_WYN.dbo.Master_Level”未定义主键。已推断出该键，并将定义创建为只读的表/视图。
+      -->
+  <EntityType Name="Master_Level">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="Chinese" Type="char" MaxLength="20" />
+    <Property Name="English" Type="char" MaxLength="20" />
+  </EntityType>
+  <!--生成过程中发现错误:
+      警告 6002: 表/视图“WISEWEB_WYN.dbo.Menu”未定义主键。已推断出该键，并将定义创建为只读的表/视图。
+      -->
+  <EntityType Name="Menu">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="name" Type="char" MaxLength="50" />
+    <Property Name="content" Type="ntext" />
+    <Property Name="url" Type="char" MaxLength="200" />
+    <Property Name="bigid" Type="int" />
+    <Property Name="sort" Type="int" />
+    <Property Name="pic" Type="char" MaxLength="200" />
+  </EntityType>
+  <!--生成过程中发现错误:
+      警告 6002: 表/视图“WISEWEB_WYN.dbo.Menu_IEC”未定义主键。已推断出该键，并将定义创建为只读的表/视图。
+      -->
+  <EntityType Name="Menu_IEC">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="name" Type="char" MaxLength="50" />
+    <Property Name="content" Type="ntext" />
+    <Property Name="url" Type="char" MaxLength="200" />
+    <Property Name="bigid" Type="int" />
+    <Property Name="sort" Type="int" />
+    <Property Name="pic" Type="char" MaxLength="200" />
+  </EntityType>
+  <!--生成过程中发现错误:
+      警告 6002: 表/视图“WISEWEB_WYN.dbo.Menu_newIEC”未定义主键。已推断出该键，并将定义创建为只读的表/视图。
+      -->
+  <EntityType Name="Menu_newIEC">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="name" Type="char" MaxLength="500" />
+    <Property Name="content" Type="ntext" />
+    <Property Name="url" Type="char" MaxLength="200" />
+    <Property Name="bigid" Type="int" />
+    <Property Name="sort" Type="int" />
+    <Property Name="pic" Type="char" MaxLength="200" />
+  </EntityType>
+  <!--生成过程中发现错误:
+      警告 6002: 表/视图“WISEWEB_WYN.dbo.Menu_szs”未定义主键。已推断出该键，并将定义创建为只读的表/视图。
+      -->
+  <EntityType Name="Menu_szs">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="name" Type="char" MaxLength="50" />
+    <Property Name="content" Type="ntext" />
+    <Property Name="url" Type="char" MaxLength="200" />
+    <Property Name="bigid" Type="int" />
+    <Property Name="sort" Type="int" />
+    <Property Name="pic" Type="char" MaxLength="200" />
+  </EntityType>
+  <!--生成过程中发现错误:
+      警告 6002: 表/视图“WISEWEB_WYN.dbo.MenuEn”未定义主键。已推断出该键，并将定义创建为只读的表/视图。
+      -->
+  <EntityType Name="MenuEn">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="Name" Type="char" MaxLength="50" />
+    <Property Name="Url" Type="char" MaxLength="200" />
+    <Property Name="Content" Type="ntext" />
+    <Property Name="BigId" Type="int" />
+    <Property Name="sort" Type="int" />
+    <Property Name="pic" Type="char" MaxLength="200" />
+  </EntityType>
+  <EntityType Name="newIEC_Student">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="xuehao" Type="varchar" MaxLength="50" />
+    <Property Name="name" Type="varchar" MaxLength="50" />
+  </EntityType>
+  <EntityType Name="News">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="bigint" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="Title" Type="char" MaxLength="200" />
+    <Property Name="TitleEn" Type="char" MaxLength="200" />
+    <Property Name="Content" Type="ntext" />
+    <Property Name="ContentEn" Type="ntext" />
+    <Property Name="keys" Type="char" MaxLength="20" />
+    <Property Name="keysEn" Type="char" MaxLength="20" />
+    <Property Name="Fromto" Type="char" MaxLength="20" />
+    <Property Name="FromtoEn" Type="char" MaxLength="20" />
+    <Property Name="BeginTime" Type="datetime" />
+    <Property Name="UpDateTime" Type="datetime" />
+    <Property Name="Counter" Type="bigint" />
+    <Property Name="CounterEn" Type="bigint" />
+    <Property Name="Intro" Type="text" />
+    <Property Name="IntroEn" Type="text" />
+    <Property Name="TypeID" Type="int" />
+    <Property Name="TypeIDEn" Type="int" />
+    <Property Name="newsType" Type="int" />
+    <Property Name="url" Type="char" MaxLength="100" />
+    <Property Name="isindex" Type="int" />
+    <Property Name="flash" Type="int" />
+    <Property Name="isEDP" Type="char" MaxLength="100" />
+    <Property Name="isKCB" Type="char" MaxLength="100" />
+    <Property Name="isPM" Type="char" MaxLength="100" />
+    <Property Name="isBA" Type="char" MaxLength="100" />
+    <Property Name="isTJBA" Type="char" MaxLength="100" />
+    <Property Name="isIE" Type="char" MaxLength="100" />
+    <Property Name="isSOE" Type="char" MaxLength="100" />
+    <Property Name="isBZS" Type="nchar" MaxLength="10" />
+    <Property Name="isSZS" Type="nchar" MaxLength="10" />
+    <Property Name="isIMWISE" Type="nchar" MaxLength="10" />
+  </EntityType>
+  <!--生成过程中发现错误:
+      警告 6002: 表/视图“WISEWEB_WYN.dbo.News_ANU”未定义主键。已推断出该键，并将定义创建为只读的表/视图。
+      -->
+  <EntityType Name="News_ANU">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="bigint" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="Title" Type="char" MaxLength="140" />
+    <Property Name="TitleEn" Type="char" MaxLength="120" />
+    <Property Name="Content" Type="ntext" />
+    <Property Name="ContentEn" Type="ntext" />
+    <Property Name="keys" Type="char" MaxLength="20" />
+    <Property Name="keysEn" Type="char" MaxLength="20" />
+    <Property Name="Fromto" Type="char" MaxLength="20" />
+    <Property Name="FromtoEn" Type="char" MaxLength="20" />
+    <Property Name="UpDateTime" Type="datetime" />
+    <Property Name="Counter" Type="bigint" />
+    <Property Name="CounterEn" Type="bigint" />
+    <Property Name="Intro" Type="text" />
+    <Property Name="IntroEn" Type="text" />
+    <Property Name="TypeID" Type="int" />
+    <Property Name="TypeIDEn" Type="int" />
+    <Property Name="newsType" Type="int" />
+    <Property Name="url" Type="char" MaxLength="100" />
+    <Property Name="isindex" Type="int" />
+    <Property Name="flash" Type="int" />
+  </EntityType>
+  <!--生成过程中发现错误:
+      警告 6002: 表/视图“WISEWEB_WYN.dbo.News_BA”未定义主键。已推断出该键，并将定义创建为只读的表/视图。
+      -->
+  <EntityType Name="News_BA">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="bigint" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="Title" Type="char" MaxLength="140" />
+    <Property Name="TitleEn" Type="char" MaxLength="120" />
+    <Property Name="Content" Type="ntext" />
+    <Property Name="ContentEn" Type="ntext" />
+    <Property Name="keys" Type="char" MaxLength="20" />
+    <Property Name="keysEn" Type="char" MaxLength="20" />
+    <Property Name="Fromto" Type="char" MaxLength="20" />
+    <Property Name="FromtoEn" Type="char" MaxLength="20" />
+    <Property Name="UpDateTime" Type="datetime" />
+    <Property Name="Counter" Type="bigint" />
+    <Property Name="CounterEn" Type="bigint" />
+    <Property Name="Intro" Type="text" />
+    <Property Name="IntroEn" Type="text" />
+    <Property Name="TypeID" Type="int" />
+    <Property Name="TypeIDEn" Type="int" />
+    <Property Name="newsType" Type="int" />
+    <Property Name="url" Type="char" MaxLength="100" />
+    <Property Name="isindex" Type="int" />
+    <Property Name="flash" Type="int" />
+  </EntityType>
+  <!--生成过程中发现错误:
+      警告 6002: 表/视图“WISEWEB_WYN.dbo.News_COFC”未定义主键。已推断出该键，并将定义创建为只读的表/视图。
+      -->
+  <EntityType Name="News_COFC">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="bigint" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="Title" Type="char" MaxLength="140" />
+    <Property Name="TitleEn" Type="char" MaxLength="120" />
+    <Property Name="Content" Type="ntext" />
+    <Property Name="ContentEn" Type="ntext" />
+    <Property Name="keys" Type="char" MaxLength="20" />
+    <Property Name="keysEn" Type="char" MaxLength="20" />
+    <Property Name="Fromto" Type="char" MaxLength="20" />
+    <Property Name="FromtoEn" Type="char" MaxLength="20" />
+    <Property Name="UpDateTime" Type="datetime" />
+    <Property Name="Counter" Type="bigint" />
+    <Property Name="CounterEn" Type="bigint" />
+    <Property Name="Intro" Type="text" />
+    <Property Name="IntroEn" Type="text" />
+    <Property Name="TypeID" Type="int" />
+    <Property Name="TypeIDEn" Type="int" />
+    <Property Name="newsType" Type="int" />
+    <Property Name="url" Type="char" MaxLength="100" />
+    <Property Name="isindex" Type="int" />
+    <Property Name="flash" Type="int" />
+  </EntityType>
+  <!--生成过程中发现错误:
+      警告 6002: 表/视图“WISEWEB_WYN.dbo.News_IEC”未定义主键。已推断出该键，并将定义创建为只读的表/视图。
+      -->
+  <EntityType Name="News_IEC">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="bigint" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="Title" Type="char" MaxLength="140" />
+    <Property Name="TitleEn" Type="char" MaxLength="120" />
+    <Property Name="Content" Type="ntext" />
+    <Property Name="ContentEn" Type="ntext" />
+    <Property Name="keys" Type="char" MaxLength="20" />
+    <Property Name="keysEn" Type="char" MaxLength="20" />
+    <Property Name="Fromto" Type="char" MaxLength="20" />
+    <Property Name="FromtoEn" Type="char" MaxLength="20" />
+    <Property Name="UpDateTime" Type="datetime" />
+    <Property Name="Counter" Type="bigint" />
+    <Property Name="CounterEn" Type="bigint" />
+    <Property Name="Intro" Type="text" />
+    <Property Name="IntroEn" Type="text" />
+    <Property Name="TypeID" Type="int" />
+    <Property Name="TypeIDEn" Type="int" />
+    <Property Name="newsType" Type="int" />
+    <Property Name="url" Type="char" MaxLength="100" />
+    <Property Name="isindex" Type="int" />
+    <Property Name="flash" Type="int" />
+  </EntityType>
+  <!--生成过程中发现错误:
+      警告 6002: 表/视图“WISEWEB_WYN.dbo.News_imWISE”未定义主键。已推断出该键，并将定义创建为只读的表/视图。
+      -->
+  <EntityType Name="News_imWISE">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="bigint" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="Title" Type="char" MaxLength="140" />
+    <Property Name="TitleEn" Type="char" MaxLength="120" />
+    <Property Name="Content" Type="ntext" />
+    <Property Name="ContentEn" Type="ntext" />
+    <Property Name="keys" Type="char" MaxLength="20" />
+    <Property Name="keysEn" Type="char" MaxLength="20" />
+    <Property Name="Fromto" Type="char" MaxLength="20" />
+    <Property Name="FromtoEn" Type="char" MaxLength="20" />
+    <Property Name="UpDateTime" Type="datetime" />
+    <Property Name="Counter" Type="bigint" />
+    <Property Name="CounterEn" Type="bigint" />
+    <Property Name="Intro" Type="text" />
+    <Property Name="IntroEn" Type="text" />
+    <Property Name="TypeID" Type="int" />
+    <Property Name="TypeIDEn" Type="int" />
+    <Property Name="newsType" Type="int" />
+    <Property Name="url" Type="char" MaxLength="100" />
+    <Property Name="isindex" Type="int" />
+    <Property Name="flash" Type="int" />
+  </EntityType>
+  <!--生成过程中发现错误:
+      警告 6002: 表/视图“WISEWEB_WYN.dbo.News_KSU”未定义主键。已推断出该键，并将定义创建为只读的表/视图。
+      -->
+  <EntityType Name="News_KSU">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="bigint" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="Title" Type="char" MaxLength="140" />
+    <Property Name="TitleEn" Type="char" MaxLength="120" />
+    <Property Name="Content" Type="ntext" />
+    <Property Name="ContentEn" Type="ntext" />
+    <Property Name="keys" Type="char" MaxLength="20" />
+    <Property Name="keysEn" Type="char" MaxLength="20" />
+    <Property Name="Fromto" Type="char" MaxLength="20" />
+    <Property Name="FromtoEn" Type="char" MaxLength="20" />
+    <Property Name="UpDateTime" Type="datetime" />
+    <Property Name="Counter" Type="bigint" />
+    <Property Name="CounterEn" Type="bigint" />
+    <Property Name="Intro" Type="text" />
+    <Property Name="IntroEn" Type="text" />
+    <Property Name="TypeID" Type="int" />
+    <Property Name="TypeIDEn" Type="int" />
+    <Property Name="newsType" Type="int" />
+    <Property Name="url" Type="char" MaxLength="100" />
+    <Property Name="isindex" Type="int" />
+    <Property Name="flash" Type="int" />
+  </EntityType>
+  <!--生成过程中发现错误:
+      警告 6002: 表/视图“WISEWEB_WYN.dbo.News_KSU_bak”未定义主键。已推断出该键，并将定义创建为只读的表/视图。
+      -->
+  <EntityType Name="News_KSU_bak">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="bigint" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="Title" Type="char" MaxLength="140" />
+    <Property Name="TitleEn" Type="char" MaxLength="120" />
+    <Property Name="Content" Type="ntext" />
+    <Property Name="ContentEn" Type="ntext" />
+    <Property Name="keys" Type="char" MaxLength="20" />
+    <Property Name="keysEn" Type="char" MaxLength="20" />
+    <Property Name="Fromto" Type="char" MaxLength="20" />
+    <Property Name="FromtoEn" Type="char" MaxLength="20" />
+    <Property Name="UpDateTime" Type="datetime" />
+    <Property Name="Counter" Type="bigint" />
+    <Property Name="CounterEn" Type="bigint" />
+    <Property Name="Intro" Type="text" />
+    <Property Name="IntroEn" Type="text" />
+    <Property Name="TypeID" Type="int" />
+    <Property Name="TypeIDEn" Type="int" />
+    <Property Name="newsType" Type="int" />
+    <Property Name="url" Type="char" MaxLength="100" />
+    <Property Name="isindex" Type="int" />
+    <Property Name="flash" Type="int" />
+  </EntityType>
+  <!--生成过程中发现错误:
+      警告 6002: 表/视图“WISEWEB_WYN.dbo.News_MONASH”未定义主键。已推断出该键，并将定义创建为只读的表/视图。
+      -->
+  <EntityType Name="News_MONASH">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="bigint" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="Title" Type="char" MaxLength="140" />
+    <Property Name="TitleEn" Type="char" MaxLength="120" />
+    <Property Name="Content" Type="ntext" />
+    <Property Name="ContentEn" Type="ntext" />
+    <Property Name="keys" Type="char" MaxLength="20" />
+    <Property Name="keysEn" Type="char" MaxLength="20" />
+    <Property Name="Fromto" Type="char" MaxLength="20" />
+    <Property Name="FromtoEn" Type="char" MaxLength="20" />
+    <Property Name="UpDateTime" Type="datetime" />
+    <Property Name="Counter" Type="bigint" />
+    <Property Name="CounterEn" Type="bigint" />
+    <Property Name="Intro" Type="text" />
+    <Property Name="IntroEn" Type="text" />
+    <Property Name="TypeID" Type="int" />
+    <Property Name="TypeIDEn" Type="int" />
+    <Property Name="newsType" Type="int" />
+    <Property Name="url" Type="char" MaxLength="100" />
+    <Property Name="isindex" Type="int" />
+    <Property Name="flash" Type="int" />
+  </EntityType>
+  <!--生成过程中发现错误:
+      警告 6002: 表/视图“WISEWEB_WYN.dbo.News_newIEC”未定义主键。已推断出该键，并将定义创建为只读的表/视图。
+      -->
+  <EntityType Name="News_newIEC">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="bigint" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="Title" Type="char" MaxLength="140" />
+    <Property Name="TitleEn" Type="char" MaxLength="120" />
+    <Property Name="Content" Type="ntext" />
+    <Property Name="ContentEn" Type="ntext" />
+    <Property Name="keys" Type="char" MaxLength="20" />
+    <Property Name="keysEn" Type="char" MaxLength="20" />
+    <Property Name="Fromto" Type="char" MaxLength="20" />
+    <Property Name="FromtoEn" Type="char" MaxLength="20" />
+    <Property Name="UpDateTime" Type="datetime" />
+    <Property Name="Counter" Type="bigint" />
+    <Property Name="CounterEn" Type="bigint" />
+    <Property Name="Intro" Type="text" />
+    <Property Name="IntroEn" Type="text" />
+    <Property Name="TypeID" Type="int" />
+    <Property Name="TypeIDEn" Type="int" />
+    <Property Name="newsType" Type="int" />
+    <Property Name="url" Type="char" MaxLength="100" />
+    <Property Name="isindex" Type="int" />
+    <Property Name="flash" Type="int" />
+  </EntityType>
+  <!--生成过程中发现错误:
+      警告 6002: 表/视图“WISEWEB_WYN.dbo.News_SS”未定义主键。已推断出该键，并将定义创建为只读的表/视图。
+      -->
+  <EntityType Name="News_SS">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="bigint" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="Title" Type="char" MaxLength="140" />
+    <Property Name="TitleEn" Type="char" MaxLength="120" />
+    <Property Name="Content" Type="ntext" />
+    <Property Name="ContentEn" Type="ntext" />
+    <Property Name="keys" Type="char" MaxLength="20" />
+    <Property Name="keysEn" Type="char" MaxLength="20" />
+    <Property Name="Fromto" Type="char" MaxLength="20" />
+    <Property Name="FromtoEn" Type="char" MaxLength="20" />
+    <Property Name="UpDateTime" Type="datetime" />
+    <Property Name="Counter" Type="bigint" />
+    <Property Name="CounterEn" Type="bigint" />
+    <Property Name="Intro" Type="text" />
+    <Property Name="IntroEn" Type="text" />
+    <Property Name="TypeID" Type="int" />
+    <Property Name="TypeIDEn" Type="int" />
+    <Property Name="newsType" Type="int" />
+    <Property Name="url" Type="char" MaxLength="100" />
+    <Property Name="isindex" Type="int" />
+    <Property Name="flash" Type="int" />
+  </EntityType>
+  <!--生成过程中发现错误:
+      警告 6002: 表/视图“WISEWEB_WYN.dbo.News_SS2011”未定义主键。已推断出该键，并将定义创建为只读的表/视图。
+      -->
+  <EntityType Name="News_SS2011">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="bigint" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="Title" Type="char" MaxLength="140" />
+    <Property Name="TitleEn" Type="char" MaxLength="120" />
+    <Property Name="Content" Type="ntext" />
+    <Property Name="ContentEn" Type="ntext" />
+    <Property Name="keys" Type="char" MaxLength="20" />
+    <Property Name="keysEn" Type="char" MaxLength="20" />
+    <Property Name="Fromto" Type="char" MaxLength="20" />
+    <Property Name="FromtoEn" Type="char" MaxLength="20" />
+    <Property Name="UpDateTime" Type="datetime" />
+    <Property Name="Counter" Type="bigint" />
+    <Property Name="CounterEn" Type="bigint" />
+    <Property Name="Intro" Type="text" />
+    <Property Name="IntroEn" Type="text" />
+    <Property Name="TypeID" Type="int" />
+    <Property Name="TypeIDEn" Type="int" />
+    <Property Name="newsType" Type="int" />
+    <Property Name="url" Type="char" MaxLength="100" />
+    <Property Name="isindex" Type="int" />
+    <Property Name="flash" Type="int" />
+  </EntityType>
+  <!--生成过程中发现错误:
+      警告 6002: 表/视图“WISEWEB_WYN.dbo.News_SS2012”未定义主键。已推断出该键，并将定义创建为只读的表/视图。
+      -->
+  <EntityType Name="News_SS2012">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="bigint" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="Title" Type="char" MaxLength="140" />
+    <Property Name="TitleEn" Type="char" MaxLength="120" />
+    <Property Name="Content" Type="ntext" />
+    <Property Name="ContentEn" Type="ntext" />
+    <Property Name="keys" Type="char" MaxLength="20" />
+    <Property Name="keysEn" Type="char" MaxLength="20" />
+    <Property Name="Fromto" Type="char" MaxLength="20" />
+    <Property Name="FromtoEn" Type="char" MaxLength="20" />
+    <Property Name="UpDateTime" Type="datetime" />
+    <Property Name="Counter" Type="bigint" />
+    <Property Name="CounterEn" Type="bigint" />
+    <Property Name="Intro" Type="text" />
+    <Property Name="IntroEn" Type="text" />
+    <Property Name="TypeID" Type="int" />
+    <Property Name="TypeIDEn" Type="int" />
+    <Property Name="newsType" Type="int" />
+    <Property Name="url" Type="char" MaxLength="100" />
+    <Property Name="isindex" Type="int" />
+    <Property Name="flash" Type="int" />
+  </EntityType>
+  <!--生成过程中发现错误:
+      警告 6002: 表/视图“WISEWEB_WYN.dbo.News_szs”未定义主键。已推断出该键，并将定义创建为只读的表/视图。
+      -->
+  <EntityType Name="News_szs">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="bigint" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="Title" Type="char" MaxLength="280" />
+    <Property Name="TitleEn" Type="char" MaxLength="120" />
+    <Property Name="Content" Type="ntext" />
+    <Property Name="ContentEn" Type="ntext" />
+    <Property Name="keys" Type="char" MaxLength="20" />
+    <Property Name="keysEn" Type="char" MaxLength="20" />
+    <Property Name="Fromto" Type="char" MaxLength="20" />
+    <Property Name="FromtoEn" Type="char" MaxLength="20" />
+    <Property Name="UpDateTime" Type="datetime" />
+    <Property Name="Counter" Type="bigint" />
+    <Property Name="CounterEn" Type="bigint" />
+    <Property Name="Intro" Type="text" />
+    <Property Name="IntroEn" Type="text" />
+    <Property Name="TypeID" Type="int" />
+    <Property Name="TypeIDEn" Type="int" />
+    <Property Name="newsType" Type="int" />
+    <Property Name="url" Type="char" MaxLength="100" />
+    <Property Name="isindex" Type="int" />
+    <Property Name="flash" Type="int" />
+  </EntityType>
+  <!--生成过程中发现错误:
+      警告 6002: 表/视图“WISEWEB_WYN.dbo.News_TJBA”未定义主键。已推断出该键，并将定义创建为只读的表/视图。
+      -->
+  <EntityType Name="News_TJBA">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="bigint" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="Title" Type="char" MaxLength="140" />
+    <Property Name="TitleEn" Type="char" MaxLength="120" />
+    <Property Name="Content" Type="ntext" />
+    <Property Name="ContentEn" Type="ntext" />
+    <Property Name="keys" Type="char" MaxLength="20" />
+    <Property Name="keysEn" Type="char" MaxLength="20" />
+    <Property Name="Fromto" Type="char" MaxLength="20" />
+    <Property Name="FromtoEn" Type="char" MaxLength="20" />
+    <Property Name="UpDateTime" Type="datetime" />
+    <Property Name="Counter" Type="bigint" />
+    <Property Name="CounterEn" Type="bigint" />
+    <Property Name="Intro" Type="text" />
+    <Property Name="IntroEn" Type="text" />
+    <Property Name="TypeID" Type="int" />
+    <Property Name="TypeIDEn" Type="int" />
+    <Property Name="newsType" Type="int" />
+    <Property Name="url" Type="char" MaxLength="100" />
+    <Property Name="isindex" Type="int" />
+    <Property Name="flash" Type="int" />
+  </EntityType>
+  <!--生成过程中发现错误:
+      警告 6002: 表/视图“WISEWEB_WYN.dbo.News_UCD”未定义主键。已推断出该键，并将定义创建为只读的表/视图。
+      -->
+  <EntityType Name="News_UCD">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="bigint" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="Title" Type="char" MaxLength="140" />
+    <Property Name="TitleEn" Type="char" MaxLength="120" />
+    <Property Name="Content" Type="ntext" />
+    <Property Name="ContentEn" Type="ntext" />
+    <Property Name="keys" Type="char" MaxLength="20" />
+    <Property Name="keysEn" Type="char" MaxLength="20" />
+    <Property Name="Fromto" Type="char" MaxLength="20" />
+    <Property Name="FromtoEn" Type="char" MaxLength="20" />
+    <Property Name="UpDateTime" Type="datetime" />
+    <Property Name="Counter" Type="bigint" />
+    <Property Name="CounterEn" Type="bigint" />
+    <Property Name="Intro" Type="text" />
+    <Property Name="IntroEn" Type="text" />
+    <Property Name="TypeID" Type="int" />
+    <Property Name="TypeIDEn" Type="int" />
+    <Property Name="newsType" Type="int" />
+    <Property Name="url" Type="char" MaxLength="100" />
+    <Property Name="isindex" Type="int" />
+    <Property Name="flash" Type="int" />
+  </EntityType>
+  <!--生成过程中发现错误:
+      警告 6002: 表/视图“WISEWEB_WYN.dbo.News_UNCC”未定义主键。已推断出该键，并将定义创建为只读的表/视图。
+      -->
+  <EntityType Name="News_UNCC">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="bigint" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="Title" Type="char" MaxLength="140" />
+    <Property Name="TitleEn" Type="char" MaxLength="120" />
+    <Property Name="Content" Type="ntext" />
+    <Property Name="ContentEn" Type="ntext" />
+    <Property Name="keys" Type="char" MaxLength="20" />
+    <Property Name="keysEn" Type="char" MaxLength="20" />
+    <Property Name="Fromto" Type="char" MaxLength="20" />
+    <Property Name="FromtoEn" Type="char" MaxLength="20" />
+    <Property Name="UpDateTime" Type="datetime" />
+    <Property Name="Counter" Type="bigint" />
+    <Property Name="CounterEn" Type="bigint" />
+    <Property Name="Intro" Type="text" />
+    <Property Name="IntroEn" Type="text" />
+    <Property Name="TypeID" Type="int" />
+    <Property Name="TypeIDEn" Type="int" />
+    <Property Name="newsType" Type="int" />
+    <Property Name="url" Type="char" MaxLength="100" />
+    <Property Name="isindex" Type="int" />
+    <Property Name="flash" Type="int" />
+  </EntityType>
+  <!--生成过程中发现错误:
+      警告 6002: 表/视图“WISEWEB_WYN.dbo.News_XLY”未定义主键。已推断出该键，并将定义创建为只读的表/视图。
+      -->
+  <EntityType Name="News_XLY">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="bigint" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="Title" Type="char" MaxLength="140" />
+    <Property Name="TitleEn" Type="char" MaxLength="120" />
+    <Property Name="Content" Type="ntext" />
+    <Property Name="ContentEn" Type="ntext" />
+    <Property Name="keys" Type="char" MaxLength="20" />
+    <Property Name="keysEn" Type="char" MaxLength="20" />
+    <Property Name="Fromto" Type="char" MaxLength="20" />
+    <Property Name="FromtoEn" Type="char" MaxLength="20" />
+    <Property Name="UpDateTime" Type="datetime" />
+    <Property Name="Counter" Type="bigint" />
+    <Property Name="CounterEn" Type="bigint" />
+    <Property Name="Intro" Type="text" />
+    <Property Name="IntroEn" Type="text" />
+    <Property Name="TypeID" Type="int" />
+    <Property Name="TypeIDEn" Type="int" />
+    <Property Name="newsType" Type="int" />
+    <Property Name="url" Type="char" MaxLength="100" />
+    <Property Name="isindex" Type="int" />
+    <Property Name="flash" Type="int" />
+  </EntityType>
+  <!--生成过程中发现错误:
+      警告 6002: 表/视图“WISEWEB_WYN.dbo.News_XLY2011”未定义主键。已推断出该键，并将定义创建为只读的表/视图。
+      -->
+  <EntityType Name="News_XLY2011">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="bigint" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="Title" Type="char" MaxLength="140" />
+    <Property Name="TitleEn" Type="char" MaxLength="120" />
+    <Property Name="Content" Type="ntext" />
+    <Property Name="ContentEn" Type="ntext" />
+    <Property Name="keys" Type="char" MaxLength="20" />
+    <Property Name="keysEn" Type="char" MaxLength="20" />
+    <Property Name="Fromto" Type="char" MaxLength="20" />
+    <Property Name="FromtoEn" Type="char" MaxLength="20" />
+    <Property Name="UpDateTime" Type="datetime" />
+    <Property Name="Counter" Type="bigint" />
+    <Property Name="CounterEn" Type="bigint" />
+    <Property Name="Intro" Type="text" />
+    <Property Name="IntroEn" Type="text" />
+    <Property Name="TypeID" Type="int" />
+    <Property Name="TypeIDEn" Type="int" />
+    <Property Name="newsType" Type="int" />
+    <Property Name="url" Type="char" MaxLength="100" />
+    <Property Name="isindex" Type="int" />
+    <Property Name="flash" Type="int" />
+  </EntityType>
+  <!--生成过程中发现错误:
+      警告 6002: 表/视图“WISEWEB_WYN.dbo.NewsPdf”未定义主键。已推断出该键，并将定义创建为只读的表/视图。
+      -->
+  <EntityType Name="NewsPdf">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="bigint" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="Title" Type="char" MaxLength="200" />
+    <Property Name="TitleEn" Type="char" MaxLength="200" />
+    <Property Name="Content" Type="ntext" />
+    <Property Name="ContentEn" Type="ntext" />
+    <Property Name="keys" Type="char" MaxLength="20" />
+    <Property Name="keysEn" Type="char" MaxLength="20" />
+    <Property Name="Fromto" Type="char" MaxLength="20" />
+    <Property Name="FromtoEn" Type="char" MaxLength="20" />
+    <Property Name="BeginTime" Type="datetime" />
+    <Property Name="UpDateTime" Type="datetime" />
+    <Property Name="Counter" Type="bigint" />
+    <Property Name="CounterEn" Type="bigint" />
+    <Property Name="Intro" Type="text" />
+    <Property Name="IntroEn" Type="text" />
+    <Property Name="TypeID" Type="int" />
+    <Property Name="TypeIDEn" Type="int" />
+    <Property Name="newsType" Type="int" />
+    <Property Name="url" Type="char" MaxLength="100" />
+    <Property Name="isindex" Type="int" />
+    <Property Name="flash" Type="int" />
+    <Property Name="period" Type="char" MaxLength="20" />
+    <Property Name="pdfUrl" Type="text" />
+    <Property Name="isPdf" Type="int" />
+  </EntityType>
+  <!--生成过程中发现错误:
+      警告 6002: 表/视图“WISEWEB_WYN.dbo.NewsType”未定义主键。已推断出该键，并将定义创建为只读的表/视图。
+      -->
+  <EntityType Name="NewsType">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="Name" Type="char" MaxLength="20" />
+    <Property Name="BigID" Type="int" />
+  </EntityType>
+  <!--生成过程中发现错误:
+      警告 6002: 表/视图“WISEWEB_WYN.dbo.NewsType_ANU”未定义主键。已推断出该键，并将定义创建为只读的表/视图。
+      -->
+  <EntityType Name="NewsType_ANU">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="Name" Type="char" MaxLength="50" />
+    <Property Name="BigId" Type="int" />
+  </EntityType>
+  <!--生成过程中发现错误:
+      警告 6002: 表/视图“WISEWEB_WYN.dbo.NewsType_BA”未定义主键。已推断出该键，并将定义创建为只读的表/视图。
+      -->
+  <EntityType Name="NewsType_BA">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="Name" Type="char" MaxLength="50" />
+    <Property Name="BigId" Type="int" />
+  </EntityType>
+  <!--生成过程中发现错误:
+      警告 6002: 表/视图“WISEWEB_WYN.dbo.NewsType_COFC”未定义主键。已推断出该键，并将定义创建为只读的表/视图。
+      -->
+  <EntityType Name="NewsType_COFC">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="Name" Type="char" MaxLength="50" />
+    <Property Name="BigId" Type="int" />
+  </EntityType>
+  <!--生成过程中发现错误:
+      警告 6002: 表/视图“WISEWEB_WYN.dbo.NewsType_IEC”未定义主键。已推断出该键，并将定义创建为只读的表/视图。
+      -->
+  <EntityType Name="NewsType_IEC">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="Name" Type="char" MaxLength="50" />
+    <Property Name="BigId" Type="int" />
+  </EntityType>
+  <!--生成过程中发现错误:
+      警告 6002: 表/视图“WISEWEB_WYN.dbo.NewsType_imWISE”未定义主键。已推断出该键，并将定义创建为只读的表/视图。
+      -->
+  <EntityType Name="NewsType_imWISE">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="Name" Type="char" MaxLength="50" />
+    <Property Name="BigId" Type="int" />
+  </EntityType>
+  <!--生成过程中发现错误:
+      警告 6002: 表/视图“WISEWEB_WYN.dbo.NewsType_KSU”未定义主键。已推断出该键，并将定义创建为只读的表/视图。
+      -->
+  <EntityType Name="NewsType_KSU">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="Name" Type="char" MaxLength="50" />
+    <Property Name="BigId" Type="int" />
+  </EntityType>
+  <!--生成过程中发现错误:
+      警告 6002: 表/视图“WISEWEB_WYN.dbo.NewsType_MONASH”未定义主键。已推断出该键，并将定义创建为只读的表/视图。
+      -->
+  <EntityType Name="NewsType_MONASH">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="Name" Type="char" MaxLength="50" />
+    <Property Name="BigId" Type="int" />
+  </EntityType>
+  <!--生成过程中发现错误:
+      警告 6002: 表/视图“WISEWEB_WYN.dbo.NewsType_newIEC”未定义主键。已推断出该键，并将定义创建为只读的表/视图。
+      -->
+  <EntityType Name="NewsType_newIEC">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="Name" Type="char" MaxLength="50" />
+    <Property Name="BigId" Type="int" />
+  </EntityType>
+  <!--生成过程中发现错误:
+      警告 6002: 表/视图“WISEWEB_WYN.dbo.Newstype_SS”未定义主键。已推断出该键，并将定义创建为只读的表/视图。
+      -->
+  <EntityType Name="Newstype_SS">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="Name" Type="char" MaxLength="50" />
+    <Property Name="BigId" Type="int" />
+  </EntityType>
+  <!--生成过程中发现错误:
+      警告 6002: 表/视图“WISEWEB_WYN.dbo.Newstype_SS2011”未定义主键。已推断出该键，并将定义创建为只读的表/视图。
+      -->
+  <EntityType Name="Newstype_SS2011">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="Name" Type="char" MaxLength="50" />
+    <Property Name="BigId" Type="int" />
+  </EntityType>
+  <!--生成过程中发现错误:
+      警告 6002: 表/视图“WISEWEB_WYN.dbo.Newstype_SS2012”未定义主键。已推断出该键，并将定义创建为只读的表/视图。
+      -->
+  <EntityType Name="Newstype_SS2012">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="Name" Type="char" MaxLength="50" />
+    <Property Name="BigId" Type="int" />
+  </EntityType>
+  <!--生成过程中发现错误:
+      警告 6002: 表/视图“WISEWEB_WYN.dbo.NewsType_szs”未定义主键。已推断出该键，并将定义创建为只读的表/视图。
+      -->
+  <EntityType Name="NewsType_szs">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="Name" Type="char" MaxLength="50" />
+    <Property Name="BigId" Type="int" />
+  </EntityType>
+  <!--生成过程中发现错误:
+      警告 6002: 表/视图“WISEWEB_WYN.dbo.NewsType_TJBA”未定义主键。已推断出该键，并将定义创建为只读的表/视图。
+      -->
+  <EntityType Name="NewsType_TJBA">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="Name" Type="char" MaxLength="50" />
+    <Property Name="BigId" Type="int" />
+  </EntityType>
+  <!--生成过程中发现错误:
+      警告 6002: 表/视图“WISEWEB_WYN.dbo.NewsType_UCD”未定义主键。已推断出该键，并将定义创建为只读的表/视图。
+      -->
+  <EntityType Name="NewsType_UCD">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="Name" Type="char" MaxLength="50" />
+    <Property Name="BigId" Type="int" />
+  </EntityType>
+  <!--生成过程中发现错误:
+      警告 6002: 表/视图“WISEWEB_WYN.dbo.NewsType_UNCC”未定义主键。已推断出该键，并将定义创建为只读的表/视图。
+      -->
+  <EntityType Name="NewsType_UNCC">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="Name" Type="char" MaxLength="50" />
+    <Property Name="BigId" Type="int" />
+  </EntityType>
+  <!--生成过程中发现错误:
+      警告 6002: 表/视图“WISEWEB_WYN.dbo.NewsType_XLY”未定义主键。已推断出该键，并将定义创建为只读的表/视图。
+      -->
+  <EntityType Name="NewsType_XLY">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="Name" Type="char" MaxLength="50" />
+    <Property Name="BigId" Type="int" />
+  </EntityType>
+  <!--生成过程中发现错误:
+      警告 6002: 表/视图“WISEWEB_WYN.dbo.NewsType_XLY2011”未定义主键。已推断出该键，并将定义创建为只读的表/视图。
+      -->
+  <EntityType Name="NewsType_XLY2011">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="Name" Type="char" MaxLength="50" />
+    <Property Name="BigId" Type="int" />
+  </EntityType>
+  <!--生成过程中发现错误:
+      警告 6002: 表/视图“WISEWEB_WYN.dbo.NewsTypeEn”未定义主键。已推断出该键，并将定义创建为只读的表/视图。
+      -->
+  <EntityType Name="NewsTypeEn">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="Name" Type="char" MaxLength="50" />
+    <Property Name="BigId" Type="int" />
+  </EntityType>
+  <EntityType Name="OpLogs">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="sql" Type="nvarchar" MaxLength="3800" />
+    <Property Name="usage" Type="nvarchar" MaxLength="100" />
+    <Property Name="op" Type="nvarchar" MaxLength="50" />
+    <Property Name="opdate" Type="datetime" />
+  </EntityType>
+  <!--生成过程中发现错误:
+      警告 6002: 表/视图“WISEWEB_WYN.dbo.Photo”未定义主键。已推断出该键，并将定义创建为只读的表/视图。
+      -->
+  <EntityType Name="Photo">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="bigint" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="Title" Type="char" MaxLength="50" />
+    <Property Name="TitleEn" Type="char" MaxLength="80" />
+    <Property Name="url" Type="char" MaxLength="100" />
+    <Property Name="UpDateTime" Type="datetime" />
+    <Property Name="Counter" Type="bigint" />
+    <Property Name="CounterEn" Type="bigint" />
+    <Property Name="TypeID" Type="int" />
+    <Property Name="TypeIDEn" Type="int" />
+    <Property Name="newsType" Type="int" />
+  </EntityType>
+  <!--生成过程中发现错误:
+      警告 6002: 表/视图“WISEWEB_WYN.dbo.Photo_ksu”未定义主键。已推断出该键，并将定义创建为只读的表/视图。
+      -->
+  <EntityType Name="Photo_ksu">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="bigint" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="Title" Type="char" MaxLength="50" />
+    <Property Name="TitleEn" Type="char" MaxLength="80" />
+    <Property Name="url" Type="char" MaxLength="100" />
+    <Property Name="UpDateTime" Type="datetime" />
+    <Property Name="Counter" Type="bigint" />
+    <Property Name="CounterEn" Type="bigint" />
+    <Property Name="TypeID" Type="int" />
+    <Property Name="TypeIDEn" Type="int" />
+    <Property Name="newsType" Type="int" />
+  </EntityType>
+  <!--生成过程中发现错误:
+      警告 6002: 表/视图“WISEWEB_WYN.dbo.PhotoType”未定义主键。已推断出该键，并将定义创建为只读的表/视图。
+      -->
+  <EntityType Name="PhotoType">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="Name" Type="char" MaxLength="50" />
+    <Property Name="BigID" Type="int" />
+  </EntityType>
+  <!--生成过程中发现错误:
+      警告 6002: 表/视图“WISEWEB_WYN.dbo.PhotoType_ksu”未定义主键。已推断出该键，并将定义创建为只读的表/视图。
+      -->
+  <EntityType Name="PhotoType_ksu">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="Name" Type="char" MaxLength="20" />
+    <Property Name="BigID" Type="int" />
+  </EntityType>
+  <!--生成过程中发现错误:
+      警告 6002: 表/视图“WISEWEB_WYN.dbo.PhotoTypeEn”未定义主键。已推断出该键，并将定义创建为只读的表/视图。
+      -->
+  <EntityType Name="PhotoTypeEn">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="Name" Type="char" MaxLength="50" />
+    <Property Name="BigId" Type="int" />
+  </EntityType>
+  <EntityType Name="Project_newIEC">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="name" Type="varchar" MaxLength="100" />
+    <Property Name="location" Type="varchar" MaxLength="50" />
+    <Property Name="major" Type="varchar" MaxLength="50" />
+    <Property Name="xuezhi" Type="varchar" MaxLength="50" />
+    <Property Name="fee" Type="varchar" MaxLength="50" />
+    <Property Name="url" Type="varchar" MaxLength="100" />
+  </EntityType>
+  <!--生成过程中发现错误:
+      警告 6002: 表/视图“WISEWEB_WYN.dbo.Province”未定义主键。已推断出该键，并将定义创建为只读的表/视图。
+      -->
+  <EntityType Name="Province">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="Province" Type="char" MaxLength="10" />
+  </EntityType>
+  <!--生成过程中发现错误:
+      警告 6002: 表/视图“WISEWEB_WYN.dbo.SeminarMenu”未定义主键。已推断出该键，并将定义创建为只读的表/视图。
+      -->
+  <EntityType Name="SeminarMenu">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="name" Type="char" MaxLength="50" />
+    <Property Name="content" Type="ntext" />
+    <Property Name="url" Type="char" MaxLength="200" />
+    <Property Name="bigid" Type="int" />
+    <Property Name="sort" Type="int" />
+    <Property Name="pic" Type="char" MaxLength="200" />
+  </EntityType>
+  <EntityType Name="signup">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="name" Type="char" MaxLength="100" />
+    <Property Name="gender" Type="char" MaxLength="100" />
+    <Property Name="idcard" Type="char" MaxLength="100" />
+    <Property Name="birthday" Type="char" MaxLength="100" />
+    <Property Name="placebirth" Type="char" MaxLength="100" />
+    <Property Name="race" Type="char" MaxLength="100" />
+    <Property Name="father" Type="char" MaxLength="100" />
+    <Property Name="mother" Type="char" MaxLength="100" />
+    <Property Name="peraddress" Type="char" MaxLength="100" />
+    <Property Name="zipcode" Type="char" MaxLength="100" />
+    <Property Name="company" Type="char" MaxLength="100" />
+    <Property Name="curaddress" Type="char" MaxLength="100" />
+    <Property Name="major" Type="char" MaxLength="100" />
+    <Property Name="grade" Type="char" MaxLength="100" />
+    <Property Name="mobile" Type="char" MaxLength="100" />
+    <Property Name="email" Type="char" MaxLength="100" />
+    <Property Name="begintime" Type="char" MaxLength="100" />
+    <Property Name="signdate" Type="char" MaxLength="100" />
+  </EntityType>
+  <EntityType Name="signup_ie">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="type" Type="char" MaxLength="10" />
+    <Property Name="name" Type="char" MaxLength="100" />
+    <Property Name="englishname" Type="char" MaxLength="100" />
+    <Property Name="gender" Type="char" MaxLength="100" />
+    <Property Name="idcard" Type="char" MaxLength="100" />
+    <Property Name="birthday" Type="char" MaxLength="100" />
+    <Property Name="placebirth" Type="char" MaxLength="100" />
+    <Property Name="race" Type="char" MaxLength="100" />
+    <Property Name="father" Type="char" MaxLength="100" />
+    <Property Name="peraddress" Type="char" MaxLength="100" />
+    <Property Name="zipcode" Type="char" MaxLength="100" />
+    <Property Name="company" Type="char" MaxLength="100" />
+    <Property Name="curaddress" Type="char" MaxLength="100" />
+    <Property Name="major" Type="char" MaxLength="100" />
+    <Property Name="grade" Type="char" MaxLength="100" />
+    <Property Name="mobile" Type="char" MaxLength="100" />
+    <Property Name="email" Type="char" MaxLength="100" />
+    <Property Name="signdate" Type="char" MaxLength="100" />
+  </EntityType>
+  <!--生成过程中发现错误:
+      警告 6002: 表/视图“WISEWEB_WYN.dbo.t_ModuleShow”未定义主键。已推断出该键，并将定义创建为只读的表/视图。
+      -->
+  <EntityType Name="t_ModuleShow">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="period" Type="nvarchar" MaxLength="500" />
+    <Property Name="TypeName" Type="nvarchar" MaxLength="500" />
+    <Property Name="TypeID" Type="int" />
+    <Property Name="BigId" Type="int" />
+    <Property Name="isMain" Type="int" />
+    <Property Name="Content" Type="nvarchar" MaxLength="500" />
+    <Property Name="photoUrl" Type="nvarchar" MaxLength="500" />
+    <Property Name="showOrder" Type="int" />
+    <Property Name="M1" Type="nvarchar" MaxLength="500" />
+    <Property Name="M2" Type="nvarchar" MaxLength="500" />
+    <Property Name="M3" Type="nvarchar" MaxLength="500" />
+  </EntityType>
+  <!--生成过程中发现错误:
+      警告 6002: 表/视图“WISEWEB_WYN.dbo.t_News”未定义主键。已推断出该键，并将定义创建为只读的表/视图。
+      -->
+  <EntityType Name="t_News">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="bigint" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="Title" Type="char" MaxLength="200" />
+    <Property Name="TitleEn" Type="char" MaxLength="200" />
+    <Property Name="Content" Type="ntext" />
+    <Property Name="ContentEn" Type="ntext" />
+    <Property Name="keys" Type="char" MaxLength="20" />
+    <Property Name="keysEn" Type="char" MaxLength="20" />
+    <Property Name="Fromto" Type="char" MaxLength="20" />
+    <Property Name="FromtoEn" Type="char" MaxLength="20" />
+    <Property Name="BeginTime" Type="datetime" />
+    <Property Name="UpDateTime" Type="datetime" />
+    <Property Name="Counter" Type="bigint" />
+    <Property Name="CounterEn" Type="bigint" />
+    <Property Name="Intro" Type="text" />
+    <Property Name="IntroEn" Type="text" />
+    <Property Name="TypeID" Type="int" />
+    <Property Name="TypeIDEn" Type="int" />
+    <Property Name="newsType" Type="int" />
+    <Property Name="url" Type="char" MaxLength="100" />
+    <Property Name="isindex" Type="int" />
+    <Property Name="flash" Type="int" />
+    <Property Name="isEDP" Type="char" MaxLength="100" />
+    <Property Name="isKCB" Type="char" MaxLength="100" />
+    <Property Name="isPM" Type="char" MaxLength="100" />
+    <Property Name="isSOE" Type="char" MaxLength="100" />
+  </EntityType>
+  <!--生成过程中发现错误:
+      警告 6002: 表/视图“WISEWEB_WYN.dbo.t_News2”未定义主键。已推断出该键，并将定义创建为只读的表/视图。
+      -->
+  <EntityType Name="t_News2">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="bigint" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="Title" Type="char" MaxLength="200" />
+    <Property Name="TitleEn" Type="char" MaxLength="200" />
+    <Property Name="Author" Type="text" />
+    <Property Name="Content" Type="ntext" />
+    <Property Name="ContentEn" Type="ntext" />
+    <Property Name="keys" Type="char" MaxLength="20" />
+    <Property Name="keysEn" Type="char" MaxLength="20" />
+    <Property Name="Fromto" Type="char" MaxLength="20" />
+    <Property Name="FromtoEn" Type="char" MaxLength="20" />
+    <Property Name="BeginTime" Type="datetime" />
+    <Property Name="UpDateTime" Type="datetime" />
+    <Property Name="Counter" Type="bigint" />
+    <Property Name="CounterEn" Type="bigint" />
+    <Property Name="Intro" Type="text" />
+    <Property Name="IntroEn" Type="text" />
+    <Property Name="TypeID" Type="int" />
+    <Property Name="TypeIDEn" Type="int" />
+    <Property Name="newsType" Type="int" />
+    <Property Name="url" Type="char" MaxLength="100" />
+    <Property Name="isindex" Type="int" />
+    <Property Name="flash" Type="int" />
+    <Property Name="period" Type="text" />
+    <Property Name="pdfUrl" Type="text" />
+    <Property Name="isPdf" Type="int" />
+    <Property Name="isSystem" Type="nvarchar" MaxLength="500" />
+  </EntityType>
+  <!--生成过程中发现错误:
+      警告 6002: 表/视图“WISEWEB_WYN.dbo.TEST_USER_REG”未定义主键。已推断出该键，并将定义创建为只读的表/视图。
+      -->
+  <EntityType Name="TEST_USER_REG">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="name" Type="varchar" MaxLength="50" />
+    <Property Name="gender" Type="varchar" MaxLength="50" />
+    <Property Name="birthday" Type="varchar" MaxLength="50" />
+    <Property Name="school" Type="varchar" MaxLength="100" />
+    <Property Name="major" Type="varchar" MaxLength="100" />
+    <Property Name="telephone" Type="varchar" MaxLength="50" />
+    <Property Name="cellphone" Type="varchar" MaxLength="50" />
+    <Property Name="email" Type="varchar" MaxLength="100" />
+    <Property Name="address" Type="varchar" MaxLength="100" />
+    <Property Name="postcode" Type="varchar" MaxLength="50" />
+    <Property Name="researchfield" Type="varchar" MaxLength="100" />
+    <Property Name="edubg" Type="varchar" MaxLength="50" />
+    <Property Name="tutor" Type="varchar" MaxLength="50" />
+    <Property Name="grade" Type="varchar" MaxLength="50" />
+    <Property Name="zhicheng" Type="varchar" MaxLength="50" />
+    <Property Name="zhiwu" Type="varchar" MaxLength="50" />
+    <Property Name="experience" Type="varchar" MaxLength="1000" />
+    <Property Name="prize" Type="varchar" MaxLength="1000" />
+    <Property Name="regdate" Type="varchar" MaxLength="50" />
+    <Property Name="code" Type="varchar" MaxLength="50" />
+    <Property Name="isemail" Type="varchar" MaxLength="50" />
+    <Property Name="isattend" Type="varchar" MaxLength="50" />
+    <Property Name="del" Type="varchar" MaxLength="50" />
+    <Property Name="isfax" Type="varchar" MaxLength="50" />
+    <Property Name="whosendemail" Type="varchar" MaxLength="50" />
+    <Property Name="inscription" Type="varchar" MaxLength="50" />
+    <Property Name="enroll" Type="varchar" MaxLength="50" />
+  </EntityType>
+  <EntityType Name="USER_REG">
+    <Key>
+      <PropertyRef Name="email" />
+    </Key>
+    <Property Name="id" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="name" Type="varchar" MaxLength="50" />
+    <Property Name="gender" Type="varchar" MaxLength="50" />
+    <Property Name="birthday" Type="varchar" MaxLength="50" />
+    <Property Name="school" Type="varchar" MaxLength="100" />
+    <Property Name="major" Type="varchar" MaxLength="100" />
+    <Property Name="telephone" Type="varchar" MaxLength="50" />
+    <Property Name="cellphone" Type="varchar" MaxLength="50" />
+    <Property Name="email" Type="varchar" Nullable="false" MaxLength="100" />
+    <Property Name="address" Type="varchar" MaxLength="100" />
+    <Property Name="postcode" Type="varchar" MaxLength="50" />
+    <Property Name="researchfield" Type="varchar" MaxLength="100" />
+    <Property Name="edubg" Type="varchar" MaxLength="50" />
+    <Property Name="tutor" Type="varchar" MaxLength="50" />
+    <Property Name="grade" Type="varchar" MaxLength="50" />
+    <Property Name="zhicheng" Type="varchar" MaxLength="50" />
+    <Property Name="zhiwu" Type="varchar" MaxLength="50" />
+    <Property Name="experience" Type="varchar(max)" />
+    <Property Name="prize" Type="varchar" />
+    <Property Name="regdate" Type="varchar" MaxLength="50" />
+    <Property Name="code" Type="varchar" MaxLength="50" />
+    <Property Name="isemail" Type="varchar" MaxLength="50" />
+    <Property Name="isattend" Type="varchar" MaxLength="50" />
+    <Property Name="del" Type="varchar" MaxLength="50" />
+    <Property Name="isfax" Type="varchar" MaxLength="50" />
+    <Property Name="whosendemail" Type="varchar" MaxLength="50" />
+    <Property Name="password" Type="char" Nullable="false" MaxLength="10" />
+    <Property Name="usertype" Type="varchar" Nullable="false" MaxLength="10" />
+    <Property Name="batch" Type="varchar" MaxLength="50" />
+    <Property Name="course" Type="varchar" MaxLength="50" />
+    <Property Name="infoSource" Type="varchar" MaxLength="50" />
+  </EntityType>
+  <!--生成过程中发现错误:
+      警告 6002: 表/视图“WISEWEB_WYN.dbo.xly_user_2012”未定义主键。已推断出该键，并将定义创建为只读的表/视图。
+      -->
+  <EntityType Name="xly_user_2012">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="name" Type="varchar" MaxLength="50" />
+    <Property Name="gender" Type="varchar" MaxLength="50" />
+    <Property Name="birthday" Type="varchar" MaxLength="50" />
+    <Property Name="school" Type="varchar" MaxLength="100" />
+    <Property Name="major" Type="varchar" MaxLength="100" />
+    <Property Name="telephone" Type="varchar" MaxLength="50" />
+    <Property Name="cellphone" Type="varchar" MaxLength="50" />
+    <Property Name="email" Type="varchar" MaxLength="100" />
+    <Property Name="address" Type="varchar" MaxLength="100" />
+    <Property Name="postcode" Type="varchar" MaxLength="50" />
+    <Property Name="researchfield" Type="varchar" MaxLength="100" />
+    <Property Name="edubg" Type="varchar" MaxLength="50" />
+    <Property Name="tutor" Type="varchar" MaxLength="50" />
+    <Property Name="grade" Type="varchar" MaxLength="50" />
+    <Property Name="zhicheng" Type="varchar" MaxLength="50" />
+    <Property Name="zhiwu" Type="varchar" MaxLength="50" />
+    <Property Name="experience" Type="varchar" />
+    <Property Name="prize" Type="varchar" />
+    <Property Name="regdate" Type="varchar" MaxLength="50" />
+    <Property Name="code" Type="varchar" MaxLength="50" />
+    <Property Name="isemail" Type="varchar" MaxLength="50" />
+    <Property Name="isattend" Type="varchar" MaxLength="50" />
+    <Property Name="del" Type="varchar" MaxLength="50" />
+    <Property Name="isfax" Type="varchar" MaxLength="50" />
+    <Property Name="whosendemail" Type="varchar" MaxLength="50" />
+  </EntityType>
+  <!--生成过程中发现错误:
+      警告 6013: 表/视图“WISEWEB_WYN.dbo.ipaddr”未定义主键，并且无法推断有效的主键。已排除了此表/视图。若要使用实体，将需要检查您的架构、添加正确的键并取消对实体的注释。
+      
+      <EntityType Name="ipaddr">
+        <Property Name="fromip" Type="varchar" MaxLength="50" />
+        <Property Name="toip" Type="varchar" MaxLength="50" />
+        <Property Name="place" Type="varchar" MaxLength="50" />
+      </EntityType>
+      生成过程中发现错误:
+      警告 6013: 表/视图“WISEWEB_WYN.dbo.Staff”未定义主键，并且无法推断有效的主键。已排除了此表/视图。若要使用实体，将需要检查您的架构、添加正确的键并取消对实体的注释。
+      
+      <EntityType Name="Staff">
+        <Property Name="id" Type="int" />
+        <Property Name="Name" Type="char" MaxLength="50" />
+        <Property Name="EnName" Type="char" MaxLength="50" />
+        <Property Name="OfficePhone" Type="char" MaxLength="50" />
+        <Property Name="EnOfficePhone" Type="char" MaxLength="50" />
+        <Property Name="Mobile" Type="char" MaxLength="10" />
+        <Property Name="Email" Type="char" MaxLength="50" />
+        <Property Name="Fax" Type="char" MaxLength="100" />
+        <Property Name="Duty" Type="char" MaxLength="100" />
+        <Property Name="Photo" Type="char" MaxLength="100" />
+        <Property Name="Post" Type="char" MaxLength="100" />
+        <Property Name="EnPost" Type="char" MaxLength="100" />
+      </EntityType>-->
+</Schema>

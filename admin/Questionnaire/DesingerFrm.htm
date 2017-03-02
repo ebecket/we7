@@ -1,0 +1,92 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>无标题文档</title>
+</head>
+<body>
+    <div id="designer">
+        <div id="QuestionPreview">
+            <div id="QuestionTitle">
+                <div id="QuestionID">
+                    1.</div>
+                <div id="QuestionTxt">
+                    <span id="title">这里是标题</span> <span id="mustAnswer" style="color: #F00">*</span>
+                </div>
+            </div>
+            <div id="QuestionBody">
+                <ul id="QstPreviewBody">
+                </ul>
+            </div>
+            <div id="QuestionOpt">
+                <span><a href="#" onclick="Qst.Finish()">完成</a></span> <span id="edtDel"><a href="#">
+                    删除</a></span> <!--<span><a href="#">上移</a></span> <span><a href="#">下移</a></span>-->
+            </div>
+        </div>
+        <div id="QuestionDesigner">
+            <div id="QuestionTitleSetting">
+                <div style="float: left; font-weight: bold; margin: 4px 0;">
+                    <span style="float:left;">请在下面输入标题</span>
+                    <span title="添加说明" class="design-icon design-desc" style="cursor: pointer;" onclick="Qst.MsgBox()"></span>                    
+                </div>
+                <textarea cols="70" rows="5" onchange="Qst.ChangeTitle(this)">这里是标题</textarea>
+                <ul>
+                    <li><a href="javascript:Qst.FontType(Qst.FontTypes.Normal,'QuestionTitle')">正常</a></li>
+                    <li><a href="javascript:Qst.FontType(Qst.FontTypes.Bold,'QuestionTitle')">粗体</a></li>
+                    <li><a href="javascript:Qst.FontType(Qst.FontTypes.Italic,'QuestionTitle')">斜体</a></li>
+                    <li>
+                        <label>
+                            <input type="checkbox" name="edtMustAsw" id="edtMustAsw" onclick="Qst.MustAsw(this)" checked="checked" />必答题
+                        </label>
+                    </li>
+                </ul>
+            </div>
+            <div id="QuestionItemSetting">
+                <div>
+                    <span><a href="javascript:void(0)"><strong>请在下面添加内容</strong></a></span>
+                    <div id="Batch">
+                    </div>
+                </div>
+                <div id="QuestionItemOpt">
+                    <table width="90%" border="0" cellpadding="3" cellspacing="3" style="background: #D5E2F2">
+                        <tr>
+                            <td style="width: 150px" align="center">
+                                <a href="javascript:void(0);" title="交换选项文字">选项文字↑↓</a>
+                            </td>
+                            <td width="15%" align="center">
+                                操作
+                            </td>
+                            <td>
+                                默认
+                            </td>
+                        </tr>
+                        <tr id="dataRaw">
+                            <td align="center">
+                                <label>
+                                    <input name="edtItem" type="text" id="edtItem" value="选项1" onchange="Qst.Preview($('#QuestionItemSetting'),'table')" />
+                                </label>
+                            </td>
+                            <td align="center">
+                                <span title="在此选项下面插入一个新的选项" class="design-icon design-add" style="cursor: pointer;" onclick="Qst.AppendTr($('#QuestionItemSetting'));Qst.Preview($('#designer'),'table')"></span>
+                                
+                                <span id="edtRemoveTr" title="删除当前选项（最少保留2个选项）" class="design-icon design-minus" style="cursor: pointer;"><!--onclick="Qst.RemoveTr($(this).parent().parent())"--></span>
+                                
+                                <span title="将当前选项上移一个位置" class="design-icon design-up" style="cursor: pointer;" onclick="Qst.MoveUp($(this).parent().parent(),$('#QuestionItemSetting'))"></span>
+
+                                <span title="将当前选项下移一个位置" class="design-icon design-down" style="cursor: pointer;" onclick="Qst.MoveDown($(this).parent().parent(),$('#QuestionItemSetting'))"></span>
+                            </td>                            
+                            <td>
+                                <label>
+                                    <input type="checkbox" name="edtDefVal" id="edtDefVal" />
+                                </label>
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+        </div>
+        <div id="Notify">
+        </div>
+    </div>
+</body>
+</html>

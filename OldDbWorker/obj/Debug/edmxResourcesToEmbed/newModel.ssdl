@@ -1,0 +1,330 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="newWiseModel.Store" Alias="Self" Provider="System.Data.SqlClient" ProviderManifestToken="2008" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns="http://schemas.microsoft.com/ado/2006/04/edm/ssdl">
+  <EntityContainer Name="newWiseModelStoreContainer">
+    <EntitySet Name="MSreplication_options" EntityType="newWiseModel.Store.MSreplication_options" store:Type="Tables" store:Schema="dbo" store:Name="MSreplication_options">
+      <DefiningQuery>SELECT 
+      [MSreplication_options].[optname] AS [optname], 
+      [MSreplication_options].[value] AS [value], 
+      [MSreplication_options].[major_version] AS [major_version], 
+      [MSreplication_options].[minor_version] AS [minor_version], 
+      [MSreplication_options].[revision] AS [revision], 
+      [MSreplication_options].[install_failures] AS [install_failures]
+      FROM [dbo].[MSreplication_options] AS [MSreplication_options]</DefiningQuery>
+    </EntitySet>
+    <EntitySet Name="spt_fallback_db" EntityType="newWiseModel.Store.spt_fallback_db" store:Type="Tables" store:Schema="dbo" store:Name="spt_fallback_db">
+      <DefiningQuery>SELECT 
+      [spt_fallback_db].[xserver_name] AS [xserver_name], 
+      [spt_fallback_db].[xdttm_ins] AS [xdttm_ins], 
+      [spt_fallback_db].[xdttm_last_ins_upd] AS [xdttm_last_ins_upd], 
+      [spt_fallback_db].[xfallback_dbid] AS [xfallback_dbid], 
+      [spt_fallback_db].[name] AS [name], 
+      [spt_fallback_db].[dbid] AS [dbid], 
+      [spt_fallback_db].[status] AS [status], 
+      [spt_fallback_db].[version] AS [version]
+      FROM [dbo].[spt_fallback_db] AS [spt_fallback_db]</DefiningQuery>
+    </EntitySet>
+    <EntitySet Name="spt_fallback_dev" EntityType="newWiseModel.Store.spt_fallback_dev" store:Type="Tables" store:Schema="dbo" store:Name="spt_fallback_dev">
+      <DefiningQuery>SELECT 
+      [spt_fallback_dev].[xserver_name] AS [xserver_name], 
+      [spt_fallback_dev].[xdttm_ins] AS [xdttm_ins], 
+      [spt_fallback_dev].[xdttm_last_ins_upd] AS [xdttm_last_ins_upd], 
+      [spt_fallback_dev].[xfallback_low] AS [xfallback_low], 
+      [spt_fallback_dev].[xfallback_drive] AS [xfallback_drive], 
+      [spt_fallback_dev].[low] AS [low], 
+      [spt_fallback_dev].[high] AS [high], 
+      [spt_fallback_dev].[status] AS [status], 
+      [spt_fallback_dev].[name] AS [name], 
+      [spt_fallback_dev].[phyname] AS [phyname]
+      FROM [dbo].[spt_fallback_dev] AS [spt_fallback_dev]</DefiningQuery>
+    </EntitySet>
+    <EntitySet Name="spt_fallback_usg" EntityType="newWiseModel.Store.spt_fallback_usg" store:Type="Tables" store:Schema="dbo" store:Name="spt_fallback_usg">
+      <DefiningQuery>SELECT 
+      [spt_fallback_usg].[xserver_name] AS [xserver_name], 
+      [spt_fallback_usg].[xdttm_ins] AS [xdttm_ins], 
+      [spt_fallback_usg].[xdttm_last_ins_upd] AS [xdttm_last_ins_upd], 
+      [spt_fallback_usg].[xfallback_vstart] AS [xfallback_vstart], 
+      [spt_fallback_usg].[dbid] AS [dbid], 
+      [spt_fallback_usg].[segmap] AS [segmap], 
+      [spt_fallback_usg].[lstart] AS [lstart], 
+      [spt_fallback_usg].[sizepg] AS [sizepg], 
+      [spt_fallback_usg].[vstart] AS [vstart]
+      FROM [dbo].[spt_fallback_usg] AS [spt_fallback_usg]</DefiningQuery>
+    </EntitySet>
+    <EntitySet Name="spt_monitor" EntityType="newWiseModel.Store.spt_monitor" store:Type="Tables" store:Schema="dbo" store:Name="spt_monitor">
+      <DefiningQuery>SELECT 
+      [spt_monitor].[lastrun] AS [lastrun], 
+      [spt_monitor].[cpu_busy] AS [cpu_busy], 
+      [spt_monitor].[io_busy] AS [io_busy], 
+      [spt_monitor].[idle] AS [idle], 
+      [spt_monitor].[pack_received] AS [pack_received], 
+      [spt_monitor].[pack_sent] AS [pack_sent], 
+      [spt_monitor].[connections] AS [connections], 
+      [spt_monitor].[pack_errors] AS [pack_errors], 
+      [spt_monitor].[total_read] AS [total_read], 
+      [spt_monitor].[total_write] AS [total_write], 
+      [spt_monitor].[total_errors] AS [total_errors]
+      FROM [dbo].[spt_monitor] AS [spt_monitor]</DefiningQuery>
+    </EntitySet>
+    <EntitySet Name="spt_values" EntityType="newWiseModel.Store.spt_values" store:Type="Tables" store:Schema="dbo" store:Name="spt_values">
+      <DefiningQuery>SELECT 
+      [spt_values].[name] AS [name], 
+      [spt_values].[number] AS [number], 
+      [spt_values].[type] AS [type], 
+      [spt_values].[low] AS [low], 
+      [spt_values].[high] AS [high], 
+      [spt_values].[status] AS [status]
+      FROM [dbo].[spt_values] AS [spt_values]</DefiningQuery>
+    </EntitySet>
+    <EntitySet Name="student2010" EntityType="newWiseModel.Store.student2010" store:Type="Tables" store:Schema="dbo" store:Name="student2010">
+      <DefiningQuery>SELECT 
+      [student2010].[ID] AS [ID], 
+      [student2010].[ChineseName] AS [ChineseName], 
+      [student2010].[EnglishName] AS [EnglishName], 
+      [student2010].[Mobile] AS [Mobile], 
+      [student2010].[Email] AS [Email], 
+      [student2010].[Project] AS [Project], 
+      [student2010].[OrderNo] AS [OrderNo], 
+      [student2010].[CoursePub] AS [CoursePub], 
+      [student2010].[CoursePro] AS [CoursePro]
+      FROM [dbo].[student2010] AS [student2010]</DefiningQuery>
+    </EntitySet>
+    <EntitySet Name="student2011" EntityType="newWiseModel.Store.student2011" store:Type="Tables" store:Schema="dbo" store:Name="student2011">
+      <DefiningQuery>SELECT 
+      [student2011].[studentId] AS [studentId], 
+      [student2011].[email] AS [email], 
+      [student2011].[chineseName] AS [chineseName], 
+      [student2011].[chineseNamePY] AS [chineseNamePY], 
+      [student2011].[gender] AS [gender], 
+      [student2011].[minzu] AS [minzu], 
+      [student2011].[minzuPY] AS [minzuPY], 
+      [student2011].[hometown] AS [hometown], 
+      [student2011].[hometownE] AS [hometownE], 
+      [student2011].[IDNo] AS [IDNo], 
+      [student2011].[hukou] AS [hukou], 
+      [student2011].[hukouE] AS [hukouE], 
+      [student2011].[mobilePhone] AS [mobilePhone], 
+      [student2011].[homePhone] AS [homePhone], 
+      [student2011].[homeaddress] AS [homeaddress], 
+      [student2011].[homeaddressE] AS [homeaddressE], 
+      [student2011].[zip] AS [zip], 
+      [student2011].[WhereToKnow] AS [WhereToKnow], 
+      [student2011].[Memo] AS [Memo], 
+      [student2011].[MemoE] AS [MemoE], 
+      [student2011].[SchoolID] AS [SchoolID], 
+      [student2011].[School] AS [School], 
+      [student2011].[SchoolE] AS [SchoolE], 
+      [student2011].[password] AS [password], 
+      [student2011].[step] AS [step], 
+      [student2011].[stepTime] AS [stepTime], 
+      [student2011].[gradeOrder] AS [gradeOrder], 
+      [student2011].[classOrder] AS [classOrder], 
+      [student2011].[Dep] AS [Dep], 
+      [student2011].[Spec] AS [Spec], 
+      [student2011].[Grade] AS [Grade], 
+      [student2011].[CHECKLIST] AS [CHECKLIST], 
+      [student2011].[AUDIT_MESSAGE] AS [AUDIT_MESSAGE]
+      FROM [dbo].[student2011] AS [student2011]</DefiningQuery>
+    </EntitySet>
+  </EntityContainer>
+  <!--生成过程中发现错误:
+      警告 6002: 表/视图“master.dbo.MSreplication_options”未定义主键。已推断出该键，并将定义创建为只读的表/视图。
+      -->
+  <EntityType Name="MSreplication_options">
+    <Key>
+      <PropertyRef Name="optname" />
+      <PropertyRef Name="value" />
+      <PropertyRef Name="major_version" />
+      <PropertyRef Name="minor_version" />
+      <PropertyRef Name="revision" />
+      <PropertyRef Name="install_failures" />
+    </Key>
+    <Property Name="optname" Type="nvarchar" Nullable="false" MaxLength="128" />
+    <Property Name="value" Type="bit" Nullable="false" />
+    <Property Name="major_version" Type="int" Nullable="false" />
+    <Property Name="minor_version" Type="int" Nullable="false" />
+    <Property Name="revision" Type="int" Nullable="false" />
+    <Property Name="install_failures" Type="int" Nullable="false" />
+  </EntityType>
+  <!--生成过程中发现错误:
+      警告 6002: 表/视图“master.dbo.spt_fallback_db”未定义主键。已推断出该键，并将定义创建为只读的表/视图。
+      -->
+  <EntityType Name="spt_fallback_db">
+    <Key>
+      <PropertyRef Name="xserver_name" />
+      <PropertyRef Name="xdttm_ins" />
+      <PropertyRef Name="xdttm_last_ins_upd" />
+      <PropertyRef Name="name" />
+      <PropertyRef Name="dbid" />
+      <PropertyRef Name="status" />
+      <PropertyRef Name="version" />
+    </Key>
+    <Property Name="xserver_name" Type="varchar" Nullable="false" MaxLength="30" />
+    <Property Name="xdttm_ins" Type="datetime" Nullable="false" />
+    <Property Name="xdttm_last_ins_upd" Type="datetime" Nullable="false" />
+    <Property Name="xfallback_dbid" Type="smallint" />
+    <Property Name="name" Type="varchar" Nullable="false" MaxLength="30" />
+    <Property Name="dbid" Type="smallint" Nullable="false" />
+    <Property Name="status" Type="smallint" Nullable="false" />
+    <Property Name="version" Type="smallint" Nullable="false" />
+  </EntityType>
+  <!--生成过程中发现错误:
+      警告 6002: 表/视图“master.dbo.spt_fallback_dev”未定义主键。已推断出该键，并将定义创建为只读的表/视图。
+      -->
+  <EntityType Name="spt_fallback_dev">
+    <Key>
+      <PropertyRef Name="xserver_name" />
+      <PropertyRef Name="xdttm_ins" />
+      <PropertyRef Name="xdttm_last_ins_upd" />
+      <PropertyRef Name="low" />
+      <PropertyRef Name="high" />
+      <PropertyRef Name="status" />
+      <PropertyRef Name="name" />
+      <PropertyRef Name="phyname" />
+    </Key>
+    <Property Name="xserver_name" Type="varchar" Nullable="false" MaxLength="30" />
+    <Property Name="xdttm_ins" Type="datetime" Nullable="false" />
+    <Property Name="xdttm_last_ins_upd" Type="datetime" Nullable="false" />
+    <Property Name="xfallback_low" Type="int" />
+    <Property Name="xfallback_drive" Type="char" MaxLength="2" />
+    <Property Name="low" Type="int" Nullable="false" />
+    <Property Name="high" Type="int" Nullable="false" />
+    <Property Name="status" Type="smallint" Nullable="false" />
+    <Property Name="name" Type="varchar" Nullable="false" MaxLength="30" />
+    <Property Name="phyname" Type="varchar" Nullable="false" MaxLength="127" />
+  </EntityType>
+  <!--生成过程中发现错误:
+      警告 6002: 表/视图“master.dbo.spt_fallback_usg”未定义主键。已推断出该键，并将定义创建为只读的表/视图。
+      -->
+  <EntityType Name="spt_fallback_usg">
+    <Key>
+      <PropertyRef Name="xserver_name" />
+      <PropertyRef Name="xdttm_ins" />
+      <PropertyRef Name="xdttm_last_ins_upd" />
+      <PropertyRef Name="dbid" />
+      <PropertyRef Name="segmap" />
+      <PropertyRef Name="lstart" />
+      <PropertyRef Name="sizepg" />
+      <PropertyRef Name="vstart" />
+    </Key>
+    <Property Name="xserver_name" Type="varchar" Nullable="false" MaxLength="30" />
+    <Property Name="xdttm_ins" Type="datetime" Nullable="false" />
+    <Property Name="xdttm_last_ins_upd" Type="datetime" Nullable="false" />
+    <Property Name="xfallback_vstart" Type="int" />
+    <Property Name="dbid" Type="smallint" Nullable="false" />
+    <Property Name="segmap" Type="int" Nullable="false" />
+    <Property Name="lstart" Type="int" Nullable="false" />
+    <Property Name="sizepg" Type="int" Nullable="false" />
+    <Property Name="vstart" Type="int" Nullable="false" />
+  </EntityType>
+  <!--生成过程中发现错误:
+      警告 6002: 表/视图“master.dbo.spt_monitor”未定义主键。已推断出该键，并将定义创建为只读的表/视图。
+      -->
+  <EntityType Name="spt_monitor">
+    <Key>
+      <PropertyRef Name="lastrun" />
+      <PropertyRef Name="cpu_busy" />
+      <PropertyRef Name="io_busy" />
+      <PropertyRef Name="idle" />
+      <PropertyRef Name="pack_received" />
+      <PropertyRef Name="pack_sent" />
+      <PropertyRef Name="connections" />
+      <PropertyRef Name="pack_errors" />
+      <PropertyRef Name="total_read" />
+      <PropertyRef Name="total_write" />
+      <PropertyRef Name="total_errors" />
+    </Key>
+    <Property Name="lastrun" Type="datetime" Nullable="false" />
+    <Property Name="cpu_busy" Type="int" Nullable="false" />
+    <Property Name="io_busy" Type="int" Nullable="false" />
+    <Property Name="idle" Type="int" Nullable="false" />
+    <Property Name="pack_received" Type="int" Nullable="false" />
+    <Property Name="pack_sent" Type="int" Nullable="false" />
+    <Property Name="connections" Type="int" Nullable="false" />
+    <Property Name="pack_errors" Type="int" Nullable="false" />
+    <Property Name="total_read" Type="int" Nullable="false" />
+    <Property Name="total_write" Type="int" Nullable="false" />
+    <Property Name="total_errors" Type="int" Nullable="false" />
+  </EntityType>
+  <!--生成过程中发现错误:
+      警告 6002: 表/视图“master.dbo.spt_values”未定义主键。已推断出该键，并将定义创建为只读的表/视图。
+      -->
+  <EntityType Name="spt_values">
+    <Key>
+      <PropertyRef Name="number" />
+      <PropertyRef Name="type" />
+    </Key>
+    <Property Name="name" Type="nvarchar" MaxLength="35" />
+    <Property Name="number" Type="int" Nullable="false" />
+    <Property Name="type" Type="nchar" Nullable="false" MaxLength="3" />
+    <Property Name="low" Type="int" />
+    <Property Name="high" Type="int" />
+    <Property Name="status" Type="int" />
+  </EntityType>
+  <!--生成过程中发现错误:
+      警告 6002: 表/视图“master.dbo.student2010”未定义主键。已推断出该键，并将定义创建为只读的表/视图。
+      -->
+  <EntityType Name="student2010">
+    <Key>
+      <PropertyRef Name="ID" />
+      <PropertyRef Name="ChineseName" />
+      <PropertyRef Name="Project" />
+    </Key>
+    <Property Name="ID" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="ChineseName" Type="nvarchar" Nullable="false" MaxLength="255" />
+    <Property Name="EnglishName" Type="nvarchar" MaxLength="255" />
+    <Property Name="Mobile" Type="nvarchar" MaxLength="255" />
+    <Property Name="Email" Type="nvarchar" MaxLength="255" />
+    <Property Name="Project" Type="nvarchar" Nullable="false" MaxLength="255" />
+    <Property Name="OrderNo" Type="int" />
+    <Property Name="CoursePub" Type="varchar" MaxLength="1" />
+    <Property Name="CoursePro" Type="varchar" MaxLength="1" />
+  </EntityType>
+  <!--生成过程中发现错误:
+      警告 6002: 表/视图“master.dbo.student2011”未定义主键。已推断出该键，并将定义创建为只读的表/视图。
+      -->
+  <EntityType Name="student2011">
+    <Key>
+      <PropertyRef Name="studentId" />
+      <PropertyRef Name="email" />
+      <PropertyRef Name="chineseName" />
+      <PropertyRef Name="chineseNamePY" />
+      <PropertyRef Name="gender" />
+      <PropertyRef Name="password" />
+      <PropertyRef Name="step" />
+      <PropertyRef Name="stepTime" />
+    </Key>
+    <Property Name="studentId" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="email" Type="nvarchar" Nullable="false" MaxLength="100" />
+    <Property Name="chineseName" Type="nvarchar" Nullable="false" MaxLength="100" />
+    <Property Name="chineseNamePY" Type="nvarchar" Nullable="false" MaxLength="100" />
+    <Property Name="gender" Type="nvarchar" Nullable="false" MaxLength="2" />
+    <Property Name="minzu" Type="nvarchar" MaxLength="100" />
+    <Property Name="minzuPY" Type="nchar" MaxLength="10" />
+    <Property Name="hometown" Type="nvarchar" MaxLength="100" />
+    <Property Name="hometownE" Type="nvarchar" MaxLength="100" />
+    <Property Name="IDNo" Type="nvarchar" MaxLength="100" />
+    <Property Name="hukou" Type="nvarchar" MaxLength="100" />
+    <Property Name="hukouE" Type="nvarchar" MaxLength="100" />
+    <Property Name="mobilePhone" Type="nvarchar" MaxLength="30" />
+    <Property Name="homePhone" Type="nvarchar" MaxLength="30" />
+    <Property Name="homeaddress" Type="nvarchar" MaxLength="100" />
+    <Property Name="homeaddressE" Type="nvarchar" MaxLength="100" />
+    <Property Name="zip" Type="nchar" MaxLength="10" />
+    <Property Name="WhereToKnow" Type="nvarchar" MaxLength="100" />
+    <Property Name="Memo" Type="ntext" />
+    <Property Name="MemoE" Type="ntext" />
+    <Property Name="SchoolID" Type="nvarchar" MaxLength="50" />
+    <Property Name="School" Type="nvarchar" MaxLength="50" />
+    <Property Name="SchoolE" Type="nvarchar" MaxLength="50" />
+    <Property Name="password" Type="nvarchar" Nullable="false" MaxLength="50" />
+    <Property Name="step" Type="smallint" Nullable="false" />
+    <Property Name="stepTime" Type="datetime2" Nullable="false" />
+    <Property Name="gradeOrder" Type="nvarchar" MaxLength="10" />
+    <Property Name="classOrder" Type="nvarchar" MaxLength="10" />
+    <Property Name="Dep" Type="nvarchar" MaxLength="50" />
+    <Property Name="Spec" Type="nvarchar" MaxLength="50" />
+    <Property Name="Grade" Type="nvarchar" MaxLength="50" />
+    <Property Name="CHECKLIST" Type="nvarchar" MaxLength="200" />
+    <Property Name="AUDIT_MESSAGE" Type="nvarchar" MaxLength="500" />
+  </EntityType>
+</Schema>

@@ -1,0 +1,17 @@
+﻿<div class="${PagerDivClass}">
+    <span class="$PagerSpanClass">     
+        <a href="${CurrPage}${Symbol}${RequestPageIndex}=1">First</a>
+        <a href="${CurrPage}${Symbol}${RequestPageIndex}=${PrevPage}">Prev</a>
+        #foreach($before in $BeforePages)
+           <a href="${CurrPage}${Symbol}${RequestPageIndex}=${before}">${before}</a>
+        #end
+        <b><a href="${CurrPage}${Symbol}${RequestPageIndex}=${PageIndex}">${PageIndex}</a></b>
+        #foreach($behind in $BehindPages)
+           <a href="${CurrPage}${Symbol}${RequestPageIndex}=${behind}">${behind}</a>
+        #end
+        <a href="${CurrPage}${Symbol}${RequestPageIndex}=${NextPage}">Next</a>
+        <a href="${CurrPage}${Symbol}${RequestPageIndex}=${PageCount}">Last</a>     
+        <a>Page ${PageIndex} of ${PageCount}</a>
+        <a>Total ${RecordCount}</a>
+    </span>
+</div>

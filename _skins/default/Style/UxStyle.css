@@ -1,0 +1,308 @@
+﻿/*************************************************************
+ * Command:Start
+ * Control:Header.SOE
+ * Style:Header_SOE
+ * Desc:目前没有
+ * Quot:soe
+*************************************************************/
+
+/*************************************************************
+ * Command:End
+ * Control:Header.SOE
+ * Style:Header_SOE
+ * Desc:目前没有
+ * Quot:soe
+*************************************************************/
+
+
+/*************************************************************
+ * Command:Start
+ * Control:Footer.Default
+ * Style:Footer_Default
+ * Desc:目前没有
+ * Quot:soe
+*************************************************************/
+/*******网站底部定义开始*******/
+.Footer_Default #footer {
+	height:115px;
+	border-top:2px solid #1d87be;
+	background:#f7f7f7;
+	margin-top:10px;
+}
+.Footer_Default .service {
+	height:32px;
+	line-height:32px;
+	text-align:center;
+	color:#444;
+}
+.Footer_Default .service a {
+	color:#444;
+}
+.Footer_Default .service a:hover {
+	color:#cc0000;
+}
+.Footer_Default .copyright {
+	text-align:center;
+	line-height:180%;
+	padding-top:10px;
+	font-family: Arial;
+	color:#444;
+}
+/*********版权信息页与关于我们页面样式定义**********/
+.Footer_Default .copyright_list h1 {
+	height:40px;
+	line-height:40px;
+	text-align:center;
+	font-size:16px;
+}
+.Footer_Default .copyright_list p {
+	line-height:170%;
+	font-size:14px;
+	color:#333;
+}
+
+/*************************************************************
+ * Command:End
+ * Control:Footer.Default
+ * Style:Footer_Default
+ * Desc:目前没有
+ * Quot:soe
+*************************************************************/
+
+
+/*************************************************************
+ * Command:Start
+ * Control:Header.Default
+ * Style:header
+ * Desc:目前没有
+ * Quot:soe
+*************************************************************/
+
+/*************************************************************
+ * Command:End
+ * Control:Header.Default
+ * Style:header
+ * Desc:目前没有
+ * Quot:soe
+*************************************************************/
+
+
+/*************************************************************
+ * Command:Start
+ * Control:Footer.Default
+ * Style:footer
+ * Desc:目前没有
+ * Quot:soe
+*************************************************************/
+
+/*************************************************************
+ * Command:End
+ * Control:Footer.Default
+ * Style:footer
+ * Desc:目前没有
+ * Quot:soe
+*************************************************************/
+
+
+/*************************************************************
+ * Command:Start
+ * Control:Article.SlideList
+ * Style:slide
+ * Desc:目前没有
+ * Quot:soe
+*************************************************************/
+
+/*************************************************************
+ * Command:End
+ * Control:Article.SlideList
+ * Style:slide
+ * Desc:目前没有
+ * Quot:soe
+*************************************************************/
+
+
+/*************************************************************
+ * Command:Start
+ * Control:Article.TabList
+ * Style:info
+ * Desc:目前没有
+ * Quot:soe
+*************************************************************/
+
+/*************************************************************
+ * Command:End
+ * Control:Article.TabList
+ * Style:info
+ * Desc:目前没有
+ * Quot:soe
+*************************************************************/
+
+
+/*************************************************************
+ * Command:Start
+ * Control:Article.List
+ * Style:enrollment module
+ * Desc:目前没有
+ * Quot:soe
+*************************************************************/
+
+/*************************************************************
+ * Command:End
+ * Control:Article.List
+ * Style:enrollment module
+ * Desc:目前没有
+ * Quot:soe
+*************************************************************/
+
+
+/*************************************************************
+ * Command:Start
+ * Control:Article.PicList
+ * Style:teacher module
+ * Desc:目前没有
+ * Quot:soe
+*************************************************************/
+
+/*************************************************************
+ * Command:End
+ * Control:Article.PicList
+ * Style:teacher module
+ * Desc:目前没有
+ * Quot:soe
+*************************************************************/
+
+
+/*************************************************************
+ * Command:Start
+ * Control:Static.TextLink
+ * Style:link module
+ * Desc:目前没有
+ * Quot:soe
+*************************************************************/
+
+/*************************************************************
+ * Command:End
+ * Control:Static.TextLink
+ * Style:link module
+ * Desc:目前没有
+ * Quot:soe
+*************************************************************/
+
+
+/*************************************************************
+ * Command:Start
+ * Control:Static.QuickLink
+ * Style:quick
+ * Desc:目前没有
+ * Quot:soe
+*************************************************************/
+
+/*************************************************************
+ * Command:End
+ * Control:Static.QuickLink
+ * Style:quick
+ * Desc:目前没有
+ * Quot:soe
+*************************************************************/
+
+
+/*************************************************************
+ * Command:Start
+ * Control:Search.Bar
+ * Style:search
+ * Desc:目前没有
+ * Quot:soe
+*************************************************************/
+
+/*************************************************************
+ * Command:End
+ * Control:Search.Bar
+ * Style:search
+ * Desc:目前没有
+ * Quot:soe
+*************************************************************/
+
+
+/*************************************************************
+ * Command:Start
+ * Control:Lecture.List
+ * Style:lecture
+ * Desc:目前没有
+ * Quot:soe
+*************************************************************/
+
+/*************************************************************
+ * Command:End
+ * Control:Lecture.List
+ * Style:lecture
+ * Desc:目前没有
+ * Quot:soe
+*************************************************************/
+
+
+/*************************************************************
+ * Command:Start
+ * Control:Static.Recruitment
+ * Style:recruitment
+ * Desc:目前没有
+ * Quot:soe
+*************************************************************/
+
+/*************************************************************
+ * Command:End
+ * Control:Static.Recruitment
+ * Style:recruitment
+ * Desc:目前没有
+ * Quot:soe
+*************************************************************/
+
+
+/*************************************************************
+ * Command:Start
+ * Control:Article.List
+ * Style:testimonial module
+ * Desc:目前没有
+ * Quot:soe
+*************************************************************/
+
+/*************************************************************
+ * Command:End
+ * Control:Article.List
+ * Style:testimonial module
+ * Desc:目前没有
+ * Quot:soe
+*************************************************************/
+
+
+/*************************************************************
+ * Command:Start
+ * Control:Static.PicLink
+ * Style:friend module
+ * Desc:目前没有
+ * Quot:soe
+*************************************************************/
+
+/*************************************************************
+ * Command:End
+ * Control:Static.PicLink
+ * Style:friend module
+ * Desc:目前没有
+ * Quot:soe
+*************************************************************/
+
+
+/*************************************************************
+ * Command:Start
+ * Control:Statistic.Default
+ * Style:statistic
+ * Desc:目前没有
+ * Quot:soe
+*************************************************************/
+
+/*************************************************************
+ * Command:End
+ * Control:Statistic.Default
+ * Style:statistic
+ * Desc:目前没有
+ * Quot:soe
+*************************************************************/

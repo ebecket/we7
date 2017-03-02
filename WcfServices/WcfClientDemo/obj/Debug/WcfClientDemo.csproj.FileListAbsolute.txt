@@ -1,0 +1,6 @@
+E:\Work\DotNet\SOE\WcfServices\WcfClientDemo\obj\Debug\ResolveAssemblyReference.cache
+E:\Work\DotNet\SOE\WcfServices\WcfClientDemo\bin\Debug\SOE.WcfClientDemo.exe.config
+E:\Work\DotNet\SOE\WcfServices\WcfClientDemo\bin\Debug\SOE.WcfClientDemo.exe
+E:\Work\DotNet\SOE\WcfServices\WcfClientDemo\bin\Debug\SOE.WcfClientDemo.pdb
+E:\Work\DotNet\SOE\WcfServices\WcfClientDemo\obj\Debug\SOE.WcfClientDemo.exe
+E:\Work\DotNet\SOE\WcfServices\WcfClientDemo\obj\Debug\SOE.WcfClientDemo.pdb

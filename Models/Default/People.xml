@@ -1,0 +1,178 @@
+<?xml version="1.0"?>
+<ModelInfo xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" type="article" label="人员信息" desc="" authority="false">
+  <dataSet>
+    <dataTable name="People">
+      <dataColumn name="ID" label="ID" dataType="String" expression="" direction="InputOutput" system="true" mapping="ID" maxlength="40" nullable="false" require="false" edit="false" list="false" />
+      <dataColumn name="AccountID" label="用户ID" dataType="String" expression="" direction="Output" system="true" maxlength="40" nullable="false" require="false" edit="false" list="false" />
+      <dataColumn name="OwnerID" label="栏目ID" dataType="String" expression="" direction="Output" system="false" mapping="OwnerID" maxlength="40" nullable="false" require="false" edit="false" list="false" />
+      <dataColumn name="State" label="状态" dataType="Int32" expression="" direction="Output" system="true" mapping="State" maxlength="0" default="1" nullable="false" require="false" edit="false" list="true" />
+      <dataColumn name="Index" label="排序" dataType="Int32" expression="" direction="Output" system="true" mapping="SequenceIndex" maxlength="0" default="999" nullable="false" require="false" edit="false" list="false" />
+      <dataColumn name="IsShow" label="置顶" dataType="Int32" expression="" direction="Output" system="true" mapping="IsShow" maxlength="0" nullable="false" require="false" edit="false" list="true" />
+      <dataColumn name="Tags" label="标签" dataType="String" expression="" direction="Output" system="true" maxlength="255" nullable="false" require="false" edit="false" list="true" />
+      <dataColumn name="Updated" label="更新时间" dataType="DateTime" expression="" direction="InputOutput" system="true" maxlength="0" default="Now" nullable="false" require="false" edit="false" list="false" />
+      <dataColumn name="Created" label="创建时间" dataType="DateTime" expression="" direction="Output" system="true" mapping="Created" maxlength="0" default="Now" nullable="false" require="false" edit="false" list="false" />
+      <dataColumn name="ProcessState" label="审批当前进程" dataType="String" expression="" direction="Output" system="true" maxlength="50" nullable="false" require="false" edit="false" list="false" />
+      <dataColumn name="ProcessDirection" label="流转来源方向" dataType="String" expression="" direction="Output" system="true" maxlength="50" nullable="false" require="false" edit="false" list="false" />
+      <dataColumn name="ProcessSiteID" label="拥有处置权限的站点ID" dataType="String" expression="" direction="Output" system="true" maxlength="40" nullable="false" require="false" edit="false" list="false" />
+      <dataColumn name="FullPath" label="栏目路径" dataType="String" expression="" direction="Output" system="true" maxlength="254" nullable="false" require="false" edit="false" list="false" />
+      <dataColumn name="Clicks" label="点击量" dataType="Int32" expression="" direction="Input" system="true" mapping="" maxlength="0" nullable="false" require="false" edit="false" list="true" />
+      <dataColumn name="DayClicks" label="日点击量" dataType="Int32" expression="" direction="Input" system="true" mapping="" maxlength="0" nullable="false" require="false" edit="false" list="true" />
+      <dataColumn name="YesterdayClicks" label="昨日点击量" dataType="Int32" expression="" direction="Input" system="true" mapping="" maxlength="0" nullable="false" require="false" edit="false" list="true" />
+      <dataColumn name="WeekClicks" label="周点击量" dataType="Int32" expression="" direction="Input" system="true" mapping="" maxlength="0" nullable="false" require="false" edit="false" list="true" />
+      <dataColumn name="MonthClicks" label="月点击量" dataType="Int32" expression="" direction="Input" system="true" mapping="" maxlength="0" nullable="false" require="false" edit="false" list="true" />
+      <dataColumn name="QuarterClicks" label="季点击量" dataType="Int32" expression="" direction="Input" system="true" mapping="" maxlength="0" nullable="false" require="false" edit="false" list="true" />
+      <dataColumn name="YearClicks" label="年点击量" dataType="Int32" expression="" direction="Input" system="true" mapping="" maxlength="0" nullable="false" require="false" edit="false" list="true" />
+      <dataColumn name="Fullname" label="姓名" dataType="String" direction="Output" system="false" mapping="Title" maxlength="50" nullable="false" require="false" edit="false" list="false" />
+      <dataColumn name="Gendar" label="性别" dataType="String" direction="Output" system="false" mapping="ListKeys" maxlength="25" nullable="false" require="false" edit="false" list="false" />
+      <dataColumn name="Title" label="职称" dataType="String" direction="Input" system="false" mapping="" maxlength="500" nullable="false" require="false" edit="false" list="false" />
+      <dataColumn name="Position" label="职务" dataType="String" direction="Input" system="false" mapping="" maxlength="100" nullable="false" require="false" edit="false" list="false" />
+      <dataColumn name="Office" label="办公室" dataType="String" direction="Input" system="false" mapping="" maxlength="100" nullable="false" require="false" edit="false" list="false" />
+      <dataColumn name="OfficeTime" label="办公时间" dataType="String" direction="Input" system="false" mapping="" maxlength="100" nullable="false" require="false" edit="false" list="false" />
+      <dataColumn name="Phone" label="固定电话" dataType="String" direction="Input" system="false" mapping="" maxlength="100" nullable="false" require="false" edit="false" list="false" />
+      <dataColumn name="Mobil" label="手机" dataType="String" direction="Input" system="false" mapping="" maxlength="50" nullable="false" require="false" edit="false" list="false" />
+      <dataColumn name="Email" label="电子邮件" dataType="String" direction="Input" system="false" mapping="" maxlength="100" nullable="false" require="false" edit="false" list="false" />
+      <dataColumn name="Duty" label="工作职责" dataType="String" direction="Input" system="false" mapping="" maxlength="200" nullable="false" require="false" edit="false" list="false" />
+      <dataColumn name="Field" label="研究领域" dataType="String" direction="Input" system="false" mapping="" maxlength="200" nullable="false" require="false" edit="false" list="false" />
+      <dataColumn name="Photo" label="照片" dataType="String" direction="Input" system="false" mapping="" maxlength="200" nullable="false" require="false" edit="false" list="false" />
+      <dataColumn name="Url" label="主页" dataType="String" direction="Input" system="false" mapping="" maxlength="500" nullable="false" require="false" edit="false" list="false" />
+      <dataColumn name="Intro" label="个人简介" dataType="String" direction="Input" system="false" mapping="" maxlength="10000" nullable="false" require="false" edit="false" list="false" />
+      <dataColumn name="IndexLetter" label="首字母" dataType="String" direction="Output" system="false" mapping="ListKeys1" maxlength="2" nullable="false" require="false" edit="false" list="false" />
+      <dataColumn name="CardNumber" label="教工号" dataType="String" direction="Input" system="false" mapping="" maxlength="50" nullable="false" require="false" edit="false" list="false" />
+      <dataColumn name="Cate" label="类别" dataType="String" direction="Output" system="false" mapping="ListKeys2" maxlength="100" nullable="false" require="false" edit="false" list="false" />
+      <dataColumn name="Subject" label="学科" dataType="String" direction="Output" system="false" mapping="ListKeys3" maxlength="200" nullable="false" require="false" edit="false" list="false" />
+      <dataColumn name="School" label="毕业院校" dataType="String" direction="Input" system="false" mapping="" maxlength="200" nullable="false" require="false" edit="false" list="false" />
+      <dataColumn name="CV" label="简历" dataType="String" direction="Input" system="false" mapping="" maxlength="200" nullable="false" require="false" edit="false" list="false" />
+      <dataColumn name="Result" label="研究成果" dataType="String" direction="Input" system="false" mapping="" maxlength="10000" nullable="false" require="false" edit="false" list="false" />
+      <dataColumn name="Project" label="研究项目" dataType="String" direction="Input" system="false" mapping="" maxlength="10000" nullable="false" require="false" edit="false" list="false" />
+      <dataColumn name="Subject2" label="学科2" dataType="String" direction="Input" system="false" mapping="" maxlength="200" nullable="false" require="false" edit="false" list="false" />
+      <dataColumn name="Subject3" label="学科3" dataType="String" direction="Input" system="false" mapping="" maxlength="200" nullable="false" require="false" edit="false" list="false" />
+    </dataTable>
+  </dataSet>
+  <layout>
+    <panel name="edit" label="后台录入面板">
+      <edit path="We7.UxLayoutEditor" visible="true" layout="~/Models/Default/People/GenerateLayout.ascx" viewerPath="We7.UxLayoutViewer" viewerLayout="~/Models/Default/People/GenerateLayout.ascx" viewerCss="" editCss="" ucLayout="~/Models/Default/People/GenerateLayout.ascx" ucCss="">
+        <group name="默认" index="0" next="0" enable="true">
+          <control id="ID" name="ID" label="ID" type="GUID" width="" height="" css="" default="" required="false" desc="" visible="false" ignore="false" />
+          <control id="OwnerID" name="OwnerID" label="人员类别" type="We7.ChannelSelect" width="" height="" css="" default="" required="true" desc="" visible="true" ignore="false" />
+          <control id="IndexLetter" name="IndexLetter" label="首字母" type="Select" width="" height="" css="" default="" required="true" desc="" visible="true" ignore="false">
+            <param name="data" value="A|A,B|B,C|C,D|D,E|E,F|F,G|G,H|H,I|I,J|J,K|K,L|L,M|M,N|N,O|O,P|P,Q|Q,R|R,S|S,T|T,U|U,V|V,W|W,X|X,Y|Y,Z|Z" />
+          </control>
+          <control id="CardNumber" name="CardNumber" label="教工号" type="TextInput" width="" height="" css="" default="" required="false" desc="" visible="true" ignore="false" />
+          <control id="Fullname" name="Fullname" label="姓名" type="TextInput" width="" height="" css="" default="" required="false" desc="" visible="true" ignore="false" />
+          <control id="Gendar" name="Gendar" label="性别" type="Select" width="" height="" css="" default="" required="false" desc="" visible="true" ignore="false">
+            <param name="data" value="男|男,女|女" />
+          </control>
+          <control id="Cate" name="Cate" label="教师类别" type="Select" width="" height="" css="" default="" required="false" desc="" visible="true" ignore="false">
+            <param name="data" value="全职教师|中文 全职教师,客座教授|中文 客座教授,兼职教授|中文 兼职教授,专任教师|中文 专任教师,Full-time Professor|英文 Full-time Professor,Adjunct Professor|英文 Adjunct Professor,Part-time Professor|英文 Part-time Professor,Teaching Fellow|英文 Teaching Fellow" />
+          </control>
+          <control id="Subject" name="Subject" label="教师学科1" type="Select" width="" height="" css="" default="" required="false" desc="" visible="true" ignore="false">
+            <param name="data" value="宏观经济学|中文 宏观经济学,微观经济学|中文 微观经济学,计量经济学|中文 计量经济学,金融学|中文 金融学,统计学|中文 统计学,应用微观|中文 应用微观,英语教学|中文 英语教学,Macroeconomics|英文 Macroeconomics,Microeconomics|英文 Microeconomics,Econometrics|英文 Econometrics,Finance|英文 Finance,Statistics|英文 Statistics,Applied Microeconomics|英文 Applied Microeconomics,English Teaching|英文 English Teaching" />
+          </control>
+          <control id="Subject2" name="Subject2" label="教师学科2" type="Select" width="" height="" css="" default="" required="false" desc="" visible="true" ignore="false">
+            <param name="data" value="宏观经济学|中文 宏观经济学,微观经济学|中文 微观经济学,计量经济学|中文 计量经济学,金融学|中文 金融学,统计学|中文 统计学,应用微观|中文 应用微观,英语教学|中文 英语教学,Macroeconomics|英文 Macroeconomics,Microeconomics|英文 Microeconomics,Econometrics|英文 Econometrics,Finance|英文 Finance,Statistics|英文 Statistics,Applied Microeconomics|英文 Applied Microeconomics,English Teaching|英文 English Teaching" />
+          </control>
+          <control id="Subject3" name="Subject3" label="教师学科3" type="Select" width="" height="" css="" default="" required="false" desc="" visible="true" ignore="false">
+            <param name="data" value="宏观经济学|中文 宏观经济学,微观经济学|中文 微观经济学,计量经济学|中文 计量经济学,金融学|中文 金融学,统计学|中文 统计学,应用微观|中文 应用微观,英语教学|中文 英语教学,Macroeconomics|英文 Macroeconomics,Microeconomics|英文 Microeconomics,Econometrics|英文 Econometrics,Finance|英文 Finance,Statistics|英文 Statistics,Applied Microeconomics|英文 Applied Microeconomics,English Teaching|英文 English Teaching" />
+          </control>
+          <control id="Title" name="Title" label="教师职称" type="TextInput" width="" height="" css="" default="" required="false" desc="" visible="true" ignore="false" />
+          <control id="Field" name="Field" label="教师研究领域" type="TextInput" width="300" height="" css="" default="" required="false" desc="" visible="true" ignore="false" />
+          <control id="School" name="School" label="毕业院校" type="TextInput" width="" height="" css="" default="" required="false" desc="" visible="true" ignore="false" />
+          <control id="Position" name="Position" label="职务" type="TextInput" width="" height="" css="" default="" required="false" desc="" visible="true" ignore="false" />
+          <control id="Office" name="Office" label="办公室" type="TextInput" width="" height="" css="" default="" required="false" desc="" visible="true" ignore="false" />
+          <control id="OfficeTime" name="OfficeTime" label="办公时间" type="TextInput" width="" height="" css="" default="" required="false" desc="" visible="true" ignore="false" />
+          <control id="Phone" name="Phone" label="固定电话" type="TextInput" width="" height="" css="" default="" required="false" desc="" visible="true" ignore="false" />
+          <control id="Mobil" name="Mobil" label="手机" type="TextInput" width="" height="" css="" default="" required="false" desc="" visible="true" ignore="false" />
+          <control id="Email" name="Email" label="电子邮件" type="TextInput" width="" height="" css="" default="" required="false" desc="" visible="true" ignore="false" />
+          <control id="Duty" name="Duty" label="工作职责" type="TextInput" width="300" height="" css="" default="" required="false" desc="" visible="true" ignore="false" />
+          <control id="Url" name="Url" label="主页" type="TextInput" width="300" height="" css="" default="" required="false" desc="" visible="true" ignore="false" />
+          <control id="Photo" name="Photo" label="照片" type="We7.Thumbnail" width="" height="" css="" default="" required="false" desc="" visible="true" ignore="false" />
+          <control id="CV" name="CV" label="简历" type="Attachment" width="" height="" css="" default="" required="false" desc="" visible="true" ignore="false" />
+          <control id="Intro" name="Intro" label="个人简介" type="Editor" width="" height="" css="" default="" required="false" desc="" visible="true" ignore="false" />
+          <control id="Result" name="Result" label="研究成果" type="Editor" width="" height="" css="" default="" required="false" desc="" visible="true" ignore="false" />
+          <control id="Project" name="Project" label="研究项目" type="Editor" width="" height="" css="" default="" required="false" desc="" visible="true" ignore="false" />
+          <control id="State" name="State" label="状态" type="Select" width="" height="" css="" default="" required="false" desc="" visible="true" ignore="false">
+            <param name="data" value="1|启用,2|禁用" />
+          </control>
+        </group>
+      </edit>
+      <list visible="false" />
+      <pager visible="false" />
+      <condition path="we7.Condition" visible="false">
+        <control id="ID" name="ID" label="ID" type="Request" required="false" visible="false" ignore="false" />
+      </condition>
+      <command visible="false" />
+      <navigation visible="false" />
+      <context>
+        <pageSize>10</pageSize>
+        <orders>ID</orders>
+        <dataKey>ID</dataKey>
+      </context>
+    </panel>
+    <panel name="list" label="后台列表面板">
+      <edit visible="false" />
+      <list path="we7.List" visible="true">
+        <group name="传统列表" index="0" next="0" enable="true">
+          <column name="Photo" label="照片" width="" height="" type="thumb" align="NotSet" index="0" visible="true" isThumb="true" isLink="false" mapping="" expr="" convert="" />
+          <column name="IndexLetter" label="首字母" type="html" align="NotSet" index="1" visible="true" isThumb="false" isLink="false" />
+          <column name="Fullname" label="姓名" width="" height="" type="html" align="NotSet" index="2" visible="true" isThumb="false" isLink="false" mapping="" expr="" convert="" />
+          <column name="Phone" label="固定电话" width="" height="" type="html" align="NotSet" index="3" visible="true" isThumb="false" isLink="false" mapping="" expr="" convert="" />
+          <column name="Mobil" label="手机" width="" height="" type="html" align="NotSet" index="4" visible="true" isThumb="false" isLink="false" mapping="" expr="" convert="" />
+          <column name="Email" label="电子邮件" width="" height="" type="html" align="NotSet" index="5" visible="true" isThumb="false" isLink="false" mapping="" expr="" convert="" />
+          <column name="Title" label="职称" width="" height="" type="html" align="NotSet" index="6" visible="true" isThumb="false" isLink="false" mapping="" expr="" convert="" />
+          <column name="Position" label="职务" width="" height="" type="html" align="NotSet" index="7" visible="true" isThumb="false" isLink="false" mapping="" expr="" convert="" />
+          <column name="Manage" label="管理" width="100" height="" type="action" align="Center" index="8" visible="true" isThumb="false" isLink="false" mapping="" expr="" convert="">
+            <param name="cmd" value="view()|edit()|delete" />
+            <param name="cmdText" value="查看|编辑|删除" />
+          </column>
+        </group>
+        <group name="矩阵行列" index="1" next="0" enable="false">
+          <column name="" label="标题" width="120" type="link" align="NotSet" index="1" visible="true" isThumb="false" isLink="false" />
+          <column name="" label="图片" width="120" type="thumb" align="NotSet" index="2" visible="true" isThumb="true" isLink="false" />
+          <column name="Manage" label="管理" width="120" type="action" align="Center" index="3" visible="true" isThumb="false" isLink="false" mapping="" expr="" convert="">
+            <param name="cmd" value="view()|edit()|delete" />
+            <param name="cmdText" value="查看|编辑|删除" />
+          </column>
+        </group>
+      </list>
+      <pager path="we7.Pager" visible="true" />
+      <condition path="we7.Condition" visible="true">
+        <control id="Fullname" name="Fullname" label="姓名" type="TextInput" width="" height="" css="" default="" required="false" desc="" visible="true" ignore="false" />
+      </condition>
+      <command path="we7.Command" visible="true" />
+      <navigation visible="false" />
+      <context>
+        <pageSize>10</pageSize>
+        <orders>Index,IsShow Desc,Updated Desc,ID Desc</orders>
+        <dataKey>ID</dataKey>
+      </context>
+    </panel>
+    <panel name="multi" label="会员中心显示面板">
+      <edit path="System.CascadeEditor" visible="true">
+        <group index="0" next="0" enable="false">
+          <control id="ID" name="ID" label="ID" type="GUID" required="true" visible="false" ignore="false" />
+        </group>
+      </edit>
+      <list path="System.SimpleList" visible="true" />
+      <pager path="System.SimplePager" visible="true" />
+      <condition path="System.SimpleCondition" visible="true">
+        <control id="OwnerID" name="OwnerID" label="栏目ID" type="Request" required="false" visible="false" ignore="false">
+          <param name="param" value="oid" />
+        </control>
+      </condition>
+      <command path="System.SimpleCommand" visible="true" />
+      <navigation path="System.SimplenNavigation" visible="true" />
+      <context>
+        <pageSize>10</pageSize>
+        <orders>Index,IsShow Desc,Updated Desc,ID Desc</orders>
+        <dataKey>ID</dataKey>
+      </context>
+    </panel>
+    <UCContrl>
+      <listFields>OwnerID,Fullname,Gendar,Title,Position,Office,OfficeTime,Phone,Mobil,Email,Duty,Field,Photo,Url,Intro,IndexLetter,CardNumber,Cate,Subject</listFields>
+      <detailFields>OwnerID,Fullname,Gendar,Title,Position,Office,OfficeTime,Phone,Mobil,Email,Duty,Field,Photo,Url,Intro,IndexLetter,CardNumber,Cate,Subject</detailFields>
+      <widgetListFields>OwnerID,Fullname,Gendar,Title,Position,Office,OfficeTime,Phone,Mobil,Email,Duty,Field,Photo,Url,Intro,IndexLetter,CardNumber</widgetListFields>
+      <widgetDetailFields>OwnerID,Fullname,Gendar,Title,Position,Office,OfficeTime,Phone,Mobil,Email,Duty,Field,Photo,Url,Intro,IndexLetter,CardNumber</widgetDetailFields>
+      <createEditor>false</createEditor>
+    </UCContrl>
+  </layout>
+</ModelInfo>

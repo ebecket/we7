@@ -1,0 +1,137 @@
+
+ 
+记录时间：2015-10-10 09:35:41,936 
+线程ID:[6] 
+日志级别：  ERROR 
+出错类：We7.CMS.Web.Global property: [(null)] - 
+错误描述：Error
+ 
+System.Web.HttpUnhandledException: 引发类型为“System.Web.HttpUnhandledException”的异常。 ---> System.Exception: Sql：：SELECT COUNT(*) FROM [Lecture] 　　　param0：：name=@P0,value=1　　　param1：：name=@P1,value={7d326420-7905-4847-850d-3a4573a00d53}　　　param2：：name=@P2,value=“WISE-经济学院”金融实务与职业规划系列讲座　　　param3：：name=@P3,value=经济学院实务讲座　　　Message：：在数据集中不存在当前字段:Field　　　
+   在 We7.Model.Core.Data.ThinkmentDriver.OperateHandle.ThrowException(SqlStatement statement, Exception ex)
+   在 We7.Model.Core.Data.ThinkmentDriver.CountHandle.Execute()
+   在 We7.Model.Core.Data.ThinkmentDriver.CountHandle.Execute(Criteria c)
+   在 We7.Model.Core.Data.ModelDBHelper.Count(Criteria ct)
+   在 We7.Model.Core.Data.ModelDBHelper.QueryPagedList(Criteria ct, List`1 orders, Int32 pageIndex, Int32 pageSize, Int32& recordcount)
+   在 We7.CMS.UI.Widget.WidgetPagedList.OnInitData()
+   在 We7.CMS.WebControls.BaseControl.OnLoad(EventArgs e)
+   在 System.Web.UI.Control.LoadRecursive()
+   在 System.Web.UI.Control.LoadRecursive()
+   在 System.Web.UI.Control.LoadRecursive()
+   在 System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+   --- 内部异常堆栈跟踪的结尾 ---
+   在 System.Web.UI.Page.HandleError(Exception e)
+   在 System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+   在 System.Web.UI.Page.ProcessRequest(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+   在 System.Web.UI.Page.ProcessRequest()
+   在 System.Web.UI.Page.ProcessRequestWithNoAssert(HttpContext context)
+   在 System.Web.UI.Page.ProcessRequest(HttpContext context)
+   在 ASP.go_showchannel_aspx.ProcessRequest(HttpContext context) 位置 c:\Windows\Microsoft.NET\Framework\v2.0.50727\Temporary ASP.NET Files\root\b873ae11\4384875b\App_Web_g8wm6vvh.5.cs:行号 0
+   在 System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   在 System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+
+ 
+记录时间：2015-10-10 16:22:27,733 
+线程ID:[13] 
+日志级别：  ERROR 
+出错类：We7.CMS.Web.Global property: [(null)] - 
+错误描述：Error
+ 
+System.Web.HttpUnhandledException: 引发类型为“System.Web.HttpUnhandledException”的异常。 ---> System.Exception: Sql：：SELECT COUNT(*) FROM [Lecture] 　　　param0：：name=@P0,value=1　　　param1：：name=@P1,value={7d326420-7905-4847-850d-3a4573a00d53}　　　param2：：name=@P2,value=“WISE-经济学院”金融实务与职业规划系列讲座　　　param3：：name=@P3,value=经济学院实务讲座　　　Message：：在数据集中不存在当前字段:Field　　　
+   在 We7.Model.Core.Data.ThinkmentDriver.OperateHandle.ThrowException(SqlStatement statement, Exception ex)
+   在 We7.Model.Core.Data.ThinkmentDriver.CountHandle.Execute()
+   在 We7.Model.Core.Data.ThinkmentDriver.CountHandle.Execute(Criteria c)
+   在 We7.Model.Core.Data.ModelDBHelper.Count(Criteria ct)
+   在 We7.Model.Core.Data.ModelDBHelper.QueryPagedList(Criteria ct, List`1 orders, Int32 pageIndex, Int32 pageSize, Int32& recordcount)
+   在 We7.CMS.UI.Widget.WidgetPagedList.OnInitData()
+   在 We7.CMS.WebControls.BaseControl.OnLoad(EventArgs e)
+   在 System.Web.UI.Control.LoadRecursive()
+   在 System.Web.UI.Control.LoadRecursive()
+   在 System.Web.UI.Control.LoadRecursive()
+   在 System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+   --- 内部异常堆栈跟踪的结尾 ---
+   在 System.Web.UI.Page.HandleError(Exception e)
+   在 System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+   在 System.Web.UI.Page.ProcessRequest(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+   在 System.Web.UI.Page.ProcessRequest()
+   在 System.Web.UI.Page.ProcessRequestWithNoAssert(HttpContext context)
+   在 System.Web.UI.Page.ProcessRequest(HttpContext context)
+   在 ASP.go_showchannel_aspx.ProcessRequest(HttpContext context) 位置 c:\Windows\Microsoft.NET\Framework\v2.0.50727\Temporary ASP.NET Files\root\b873ae11\4384875b\App_Web_g8wm6vvh.5.cs:行号 0
+   在 System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   在 System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+
+ 
+记录时间：2015-10-10 16:22:44,013 
+线程ID:[13] 
+日志级别：  ERROR 
+出错类：We7.CMS.Web.Global property: [(null)] - 
+错误描述：Error
+ 
+System.Web.HttpUnhandledException: 引发类型为“System.Web.HttpUnhandledException”的异常。 ---> System.Exception: Sql：：SELECT COUNT(*) FROM [Lecture] 　　　param0：：name=@P0,value=1　　　param1：：name=@P1,value={7d326420-7905-4847-850d-3a4573a00d53}　　　param2：：name=@P2,value=“WISE-经济学院”金融实务与职业规划系列讲座　　　param3：：name=@P3,value=经济学院实务讲座　　　Message：：在数据集中不存在当前字段:Field　　　
+   在 We7.Model.Core.Data.ThinkmentDriver.OperateHandle.ThrowException(SqlStatement statement, Exception ex)
+   在 We7.Model.Core.Data.ThinkmentDriver.CountHandle.Execute()
+   在 We7.Model.Core.Data.ThinkmentDriver.CountHandle.Execute(Criteria c)
+   在 We7.Model.Core.Data.ModelDBHelper.Count(Criteria ct)
+   在 We7.Model.Core.Data.ModelDBHelper.QueryPagedList(Criteria ct, List`1 orders, Int32 pageIndex, Int32 pageSize, Int32& recordcount)
+   在 We7.CMS.UI.Widget.WidgetPagedList.OnInitData()
+   在 We7.CMS.WebControls.BaseControl.OnLoad(EventArgs e)
+   在 System.Web.UI.Control.LoadRecursive()
+   在 System.Web.UI.Control.LoadRecursive()
+   在 System.Web.UI.Control.LoadRecursive()
+   在 System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+   --- 内部异常堆栈跟踪的结尾 ---
+   在 System.Web.UI.Page.HandleError(Exception e)
+   在 System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+   在 System.Web.UI.Page.ProcessRequest(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+   在 System.Web.UI.Page.ProcessRequest()
+   在 System.Web.UI.Page.ProcessRequestWithNoAssert(HttpContext context)
+   在 System.Web.UI.Page.ProcessRequest(HttpContext context)
+   在 ASP.go_showchannel_aspx.ProcessRequest(HttpContext context) 位置 c:\Windows\Microsoft.NET\Framework\v2.0.50727\Temporary ASP.NET Files\root\b873ae11\4384875b\App_Web_g8wm6vvh.5.cs:行号 0
+   在 System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   在 System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+
+ 
+记录时间：2015-10-10 16:26:17,067 
+线程ID:[13] 
+日志级别：  ERROR 
+出错类：We7.CMS.Web.Global property: [(null)] - 
+错误描述：Error
+ 
+System.Web.HttpUnhandledException: 引发类型为“System.Web.HttpUnhandledException”的异常。 ---> System.Exception: Sql：：SELECT COUNT(*) FROM [Lecture] 　　　param0：：name=@P0,value=1　　　param1：：name=@P1,value={7d326420-7905-4847-850d-3a4573a00d53}　　　param2：：name=@P2,value=“WISE-经济学院”金融实务与职业规划系列讲座　　　param3：：name=@P3,value=经济学院实务讲座　　　Message：：在数据集中不存在当前字段:Field　　　
+   在 We7.Model.Core.Data.ThinkmentDriver.OperateHandle.ThrowException(SqlStatement statement, Exception ex)
+   在 We7.Model.Core.Data.ThinkmentDriver.CountHandle.Execute()
+   在 We7.Model.Core.Data.ThinkmentDriver.CountHandle.Execute(Criteria c)
+   在 We7.Model.Core.Data.ModelDBHelper.Count(Criteria ct)
+   在 We7.Model.Core.Data.ModelDBHelper.QueryPagedList(Criteria ct, List`1 orders, Int32 pageIndex, Int32 pageSize, Int32& recordcount)
+   在 We7.CMS.UI.Widget.WidgetPagedList.OnInitData()
+   在 We7.CMS.WebControls.BaseControl.OnLoad(EventArgs e)
+   在 System.Web.UI.Control.LoadRecursive()
+   在 System.Web.UI.Control.LoadRecursive()
+   在 System.Web.UI.Control.LoadRecursive()
+   在 System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+   --- 内部异常堆栈跟踪的结尾 ---
+   在 System.Web.UI.Page.HandleError(Exception e)
+   在 System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+   在 System.Web.UI.Page.ProcessRequest(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+   在 System.Web.UI.Page.ProcessRequest()
+   在 System.Web.UI.Page.ProcessRequestWithNoAssert(HttpContext context)
+   在 System.Web.UI.Page.ProcessRequest(HttpContext context)
+   在 ASP.go_showchannel_aspx.ProcessRequest(HttpContext context) 位置 c:\Windows\Microsoft.NET\Framework\v2.0.50727\Temporary ASP.NET Files\root\b873ae11\4384875b\App_Web_g8wm6vvh.5.cs:行号 0
+   在 System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   在 System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+
+ 
+记录时间：2015-10-10 16:50:19,678 
+线程ID:[13] 
+日志级别：  ERROR 
+出错类：We7.CMS.BasePage property: [(null)] - 
+错误描述：Error
+ 
+System.Threading.ThreadAbortException: 正在中止线程。
+   在 System.Threading.Thread.AbortInternal()
+   在 System.Threading.Thread.Abort(Object stateInfo)
+   在 System.Web.HttpResponse.End()
+   在 System.Web.HttpServerUtility.Transfer(String path, Boolean preserveForm)
+   在 System.Web.HttpServerUtility.Transfer(String path)
+   在 We7.CMS.BasePage.HanldeNoPermission()
+   在 We7.CMS.BasePage.CheckPermission()
+   在 We7.CMS.BasePage.OnLoad(EventArgs e)

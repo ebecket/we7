@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="d3b9ee65-e44f-4867-9a9f-07ded680b91d" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+  <ClientOptions>
+    <GenerateAsynchronousMethods>false</GenerateAsynchronousMethods>
+    <EnableDataBinding>true</EnableDataBinding>
+    <ExcludedTypes />
+    <ImportXmlTypes>false</ImportXmlTypes>
+    <GenerateInternalTypes>false</GenerateInternalTypes>
+    <GenerateMessageContracts>false</GenerateMessageContracts>
+    <NamespaceMappings />
+    <CollectionMappings />
+    <GenerateSerializableTypes>true</GenerateSerializableTypes>
+    <Serializer>Auto</Serializer>
+    <ReferenceAllAssemblies>true</ReferenceAllAssemblies>
+    <ReferencedAssemblies />
+    <ReferencedDataContractTypes />
+    <ServiceContractMappings />
+  </ClientOptions>
+  <MetadataSources>
+    <MetadataSource Address="http://localhost:54644/LectureService.svc" Protocol="http" SourceId="1" />
+  </MetadataSources>
+  <Metadata>
+    <MetadataFile FileName="LectureService.xsd" MetadataType="Schema" ID="4baa5788-d5c1-4d0e-8db5-ade0491c4d48" SourceId="1" SourceUrl="http://localhost:54644/LectureService.svc?xsd=xsd0" />
+    <MetadataFile FileName="LectureService1.xsd" MetadataType="Schema" ID="a84bfdbc-b09c-4112-88e6-6bdf935f7980" SourceId="1" SourceUrl="http://localhost:54644/LectureService.svc?xsd=xsd1" />
+    <MetadataFile FileName="LectureService2.xsd" MetadataType="Schema" ID="2cf2b858-5627-405d-8a27-f043844a2d92" SourceId="1" SourceUrl="http://localhost:54644/LectureService.svc?xsd=xsd2" />
+    <MetadataFile FileName="LectureService.wsdl" MetadataType="Wsdl" ID="ab01dfc3-03e2-4df9-b455-0918783610fd" SourceId="1" SourceUrl="http://localhost:54644/LectureService.svc?wsdl" />
+    <MetadataFile FileName="LectureService.disco" MetadataType="Disco" ID="3006a3cf-5c0b-4e7c-9b2d-30ba31d1b3f9" SourceId="1" SourceUrl="http://localhost:54644/LectureService.svc?disco" />
+  </Metadata>
+  <Extensions>
+    <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />
+    <ExtensionFile FileName="configuration.svcinfo" Name="configuration.svcinfo" />
+  </Extensions>
+</ReferenceGroup>

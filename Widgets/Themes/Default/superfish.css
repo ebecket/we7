@@ -1,0 +1,177 @@
+﻿/* SuperFish 1.7.4 */
+.sf-menu, .sf-menu * {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+.sf-menu li {
+    position: relative;
+}
+.sf-menu ul {
+    position: absolute;
+    display: none;
+    top: 100%;
+    left: 0;
+    z-index: 99;
+}
+.sf-menu > li {
+    float: left;
+}
+.sf-menu li:hover > ul, .sf-menu li.sfHover > ul {
+    display: block;
+}
+
+.sf-menu a {
+    display: block;
+    position: relative;
+}
+.sf-menu ul ul {
+    top: 0;
+    left: 100%;
+}
+
+/* Default Skin */
+.sf-menu {
+    float: left;
+    margin-bottom: 1em;
+}
+.sf-menu ul {
+    box-shadow: 2px 2px 6px rgba(0,0,0,.2);
+    min-width: 12em;
+}
+.sf-menu a {
+    border-left: 1px solid #fff;
+    border-top: 1px solid #dfeeff;
+    border-top: 1px solid rgba(255,255,255,.5);
+    padding: .75em 1em;
+    text-decoration: none;
+}
+.sf-menu a {
+    color: #13a;
+}
+.sf-menu li {
+    background: #bdd2ff;
+    white-space: nowrap;
+    -webkit-transition: background .2s;
+    transition: background .2s;
+}
+.sf-menu ul li {
+    background: #aabde6;
+}
+.sf-menu ul ul li {
+    background: #9aaedb;
+}
+.sf-menu li:hover, .sf-menu li.sfHover {
+    background: #cfdeff;
+    -webkit-transition: none;
+    transition: none;
+}
+
+.sf-arrows .sf-with-ul {
+    padding-right: 2.5em;
+}
+
+.sf-arrows .sf-with-ul:after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    right: 1em;
+    margin-top: -3px;
+    height: 0;
+    width: 0;
+    border: 5px solid transparent;
+    border-top-color: #f2f2f2;
+    border-top-color: rgba(255,255,255,.5);
+}
+.sf-arrows > li > .sf-with-ul:focus:after, .sf-arrows > li:hover > .sf-with-ul:after, .sf-arrows > .sfHover > .sf-with-ul:after {
+    border-top-color: white;
+}
+
+.sf-arrows ul .sf-with-ul:after {
+    margin-top: -5px;
+    margin-right: -3px;
+    border-color: transparent;
+    border-left-color: #f2f2f2;
+    border-left-color: rgba(255,255,255,.5);
+}
+.sf-arrows ul li > .sf-with-ul:focus:after, .sf-arrows ul li:hover > .sf-with-ul:after, .sf-arrows ul .sfHover > .sf-with-ul:after {
+    border-left-color: white;
+}
+
+
+/* Main Menu Skin */
+.main-menu {
+    margin: 0 7px;
+    width: 950px;
+    background-color: #000;
+    text-align: center;
+}
+.main-menu li {
+    background: none;
+    height: 50px;
+}
+.main-menu ul {
+    min-width: 8em;
+}
+.main-menu li li, .main-menu li li li {
+    background: none;
+    height: 40px;
+}
+.main-menu.sf-arrows > li > .sf-with-ul:after {
+    margin-top: -2px;
+    margin-right: -6px;
+}
+.main-menu a, .main-menu a.sf-with-ul {
+    font-size: 14px;
+    border: 0px;
+    font-family: "微软雅黑";
+    line-height: 50px;
+    height: 50px;
+    padding: 0 20px;
+}
+.main-menu li a:link, .main-menu li a:visited {
+    color: #fff;
+}
+.main-menu li.sfHover a, .main-menu li.sfHover a:link, .main-menu li.sfHover a:visited {
+    color: #fff;
+    background-color: #202020;
+}
+.main-menu li a:hover, .main-menu li a:focus, .main-menu li a:active, .main-menu li.sfHover a:hover, .main-menu li.sfHover a:focus, .main-menu li.sfHover a:active {
+    color: #fff;
+    background-color: #202020;
+    text-decoration: none;
+}
+
+.main-menu li li a, .main-menu li li a.sf-with-ul {
+    padding: 0 10px;
+    height: 40px;
+    line-height: 40px;
+}
+.main-menu li li a:link, .main-menu li li a:visited {
+    color: #000;
+}
+.main-menu li.sfHover li a, .main-menu li.sfHover li a:link, .main-menu li.sfHover li a:visited {
+    color: #000;
+    background-color: #ececec;
+}
+.main-menu li li a:hover, .main-menu li li a:focus, .main-menu li li a:active, .main-menu li.sfHover li a:hover, .main-menu li.sfHover li a:focus, .main-menu li.sfHover li a:active {
+    color: #000;
+    background-color: #dad6d6;
+}
+
+.main-menu {
+    *position:relative;
+    *z-index:100;
+}
+.main-menu li {
+    *float: left;
+}
+.main-menu ul {
+    *min-width: 8em;
+}
+.main-menu li li, .main-menu li li li {
+    *vertical-align: middle;
+}
+.main-menu li {
+    _width: 0;
+}

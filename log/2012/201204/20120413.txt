@@ -1,0 +1,70 @@
+
+ 
+记录时间：2012-04-13 10:49:51,167 
+线程ID:[8] 
+日志级别：  ERROR 
+出错类：We7.CMS.FrontBasePage property: [(null)] - 
+错误描述：Error
+ 
+System.InvalidOperationException: 超时时间已到。超时时间已到，但是尚未从池中获取连接。出现这种情况可能是因为所有池连接均在使用，并且达到了最大池大小。
+   在 System.Data.ProviderBase.DbConnectionFactory.GetConnection(DbConnection owningConnection)
+   在 System.Data.ProviderBase.DbConnectionClosed.OpenConnection(DbConnection outerConnection, DbConnectionFactory connectionFactory)
+   在 System.Data.SqlClient.SqlConnection.Open()
+   在 Thinkment.Data.DBAccessHelper.CreateConnection[T](String connectionString)
+   在 Thinkment.Data.SqlDbDriver.FrontPageSqlDbConnection.get_Connection()
+   在 Thinkment.Data.SqlDbDriver.FrontPageSqlDbConnection.CreateCommand(SqlStatement sql)
+   在 Thinkment.Data.SqlDbDriver.FrontPageSqlDbConnection.Query(SqlStatement sql)
+   在 Thinkment.Data.ListSelectHandle`1.Execute()
+   在 Thinkment.Data.ObjectManager.MyList[T](IConnection conn, Criteria condition, Order[] orders, Int32 from, Int32 count, ListField[] fields)
+   在 Thinkment.Data.ObjectAssistant.List[T](IConnection conn, Criteria condition, Order[] orders, Int32 from, Int32 count, ListField[] fields)
+   在 Thinkment.Data.ObjectAssistant.List[T](Criteria condition, Order[] orders, Int32 from, Int32 count, ListField[] fields)
+   在 Thinkment.Data.ObjectAssistant.List[T](Criteria condition, Order[] orders)
+   在 We7.CMS.PageVisitorHelper.GetPageVisitorByIP(String ip)
+   在 We7.CMS.PageVisitorHelper.AddPageVisitor(String AccountID)
+   在 We7.CMS.FrontBasePage.AddStatistic(String articleID, String columnID)
+   在 We7.CMS.Web.ShowSitePage.Page_Load(Object sender, EventArgs e)
+   在 System.Web.Util.CalliHelper.EventArgFunctionCaller(IntPtr fp, Object o, Object t, EventArgs e)
+   在 System.Web.Util.CalliEventHandlerDelegateProxy.Callback(Object sender, EventArgs e)
+   在 System.Web.UI.Control.OnLoad(EventArgs e)
+   在 We7.CMS.FrontBasePage.OnLoad(EventArgs e)
+
+ 
+记录时间：2012-04-13 10:50:53,193 
+线程ID:[9] 
+日志级别：  ERROR 
+出错类：We7.CMS.FrontBasePage property: [(null)] - 
+错误描述：Error
+ 
+System.Data.SqlClient.SqlException: 在与 SQL Server 建立连接时出现与网络相关的或特定于实例的错误。未找到或无法访问服务器。请验证实例名称是否正确并且 SQL Server 已配置为允许远程连接。 (provider: 命名管道提供程序, error: 40 - 无法打开到 SQL Server 的连接)
+   在 System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection)
+   在 System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj)
+   在 System.Data.SqlClient.TdsParser.Connect(ServerInfo serverInfo, SqlInternalConnectionTds connHandler, Boolean ignoreSniOpenTimeout, Int64 timerExpire, Boolean encrypt, Boolean trustServerCert, Boolean integratedSecurity, SqlConnection owningObject)
+   在 System.Data.SqlClient.SqlInternalConnectionTds.AttemptOneLogin(ServerInfo serverInfo, String newPassword, Boolean ignoreSniOpenTimeout, Int64 timerExpire, SqlConnection owningObject)
+   在 System.Data.SqlClient.SqlInternalConnectionTds.LoginNoFailover(String host, String newPassword, Boolean redirectedUserInstance, SqlConnection owningObject, SqlConnectionString connectionOptions, Int64 timerStart)
+   在 System.Data.SqlClient.SqlInternalConnectionTds.OpenLoginEnlist(SqlConnection owningObject, SqlConnectionString connectionOptions, String newPassword, Boolean redirectedUserInstance)
+   在 System.Data.SqlClient.SqlInternalConnectionTds..ctor(DbConnectionPoolIdentity identity, SqlConnectionString connectionOptions, Object providerInfo, String newPassword, SqlConnection owningObject, Boolean redirectedUserInstance)
+   在 System.Data.SqlClient.SqlConnectionFactory.CreateConnection(DbConnectionOptions options, Object poolGroupProviderInfo, DbConnectionPool pool, DbConnection owningConnection)
+   在 System.Data.ProviderBase.DbConnectionFactory.CreatePooledConnection(DbConnection owningConnection, DbConnectionPool pool, DbConnectionOptions options)
+   在 System.Data.ProviderBase.DbConnectionPool.CreateObject(DbConnection owningObject)
+   在 System.Data.ProviderBase.DbConnectionPool.UserCreateRequest(DbConnection owningObject)
+   在 System.Data.ProviderBase.DbConnectionPool.GetConnection(DbConnection owningObject)
+   在 System.Data.ProviderBase.DbConnectionFactory.GetConnection(DbConnection owningConnection)
+   在 System.Data.ProviderBase.DbConnectionClosed.OpenConnection(DbConnection outerConnection, DbConnectionFactory connectionFactory)
+   在 System.Data.SqlClient.SqlConnection.Open()
+   在 Thinkment.Data.DBAccessHelper.CreateConnection[T](String connectionString)
+   在 Thinkment.Data.SqlDbDriver.FrontPageSqlDbConnection.get_Connection()
+   在 Thinkment.Data.SqlDbDriver.FrontPageSqlDbConnection.CreateCommand(SqlStatement sql)
+   在 Thinkment.Data.SqlDbDriver.FrontPageSqlDbConnection.Query(SqlStatement sql)
+   在 Thinkment.Data.ListSelectHandle`1.Execute()
+   在 Thinkment.Data.ObjectManager.MyList[T](IConnection conn, Criteria condition, Order[] orders, Int32 from, Int32 count, ListField[] fields)
+   在 Thinkment.Data.ObjectAssistant.List[T](IConnection conn, Criteria condition, Order[] orders, Int32 from, Int32 count, ListField[] fields)
+   在 Thinkment.Data.ObjectAssistant.List[T](Criteria condition, Order[] orders, Int32 from, Int32 count, ListField[] fields)
+   在 Thinkment.Data.ObjectAssistant.List[T](Criteria condition, Order[] orders)
+   在 We7.CMS.PageVisitorHelper.GetPageVisitorByIP(String ip)
+   在 We7.CMS.PageVisitorHelper.AddPageVisitor(String AccountID)
+   在 We7.CMS.FrontBasePage.AddStatistic(String articleID, String columnID)
+   在 We7.CMS.Web.ShowSitePage.Page_Load(Object sender, EventArgs e)
+   在 System.Web.Util.CalliHelper.EventArgFunctionCaller(IntPtr fp, Object o, Object t, EventArgs e)
+   在 System.Web.Util.CalliEventHandlerDelegateProxy.Callback(Object sender, EventArgs e)
+   在 System.Web.UI.Control.OnLoad(EventArgs e)
+   在 We7.CMS.FrontBasePage.OnLoad(EventArgs e)

@@ -1,0 +1,9 @@
+E:\Work\DotNet\SOE\OldDbWorker\obj\Debug\ResolveAssemblyReference.cache
+E:\Work\DotNet\SOE\bin\SOE.OldDbWorker.dll
+E:\Work\DotNet\SOE\bin\SOE.OldDbWorker.pdb
+E:\Work\DotNet\SOE\OldDbWorker\obj\Debug\SOE.OldDbWorker.dll
+E:\Work\DotNet\SOE\OldDbWorker\obj\Debug\SOE.OldDbWorker.pdb
+F:\SVN\WISE\bin\SOE.OldDbWorker.dll
+F:\SVN\WISE\bin\SOE.OldDbWorker.pdb
+F:\SVN\WISE\OldDbWorker\obj\Debug\SOE.OldDbWorker.dll
+F:\SVN\WISE\OldDbWorker\obj\Debug\SOE.OldDbWorker.pdb

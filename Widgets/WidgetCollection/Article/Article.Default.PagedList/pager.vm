@@ -1,0 +1,17 @@
+﻿<div class="${PagerDivClass}">
+    <span class="$PagerSpanClass">     
+        <a href="${CurrPage}${Symbol}${RequestPageIndex}=1">首页</a>
+        <a href="${CurrPage}${Symbol}${RequestPageIndex}=${PrevPage}">上一页</a>
+        #foreach($before in $BeforePages)
+           <a href="${CurrPage}${Symbol}${RequestPageIndex}=${before}">${before}</a>
+        #end
+        <b><a href="${CurrPage}${Symbol}${RequestPageIndex}=${PageIndex}">${PageIndex}</a></b>
+        #foreach($behind in $BehindPages)
+           <a href="${CurrPage}${Symbol}${RequestPageIndex}=${behind}">${behind}</a>
+        #end
+        <a href="${CurrPage}${Symbol}${RequestPageIndex}=${NextPage}">下一页</a>
+        <a href="${CurrPage}${Symbol}${RequestPageIndex}=${PageCount}">尾页</a>        
+        <a>${PageIndex}/${PageCount}页</a>
+        <a>共${RecordCount}条</a>
+    </span>
+</div>

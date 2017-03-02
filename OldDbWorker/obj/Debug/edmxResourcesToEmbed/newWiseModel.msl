@@ -1,0 +1,999 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="urn:schemas-microsoft-com:windows:storage:mapping:CS">
+  <EntityContainerMapping StorageEntityContainer="WISEModelStoreContainer" CdmEntityContainer="WISEEntities">
+    <EntitySetMapping Name="Account">
+      <EntityTypeMapping TypeName="WISEModel.Account">
+        <MappingFragment StoreEntitySet="Account">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="FromSiteID" ColumnName="FromSiteID" />
+          <ScalarProperty Name="DepartmentID" ColumnName="DepartmentID" />
+          <ScalarProperty Name="Department" ColumnName="Department" />
+          <ScalarProperty Name="Email" ColumnName="Email" />
+          <ScalarProperty Name="LoginName" ColumnName="LoginName" />
+          <ScalarProperty Name="Password" ColumnName="Password" />
+          <ScalarProperty Name="FirstName" ColumnName="FirstName" />
+          <ScalarProperty Name="MiddleName" ColumnName="MiddleName" />
+          <ScalarProperty Name="LastName" ColumnName="LastName" />
+          <ScalarProperty Name="Photo" ColumnName="Photo" />
+          <ScalarProperty Name="SequenceIndex" ColumnName="SequenceIndex" />
+          <ScalarProperty Name="Description" ColumnName="Description" />
+          <ScalarProperty Name="UserType" ColumnName="UserType" />
+          <ScalarProperty Name="State" ColumnName="State" />
+          <ScalarProperty Name="Home" ColumnName="Home" />
+          <ScalarProperty Name="Created" ColumnName="Created" />
+          <ScalarProperty Name="PasswordHashed" ColumnName="PasswordHashed" />
+          <ScalarProperty Name="Updated" ColumnName="Updated" />
+          <ScalarProperty Name="Overdue" ColumnName="Overdue" />
+          <ScalarProperty Name="ModelXml" ColumnName="ModelXml" />
+          <ScalarProperty Name="UserModelName" ColumnName="UserModelName" />
+          <ScalarProperty Name="Mobile" ColumnName="Mobile" />
+          <ScalarProperty Name="QQ" ColumnName="QQ" />
+          <ScalarProperty Name="Point" ColumnName="Point" />
+          <ScalarProperty Name="Prestige" ColumnName="Prestige" />
+          <ScalarProperty Name="Money" ColumnName="Money" />
+          <ScalarProperty Name="PublishCount" ColumnName="PublishCount" />
+          <ScalarProperty Name="EmailValidate" ColumnName="EmailValidate" />
+          <ScalarProperty Name="ModelName" ColumnName="ModelName" />
+          <ScalarProperty Name="ModelConfig" ColumnName="ModelConfig" />
+          <ScalarProperty Name="ModelSchema" ColumnName="ModelSchema" />
+          <ScalarProperty Name="ModelState" ColumnName="ModelState" />
+          <ScalarProperty Name="Tel" ColumnName="Tel" />
+          <ScalarProperty Name="Birthday" ColumnName="Birthday" />
+          <ScalarProperty Name="Sex" ColumnName="Sex" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="AccountRole">
+      <EntityTypeMapping TypeName="WISEModel.AccountRole">
+        <MappingFragment StoreEntitySet="AccountRole">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="DepartmentID" ColumnName="DepartmentID" />
+          <ScalarProperty Name="AccountID" ColumnName="AccountID" />
+          <ScalarProperty Name="RoleID" ColumnName="RoleID" />
+          <ScalarProperty Name="Created" ColumnName="Created" />
+          <ScalarProperty Name="Updated" ColumnName="Updated" />
+          <ScalarProperty Name="RoleTitle" ColumnName="RoleTitle" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Advice">
+      <EntityTypeMapping TypeName="WISEModel.Advice">
+        <MappingFragment StoreEntitySet="Advice">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="TypeID" ColumnName="TypeID" />
+          <ScalarProperty Name="UserID" ColumnName="UserID" />
+          <ScalarProperty Name="Title" ColumnName="Title" />
+          <ScalarProperty Name="Content" ColumnName="Content" />
+          <ScalarProperty Name="CreateDate" ColumnName="CreateDate" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="Email" ColumnName="Email" />
+          <ScalarProperty Name="IsShow" ColumnName="IsShow" />
+          <ScalarProperty Name="ReplyDepID" ColumnName="ReplyDepID" />
+          <ScalarProperty Name="SN" ColumnName="SN" />
+          <ScalarProperty Name="ReplyCount" ColumnName="ReplyCount" />
+          <ScalarProperty Name="State" ColumnName="State" />
+          <ScalarProperty Name="OwnID" ColumnName="OwnID" />
+          <ScalarProperty Name="Updated" ColumnName="Updated" />
+          <ScalarProperty Name="ModelXml" ColumnName="ModelXml" />
+          <ScalarProperty Name="MyQueryPwd" ColumnName="MyQueryPwd" />
+          <ScalarProperty Name="ProcessState" ColumnName="ProcessState" />
+          <ScalarProperty Name="ProcessDirection" ColumnName="ProcessDirection" />
+          <ScalarProperty Name="FlowXml" ColumnName="FlowXml" />
+          <ScalarProperty Name="Source" ColumnName="Source" />
+          <ScalarProperty Name="ProcessSiteID" ColumnName="ProcessSiteID" />
+          <ScalarProperty Name="EnumState" ColumnName="EnumState" />
+          <ScalarProperty Name="MustHandle" ColumnName="MustHandle" />
+          <ScalarProperty Name="ToHandleTime" ColumnName="ToHandleTime" />
+          <ScalarProperty Name="AdviceInfoType" ColumnName="AdviceInfoType" />
+          <ScalarProperty Name="ToOtherHandleUserID" ColumnName="ToOtherHandleUserID" />
+          <ScalarProperty Name="Display1" ColumnName="Display1" />
+          <ScalarProperty Name="Display2" ColumnName="Display2" />
+          <ScalarProperty Name="Display3" ColumnName="Display3" />
+          <ScalarProperty Name="ModelName" ColumnName="ModelName" />
+          <ScalarProperty Name="ModelConfig" ColumnName="ModelConfig" />
+          <ScalarProperty Name="ModelSchema" ColumnName="ModelSchema" />
+          <ScalarProperty Name="Phone" ColumnName="Phone" />
+          <ScalarProperty Name="Fax" ColumnName="Fax" />
+          <ScalarProperty Name="Address" ColumnName="Address" />
+          <ScalarProperty Name="AdviceTag" ColumnName="AdviceTag" />
+          <ScalarProperty Name="IsRead" ColumnName="IsRead" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="AdviceAuth">
+      <EntityTypeMapping TypeName="WISEModel.AdviceAuth">
+        <MappingFragment StoreEntitySet="AdviceAuth">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="AuthID" ColumnName="AuthID" />
+          <ScalarProperty Name="AdviceTypeID" ColumnName="AdviceTypeID" />
+          <ScalarProperty Name="AuthType" ColumnName="AuthType" />
+          <ScalarProperty Name="Function" ColumnName="Function" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="AdviceInfo">
+      <EntityTypeMapping TypeName="WISEModel.AdviceInfo">
+        <MappingFragment StoreEntitySet="AdviceInfo">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="TypeID" ColumnName="TypeID" />
+          <ScalarProperty Name="UserID" ColumnName="UserID" />
+          <ScalarProperty Name="Title" ColumnName="Title" />
+          <ScalarProperty Name="Content" ColumnName="Content" />
+          <ScalarProperty Name="Created" ColumnName="Created" />
+          <ScalarProperty Name="Updated" ColumnName="Updated" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="Email" ColumnName="Email" />
+          <ScalarProperty Name="IsShow" ColumnName="IsShow" />
+          <ScalarProperty Name="IsTop" ColumnName="IsTop" />
+          <ScalarProperty Name="SN" ColumnName="SN" />
+          <ScalarProperty Name="State" ColumnName="State" />
+          <ScalarProperty Name="Public" ColumnName="Public" />
+          <ScalarProperty Name="ModelXml" ColumnName="ModelXml" />
+          <ScalarProperty Name="MyQueryPwd" ColumnName="MyQueryPwd" />
+          <ScalarProperty Name="Priority" ColumnName="Priority" />
+          <ScalarProperty Name="Display1" ColumnName="Display1" />
+          <ScalarProperty Name="Display2" ColumnName="Display2" />
+          <ScalarProperty Name="Display3" ColumnName="Display3" />
+          <ScalarProperty Name="ModelName" ColumnName="ModelName" />
+          <ScalarProperty Name="ModelConfig" ColumnName="ModelConfig" />
+          <ScalarProperty Name="ModelSchema" ColumnName="ModelSchema" />
+          <ScalarProperty Name="Phone" ColumnName="Phone" />
+          <ScalarProperty Name="Fax" ColumnName="Fax" />
+          <ScalarProperty Name="Address" ColumnName="Address" />
+          <ScalarProperty Name="IsRead" ColumnName="IsRead" />
+          <ScalarProperty Name="Clicks" ColumnName="Clicks" />
+          <ScalarProperty Name="DayClicks" ColumnName="DayClicks" />
+          <ScalarProperty Name="YesterdayClicks" ColumnName="YesterdayClicks" />
+          <ScalarProperty Name="WeekClicks" ColumnName="WeekClicks" />
+          <ScalarProperty Name="MonthClicks" ColumnName="MonthClicks" />
+          <ScalarProperty Name="QuarterClicks" ColumnName="QuarterClicks" />
+          <ScalarProperty Name="YearClicks" ColumnName="YearClicks" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="AdviceReply">
+      <EntityTypeMapping TypeName="WISEModel.AdviceReply">
+        <MappingFragment StoreEntitySet="AdviceReply">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="AdviceID" ColumnName="AdviceID" />
+          <ScalarProperty Name="UserID" ColumnName="UserID" />
+          <ScalarProperty Name="Title" ColumnName="Title" />
+          <ScalarProperty Name="Content" ColumnName="Content" />
+          <ScalarProperty Name="CreateDate" ColumnName="CreateDate" />
+          <ScalarProperty Name="Updated" ColumnName="Updated" />
+          <ScalarProperty Name="MailBody" ColumnName="MailBody" />
+          <ScalarProperty Name="EnumState" ColumnName="EnumState" />
+          <ScalarProperty Name="Comment" ColumnName="Comment" />
+          <ScalarProperty Name="Suggest" ColumnName="Suggest" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="AdviceReplyInfo">
+      <EntityTypeMapping TypeName="WISEModel.AdviceReplyInfo">
+        <MappingFragment StoreEntitySet="AdviceReplyInfo">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="AdviceID" ColumnName="AdviceID" />
+          <ScalarProperty Name="UserID" ColumnName="UserID" />
+          <ScalarProperty Name="Title" ColumnName="Title" />
+          <ScalarProperty Name="Content" ColumnName="Content" />
+          <ScalarProperty Name="Created" ColumnName="Created" />
+          <ScalarProperty Name="MailBody" ColumnName="MailBody" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="AdviceTransfer">
+      <EntityTypeMapping TypeName="WISEModel.AdviceTransfer">
+        <MappingFragment StoreEntitySet="AdviceTransfer">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="AdviceID" ColumnName="AdviceID" />
+          <ScalarProperty Name="UserID" ColumnName="UserID" />
+          <ScalarProperty Name="FromTypeID" ColumnName="FromTypeID" />
+          <ScalarProperty Name="ToTypeID" ColumnName="ToTypeID" />
+          <ScalarProperty Name="Suggest" ColumnName="Suggest" />
+          <ScalarProperty Name="State" ColumnName="State" />
+          <ScalarProperty Name="Created" ColumnName="Created" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="AdviceType">
+      <EntityTypeMapping TypeName="WISEModel.AdviceType">
+        <MappingFragment StoreEntitySet="AdviceType">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="Title" ColumnName="Title" />
+          <ScalarProperty Name="Description" ColumnName="Description" />
+          <ScalarProperty Name="CreateDate" ColumnName="CreateDate" />
+          <ScalarProperty Name="Updated" ColumnName="Updated" />
+          <ScalarProperty Name="ModelXml" ColumnName="ModelXml" />
+          <ScalarProperty Name="AccountID" ColumnName="AccountID" />
+          <ScalarProperty Name="EnumState" ColumnName="EnumState" />
+          <ScalarProperty Name="ToWhichDepartment" ColumnName="ToWhichDepartment" />
+          <ScalarProperty Name="FlowSeries" ColumnName="FlowSeries" />
+          <ScalarProperty Name="ProcessEnd" ColumnName="ProcessEnd" />
+          <ScalarProperty Name="FlowInnerDepart" ColumnName="FlowInnerDepart" />
+          <ScalarProperty Name="MailMode" ColumnName="MailMode" />
+          <ScalarProperty Name="UseSystemMail" ColumnName="UseSystemMail" />
+          <ScalarProperty Name="MailSMTPServer" ColumnName="MailSMTPServer" />
+          <ScalarProperty Name="POPServer" ColumnName="POPServer" />
+          <ScalarProperty Name="MailUser" ColumnName="MailUser" />
+          <ScalarProperty Name="MailPassword" ColumnName="MailPassword" />
+          <ScalarProperty Name="SMSUser" ColumnName="SMSUser" />
+          <ScalarProperty Name="RemindDays" ColumnName="RemindDays" />
+          <ScalarProperty Name="MailAddress" ColumnName="MailAddress" />
+          <ScalarProperty Name="ParticipateMode" ColumnName="ParticipateMode" />
+          <ScalarProperty Name="ModelName" ColumnName="ModelName" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="AnswerSheet">
+      <EntityTypeMapping TypeName="WISEModel.AnswerSheet">
+        <MappingFragment StoreEntitySet="AnswerSheet">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="QuestionnaireID" ColumnName="QuestionnaireID" />
+          <ScalarProperty Name="QuestionID" ColumnName="QuestionID" />
+          <ScalarProperty Name="OptionID" ColumnName="OptionID" />
+          <ScalarProperty Name="OptionValue" ColumnName="OptionValue" />
+          <ScalarProperty Name="UserName" ColumnName="UserName" />
+          <ScalarProperty Name="UserIP" ColumnName="UserIP" />
+          <ScalarProperty Name="PostDate" ColumnName="PostDate" />
+          <ScalarProperty Name="CurrentAnswerQuestionnaireID" ColumnName="CurrentAnswerQuestionnaireID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Article">
+      <EntityTypeMapping TypeName="WISEModel.Article">
+        <MappingFragment StoreEntitySet="Article">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="Title" ColumnName="Title" />
+          <ScalarProperty Name="Description" ColumnName="Description" />
+          <ScalarProperty Name="OwnerID" ColumnName="OwnerID" />
+          <ScalarProperty Name="ParentID" ColumnName="ParentID" />
+          <ScalarProperty Name="AccountID" ColumnName="AccountID" />
+          <ScalarProperty Name="Author" ColumnName="Author" />
+          <ScalarProperty Name="Content" ColumnName="Content" />
+          <ScalarProperty Name="State" ColumnName="State" />
+          <ScalarProperty Name="Created" ColumnName="Created" />
+          <ScalarProperty Name="Updated" ColumnName="Updated" />
+          <ScalarProperty Name="Overdue" ColumnName="Overdue" />
+          <ScalarProperty Name="SequenceIndex" ColumnName="SequenceIndex" />
+          <ScalarProperty Name="Source" ColumnName="Source" />
+          <ScalarProperty Name="AllowComments" ColumnName="AllowComments" />
+          <ScalarProperty Name="Permission" ColumnName="Permission" />
+          <ScalarProperty Name="IsImage" ColumnName="IsImage" />
+          <ScalarProperty Name="IsShow" ColumnName="IsShow" />
+          <ScalarProperty Name="SubTitle" ColumnName="SubTitle" />
+          <ScalarProperty Name="Thumbnail" ColumnName="Thumbnail" />
+          <ScalarProperty Name="IsDeleted" ColumnName="IsDeleted" />
+          <ScalarProperty Name="ContentUrl" ColumnName="ContentUrl" />
+          <ScalarProperty Name="ContentType" ColumnName="ContentType" />
+          <ScalarProperty Name="SourceID" ColumnName="SourceID" />
+          <ScalarProperty Name="SN" ColumnName="SN" />
+          <ScalarProperty Name="ProcessState" ColumnName="ProcessState" />
+          <ScalarProperty Name="ProcessDirection" ColumnName="ProcessDirection" />
+          <ScalarProperty Name="ProcessSiteID" ColumnName="ProcessSiteID" />
+          <ScalarProperty Name="FlowXml" ColumnName="FlowXml" />
+          <ScalarProperty Name="ChannelName" ColumnName="ChannelName" />
+          <ScalarProperty Name="FullChannelPath" ColumnName="FullChannelPath" />
+          <ScalarProperty Name="ChannelFullUrl" ColumnName="ChannelFullUrl" />
+          <ScalarProperty Name="CommentCount" ColumnName="CommentCount" />
+          <ScalarProperty Name="Tags" ColumnName="Tags" />
+          <ScalarProperty Name="ModelXml" ColumnName="ModelXml" />
+          <ScalarProperty Name="EnumState" ColumnName="EnumState" />
+          <ScalarProperty Name="IndustryID" ColumnName="IndustryID" />
+          <ScalarProperty Name="FromRowID" ColumnName="FromRowID" />
+          <ScalarProperty Name="FromSiteUrl" ColumnName="FromSiteUrl" />
+          <ScalarProperty Name="KeyWord" ColumnName="KeyWord" />
+          <ScalarProperty Name="DescriptionKey" ColumnName="DescriptionKey" />
+          <ScalarProperty Name="VideoCode" ColumnName="VideoCode" />
+          <ScalarProperty Name="ListKeys" ColumnName="ListKeys" />
+          <ScalarProperty Name="ListKeys1" ColumnName="ListKeys1" />
+          <ScalarProperty Name="ListKeys2" ColumnName="ListKeys2" />
+          <ScalarProperty Name="ListKeys3" ColumnName="ListKeys3" />
+          <ScalarProperty Name="ListKeys4" ColumnName="ListKeys4" />
+          <ScalarProperty Name="ListKeys5" ColumnName="ListKeys5" />
+          <ScalarProperty Name="IPStrategy" ColumnName="IPStrategy" />
+          <ScalarProperty Name="ModelName" ColumnName="ModelName" />
+          <ScalarProperty Name="TableName" ColumnName="TableName" />
+          <ScalarProperty Name="ModelConfig" ColumnName="ModelConfig" />
+          <ScalarProperty Name="ModelSchema" ColumnName="ModelSchema" />
+          <ScalarProperty Name="PrivacyLevel" ColumnName="PrivacyLevel" />
+          <ScalarProperty Name="Photos" ColumnName="Photos" />
+          <ScalarProperty Name="Clicks" ColumnName="Clicks" />
+          <ScalarProperty Name="DayClicks" ColumnName="DayClicks" />
+          <ScalarProperty Name="YesterdayClicks" ColumnName="YesterdayClicks" />
+          <ScalarProperty Name="WeekClicks" ColumnName="WeekClicks" />
+          <ScalarProperty Name="MonthClicks" ColumnName="MonthClicks" />
+          <ScalarProperty Name="QuarterClicks" ColumnName="QuarterClicks" />
+          <ScalarProperty Name="YearClicks" ColumnName="YearClicks" />
+          <ScalarProperty Name="Color" ColumnName="Color" />
+          <ScalarProperty Name="FontWeight" ColumnName="FontWeight" />
+          <ScalarProperty Name="FontStyle" ColumnName="FontStyle" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ArticleIndex">
+      <EntityTypeMapping TypeName="WISEModel.ArticleIndex">
+        <MappingFragment StoreEntitySet="ArticleIndex">
+          <ScalarProperty Name="ArticleID" ColumnName="ArticleID" />
+          <ScalarProperty Name="Operation" ColumnName="Operation" />
+          <ScalarProperty Name="IsLock" ColumnName="IsLock" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ArticleTag">
+      <EntityTypeMapping TypeName="WISEModel.ArticleTag">
+        <MappingFragment StoreEntitySet="ArticleTag">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="ArticleID" ColumnName="ArticleID" />
+          <ScalarProperty Name="Identifier" ColumnName="Identifier" />
+          <ScalarProperty Name="Updated" ColumnName="Updated" />
+          <ScalarProperty Name="Created" ColumnName="Created" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Attachment">
+      <EntityTypeMapping TypeName="WISEModel.Attachment">
+        <MappingFragment StoreEntitySet="Attachment">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="ArticleID" ColumnName="ArticleID" />
+          <ScalarProperty Name="SequenceIndex" ColumnName="SequenceIndex" />
+          <ScalarProperty Name="FileType" ColumnName="FileType" />
+          <ScalarProperty Name="FileName" ColumnName="FileName" />
+          <ScalarProperty Name="FileSize" ColumnName="FileSize" />
+          <ScalarProperty Name="FilePath" ColumnName="FilePath" />
+          <ScalarProperty Name="Description" ColumnName="Description" />
+          <ScalarProperty Name="UploadDate" ColumnName="UploadDate" />
+          <ScalarProperty Name="DownloadTimes" ColumnName="DownloadTimes" />
+          <ScalarProperty Name="Updated" ColumnName="Updated" />
+          <ScalarProperty Name="Created" ColumnName="Created" />
+          <ScalarProperty Name="EnumState" ColumnName="EnumState" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Category">
+      <EntityTypeMapping TypeName="WISEModel.Category">
+        <MappingFragment StoreEntitySet="Category">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="ParentID" ColumnName="ParentID" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="KeyWord" ColumnName="KeyWord" />
+          <ScalarProperty Name="Description" ColumnName="Description" />
+          <ScalarProperty Name="Options" ColumnName="Options" />
+          <ScalarProperty Name="Index" ColumnName="Index" />
+          <ScalarProperty Name="CreateDate" ColumnName="CreateDate" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Channel">
+      <EntityTypeMapping TypeName="WISEModel.Channel">
+        <MappingFragment StoreEntitySet="Channel">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="ParentID" ColumnName="ParentID" />
+          <ScalarProperty Name="Alias" ColumnName="Alias" />
+          <ScalarProperty Name="Title" ColumnName="Title" />
+          <ScalarProperty Name="Description" ColumnName="Description" />
+          <ScalarProperty Name="FullPath" ColumnName="FullPath" />
+          <ScalarProperty Name="TemplateName" ColumnName="TemplateName" />
+          <ScalarProperty Name="DetailTemplate" ColumnName="DetailTemplate" />
+          <ScalarProperty Name="SecurityLevel" ColumnName="SecurityLevel" />
+          <ScalarProperty Name="State" ColumnName="State" />
+          <ScalarProperty Name="ReferenceID" ColumnName="ReferenceID" />
+          <ScalarProperty Name="DefaultContentID" ColumnName="DefaultContentID" />
+          <ScalarProperty Name="SequenceIndex" ColumnName="SequenceIndex" />
+          <ScalarProperty Name="Parameter" ColumnName="Parameter" />
+          <ScalarProperty Name="Created" ColumnName="Created" />
+          <ScalarProperty Name="ChannelFolder" ColumnName="ChannelFolder" />
+          <ScalarProperty Name="TitleImage" ColumnName="TitleImage" />
+          <ScalarProperty Name="Process" ColumnName="Process" />
+          <ScalarProperty Name="Type" ColumnName="Type" />
+          <ScalarProperty Name="ChannelName" ColumnName="ChannelName" />
+          <ScalarProperty Name="RefAreaID" ColumnName="RefAreaID" />
+          <ScalarProperty Name="IsComment" ColumnName="IsComment" />
+          <ScalarProperty Name="FullUrl" ColumnName="FullUrl" />
+          <ScalarProperty Name="ReturnUrl" ColumnName="ReturnUrl" />
+          <ScalarProperty Name="ProcessLayerNO" ColumnName="ProcessLayerNO" />
+          <ScalarProperty Name="ProcessEnd" ColumnName="ProcessEnd" />
+          <ScalarProperty Name="Updated" ColumnName="Updated" />
+          <ScalarProperty Name="EnumState" ColumnName="EnumState" />
+          <ScalarProperty Name="ArticlesCount" ColumnName="ArticlesCount" />
+          <ScalarProperty Name="Tags" ColumnName="Tags" />
+          <ScalarProperty Name="KeyWord" ColumnName="KeyWord" />
+          <ScalarProperty Name="DescriptionKey" ColumnName="DescriptionKey" />
+          <ScalarProperty Name="IPStrategy" ColumnName="IPStrategy" />
+          <ScalarProperty Name="ModelName" ColumnName="ModelName" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ChannelModuleMapping">
+      <EntityTypeMapping TypeName="WISEModel.ChannelModuleMapping">
+        <MappingFragment StoreEntitySet="ChannelModuleMapping">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="ChannelID" ColumnName="ChannelID" />
+          <ScalarProperty Name="ModuleID" ColumnName="ModuleID" />
+          <ScalarProperty Name="Parameter" ColumnName="Parameter" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ChannelTag">
+      <EntityTypeMapping TypeName="WISEModel.ChannelTag">
+        <MappingFragment StoreEntitySet="ChannelTag">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="ColumnID" ColumnName="ColumnID" />
+          <ScalarProperty Name="Identifier" ColumnName="Identifier" />
+          <ScalarProperty Name="Created" ColumnName="Created" />
+          <ScalarProperty Name="Updated" ColumnName="Updated" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ClickRecords">
+      <EntityTypeMapping TypeName="WISEModel.ClickRecords">
+        <MappingFragment StoreEntitySet="ClickRecords">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="ObjectType" ColumnName="ObjectType" />
+          <ScalarProperty Name="ObjectID" ColumnName="ObjectID" />
+          <ScalarProperty Name="VisitDate" ColumnName="VisitDate" />
+          <ScalarProperty Name="Clicks" ColumnName="Clicks" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ColumnModule">
+      <EntityTypeMapping TypeName="WISEModel.ColumnModule">
+        <MappingFragment StoreEntitySet="ColumnModule">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="Title" ColumnName="Title" />
+          <ScalarProperty Name="Desc" ColumnName="Desc" />
+          <ScalarProperty Name="ParamIntro" ColumnName="ParamIntro" />
+          <ScalarProperty Name="Path" ColumnName="Path" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Comments">
+      <EntityTypeMapping TypeName="WISEModel.Comments">
+        <MappingFragment StoreEntitySet="Comments">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="ArticleID" ColumnName="ArticleID" />
+          <ScalarProperty Name="Author" ColumnName="Author" />
+          <ScalarProperty Name="Content" ColumnName="Content" />
+          <ScalarProperty Name="Created" ColumnName="Created" />
+          <ScalarProperty Name="Updated" ColumnName="Updated" />
+          <ScalarProperty Name="SequenceIndex" ColumnName="SequenceIndex" />
+          <ScalarProperty Name="State" ColumnName="State" />
+          <ScalarProperty Name="IP" ColumnName="IP" />
+          <ScalarProperty Name="AccountID" ColumnName="AccountID" />
+          <ScalarProperty Name="ArticleName" ColumnName="ArticleName" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Department">
+      <EntityTypeMapping TypeName="WISEModel.Department">
+        <MappingFragment StoreEntitySet="Department">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="ParentID" ColumnName="ParentID" />
+          <ScalarProperty Name="FromSiteID" ColumnName="FromSiteID" />
+          <ScalarProperty Name="Title" ColumnName="Title" />
+          <ScalarProperty Name="FullName" ColumnName="FullName" />
+          <ScalarProperty Name="Description" ColumnName="Description" />
+          <ScalarProperty Name="SequenceIndex" ColumnName="SequenceIndex" />
+          <ScalarProperty Name="Created" ColumnName="Created" />
+          <ScalarProperty Name="Updated" ColumnName="Updated" />
+          <ScalarProperty Name="Number" ColumnName="Number" />
+          <ScalarProperty Name="Address" ColumnName="Address" />
+          <ScalarProperty Name="Phone" ColumnName="Phone" />
+          <ScalarProperty Name="Fax" ColumnName="Fax" />
+          <ScalarProperty Name="Email" ColumnName="Email" />
+          <ScalarProperty Name="MapScript" ColumnName="MapScript" />
+          <ScalarProperty Name="SiteUrl" ColumnName="SiteUrl" />
+          <ScalarProperty Name="Text" ColumnName="Text" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ErrorCode">
+      <EntityTypeMapping TypeName="WISEModel.ErrorCode">
+        <MappingFragment StoreEntitySet="ErrorCode">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="Level" ColumnName="Level" />
+          <ScalarProperty Name="Title" ColumnName="Title" />
+          <ScalarProperty Name="Description" ColumnName="Description" />
+          <ScalarProperty Name="HelpLink" ColumnName="HelpLink" />
+          <ScalarProperty Name="Created" ColumnName="Created" />
+          <ScalarProperty Name="Updated" ColumnName="Updated" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Favorite">
+      <EntityTypeMapping TypeName="WISEModel.Favorite">
+        <MappingFragment StoreEntitySet="Favorite">
+          <ScalarProperty Name="FavoriteID" ColumnName="FavoriteID" />
+          <ScalarProperty Name="Url" ColumnName="Url" />
+          <ScalarProperty Name="Title" ColumnName="Title" />
+          <ScalarProperty Name="Description" ColumnName="Description" />
+          <ScalarProperty Name="Created" ColumnName="Created" />
+          <ScalarProperty Name="Updated" ColumnName="Updated" />
+          <ScalarProperty Name="AccountID" ColumnName="AccountID" />
+          <ScalarProperty Name="Tag" ColumnName="Tag" />
+          <ScalarProperty Name="ArticleID" ColumnName="ArticleID" />
+          <ScalarProperty Name="Thumbnail" ColumnName="Thumbnail" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Lecture">
+      <EntityTypeMapping TypeName="WISEModel.Lecture">
+        <MappingFragment StoreEntitySet="Lecture">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="AccountID" ColumnName="AccountID" />
+          <ScalarProperty Name="OwnerID" ColumnName="OwnerID" />
+          <ScalarProperty Name="State" ColumnName="State" />
+          <ScalarProperty Name="IsShow" ColumnName="IsShow" />
+          <ScalarProperty Name="Tags" ColumnName="Tags" />
+          <ScalarProperty Name="Updated" ColumnName="Updated" />
+          <ScalarProperty Name="Created" ColumnName="Created" />
+          <ScalarProperty Name="ProcessState" ColumnName="ProcessState" />
+          <ScalarProperty Name="ProcessDirection" ColumnName="ProcessDirection" />
+          <ScalarProperty Name="ProcessSiteID" ColumnName="ProcessSiteID" />
+          <ScalarProperty Name="FullPath" ColumnName="FullPath" />
+          <ScalarProperty Name="Clicks" ColumnName="Clicks" />
+          <ScalarProperty Name="DayClicks" ColumnName="DayClicks" />
+          <ScalarProperty Name="YesterdayClicks" ColumnName="YesterdayClicks" />
+          <ScalarProperty Name="WeekClicks" ColumnName="WeekClicks" />
+          <ScalarProperty Name="MonthClicks" ColumnName="MonthClicks" />
+          <ScalarProperty Name="QuarterClicks" ColumnName="QuarterClicks" />
+          <ScalarProperty Name="YearClicks" ColumnName="YearClicks" />
+          <ScalarProperty Name="Title" ColumnName="Title" />
+          <ScalarProperty Name="Speaker" ColumnName="Speaker" />
+          <ScalarProperty Name="Anchor" ColumnName="Anchor" />
+          <ScalarProperty Name="Description" ColumnName="Description" />
+          <ScalarProperty Name="Address" ColumnName="Address" />
+          <ScalarProperty Name="Organizer" ColumnName="Organizer" />
+          <ScalarProperty Name="Type" ColumnName="Type" />
+          <ScalarProperty Name="Cate" ColumnName="Cate" />
+          <ScalarProperty Name="StartTime" ColumnName="StartTime" />
+          <ScalarProperty Name="DueTime" ColumnName="DueTime" />
+          <ScalarProperty Name="Organizer2" ColumnName="Organizer2" />
+          <ScalarProperty Name="Url" ColumnName="Url" />
+          <ScalarProperty Name="Intro" ColumnName="Intro" />
+          <ScalarProperty Name="Term" ColumnName="Term" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Link">
+      <EntityTypeMapping TypeName="WISEModel.Link">
+        <MappingFragment StoreEntitySet="Link">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="Title" ColumnName="Title" />
+          <ScalarProperty Name="Url" ColumnName="Url" />
+          <ScalarProperty Name="Tag" ColumnName="Tag" />
+          <ScalarProperty Name="Thumbnail" ColumnName="Thumbnail" />
+          <ScalarProperty Name="Created" ColumnName="Created" />
+          <ScalarProperty Name="OrderNumber" ColumnName="OrderNumber" />
+          <ScalarProperty Name="Updated" ColumnName="Updated" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Log">
+      <EntityTypeMapping TypeName="WISEModel.Log">
+        <MappingFragment StoreEntitySet="Log">
+          <ScalarProperty Name="LogID" ColumnName="LogID" />
+          <ScalarProperty Name="Title" ColumnName="Title" />
+          <ScalarProperty Name="UserID" ColumnName="UserID" />
+          <ScalarProperty Name="Content" ColumnName="Content" />
+          <ScalarProperty Name="Created" ColumnName="Created" />
+          <ScalarProperty Name="Page" ColumnName="Page" />
+          <ScalarProperty Name="Updated" ColumnName="Updated" />
+          <ScalarProperty Name="Remark" ColumnName="Remark" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Menu">
+      <EntityTypeMapping TypeName="WISEModel.Menu">
+        <MappingFragment StoreEntitySet="Menu">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="ParentID" ColumnName="ParentID" />
+          <ScalarProperty Name="SequenceIndex" ColumnName="SequenceIndex" />
+          <ScalarProperty Name="NameText" ColumnName="NameText" />
+          <ScalarProperty Name="Title" ColumnName="Title" />
+          <ScalarProperty Name="Href" ColumnName="Href" />
+          <ScalarProperty Name="EntityID" ColumnName="EntityID" />
+          <ScalarProperty Name="Type" ColumnName="Type" />
+          <ScalarProperty Name="Created" ColumnName="Created" />
+          <ScalarProperty Name="Updated" ColumnName="Updated" />
+          <ScalarProperty Name="Icon" ColumnName="Icon" />
+          <ScalarProperty Name="IconHover" ColumnName="IconHover" />
+          <ScalarProperty Name="Group" ColumnName="Group" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Message">
+      <EntityTypeMapping TypeName="WISEModel.Message">
+        <MappingFragment StoreEntitySet="Message">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="AccountID" ColumnName="AccountID" />
+          <ScalarProperty Name="AccountName" ColumnName="AccountName" />
+          <ScalarProperty Name="ReceiverID" ColumnName="ReceiverID" />
+          <ScalarProperty Name="Receivers" ColumnName="Receivers" />
+          <ScalarProperty Name="Subject" ColumnName="Subject" />
+          <ScalarProperty Name="Content" ColumnName="Content" />
+          <ScalarProperty Name="Created" ColumnName="Created" />
+          <ScalarProperty Name="SendTime" ColumnName="SendTime" />
+          <ScalarProperty Name="Description" ColumnName="Description" />
+          <ScalarProperty Name="State" ColumnName="State" />
+          <ScalarProperty Name="Updated" ColumnName="Updated" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Option">
+      <EntityTypeMapping TypeName="WISEModel.Option">
+        <MappingFragment StoreEntitySet="Option">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="QuestionID" ColumnName="QuestionID" />
+          <ScalarProperty Name="Title" ColumnName="Title" />
+          <ScalarProperty Name="Type" ColumnName="Type" />
+          <ScalarProperty Name="OptionValue" ColumnName="OptionValue" />
+          <ScalarProperty Name="Score" ColumnName="Score" />
+          <ScalarProperty Name="OrderID" ColumnName="OrderID" />
+          <ScalarProperty Name="DefaultSelected" ColumnName="DefaultSelected" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="PageVisitor">
+      <EntityTypeMapping TypeName="WISEModel.PageVisitor">
+        <MappingFragment StoreEntitySet="PageVisitor">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="TypeCode" ColumnName="TypeCode" />
+          <ScalarProperty Name="UserID" ColumnName="UserID" />
+          <ScalarProperty Name="VisitDate" ColumnName="VisitDate" />
+          <ScalarProperty Name="LogoutDate" ColumnName="LogoutDate" />
+          <ScalarProperty Name="VisitorIP" ColumnName="VisitorIP" />
+          <ScalarProperty Name="Url" ColumnName="Url" />
+          <ScalarProperty Name="Http_Referer" ColumnName="Http_Referer" />
+          <ScalarProperty Name="Clicks" ColumnName="Clicks" />
+          <ScalarProperty Name="OnlineTime" ColumnName="OnlineTime" />
+          <ScalarProperty Name="Platform" ColumnName="Platform" />
+          <ScalarProperty Name="Browser" ColumnName="Browser" />
+          <ScalarProperty Name="Screen" ColumnName="Screen" />
+          <ScalarProperty Name="City" ColumnName="City" />
+          <ScalarProperty Name="Created" ColumnName="Created" />
+          <ScalarProperty Name="Updated" ColumnName="Updated" />
+          <ScalarProperty Name="SearchEngine" ColumnName="SearchEngine" />
+          <ScalarProperty Name="Keyword" ColumnName="Keyword" />
+          <ScalarProperty Name="Province" ColumnName="Province" />
+          <ScalarProperty Name="FromSite" ColumnName="FromSite" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="PageVisitorHistory">
+      <EntityTypeMapping TypeName="WISEModel.PageVisitorHistory">
+        <MappingFragment StoreEntitySet="PageVisitorHistory">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="TypeCode" ColumnName="TypeCode" />
+          <ScalarProperty Name="UserID" ColumnName="UserID" />
+          <ScalarProperty Name="VisitDate" ColumnName="VisitDate" />
+          <ScalarProperty Name="LogoutDate" ColumnName="LogoutDate" />
+          <ScalarProperty Name="VisitorIP" ColumnName="VisitorIP" />
+          <ScalarProperty Name="Url" ColumnName="Url" />
+          <ScalarProperty Name="Http_Referer" ColumnName="Http_Referer" />
+          <ScalarProperty Name="Clicks" ColumnName="Clicks" />
+          <ScalarProperty Name="OnlineTime" ColumnName="OnlineTime" />
+          <ScalarProperty Name="Platform" ColumnName="Platform" />
+          <ScalarProperty Name="Browser" ColumnName="Browser" />
+          <ScalarProperty Name="Screen" ColumnName="Screen" />
+          <ScalarProperty Name="City" ColumnName="City" />
+          <ScalarProperty Name="Created" ColumnName="Created" />
+          <ScalarProperty Name="Updated" ColumnName="Updated" />
+          <ScalarProperty Name="SearchEngine" ColumnName="SearchEngine" />
+          <ScalarProperty Name="Keyword" ColumnName="Keyword" />
+          <ScalarProperty Name="Province" ColumnName="Province" />
+          <ScalarProperty Name="FromSite" ColumnName="FromSite" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="People">
+      <EntityTypeMapping TypeName="WISEModel.People">
+        <MappingFragment StoreEntitySet="People">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="AccountID" ColumnName="AccountID" />
+          <ScalarProperty Name="OwnerID" ColumnName="OwnerID" />
+          <ScalarProperty Name="State" ColumnName="State" />
+          <ScalarProperty Name="Index" ColumnName="Index" />
+          <ScalarProperty Name="IsShow" ColumnName="IsShow" />
+          <ScalarProperty Name="Tags" ColumnName="Tags" />
+          <ScalarProperty Name="Updated" ColumnName="Updated" />
+          <ScalarProperty Name="Created" ColumnName="Created" />
+          <ScalarProperty Name="ProcessState" ColumnName="ProcessState" />
+          <ScalarProperty Name="ProcessDirection" ColumnName="ProcessDirection" />
+          <ScalarProperty Name="ProcessSiteID" ColumnName="ProcessSiteID" />
+          <ScalarProperty Name="FullPath" ColumnName="FullPath" />
+          <ScalarProperty Name="Clicks" ColumnName="Clicks" />
+          <ScalarProperty Name="DayClicks" ColumnName="DayClicks" />
+          <ScalarProperty Name="YesterdayClicks" ColumnName="YesterdayClicks" />
+          <ScalarProperty Name="WeekClicks" ColumnName="WeekClicks" />
+          <ScalarProperty Name="MonthClicks" ColumnName="MonthClicks" />
+          <ScalarProperty Name="QuarterClicks" ColumnName="QuarterClicks" />
+          <ScalarProperty Name="YearClicks" ColumnName="YearClicks" />
+          <ScalarProperty Name="Fullname" ColumnName="Fullname" />
+          <ScalarProperty Name="Gendar" ColumnName="Gendar" />
+          <ScalarProperty Name="Title" ColumnName="Title" />
+          <ScalarProperty Name="Position" ColumnName="Position" />
+          <ScalarProperty Name="Office" ColumnName="Office" />
+          <ScalarProperty Name="OfficeTime" ColumnName="OfficeTime" />
+          <ScalarProperty Name="Phone" ColumnName="Phone" />
+          <ScalarProperty Name="Mobil" ColumnName="Mobil" />
+          <ScalarProperty Name="Email" ColumnName="Email" />
+          <ScalarProperty Name="Duty" ColumnName="Duty" />
+          <ScalarProperty Name="Field" ColumnName="Field" />
+          <ScalarProperty Name="Photo" ColumnName="Photo" />
+          <ScalarProperty Name="Url" ColumnName="Url" />
+          <ScalarProperty Name="Intro" ColumnName="Intro" />
+          <ScalarProperty Name="IndexLetter" ColumnName="IndexLetter" />
+          <ScalarProperty Name="CardNumber" ColumnName="CardNumber" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Permission">
+      <EntityTypeMapping TypeName="WISEModel.Permission">
+        <MappingFragment StoreEntitySet="Permission">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="OwnerType" ColumnName="OwnerType" />
+          <ScalarProperty Name="OwnerID" ColumnName="OwnerID" />
+          <ScalarProperty Name="ObjectID" ColumnName="ObjectID" />
+          <ScalarProperty Name="Url" ColumnName="Url" />
+          <ScalarProperty Name="Content" ColumnName="Content" />
+          <ScalarProperty Name="Created" ColumnName="Created" />
+          <ScalarProperty Name="Updated" ColumnName="Updated" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Point">
+      <EntityTypeMapping TypeName="WISEModel.Point">
+        <MappingFragment StoreEntitySet="Point">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="Value" ColumnName="Value" />
+          <ScalarProperty Name="Action" ColumnName="Action" />
+          <ScalarProperty Name="Description" ColumnName="Description" />
+          <ScalarProperty Name="Created" ColumnName="Created" />
+          <ScalarProperty Name="ObjectID" ColumnName="ObjectID" />
+          <ScalarProperty Name="AccountID" ColumnName="AccountID" />
+          <ScalarProperty Name="AccountName" ColumnName="AccountName" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Question">
+      <EntityTypeMapping TypeName="WISEModel.Question">
+        <MappingFragment StoreEntitySet="Question">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="QuestionnaireID" ColumnName="QuestionnaireID" />
+          <ScalarProperty Name="Type" ColumnName="Type" />
+          <ScalarProperty Name="Title" ColumnName="Title" />
+          <ScalarProperty Name="Description" ColumnName="Description" />
+          <ScalarProperty Name="OrderID" ColumnName="OrderID" />
+          <ScalarProperty Name="MustAnswer" ColumnName="MustAnswer" />
+          <ScalarProperty Name="AnswerCount" ColumnName="AnswerCount" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Questionnaire">
+      <EntityTypeMapping TypeName="WISEModel.Questionnaire">
+        <MappingFragment StoreEntitySet="Questionnaire">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="TypeID" ColumnName="TypeID" />
+          <ScalarProperty Name="Title" ColumnName="Title" />
+          <ScalarProperty Name="Description" ColumnName="Description" />
+          <ScalarProperty Name="Author" ColumnName="Author" />
+          <ScalarProperty Name="Password" ColumnName="Password" />
+          <ScalarProperty Name="State" ColumnName="State" />
+          <ScalarProperty Name="UseHits" ColumnName="UseHits" />
+          <ScalarProperty Name="Hit" ColumnName="Hit" />
+          <ScalarProperty Name="Created" ColumnName="Created" />
+          <ScalarProperty Name="Updated" ColumnName="Updated" />
+          <ScalarProperty Name="StartDate" ColumnName="StartDate" />
+          <ScalarProperty Name="ExpireDate" ColumnName="ExpireDate" />
+          <ScalarProperty Name="IsEmailSend" ColumnName="IsEmailSend" />
+          <ScalarProperty Name="IsNeedLogin" ColumnName="IsNeedLogin" />
+          <ScalarProperty Name="IsNeedValidateCode" ColumnName="IsNeedValidateCode" />
+          <ScalarProperty Name="IpRepeat" ColumnName="IpRepeat" />
+          <ScalarProperty Name="IsAudited" ColumnName="IsAudited" />
+          <ScalarProperty Name="SuccessConfig" ColumnName="SuccessConfig" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="QuestionnaireType">
+      <EntityTypeMapping TypeName="WISEModel.QuestionnaireType">
+        <MappingFragment StoreEntitySet="QuestionnaireType">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="ParentID" ColumnName="ParentID" />
+          <ScalarProperty Name="TypeName" ColumnName="TypeName" />
+          <ScalarProperty Name="OrderID" ColumnName="OrderID" />
+          <ScalarProperty Name="IsShow" ColumnName="IsShow" />
+          <ScalarProperty Name="Created" ColumnName="Created" />
+          <ScalarProperty Name="Updated" ColumnName="Updated" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="RelatedArticle">
+      <EntityTypeMapping TypeName="WISEModel.RelatedArticle">
+        <MappingFragment StoreEntitySet="RelatedArticle">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="ArticleID" ColumnName="ArticleID" />
+          <ScalarProperty Name="RelatedID" ColumnName="RelatedID" />
+          <ScalarProperty Name="Created" ColumnName="Created" />
+          <ScalarProperty Name="Updated" ColumnName="Updated" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Role">
+      <EntityTypeMapping TypeName="WISEModel.Role">
+        <MappingFragment StoreEntitySet="Role">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="FromSiteID" ColumnName="FromSiteID" />
+          <ScalarProperty Name="Title" ColumnName="Title" />
+          <ScalarProperty Name="Description" ColumnName="Description" />
+          <ScalarProperty Name="Created" ColumnName="Created" />
+          <ScalarProperty Name="State" ColumnName="State" />
+          <ScalarProperty Name="Updated" ColumnName="Updated" />
+          <ScalarProperty Name="GroupRole" ColumnName="GroupRole" />
+          <ScalarProperty Name="RoleType" ColumnName="RoleType" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ScoreDetail">
+      <EntityTypeMapping TypeName="WISEModel.ScoreDetail">
+        <MappingFragment StoreEntitySet="ScoreDetail">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="TargetID" ColumnName="TargetID" />
+          <ScalarProperty Name="RuleID" ColumnName="RuleID" />
+          <ScalarProperty Name="CreatedBy" ColumnName="CreatedBy" />
+          <ScalarProperty Name="CreatedOn" ColumnName="CreatedOn" />
+          <ScalarProperty Name="Review" ColumnName="Review" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ScoreLevel">
+      <EntityTypeMapping TypeName="WISEModel.ScoreLevel">
+        <MappingFragment StoreEntitySet="ScoreLevel">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="SubjectID" ColumnName="SubjectID" />
+          <ScalarProperty Name="Title" ColumnName="Title" />
+          <ScalarProperty Name="MinScore" ColumnName="MinScore" />
+          <ScalarProperty Name="MaxScore" ColumnName="MaxScore" />
+          <ScalarProperty Name="IsAcquiescent" ColumnName="IsAcquiescent" />
+          <ScalarProperty Name="Description" ColumnName="Description" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ScoreRule">
+      <EntityTypeMapping TypeName="WISEModel.ScoreRule">
+        <MappingFragment StoreEntitySet="ScoreRule">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="Title" ColumnName="Title" />
+          <ScalarProperty Name="SubjectID" ColumnName="SubjectID" />
+          <ScalarProperty Name="SoureID" ColumnName="SoureID" />
+          <ScalarProperty Name="Score" ColumnName="Score" />
+          <ScalarProperty Name="Description" ColumnName="Description" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ScoreRuleCount">
+      <EntityTypeMapping TypeName="WISEModel.ScoreRuleCount">
+        <MappingFragment StoreEntitySet="ScoreRuleCount">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="RuleID" ColumnName="RuleID" />
+          <ScalarProperty Name="TargetID" ColumnName="TargetID" />
+          <ScalarProperty Name="Count" ColumnName="Count" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ScoreSource">
+      <EntityTypeMapping TypeName="WISEModel.ScoreSource">
+        <MappingFragment StoreEntitySet="ScoreSource">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="Title" ColumnName="Title" />
+          <ScalarProperty Name="Description" ColumnName="Description" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ScoreSubject">
+      <EntityTypeMapping TypeName="WISEModel.ScoreSubject">
+        <MappingFragment StoreEntitySet="ScoreSubject">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="Title" ColumnName="Title" />
+          <ScalarProperty Name="Description" ColumnName="Description" />
+          <ScalarProperty Name="IsUserSubject" ColumnName="IsUserSubject" />
+          <ScalarProperty Name="IsGrade" ColumnName="IsGrade" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ScoreSummary">
+      <EntityTypeMapping TypeName="WISEModel.ScoreSummary">
+        <MappingFragment StoreEntitySet="ScoreSummary">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="TargetID" ColumnName="TargetID" />
+          <ScalarProperty Name="SubjectID" ColumnName="SubjectID" />
+          <ScalarProperty Name="SourceID" ColumnName="SourceID" />
+          <ScalarProperty Name="TotalPoint" ColumnName="TotalPoint" />
+          <ScalarProperty Name="TotalCount" ColumnName="TotalCount" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Statistics">
+      <EntityTypeMapping TypeName="WISEModel.Statistics">
+        <MappingFragment StoreEntitySet="Statistics">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="VisitorID" ColumnName="VisitorID" />
+          <ScalarProperty Name="ChannelID" ColumnName="ChannelID" />
+          <ScalarProperty Name="ArticleID" ColumnName="ArticleID" />
+          <ScalarProperty Name="VisitDate" ColumnName="VisitDate" />
+          <ScalarProperty Name="URL" ColumnName="URL" />
+          <ScalarProperty Name="Created" ColumnName="Created" />
+          <ScalarProperty Name="Updated" ColumnName="Updated" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="StatisticsHistory">
+      <EntityTypeMapping TypeName="WISEModel.StatisticsHistory">
+        <MappingFragment StoreEntitySet="StatisticsHistory">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="VisitorID" ColumnName="VisitorID" />
+          <ScalarProperty Name="ChannelID" ColumnName="ChannelID" />
+          <ScalarProperty Name="ArticleID" ColumnName="ArticleID" />
+          <ScalarProperty Name="VisitDate" ColumnName="VisitDate" />
+          <ScalarProperty Name="URL" ColumnName="URL" />
+          <ScalarProperty Name="Created" ColumnName="Created" />
+          <ScalarProperty Name="Updated" ColumnName="Updated" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Vote">
+      <EntityTypeMapping TypeName="WISEModel.Vote">
+        <MappingFragment StoreEntitySet="Vote">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="Title" ColumnName="Title" />
+          <ScalarProperty Name="OptionType" ColumnName="OptionType" />
+          <ScalarProperty Name="AddDate" ColumnName="AddDate" />
+          <ScalarProperty Name="EndDate" ColumnName="EndDate" />
+          <ScalarProperty Name="VotePeoples" ColumnName="VotePeoples" />
+          <ScalarProperty Name="IsCanRepeat" ColumnName="IsCanRepeat" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="VoteAnswer">
+      <EntityTypeMapping TypeName="WISEModel.VoteAnswer">
+        <MappingFragment StoreEntitySet="VoteAnswer">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="VoteID" ColumnName="VoteID" />
+          <ScalarProperty Name="VoteEntryID" ColumnName="VoteEntryID" />
+          <ScalarProperty Name="AnswerText" ColumnName="AnswerText" />
+          <ScalarProperty Name="AccountID" ColumnName="AccountID" />
+          <ScalarProperty Name="IP" ColumnName="IP" />
+          <ScalarProperty Name="VoteDate" ColumnName="VoteDate" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="VoteAnswerStat">
+      <EntityTypeMapping TypeName="WISEModel.VoteAnswerStat">
+        <MappingFragment StoreEntitySet="VoteAnswerStat">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="VoteID" ColumnName="VoteID" />
+          <ScalarProperty Name="VoteEntryID" ColumnName="VoteEntryID" />
+          <ScalarProperty Name="VoteEntrySum" ColumnName="VoteEntrySum" />
+          <ScalarProperty Name="VoteEntryText" ColumnName="VoteEntryText" />
+          <ScalarProperty Name="OrderID" ColumnName="OrderID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="VoteEntry">
+      <EntityTypeMapping TypeName="WISEModel.VoteEntry">
+        <MappingFragment StoreEntitySet="VoteEntry">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="VoteID" ColumnName="VoteID" />
+          <ScalarProperty Name="EntryText" ColumnName="EntryText" />
+          <ScalarProperty Name="OrderID" ColumnName="OrderID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

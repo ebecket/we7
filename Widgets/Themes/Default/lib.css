@@ -1,0 +1,656 @@
+﻿/*Foundation*/
+meta.foundation-mq-small {
+    font-family: "only screen and (min-width: 768px)";
+    width: 768px;
+}
+
+meta.foundation-mq-medium {
+    font-family: "only screen and (min-width:1280px)";
+    width: 1280px;
+}
+
+meta.foundation-mq-large {
+    font-family: "only screen and (min-width:1440px)";
+    width: 1440px;
+}
+/*
+*, *:before, *:after {
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+html, body {
+    font-size: 100%;
+}
+
+body {
+    background: white;
+    color: #222222;
+    padding: 0;
+    margin: 0;
+    font-family: "Helvetica Neue" , "Helvetica" , Helvetica, Arial, sans-serif;
+    font-weight: normal;
+    font-style: normal;
+    line-height: 1;
+    position: relative;
+    cursor: default;
+}
+
+a:hover {
+    cursor: pointer;
+}
+
+img, object, embed {
+    max-width: 100%;
+    height: auto;
+}
+
+object, embed {
+    height: 100%;
+}
+
+img {
+    -ms-interpolation-mode: bicubic;
+}
+
+#map_canvas img, #map_canvas embed, #map_canvas object, .map_canvas img, .map_canvas embed, .map_canvas object {
+    max-width: none !important;
+}
+
+.left {
+    float: left !important;
+}
+
+.right {
+    float: right !important;
+}
+
+.text-left {
+    text-align: left !important;
+}
+
+.text-right {
+    text-align: right !important;
+}
+
+.text-center {
+    text-align: center !important;
+}
+
+.text-justify {
+    text-align: justify !important;
+}
+
+.hide {
+    display: none;
+}
+
+.antialiased {
+    -webkit-font-smoothing: antialiased;
+}
+
+img {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+textarea {
+    height: auto;
+    min-height: 50px;
+}
+
+select {
+    width: 100%;
+}
+*/
+/* Orbit Graceful Loading */
+.slideshow-wrapper {
+    position: relative;
+}
+.slideshow-wrapper ul {
+    list-style-type: none;
+    margin: 0;
+}
+.slideshow-wrapper ul li, .slideshow-wrapper ul li .orbit-caption {
+    display: none;
+}
+.slideshow-wrapper ul li:first-child {
+    display: block;
+}
+.slideshow-wrapper .orbit-container {
+    background-color: transparent;
+}
+.slideshow-wrapper .orbit-container li {
+    display: block;
+}
+.slideshow-wrapper .orbit-container li .orbit-caption {
+    display: none;
+}
+
+.preloader {
+    display: block;
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-top: -20px;
+    margin-left: -20px;
+    border: solid 3px;
+    border-color: #555555 white;
+    -webkit-border-radius: 1000px;
+    border-radius: 1000px;
+    -webkit-animation-name: rotate;
+    -webkit-animation-duration: 1.5s;
+    -webkit-animation-iteration-count: infinite;
+    -webkit-animation-timing-function: linear;
+    -moz-animation-name: rotate;
+    -moz-animation-duration: 1.5s;
+    -moz-animation-iteration-count: infinite;
+    -moz-animation-timing-function: linear;
+    -o-animation-name: rotate;
+    -o-animation-duration: 1.5s;
+    -o-animation-iteration-count: infinite;
+    -o-animation-timing-function: linear;
+    animation-name: rotate;
+    animation-duration: 1.5s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
+.orbit-container {
+    overflow: hidden;
+    width: 1250px;
+    position: relative;
+    background: whitesmoke;
+    margin:0 auto;
+}
+.orbit-container .orbit-slides-container {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    position: relative;
+}
+.orbit-container .orbit-slides-container img {
+    display: block;
+    max-width: 100%;
+}
+.orbit-container .orbit-slides-container li{
+    position: absolute;
+    top: 0;
+    width: 100%;
+    margin-left: 100%;
+}
+.orbit-container .orbit-slides-container > *:first-child{
+    margin-left: 0%;
+}
+.orbit-container .orbit-slides-container .first-child {
+    margin-left: 0%;
+}
+.orbit-container .orbit-slides-container .orbit-caption {
+    position: absolute;
+    bottom: 0;
+    background-color: black;
+    background-color: rgba(0, 0, 0, 0.6);
+    color: white;
+    width: 100%;    
+    padding: 10px 14px;
+    font-size: 14px;
+    text-align: center;
+    *filter: Alpha(opacity=60);
+    -ms-filter: "Alpha(opacity=60)";
+}
+.orbit-container .orbit-slides-container .orbit-caption p {
+    position: relative;
+}
+.orbit-container .orbit-slide-number {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    font-size: 12px;
+    color: white;
+    background: rgba(0, 0, 0, 0);
+    z-index: 10;
+}
+.orbit-container .orbit-slide-number span {
+    font-weight: 700;
+    padding: 0.3125em;
+}
+.orbit-container .orbit-timer {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    height: 6px;
+    width: 100px;
+    z-index: 10;
+    display: none;
+}
+.orbit-container .orbit-timer .orbit-progress {
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.6);
+    display: block;
+    width: 0%;
+}
+.orbit-container .orbit-timer span {
+    display: none;
+    position: absolute;
+    top: 10px;
+    right: 0;
+    width: 11px;
+    height: 14px;
+    border: solid 4px;
+    border-top: none;
+    border-bottom: none;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+.orbit-container .orbit-timer.paused span {
+    right: -6px;
+    top: 9px;
+    width: 11px;
+    height: 14px;
+    border: inset 8px;
+    border-right-style: solid;
+    border-color: transparent transparent transparent black;
+}
+.orbit-container:hover .orbit-timer span {
+    display: block;
+}
+.orbit-container .orbit-prev, .orbit-container .orbit-next {
+    position: absolute;
+    margin-top: -25px;
+    top: 50%;
+    background-color: black;
+    background-color: rgba(0, 0, 0, 0.6);
+    width: 50px;
+    height: 60px;
+    line-height: 50px;
+    color: white;
+    text-indent: -9999px !important;
+    z-index: 10;
+    *filter: Alpha(opacity=60);
+    -ms-filter: "Alpha(opacity=60)";
+}
+.orbit-container .orbit-prev:hover, .orbit-container .orbit-next:hover {
+    background-color: rgba(0, 0, 0, 0.6);
+}
+.orbit-container .orbit-prev span, .orbit-container .orbit-next span {
+    position: absolute;
+    top: 50%;
+    margin-top: -16px;
+    display: block;
+    width: 0;
+    height: 0;
+    border: 16px solid;    
+    _overflow:hidden;
+    _font-size: 0;
+    _line-height: 0;   
+}
+.orbit-container .orbit-prev {
+    left: 0;
+}
+.orbit-container .orbit-prev span {
+    border-color: transparent;
+    border-right-style: solid;
+    _border-color: black;    
+    border-right-color: white;
+    right: 50%;
+    margin-right: -8px;
+    _border-left-width: 0;
+    _filter: Chroma(color=black);
+}
+.orbit-container .orbit-prev:hover span {
+    border-right-color: #cccccc;
+}
+.orbit-container .orbit-next {
+    right: 0;
+}
+.orbit-container .orbit-next span {    
+    border-color: transparent;
+    border-left-style: solid;    
+    _border-color: black;
+    border-left-color: white;    
+    left: 50%;
+    margin-left: -8px;
+    _border-right-width: 0;
+    _filter: Chroma(color=black);
+}
+.orbit-container .orbit-next:hover span {
+    border-left-color: #cccccc;
+}
+
+.orbit-bullets {
+    margin: 0 auto 30px auto;
+    overflow: hidden;
+    position: relative;
+    top: 10px;
+}
+.orbit-bullets li {
+    display: block;
+    width: 0.75em;
+    height: 0.75em;
+    background: #999999;
+    float: left;
+    margin-right: 6px;
+    border: solid 1px #555555;
+    -webkit-border-radius: 1000px;
+    border-radius: 1000px;
+}
+.orbit-bullets li.active {
+    background: #555555;
+}
+.orbit-bullets li:last-child {
+    margin-right: 0;
+}
+
+.touch .orbit-container .orbit-prev, .touch .orbit-container .orbit-next {
+    display: none;
+}
+.touch .orbit-bullets {
+    display: none;
+}
+
+@media only screen and (min-width: 768px) {
+    .touch .orbit-container .orbit-prev, .touch .orbit-container .orbit-next {
+        display: inherit;
+    }
+    .touch .orbit-bullets {
+        display: block;
+    }
+}
+@media only screen and (max-width: 768px) {
+    .orbit-stack-on-small .orbit-slides-container {
+        height: auto !important;
+    }
+    .orbit-stack-on-small .orbit-slides-container li {
+        position: relative;
+        margin-left: 0% !important;
+    }
+    .orbit-stack-on-small .orbit-timer, .orbit-stack-on-small .orbit-next, .orbit-stack-on-small .orbit-prev, .orbit-stack-on-small .orbit-bullets {
+        display: none;
+    }
+}
+
+
+
+
+
+/* SuperFish 1.7.4 */
+.sf-menu, .sf-menu * {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+.sf-menu li {
+    position: relative;
+}
+.sf-menu ul {
+    position: absolute;
+    display: none;
+    top: 100%;
+    left: 0;
+    z-index: 99;
+}
+.sf-menu > li {
+    float: left;
+}
+.sf-menu li:hover > ul, .sf-menu li.sfHover > ul {
+    display: block;
+}
+
+.sf-menu a {
+    display: block;
+    position: relative;
+}
+.sf-menu ul ul {
+    top: 0;
+    left: 100%;
+}
+
+/* Default Skin */
+.sf-menu {
+    float: left;
+    margin-bottom: 1em;
+}
+.sf-menu ul {
+    box-shadow: 2px 2px 6px rgba(0,0,0,.2);
+    min-width: 12em;
+}
+.sf-menu a {
+    border-left: 1px solid #fff;
+    border-top: 1px solid #dfeeff;
+    border-top: 1px solid rgba(255,255,255,.5);
+    padding: .75em 1em;
+    text-decoration: none;
+}
+.sf-menu a {
+    color: #13a;
+}
+.sf-menu li {
+    background: #bdd2ff;
+    white-space: nowrap;
+    -webkit-transition: background .2s;
+    transition: background .2s;
+}
+.sf-menu ul li {
+    background: #aabde6;
+}
+.sf-menu ul ul li {
+    background: #9aaedb;
+}
+.sf-menu li:hover, .sf-menu li.sfHover {
+    background: #cfdeff;
+    -webkit-transition: none;
+    transition: none;
+}
+
+.sf-arrows .sf-with-ul {
+    padding-right: 2.5em;
+}
+
+.sf-arrows .sf-with-ul:after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    right: 1em;
+    margin-top: -3px;
+    height: 0;
+    width: 0;
+    border: 5px solid transparent;
+    border-top-color: #f2f2f2;
+    border-top-color: rgba(255,255,255,.5);
+}
+.sf-arrows > li > .sf-with-ul:focus:after, .sf-arrows > li:hover > .sf-with-ul:after, .sf-arrows > .sfHover > .sf-with-ul:after {
+    border-top-color: white;
+}
+
+.sf-arrows ul .sf-with-ul:after {
+    margin-top: -5px;
+    margin-right: -3px;
+    border-color: transparent;
+    border-left-color: #f2f2f2;
+    border-left-color: rgba(255,255,255,.5);
+}
+.sf-arrows ul li > .sf-with-ul:focus:after, .sf-arrows ul li:hover > .sf-with-ul:after, .sf-arrows ul .sfHover > .sf-with-ul:after {
+    border-left-color: white;
+}
+
+
+/* Main Menu Skin */
+.main-menu {
+    margin: 0;
+    width: 100%;
+    text-align: center;
+}
+.main-menu li {
+    background: none;
+    height: 55px;
+}
+.main-menu ul {
+    min-width: 8em;
+}
+.main-menu li li, .main-menu li li li {
+    background: none;
+    height: 40px;
+}
+.main-menu.sf-arrows > li > .sf-with-ul:after {
+    margin-top: -2px;
+    margin-right: -6px;
+}
+.main-menu a, .main-menu a.sf-with-ul {
+    font-size: 16px;
+    border: 0px;
+    font-family: "微软雅黑";
+    line-height: 55px;
+    height: 55px;
+    padding: 0 30px;
+}
+.main-menu li a:link, .main-menu li a:visited {
+    color: #fff;
+}
+.main-menu li.sfHover a, .main-menu li.sfHover a:link, .main-menu li.sfHover a:visited {
+    color: #fff;
+    background-color: #202020;
+}
+.main-menu li a:hover, .main-menu li a:focus, .main-menu li a:active, .main-menu li.sfHover a:hover, .main-menu li.sfHover a:focus, .main-menu li.sfHover a:active {
+    color: #fff;
+    background-color: #3d6edd;
+    text-decoration: none;
+}
+
+.main-menu li li a, .main-menu li li a.sf-with-ul {
+    padding: 0 30px;
+    height: 40px;
+    line-height: 40px;
+}
+.main-menu li li a:link, .main-menu li li a:visited {
+    color: #000;
+}
+.main-menu li.sfHover li a, .main-menu li.sfHover li a:link, .main-menu li.sfHover li a:visited {
+    color: #000;
+    background-color: #ececec;
+}
+.main-menu li li a:hover, .main-menu li li a:focus, .main-menu li li a:active, .main-menu li.sfHover li a:hover, .main-menu li.sfHover li a:focus, .main-menu li.sfHover li a:active {
+    color: #000;
+    background-color: #dad6d6;
+}
+
+.main-menu {
+    *position:relative;
+    *z-index:100;
+}
+.main-menu li {
+    *float: left;
+}
+.main-menu ul {
+    *min-width: 8em;
+}
+.main-menu li li, .main-menu li li li {
+    *vertical-align: middle;
+}
+.main-menu li {
+    _width: 0;
+}
+
+
+/* adding sf-vertical class in addition to sf-menu creates a vertical menu */
+/* eg. <ul class="sf-menu sf-vertical"> ... */
+.sf-vertical {
+    width: 156px; /* If you want the width of the closed menu to expand to its   widest top-level menu item (like its "Supersubs" submenus do),   replace the width rule above with the following two rules. */ /*   min-width: 12em;   *width: 12em;   */
+}
+.sf-vertical ul {
+    left: 100%;
+    top: 0;
+}
+.sf-vertical > li {
+    float: none;
+}
+.sf-vertical li {
+    width: 100%;
+}
+
+/*** alter arrow directions ***/
+.sf-vertical.sf-arrows > li > .sf-with-ul:after {
+    margin-top: -6px;
+    margin-right: 3px;
+    border-color: transparent;
+    border-left-color: #dfeeff; /* edit this to suit design (no rgba in IE8) */
+    border-left-color: rgba(255,255,255,.5);
+}
+.sf-vertical.sf-arrows li > .sf-with-ul:focus:after, .sf-vertical.sf-arrows li:hover > .sf-with-ul:after, .sf-vertical.sf-arrows .sfHover > .sf-with-ul:after {
+    border-left-color: #fff;
+}
+
+
+/* Sub Menu Skin */
+.sub-menu {
+    margin: 0;
+    text-align: center;
+}
+.sub-menu a, .sub-menu a.sf-with-ul {
+    font-size: 16px;
+    border: 0px;
+    font-family: "微软雅黑";
+    line-height: 52px;
+    height: 52px;
+    padding: 0 25px;
+}
+.sub-menu li {
+    margin: 0px 0;
+}
+.sub-menu ul {
+    margin: 0;
+    left: 100%;
+    top: 12px;
+    min-width: 8em; /*width: 8em;*/
+}
+.sub-menu li {
+    background: none;
+    vertical-align: middle; /* for IE7*/
+}
+.sub-menu li li {
+    background: none;
+    margin: 0;    
+}
+.sub-menu li a:link, .sub-menu li a:visited {
+    color: #fff;
+    background: url(images/sub_item_bg.jpg) no-repeat left top;
+}
+.sub-menu li.sfHover a, .sub-menu li.sfHover a:link, .sub-menu li.sfHover a:visited {
+    color: #fff;
+    background: url(images/sub_item_hover_bg.jpg) no-repeat left top;
+}
+.sub-menu li a:hover, .sub-menu li a:focus, .sub-menu li a:active, .sub-menu li.sfHover a:hover, .sub-menu li.sfHover a:focus, .sub-menu li.sfHover a:active {
+    color: #fff;
+    background: url(images/sub_item_hover_bg.jpg) no-repeat left top;
+    text-decoration:none;
+}
+.sub-menu li li a, .sub-menu li li a.sf-with-ul {
+    font-size: 14px;
+    padding: 0 10px;
+    height: 30px;
+    line-height: 30px;
+}
+.sub-menu li li a:link, .sub-menu li li a:visited {
+    color: #000;
+    background: none;
+}
+.sub-menu li.sfHover li a, .sub-menu li.sfHover li a:link, .sub-menu li.sfHover li a:visited {
+    color: #000;
+    background: none;
+    background-color: #ececec;
+}
+.sub-menu li li a:hover, .sub-menu li li a:focus, .sub-menu li li a:active, .sub-menu li.sfHover li a:hover, .sub-menu li.sfHover li a:focus, .sub-menu li.sfHover li a:active {
+    color: #000;
+    background: none;
+    background-color: #dad6d6;
+}
+
+
+.sub-menu { 
+    *position:relative;
+    *z-index: 99;
+}

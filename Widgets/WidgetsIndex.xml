@@ -1,0 +1,64 @@
+<?xml version="1.0"?>
+<widgets xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" name="default" label="部件列表信息" description="部件列表信息">
+  <group name="系统部件" label="系统部件" description="系统部件">
+    <widget name="Article635197867578168336" label="Article" description="Article" icon="Article" defaulttype="Article.Default.HeadlineList">
+      <type name="Article.Default.HeadlineList" label="Article_List" file="/Widgets/WidgetCollection/Article/Article.Default.List/Article.Default.HeadlineList.ascx" control="Article_Default_HeadlineList" />
+      <type name="Article.Default.List" label="Article_List" file="/Widgets/WidgetCollection/Article/Article.Default.List/Article.Default.List.ascx" control="Article_Default_List" />
+      <type name="Article.Default.PicList" label="Article_PicList" file="/Widgets/WidgetCollection/Article/Article.Default.List/Article.Default.PicList.ascx" control="Article_Default_PicList" />
+      <type name="Article.Default.SlideList" label="Article_SlideList" file="/Widgets/WidgetCollection/Article/Article.Default.List/Article.Default.SlideList.ascx" control="Article_Default_SlideList" />
+      <type name="Article.Default.TabList" label="Article_TabList" file="/Widgets/WidgetCollection/Article/Article.Default.List/Article.Default.TabList.ascx" control="Article_Default_TabList" />
+      <type name="Article.Default.PagedList" label="Article_PagedList" file="/Widgets/WidgetCollection/Article/Article.Default.PagedList/Article.Default.PagedList.ascx" control="Article_Default_PagedList" />
+      <type name="Article.PagedList" label="Article_PagedList" file="/Widgets/WidgetCollection/Article/Article.Default.PagedList/Article.PagedList.ascx" control="Article_PagedList" />
+      <type name="Article.PagedList2" label="Article_PagedList" file="/Widgets/WidgetCollection/Article/Article.Default.PagedList/Article.PagedList2.ascx" control="Article_PagedList2" />
+      <type name="Article.PicPagedList" label="Article_PagedList" file="/Widgets/WidgetCollection/Article/Article.Default.PagedList/Article.PicPagedList.ascx" control="Article_PicPagedList" />
+      <type name="Article.Download" file="/Widgets/WidgetCollection/Article/Article.Download/Article.Download.ascx" control="Article_Download" />
+      <type name="Article.MultiList" label="Article_PicList" file="/Widgets/WidgetCollection/Article/Article.MultiList/Article.MultiList.ascx" control="Article_MultiList" />
+      <type name="Article.PicList" label="Article_PicList" file="/Widgets/WidgetCollection/Article/Article.PicList/Article.PicList.ascx" control="Article_PicList" />
+      <type name="Article.PicList2" label="Article_PicList2" file="/Widgets/WidgetCollection/Article/Article.PicList/Article.PicList2.ascx" control="Article_PicList2" />
+      <type name="Article.PicList3" label="Article_PicList2" file="/Widgets/WidgetCollection/Article/Article.PicList/Article.PicList3.ascx" control="Article_PicList3" />
+      <type name="Article.Single" label="Article_Single" file="/Widgets/WidgetCollection/Article/Article.Single/Article.Single.ascx" control="Article_Single" />
+      <type name="Article.SingleDep" label="Article_Single" file="/Widgets/WidgetCollection/Article/Article.Single/Article.SingleDep.ascx" control="Article_SingleDep" />
+      <type name="Article.SingleIntro" label="Article_Single" file="/Widgets/WidgetCollection/Article/Article.Single/Article.SingleIntro.ascx" control="Article_SingleIntro" />
+      <type name="Article.View" file="/Widgets/WidgetCollection/Article/Article.View/Article.View.ascx" control="Article_View" />
+    </widget>
+    <widget name="Footer635197867660023018" label="Footer" description="Footer" icon="Footer" defaulttype="Footer.Default">
+      <type name="Footer.Default" label="Footer_Default" file="/Widgets/WidgetCollection/Footer/Footer.Default/Footer.Default.ascx" control="Footer_Default" />
+    </widget>
+    <widget name="Header635197867660993074" label="Header" description="Header" icon="Header" defaulttype="Header.Default">
+      <type name="Header.Default" label="Header_Default" file="/Widgets/WidgetCollection/Header/Header.Default/Header.Default.ascx" control="Header_Default" />
+    </widget>
+    <widget name="Lecture635197867667713458" label="Lecture" description="Lecture" icon="Lecture" defaulttype="Lecture.List">
+      <type name="Lecture.List" label="Lecture_List" file="/Widgets/WidgetCollection/Lecture/Lecture.List/Lecture.List.ascx" control="Lecture_List" />
+      <type name="Lecture.PagedList" label="Lecture_PagedList" file="/Widgets/WidgetCollection/Lecture/Lecture.PagedList/Lecture.PagedList.ascx" control="Lecture_PagedList" />
+      <type name="Lecture.View" label="Lecture_View" file="/Widgets/WidgetCollection/Lecture/Lecture.View/Lecture.View.ascx" control="Lecture_View" />
+    </widget>
+    <widget name="Link635197867682194286" label="Link" description="Link" icon="Link" defaulttype="Link.Default.List">
+      <type name="Link.Default.List" label="Link" file="/Widgets/WidgetCollection/Link/Link.Default.List/Link.Default.List.ascx" control="Link_Default_List" />
+    </widget>
+    <widget name="Navigation635197867689634712" label="Navigation" description="Navigation" icon="Navigation" defaulttype="Navigation.ChannelNav">
+      <type name="Navigation.ChannelNav" label="Navigation_ChannelNav" file="/Widgets/WidgetCollection/Navigation/Navigation.ChannelNav/Navigation.ChannelNav.ascx" control="Navigation_ChannelNav" />
+      <type name="Navigation.Sitemap" label="Navigation_Sitemap" file="/Widgets/WidgetCollection/Navigation/Navigation.Sitemap/Navigation.Sitemap.ascx" control="Navigation_Sitemap" />
+    </widget>
+    <widget name="Other635197867705125598" label="Other" description="Other" icon="Other" defaulttype="Statistic.Default">
+      <type name="Statistic.Default" label="Statistic" file="/Widgets/WidgetCollection/Other/Statistic.Default/Statistic.Default.ascx" control="Statistic_Default" />
+      <type name="Faculty.Default" label="Faculty_Default" file="/Widgets/WidgetCollection/Other/Faculty.Default/Faculty.Default.ascx" control="Faculty_Default" />
+    </widget>
+    <widget name="Search635197867719486419" label="Search" description="Search" icon="Search" defaulttype="Search.Bar">
+      <type name="Search.Bar" label="Search_Bar" file="/Widgets/WidgetCollection/Search/Search.Bar/Search.Bar.ascx" control="Search_Bar" />
+    </widget>
+    <widget name="Static635197867727776893" label="Static" description="Static" icon="Static" defaulttype="Static.DoubleDegreeContact">
+      <type name="Static.DoubleDegreeContact" label="Static_DoubleDegreeContact" file="/Widgets/WidgetCollection/Static/Static.DoubleDegreeContact/Static.DoubleDegreeContact.ascx" control="Static_DoubleDegreeContact" />
+      <type name="Static.HrContact" label="Static_HrContact" file="/Widgets/WidgetCollection/Static/Static.HrContact/Static.HrContact.ascx" control="Static_HrContact" />
+      <type name="Static.PicLink" label="Static_PicLink" file="/Widgets/WidgetCollection/Static/Static.PicLink/Static.PicLink.ascx" control="Static_PicLink" />
+      <type name="Static.QuickLink" label="Static_QuickLink" file="/Widgets/WidgetCollection/Static/Static.QuickLink/Static.QuickLink.ascx" control="Static_QuickLink" />
+      <type name="Static.Recruitment" label="Static_Recruitment" file="/Widgets/WidgetCollection/Static/Static.Recruitment/Static.Recruitment.ascx" control="Static_Recruitment" />
+      <type name="Static.RecruitmentContact" label="Static_RecruitmentContact" file="/Widgets/WidgetCollection/Static/Static.RecruitmentContact/Static.RecruitmentContact.ascx" control="Static_RecruitmentContact" />
+      <type name="Static.TextLink" label="Static_TextLink" file="/Widgets/WidgetCollection/Static/Static.TextLink/Static.TextLink.ascx" control="Static_TextLink" />
+    </widget>
+    <widget name="NRMXL635197867776979708" label="内容模型类" description="内容模型类" icon="内容模型类" defaulttype="Default_LecturePagedList.Default">
+      <type name="Default_LecturePagedList.Default" label="学术动态分页列表部件" file="/Widgets/WidgetCollection/内容模型类/Default_LecturePagedList/Default_LecturePagedList.Default.ascx" control="Default_LecturePagedList_Default" />
+      <type name="Default_LectureList.Default" label="学术动态列表部件" file="/Widgets/WidgetCollection/内容模型类/Default_LectureList/Default_LectureList.Default.ascx" control="Default_LectureList_Default" />
+      <type name="Default_LectureView.Default" label="学术动态详细信息部件" file="/Widgets/WidgetCollection/内容模型类/Default_LectureView/Default_LectureView.Default.ascx" control="Default_LectureView_Default" />
+    </widget>
+  </group>
+</widgets>

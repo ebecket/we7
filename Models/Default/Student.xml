@@ -1,0 +1,168 @@
+<?xml version="1.0"?>
+<ModelInfo xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" type="article" label="学生信息" desc="" authority="false">
+  <dataSet>
+    <dataTable name="Student">
+      <dataColumn name="ID" label="ID" dataType="String" expression="" direction="InputOutput" system="true" mapping="ID" maxlength="40" nullable="false" require="false" edit="false" list="false" />
+      <dataColumn name="AccountID" label="用户ID" dataType="String" expression="" direction="Output" system="true" maxlength="40" nullable="false" require="false" edit="false" list="false" />
+      <dataColumn name="OwnerID" label="栏目ID" dataType="String" expression="" direction="Output" system="false" mapping="OwnerID" maxlength="40" nullable="false" require="false" edit="false" list="false" />
+      <dataColumn name="Source" label="来源" dataType="String" expression="" direction="InputOutput" system="true" mapping="Source" maxlength="50" nullable="false" require="false" edit="false" list="false" />
+      <dataColumn name="ContentType" label="文章类型" dataType="Int32" expression="" direction="Output" system="true" mapping="ContentType" maxlength="0" nullable="false" require="false" edit="false" list="false" />
+      <dataColumn name="ContentUrl" label="引用Url" dataType="String" expression="" direction="Output" system="true" mapping="ContentUrl" maxlength="255" nullable="false" require="false" edit="false" list="false" />
+      <dataColumn name="State" label="状态" dataType="Int32" expression="" direction="Output" system="true" mapping="State" maxlength="0" default="1" nullable="false" require="false" edit="false" list="true" />
+      <dataColumn name="Index" label="排序" dataType="Int32" expression="" direction="Output" system="true" mapping="SequenceIndex" maxlength="0" default="999" nullable="false" require="false" edit="false" list="false" />
+      <dataColumn name="IsShow" label="置顶" dataType="Int32" expression="" direction="Output" system="true" mapping="IsShow" maxlength="0" nullable="false" require="false" edit="false" list="true" />
+      <dataColumn name="Tags" label="标签" dataType="String" expression="" direction="Output" system="true" maxlength="255" nullable="false" require="false" edit="false" list="true" />
+      <dataColumn name="Updated" label="更新时间" dataType="DateTime" expression="" direction="InputOutput" system="true" maxlength="0" default="Now" nullable="false" require="false" edit="false" list="false" />
+      <dataColumn name="Created" label="创建时间" dataType="DateTime" expression="" direction="Output" system="true" mapping="Created" maxlength="0" default="Now" nullable="false" require="false" edit="false" list="false" />
+      <dataColumn name="ProcessState" label="审批当前进程" dataType="String" expression="" direction="Output" system="true" maxlength="50" nullable="false" require="false" edit="false" list="false" />
+      <dataColumn name="ProcessDirection" label="流转来源方向" dataType="String" expression="" direction="Output" system="true" maxlength="50" nullable="false" require="false" edit="false" list="false" />
+      <dataColumn name="ProcessSiteID" label="拥有处置权限的站点ID" dataType="String" expression="" direction="Output" system="true" maxlength="40" nullable="false" require="false" edit="false" list="false" />
+      <dataColumn name="FullPath" label="栏目路径" dataType="String" expression="" direction="Output" system="true" maxlength="254" nullable="false" require="false" edit="false" list="false" />
+      <dataColumn name="Clicks" label="点击量" dataType="Int32" expression="" direction="Input" system="true" mapping="" maxlength="0" nullable="false" require="false" edit="false" list="true" />
+      <dataColumn name="DayClicks" label="日点击量" dataType="Int32" expression="" direction="Input" system="true" mapping="" maxlength="0" nullable="false" require="false" edit="false" list="true" />
+      <dataColumn name="YesterdayClicks" label="昨日点击量" dataType="Int32" expression="" direction="Input" system="true" mapping="" maxlength="0" nullable="false" require="false" edit="false" list="true" />
+      <dataColumn name="WeekClicks" label="周点击量" dataType="Int32" expression="" direction="Input" system="true" mapping="" maxlength="0" nullable="false" require="false" edit="false" list="true" />
+      <dataColumn name="MonthClicks" label="月点击量" dataType="Int32" expression="" direction="Input" system="true" mapping="" maxlength="0" nullable="false" require="false" edit="false" list="true" />
+      <dataColumn name="QuarterClicks" label="季点击量" dataType="Int32" expression="" direction="Input" system="true" mapping="" maxlength="0" nullable="false" require="false" edit="false" list="true" />
+      <dataColumn name="YearClicks" label="年点击量" dataType="Int32" expression="" direction="Input" system="true" mapping="" maxlength="0" nullable="false" require="false" edit="false" list="true" />
+      <dataColumn name="stuName" label="姓名" dataType="String" direction="Output" system="false" mapping="ListKeys" maxlength="50" nullable="false" require="false" edit="false" list="false" />
+      <dataColumn name="Grade" label="年级" dataType="String" direction="Input" system="false" mapping="" maxlength="25" nullable="false" require="false" edit="false" list="false" />
+      <dataColumn name="Degree" label="学历" dataType="String" direction="Input" system="false" mapping="" maxlength="25" nullable="false" require="false" edit="false" list="false" />
+      <dataColumn name="Photo" label="照片" dataType="String" direction="Input" system="false" mapping="" maxlength="100" nullable="false" require="false" edit="false" list="false" />
+      <dataColumn name="Email" label="邮箱" dataType="String" direction="Output" system="false" mapping="ListKeys1" maxlength="200" nullable="false" require="false" edit="false" list="false" />
+      <dataColumn name="major" label="专业" dataType="String" direction="Input" system="false" mapping="" maxlength="60" nullable="false" require="false" edit="false" list="false" />
+      <dataColumn name="Remarks" label="备注" dataType="String" direction="Input" system="false" mapping="" maxlength="100" nullable="false" require="false" edit="false" list="false" />
+      <dataColumn name="StuNo" label="学号" dataType="String" direction="Input" system="false" mapping="" maxlength="100" nullable="false" require="false" edit="false" list="false" />
+      <dataColumn name="Nationality" label="国籍" dataType="String" direction="Input" system="false" mapping="" maxlength="100" nullable="false" require="false" edit="false" list="false" />
+      <dataColumn name="Gender" label="性别" dataType="String" direction="Input" system="false" mapping="" maxlength="25" nullable="false" require="false" edit="false" list="false" />
+      <dataColumn name="preSchool" label="前院校" dataType="String" direction="Input" system="false" mapping="" maxlength="300" nullable="false" require="false" edit="false" list="false" />
+      <dataColumn name="preMajor" label="前专业" dataType="String" direction="Input" system="false" mapping="" maxlength="300" nullable="false" require="false" edit="false" list="false" />
+      <dataColumn name="Graduatetime" label="毕业时间" dataType="String" direction="Output" system="false" mapping="ListKeys2" maxlength="300" nullable="false" require="false" edit="false" list="false" />
+      <dataColumn name="Job" label="就业公司" dataType="String" direction="Input" system="false" mapping="" maxlength="300" nullable="false" require="false" edit="false" list="false" />
+      <dataColumn name="Paper" label="论文题目" dataType="String" direction="Input" system="false" mapping="" maxlength="500" nullable="false" require="false" edit="false" list="false" />
+      <dataColumn name="Url" label="论文地址" dataType="String" direction="Input" system="false" mapping="" maxlength="500" nullable="false" require="false" edit="false" list="false" />
+      <dataColumn name="schoolName" label="学院" dataType="String" direction="Output" system="false" mapping="ListKeys4" maxlength="100" nullable="false" require="false" edit="false" list="false" />
+      <dataColumn name="masterMajor" label="硕士专业" dataType="String" direction="Input" system="false" mapping="" maxlength="100" nullable="false" require="false" edit="false" list="false" />
+      <dataColumn name="masterSchool" label="硕士学校" dataType="String" direction="Input" system="false" mapping="" maxlength="100" nullable="false" require="false" edit="false" list="false" />
+    </dataTable>
+  </dataSet>
+  <layout>
+    <panel name="edit" label="后台录入面板">
+      <edit path="We7.UxLayoutEditor" visible="true" layout="~/Models/Default/Student/GenerateLayout.ascx" viewerPath="We7.UxLayoutViewer" viewerLayout="~/Models/Default/Student/GenerateLayout.ascx" viewerCss="" editCss="" ucLayout="~/Models/Default/Student/GenerateLayout.ascx" ucCss="">
+        <group name="默认" index="0" next="0" enable="true">
+          <control id="ID" name="ID" label="ID" type="GUID" width="" height="" css="" default="" required="false" desc="" visible="false" ignore="false" />
+          <control id="OwnerID" name="OwnerID" label="栏目" type="We7.ChannelSelect" width="" height="" css="" default="" required="false" desc="" visible="true" ignore="false" />
+          <control id="schoolName" name="schoolName" label="学院" type="Select" width="" height="" css="" default="" required="false" desc="" visible="true" ignore="false">
+            <param name="data" value="Value1|WISE,Value2|SOE" />
+          </control>
+          <control id="stuName" name="stuName" label="姓名" type="TextInput" width="" height="" css="" default="" required="false" desc="" visible="true" ignore="false" />
+          <control id="StuNo" name="StuNo" label="学号" type="TextInput" width="" height="" css="" default="" required="false" desc="" visible="true" ignore="false" />
+          <control id="Grade" name="Grade" label="年级" type="TextInput" width="" height="" css="" default="" required="false" desc="" visible="true" ignore="false" />
+          <control id="major" name="major" label="专业" type="TextInput" width="" height="" css="" default="" required="false" desc="" visible="true" ignore="false" />
+          <control id="Nationality" name="Nationality" label="国籍" type="TextInput" width="" height="" css="" default="" required="false" desc="" visible="true" ignore="false" />
+          <control id="Photo" name="Photo" label="照片" type="We7.Thumbnail" width="" height="" css="" default="" required="false" desc="" visible="true" ignore="false" />
+          <control id="Email" name="Email" label="邮箱" type="TextInput" width="" height="" css="" default="" required="false" desc="" visible="true" ignore="false" />
+          <control id="Degree" name="Degree" label="学历" type="TextInput" width="" height="" css="" default="" required="false" desc="" visible="true" ignore="false" />
+          <control id="Job" name="Job" label="就业公司" type="TextInput" width="" height="" css="" default="" required="false" desc="" visible="true" ignore="false" />
+          <control id="Paper" name="Paper" label="论文题目" type="TextInput" width="" height="" css="" default="" required="false" desc="" visible="true" ignore="false" />
+          <control id="Url" name="Url" label="论文地址" type="Attachment" width="" height="" css="" default="" required="false" desc="" visible="true" ignore="false" />
+        </group>
+      </edit>
+      <list visible="false" />
+      <pager visible="false" />
+      <condition path="we7.Condition" visible="false">
+        <control id="ID" name="ID" label="ID" type="Request" required="false" visible="false" ignore="false" />
+      </condition>
+      <command visible="false" />
+      <navigation visible="false" />
+      <context>
+        <pageSize>10</pageSize>
+        <orders>ID</orders>
+        <dataKey>ID</dataKey>
+      </context>
+    </panel>
+    <panel name="list" label="后台列表面板">
+      <edit visible="false" />
+      <list path="we7.List" visible="true">
+        <group name="传统列表" index="0" next="0" enable="true">
+          <column name="Photo" label="照片" width="" height="" type="thumb" align="NotSet" index="0" visible="true" isThumb="true" isLink="false" mapping="" expr="" convert="" />
+          <column name="stuName" label="姓名" width="" height="" type="html" align="NotSet" index="1" visible="true" isThumb="false" isLink="false" mapping="" expr="" convert="" />
+          <column name="StuNo" label="学号" width="" height="" type="html" align="NotSet" index="2" visible="true" isThumb="false" isLink="false" mapping="" expr="" convert="" />
+          <column name="Grade" label="年级" width="" height="" type="html" align="NotSet" index="3" visible="true" isThumb="false" isLink="false" mapping="" expr="" convert="" />
+          <column name="major" label="专业" width="" height="" type="html" align="NotSet" index="4" visible="true" isThumb="false" isLink="false" mapping="" expr="" convert="" />
+          <column name="Nationality" label="国籍" width="" height="" type="html" align="NotSet" index="5" visible="true" isThumb="false" isLink="false" mapping="" expr="" convert="" />
+          <column name="Manage" label="管理" width="100" height="" type="action" align="Center" index="6" visible="true" isThumb="false" isLink="false" mapping="" expr="" convert="">
+            <param name="cmd" value="view()|edit()|delete" />
+            <param name="cmdText" value="查看|编辑|删除" />
+          </column>
+          <column name="schoolName" label="学院" width="" height="" type="html" align="NotSet" index="7" visible="true" isThumb="false" isLink="false" mapping="" expr="" convert="" />
+        </group>
+        <group name="矩阵行列" index="1" next="0" enable="false">
+          <column name="" label="标题" width="120" type="link" align="NotSet" index="1" visible="true" isThumb="false" isLink="false" />
+          <column name="" label="图片" width="120" type="thumb" align="NotSet" index="2" visible="true" isThumb="true" isLink="false" />
+          <column name="Manage" label="管理" width="120" type="action" align="Center" index="3" visible="true" isThumb="false" isLink="false" mapping="" expr="" convert="">
+            <param name="cmd" value="view()|edit()|delete" />
+            <param name="cmdText" value="查看|编辑|删除" />
+          </column>
+        </group>
+      </list>
+      <pager path="we7.Pager" visible="true" />
+      <condition path="we7.Condition" visible="true">
+        <control id="stuName" name="stuName" label="姓名" type="TextInput" width="" height="" css="" default="" required="false" desc="" visible="true" ignore="false">
+          <param name="operater" value="like" />
+        </control>
+        <control id="Graduatetime" name="Graduatetime" label="毕业时间" type="TextInput" width="" height="" css="" default="" required="false" desc="" visible="true" ignore="false">
+          <param name="operater" value="like" />
+        </control>
+        <control id="Email" name="Email" label="邮箱" type="TextInput" width="" height="" css="" default="" required="false" desc="" visible="true" ignore="false">
+          <param name="operater" value="like" />
+        </control>
+      </condition>
+      <command path="we7.Command" visible="true" />
+      <navigation visible="false" />
+      <context>
+        <pageSize>10</pageSize>
+        <orders>Index,IsShow Desc,Updated Desc,ID Desc</orders>
+        <dataKey>ID</dataKey>
+      </context>
+    </panel>
+    <panel name="multi" label="会员中心显示面板">
+      <edit path="We7.Editor" visible="true" layout="" viewerPath="We7.Viewer" viewerLayout="" viewerCss="" editCss="" ucLayout="~/Models/Default/Student/GenerateLayout.ascx" ucCss="">
+        <group name="默认" index="0" next="0" enable="true">
+          <control id="ID" name="ID" label="ID" type="GUID" width="" height="" css="" default="" required="false" desc="" visible="false" ignore="false" />
+          <control id="OwnerID" name="OwnerID" label="栏目" type="We7.ChannelSelect" width="" height="" css="" default="" required="false" desc="" visible="true" ignore="false" />
+          <control id="stuName" name="stuName" label="姓名" type="TextInput" width="" height="" css="" default="" required="false" desc="" visible="true" ignore="false" />
+          <control id="StuNo" name="StuNo" label="学号" type="TextInput" width="" height="" css="" default="" required="false" desc="" visible="true" ignore="false" />
+          <control id="Grade" name="Grade" label="年级" type="TextInput" width="" height="" css="" default="" required="false" desc="" visible="true" ignore="false" />
+          <control id="major" name="major" label="专业" type="TextInput" width="" height="" css="" default="" required="false" desc="" visible="true" ignore="false" />
+          <control id="Nationality" name="Nationality" label="国籍" type="TextInput" width="" height="" css="" default="" required="false" desc="" visible="true" ignore="false" />
+          <control id="Photo" name="Photo" label="照片" type="We7.Thumbnail" width="" height="" css="" default="" required="false" desc="" visible="true" ignore="false" />
+          <control id="Email" name="Email" label="邮箱" type="TextInput" width="" height="" css="" default="" required="false" desc="" visible="true" ignore="false" />
+          <control id="Degree" name="Degree" label="学历" type="TextInput" width="" height="" css="" default="" required="false" desc="" visible="true" ignore="false" />
+          <control id="Job" name="Job" label="就业公司" type="TextInput" width="" height="" css="" default="" required="false" desc="" visible="true" ignore="false" />
+          <control id="Paper" name="Paper" label="论文题目" type="TextInput" width="" height="" css="" default="" required="false" desc="" visible="true" ignore="false" />
+          <control id="Url" name="Url" label="论文地址" type="Attachment" width="" height="" css="" default="" required="false" desc="" visible="true" ignore="false" />
+        </group>
+      </edit>
+      <list path="System.SimpleList" visible="true" />
+      <pager path="System.SimplePager" visible="true" />
+      <condition path="System.SimpleCondition" visible="true">
+        <control id="OwnerID" name="OwnerID" label="栏目ID" type="Request" required="false" visible="false" ignore="false">
+          <param name="param" value="oid" />
+        </control>
+      </condition>
+      <command path="System.SimpleCommand" visible="true" />
+      <navigation path="System.SimplenNavigation" visible="true" />
+      <context>
+        <pageSize>10</pageSize>
+        <orders>Index,IsShow Desc,Updated Desc,ID Desc</orders>
+        <dataKey>ID</dataKey>
+      </context>
+    </panel>
+    <UCContrl>
+      <listFields>OwnerID,stuName,Grade,Degree,Photo,Email,major,Remarks,StuNo,Nationality,Gender,preSchool,preMajor,Graduatetime,Job,Paper,Url,schoolName</listFields>
+      <detailFields>OwnerID,stuName,Grade,Degree,Photo,Email,major,Remarks,StuNo,Nationality,Gender,preSchool,preMajor,Graduatetime,Job,Paper,Url,schoolName</detailFields>
+      <createEditor>false</createEditor>
+    </UCContrl>
+  </layout>
+</ModelInfo>

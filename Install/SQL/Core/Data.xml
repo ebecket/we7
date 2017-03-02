@@ -1,0 +1,463 @@
+<?xml version='1.0' encoding='utf-8' ?>
+<Update>
+  <Database db='We7.CMS.Common' >
+    <!--恢复单站点菜单出厂设置-->
+
+    <!--*************Menu表添加单站点数据***********-->
+    <Sql>
+      DELETE FROM [Menu]
+      WHERE ([Type] &lt;&gt; 99)
+    </Sql>
+    <Sql>
+      insert into [Menu]([ID],[ParentID],[SequenceIndex],[NameText],[Title],[Href],[Type],[Icon],[Group],[EntityID])
+      values('{00000000-0000-0008-0000-000000000000}','{00000000-0000-0000-0000-000000000000}',10,'工作台','工作台','',0,'menu_mainboard.gif',1,'System.Administration')
+    </Sql>
+    <Sql>
+      insert into [Menu]([ID],[ParentID],[SequenceIndex],[NameText],[Title],[Href],[Type],[Icon],[Group],[EntityID])
+      values('{00000000-0000-0001-0000-000000000000}','{00000000-0000-0000-0000-000000000000}',11,'内容','内容发布','',0,'menu_doc.gif',1,'System.Administration')
+    </Sql>
+    <Sql>
+      insert into [Menu]([ID],[ParentID],[SequenceIndex],[NameText],[Title],[Href],[Type],[Icon],[Group],[EntityID])
+      values('{00000000-0000-0004-0000-000000000000}','{00000000-0000-0000-0000-000000000000}',12,'反馈','互动交流','',0,'menu_feedback.gif',1,'System.Administration')
+    </Sql>
+
+    <Sql>
+      insert into [Menu]([ID],[ParentID],[SequenceIndex],[NameText],[Title],[Href],[Type],[Icon],[Group],[EntityID])
+      values('{00000000-0000-0025-0000-000000000000}','{00000000-0000-0000-0000-000000000000}',21,'栏目','栏目','',0,'menu_channel.gif',2,'System.Administration')
+    </Sql>
+    <Sql>
+      insert into [Menu]([ID],[ParentID],[SequenceIndex],[NameText],[Title],[Href],[Type],[Icon],[Group],[EntityID])
+      values('{00000000-0000-0009-0000-000000000000}','{00000000-0000-0000-0000-000000000000}',23,'外观','模板','',0,'menu_show.gif',2,'System.Administration')
+    </Sql>
+    <Sql>
+      insert into [Menu]([ID],[ParentID],[SequenceIndex],[NameText],[Title],[Href],[Type],[Icon],[Group],[EntityID])
+      values('{00000000-0000-0012-0000-000000000000}','{00000000-0000-0000-0000-000000000000}',24,'插件','插件','',0,'menu_addins.gif',2,'System.Administration')
+    </Sql>
+
+    <Sql>
+      insert into [Menu]([ID],[ParentID],[SequenceIndex],[NameText],[Title],[Href],[Type],[Icon],[Group],[EntityID])
+      values('{00000000-0000-0010-0000-000000000000}','{00000000-0000-0000-0000-000000000000}',32,'用户','用户','',0,'menu_user.gif',3,'System.Administration')
+    </Sql>
+    <Sql>
+      insert into [Menu]([ID],[ParentID],[SequenceIndex],[NameText],[Title],[Href],[Type],[Icon],[Group],[EntityID])
+      values('{00000000-0000-0006-0000-000000000000}','{00000000-0000-0000-0000-000000000000}',33,'模型','模型','',0,'menu_ad.gif',3,'System.Administration')
+    </Sql>
+    <Sql>
+      insert into [Menu]([ID],[ParentID],[SequenceIndex],[NameText],[Title],[Href],[Type],[Icon],[Group],[EntityID])
+      values('{00000000-0000-0011-0000-000000000000}','{00000000-0000-0000-0000-000000000000}',34,'工具','工具','',0,'menu_tools.gif',3,'System.Administration')
+    </Sql>
+    <Sql>
+      insert into [Menu]([ID],[ParentID],[SequenceIndex],[NameText],[Title],[Href],[Type],[Icon],[Group],[EntityID])
+      values('{00000000-0000-0013-0000-000000000000}','{00000000-0000-0000-0000-000000000000}',35,'设置','设置','',0,'menu_setting.gif',3,'System.Administration')
+    </Sql>
+    <Sql>
+      insert into [Menu]([ID],[ParentID],[SequenceIndex],[NameText],[Title],[Href],[Type],[Icon],[Group],[EntityID])
+      values('{00000000-0000-0014-0000-000000000000}','{00000000-0000-0000-0000-000000000000}',36,'问卷调查','问卷调查','',0,'menu_questionnaire.gif',3,'System.Administration')
+    </Sql>
+
+
+    <!--<Sql>
+      insert into [Menu]([ID],[ParentID],[SequenceIndex],[NameText],[Title],[Href],[Type],[Icon],[Group],[EntityID])
+      values('{00000000-0000-0015-0000-000000000000}','{00000000-0000-0000-0000-000000000000}',43,'Wap','Wap','',0,'menu_wap.gif',4,'System.Administration')
+    </Sql>-->
+
+    <Sql>
+      insert into [Menu]([ID],[ParentID],[SequenceIndex],[NameText],[Title],[Href],[Type],[EntityID])
+      values('{00000000-0001-0001-0002-000000000000}','{00000000-0000-0001-0002-000000000000}',1,'新添文章','新添','/admin/addins/ArticleEdit.aspx?type=0',0,'System.Administration')
+    </Sql>
+    <Sql>
+      insert into [Menu]([ID],[ParentID],[SequenceIndex],[NameText],[Title],[Href],[Type],[EntityID])
+      values('{00000000-0000-0001-0002-000000000000}','{00000000-0000-0001-0000-000000000000}',2,'文章列表','文章管理','/admin/AddIns/ArticleList.aspx?notiframe=1&amp;type=0',0,'System.Administration')
+    </Sql>
+    <Sql>
+      insert into [Menu]([ID],[ParentID],[SequenceIndex],[NameText],[Title],[Href],[Type],[EntityID])
+      values('{00000000-0000-0001-0003-000000000000}','{00000000-0000-0001-0000-000000000000}',3,'文章管理','桉栏目索引','/admin/AddIns/Articles.aspx?type=0',0,'System.Administration')
+    </Sql>
+    <Sql>
+      insert into [Menu]([ID],[ParentID],[SequenceIndex],[NameText],[Title],[Href],[Type],[EntityID])
+      values('{00000000-0000-0001-0013-000000000000}','{00000000-0000-0025-0000-000000000000}',8,'栏目管理','栏目管理','/admin/Channels.aspx',0,'System.Administration')
+    </Sql>
+    <Sql>
+      insert into [Menu]([ID],[ParentID],[SequenceIndex],[NameText],[Title],[Href],[Type],[EntityID])
+      values('{00000000-0000-0013-0012-000000000000}','{00000000-0000-0025-0000-000000000000}',12,'自定义类别','类别管理','/admin/CatTypeMgr.aspx',0,'System.Administration')
+    </Sql>
+    
+    <Sql>
+      insert into [Menu]([ID],[ParentID],[SequenceIndex],[NameText],[Title],[Href],[Type],[EntityID])
+      values('{00000000-0000-0004-0003-000000000000}','{00000000-0000-0004-0000-000000000000}',3,'评论管理','评论','/admin/AddIns/Comment.aspx',0,'System.Administration')
+    </Sql>
+    <!-- <Sql>
+      insert into [Menu]([ID],[ParentID],[SequenceIndex],[NameText],[Title],[Href],[Type],[EntityID])
+      values('{00000000-0000-0004-0004-000000000000}','{00000000-0000-0004-0000-000000000000}',4,'反馈标签管理','反馈标签','/admin/Advice/AdviceTag.aspx',0,'System.Administration')
+    </Sql>
+    -->
+    <Sql>
+      insert into [Menu]([ID],[ParentID],[SequenceIndex],[NameText],[Title],[Href],[Type],[EntityID])
+      values('{00000000-0000-0006-0007-000000000000}','{00000000-0000-0006-0000-000000000000}',8,'友情链接','友情链接','/admin/AddIns/Links.aspx',0,'System.Administration')
+    </Sql>
+    <Sql>
+      insert into [Menu]([ID],[ParentID],[SequenceIndex],[NameText],[Title],[Href],[Type],[EntityID])
+      values('{00000000-0000-0006-0004-000000000000}','{00000000-0000-0006-0000-000000000000}',3,'内容模型','内容模型','/admin/ContentModel/Models.aspx',0,'System.Administration')
+    </Sql>
+    <Sql>
+      insert into [Menu]([ID],[ParentID],[SequenceIndex],[NameText],[Title],[Href],[Type],[EntityID])
+      values('{00000000-0000-0006-0005-000000000000}','{00000000-0000-0006-0000-000000000000}',4,'反馈模型','反馈模型','/admin/Advice/AdviceTypes.aspx',0,'System.Administration')
+    </Sql>
+    
+    <Sql>
+      insert into [Menu]([ID],[ParentID],[SequenceIndex],[NameText],[Title],[Href],[Type],[EntityID])
+      values('{00000000-0000-0008-0001-000000000000}','{00000000-0000-0008-0000-000000000000}',1,'我的工作台','我的工作台','/admin/default.aspx',0,'System.Administration')
+    </Sql>
+    <Sql>
+      insert into [Menu]([ID],[ParentID],[SequenceIndex],[NameText],[Title],[Href],[Type],[EntityID])
+      values('{00000000-0000-0008-0002-000000000000}','{00000000-0000-0008-0000-000000000000}',2,'我的文章','我的文章管理','/admin/AddIns/ArticlesMy.aspx',0,'System.Administration')
+    </Sql>
+    <Sql>
+      insert into [Menu]([ID],[ParentID],[SequenceIndex],[NameText],[Title],[Href],[Type],[EntityID])
+      values('{00000000-0000-0008-0003-000000000000}','{00000000-0000-0008-0000-000000000000}',3,'审核管理','待审核','/admin/manage/ArticleProcess.aspx',0,'System.Administration')
+    </Sql>
+
+    <Sql>
+      insert into [Menu]([ID],[ParentID],[SequenceIndex],[NameText],[Title],[Href],[Type],[EntityID])
+      values('{00000000-0000-0009-0004-000000000000}','{00000000-0000-0009-0000-000000000000}',1,'模板编辑','编辑模板','/admin/TemplateGroupdetail.aspx?file=default',0,'System.Administration')
+    </Sql>
+    <Sql>
+      insert into [Menu]([ID],[ParentID],[SequenceIndex],[NameText],[Title],[Href],[Type],[EntityID])
+      values('{00000000-0000-0009-0002-000000000000}','{00000000-0000-0009-0000-000000000000}',4,'CSS管理','CSS编辑','/admin/manage/CssList.aspx',0,'System.Administration')
+    </Sql>
+    <!--<Sql>
+      insert into [Menu]([ID],[ParentID],[SequenceIndex],[NameText],[Title],[Href],[Type],[EntityID])
+      values('{00000000-0000-0009-0003-000000000000}','{00000000-0000-0009-0000-000000000000}',3,'数据控件','数据控件','/admin/DataControls.aspx',0,'System.Administration')
+    </Sql>-->
+    <Sql>
+      insert into [Menu]([ID],[ParentID],[SequenceIndex],[NameText],[Title],[Href],[Type],[EntityID])
+      values('{00000000-0000-0009-0001-000000000000}','{00000000-0000-0009-0000-000000000000}',2,'模板组','选择模板','/admin/TemplateGroups.aspx',0,'System.Administration')
+    </Sql>
+    <Sql>
+      insert into [Menu]([ID],[ParentID],[SequenceIndex],[NameText],[Title],[Href],[Type],[EntityID])
+      values('{00000000-0000-0010-0001-000000000000}','{00000000-0000-0010-0000-000000000000}',1,'部门管理','部门管理','/admin/Departments.aspx',0,'System.Administration')
+    </Sql>
+    <Sql>
+      insert into [Menu]([ID],[ParentID],[SequenceIndex],[NameText],[Title],[Href],[Type],[EntityID])
+      values('{00000000-0000-0010-0005-000000000000}','{00000000-0000-0010-0000-000000000000}',2,'用户管理','用户管理','/admin/Permissions/AccountList.aspx',0,'System.Administration')
+    </Sql>
+    <Sql>
+      insert into [Menu]([ID],[ParentID],[SequenceIndex],[NameText],[Title],[Href],[Type],[EntityID])
+      values('{00000000-0000-0010-0002-000000000000}','{00000000-0000-0010-0000-000000000000}',3,'用户组','角色管理','/admin/Roles.aspx',0,'System.Administration')
+    </Sql>
+    <Sql>
+      insert into [Menu]([ID],[ParentID],[SequenceIndex],[NameText],[Title],[Href],[Type],[EntityID])
+      values('{00000000-0000-0010-0003-000000000000}','{00000000-0000-0010-0000-000000000000}',4,'会员管理','会员管理','/admin/Permissions/UserList.aspx',0,'System.Administration')
+    </Sql>
+
+    <Sql>
+      insert into [Menu]([ID],[ParentID],[SequenceIndex],[NameText],[Title],[Href],[Type],[EntityID])
+      values('{00000000-0000-0010-0004-000000000000}','{00000000-0000-0010-0000-000000000000}',5,'批量发送邮件','批量发送邮件','/admin/tools/NotifyMail.aspx',0,'System.Administration')
+    </Sql>
+
+    <Sql>
+      insert into [Menu]([ID],[ParentID],[SequenceIndex],[NameText],[Title],[Href],[Type],[EntityID])
+      values('{00000000-0000-0010-0006-000000000000}','{00000000-0000-0010-0000-000000000000}',6,'积分主题管理','积分主题管理','/admin/ScoreManager/ScoreSubjectList.aspx',0,'System.Administration')
+    </Sql>
+    <Sql>
+      insert into [Menu]([ID],[ParentID],[SequenceIndex],[NameText],[Title],[Href],[Type],[EntityID])
+      values('{00000000-0000-0010-0007-000000000000}','{00000000-0000-0010-0000-000000000000}',7,'积分来源管理','积分来源管理','/admin/ScoreManager/ScoreSourceList.aspx',0,'System.Administration')
+    </Sql>
+
+
+    <Sql>
+      insert into [Menu]([ID],[ParentID],[SequenceIndex],[NameText],[Title],[Href],[Type],[EntityID])
+      values('{00000000-0000-0011-0004-000000000000}','{00000000-0000-0011-0000-000000000000}',1,'流量统计','流量统计','/admin/manage/Statisticses.aspx',0,'System.Administration')
+    </Sql>
+    <Sql>
+      insert into [Menu]([ID],[ParentID],[SequenceIndex],[NameText],[Title],[Href],[Type],[EntityID])
+      values('{00000000-0000-0001-0004-000000000000}','{00000000-0000-0011-0000-000000000000}',2,'工作量统计','工作量统计','/admin/manage/PublishStatisticses.aspx',0,'System.Administration')
+    </Sql>
+    <Sql>
+      insert into [Menu]([ID],[ParentID],[SequenceIndex],[NameText],[Title],[Href],[Type],[EntityID])
+      values('{00000000-0000-0001-0007-000000000000}','{00000000-0000-0011-0000-000000000000}',3,'反馈统计','反馈统计','/admin/Advice/AdviceStatistics.aspx',0,'System.Administration')
+    </Sql>
+    <Sql>
+      insert into [Menu]([ID],[ParentID],[SequenceIndex],[NameText],[Title],[Href],[Type],[EntityID])
+      values('{00000000-0000-0001-0005-000000000000}','{00000000-0000-0011-0000-000000000000}',4,'审核监控','审核监控管理','/admin/manage/ProcessControl.aspx',0,'System.Administration')
+    </Sql>
+    <Sql>
+      insert into [Menu]([ID],[ParentID],[SequenceIndex],[NameText],[Title],[Href],[Type],[EntityID])
+      values('{00000000-0000-0001-0006-000000000000}','{00000000-0000-0011-0000-000000000000}',5,'反馈监控管理','反馈监控管理','/admin/Advice/AdviceProcessManage.aspx',0,'System.Administration')
+    </Sql>
+    <Sql>
+      insert into [Menu]([ID],[ParentID],[SequenceIndex],[NameText],[Title],[Href],[Type],[EntityID])
+      values('{00000000-0000-0011-0001-000000000000}','{00000000-0000-0008-0000-000000000000}',6,'修改密码','修改密码','/admin/UpdatePassword.aspx',0,'System.Administration')
+    </Sql>
+    <!--<Sql>
+      insert into [Menu]([ID],[ParentID],[SequenceIndex],[NameText],[Title],[Href],[Type],[EntityID])
+      values('{00000000-0000-0011-0012-000000000000}','{00000000-0000-0011-0000-000000000000}',7,'文件管理','文件管理','/admin/FileManagement.aspx',0,'System.Administration')
+    </Sql>-->
+
+    <Sql>
+      insert into [Menu]([ID],[ParentID],[SequenceIndex],[NameText],[Title],[Href],[Type],[EntityID])
+      values('{00000000-0000-0011-0002-000000000000}','{00000000-0000-0011-0000-000000000000}',8,'系统日志','系统日志','/admin/manage/Logs.aspx',0,'System.Administration')
+    </Sql>
+    <!--<Sql>
+        insert into [Menu]([ID],[ParentID],[SequenceIndex],[NameText],[Title],[Href],[Type],[EntityID])
+        values('{00000000-0000-0011-0013-000000000000}','{00000000-0000-0011-0000-000000000000}',9,'投票管理','投票管理','/admin/vote/VoteList.aspx',0,'System.Administration')
+    </Sql>-->
+
+    <Sql>
+      insert into [Menu]([ID],[ParentID],[SequenceIndex],[NameText],[Title],[Href],[Type],[EntityID])
+      values('{00000000-0000-0013-0002-000000000000}','{00000000-0000-0013-0000-000000000000}',1,'系统设置','常规','/admin/system.aspx',0,'System.Administration')
+    </Sql>
+
+
+    <Sql>
+      insert into [Menu]([ID],[ParentID],[SequenceIndex],[NameText],[Title],[Href],[Type],[EntityID])
+      values('{00000000-0000-0013-0001-000000000000}','{00000000-0000-0013-0000-000000000000}',5,'后台菜单设置','后台菜单设置','/admin/manage/MenuList.aspx',0,'System.Administration')
+    </Sql>
+    <Sql>
+      insert into [Menu]([ID],[ParentID],[SequenceIndex],[NameText],[Title],[Href],[Type],[EntityID])
+      values('{00000000-0000-0013-0011-000000000000}','{00000000-0000-0013-0000-000000000000}',6,'会员菜单设置','会员菜单设置','/admin/manage/UserMenulist.aspx',0,'System.Administration')
+    </Sql>
+    <Sql>
+      insert into [Menu]([ID],[ParentID],[SequenceIndex],[NameText],[Title],[Href],[Type],[EntityID])
+      values('{00000000-0000-0013-0006-000000000000}','{00000000-0000-0011-0000-000000000000}',7,'数据库维护','数据库维护','/admin/tools/DBMaintenance.aspx',0,'System.Administration')
+    </Sql>
+
+    <!--<Sql>
+      insert into [Menu]([ID],[ParentID],[SequenceIndex],[NameText],[Title],[Href],[Type],[EntityID])
+      values('{00000000-0000-0015-0001-000000000000}','{00000000-0000-0015-0000-000000000000}',1,'wap文章管理','wap文章管理','/admin/AddIns/Articles.aspx?wap=1',0,'System.Administration')
+    </Sql>
+    <Sql>
+      insert into [Menu]([ID],[ParentID],[SequenceIndex],[NameText],[Title],[Href],[Type],[EntityID])
+      values('{00000000-0000-0015-0002-000000000000}','{00000000-0000-0015-0000-000000000000}',2,'wap栏目管理','wap栏目管理','/admin/Channels.aspx?wap=1',0,'System.Administration')
+    </Sql>-->
+
+
+    <Sql>
+      insert into [Menu]([ID],[ParentID],[SequenceIndex],[NameText],[Title],[Href],[Type],[EntityID])
+      values('{00000000-0000-0013-0010-000000000000}','{00000000-0000-0013-0000-000000000000}',10,'IP策略管理','IP策略管理','/admin/manage/StrateList.aspx',0,'System.Administration')
+    </Sql>
+    <Sql>
+      insert into [Menu]([ID],[ParentID],[SequenceIndex],[NameText],[Title],[Href],[Type],[EntityID])
+      values('{00000000-0000-0013-0013-000000000000}','{00000000-0000-0013-0000-000000000000}',11,'栏目模块','栏目模块','/admin/ModuleManager.aspx',0,'System.Administration')
+    </Sql>
+    <Sql>
+      insert into [Menu]([ID],[ParentID],[SequenceIndex],[NameText],[Title],[Href],[Type],[EntityID])
+      values('{00000000-0000-0013-0014-000000000000}','{00000000-0000-0013-0000-000000000000}',12,'网站静态信息','网站静态信息','/admin/manage/TemplateStaticize.aspx',0,'System.Administration')
+    </Sql>
+    <!--<Sql>
+      insert into [Menu]([ID],[ParentID],[SequenceIndex],[NameText],[Title],[Href],[Type],[EntityID])
+      values('{00000000-0000-0013-0015-000000000000}','{00000000-0000-0013-0000-000000000000}',13,'更新缓存','更新缓存','/admin/manage/CacheRefresh.aspx',0,'System.Administration')
+    </Sql>-->
+    <Sql>
+      insert into [Menu]([ID],[ParentID],[SequenceIndex],[NameText],[Title],[Href],[Type],[EntityID])
+      values('{00000000-0000-0013-0016-000000000000}','{00000000-0000-0013-0000-000000000000}',14,'站点设置向导','站点设置向导','/admin/NewSiteWizard.aspx',0,'System.Administration')
+    </Sql>
+
+    <!--问卷调查二级菜单(start)-->
+    <Sql>
+      insert into [Menu]([ID],[ParentID],[SequenceIndex],[NameText],[Title],[Href],[Type],[EntityID])
+      values('{00000000-0000-0014-0010-000000000000}','{00000000-0000-0014-0000-000000000000}',15,'问卷类别管理','问卷类别管理','/admin/Questionnaire/QuestionnaireTypeEdit.aspx',0,'System.Administration')
+    </Sql>
+    <Sql>
+      insert into [Menu]([ID],[ParentID],[SequenceIndex],[NameText],[Title],[Href],[Type],[EntityID])
+      values('{00000000-0000-0014-0013-000000000000}','{00000000-0000-0014-0000-000000000000}',16,'问卷管理','问卷管理','/admin/Questionnaire/QuestionnaireMng.aspx',0,'System.Administration')
+    </Sql>
+    <!--<Sql>
+      insert into [Menu]([ID],[ParentID],[SequenceIndex],[NameText],[Title],[Href],[Type],[EntityID])
+      values('{00000000-0000-0013-0015-000000000000}','{00000000-0000-0013-0000-000000000000}',13,'更新缓存','更新缓存','/admin/manage/CacheRefresh.aspx',0,'System.Administration')
+    </Sql>-->
+    <Sql>
+      insert into [Menu]([ID],[ParentID],[SequenceIndex],[NameText],[Title],[Href],[Type],[EntityID])
+      values('{00000000-0000-0014-0016-000000000000}','{00000000-0000-0014-0000-000000000000}',18,'问卷数据统计分析','问卷数据统计分析','/admin/Questionnaire/StatisticsIndex.aspx',0,'System.Administration')
+    </Sql>
+    <!--问卷调查二级菜单(end)-->
+    
+
+    
+    <Sql>
+      insert into [Menu]([ID],[ParentID],[SequenceIndex],[NameText],[Title],[Href],[Type],[EntityID])
+      values('{00000000-0000-0012-0001-000000000000}','{00000000-0000-0012-0000-000000000000}',1,'插件管理','插件管理','/admin/Plugin/PluginList.aspx',0,'System.Administration')
+    </Sql>
+    <Sql>
+      insert into [Menu]([ID],[ParentID],[SequenceIndex],[NameText],[Title],[Href],[Type],[EntityID])
+      values('{00000000-0000-0012-0002-000000000000}','{00000000-0000-0012-0000-000000000000}',2,'添加插件','添加插件','/admin/Plugin/PluginAdd.aspx',0,'System.Administration')
+    </Sql>
+
+    <!--会员中心菜单-->
+    <Sql>
+      insert into [Menu]([ID],[ParentID],[SequenceIndex],[NameText],[Title],[Href],[Type],[Icon],[Group],[EntityID])
+      values('{00000000-0001-0011-0000-000000000000}','{00000000-0000-0000-0000-000000000000}',3,'短消息','短消息','',0,'menu_tools.gif',1,'System.User')
+    </Sql>
+    <Sql>
+      insert into [Menu]([ID],[ParentID],[SequenceIndex],[NameText],[Title],[Href],[Type],[EntityID])
+      values('{00000000-0001-0011-0001-000000000000}','{00000000-0001-0011-0000-000000000000}',1,'收件箱','收件箱','/user/message.aspx?state=inbox',0,'System.User')
+    </Sql>
+    <Sql>
+      insert into [Menu]([ID],[ParentID],[SequenceIndex],[NameText],[Title],[Href],[Type],[EntityID])
+      values('{00000000-0001-0011-0002-000000000000}','{00000000-0001-0011-0000-000000000000}',2,'发件箱','发件箱','/user/message.aspx?state=outbox',0,'System.User')
+    </Sql>
+    <Sql>
+      insert into [Menu]([ID],[ParentID],[SequenceIndex],[NameText],[Title],[Href],[Type],[EntityID])
+      values('{00000000-0001-0011-0003-000000000000}','{00000000-0001-0011-0000-000000000000}',3,'草稿箱','草稿箱','/user/message.aspx?state=draft',0,'System.User')
+    </Sql>
+    <Sql>
+      insert into [Menu]([ID],[ParentID],[SequenceIndex],[NameText],[Title],[Href],[Type],[EntityID])
+      values('{00000000-0001-0011-0004-000000000000}','{00000000-0001-0011-0000-000000000000}',4,'发消息','发消息','/user/PostMessage.aspx',0,'System.User')
+    </Sql>
+    <Sql>
+      insert into [Menu]([ID],[ParentID],[SequenceIndex],[NameText],[Title],[Href],[Type],[Icon],[Group],[EntityID])
+      values('{00000000-0001-0012-0000-000000000000}','{00000000-0000-0000-0000-000000000000}',4,'信息发布','信息发布','',0,'menu_tools.gif',1,'System.User')
+    </Sql>
+    
+   <!--//用户中心-->
+    <Sql>
+      insert into [Menu]([ID],[ParentID],[SequenceIndex],[NameText],[Title],[Href],[Type],[EntityID])
+      values('{00000000-0001-0012-0001-000000000000}','{00000000-0001-0012-0000-000000000000}',1,'新闻发布','新闻发布','/User/ModelHandler.aspx?model=Article',0,'System.User')
+    </Sql>
+
+    
+    <Sql>
+      insert into [Menu]([ID],[ParentID],[SequenceIndex],[NameText],[Title],[Href],[Type],[EntityID])
+      values('{00000000-0001-0012-0007-000000000000}','{00000000-0001-0012-0000-000000000000}',5,'审核管理','待审核','/User/ArticleProcess.aspx',0,'System.User')
+    </Sql>
+
+    <Sql>
+      insert into [Menu]([ID],[ParentID],[SequenceIndex],[NameText],[Title],[Href],[Type],[Icon],[Group],[EntityID])
+      values('{00000000-0001-0013-0000-000000000000}','{00000000-0000-0000-0000-000000000000}',5,'收藏夹','收藏夹','',0,'menu_tools.gif',1,'System.User')
+    </Sql>
+    <Sql>
+      insert into [Menu]([ID],[ParentID],[SequenceIndex],[NameText],[Title],[Href],[Type],[EntityID])
+      values('{00000000-0001-0013-0007-000000000000}','{00000000-0001-0013-0000-000000000000}',1,'收藏夹管理','收藏夹管理','/User/FavoriteList.aspx',0,'System.User')
+    </Sql>
+    <Sql>
+      insert into [Menu]([ID],[ParentID],[SequenceIndex],[NameText],[Title],[Href],[Type],[EntityID])
+      values('{00000000-0001-0013-0001-000000000000}','{00000000-0001-0013-0000-000000000000}',2,'添加收藏','添加收藏','/User/FavoriteEdit.aspx',0,'System.User')
+    </Sql>
+    <Sql>
+      insert into [Menu]([ID],[ParentID],[SequenceIndex],[NameText],[Title],[Href],[Type],[Icon],[Group],[EntityID])
+      values('{00000000-0001-0014-0000-000000000000}','{00000000-0000-0000-0000-000000000000}',1,'个人设置','个人设置','',0,'menu_tools.gif',1,'System.User')
+    </Sql>
+ 
+    <Sql>
+      insert into [Menu]([ID],[ParentID],[SequenceIndex],[NameText],[Title],[Href],[Type],[EntityID])
+      values('{00000000-0001-0014-0001-000000000000}','{00000000-0001-0014-0000-000000000000}',1,'资料显示','资料显示','/User/AccountDetails.aspx',0,'System.User')
+    </Sql>
+    <Sql>
+      insert into [Menu]([ID],[ParentID],[SequenceIndex],[NameText],[Title],[Href],[Type],[EntityID])
+      values('{00000000-0001-0014-0002-000000000000}','{00000000-0001-0014-0000-000000000000}',2,'资料修改','资料修改','/User/AccountEdit.aspx',0,'System.User')
+    </Sql>
+    
+    <Sql>
+      insert into [Menu]([ID],[ParentID],[SequenceIndex],[NameText],[Title],[Href],[Type],[Icon],[Group],[EntityID])
+      values('{00000000-0001-0015-0000-000000000000}','{00000000-0000-0000-0000-000000000000}',6,'积分','积分','',0,'menu_tools.gif',1,'System.User')
+    </Sql>
+    <Sql>
+      insert into [Menu]([ID],[ParentID],[SequenceIndex],[NameText],[Title],[Href],[Type],[EntityID])
+      values('{00000000-0001-0015-0001-000000000000}','{00000000-0001-0015-0000-000000000000}',1,'积分明细','积分明细','/User/PointList.aspx',0,'System.User')
+    </Sql>
+
+    <Sql>
+      insert into [Menu]([ID],[ParentID],[SequenceIndex],[NameText],[Title],[Href],[Type],[Icon],[Group],[EntityID])
+      values('{00000000-0001-0016-0000-000000000000}','{00000000-0000-0000-0000-000000000000}',7,'密码管理','密码管理','',0,'menu_tools.gif',1,'System.User')
+    </Sql>
+    <Sql>
+      insert into [Menu]([ID],[ParentID],[SequenceIndex],[NameText],[Title],[Href],[Type],[EntityID])
+      values('{00000000-0001-0016-0001-000000000000}','{00000000-0001-0016-0000-000000000000}',1,'修改登录密码','修改登录密码','/User/Account_Password.aspx',0,'System.User')
+    </Sql>
+
+    <Sql>
+      insert into [Menu]([ID],[ParentID],[SequenceIndex],[NameText],[Title],[Href],[Type],[Icon],[Group],[EntityID])
+      values('{00000000-0001-0017-0000-000000000000}','{00000000-0000-0000-0000-000000000000}',8,'认证管理','认证管理','',0,'menu_tools.gif',1,'System.User')
+    </Sql>
+    <Sql>
+      insert into [Menu]([ID],[ParentID],[SequenceIndex],[NameText],[Title],[Href],[Type],[EntityID])
+      values('{00000000-0001-0017-0001-000000000000}','{00000000-0001-0017-0000-000000000000}',1,'邮箱认证','邮箱认证','/User/Account_Password.aspx',0,'System.User')
+    </Sql>
+
+
+    <!--权限定义内容记录-->
+    <Sql>
+      insert into [Menu]([EntityID],[ID],[Title],[NameText],[SequenceIndex],[Type])
+      values('System.Channel','Channel.Read','读取','读取栏目信息',1,2)
+    </Sql>
+    <Sql>
+      insert into [Menu]([EntityID],[ID],[Title],[NameText],[SequenceIndex],[Type])
+      values('System.Channel','Channel.Article','管理栏目文章','管理栏目文章',2,2)
+    </Sql>
+    <Sql>
+      insert into [Menu]([EntityID],[ID],[Title],[NameText],[SequenceIndex],[Type])
+      values('System.Channel','Channel.Admin','管理栏目','管理栏目，创建子栏目',3,2)
+    </Sql>
+    <Sql>
+      insert into [Menu]([EntityID],[ID],[Title],[NameText],[SequenceIndex],[Type])
+      values('System.Channel','Channel.FirstAudit','一级审核','一级审核',11,2)
+    </Sql>
+    <Sql>
+      insert into [Menu]([EntityID],[ID],[Title],[NameText],[SequenceIndex],[Type])
+      values('System.Channel','Channel.SecondAudit','二级审核','二级审核',12,2)
+    </Sql>
+    <Sql>
+      insert into [Menu]([EntityID],[ID],[Title],[NameText],[SequenceIndex],[Type])
+      values('System.Channel','Channel.ThirdAudit','三级审核','三级审核',13,2)
+    </Sql>
+
+    <Sql>
+      insert into [Menu]([EntityID],[ID],[Title],[NameText],[SequenceIndex],[Type])
+      values('System.Advice','Advice.Read','查看','查看反馈模型信息',0,2)
+    </Sql>
+    <Sql>
+      insert into [Menu]([EntityID],[ID],[Title],[NameText],[SequenceIndex],[Type])
+      values('System.Advice','Advice.Accept','反馈受理','反馈受理',1,2)
+    </Sql>
+    <Sql>
+      insert into [Menu]([EntityID],[ID],[Title],[NameText],[SequenceIndex],[Type])
+      values('System.Advice','Advice.Handle','反馈办理','反馈办理',2,2)
+    </Sql>
+    <Sql>
+      insert into [Menu]([EntityID],[ID],[Title],[NameText],[SequenceIndex],[Type])
+      values('System.Advice','Advice.Admin','反馈管理','反馈管理',3,2)
+    </Sql>
+
+    <Sql>
+      insert into [Menu]([EntityID],[ID],[Title],[NameText],[SequenceIndex],[Type])
+      values('System.Advice','Advice.FirstAudit','反馈一级审核','反馈一级审核',11,2)
+    </Sql>
+    <Sql>
+      insert into [Menu]([EntityID],[ID],[Title],[NameText],[SequenceIndex],[Type])
+      values('System.Advice','Advice.SecondAudit','反馈二级审核','反馈二级审核',12,2)
+    </Sql>
+    <Sql>
+      insert into [Menu]([EntityID],[ID],[Title],[NameText],[SequenceIndex],[Type])
+      values('System.Advice','Advice.ThirdAudit','反馈三级审核','反馈三级审核',13,2)
+    </Sql>
+
+    <Sql>
+      insert into [Role]([ID],[Title],[Description],[GroupRole],[RoleType],[State])
+      values('1','注册用户','系统定义的用户组，不允许删除',0,1,'1')
+    </Sql>
+
+    <!--广告插件-->
+    <!--<Sql>
+      insert into [Menu]([ID],[ParentID],[SequenceIndex],[NameText],[Title],[Href],[Type],[Icon],[Group],[EntityID])
+      values('{00000000-0000-0020-0000-000000000000}','{00000000-0000-0000-0000-000000000000}',23,'广告','广告','',0,'menu_ad.gif',2,'System.Administration')
+    </Sql>
+    <Sql>
+      insert into [Menu]([ID],[ParentID],[SequenceIndex],[NameText],[Title],[Href],[Type],[EntityID])
+      values('{00000000-0000-0020-0003-000000000000}','{00000000-0000-0020-0000-000000000000}',3,'广告参数设置','广告参数设置','/Admin/ADInterface/CertificationCreate.aspx?adObject=ADSetting',99,'System.Administration')
+    </Sql>
+    <Sql>
+      insert into [Menu]([ID],[ParentID],[SequenceIndex],[NameText],[Title],[Href],[Type],[EntityID])
+      values('{00000000-0000-0020-0004-000000000000}','{00000000-0000-0020-0000-000000000000}',4,'广告资源管理','广告资源管理','/Admin/ADInterface/CertificationCreate.aspx?adObject=ADRes',99,'System.Administration')
+    </Sql>
+    <Sql>
+      insert into [Menu]([ID],[ParentID],[SequenceIndex],[NameText],[Title],[Href],[Type],[EntityID])
+      values('{00000000-0000-0020-0005-000000000000}','{00000000-0000-0020-0000-000000000000}',5,'广告位管理','广告位管理','/Admin/ADInterface/CertificationCreate.aspx?adObject=ADZone',99,'System.Administration')
+    </Sql>
+    <Sql>
+      insert into [Menu]([ID],[ParentID],[SequenceIndex],[NameText],[Title],[Href],[Type],[EntityID])
+      values('{00000000-0000-0020-0006-000000000000}','{00000000-0000-0020-0000-000000000000}',6,'广告发布','广告发布','/Admin/ADInterface/CertificationCreate.aspx?adObject=ADPublish',99,'System.Administration')
+    </Sql>-->
+    <!--广告插件-->
+    
+  </Database>
+</Update>

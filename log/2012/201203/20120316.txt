@@ -1,0 +1,194 @@
+
+ 
+记录时间：2012-03-16 09:26:39,020 
+线程ID:[10] 
+日志级别：  ERROR 
+出错类：We7.CMS.BasePage property: [(null)] - 
+错误描述：Error
+ 
+System.Web.Services.Protocols.SoapException: System.Web.Services.Protocols.SoapException: 服务器无法处理请求。 ---> System.IO.DirectoryNotFoundException: 未能找到路径“D:\WestEngine\主站加相册\PluginCollage”的一部分。
+   在 System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   在 System.IO.Directory.InternalGetFileDirectoryNames(String path, String userPathOriginal, String searchPattern, Boolean includeFiles, Boolean includeDirs, SearchOption searchOption)
+   在 System.IO.DirectoryInfo.GetFiles(String searchPattern, SearchOption searchOption)
+   在 We7.CMS.Plugin.PluginHelper.LoadServerInfo()
+   在 We7.CMS.Web.Admin.Modules.Plugin.PluginInfomation.LoadServerInfo(PluginType pluginType)
+   --- 内部异常堆栈跟踪的结尾 ---
+   在 System.Web.Services.Protocols.SoapHttpClientProtocol.ReadResponse(SoapClientMessage message, WebResponse response, Stream responseStream, Boolean asyncCall)
+   在 System.Web.Services.Protocols.SoapHttpClientProtocol.Invoke(String methodName, Object[] parameters)
+   在 We7.CMS.Web.Admin.PluginService.PluginInfomation.LoadServerInfo(PluginType pluginType)
+   在 We7.CMS.Web.Admin.Modules.Plugin.PluginDetails.GetRemotePluginInfo()
+   在 We7.CMS.Web.Admin.Modules.Plugin.PluginDetails.BuildNavString()
+   在 We7.CMS.Web.Admin.Modules.Plugin.PluginDetails.Page_Load(Object sender, EventArgs e)
+   在 System.Web.Util.CalliHelper.EventArgFunctionCaller(IntPtr fp, Object o, Object t, EventArgs e)
+   在 System.Web.Util.CalliEventHandlerDelegateProxy.Callback(Object sender, EventArgs e)
+   在 System.Web.UI.Control.OnLoad(EventArgs e)
+   在 We7.CMS.BasePage.OnLoad(EventArgs e)
+
+ 
+记录时间：2012-03-16 09:26:39,196 
+线程ID:[10] 
+日志级别：  ERROR 
+出错类：We7.CMS.BasePage property: [(null)] - 
+错误描述：Error
+ 
+System.Web.Services.Protocols.SoapException: System.Web.Services.Protocols.SoapException: 服务器无法处理请求。 ---> System.IO.DirectoryNotFoundException: 未能找到路径“D:\WestEngine\主站加相册\PluginCollage”的一部分。
+   在 System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   在 System.IO.Directory.InternalGetFileDirectoryNames(String path, String userPathOriginal, String searchPattern, Boolean includeFiles, Boolean includeDirs, SearchOption searchOption)
+   在 System.IO.DirectoryInfo.GetFiles(String searchPattern, SearchOption searchOption)
+   在 We7.CMS.Plugin.PluginHelper.LoadServerInfo()
+   在 We7.CMS.Web.Admin.Modules.Plugin.PluginInfomation.LoadServerInfo(PluginType pluginType)
+   --- 内部异常堆栈跟踪的结尾 ---
+   在 System.Web.Services.Protocols.SoapHttpClientProtocol.ReadResponse(SoapClientMessage message, WebResponse response, Stream responseStream, Boolean asyncCall)
+   在 System.Web.Services.Protocols.SoapHttpClientProtocol.Invoke(String methodName, Object[] parameters)
+   在 We7.CMS.Web.Admin.PluginService.PluginInfomation.LoadServerInfo(PluginType pluginType)
+   在 We7.CMS.Web.Admin.Modules.Plugin.PluginDetails.GetRemotePluginInfo()
+   在 We7.CMS.Web.Admin.Modules.Plugin.PluginDetails.BuildNavString()
+   在 We7.CMS.Web.Admin.Modules.Plugin.PluginDetails.Page_Load(Object sender, EventArgs e)
+   在 System.Web.Util.CalliHelper.EventArgFunctionCaller(IntPtr fp, Object o, Object t, EventArgs e)
+   在 System.Web.Util.CalliEventHandlerDelegateProxy.Callback(Object sender, EventArgs e)
+   在 System.Web.UI.Control.OnLoad(EventArgs e)
+   在 We7.CMS.BasePage.OnLoad(EventArgs e)
+
+ 
+记录时间：2012-03-16 09:26:53,201 
+线程ID:[10] 
+日志级别：  ERROR 
+出错类：We7.CMS.BasePage property: [(null)] - 
+错误描述：Error
+ 
+System.Web.Services.Protocols.SoapException: System.Web.Services.Protocols.SoapException: 服务器无法处理请求。 ---> System.IO.DirectoryNotFoundException: 未能找到路径“D:\WestEngine\主站加相册\PluginCollage”的一部分。
+   在 System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   在 System.IO.Directory.InternalGetFileDirectoryNames(String path, String userPathOriginal, String searchPattern, Boolean includeFiles, Boolean includeDirs, SearchOption searchOption)
+   在 System.IO.DirectoryInfo.GetFiles(String searchPattern, SearchOption searchOption)
+   在 We7.CMS.Plugin.PluginHelper.LoadServerInfo()
+   在 We7.CMS.Web.Admin.Modules.Plugin.PluginInfomation.LoadServerInfo(PluginType pluginType)
+   --- 内部异常堆栈跟踪的结尾 ---
+   在 System.Web.Services.Protocols.SoapHttpClientProtocol.ReadResponse(SoapClientMessage message, WebResponse response, Stream responseStream, Boolean asyncCall)
+   在 System.Web.Services.Protocols.SoapHttpClientProtocol.Invoke(String methodName, Object[] parameters)
+   在 We7.CMS.Web.Admin.PluginService.PluginInfomation.LoadServerInfo(PluginType pluginType)
+   在 We7.CMS.Web.Admin.Modules.Plugin.PluginDetails.GetRemotePluginInfo()
+   在 We7.CMS.Web.Admin.Modules.Plugin.PluginDetails.BuildNavString()
+   在 We7.CMS.Web.Admin.Modules.Plugin.PluginDetails.Page_Load(Object sender, EventArgs e)
+   在 System.Web.Util.CalliHelper.EventArgFunctionCaller(IntPtr fp, Object o, Object t, EventArgs e)
+   在 System.Web.Util.CalliEventHandlerDelegateProxy.Callback(Object sender, EventArgs e)
+   在 System.Web.UI.Control.OnLoad(EventArgs e)
+   在 We7.CMS.BasePage.OnLoad(EventArgs e)
+
+ 
+记录时间：2012-03-16 09:26:53,310 
+线程ID:[10] 
+日志级别：  ERROR 
+出错类：We7.CMS.BasePage property: [(null)] - 
+错误描述：Error
+ 
+System.Web.Services.Protocols.SoapException: System.Web.Services.Protocols.SoapException: 服务器无法处理请求。 ---> System.IO.DirectoryNotFoundException: 未能找到路径“D:\WestEngine\主站加相册\PluginCollage”的一部分。
+   在 System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   在 System.IO.Directory.InternalGetFileDirectoryNames(String path, String userPathOriginal, String searchPattern, Boolean includeFiles, Boolean includeDirs, SearchOption searchOption)
+   在 System.IO.DirectoryInfo.GetFiles(String searchPattern, SearchOption searchOption)
+   在 We7.CMS.Plugin.PluginHelper.LoadServerInfo()
+   在 We7.CMS.Web.Admin.Modules.Plugin.PluginInfomation.LoadServerInfo(PluginType pluginType)
+   --- 内部异常堆栈跟踪的结尾 ---
+   在 System.Web.Services.Protocols.SoapHttpClientProtocol.ReadResponse(SoapClientMessage message, WebResponse response, Stream responseStream, Boolean asyncCall)
+   在 System.Web.Services.Protocols.SoapHttpClientProtocol.Invoke(String methodName, Object[] parameters)
+   在 We7.CMS.Web.Admin.PluginService.PluginInfomation.LoadServerInfo(PluginType pluginType)
+   在 We7.CMS.Web.Admin.Modules.Plugin.PluginDetails.GetRemotePluginInfo()
+   在 We7.CMS.Web.Admin.Modules.Plugin.PluginDetails.BuildNavString()
+   在 We7.CMS.Web.Admin.Modules.Plugin.PluginDetails.Page_Load(Object sender, EventArgs e)
+   在 System.Web.Util.CalliHelper.EventArgFunctionCaller(IntPtr fp, Object o, Object t, EventArgs e)
+   在 System.Web.Util.CalliEventHandlerDelegateProxy.Callback(Object sender, EventArgs e)
+   在 System.Web.UI.Control.OnLoad(EventArgs e)
+   在 We7.CMS.BasePage.OnLoad(EventArgs e)
+
+ 
+记录时间：2012-03-16 09:27:09,885 
+线程ID:[8] 
+日志级别：  ERROR 
+出错类：We7.CMS.Web.Global property: [(null)] - 
+错误描述：Error
+ 
+System.Web.HttpException: 文件“/Plugins/FullTextSearch/UI/index.aspx”不存在。
+   在 System.Web.UI.Util.CheckVirtualFileExists(VirtualPath virtualPath)
+   在 System.Web.Compilation.BuildManager.GetVPathBuildResultInternal(VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile)
+   在 System.Web.Compilation.BuildManager.GetVPathBuildResultWithNoAssert(HttpContext context, VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile)
+   在 System.Web.Compilation.BuildManager.GetVirtualPathObjectFactory(VirtualPath virtualPath, HttpContext context, Boolean allowCrossApp, Boolean noAssert)
+   在 System.Web.Compilation.BuildManager.CreateInstanceFromVirtualPath(VirtualPath virtualPath, Type requiredBaseType, HttpContext context, Boolean allowCrossApp, Boolean noAssert)
+   在 System.Web.UI.PageHandlerFactory.GetHandlerHelper(HttpContext context, String requestType, VirtualPath virtualPath, String physicalPath)
+   在 System.Web.UI.PageHandlerFactory.System.Web.IHttpHandlerFactory2.GetHandler(HttpContext context, String requestType, VirtualPath virtualPath, String physicalPath)
+   在 System.Web.HttpApplication.MapHttpHandler(HttpContext context, String requestType, VirtualPath path, String pathTranslated, Boolean useAppConfig)
+   在 System.Web.HttpApplication.MapHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   在 System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+
+ 
+记录时间：2012-03-16 09:28:30,129 
+线程ID:[8] 
+日志级别：  ERROR 
+出错类：We7.CMS.BasePage property: [(null)] - 
+错误描述：Error
+ 
+System.Web.Services.Protocols.SoapException: System.Web.Services.Protocols.SoapException: 服务器无法处理请求。 ---> System.IO.DirectoryNotFoundException: 未能找到路径“D:\WestEngine\主站加相册\PluginCollage”的一部分。
+   在 System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   在 System.IO.Directory.InternalGetFileDirectoryNames(String path, String userPathOriginal, String searchPattern, Boolean includeFiles, Boolean includeDirs, SearchOption searchOption)
+   在 System.IO.DirectoryInfo.GetFiles(String searchPattern, SearchOption searchOption)
+   在 We7.CMS.Plugin.PluginHelper.LoadServerInfo()
+   在 We7.CMS.Web.Admin.Modules.Plugin.PluginInfomation.LoadServerInfo(PluginType pluginType)
+   --- 内部异常堆栈跟踪的结尾 ---
+   在 System.Web.Services.Protocols.SoapHttpClientProtocol.ReadResponse(SoapClientMessage message, WebResponse response, Stream responseStream, Boolean asyncCall)
+   在 System.Web.Services.Protocols.SoapHttpClientProtocol.Invoke(String methodName, Object[] parameters)
+   在 We7.CMS.Web.Admin.PluginService.PluginInfomation.LoadServerInfo(PluginType pluginType)
+   在 We7.CMS.Web.Admin.Modules.Plugin.PluginDetails.GetRemotePluginInfo()
+   在 We7.CMS.Web.Admin.Modules.Plugin.PluginDetails.BuildNavString()
+   在 We7.CMS.Web.Admin.Modules.Plugin.PluginDetails.Page_Load(Object sender, EventArgs e)
+   在 System.Web.Util.CalliHelper.EventArgFunctionCaller(IntPtr fp, Object o, Object t, EventArgs e)
+   在 System.Web.Util.CalliEventHandlerDelegateProxy.Callback(Object sender, EventArgs e)
+   在 System.Web.UI.Control.OnLoad(EventArgs e)
+   在 We7.CMS.BasePage.OnLoad(EventArgs e)
+
+ 
+记录时间：2012-03-16 09:28:30,329 
+线程ID:[8] 
+日志级别：  ERROR 
+出错类：We7.CMS.BasePage property: [(null)] - 
+错误描述：Error
+ 
+System.Web.Services.Protocols.SoapException: System.Web.Services.Protocols.SoapException: 服务器无法处理请求。 ---> System.IO.DirectoryNotFoundException: 未能找到路径“D:\WestEngine\主站加相册\PluginCollage”的一部分。
+   在 System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   在 System.IO.Directory.InternalGetFileDirectoryNames(String path, String userPathOriginal, String searchPattern, Boolean includeFiles, Boolean includeDirs, SearchOption searchOption)
+   在 System.IO.DirectoryInfo.GetFiles(String searchPattern, SearchOption searchOption)
+   在 We7.CMS.Plugin.PluginHelper.LoadServerInfo()
+   在 We7.CMS.Web.Admin.Modules.Plugin.PluginInfomation.LoadServerInfo(PluginType pluginType)
+   --- 内部异常堆栈跟踪的结尾 ---
+   在 System.Web.Services.Protocols.SoapHttpClientProtocol.ReadResponse(SoapClientMessage message, WebResponse response, Stream responseStream, Boolean asyncCall)
+   在 System.Web.Services.Protocols.SoapHttpClientProtocol.Invoke(String methodName, Object[] parameters)
+   在 We7.CMS.Web.Admin.PluginService.PluginInfomation.LoadServerInfo(PluginType pluginType)
+   在 We7.CMS.Web.Admin.Modules.Plugin.PluginDetails.GetRemotePluginInfo()
+   在 We7.CMS.Web.Admin.Modules.Plugin.PluginDetails.BuildNavString()
+   在 We7.CMS.Web.Admin.Modules.Plugin.PluginDetails.Page_Load(Object sender, EventArgs e)
+   在 System.Web.Util.CalliHelper.EventArgFunctionCaller(IntPtr fp, Object o, Object t, EventArgs e)
+   在 System.Web.Util.CalliEventHandlerDelegateProxy.Callback(Object sender, EventArgs e)
+   在 System.Web.UI.Control.OnLoad(EventArgs e)
+   在 We7.CMS.BasePage.OnLoad(EventArgs e)
+
+ 
+记录时间：2012-03-16 09:28:33,516 
+线程ID:[8] 
+日志级别：  ERROR 
+出错类：We7.CMS.BasePage property: [(null)] - 
+错误描述：Error
+ 
+System.Web.Services.Protocols.SoapException: System.Web.Services.Protocols.SoapException: 服务器无法处理请求。 ---> System.IO.DirectoryNotFoundException: 未能找到路径“D:\WestEngine\主站加相册\PluginCollage”的一部分。
+   在 System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   在 System.IO.Directory.InternalGetFileDirectoryNames(String path, String userPathOriginal, String searchPattern, Boolean includeFiles, Boolean includeDirs, SearchOption searchOption)
+   在 System.IO.DirectoryInfo.GetFiles(String searchPattern, SearchOption searchOption)
+   在 We7.CMS.Plugin.PluginHelper.LoadServerInfo()
+   在 We7.CMS.Web.Admin.Modules.Plugin.PluginInfomation.LoadServerInfo(PluginType pluginType)
+   --- 内部异常堆栈跟踪的结尾 ---
+   在 System.Web.Services.Protocols.SoapHttpClientProtocol.ReadResponse(SoapClientMessage message, WebResponse response, Stream responseStream, Boolean asyncCall)
+   在 System.Web.Services.Protocols.SoapHttpClientProtocol.Invoke(String methodName, Object[] parameters)
+   在 We7.CMS.Web.Admin.PluginService.PluginInfomation.LoadServerInfo(PluginType pluginType)
+   在 We7.CMS.Web.Admin.Modules.Plugin.PluginDetails.GetRemotePluginInfo()
+   在 We7.CMS.Web.Admin.Modules.Plugin.PluginDetails.BuildNavString()
+   在 We7.CMS.Web.Admin.Modules.Plugin.PluginDetails.Page_Load(Object sender, EventArgs e)
+   在 System.Web.Util.CalliHelper.EventArgFunctionCaller(IntPtr fp, Object o, Object t, EventArgs e)
+   在 System.Web.Util.CalliEventHandlerDelegateProxy.Callback(Object sender, EventArgs e)
+   在 System.Web.UI.Control.OnLoad(EventArgs e)
+   在 We7.CMS.BasePage.OnLoad(EventArgs e)

@@ -1,0 +1,98 @@
+﻿/* adding sf-vertical class in addition to sf-menu creates a vertical menu */
+/* eg. <ul class="sf-menu sf-vertical"> ... */
+.sf-vertical {
+    width: 156px; /* If you want the width of the closed menu to expand to its   widest top-level menu item (like its "Supersubs" submenus do),   replace the width rule above with the following two rules. */ /*   min-width: 12em;   *width: 12em;   */
+}
+.sf-vertical ul {
+    left: 100%;
+    top: 0;
+}
+.sf-vertical > li {
+    float: none;
+}
+.sf-vertical li {
+    width: 100%;
+}
+
+/*** alter arrow directions ***/
+.sf-vertical.sf-arrows > li > .sf-with-ul:after {
+    margin-top: -6px;
+    margin-right: 3px;
+    border-color: transparent;
+    border-left-color: #dfeeff; /* edit this to suit design (no rgba in IE8) */
+    border-left-color: rgba(255,255,255,.5);
+}
+.sf-vertical.sf-arrows li > .sf-with-ul:focus:after, .sf-vertical.sf-arrows li:hover > .sf-with-ul:after, .sf-vertical.sf-arrows .sfHover > .sf-with-ul:after {
+    border-left-color: #fff;
+}
+
+
+/* Sub Menu Skin */
+.sub-menu {
+    margin: 0;
+    text-align: center;
+}
+.sub-menu a, .sub-menu a.sf-with-ul {
+    font-size: 16px;
+    border: 0px;
+    font-family: "微软雅黑";
+    line-height: 54px;
+    height: 54px;
+    padding: 0 25px;
+}
+.sub-menu li {
+    margin: 5px 0;
+}
+.sub-menu ul {
+    margin: 0;
+    left: 100%;
+    top: 12px;
+    min-width: 8em; /*width: 8em;*/
+}
+.sub-menu li {
+    background: none;
+    vertical-align: middle; /* for IE7*/
+}
+.sub-menu li li {
+    background: none;
+    margin: 0;    
+}
+.sub-menu li a:link, .sub-menu li a:visited {
+    color: #fff;
+    background: url(images/sub_item_bg.jpg) no-repeat left top;
+}
+.sub-menu li.sfHover a, .sub-menu li.sfHover a:link, .sub-menu li.sfHover a:visited {
+    color: #fff;
+    background: url(images/sub_item_hover_bg.jpg) no-repeat left top;
+}
+.sub-menu li a:hover, .sub-menu li a:focus, .sub-menu li a:active, .sub-menu li.sfHover a:hover, .sub-menu li.sfHover a:focus, .sub-menu li.sfHover a:active {
+    color: #fff;
+    background: url(images/sub_item_hover_bg.jpg) no-repeat left top;
+    text-decoration:none;
+}
+.sub-menu li li a, .sub-menu li li a.sf-with-ul {
+    font-size: 14px;
+    padding: 0 10px;
+    height: 30px;
+    line-height: 30px;
+}
+.sub-menu li li a:link, .sub-menu li li a:visited {
+    color: #000;
+    background: none;
+}
+.sub-menu li.sfHover li a, .sub-menu li.sfHover li a:link, .sub-menu li.sfHover li a:visited {
+    color: #000;
+    background: none;
+    background-color: #ececec;
+}
+.sub-menu li li a:hover, .sub-menu li li a:focus, .sub-menu li li a:active, .sub-menu li.sfHover li a:hover, .sub-menu li.sfHover li a:focus, .sub-menu li.sfHover li a:active {
+    color: #000;
+    background: none;
+    background-color: #dad6d6;
+}
+
+
+.sub-menu { 
+    *position:relative;
+    *z-index: 99;
+}

@@ -1,0 +1,7 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<AdviceTag>
+  <tag name="反馈" />
+  <tag name="建议" />
+  <tag name="投诉" />
+  <tag name="提案" />
+</AdviceTag>
