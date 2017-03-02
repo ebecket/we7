@@ -1,0 +1,96 @@
+﻿
+--------------------------------------------------
+
+错误信息
+
+2015/10/10 9:35:42
+
+站点IP：::1
+访问页面：/events/seminars?field=Microeconomics
+错误源：We7.Model.Core
+错误信息：Sql：：SELECT COUNT(*) FROM [Lecture] 　　　param0：：name=@P0,value=1　　　param1：：name=@P1,value={7d326420-7905-4847-850d-3a4573a00d53}　　　param2：：name=@P2,value=“WISE-经济学院”金融实务与职业规划系列讲座　　　param3：：name=@P3,value=经济学院实务讲座　　　Message：：在数据集中不存在当前字段:Field　　　
+堆栈信息：
+   在 We7.Model.Core.Data.ThinkmentDriver.OperateHandle.ThrowException(SqlStatement statement, Exception ex)
+   在 We7.Model.Core.Data.ThinkmentDriver.CountHandle.Execute()
+   在 We7.Model.Core.Data.ThinkmentDriver.CountHandle.Execute(Criteria c)
+   在 We7.Model.Core.Data.ModelDBHelper.Count(Criteria ct)
+   在 We7.Model.Core.Data.ModelDBHelper.QueryPagedList(Criteria ct, List`1 orders, Int32 pageIndex, Int32 pageSize, Int32& recordcount)
+   在 We7.CMS.UI.Widget.WidgetPagedList.OnInitData()
+   在 We7.CMS.WebControls.BaseControl.OnLoad(EventArgs e)
+   在 System.Web.UI.Control.LoadRecursive()
+   在 System.Web.UI.Control.LoadRecursive()
+   在 System.Web.UI.Control.LoadRecursive()
+   在 System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+
+
+--------------------------------------------------
+
+错误信息
+
+2015/10/10 16:22:27
+
+站点IP：::1
+访问页面：/events/seminars?field=Microeconomics
+错误源：We7.Model.Core
+错误信息：Sql：：SELECT COUNT(*) FROM [Lecture] 　　　param0：：name=@P0,value=1　　　param1：：name=@P1,value={7d326420-7905-4847-850d-3a4573a00d53}　　　param2：：name=@P2,value=“WISE-经济学院”金融实务与职业规划系列讲座　　　param3：：name=@P3,value=经济学院实务讲座　　　Message：：在数据集中不存在当前字段:Field　　　
+堆栈信息：
+   在 We7.Model.Core.Data.ThinkmentDriver.OperateHandle.ThrowException(SqlStatement statement, Exception ex)
+   在 We7.Model.Core.Data.ThinkmentDriver.CountHandle.Execute()
+   在 We7.Model.Core.Data.ThinkmentDriver.CountHandle.Execute(Criteria c)
+   在 We7.Model.Core.Data.ModelDBHelper.Count(Criteria ct)
+   在 We7.Model.Core.Data.ModelDBHelper.QueryPagedList(Criteria ct, List`1 orders, Int32 pageIndex, Int32 pageSize, Int32& recordcount)
+   在 We7.CMS.UI.Widget.WidgetPagedList.OnInitData()
+   在 We7.CMS.WebControls.BaseControl.OnLoad(EventArgs e)
+   在 System.Web.UI.Control.LoadRecursive()
+   在 System.Web.UI.Control.LoadRecursive()
+   在 System.Web.UI.Control.LoadRecursive()
+   在 System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+
+
+--------------------------------------------------
+
+错误信息
+
+2015/10/10 16:22:44
+
+站点IP：::1
+访问页面：/events/seminars?field=Microeconomics
+错误源：We7.Model.Core
+错误信息：Sql：：SELECT COUNT(*) FROM [Lecture] 　　　param0：：name=@P0,value=1　　　param1：：name=@P1,value={7d326420-7905-4847-850d-3a4573a00d53}　　　param2：：name=@P2,value=“WISE-经济学院”金融实务与职业规划系列讲座　　　param3：：name=@P3,value=经济学院实务讲座　　　Message：：在数据集中不存在当前字段:Field　　　
+堆栈信息：
+   在 We7.Model.Core.Data.ThinkmentDriver.OperateHandle.ThrowException(SqlStatement statement, Exception ex)
+   在 We7.Model.Core.Data.ThinkmentDriver.CountHandle.Execute()
+   在 We7.Model.Core.Data.ThinkmentDriver.CountHandle.Execute(Criteria c)
+   在 We7.Model.Core.Data.ModelDBHelper.Count(Criteria ct)
+   在 We7.Model.Core.Data.ModelDBHelper.QueryPagedList(Criteria ct, List`1 orders, Int32 pageIndex, Int32 pageSize, Int32& recordcount)
+   在 We7.CMS.UI.Widget.WidgetPagedList.OnInitData()
+   在 We7.CMS.WebControls.BaseControl.OnLoad(EventArgs e)
+   在 System.Web.UI.Control.LoadRecursive()
+   在 System.Web.UI.Control.LoadRecursive()
+   在 System.Web.UI.Control.LoadRecursive()
+   在 System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+
+
+--------------------------------------------------
+
+错误信息
+
+2015/10/10 16:26:17
+
+站点IP：::1
+访问页面：/events/seminars?field=Microeconomics
+错误源：We7.Model.Core
+错误信息：Sql：：SELECT COUNT(*) FROM [Lecture] 　　　param0：：name=@P0,value=1　　　param1：：name=@P1,value={7d326420-7905-4847-850d-3a4573a00d53}　　　param2：：name=@P2,value=“WISE-经济学院”金融实务与职业规划系列讲座　　　param3：：name=@P3,value=经济学院实务讲座　　　Message：：在数据集中不存在当前字段:Field　　　
+堆栈信息：
+   在 We7.Model.Core.Data.ThinkmentDriver.OperateHandle.ThrowException(SqlStatement statement, Exception ex)
+   在 We7.Model.Core.Data.ThinkmentDriver.CountHandle.Execute()
+   在 We7.Model.Core.Data.ThinkmentDriver.CountHandle.Execute(Criteria c)
+   在 We7.Model.Core.Data.ModelDBHelper.Count(Criteria ct)
+   在 We7.Model.Core.Data.ModelDBHelper.QueryPagedList(Criteria ct, List`1 orders, Int32 pageIndex, Int32 pageSize, Int32& recordcount)
+   在 We7.CMS.UI.Widget.WidgetPagedList.OnInitData()
+   在 We7.CMS.WebControls.BaseControl.OnLoad(EventArgs e)
+   在 System.Web.UI.Control.LoadRecursive()
+   在 System.Web.UI.Control.LoadRecursive()
+   在 System.Web.UI.Control.LoadRecursive()
+   在 System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+

@@ -1,0 +1,1491 @@
+﻿
+--------------------------------------------------
+
+错误信息
+
+2016/6/12 12:06:39
+
+站点IP：::1
+访问页面：/admin/AddIns/ArticleList.aspx?oid=null&wap=null&type=0
+错误源：.Net SqlClient Data Provider
+错误信息：Cannot open database "ScientificData" requested by the login. The login failed.
+Login failed for user 'ScientificData'.
+堆栈信息：
+   在 System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection)
+   在 System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj)
+   在 System.Data.SqlClient.TdsParser.Run(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj)
+   在 System.Data.SqlClient.SqlInternalConnectionTds.CompleteLogin(Boolean enlistOK)
+   在 System.Data.SqlClient.SqlInternalConnectionTds.AttemptOneLogin(ServerInfo serverInfo, String newPassword, Boolean ignoreSniOpenTimeout, Int64 timerExpire, SqlConnection owningObject)
+   在 System.Data.SqlClient.SqlInternalConnectionTds.LoginNoFailover(String host, String newPassword, Boolean redirectedUserInstance, SqlConnection owningObject, SqlConnectionString connectionOptions, Int64 timerStart)
+   在 System.Data.SqlClient.SqlInternalConnectionTds.OpenLoginEnlist(SqlConnection owningObject, SqlConnectionString connectionOptions, String newPassword, Boolean redirectedUserInstance)
+   在 System.Data.SqlClient.SqlInternalConnectionTds..ctor(DbConnectionPoolIdentity identity, SqlConnectionString connectionOptions, Object providerInfo, String newPassword, SqlConnection owningObject, Boolean redirectedUserInstance)
+   在 System.Data.SqlClient.SqlConnectionFactory.CreateConnection(DbConnectionOptions options, Object poolGroupProviderInfo, DbConnectionPool pool, DbConnection owningConnection)
+   在 System.Data.ProviderBase.DbConnectionFactory.CreatePooledConnection(DbConnection owningConnection, DbConnectionPool pool, DbConnectionOptions options)
+   在 System.Data.ProviderBase.DbConnectionPool.CreateObject(DbConnection owningObject)
+   在 System.Data.ProviderBase.DbConnectionPool.UserCreateRequest(DbConnection owningObject)
+   在 System.Data.ProviderBase.DbConnectionPool.GetConnection(DbConnection owningObject)
+   在 System.Data.ProviderBase.DbConnectionFactory.GetConnection(DbConnection owningConnection)
+   在 System.Data.ProviderBase.DbConnectionClosed.OpenConnection(DbConnection outerConnection, DbConnectionFactory connectionFactory)
+   在 System.Data.SqlClient.SqlConnection.Open()
+   在 Thinkment.Data.SqlDbDriver.SqlDbConnection.CreateCommand(SqlStatement sql)
+   在 Thinkment.Data.SqlDbDriver.SqlDbConnection.Query(SqlStatement sql)
+   在 Thinkment.Data.ListSelectHandle`1.Execute()
+   在 Thinkment.Data.ObjectManager.MyList[T](IConnection conn, Criteria condition, Order[] orders, Int32 from, Int32 count, ListField[] fields)
+   在 Thinkment.Data.ObjectAssistant.List[T](IConnection conn, Criteria condition, Order[] orders, Int32 from, Int32 count, ListField[] fields)
+   在 Thinkment.Data.ObjectAssistant.List[T](Criteria condition, Order[] orders, Int32 from, Int32 count, ListField[] fields)
+   在 Thinkment.Data.ObjectAssistant.List[T](Criteria condition, Order[] orders)
+   在 We7.CMS.Accounts.AccountLocalHelper.GetAccountRoles(String accountID)
+   在 We7.CMS.Accounts.AccountLocalHelper.GetRolesOfAccount(String accountID)
+   在 We7.CMS.Accounts.AccountLocalHelper.GetPermissionContents(String accountID, String objectID)
+   在 We7.CMS.Web.Admin.ArticleListControl.InitializeButtons()
+   在 We7.CMS.Web.Admin.ArticleListControl.Page_Load(Object sender, EventArgs e)
+   在 System.Web.Util.CalliHelper.EventArgFunctionCaller(IntPtr fp, Object o, Object t, EventArgs e)
+   在 System.Web.Util.CalliEventHandlerDelegateProxy.Callback(Object sender, EventArgs e)
+   在 System.Web.UI.Control.OnLoad(EventArgs e)
+   在 System.Web.UI.Control.LoadRecursive()
+   在 System.Web.UI.Control.LoadRecursive()
+   在 System.Web.UI.Control.LoadRecursive()
+   在 System.Web.UI.Control.LoadRecursive()
+   在 System.Web.UI.Control.LoadRecursive()
+   在 System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+
+
+--------------------------------------------------
+
+错误信息
+
+2016/6/12 12:06:41
+
+站点IP：::1
+访问页面：/admin/addins/Articlelist.aspx?web=1&type=0
+错误源：.Net SqlClient Data Provider
+错误信息：Cannot open database "ScientificData" requested by the login. The login failed.
+Login failed for user 'ScientificData'.
+堆栈信息：
+   在 System.Data.ProviderBase.DbConnectionPool.GetConnection(DbConnection owningObject)
+   在 System.Data.ProviderBase.DbConnectionFactory.GetConnection(DbConnection owningConnection)
+   在 System.Data.ProviderBase.DbConnectionClosed.OpenConnection(DbConnection outerConnection, DbConnectionFactory connectionFactory)
+   在 System.Data.SqlClient.SqlConnection.Open()
+   在 Thinkment.Data.SqlDbDriver.SqlDbConnection.CreateCommand(SqlStatement sql)
+   在 Thinkment.Data.SqlDbDriver.SqlDbConnection.Query(SqlStatement sql)
+   在 Thinkment.Data.ListSelectHandle`1.Execute()
+   在 Thinkment.Data.ObjectManager.MyList[T](IConnection conn, Criteria condition, Order[] orders, Int32 from, Int32 count, ListField[] fields)
+   在 Thinkment.Data.ObjectAssistant.List[T](IConnection conn, Criteria condition, Order[] orders, Int32 from, Int32 count, ListField[] fields)
+   在 Thinkment.Data.ObjectAssistant.List[T](Criteria condition, Order[] orders, Int32 from, Int32 count, ListField[] fields)
+   在 Thinkment.Data.ObjectAssistant.List[T](Criteria condition, Order[] orders)
+   在 We7.CMS.Accounts.AccountLocalHelper.GetAccountRoles(String accountID)
+   在 We7.CMS.Accounts.AccountLocalHelper.GetRolesOfAccount(String accountID)
+   在 We7.CMS.Accounts.AccountLocalHelper.GetPermissionContents(String accountID, String objectID)
+   在 We7.CMS.Web.Admin.ArticleListControl.InitializeButtons()
+   在 We7.CMS.Web.Admin.ArticleListControl.Page_Load(Object sender, EventArgs e)
+   在 System.Web.Util.CalliHelper.EventArgFunctionCaller(IntPtr fp, Object o, Object t, EventArgs e)
+   在 System.Web.Util.CalliEventHandlerDelegateProxy.Callback(Object sender, EventArgs e)
+   在 System.Web.UI.Control.OnLoad(EventArgs e)
+   在 System.Web.UI.Control.LoadRecursive()
+   在 System.Web.UI.Control.LoadRecursive()
+   在 System.Web.UI.Control.LoadRecursive()
+   在 System.Web.UI.Control.LoadRecursive()
+   在 System.Web.UI.Control.LoadRecursive()
+   在 System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+
+
+--------------------------------------------------
+
+错误信息
+
+2016/6/12 12:06:43
+
+站点IP：::1
+访问页面：/admin/addins/Articlelist.aspx?web=1&type=0
+错误源：.Net SqlClient Data Provider
+错误信息：Cannot open database "ScientificData" requested by the login. The login failed.
+Login failed for user 'ScientificData'.
+堆栈信息：
+   在 System.Data.ProviderBase.DbConnectionPool.GetConnection(DbConnection owningObject)
+   在 System.Data.ProviderBase.DbConnectionFactory.GetConnection(DbConnection owningConnection)
+   在 System.Data.ProviderBase.DbConnectionClosed.OpenConnection(DbConnection outerConnection, DbConnectionFactory connectionFactory)
+   在 System.Data.SqlClient.SqlConnection.Open()
+   在 Thinkment.Data.SqlDbDriver.SqlDbConnection.CreateCommand(SqlStatement sql)
+   在 Thinkment.Data.SqlDbDriver.SqlDbConnection.Query(SqlStatement sql)
+   在 Thinkment.Data.ListSelectHandle`1.Execute()
+   在 Thinkment.Data.ObjectManager.MyList[T](IConnection conn, Criteria condition, Order[] orders, Int32 from, Int32 count, ListField[] fields)
+   在 Thinkment.Data.ObjectAssistant.List[T](IConnection conn, Criteria condition, Order[] orders, Int32 from, Int32 count, ListField[] fields)
+   在 Thinkment.Data.ObjectAssistant.List[T](Criteria condition, Order[] orders, Int32 from, Int32 count, ListField[] fields)
+   在 Thinkment.Data.ObjectAssistant.List[T](Criteria condition, Order[] orders)
+   在 We7.CMS.Accounts.AccountLocalHelper.GetAccountRoles(String accountID)
+   在 We7.CMS.Accounts.AccountLocalHelper.GetRolesOfAccount(String accountID)
+   在 We7.CMS.Accounts.AccountLocalHelper.GetPermissionContents(String accountID, String objectID)
+   在 We7.CMS.Web.Admin.ArticleListControl.InitializeButtons()
+   在 We7.CMS.Web.Admin.ArticleListControl.Page_Load(Object sender, EventArgs e)
+   在 System.Web.Util.CalliHelper.EventArgFunctionCaller(IntPtr fp, Object o, Object t, EventArgs e)
+   在 System.Web.Util.CalliEventHandlerDelegateProxy.Callback(Object sender, EventArgs e)
+   在 System.Web.UI.Control.OnLoad(EventArgs e)
+   在 System.Web.UI.Control.LoadRecursive()
+   在 System.Web.UI.Control.LoadRecursive()
+   在 System.Web.UI.Control.LoadRecursive()
+   在 System.Web.UI.Control.LoadRecursive()
+   在 System.Web.UI.Control.LoadRecursive()
+   在 System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+
+
+--------------------------------------------------
+
+错误信息
+
+2016/6/12 12:06:44
+
+站点IP：::1
+访问页面：/admin/AddIns/ArticleList.aspx
+错误源：.Net SqlClient Data Provider
+错误信息：Cannot open database "ScientificData" requested by the login. The login failed.
+Login failed for user 'ScientificData'.
+堆栈信息：
+   在 System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection)
+   在 System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj)
+   在 System.Data.SqlClient.TdsParser.Run(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj)
+   在 System.Data.SqlClient.SqlInternalConnectionTds.CompleteLogin(Boolean enlistOK)
+   在 System.Data.SqlClient.SqlInternalConnectionTds.AttemptOneLogin(ServerInfo serverInfo, String newPassword, Boolean ignoreSniOpenTimeout, Int64 timerExpire, SqlConnection owningObject)
+   在 System.Data.SqlClient.SqlInternalConnectionTds.LoginNoFailover(String host, String newPassword, Boolean redirectedUserInstance, SqlConnection owningObject, SqlConnectionString connectionOptions, Int64 timerStart)
+   在 System.Data.SqlClient.SqlInternalConnectionTds.OpenLoginEnlist(SqlConnection owningObject, SqlConnectionString connectionOptions, String newPassword, Boolean redirectedUserInstance)
+   在 System.Data.SqlClient.SqlInternalConnectionTds..ctor(DbConnectionPoolIdentity identity, SqlConnectionString connectionOptions, Object providerInfo, String newPassword, SqlConnection owningObject, Boolean redirectedUserInstance)
+   在 System.Data.SqlClient.SqlConnectionFactory.CreateConnection(DbConnectionOptions options, Object poolGroupProviderInfo, DbConnectionPool pool, DbConnection owningConnection)
+   在 System.Data.ProviderBase.DbConnectionFactory.CreatePooledConnection(DbConnection owningConnection, DbConnectionPool pool, DbConnectionOptions options)
+   在 System.Data.ProviderBase.DbConnectionPool.CreateObject(DbConnection owningObject)
+   在 System.Data.ProviderBase.DbConnectionPool.UserCreateRequest(DbConnection owningObject)
+   在 System.Data.ProviderBase.DbConnectionPool.GetConnection(DbConnection owningObject)
+   在 System.Data.ProviderBase.DbConnectionFactory.GetConnection(DbConnection owningConnection)
+   在 System.Data.ProviderBase.DbConnectionClosed.OpenConnection(DbConnection outerConnection, DbConnectionFactory connectionFactory)
+   在 System.Data.SqlClient.SqlConnection.Open()
+   在 Thinkment.Data.SqlDbDriver.SqlDbConnection.CreateCommand(SqlStatement sql)
+   在 Thinkment.Data.SqlDbDriver.SqlDbConnection.Query(SqlStatement sql)
+   在 Thinkment.Data.ListSelectHandle`1.Execute()
+   在 Thinkment.Data.ObjectManager.MyList[T](IConnection conn, Criteria condition, Order[] orders, Int32 from, Int32 count, ListField[] fields)
+   在 Thinkment.Data.ObjectAssistant.List[T](IConnection conn, Criteria condition, Order[] orders, Int32 from, Int32 count, ListField[] fields)
+   在 Thinkment.Data.ObjectAssistant.List[T](Criteria condition, Order[] orders, Int32 from, Int32 count, ListField[] fields)
+   在 Thinkment.Data.ObjectAssistant.List[T](Criteria condition, Order[] orders)
+   在 We7.CMS.Accounts.AccountLocalHelper.GetAccountRoles(String accountID)
+   在 We7.CMS.Accounts.AccountLocalHelper.GetRolesOfAccount(String accountID)
+   在 We7.CMS.Accounts.AccountLocalHelper.GetPermissionContents(String accountID, String objectID)
+   在 We7.CMS.Web.Admin.ArticleListControl.InitializeButtons()
+   在 We7.CMS.Web.Admin.ArticleListControl.Page_Load(Object sender, EventArgs e)
+   在 System.Web.Util.CalliHelper.EventArgFunctionCaller(IntPtr fp, Object o, Object t, EventArgs e)
+   在 System.Web.Util.CalliEventHandlerDelegateProxy.Callback(Object sender, EventArgs e)
+   在 System.Web.UI.Control.OnLoad(EventArgs e)
+   在 System.Web.UI.Control.LoadRecursive()
+   在 System.Web.UI.Control.LoadRecursive()
+   在 System.Web.UI.Control.LoadRecursive()
+   在 System.Web.UI.Control.LoadRecursive()
+   在 System.Web.UI.Control.LoadRecursive()
+   在 System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+
+
+--------------------------------------------------
+
+错误信息
+
+2016/6/12 12:06:44
+
+站点IP：::1
+访问页面：/admin/AddIns/ArticleList.aspx?oid=null&wap=null&type=0
+错误源：.Net SqlClient Data Provider
+错误信息：Cannot open database "ScientificData" requested by the login. The login failed.
+Login failed for user 'ScientificData'.
+堆栈信息：
+   在 System.Data.ProviderBase.DbConnectionPool.GetConnection(DbConnection owningObject)
+   在 System.Data.ProviderBase.DbConnectionFactory.GetConnection(DbConnection owningConnection)
+   在 System.Data.ProviderBase.DbConnectionClosed.OpenConnection(DbConnection outerConnection, DbConnectionFactory connectionFactory)
+   在 System.Data.SqlClient.SqlConnection.Open()
+   在 Thinkment.Data.SqlDbDriver.SqlDbConnection.CreateCommand(SqlStatement sql)
+   在 Thinkment.Data.SqlDbDriver.SqlDbConnection.Query(SqlStatement sql)
+   在 Thinkment.Data.ListSelectHandle`1.Execute()
+   在 Thinkment.Data.ObjectManager.MyList[T](IConnection conn, Criteria condition, Order[] orders, Int32 from, Int32 count, ListField[] fields)
+   在 Thinkment.Data.ObjectAssistant.List[T](IConnection conn, Criteria condition, Order[] orders, Int32 from, Int32 count, ListField[] fields)
+   在 Thinkment.Data.ObjectAssistant.List[T](Criteria condition, Order[] orders, Int32 from, Int32 count, ListField[] fields)
+   在 Thinkment.Data.ObjectAssistant.List[T](Criteria condition, Order[] orders)
+   在 We7.CMS.Accounts.AccountLocalHelper.GetAccountRoles(String accountID)
+   在 We7.CMS.Accounts.AccountLocalHelper.GetRolesOfAccount(String accountID)
+   在 We7.CMS.Accounts.AccountLocalHelper.GetPermissionContents(String accountID, String objectID)
+   在 We7.CMS.Web.Admin.ArticleListControl.InitializeButtons()
+   在 We7.CMS.Web.Admin.ArticleListControl.Page_Load(Object sender, EventArgs e)
+   在 System.Web.Util.CalliHelper.EventArgFunctionCaller(IntPtr fp, Object o, Object t, EventArgs e)
+   在 System.Web.Util.CalliEventHandlerDelegateProxy.Callback(Object sender, EventArgs e)
+   在 System.Web.UI.Control.OnLoad(EventArgs e)
+   在 System.Web.UI.Control.LoadRecursive()
+   在 System.Web.UI.Control.LoadRecursive()
+   在 System.Web.UI.Control.LoadRecursive()
+   在 System.Web.UI.Control.LoadRecursive()
+   在 System.Web.UI.Control.LoadRecursive()
+   在 System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+
+
+--------------------------------------------------
+
+错误信息
+
+2016/6/12 12:06:45
+
+站点IP：::1
+访问页面：/admin/addins/Articlelist.aspx?web=1&type=0
+错误源：.Net SqlClient Data Provider
+错误信息：Cannot open database "ScientificData" requested by the login. The login failed.
+Login failed for user 'ScientificData'.
+堆栈信息：
+   在 System.Data.ProviderBase.DbConnectionPool.GetConnection(DbConnection owningObject)
+   在 System.Data.ProviderBase.DbConnectionFactory.GetConnection(DbConnection owningConnection)
+   在 System.Data.ProviderBase.DbConnectionClosed.OpenConnection(DbConnection outerConnection, DbConnectionFactory connectionFactory)
+   在 System.Data.SqlClient.SqlConnection.Open()
+   在 Thinkment.Data.SqlDbDriver.SqlDbConnection.CreateCommand(SqlStatement sql)
+   在 Thinkment.Data.SqlDbDriver.SqlDbConnection.Query(SqlStatement sql)
+   在 Thinkment.Data.ListSelectHandle`1.Execute()
+   在 Thinkment.Data.ObjectManager.MyList[T](IConnection conn, Criteria condition, Order[] orders, Int32 from, Int32 count, ListField[] fields)
+   在 Thinkment.Data.ObjectAssistant.List[T](IConnection conn, Criteria condition, Order[] orders, Int32 from, Int32 count, ListField[] fields)
+   在 Thinkment.Data.ObjectAssistant.List[T](Criteria condition, Order[] orders, Int32 from, Int32 count, ListField[] fields)
+   在 Thinkment.Data.ObjectAssistant.List[T](Criteria condition, Order[] orders)
+   在 We7.CMS.Accounts.AccountLocalHelper.GetAccountRoles(String accountID)
+   在 We7.CMS.Accounts.AccountLocalHelper.GetRolesOfAccount(String accountID)
+   在 We7.CMS.Accounts.AccountLocalHelper.GetPermissionContents(String accountID, String objectID)
+   在 We7.CMS.Web.Admin.ArticleListControl.InitializeButtons()
+   在 We7.CMS.Web.Admin.ArticleListControl.Page_Load(Object sender, EventArgs e)
+   在 System.Web.Util.CalliHelper.EventArgFunctionCaller(IntPtr fp, Object o, Object t, EventArgs e)
+   在 System.Web.Util.CalliEventHandlerDelegateProxy.Callback(Object sender, EventArgs e)
+   在 System.Web.UI.Control.OnLoad(EventArgs e)
+   在 System.Web.UI.Control.LoadRecursive()
+   在 System.Web.UI.Control.LoadRecursive()
+   在 System.Web.UI.Control.LoadRecursive()
+   在 System.Web.UI.Control.LoadRecursive()
+   在 System.Web.UI.Control.LoadRecursive()
+   在 System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+
+
+--------------------------------------------------
+
+错误信息
+
+2016/6/12 12:07:03
+
+站点IP：::1
+访问页面：/admin/AddIns/ArticleList.aspx?oid=null&wap=null&type=0
+错误源：.Net SqlClient Data Provider
+错误信息：Cannot open database "ScientificData" requested by the login. The login failed.
+Login failed for user 'ScientificData'.
+堆栈信息：
+   在 System.Data.ProviderBase.DbConnectionPool.GetConnection(DbConnection owningObject)
+   在 System.Data.ProviderBase.DbConnectionFactory.GetConnection(DbConnection owningConnection)
+   在 System.Data.ProviderBase.DbConnectionClosed.OpenConnection(DbConnection outerConnection, DbConnectionFactory connectionFactory)
+   在 System.Data.SqlClient.SqlConnection.Open()
+   在 Thinkment.Data.SqlDbDriver.SqlDbConnection.CreateCommand(SqlStatement sql)
+   在 Thinkment.Data.SqlDbDriver.SqlDbConnection.Query(SqlStatement sql)
+   在 Thinkment.Data.ListSelectHandle`1.Execute()
+   在 Thinkment.Data.ObjectManager.MyList[T](IConnection conn, Criteria condition, Order[] orders, Int32 from, Int32 count, ListField[] fields)
+   在 Thinkment.Data.ObjectAssistant.List[T](IConnection conn, Criteria condition, Order[] orders, Int32 from, Int32 count, ListField[] fields)
+   在 Thinkment.Data.ObjectAssistant.List[T](Criteria condition, Order[] orders, Int32 from, Int32 count, ListField[] fields)
+   在 Thinkment.Data.ObjectAssistant.List[T](Criteria condition, Order[] orders)
+   在 We7.CMS.Accounts.AccountLocalHelper.GetAccountRoles(String accountID)
+   在 We7.CMS.Accounts.AccountLocalHelper.GetRolesOfAccount(String accountID)
+   在 We7.CMS.Accounts.AccountLocalHelper.GetPermissionContents(String accountID, String objectID)
+   在 We7.CMS.Web.Admin.ArticleListControl.InitializeButtons()
+   在 We7.CMS.Web.Admin.ArticleListControl.Page_Load(Object sender, EventArgs e)
+   在 System.Web.Util.CalliHelper.EventArgFunctionCaller(IntPtr fp, Object o, Object t, EventArgs e)
+   在 System.Web.Util.CalliEventHandlerDelegateProxy.Callback(Object sender, EventArgs e)
+   在 System.Web.UI.Control.OnLoad(EventArgs e)
+   在 System.Web.UI.Control.LoadRecursive()
+   在 System.Web.UI.Control.LoadRecursive()
+   在 System.Web.UI.Control.LoadRecursive()
+   在 System.Web.UI.Control.LoadRecursive()
+   在 System.Web.UI.Control.LoadRecursive()
+   在 System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+
+
+--------------------------------------------------
+
+错误信息
+
+2016/6/12 12:07:04
+
+站点IP：::1
+访问页面：/admin/addins/Articlelist.aspx?web=1&type=0
+错误源：.Net SqlClient Data Provider
+错误信息：Cannot open database "ScientificData" requested by the login. The login failed.
+Login failed for user 'ScientificData'.
+堆栈信息：
+   在 System.Data.ProviderBase.DbConnectionPool.GetConnection(DbConnection owningObject)
+   在 System.Data.ProviderBase.DbConnectionFactory.GetConnection(DbConnection owningConnection)
+   在 System.Data.ProviderBase.DbConnectionClosed.OpenConnection(DbConnection outerConnection, DbConnectionFactory connectionFactory)
+   在 System.Data.SqlClient.SqlConnection.Open()
+   在 Thinkment.Data.SqlDbDriver.SqlDbConnection.CreateCommand(SqlStatement sql)
+   在 Thinkment.Data.SqlDbDriver.SqlDbConnection.Query(SqlStatement sql)
+   在 Thinkment.Data.ListSelectHandle`1.Execute()
+   在 Thinkment.Data.ObjectManager.MyList[T](IConnection conn, Criteria condition, Order[] orders, Int32 from, Int32 count, ListField[] fields)
+   在 Thinkment.Data.ObjectAssistant.List[T](IConnection conn, Criteria condition, Order[] orders, Int32 from, Int32 count, ListField[] fields)
+   在 Thinkment.Data.ObjectAssistant.List[T](Criteria condition, Order[] orders, Int32 from, Int32 count, ListField[] fields)
+   在 Thinkment.Data.ObjectAssistant.List[T](Criteria condition, Order[] orders)
+   在 We7.CMS.Accounts.AccountLocalHelper.GetAccountRoles(String accountID)
+   在 We7.CMS.Accounts.AccountLocalHelper.GetRolesOfAccount(String accountID)
+   在 We7.CMS.Accounts.AccountLocalHelper.GetPermissionContents(String accountID, String objectID)
+   在 We7.CMS.Web.Admin.ArticleListControl.InitializeButtons()
+   在 We7.CMS.Web.Admin.ArticleListControl.Page_Load(Object sender, EventArgs e)
+   在 System.Web.Util.CalliHelper.EventArgFunctionCaller(IntPtr fp, Object o, Object t, EventArgs e)
+   在 System.Web.Util.CalliEventHandlerDelegateProxy.Callback(Object sender, EventArgs e)
+   在 System.Web.UI.Control.OnLoad(EventArgs e)
+   在 System.Web.UI.Control.LoadRecursive()
+   在 System.Web.UI.Control.LoadRecursive()
+   在 System.Web.UI.Control.LoadRecursive()
+   在 System.Web.UI.Control.LoadRecursive()
+   在 System.Web.UI.Control.LoadRecursive()
+   在 System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+
+
+--------------------------------------------------
+
+错误信息
+
+2016/6/12 12:07:55
+
+站点IP：::1
+访问页面：/admin/addins/Articlelist.aspx?web=1&type=0
+错误源：.Net SqlClient Data Provider
+错误信息：Cannot open database "ScientificData" requested by the login. The login failed.
+Login failed for user 'ScientificData'.
+堆栈信息：
+   在 System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection)
+   在 System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj)
+   在 System.Data.SqlClient.TdsParser.Run(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj)
+   在 System.Data.SqlClient.SqlInternalConnectionTds.CompleteLogin(Boolean enlistOK)
+   在 System.Data.SqlClient.SqlInternalConnectionTds.AttemptOneLogin(ServerInfo serverInfo, String newPassword, Boolean ignoreSniOpenTimeout, Int64 timerExpire, SqlConnection owningObject)
+   在 System.Data.SqlClient.SqlInternalConnectionTds.LoginNoFailover(String host, String newPassword, Boolean redirectedUserInstance, SqlConnection owningObject, SqlConnectionString connectionOptions, Int64 timerStart)
+   在 System.Data.SqlClient.SqlInternalConnectionTds.OpenLoginEnlist(SqlConnection owningObject, SqlConnectionString connectionOptions, String newPassword, Boolean redirectedUserInstance)
+   在 System.Data.SqlClient.SqlInternalConnectionTds..ctor(DbConnectionPoolIdentity identity, SqlConnectionString connectionOptions, Object providerInfo, String newPassword, SqlConnection owningObject, Boolean redirectedUserInstance)
+   在 System.Data.SqlClient.SqlConnectionFactory.CreateConnection(DbConnectionOptions options, Object poolGroupProviderInfo, DbConnectionPool pool, DbConnection owningConnection)
+   在 System.Data.ProviderBase.DbConnectionFactory.CreatePooledConnection(DbConnection owningConnection, DbConnectionPool pool, DbConnectionOptions options)
+   在 System.Data.ProviderBase.DbConnectionPool.CreateObject(DbConnection owningObject)
+   在 System.Data.ProviderBase.DbConnectionPool.UserCreateRequest(DbConnection owningObject)
+   在 System.Data.ProviderBase.DbConnectionPool.GetConnection(DbConnection owningObject)
+   在 System.Data.ProviderBase.DbConnectionFactory.GetConnection(DbConnection owningConnection)
+   在 System.Data.ProviderBase.DbConnectionClosed.OpenConnection(DbConnection outerConnection, DbConnectionFactory connectionFactory)
+   在 System.Data.SqlClient.SqlConnection.Open()
+   在 Thinkment.Data.SqlDbDriver.SqlDbConnection.CreateCommand(SqlStatement sql)
+   在 Thinkment.Data.SqlDbDriver.SqlDbConnection.Query(SqlStatement sql)
+   在 Thinkment.Data.ListSelectHandle`1.Execute()
+   在 Thinkment.Data.ObjectManager.MyList[T](IConnection conn, Criteria condition, Order[] orders, Int32 from, Int32 count, ListField[] fields)
+   在 Thinkment.Data.ObjectAssistant.List[T](IConnection conn, Criteria condition, Order[] orders, Int32 from, Int32 count, ListField[] fields)
+   在 Thinkment.Data.ObjectAssistant.List[T](Criteria condition, Order[] orders, Int32 from, Int32 count, ListField[] fields)
+   在 Thinkment.Data.ObjectAssistant.List[T](Criteria condition, Order[] orders)
+   在 We7.CMS.Accounts.AccountLocalHelper.GetAccountRoles(String accountID)
+   在 We7.CMS.Accounts.AccountLocalHelper.GetRolesOfAccount(String accountID)
+   在 We7.CMS.Accounts.AccountLocalHelper.GetPermissionContents(String accountID, String objectID)
+   在 We7.CMS.Web.Admin.ArticleListControl.InitializeButtons()
+   在 We7.CMS.Web.Admin.ArticleListControl.Page_Load(Object sender, EventArgs e)
+   在 System.Web.Util.CalliHelper.EventArgFunctionCaller(IntPtr fp, Object o, Object t, EventArgs e)
+   在 System.Web.Util.CalliEventHandlerDelegateProxy.Callback(Object sender, EventArgs e)
+   在 System.Web.UI.Control.OnLoad(EventArgs e)
+   在 System.Web.UI.Control.LoadRecursive()
+   在 System.Web.UI.Control.LoadRecursive()
+   在 System.Web.UI.Control.LoadRecursive()
+   在 System.Web.UI.Control.LoadRecursive()
+   在 System.Web.UI.Control.LoadRecursive()
+   在 System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+
+
+--------------------------------------------------
+
+错误信息
+
+2016/6/12 12:07:57
+
+站点IP：::1
+访问页面：/admin/AddIns/ArticleList.aspx
+错误源：.Net SqlClient Data Provider
+错误信息：Cannot open database "ScientificData" requested by the login. The login failed.
+Login failed for user 'ScientificData'.
+堆栈信息：
+   在 System.Data.ProviderBase.DbConnectionPool.GetConnection(DbConnection owningObject)
+   在 System.Data.ProviderBase.DbConnectionFactory.GetConnection(DbConnection owningConnection)
+   在 System.Data.ProviderBase.DbConnectionClosed.OpenConnection(DbConnection outerConnection, DbConnectionFactory connectionFactory)
+   在 System.Data.SqlClient.SqlConnection.Open()
+   在 Thinkment.Data.SqlDbDriver.SqlDbConnection.CreateCommand(SqlStatement sql)
+   在 Thinkment.Data.SqlDbDriver.SqlDbConnection.Query(SqlStatement sql)
+   在 Thinkment.Data.ListSelectHandle`1.Execute()
+   在 Thinkment.Data.ObjectManager.MyList[T](IConnection conn, Criteria condition, Order[] orders, Int32 from, Int32 count, ListField[] fields)
+   在 Thinkment.Data.ObjectAssistant.List[T](IConnection conn, Criteria condition, Order[] orders, Int32 from, Int32 count, ListField[] fields)
+   在 Thinkment.Data.ObjectAssistant.List[T](Criteria condition, Order[] orders, Int32 from, Int32 count, ListField[] fields)
+   在 Thinkment.Data.ObjectAssistant.List[T](Criteria condition, Order[] orders)
+   在 We7.CMS.Accounts.AccountLocalHelper.GetAccountRoles(String accountID)
+   在 We7.CMS.Accounts.AccountLocalHelper.GetRolesOfAccount(String accountID)
+   在 We7.CMS.Accounts.AccountLocalHelper.GetPermissionContents(String accountID, String objectID)
+   在 We7.CMS.Web.Admin.ArticleListControl.InitializeButtons()
+   在 We7.CMS.Web.Admin.ArticleListControl.Page_Load(Object sender, EventArgs e)
+   在 System.Web.Util.CalliHelper.EventArgFunctionCaller(IntPtr fp, Object o, Object t, EventArgs e)
+   在 System.Web.Util.CalliEventHandlerDelegateProxy.Callback(Object sender, EventArgs e)
+   在 System.Web.UI.Control.OnLoad(EventArgs e)
+   在 System.Web.UI.Control.LoadRecursive()
+   在 System.Web.UI.Control.LoadRecursive()
+   在 System.Web.UI.Control.LoadRecursive()
+   在 System.Web.UI.Control.LoadRecursive()
+   在 System.Web.UI.Control.LoadRecursive()
+   在 System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+
+
+--------------------------------------------------
+
+错误信息
+
+2016/6/12 12:07:57
+
+站点IP：::1
+访问页面：/admin/AddIns/ArticleList.aspx?oid=null&wap=null&type=0
+错误源：.Net SqlClient Data Provider
+错误信息：Cannot open database "ScientificData" requested by the login. The login failed.
+Login failed for user 'ScientificData'.
+堆栈信息：
+   在 System.Data.ProviderBase.DbConnectionPool.GetConnection(DbConnection owningObject)
+   在 System.Data.ProviderBase.DbConnectionFactory.GetConnection(DbConnection owningConnection)
+   在 System.Data.ProviderBase.DbConnectionClosed.OpenConnection(DbConnection outerConnection, DbConnectionFactory connectionFactory)
+   在 System.Data.SqlClient.SqlConnection.Open()
+   在 Thinkment.Data.SqlDbDriver.SqlDbConnection.CreateCommand(SqlStatement sql)
+   在 Thinkment.Data.SqlDbDriver.SqlDbConnection.Query(SqlStatement sql)
+   在 Thinkment.Data.ListSelectHandle`1.Execute()
+   在 Thinkment.Data.ObjectManager.MyList[T](IConnection conn, Criteria condition, Order[] orders, Int32 from, Int32 count, ListField[] fields)
+   在 Thinkment.Data.ObjectAssistant.List[T](IConnection conn, Criteria condition, Order[] orders, Int32 from, Int32 count, ListField[] fields)
+   在 Thinkment.Data.ObjectAssistant.List[T](Criteria condition, Order[] orders, Int32 from, Int32 count, ListField[] fields)
+   在 Thinkment.Data.ObjectAssistant.List[T](Criteria condition, Order[] orders)
+   在 We7.CMS.Accounts.AccountLocalHelper.GetAccountRoles(String accountID)
+   在 We7.CMS.Accounts.AccountLocalHelper.GetRolesOfAccount(String accountID)
+   在 We7.CMS.Accounts.AccountLocalHelper.GetPermissionContents(String accountID, String objectID)
+   在 We7.CMS.Web.Admin.ArticleListControl.InitializeButtons()
+   在 We7.CMS.Web.Admin.ArticleListControl.Page_Load(Object sender, EventArgs e)
+   在 System.Web.Util.CalliHelper.EventArgFunctionCaller(IntPtr fp, Object o, Object t, EventArgs e)
+   在 System.Web.Util.CalliEventHandlerDelegateProxy.Callback(Object sender, EventArgs e)
+   在 System.Web.UI.Control.OnLoad(EventArgs e)
+   在 System.Web.UI.Control.LoadRecursive()
+   在 System.Web.UI.Control.LoadRecursive()
+   在 System.Web.UI.Control.LoadRecursive()
+   在 System.Web.UI.Control.LoadRecursive()
+   在 System.Web.UI.Control.LoadRecursive()
+   在 System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+
+
+--------------------------------------------------
+
+错误信息
+
+2016/6/12 12:07:58
+
+站点IP：::1
+访问页面：/admin/AddIns/ArticleList.aspx
+错误源：.Net SqlClient Data Provider
+错误信息：Cannot open database "ScientificData" requested by the login. The login failed.
+Login failed for user 'ScientificData'.
+堆栈信息：
+   在 System.Data.ProviderBase.DbConnectionPool.GetConnection(DbConnection owningObject)
+   在 System.Data.ProviderBase.DbConnectionFactory.GetConnection(DbConnection owningConnection)
+   在 System.Data.ProviderBase.DbConnectionClosed.OpenConnection(DbConnection outerConnection, DbConnectionFactory connectionFactory)
+   在 System.Data.SqlClient.SqlConnection.Open()
+   在 Thinkment.Data.SqlDbDriver.SqlDbConnection.CreateCommand(SqlStatement sql)
+   在 Thinkment.Data.SqlDbDriver.SqlDbConnection.Query(SqlStatement sql)
+   在 Thinkment.Data.ListSelectHandle`1.Execute()
+   在 Thinkment.Data.ObjectManager.MyList[T](IConnection conn, Criteria condition, Order[] orders, Int32 from, Int32 count, ListField[] fields)
+   在 Thinkment.Data.ObjectAssistant.List[T](IConnection conn, Criteria condition, Order[] orders, Int32 from, Int32 count, ListField[] fields)
+   在 Thinkment.Data.ObjectAssistant.List[T](Criteria condition, Order[] orders, Int32 from, Int32 count, ListField[] fields)
+   在 Thinkment.Data.ObjectAssistant.List[T](Criteria condition, Order[] orders)
+   在 We7.CMS.Accounts.AccountLocalHelper.GetAccountRoles(String accountID)
+   在 We7.CMS.Accounts.AccountLocalHelper.GetRolesOfAccount(String accountID)
+   在 We7.CMS.Accounts.AccountLocalHelper.GetPermissionContents(String accountID, String objectID)
+   在 We7.CMS.Web.Admin.ArticleListControl.InitializeButtons()
+   在 We7.CMS.Web.Admin.ArticleListControl.Page_Load(Object sender, EventArgs e)
+   在 System.Web.Util.CalliHelper.EventArgFunctionCaller(IntPtr fp, Object o, Object t, EventArgs e)
+   在 System.Web.Util.CalliEventHandlerDelegateProxy.Callback(Object sender, EventArgs e)
+   在 System.Web.UI.Control.OnLoad(EventArgs e)
+   在 System.Web.UI.Control.LoadRecursive()
+   在 System.Web.UI.Control.LoadRecursive()
+   在 System.Web.UI.Control.LoadRecursive()
+   在 System.Web.UI.Control.LoadRecursive()
+   在 System.Web.UI.Control.LoadRecursive()
+   在 System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+
+
+--------------------------------------------------
+
+错误信息
+
+2016/6/12 12:07:58
+
+站点IP：::1
+访问页面：/admin/AddIns/ArticleList.aspx?oid=null&wap=null&type=0
+错误源：.Net SqlClient Data Provider
+错误信息：Cannot open database "ScientificData" requested by the login. The login failed.
+Login failed for user 'ScientificData'.
+堆栈信息：
+   在 System.Data.ProviderBase.DbConnectionPool.GetConnection(DbConnection owningObject)
+   在 System.Data.ProviderBase.DbConnectionFactory.GetConnection(DbConnection owningConnection)
+   在 System.Data.ProviderBase.DbConnectionClosed.OpenConnection(DbConnection outerConnection, DbConnectionFactory connectionFactory)
+   在 System.Data.SqlClient.SqlConnection.Open()
+   在 Thinkment.Data.SqlDbDriver.SqlDbConnection.CreateCommand(SqlStatement sql)
+   在 Thinkment.Data.SqlDbDriver.SqlDbConnection.Query(SqlStatement sql)
+   在 Thinkment.Data.ListSelectHandle`1.Execute()
+   在 Thinkment.Data.ObjectManager.MyList[T](IConnection conn, Criteria condition, Order[] orders, Int32 from, Int32 count, ListField[] fields)
+   在 Thinkment.Data.ObjectAssistant.List[T](IConnection conn, Criteria condition, Order[] orders, Int32 from, Int32 count, ListField[] fields)
+   在 Thinkment.Data.ObjectAssistant.List[T](Criteria condition, Order[] orders, Int32 from, Int32 count, ListField[] fields)
+   在 Thinkment.Data.ObjectAssistant.List[T](Criteria condition, Order[] orders)
+   在 We7.CMS.Accounts.AccountLocalHelper.GetAccountRoles(String accountID)
+   在 We7.CMS.Accounts.AccountLocalHelper.GetRolesOfAccount(String accountID)
+   在 We7.CMS.Accounts.AccountLocalHelper.GetPermissionContents(String accountID, String objectID)
+   在 We7.CMS.Web.Admin.ArticleListControl.InitializeButtons()
+   在 We7.CMS.Web.Admin.ArticleListControl.Page_Load(Object sender, EventArgs e)
+   在 System.Web.Util.CalliHelper.EventArgFunctionCaller(IntPtr fp, Object o, Object t, EventArgs e)
+   在 System.Web.Util.CalliEventHandlerDelegateProxy.Callback(Object sender, EventArgs e)
+   在 System.Web.UI.Control.OnLoad(EventArgs e)
+   在 System.Web.UI.Control.LoadRecursive()
+   在 System.Web.UI.Control.LoadRecursive()
+   在 System.Web.UI.Control.LoadRecursive()
+   在 System.Web.UI.Control.LoadRecursive()
+   在 System.Web.UI.Control.LoadRecursive()
+   在 System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+
+
+--------------------------------------------------
+
+错误信息
+
+2016/6/12 12:07:58
+
+站点IP：::1
+访问页面：/admin/AddIns/ArticleList.aspx
+错误源：.Net SqlClient Data Provider
+错误信息：Cannot open database "ScientificData" requested by the login. The login failed.
+Login failed for user 'ScientificData'.
+堆栈信息：
+   在 System.Data.ProviderBase.DbConnectionPool.GetConnection(DbConnection owningObject)
+   在 System.Data.ProviderBase.DbConnectionFactory.GetConnection(DbConnection owningConnection)
+   在 System.Data.ProviderBase.DbConnectionClosed.OpenConnection(DbConnection outerConnection, DbConnectionFactory connectionFactory)
+   在 System.Data.SqlClient.SqlConnection.Open()
+   在 Thinkment.Data.SqlDbDriver.SqlDbConnection.CreateCommand(SqlStatement sql)
+   在 Thinkment.Data.SqlDbDriver.SqlDbConnection.Query(SqlStatement sql)
+   在 Thinkment.Data.ListSelectHandle`1.Execute()
+   在 Thinkment.Data.ObjectManager.MyList[T](IConnection conn, Criteria condition, Order[] orders, Int32 from, Int32 count, ListField[] fields)
+   在 Thinkment.Data.ObjectAssistant.List[T](IConnection conn, Criteria condition, Order[] orders, Int32 from, Int32 count, ListField[] fields)
+   在 Thinkment.Data.ObjectAssistant.List[T](Criteria condition, Order[] orders, Int32 from, Int32 count, ListField[] fields)
+   在 Thinkment.Data.ObjectAssistant.List[T](Criteria condition, Order[] orders)
+   在 We7.CMS.Accounts.AccountLocalHelper.GetAccountRoles(String accountID)
+   在 We7.CMS.Accounts.AccountLocalHelper.GetRolesOfAccount(String accountID)
+   在 We7.CMS.Accounts.AccountLocalHelper.GetPermissionContents(String accountID, String objectID)
+   在 We7.CMS.Web.Admin.ArticleListControl.InitializeButtons()
+   在 We7.CMS.Web.Admin.ArticleListControl.Page_Load(Object sender, EventArgs e)
+   在 System.Web.Util.CalliHelper.EventArgFunctionCaller(IntPtr fp, Object o, Object t, EventArgs e)
+   在 System.Web.Util.CalliEventHandlerDelegateProxy.Callback(Object sender, EventArgs e)
+   在 System.Web.UI.Control.OnLoad(EventArgs e)
+   在 System.Web.UI.Control.LoadRecursive()
+   在 System.Web.UI.Control.LoadRecursive()
+   在 System.Web.UI.Control.LoadRecursive()
+   在 System.Web.UI.Control.LoadRecursive()
+   在 System.Web.UI.Control.LoadRecursive()
+   在 System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+
+
+--------------------------------------------------
+
+错误信息
+
+2016/6/12 12:07:58
+
+站点IP：::1
+访问页面：/admin/AddIns/ArticleList.aspx?oid=null&wap=null&type=0
+错误源：.Net SqlClient Data Provider
+错误信息：Cannot open database "ScientificData" requested by the login. The login failed.
+Login failed for user 'ScientificData'.
+堆栈信息：
+   在 System.Data.ProviderBase.DbConnectionPool.GetConnection(DbConnection owningObject)
+   在 System.Data.ProviderBase.DbConnectionFactory.GetConnection(DbConnection owningConnection)
+   在 System.Data.ProviderBase.DbConnectionClosed.OpenConnection(DbConnection outerConnection, DbConnectionFactory connectionFactory)
+   在 System.Data.SqlClient.SqlConnection.Open()
+   在 Thinkment.Data.SqlDbDriver.SqlDbConnection.CreateCommand(SqlStatement sql)
+   在 Thinkment.Data.SqlDbDriver.SqlDbConnection.Query(SqlStatement sql)
+   在 Thinkment.Data.ListSelectHandle`1.Execute()
+   在 Thinkment.Data.ObjectManager.MyList[T](IConnection conn, Criteria condition, Order[] orders, Int32 from, Int32 count, ListField[] fields)
+   在 Thinkment.Data.ObjectAssistant.List[T](IConnection conn, Criteria condition, Order[] orders, Int32 from, Int32 count, ListField[] fields)
+   在 Thinkment.Data.ObjectAssistant.List[T](Criteria condition, Order[] orders, Int32 from, Int32 count, ListField[] fields)
+   在 Thinkment.Data.ObjectAssistant.List[T](Criteria condition, Order[] orders)
+   在 We7.CMS.Accounts.AccountLocalHelper.GetAccountRoles(String accountID)
+   在 We7.CMS.Accounts.AccountLocalHelper.GetRolesOfAccount(String accountID)
+   在 We7.CMS.Accounts.AccountLocalHelper.GetPermissionContents(String accountID, String objectID)
+   在 We7.CMS.Web.Admin.ArticleListControl.InitializeButtons()
+   在 We7.CMS.Web.Admin.ArticleListControl.Page_Load(Object sender, EventArgs e)
+   在 System.Web.Util.CalliHelper.EventArgFunctionCaller(IntPtr fp, Object o, Object t, EventArgs e)
+   在 System.Web.Util.CalliEventHandlerDelegateProxy.Callback(Object sender, EventArgs e)
+   在 System.Web.UI.Control.OnLoad(EventArgs e)
+   在 System.Web.UI.Control.LoadRecursive()
+   在 System.Web.UI.Control.LoadRecursive()
+   在 System.Web.UI.Control.LoadRecursive()
+   在 System.Web.UI.Control.LoadRecursive()
+   在 System.Web.UI.Control.LoadRecursive()
+   在 System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+
+
+--------------------------------------------------
+
+错误信息
+
+2016/6/12 12:07:58
+
+站点IP：::1
+访问页面：/admin/AddIns/ArticleList.aspx
+错误源：.Net SqlClient Data Provider
+错误信息：Cannot open database "ScientificData" requested by the login. The login failed.
+Login failed for user 'ScientificData'.
+堆栈信息：
+   在 System.Data.ProviderBase.DbConnectionPool.GetConnection(DbConnection owningObject)
+   在 System.Data.ProviderBase.DbConnectionFactory.GetConnection(DbConnection owningConnection)
+   在 System.Data.ProviderBase.DbConnectionClosed.OpenConnection(DbConnection outerConnection, DbConnectionFactory connectionFactory)
+   在 System.Data.SqlClient.SqlConnection.Open()
+   在 Thinkment.Data.SqlDbDriver.SqlDbConnection.CreateCommand(SqlStatement sql)
+   在 Thinkment.Data.SqlDbDriver.SqlDbConnection.Query(SqlStatement sql)
+   在 Thinkment.Data.ListSelectHandle`1.Execute()
+   在 Thinkment.Data.ObjectManager.MyList[T](IConnection conn, Criteria condition, Order[] orders, Int32 from, Int32 count, ListField[] fields)
+   在 Thinkment.Data.ObjectAssistant.List[T](IConnection conn, Criteria condition, Order[] orders, Int32 from, Int32 count, ListField[] fields)
+   在 Thinkment.Data.ObjectAssistant.List[T](Criteria condition, Order[] orders, Int32 from, Int32 count, ListField[] fields)
+   在 Thinkment.Data.ObjectAssistant.List[T](Criteria condition, Order[] orders)
+   在 We7.CMS.Accounts.AccountLocalHelper.GetAccountRoles(String accountID)
+   在 We7.CMS.Accounts.AccountLocalHelper.GetRolesOfAccount(String accountID)
+   在 We7.CMS.Accounts.AccountLocalHelper.GetPermissionContents(String accountID, String objectID)
+   在 We7.CMS.Web.Admin.ArticleListControl.InitializeButtons()
+   在 We7.CMS.Web.Admin.ArticleListControl.Page_Load(Object sender, EventArgs e)
+   在 System.Web.Util.CalliHelper.EventArgFunctionCaller(IntPtr fp, Object o, Object t, EventArgs e)
+   在 System.Web.Util.CalliEventHandlerDelegateProxy.Callback(Object sender, EventArgs e)
+   在 System.Web.UI.Control.OnLoad(EventArgs e)
+   在 System.Web.UI.Control.LoadRecursive()
+   在 System.Web.UI.Control.LoadRecursive()
+   在 System.Web.UI.Control.LoadRecursive()
+   在 System.Web.UI.Control.LoadRecursive()
+   在 System.Web.UI.Control.LoadRecursive()
+   在 System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+
+
+--------------------------------------------------
+
+错误信息
+
+2016/6/12 12:07:58
+
+站点IP：::1
+访问页面：/admin/AddIns/ArticleList.aspx?oid=null&wap=null&type=0
+错误源：.Net SqlClient Data Provider
+错误信息：Cannot open database "ScientificData" requested by the login. The login failed.
+Login failed for user 'ScientificData'.
+堆栈信息：
+   在 System.Data.ProviderBase.DbConnectionPool.GetConnection(DbConnection owningObject)
+   在 System.Data.ProviderBase.DbConnectionFactory.GetConnection(DbConnection owningConnection)
+   在 System.Data.ProviderBase.DbConnectionClosed.OpenConnection(DbConnection outerConnection, DbConnectionFactory connectionFactory)
+   在 System.Data.SqlClient.SqlConnection.Open()
+   在 Thinkment.Data.SqlDbDriver.SqlDbConnection.CreateCommand(SqlStatement sql)
+   在 Thinkment.Data.SqlDbDriver.SqlDbConnection.Query(SqlStatement sql)
+   在 Thinkment.Data.ListSelectHandle`1.Execute()
+   在 Thinkment.Data.ObjectManager.MyList[T](IConnection conn, Criteria condition, Order[] orders, Int32 from, Int32 count, ListField[] fields)
+   在 Thinkment.Data.ObjectAssistant.List[T](IConnection conn, Criteria condition, Order[] orders, Int32 from, Int32 count, ListField[] fields)
+   在 Thinkment.Data.ObjectAssistant.List[T](Criteria condition, Order[] orders, Int32 from, Int32 count, ListField[] fields)
+   在 Thinkment.Data.ObjectAssistant.List[T](Criteria condition, Order[] orders)
+   在 We7.CMS.Accounts.AccountLocalHelper.GetAccountRoles(String accountID)
+   在 We7.CMS.Accounts.AccountLocalHelper.GetRolesOfAccount(String accountID)
+   在 We7.CMS.Accounts.AccountLocalHelper.GetPermissionContents(String accountID, String objectID)
+   在 We7.CMS.Web.Admin.ArticleListControl.InitializeButtons()
+   在 We7.CMS.Web.Admin.ArticleListControl.Page_Load(Object sender, EventArgs e)
+   在 System.Web.Util.CalliHelper.EventArgFunctionCaller(IntPtr fp, Object o, Object t, EventArgs e)
+   在 System.Web.Util.CalliEventHandlerDelegateProxy.Callback(Object sender, EventArgs e)
+   在 System.Web.UI.Control.OnLoad(EventArgs e)
+   在 System.Web.UI.Control.LoadRecursive()
+   在 System.Web.UI.Control.LoadRecursive()
+   在 System.Web.UI.Control.LoadRecursive()
+   在 System.Web.UI.Control.LoadRecursive()
+   在 System.Web.UI.Control.LoadRecursive()
+   在 System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+
+
+--------------------------------------------------
+
+错误信息
+
+2016/6/12 12:07:59
+
+站点IP：::1
+访问页面：/admin/AddIns/ArticleList.aspx
+错误源：.Net SqlClient Data Provider
+错误信息：Cannot open database "ScientificData" requested by the login. The login failed.
+Login failed for user 'ScientificData'.
+堆栈信息：
+   在 System.Data.ProviderBase.DbConnectionPool.GetConnection(DbConnection owningObject)
+   在 System.Data.ProviderBase.DbConnectionFactory.GetConnection(DbConnection owningConnection)
+   在 System.Data.ProviderBase.DbConnectionClosed.OpenConnection(DbConnection outerConnection, DbConnectionFactory connectionFactory)
+   在 System.Data.SqlClient.SqlConnection.Open()
+   在 Thinkment.Data.SqlDbDriver.SqlDbConnection.CreateCommand(SqlStatement sql)
+   在 Thinkment.Data.SqlDbDriver.SqlDbConnection.Query(SqlStatement sql)
+   在 Thinkment.Data.ListSelectHandle`1.Execute()
+   在 Thinkment.Data.ObjectManager.MyList[T](IConnection conn, Criteria condition, Order[] orders, Int32 from, Int32 count, ListField[] fields)
+   在 Thinkment.Data.ObjectAssistant.List[T](IConnection conn, Criteria condition, Order[] orders, Int32 from, Int32 count, ListField[] fields)
+   在 Thinkment.Data.ObjectAssistant.List[T](Criteria condition, Order[] orders, Int32 from, Int32 count, ListField[] fields)
+   在 Thinkment.Data.ObjectAssistant.List[T](Criteria condition, Order[] orders)
+   在 We7.CMS.Accounts.AccountLocalHelper.GetAccountRoles(String accountID)
+   在 We7.CMS.Accounts.AccountLocalHelper.GetRolesOfAccount(String accountID)
+   在 We7.CMS.Accounts.AccountLocalHelper.GetPermissionContents(String accountID, String objectID)
+   在 We7.CMS.Web.Admin.ArticleListControl.InitializeButtons()
+   在 We7.CMS.Web.Admin.ArticleListControl.Page_Load(Object sender, EventArgs e)
+   在 System.Web.Util.CalliHelper.EventArgFunctionCaller(IntPtr fp, Object o, Object t, EventArgs e)
+   在 System.Web.Util.CalliEventHandlerDelegateProxy.Callback(Object sender, EventArgs e)
+   在 System.Web.UI.Control.OnLoad(EventArgs e)
+   在 System.Web.UI.Control.LoadRecursive()
+   在 System.Web.UI.Control.LoadRecursive()
+   在 System.Web.UI.Control.LoadRecursive()
+   在 System.Web.UI.Control.LoadRecursive()
+   在 System.Web.UI.Control.LoadRecursive()
+   在 System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+
+
+--------------------------------------------------
+
+错误信息
+
+2016/6/12 12:07:59
+
+站点IP：::1
+访问页面：/admin/AddIns/ArticleList.aspx?oid=null&wap=null&type=0
+错误源：.Net SqlClient Data Provider
+错误信息：Cannot open database "ScientificData" requested by the login. The login failed.
+Login failed for user 'ScientificData'.
+堆栈信息：
+   在 System.Data.ProviderBase.DbConnectionPool.GetConnection(DbConnection owningObject)
+   在 System.Data.ProviderBase.DbConnectionFactory.GetConnection(DbConnection owningConnection)
+   在 System.Data.ProviderBase.DbConnectionClosed.OpenConnection(DbConnection outerConnection, DbConnectionFactory connectionFactory)
+   在 System.Data.SqlClient.SqlConnection.Open()
+   在 Thinkment.Data.SqlDbDriver.SqlDbConnection.CreateCommand(SqlStatement sql)
+   在 Thinkment.Data.SqlDbDriver.SqlDbConnection.Query(SqlStatement sql)
+   在 Thinkment.Data.ListSelectHandle`1.Execute()
+   在 Thinkment.Data.ObjectManager.MyList[T](IConnection conn, Criteria condition, Order[] orders, Int32 from, Int32 count, ListField[] fields)
+   在 Thinkment.Data.ObjectAssistant.List[T](IConnection conn, Criteria condition, Order[] orders, Int32 from, Int32 count, ListField[] fields)
+   在 Thinkment.Data.ObjectAssistant.List[T](Criteria condition, Order[] orders, Int32 from, Int32 count, ListField[] fields)
+   在 Thinkment.Data.ObjectAssistant.List[T](Criteria condition, Order[] orders)
+   在 We7.CMS.Accounts.AccountLocalHelper.GetAccountRoles(String accountID)
+   在 We7.CMS.Accounts.AccountLocalHelper.GetRolesOfAccount(String accountID)
+   在 We7.CMS.Accounts.AccountLocalHelper.GetPermissionContents(String accountID, String objectID)
+   在 We7.CMS.Web.Admin.ArticleListControl.InitializeButtons()
+   在 We7.CMS.Web.Admin.ArticleListControl.Page_Load(Object sender, EventArgs e)
+   在 System.Web.Util.CalliHelper.EventArgFunctionCaller(IntPtr fp, Object o, Object t, EventArgs e)
+   在 System.Web.Util.CalliEventHandlerDelegateProxy.Callback(Object sender, EventArgs e)
+   在 System.Web.UI.Control.OnLoad(EventArgs e)
+   在 System.Web.UI.Control.LoadRecursive()
+   在 System.Web.UI.Control.LoadRecursive()
+   在 System.Web.UI.Control.LoadRecursive()
+   在 System.Web.UI.Control.LoadRecursive()
+   在 System.Web.UI.Control.LoadRecursive()
+   在 System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+
+
+--------------------------------------------------
+
+错误信息
+
+2016/6/12 12:07:59
+
+站点IP：::1
+访问页面：/admin/AddIns/ArticleList.aspx
+错误源：.Net SqlClient Data Provider
+错误信息：Cannot open database "ScientificData" requested by the login. The login failed.
+Login failed for user 'ScientificData'.
+堆栈信息：
+   在 System.Data.ProviderBase.DbConnectionPool.GetConnection(DbConnection owningObject)
+   在 System.Data.ProviderBase.DbConnectionFactory.GetConnection(DbConnection owningConnection)
+   在 System.Data.ProviderBase.DbConnectionClosed.OpenConnection(DbConnection outerConnection, DbConnectionFactory connectionFactory)
+   在 System.Data.SqlClient.SqlConnection.Open()
+   在 Thinkment.Data.SqlDbDriver.SqlDbConnection.CreateCommand(SqlStatement sql)
+   在 Thinkment.Data.SqlDbDriver.SqlDbConnection.Query(SqlStatement sql)
+   在 Thinkment.Data.ListSelectHandle`1.Execute()
+   在 Thinkment.Data.ObjectManager.MyList[T](IConnection conn, Criteria condition, Order[] orders, Int32 from, Int32 count, ListField[] fields)
+   在 Thinkment.Data.ObjectAssistant.List[T](IConnection conn, Criteria condition, Order[] orders, Int32 from, Int32 count, ListField[] fields)
+   在 Thinkment.Data.ObjectAssistant.List[T](Criteria condition, Order[] orders, Int32 from, Int32 count, ListField[] fields)
+   在 Thinkment.Data.ObjectAssistant.List[T](Criteria condition, Order[] orders)
+   在 We7.CMS.Accounts.AccountLocalHelper.GetAccountRoles(String accountID)
+   在 We7.CMS.Accounts.AccountLocalHelper.GetRolesOfAccount(String accountID)
+   在 We7.CMS.Accounts.AccountLocalHelper.GetPermissionContents(String accountID, String objectID)
+   在 We7.CMS.Web.Admin.ArticleListControl.InitializeButtons()
+   在 We7.CMS.Web.Admin.ArticleListControl.Page_Load(Object sender, EventArgs e)
+   在 System.Web.Util.CalliHelper.EventArgFunctionCaller(IntPtr fp, Object o, Object t, EventArgs e)
+   在 System.Web.Util.CalliEventHandlerDelegateProxy.Callback(Object sender, EventArgs e)
+   在 System.Web.UI.Control.OnLoad(EventArgs e)
+   在 System.Web.UI.Control.LoadRecursive()
+   在 System.Web.UI.Control.LoadRecursive()
+   在 System.Web.UI.Control.LoadRecursive()
+   在 System.Web.UI.Control.LoadRecursive()
+   在 System.Web.UI.Control.LoadRecursive()
+   在 System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+
+
+--------------------------------------------------
+
+错误信息
+
+2016/6/12 12:07:59
+
+站点IP：::1
+访问页面：/admin/AddIns/ArticleList.aspx?oid=null&wap=null&type=0
+错误源：.Net SqlClient Data Provider
+错误信息：Cannot open database "ScientificData" requested by the login. The login failed.
+Login failed for user 'ScientificData'.
+堆栈信息：
+   在 System.Data.ProviderBase.DbConnectionPool.GetConnection(DbConnection owningObject)
+   在 System.Data.ProviderBase.DbConnectionFactory.GetConnection(DbConnection owningConnection)
+   在 System.Data.ProviderBase.DbConnectionClosed.OpenConnection(DbConnection outerConnection, DbConnectionFactory connectionFactory)
+   在 System.Data.SqlClient.SqlConnection.Open()
+   在 Thinkment.Data.SqlDbDriver.SqlDbConnection.CreateCommand(SqlStatement sql)
+   在 Thinkment.Data.SqlDbDriver.SqlDbConnection.Query(SqlStatement sql)
+   在 Thinkment.Data.ListSelectHandle`1.Execute()
+   在 Thinkment.Data.ObjectManager.MyList[T](IConnection conn, Criteria condition, Order[] orders, Int32 from, Int32 count, ListField[] fields)
+   在 Thinkment.Data.ObjectAssistant.List[T](IConnection conn, Criteria condition, Order[] orders, Int32 from, Int32 count, ListField[] fields)
+   在 Thinkment.Data.ObjectAssistant.List[T](Criteria condition, Order[] orders, Int32 from, Int32 count, ListField[] fields)
+   在 Thinkment.Data.ObjectAssistant.List[T](Criteria condition, Order[] orders)
+   在 We7.CMS.Accounts.AccountLocalHelper.GetAccountRoles(String accountID)
+   在 We7.CMS.Accounts.AccountLocalHelper.GetRolesOfAccount(String accountID)
+   在 We7.CMS.Accounts.AccountLocalHelper.GetPermissionContents(String accountID, String objectID)
+   在 We7.CMS.Web.Admin.ArticleListControl.InitializeButtons()
+   在 We7.CMS.Web.Admin.ArticleListControl.Page_Load(Object sender, EventArgs e)
+   在 System.Web.Util.CalliHelper.EventArgFunctionCaller(IntPtr fp, Object o, Object t, EventArgs e)
+   在 System.Web.Util.CalliEventHandlerDelegateProxy.Callback(Object sender, EventArgs e)
+   在 System.Web.UI.Control.OnLoad(EventArgs e)
+   在 System.Web.UI.Control.LoadRecursive()
+   在 System.Web.UI.Control.LoadRecursive()
+   在 System.Web.UI.Control.LoadRecursive()
+   在 System.Web.UI.Control.LoadRecursive()
+   在 System.Web.UI.Control.LoadRecursive()
+   在 System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+
+
+--------------------------------------------------
+
+错误信息
+
+2016/6/12 12:07:59
+
+站点IP：::1
+访问页面：/admin/AddIns/ArticleList.aspx
+错误源：.Net SqlClient Data Provider
+错误信息：Cannot open database "ScientificData" requested by the login. The login failed.
+Login failed for user 'ScientificData'.
+堆栈信息：
+   在 System.Data.ProviderBase.DbConnectionPool.GetConnection(DbConnection owningObject)
+   在 System.Data.ProviderBase.DbConnectionFactory.GetConnection(DbConnection owningConnection)
+   在 System.Data.ProviderBase.DbConnectionClosed.OpenConnection(DbConnection outerConnection, DbConnectionFactory connectionFactory)
+   在 System.Data.SqlClient.SqlConnection.Open()
+   在 Thinkment.Data.SqlDbDriver.SqlDbConnection.CreateCommand(SqlStatement sql)
+   在 Thinkment.Data.SqlDbDriver.SqlDbConnection.Query(SqlStatement sql)
+   在 Thinkment.Data.ListSelectHandle`1.Execute()
+   在 Thinkment.Data.ObjectManager.MyList[T](IConnection conn, Criteria condition, Order[] orders, Int32 from, Int32 count, ListField[] fields)
+   在 Thinkment.Data.ObjectAssistant.List[T](IConnection conn, Criteria condition, Order[] orders, Int32 from, Int32 count, ListField[] fields)
+   在 Thinkment.Data.ObjectAssistant.List[T](Criteria condition, Order[] orders, Int32 from, Int32 count, ListField[] fields)
+   在 Thinkment.Data.ObjectAssistant.List[T](Criteria condition, Order[] orders)
+   在 We7.CMS.Accounts.AccountLocalHelper.GetAccountRoles(String accountID)
+   在 We7.CMS.Accounts.AccountLocalHelper.GetRolesOfAccount(String accountID)
+   在 We7.CMS.Accounts.AccountLocalHelper.GetPermissionContents(String accountID, String objectID)
+   在 We7.CMS.Web.Admin.ArticleListControl.InitializeButtons()
+   在 We7.CMS.Web.Admin.ArticleListControl.Page_Load(Object sender, EventArgs e)
+   在 System.Web.Util.CalliHelper.EventArgFunctionCaller(IntPtr fp, Object o, Object t, EventArgs e)
+   在 System.Web.Util.CalliEventHandlerDelegateProxy.Callback(Object sender, EventArgs e)
+   在 System.Web.UI.Control.OnLoad(EventArgs e)
+   在 System.Web.UI.Control.LoadRecursive()
+   在 System.Web.UI.Control.LoadRecursive()
+   在 System.Web.UI.Control.LoadRecursive()
+   在 System.Web.UI.Control.LoadRecursive()
+   在 System.Web.UI.Control.LoadRecursive()
+   在 System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+
+
+--------------------------------------------------
+
+错误信息
+
+2016/6/12 12:07:59
+
+站点IP：::1
+访问页面：/admin/AddIns/ArticleList.aspx?oid=null&wap=null&type=0
+错误源：.Net SqlClient Data Provider
+错误信息：Cannot open database "ScientificData" requested by the login. The login failed.
+Login failed for user 'ScientificData'.
+堆栈信息：
+   在 System.Data.ProviderBase.DbConnectionPool.GetConnection(DbConnection owningObject)
+   在 System.Data.ProviderBase.DbConnectionFactory.GetConnection(DbConnection owningConnection)
+   在 System.Data.ProviderBase.DbConnectionClosed.OpenConnection(DbConnection outerConnection, DbConnectionFactory connectionFactory)
+   在 System.Data.SqlClient.SqlConnection.Open()
+   在 Thinkment.Data.SqlDbDriver.SqlDbConnection.CreateCommand(SqlStatement sql)
+   在 Thinkment.Data.SqlDbDriver.SqlDbConnection.Query(SqlStatement sql)
+   在 Thinkment.Data.ListSelectHandle`1.Execute()
+   在 Thinkment.Data.ObjectManager.MyList[T](IConnection conn, Criteria condition, Order[] orders, Int32 from, Int32 count, ListField[] fields)
+   在 Thinkment.Data.ObjectAssistant.List[T](IConnection conn, Criteria condition, Order[] orders, Int32 from, Int32 count, ListField[] fields)
+   在 Thinkment.Data.ObjectAssistant.List[T](Criteria condition, Order[] orders, Int32 from, Int32 count, ListField[] fields)
+   在 Thinkment.Data.ObjectAssistant.List[T](Criteria condition, Order[] orders)
+   在 We7.CMS.Accounts.AccountLocalHelper.GetAccountRoles(String accountID)
+   在 We7.CMS.Accounts.AccountLocalHelper.GetRolesOfAccount(String accountID)
+   在 We7.CMS.Accounts.AccountLocalHelper.GetPermissionContents(String accountID, String objectID)
+   在 We7.CMS.Web.Admin.ArticleListControl.InitializeButtons()
+   在 We7.CMS.Web.Admin.ArticleListControl.Page_Load(Object sender, EventArgs e)
+   在 System.Web.Util.CalliHelper.EventArgFunctionCaller(IntPtr fp, Object o, Object t, EventArgs e)
+   在 System.Web.Util.CalliEventHandlerDelegateProxy.Callback(Object sender, EventArgs e)
+   在 System.Web.UI.Control.OnLoad(EventArgs e)
+   在 System.Web.UI.Control.LoadRecursive()
+   在 System.Web.UI.Control.LoadRecursive()
+   在 System.Web.UI.Control.LoadRecursive()
+   在 System.Web.UI.Control.LoadRecursive()
+   在 System.Web.UI.Control.LoadRecursive()
+   在 System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+
+
+--------------------------------------------------
+
+错误信息
+
+2016/6/12 12:07:59
+
+站点IP：::1
+访问页面：/admin/AddIns/ArticleList.aspx
+错误源：.Net SqlClient Data Provider
+错误信息：Cannot open database "ScientificData" requested by the login. The login failed.
+Login failed for user 'ScientificData'.
+堆栈信息：
+   在 System.Data.ProviderBase.DbConnectionPool.GetConnection(DbConnection owningObject)
+   在 System.Data.ProviderBase.DbConnectionFactory.GetConnection(DbConnection owningConnection)
+   在 System.Data.ProviderBase.DbConnectionClosed.OpenConnection(DbConnection outerConnection, DbConnectionFactory connectionFactory)
+   在 System.Data.SqlClient.SqlConnection.Open()
+   在 Thinkment.Data.SqlDbDriver.SqlDbConnection.CreateCommand(SqlStatement sql)
+   在 Thinkment.Data.SqlDbDriver.SqlDbConnection.Query(SqlStatement sql)
+   在 Thinkment.Data.ListSelectHandle`1.Execute()
+   在 Thinkment.Data.ObjectManager.MyList[T](IConnection conn, Criteria condition, Order[] orders, Int32 from, Int32 count, ListField[] fields)
+   在 Thinkment.Data.ObjectAssistant.List[T](IConnection conn, Criteria condition, Order[] orders, Int32 from, Int32 count, ListField[] fields)
+   在 Thinkment.Data.ObjectAssistant.List[T](Criteria condition, Order[] orders, Int32 from, Int32 count, ListField[] fields)
+   在 Thinkment.Data.ObjectAssistant.List[T](Criteria condition, Order[] orders)
+   在 We7.CMS.Accounts.AccountLocalHelper.GetAccountRoles(String accountID)
+   在 We7.CMS.Accounts.AccountLocalHelper.GetRolesOfAccount(String accountID)
+   在 We7.CMS.Accounts.AccountLocalHelper.GetPermissionContents(String accountID, String objectID)
+   在 We7.CMS.Web.Admin.ArticleListControl.InitializeButtons()
+   在 We7.CMS.Web.Admin.ArticleListControl.Page_Load(Object sender, EventArgs e)
+   在 System.Web.Util.CalliHelper.EventArgFunctionCaller(IntPtr fp, Object o, Object t, EventArgs e)
+   在 System.Web.Util.CalliEventHandlerDelegateProxy.Callback(Object sender, EventArgs e)
+   在 System.Web.UI.Control.OnLoad(EventArgs e)
+   在 System.Web.UI.Control.LoadRecursive()
+   在 System.Web.UI.Control.LoadRecursive()
+   在 System.Web.UI.Control.LoadRecursive()
+   在 System.Web.UI.Control.LoadRecursive()
+   在 System.Web.UI.Control.LoadRecursive()
+   在 System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+
+
+--------------------------------------------------
+
+错误信息
+
+2016/6/12 12:07:59
+
+站点IP：::1
+访问页面：/admin/AddIns/ArticleList.aspx?oid=null&wap=null&type=0
+错误源：.Net SqlClient Data Provider
+错误信息：Cannot open database "ScientificData" requested by the login. The login failed.
+Login failed for user 'ScientificData'.
+堆栈信息：
+   在 System.Data.ProviderBase.DbConnectionPool.GetConnection(DbConnection owningObject)
+   在 System.Data.ProviderBase.DbConnectionFactory.GetConnection(DbConnection owningConnection)
+   在 System.Data.ProviderBase.DbConnectionClosed.OpenConnection(DbConnection outerConnection, DbConnectionFactory connectionFactory)
+   在 System.Data.SqlClient.SqlConnection.Open()
+   在 Thinkment.Data.SqlDbDriver.SqlDbConnection.CreateCommand(SqlStatement sql)
+   在 Thinkment.Data.SqlDbDriver.SqlDbConnection.Query(SqlStatement sql)
+   在 Thinkment.Data.ListSelectHandle`1.Execute()
+   在 Thinkment.Data.ObjectManager.MyList[T](IConnection conn, Criteria condition, Order[] orders, Int32 from, Int32 count, ListField[] fields)
+   在 Thinkment.Data.ObjectAssistant.List[T](IConnection conn, Criteria condition, Order[] orders, Int32 from, Int32 count, ListField[] fields)
+   在 Thinkment.Data.ObjectAssistant.List[T](Criteria condition, Order[] orders, Int32 from, Int32 count, ListField[] fields)
+   在 Thinkment.Data.ObjectAssistant.List[T](Criteria condition, Order[] orders)
+   在 We7.CMS.Accounts.AccountLocalHelper.GetAccountRoles(String accountID)
+   在 We7.CMS.Accounts.AccountLocalHelper.GetRolesOfAccount(String accountID)
+   在 We7.CMS.Accounts.AccountLocalHelper.GetPermissionContents(String accountID, String objectID)
+   在 We7.CMS.Web.Admin.ArticleListControl.InitializeButtons()
+   在 We7.CMS.Web.Admin.ArticleListControl.Page_Load(Object sender, EventArgs e)
+   在 System.Web.Util.CalliHelper.EventArgFunctionCaller(IntPtr fp, Object o, Object t, EventArgs e)
+   在 System.Web.Util.CalliEventHandlerDelegateProxy.Callback(Object sender, EventArgs e)
+   在 System.Web.UI.Control.OnLoad(EventArgs e)
+   在 System.Web.UI.Control.LoadRecursive()
+   在 System.Web.UI.Control.LoadRecursive()
+   在 System.Web.UI.Control.LoadRecursive()
+   在 System.Web.UI.Control.LoadRecursive()
+   在 System.Web.UI.Control.LoadRecursive()
+   在 System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+
+
+--------------------------------------------------
+
+错误信息
+
+2016/6/12 12:07:59
+
+站点IP：::1
+访问页面：/admin/AddIns/ArticleList.aspx
+错误源：.Net SqlClient Data Provider
+错误信息：Cannot open database "ScientificData" requested by the login. The login failed.
+Login failed for user 'ScientificData'.
+堆栈信息：
+   在 System.Data.ProviderBase.DbConnectionPool.GetConnection(DbConnection owningObject)
+   在 System.Data.ProviderBase.DbConnectionFactory.GetConnection(DbConnection owningConnection)
+   在 System.Data.ProviderBase.DbConnectionClosed.OpenConnection(DbConnection outerConnection, DbConnectionFactory connectionFactory)
+   在 System.Data.SqlClient.SqlConnection.Open()
+   在 Thinkment.Data.SqlDbDriver.SqlDbConnection.CreateCommand(SqlStatement sql)
+   在 Thinkment.Data.SqlDbDriver.SqlDbConnection.Query(SqlStatement sql)
+   在 Thinkment.Data.ListSelectHandle`1.Execute()
+   在 Thinkment.Data.ObjectManager.MyList[T](IConnection conn, Criteria condition, Order[] orders, Int32 from, Int32 count, ListField[] fields)
+   在 Thinkment.Data.ObjectAssistant.List[T](IConnection conn, Criteria condition, Order[] orders, Int32 from, Int32 count, ListField[] fields)
+   在 Thinkment.Data.ObjectAssistant.List[T](Criteria condition, Order[] orders, Int32 from, Int32 count, ListField[] fields)
+   在 Thinkment.Data.ObjectAssistant.List[T](Criteria condition, Order[] orders)
+   在 We7.CMS.Accounts.AccountLocalHelper.GetAccountRoles(String accountID)
+   在 We7.CMS.Accounts.AccountLocalHelper.GetRolesOfAccount(String accountID)
+   在 We7.CMS.Accounts.AccountLocalHelper.GetPermissionContents(String accountID, String objectID)
+   在 We7.CMS.Web.Admin.ArticleListControl.InitializeButtons()
+   在 We7.CMS.Web.Admin.ArticleListControl.Page_Load(Object sender, EventArgs e)
+   在 System.Web.Util.CalliHelper.EventArgFunctionCaller(IntPtr fp, Object o, Object t, EventArgs e)
+   在 System.Web.Util.CalliEventHandlerDelegateProxy.Callback(Object sender, EventArgs e)
+   在 System.Web.UI.Control.OnLoad(EventArgs e)
+   在 System.Web.UI.Control.LoadRecursive()
+   在 System.Web.UI.Control.LoadRecursive()
+   在 System.Web.UI.Control.LoadRecursive()
+   在 System.Web.UI.Control.LoadRecursive()
+   在 System.Web.UI.Control.LoadRecursive()
+   在 System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+
+
+--------------------------------------------------
+
+错误信息
+
+2016/6/12 12:07:59
+
+站点IP：::1
+访问页面：/admin/AddIns/ArticleList.aspx?oid=null&wap=null&type=0
+错误源：.Net SqlClient Data Provider
+错误信息：Cannot open database "ScientificData" requested by the login. The login failed.
+Login failed for user 'ScientificData'.
+堆栈信息：
+   在 System.Data.ProviderBase.DbConnectionPool.GetConnection(DbConnection owningObject)
+   在 System.Data.ProviderBase.DbConnectionFactory.GetConnection(DbConnection owningConnection)
+   在 System.Data.ProviderBase.DbConnectionClosed.OpenConnection(DbConnection outerConnection, DbConnectionFactory connectionFactory)
+   在 System.Data.SqlClient.SqlConnection.Open()
+   在 Thinkment.Data.SqlDbDriver.SqlDbConnection.CreateCommand(SqlStatement sql)
+   在 Thinkment.Data.SqlDbDriver.SqlDbConnection.Query(SqlStatement sql)
+   在 Thinkment.Data.ListSelectHandle`1.Execute()
+   在 Thinkment.Data.ObjectManager.MyList[T](IConnection conn, Criteria condition, Order[] orders, Int32 from, Int32 count, ListField[] fields)
+   在 Thinkment.Data.ObjectAssistant.List[T](IConnection conn, Criteria condition, Order[] orders, Int32 from, Int32 count, ListField[] fields)
+   在 Thinkment.Data.ObjectAssistant.List[T](Criteria condition, Order[] orders, Int32 from, Int32 count, ListField[] fields)
+   在 Thinkment.Data.ObjectAssistant.List[T](Criteria condition, Order[] orders)
+   在 We7.CMS.Accounts.AccountLocalHelper.GetAccountRoles(String accountID)
+   在 We7.CMS.Accounts.AccountLocalHelper.GetRolesOfAccount(String accountID)
+   在 We7.CMS.Accounts.AccountLocalHelper.GetPermissionContents(String accountID, String objectID)
+   在 We7.CMS.Web.Admin.ArticleListControl.InitializeButtons()
+   在 We7.CMS.Web.Admin.ArticleListControl.Page_Load(Object sender, EventArgs e)
+   在 System.Web.Util.CalliHelper.EventArgFunctionCaller(IntPtr fp, Object o, Object t, EventArgs e)
+   在 System.Web.Util.CalliEventHandlerDelegateProxy.Callback(Object sender, EventArgs e)
+   在 System.Web.UI.Control.OnLoad(EventArgs e)
+   在 System.Web.UI.Control.LoadRecursive()
+   在 System.Web.UI.Control.LoadRecursive()
+   在 System.Web.UI.Control.LoadRecursive()
+   在 System.Web.UI.Control.LoadRecursive()
+   在 System.Web.UI.Control.LoadRecursive()
+   在 System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+
+
+--------------------------------------------------
+
+错误信息
+
+2016/6/12 12:08:09
+
+站点IP：::1
+访问页面：/admin/AddIns/ArticleList.aspx
+错误源：.Net SqlClient Data Provider
+错误信息：Cannot open database "ScientificData" requested by the login. The login failed.
+Login failed for user 'ScientificData'.
+堆栈信息：
+   在 System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection)
+   在 System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj)
+   在 System.Data.SqlClient.TdsParser.Run(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj)
+   在 System.Data.SqlClient.SqlInternalConnectionTds.CompleteLogin(Boolean enlistOK)
+   在 System.Data.SqlClient.SqlInternalConnectionTds.AttemptOneLogin(ServerInfo serverInfo, String newPassword, Boolean ignoreSniOpenTimeout, Int64 timerExpire, SqlConnection owningObject)
+   在 System.Data.SqlClient.SqlInternalConnectionTds.LoginNoFailover(String host, String newPassword, Boolean redirectedUserInstance, SqlConnection owningObject, SqlConnectionString connectionOptions, Int64 timerStart)
+   在 System.Data.SqlClient.SqlInternalConnectionTds.OpenLoginEnlist(SqlConnection owningObject, SqlConnectionString connectionOptions, String newPassword, Boolean redirectedUserInstance)
+   在 System.Data.SqlClient.SqlInternalConnectionTds..ctor(DbConnectionPoolIdentity identity, SqlConnectionString connectionOptions, Object providerInfo, String newPassword, SqlConnection owningObject, Boolean redirectedUserInstance)
+   在 System.Data.SqlClient.SqlConnectionFactory.CreateConnection(DbConnectionOptions options, Object poolGroupProviderInfo, DbConnectionPool pool, DbConnection owningConnection)
+   在 System.Data.ProviderBase.DbConnectionFactory.CreatePooledConnection(DbConnection owningConnection, DbConnectionPool pool, DbConnectionOptions options)
+   在 System.Data.ProviderBase.DbConnectionPool.CreateObject(DbConnection owningObject)
+   在 System.Data.ProviderBase.DbConnectionPool.UserCreateRequest(DbConnection owningObject)
+   在 System.Data.ProviderBase.DbConnectionPool.GetConnection(DbConnection owningObject)
+   在 System.Data.ProviderBase.DbConnectionFactory.GetConnection(DbConnection owningConnection)
+   在 System.Data.ProviderBase.DbConnectionClosed.OpenConnection(DbConnection outerConnection, DbConnectionFactory connectionFactory)
+   在 System.Data.SqlClient.SqlConnection.Open()
+   在 Thinkment.Data.SqlDbDriver.SqlDbConnection.CreateCommand(SqlStatement sql)
+   在 Thinkment.Data.SqlDbDriver.SqlDbConnection.Query(SqlStatement sql)
+   在 Thinkment.Data.ListSelectHandle`1.Execute()
+   在 Thinkment.Data.ObjectManager.MyList[T](IConnection conn, Criteria condition, Order[] orders, Int32 from, Int32 count, ListField[] fields)
+   在 Thinkment.Data.ObjectAssistant.List[T](IConnection conn, Criteria condition, Order[] orders, Int32 from, Int32 count, ListField[] fields)
+   在 Thinkment.Data.ObjectAssistant.List[T](Criteria condition, Order[] orders, Int32 from, Int32 count, ListField[] fields)
+   在 Thinkment.Data.ObjectAssistant.List[T](Criteria condition, Order[] orders)
+   在 We7.CMS.Accounts.AccountLocalHelper.GetAccountRoles(String accountID)
+   在 We7.CMS.Accounts.AccountLocalHelper.GetRolesOfAccount(String accountID)
+   在 We7.CMS.Accounts.AccountLocalHelper.GetPermissionContents(String accountID, String objectID)
+   在 We7.CMS.Web.Admin.ArticleListControl.InitializeButtons()
+   在 We7.CMS.Web.Admin.ArticleListControl.Page_Load(Object sender, EventArgs e)
+   在 System.Web.Util.CalliHelper.EventArgFunctionCaller(IntPtr fp, Object o, Object t, EventArgs e)
+   在 System.Web.Util.CalliEventHandlerDelegateProxy.Callback(Object sender, EventArgs e)
+   在 System.Web.UI.Control.OnLoad(EventArgs e)
+   在 System.Web.UI.Control.LoadRecursive()
+   在 System.Web.UI.Control.LoadRecursive()
+   在 System.Web.UI.Control.LoadRecursive()
+   在 System.Web.UI.Control.LoadRecursive()
+   在 System.Web.UI.Control.LoadRecursive()
+   在 System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+
+
+--------------------------------------------------
+
+错误信息
+
+2016/6/12 12:08:09
+
+站点IP：::1
+访问页面：/admin/AddIns/ArticleList.aspx
+错误源：.Net SqlClient Data Provider
+错误信息：Cannot open database "ScientificData" requested by the login. The login failed.
+Login failed for user 'ScientificData'.
+堆栈信息：
+   在 System.Data.ProviderBase.DbConnectionPool.GetConnection(DbConnection owningObject)
+   在 System.Data.ProviderBase.DbConnectionFactory.GetConnection(DbConnection owningConnection)
+   在 System.Data.ProviderBase.DbConnectionClosed.OpenConnection(DbConnection outerConnection, DbConnectionFactory connectionFactory)
+   在 System.Data.SqlClient.SqlConnection.Open()
+   在 Thinkment.Data.SqlDbDriver.SqlDbConnection.CreateCommand(SqlStatement sql)
+   在 Thinkment.Data.SqlDbDriver.SqlDbConnection.Query(SqlStatement sql)
+   在 Thinkment.Data.ListSelectHandle`1.Execute()
+   在 Thinkment.Data.ObjectManager.MyList[T](IConnection conn, Criteria condition, Order[] orders, Int32 from, Int32 count, ListField[] fields)
+   在 Thinkment.Data.ObjectAssistant.List[T](IConnection conn, Criteria condition, Order[] orders, Int32 from, Int32 count, ListField[] fields)
+   在 Thinkment.Data.ObjectAssistant.List[T](Criteria condition, Order[] orders, Int32 from, Int32 count, ListField[] fields)
+   在 Thinkment.Data.ObjectAssistant.List[T](Criteria condition, Order[] orders)
+   在 We7.CMS.Accounts.AccountLocalHelper.GetAccountRoles(String accountID)
+   在 We7.CMS.Accounts.AccountLocalHelper.GetRolesOfAccount(String accountID)
+   在 We7.CMS.Accounts.AccountLocalHelper.GetPermissionContents(String accountID, String objectID)
+   在 We7.CMS.Web.Admin.ArticleListControl.InitializeButtons()
+   在 We7.CMS.Web.Admin.ArticleListControl.Page_Load(Object sender, EventArgs e)
+   在 System.Web.Util.CalliHelper.EventArgFunctionCaller(IntPtr fp, Object o, Object t, EventArgs e)
+   在 System.Web.Util.CalliEventHandlerDelegateProxy.Callback(Object sender, EventArgs e)
+   在 System.Web.UI.Control.OnLoad(EventArgs e)
+   在 System.Web.UI.Control.LoadRecursive()
+   在 System.Web.UI.Control.LoadRecursive()
+   在 System.Web.UI.Control.LoadRecursive()
+   在 System.Web.UI.Control.LoadRecursive()
+   在 System.Web.UI.Control.LoadRecursive()
+   在 System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+
+
+--------------------------------------------------
+
+错误信息
+
+2016/6/12 12:08:09
+
+站点IP：::1
+访问页面：/admin/AddIns/ArticleList.aspx?oid=null&wap=null&type=0
+错误源：.Net SqlClient Data Provider
+错误信息：Cannot open database "ScientificData" requested by the login. The login failed.
+Login failed for user 'ScientificData'.
+堆栈信息：
+   在 System.Data.ProviderBase.DbConnectionPool.GetConnection(DbConnection owningObject)
+   在 System.Data.ProviderBase.DbConnectionFactory.GetConnection(DbConnection owningConnection)
+   在 System.Data.ProviderBase.DbConnectionClosed.OpenConnection(DbConnection outerConnection, DbConnectionFactory connectionFactory)
+   在 System.Data.SqlClient.SqlConnection.Open()
+   在 Thinkment.Data.SqlDbDriver.SqlDbConnection.CreateCommand(SqlStatement sql)
+   在 Thinkment.Data.SqlDbDriver.SqlDbConnection.Query(SqlStatement sql)
+   在 Thinkment.Data.ListSelectHandle`1.Execute()
+   在 Thinkment.Data.ObjectManager.MyList[T](IConnection conn, Criteria condition, Order[] orders, Int32 from, Int32 count, ListField[] fields)
+   在 Thinkment.Data.ObjectAssistant.List[T](IConnection conn, Criteria condition, Order[] orders, Int32 from, Int32 count, ListField[] fields)
+   在 Thinkment.Data.ObjectAssistant.List[T](Criteria condition, Order[] orders, Int32 from, Int32 count, ListField[] fields)
+   在 Thinkment.Data.ObjectAssistant.List[T](Criteria condition, Order[] orders)
+   在 We7.CMS.Accounts.AccountLocalHelper.GetAccountRoles(String accountID)
+   在 We7.CMS.Accounts.AccountLocalHelper.GetRolesOfAccount(String accountID)
+   在 We7.CMS.Accounts.AccountLocalHelper.GetPermissionContents(String accountID, String objectID)
+   在 We7.CMS.Web.Admin.ArticleListControl.InitializeButtons()
+   在 We7.CMS.Web.Admin.ArticleListControl.Page_Load(Object sender, EventArgs e)
+   在 System.Web.Util.CalliHelper.EventArgFunctionCaller(IntPtr fp, Object o, Object t, EventArgs e)
+   在 System.Web.Util.CalliEventHandlerDelegateProxy.Callback(Object sender, EventArgs e)
+   在 System.Web.UI.Control.OnLoad(EventArgs e)
+   在 System.Web.UI.Control.LoadRecursive()
+   在 System.Web.UI.Control.LoadRecursive()
+   在 System.Web.UI.Control.LoadRecursive()
+   在 System.Web.UI.Control.LoadRecursive()
+   在 System.Web.UI.Control.LoadRecursive()
+   在 System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+
+
+--------------------------------------------------
+
+错误信息
+
+2016/6/12 12:08:10
+
+站点IP：::1
+访问页面：/admin/AddIns/ArticleList.aspx?oid=null&wap=null&type=0
+错误源：.Net SqlClient Data Provider
+错误信息：Cannot open database "ScientificData" requested by the login. The login failed.
+Login failed for user 'ScientificData'.
+堆栈信息：
+   在 System.Data.ProviderBase.DbConnectionPool.GetConnection(DbConnection owningObject)
+   在 System.Data.ProviderBase.DbConnectionFactory.GetConnection(DbConnection owningConnection)
+   在 System.Data.ProviderBase.DbConnectionClosed.OpenConnection(DbConnection outerConnection, DbConnectionFactory connectionFactory)
+   在 System.Data.SqlClient.SqlConnection.Open()
+   在 Thinkment.Data.SqlDbDriver.SqlDbConnection.CreateCommand(SqlStatement sql)
+   在 Thinkment.Data.SqlDbDriver.SqlDbConnection.Query(SqlStatement sql)
+   在 Thinkment.Data.ListSelectHandle`1.Execute()
+   在 Thinkment.Data.ObjectManager.MyList[T](IConnection conn, Criteria condition, Order[] orders, Int32 from, Int32 count, ListField[] fields)
+   在 Thinkment.Data.ObjectAssistant.List[T](IConnection conn, Criteria condition, Order[] orders, Int32 from, Int32 count, ListField[] fields)
+   在 Thinkment.Data.ObjectAssistant.List[T](Criteria condition, Order[] orders, Int32 from, Int32 count, ListField[] fields)
+   在 Thinkment.Data.ObjectAssistant.List[T](Criteria condition, Order[] orders)
+   在 We7.CMS.Accounts.AccountLocalHelper.GetAccountRoles(String accountID)
+   在 We7.CMS.Accounts.AccountLocalHelper.GetRolesOfAccount(String accountID)
+   在 We7.CMS.Accounts.AccountLocalHelper.GetPermissionContents(String accountID, String objectID)
+   在 We7.CMS.Web.Admin.ArticleListControl.InitializeButtons()
+   在 We7.CMS.Web.Admin.ArticleListControl.Page_Load(Object sender, EventArgs e)
+   在 System.Web.Util.CalliHelper.EventArgFunctionCaller(IntPtr fp, Object o, Object t, EventArgs e)
+   在 System.Web.Util.CalliEventHandlerDelegateProxy.Callback(Object sender, EventArgs e)
+   在 System.Web.UI.Control.OnLoad(EventArgs e)
+   在 System.Web.UI.Control.LoadRecursive()
+   在 System.Web.UI.Control.LoadRecursive()
+   在 System.Web.UI.Control.LoadRecursive()
+   在 System.Web.UI.Control.LoadRecursive()
+   在 System.Web.UI.Control.LoadRecursive()
+   在 System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+
+
+--------------------------------------------------
+
+错误信息
+
+2016/6/12 12:08:12
+
+站点IP：::1
+访问页面：/admin/AddIns/ArticleList.aspx
+错误源：.Net SqlClient Data Provider
+错误信息：Cannot open database "ScientificData" requested by the login. The login failed.
+Login failed for user 'ScientificData'.
+堆栈信息：
+   在 System.Data.ProviderBase.DbConnectionPool.GetConnection(DbConnection owningObject)
+   在 System.Data.ProviderBase.DbConnectionFactory.GetConnection(DbConnection owningConnection)
+   在 System.Data.ProviderBase.DbConnectionClosed.OpenConnection(DbConnection outerConnection, DbConnectionFactory connectionFactory)
+   在 System.Data.SqlClient.SqlConnection.Open()
+   在 Thinkment.Data.SqlDbDriver.SqlDbConnection.CreateCommand(SqlStatement sql)
+   在 Thinkment.Data.SqlDbDriver.SqlDbConnection.Query(SqlStatement sql)
+   在 Thinkment.Data.ListSelectHandle`1.Execute()
+   在 Thinkment.Data.ObjectManager.MyList[T](IConnection conn, Criteria condition, Order[] orders, Int32 from, Int32 count, ListField[] fields)
+   在 Thinkment.Data.ObjectAssistant.List[T](IConnection conn, Criteria condition, Order[] orders, Int32 from, Int32 count, ListField[] fields)
+   在 Thinkment.Data.ObjectAssistant.List[T](Criteria condition, Order[] orders, Int32 from, Int32 count, ListField[] fields)
+   在 Thinkment.Data.ObjectAssistant.List[T](Criteria condition, Order[] orders)
+   在 We7.CMS.Accounts.AccountLocalHelper.GetAccountRoles(String accountID)
+   在 We7.CMS.Accounts.AccountLocalHelper.GetRolesOfAccount(String accountID)
+   在 We7.CMS.Accounts.AccountLocalHelper.GetPermissionContents(String accountID, String objectID)
+   在 We7.CMS.Web.Admin.ArticleListControl.InitializeButtons()
+   在 We7.CMS.Web.Admin.ArticleListControl.Page_Load(Object sender, EventArgs e)
+   在 System.Web.Util.CalliHelper.EventArgFunctionCaller(IntPtr fp, Object o, Object t, EventArgs e)
+   在 System.Web.Util.CalliEventHandlerDelegateProxy.Callback(Object sender, EventArgs e)
+   在 System.Web.UI.Control.OnLoad(EventArgs e)
+   在 System.Web.UI.Control.LoadRecursive()
+   在 System.Web.UI.Control.LoadRecursive()
+   在 System.Web.UI.Control.LoadRecursive()
+   在 System.Web.UI.Control.LoadRecursive()
+   在 System.Web.UI.Control.LoadRecursive()
+   在 System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+
+
+--------------------------------------------------
+
+错误信息
+
+2016/6/12 12:08:12
+
+站点IP：::1
+访问页面：/admin/AddIns/ArticleList.aspx?oid=null&wap=null&type=0
+错误源：.Net SqlClient Data Provider
+错误信息：Cannot open database "ScientificData" requested by the login. The login failed.
+Login failed for user 'ScientificData'.
+堆栈信息：
+   在 System.Data.ProviderBase.DbConnectionPool.GetConnection(DbConnection owningObject)
+   在 System.Data.ProviderBase.DbConnectionFactory.GetConnection(DbConnection owningConnection)
+   在 System.Data.ProviderBase.DbConnectionClosed.OpenConnection(DbConnection outerConnection, DbConnectionFactory connectionFactory)
+   在 System.Data.SqlClient.SqlConnection.Open()
+   在 Thinkment.Data.SqlDbDriver.SqlDbConnection.CreateCommand(SqlStatement sql)
+   在 Thinkment.Data.SqlDbDriver.SqlDbConnection.Query(SqlStatement sql)
+   在 Thinkment.Data.ListSelectHandle`1.Execute()
+   在 Thinkment.Data.ObjectManager.MyList[T](IConnection conn, Criteria condition, Order[] orders, Int32 from, Int32 count, ListField[] fields)
+   在 Thinkment.Data.ObjectAssistant.List[T](IConnection conn, Criteria condition, Order[] orders, Int32 from, Int32 count, ListField[] fields)
+   在 Thinkment.Data.ObjectAssistant.List[T](Criteria condition, Order[] orders, Int32 from, Int32 count, ListField[] fields)
+   在 Thinkment.Data.ObjectAssistant.List[T](Criteria condition, Order[] orders)
+   在 We7.CMS.Accounts.AccountLocalHelper.GetAccountRoles(String accountID)
+   在 We7.CMS.Accounts.AccountLocalHelper.GetRolesOfAccount(String accountID)
+   在 We7.CMS.Accounts.AccountLocalHelper.GetPermissionContents(String accountID, String objectID)
+   在 We7.CMS.Web.Admin.ArticleListControl.InitializeButtons()
+   在 We7.CMS.Web.Admin.ArticleListControl.Page_Load(Object sender, EventArgs e)
+   在 System.Web.Util.CalliHelper.EventArgFunctionCaller(IntPtr fp, Object o, Object t, EventArgs e)
+   在 System.Web.Util.CalliEventHandlerDelegateProxy.Callback(Object sender, EventArgs e)
+   在 System.Web.UI.Control.OnLoad(EventArgs e)
+   在 System.Web.UI.Control.LoadRecursive()
+   在 System.Web.UI.Control.LoadRecursive()
+   在 System.Web.UI.Control.LoadRecursive()
+   在 System.Web.UI.Control.LoadRecursive()
+   在 System.Web.UI.Control.LoadRecursive()
+   在 System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+
+
+--------------------------------------------------
+
+错误信息
+
+2016/6/12 12:08:12
+
+站点IP：::1
+访问页面：/admin/AddIns/ArticleList.aspx
+错误源：.Net SqlClient Data Provider
+错误信息：Cannot open database "ScientificData" requested by the login. The login failed.
+Login failed for user 'ScientificData'.
+堆栈信息：
+   在 System.Data.ProviderBase.DbConnectionPool.GetConnection(DbConnection owningObject)
+   在 System.Data.ProviderBase.DbConnectionFactory.GetConnection(DbConnection owningConnection)
+   在 System.Data.ProviderBase.DbConnectionClosed.OpenConnection(DbConnection outerConnection, DbConnectionFactory connectionFactory)
+   在 System.Data.SqlClient.SqlConnection.Open()
+   在 Thinkment.Data.SqlDbDriver.SqlDbConnection.CreateCommand(SqlStatement sql)
+   在 Thinkment.Data.SqlDbDriver.SqlDbConnection.Query(SqlStatement sql)
+   在 Thinkment.Data.ListSelectHandle`1.Execute()
+   在 Thinkment.Data.ObjectManager.MyList[T](IConnection conn, Criteria condition, Order[] orders, Int32 from, Int32 count, ListField[] fields)
+   在 Thinkment.Data.ObjectAssistant.List[T](IConnection conn, Criteria condition, Order[] orders, Int32 from, Int32 count, ListField[] fields)
+   在 Thinkment.Data.ObjectAssistant.List[T](Criteria condition, Order[] orders, Int32 from, Int32 count, ListField[] fields)
+   在 Thinkment.Data.ObjectAssistant.List[T](Criteria condition, Order[] orders)
+   在 We7.CMS.Accounts.AccountLocalHelper.GetAccountRoles(String accountID)
+   在 We7.CMS.Accounts.AccountLocalHelper.GetRolesOfAccount(String accountID)
+   在 We7.CMS.Accounts.AccountLocalHelper.GetPermissionContents(String accountID, String objectID)
+   在 We7.CMS.Web.Admin.ArticleListControl.InitializeButtons()
+   在 We7.CMS.Web.Admin.ArticleListControl.Page_Load(Object sender, EventArgs e)
+   在 System.Web.Util.CalliHelper.EventArgFunctionCaller(IntPtr fp, Object o, Object t, EventArgs e)
+   在 System.Web.Util.CalliEventHandlerDelegateProxy.Callback(Object sender, EventArgs e)
+   在 System.Web.UI.Control.OnLoad(EventArgs e)
+   在 System.Web.UI.Control.LoadRecursive()
+   在 System.Web.UI.Control.LoadRecursive()
+   在 System.Web.UI.Control.LoadRecursive()
+   在 System.Web.UI.Control.LoadRecursive()
+   在 System.Web.UI.Control.LoadRecursive()
+   在 System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+
+
+--------------------------------------------------
+
+错误信息
+
+2016/6/12 12:08:12
+
+站点IP：::1
+访问页面：/admin/AddIns/ArticleList.aspx?oid=null&wap=null&type=0
+错误源：.Net SqlClient Data Provider
+错误信息：Cannot open database "ScientificData" requested by the login. The login failed.
+Login failed for user 'ScientificData'.
+堆栈信息：
+   在 System.Data.ProviderBase.DbConnectionPool.GetConnection(DbConnection owningObject)
+   在 System.Data.ProviderBase.DbConnectionFactory.GetConnection(DbConnection owningConnection)
+   在 System.Data.ProviderBase.DbConnectionClosed.OpenConnection(DbConnection outerConnection, DbConnectionFactory connectionFactory)
+   在 System.Data.SqlClient.SqlConnection.Open()
+   在 Thinkment.Data.SqlDbDriver.SqlDbConnection.CreateCommand(SqlStatement sql)
+   在 Thinkment.Data.SqlDbDriver.SqlDbConnection.Query(SqlStatement sql)
+   在 Thinkment.Data.ListSelectHandle`1.Execute()
+   在 Thinkment.Data.ObjectManager.MyList[T](IConnection conn, Criteria condition, Order[] orders, Int32 from, Int32 count, ListField[] fields)
+   在 Thinkment.Data.ObjectAssistant.List[T](IConnection conn, Criteria condition, Order[] orders, Int32 from, Int32 count, ListField[] fields)
+   在 Thinkment.Data.ObjectAssistant.List[T](Criteria condition, Order[] orders, Int32 from, Int32 count, ListField[] fields)
+   在 Thinkment.Data.ObjectAssistant.List[T](Criteria condition, Order[] orders)
+   在 We7.CMS.Accounts.AccountLocalHelper.GetAccountRoles(String accountID)
+   在 We7.CMS.Accounts.AccountLocalHelper.GetRolesOfAccount(String accountID)
+   在 We7.CMS.Accounts.AccountLocalHelper.GetPermissionContents(String accountID, String objectID)
+   在 We7.CMS.Web.Admin.ArticleListControl.InitializeButtons()
+   在 We7.CMS.Web.Admin.ArticleListControl.Page_Load(Object sender, EventArgs e)
+   在 System.Web.Util.CalliHelper.EventArgFunctionCaller(IntPtr fp, Object o, Object t, EventArgs e)
+   在 System.Web.Util.CalliEventHandlerDelegateProxy.Callback(Object sender, EventArgs e)
+   在 System.Web.UI.Control.OnLoad(EventArgs e)
+   在 System.Web.UI.Control.LoadRecursive()
+   在 System.Web.UI.Control.LoadRecursive()
+   在 System.Web.UI.Control.LoadRecursive()
+   在 System.Web.UI.Control.LoadRecursive()
+   在 System.Web.UI.Control.LoadRecursive()
+   在 System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+
+
+--------------------------------------------------
+
+错误信息
+
+2016/6/12 12:08:12
+
+站点IP：::1
+访问页面：/admin/AddIns/ArticleList.aspx
+错误源：.Net SqlClient Data Provider
+错误信息：Cannot open database "ScientificData" requested by the login. The login failed.
+Login failed for user 'ScientificData'.
+堆栈信息：
+   在 System.Data.ProviderBase.DbConnectionPool.GetConnection(DbConnection owningObject)
+   在 System.Data.ProviderBase.DbConnectionFactory.GetConnection(DbConnection owningConnection)
+   在 System.Data.ProviderBase.DbConnectionClosed.OpenConnection(DbConnection outerConnection, DbConnectionFactory connectionFactory)
+   在 System.Data.SqlClient.SqlConnection.Open()
+   在 Thinkment.Data.SqlDbDriver.SqlDbConnection.CreateCommand(SqlStatement sql)
+   在 Thinkment.Data.SqlDbDriver.SqlDbConnection.Query(SqlStatement sql)
+   在 Thinkment.Data.ListSelectHandle`1.Execute()
+   在 Thinkment.Data.ObjectManager.MyList[T](IConnection conn, Criteria condition, Order[] orders, Int32 from, Int32 count, ListField[] fields)
+   在 Thinkment.Data.ObjectAssistant.List[T](IConnection conn, Criteria condition, Order[] orders, Int32 from, Int32 count, ListField[] fields)
+   在 Thinkment.Data.ObjectAssistant.List[T](Criteria condition, Order[] orders, Int32 from, Int32 count, ListField[] fields)
+   在 Thinkment.Data.ObjectAssistant.List[T](Criteria condition, Order[] orders)
+   在 We7.CMS.Accounts.AccountLocalHelper.GetAccountRoles(String accountID)
+   在 We7.CMS.Accounts.AccountLocalHelper.GetRolesOfAccount(String accountID)
+   在 We7.CMS.Accounts.AccountLocalHelper.GetPermissionContents(String accountID, String objectID)
+   在 We7.CMS.Web.Admin.ArticleListControl.InitializeButtons()
+   在 We7.CMS.Web.Admin.ArticleListControl.Page_Load(Object sender, EventArgs e)
+   在 System.Web.Util.CalliHelper.EventArgFunctionCaller(IntPtr fp, Object o, Object t, EventArgs e)
+   在 System.Web.Util.CalliEventHandlerDelegateProxy.Callback(Object sender, EventArgs e)
+   在 System.Web.UI.Control.OnLoad(EventArgs e)
+   在 System.Web.UI.Control.LoadRecursive()
+   在 System.Web.UI.Control.LoadRecursive()
+   在 System.Web.UI.Control.LoadRecursive()
+   在 System.Web.UI.Control.LoadRecursive()
+   在 System.Web.UI.Control.LoadRecursive()
+   在 System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+
+
+--------------------------------------------------
+
+错误信息
+
+2016/6/12 12:08:12
+
+站点IP：::1
+访问页面：/admin/AddIns/ArticleList.aspx?oid=null&wap=null&type=0
+错误源：.Net SqlClient Data Provider
+错误信息：Cannot open database "ScientificData" requested by the login. The login failed.
+Login failed for user 'ScientificData'.
+堆栈信息：
+   在 System.Data.ProviderBase.DbConnectionPool.GetConnection(DbConnection owningObject)
+   在 System.Data.ProviderBase.DbConnectionFactory.GetConnection(DbConnection owningConnection)
+   在 System.Data.ProviderBase.DbConnectionClosed.OpenConnection(DbConnection outerConnection, DbConnectionFactory connectionFactory)
+   在 System.Data.SqlClient.SqlConnection.Open()
+   在 Thinkment.Data.SqlDbDriver.SqlDbConnection.CreateCommand(SqlStatement sql)
+   在 Thinkment.Data.SqlDbDriver.SqlDbConnection.Query(SqlStatement sql)
+   在 Thinkment.Data.ListSelectHandle`1.Execute()
+   在 Thinkment.Data.ObjectManager.MyList[T](IConnection conn, Criteria condition, Order[] orders, Int32 from, Int32 count, ListField[] fields)
+   在 Thinkment.Data.ObjectAssistant.List[T](IConnection conn, Criteria condition, Order[] orders, Int32 from, Int32 count, ListField[] fields)
+   在 Thinkment.Data.ObjectAssistant.List[T](Criteria condition, Order[] orders, Int32 from, Int32 count, ListField[] fields)
+   在 Thinkment.Data.ObjectAssistant.List[T](Criteria condition, Order[] orders)
+   在 We7.CMS.Accounts.AccountLocalHelper.GetAccountRoles(String accountID)
+   在 We7.CMS.Accounts.AccountLocalHelper.GetRolesOfAccount(String accountID)
+   在 We7.CMS.Accounts.AccountLocalHelper.GetPermissionContents(String accountID, String objectID)
+   在 We7.CMS.Web.Admin.ArticleListControl.InitializeButtons()
+   在 We7.CMS.Web.Admin.ArticleListControl.Page_Load(Object sender, EventArgs e)
+   在 System.Web.Util.CalliHelper.EventArgFunctionCaller(IntPtr fp, Object o, Object t, EventArgs e)
+   在 System.Web.Util.CalliEventHandlerDelegateProxy.Callback(Object sender, EventArgs e)
+   在 System.Web.UI.Control.OnLoad(EventArgs e)
+   在 System.Web.UI.Control.LoadRecursive()
+   在 System.Web.UI.Control.LoadRecursive()
+   在 System.Web.UI.Control.LoadRecursive()
+   在 System.Web.UI.Control.LoadRecursive()
+   在 System.Web.UI.Control.LoadRecursive()
+   在 System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+

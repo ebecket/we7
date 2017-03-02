@@ -1,0 +1,26 @@
+﻿
+--------------------------------------------------
+
+错误信息
+
+2016/6/16 16:41:25
+
+站点IP：::1
+访问页面：/default.aspx
+错误源：We7.Model.Core
+错误信息：Sql：：SELECT COUNT(*) FROM [Lecture]  WHERE ( [State] = @P0  AND  [DueTime] > @P1 )　　　param0：：name=@P0,value=1　　　param1：：name=@P1,value=2016/6/16 16:41:24　　　Message：：Cannot open database "ScientificDataNew" requested by the login. The login failed.
+Login failed for user 'cean'.　　　
+堆栈信息：
+   在 We7.Model.Core.Data.ThinkmentDriver.OperateHandle.ThrowException(SqlStatement statement, Exception ex)
+   在 We7.Model.Core.Data.ThinkmentDriver.CountHandle.Execute()
+   在 We7.Model.Core.Data.ThinkmentDriver.CountHandle.Execute(Criteria c)
+   在 We7.Model.Core.Data.ModelDBHelper.Count(Criteria ct)
+   在 We7.Model.Core.Data.ModelDBHelper.QueryPagedList(Criteria ct, List`1 orders, Int32 pageIndex, Int32 pageSize, Int32& recordcount)
+   在 We7.Model.Core.Data.ModelDBHelper.QueryPagedList(Criteria ct, List`1 orders, Int32 pageIndex, Int32 pageSize)
+   在 We7.CMS.UI.Widget.WidgetList.OnInitData()
+   在 We7.CMS.WebControls.BaseControl.OnLoad(EventArgs e)
+   在 System.Web.UI.Control.LoadRecursive()
+   在 System.Web.UI.Control.LoadRecursive()
+   在 System.Web.UI.Control.LoadRecursive()
+   在 System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+
